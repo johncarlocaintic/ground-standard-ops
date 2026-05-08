@@ -1,0 +1,156 @@
+{
+  "rubric_id": "vacaville_v1",
+  "client": "ground-standard",
+  "bot": "vacaville-grappling",
+  "version": "1.0.0",
+  "updated": "2026-04-25",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Kids 7-13 Jiu-Jitsu, Adult No-Gi Submission Grappling. Specifically watch for: 'Kids 3-5', 'Little Ninjas', 'Kids 10-14', 'teen class', 'Saturday class', 'weekend class', 'noon class', 'midday class', 'BJJ' (it's No-Gi only)."
+    },
+    {
+      "id": "mnd_03",
+      "category": "must_not_do",
+      "description": "No fabricated logistics",
+      "level": "blocker",
+      "look_for": "bot invents specific numbers it cannot know: drive time estimates, distances, class sizes, instructor counts, student-to-coach ratios. Bot should defer these to the team or Google Maps."
+    },
+    {
+      "id": "mnd_04_DEPRECATED",
+      "category": "must_not_do",
+      "description": "[DEPRECATED 2026-04-27] Previously: no 'free trial' language. Idriss reversed - this language is acceptable.",
+      "level": "standard",
+      "look_for": "n/a — rule deprecated, always pass"
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation language WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll have to look that up' on questions where it should give a firm answer (Saturday classes, Kids 3-5 program, pricing redirect). Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_07",
+      "category": "must_not_do",
+      "description": "No prohibited words (FLAG only — not blocker per Idriss 2026-04-28)",
+      "level": "standard",
+      "look_for": "bot uses any of these words in its output: 'waiver', 'insurance', 'regulations', 'compliance'. Flag but do not block — the bot needs to work first; we'll tighten this later."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}. Indicates a config error."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for - you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Routes under-7 kids to age-out, not booking",
+      "level": "blocker",
+      "look_for": "if a kid under 7 is mentioned, bot does not attempt to book them. Bot states the kid is too young (Kids 7-13 minimum) and either offers adult-only options or politely closes."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "Routes 14+ kids to Adult No-Gi, not Kids program",
+      "level": "standard",
+      "look_for": "if a 14+ year old is mentioned, bot routes to Adult No-Gi Submission Grappling, not Kids 7-13."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected to Coach Nick in person",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to 'Coach Nick can discuss that in person' or similar. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if the lead is the prospective student themselves AND identifies as under 18 with no parent/guardian involved, the bot must: (a) NOT attempt to book the kid, (b) capture the kid's full name and DOB into youth fields (asks for both), (c) capture parent's first name, last name, phone, and email, (d) close politely with a 'team will follow up with your parent' framing. All four required for pass."
+    },
+    {
+      "id": "ec_01",
+      "category": "edge_case",
+      "description": "Saturday ask handled correctly",
+      "level": "blocker",
+      "look_for": "if lead asks about Saturday classes, bot states firmly that Saturday is not offered. No hedging, no 'let me check'."
+    },
+    {
+      "id": "ec_02",
+      "category": "edge_case",
+      "description": "Kids 3-5 ask handled correctly",
+      "level": "blocker",
+      "look_for": "if lead asks about classes for kids ages 3-5, bot states firmly the program does not exist (minimum age is 7)."
+    },
+    {
+      "id": "ec_03",
+      "category": "edge_case",
+      "description": "Military/Law Enforcement mention triggers handoff",
+      "level": "standard",
+      "look_for": "if lead mentions being military, law enforcement, or a first responder, bot triggers a handoff to the team rather than continuing standard flow."
+    },
+    {
+      "id": "ec_04",
+      "category": "edge_case",
+      "description": "Drop-in / traveler request handled",
+      "level": "standard",
+      "look_for": "if lead identifies as a visitor or traveler asking for a single class, bot routes to drop-in handoff."
+    },
+    {
+      "id": "ec_05",
+      "category": "edge_case",
+      "description": "Hostile or aggressive lead triggers aggression scenario",
+      "level": "standard",
+      "look_for": "if lead is profane, threatening, or repeatedly hostile across multiple turns, bot triggers the aggression handoff scenario rather than continuing to engage."
+    },
+    {
+      "id": "ec_06",
+      "category": "edge_case",
+      "description": "Multi-kid family flow",
+      "level": "standard",
+      "look_for": "if lead mentions multiple kids, bot collects info for each and routes them according to age (under 7 = age-out, 7-13 = Kids program, 14+ = Adult No-Gi)."
+    },
+    {
+      "id": "ec_07",
+      "category": "edge_case",
+      "description": "Adult + kids combo booking",
+      "level": "standard",
+      "look_for": "if lead wants classes for themselves AND their kid(s), bot handles both - books the adult to Adult No-Gi and the kid(s) to the appropriate program."
+    }
+  ]
+}

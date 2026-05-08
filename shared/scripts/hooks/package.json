@@ -1,0 +1,4 @@
+{
+  "type": "commonjs",
+  "comment": "Overrides parent shared/scripts/package.json ES module setting. ECC hooks use CommonJS (require)."
+}

@@ -1,0 +1,8 @@
+bot_MHAFTF25QVPIQLUI
+# v1 — RECOMMENDED (0 compliance violations, 6/8 personas PASS)
+# Imported: 2026-04-20 07:13 UTC
+# KDL: clients/ground-standard/closebot/vacaville/new-bot.kdl
+#
+# Experiment bots (manual delete needed — DELETE API broken):
+#   bot_12U7RDS5V02AJGUP — v2 (age-6 Comparator, didn't fix issue)
+#   bot_PL6IM63PY7JQRYXK — v3 (Comparator + 4-case AISwitch, regressed age-5)

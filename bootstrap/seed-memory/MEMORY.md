@@ -1,0 +1,34 @@
+# Memory Index
+
+- [User Identity — Glenn (Ground Standard operator)](user_identity_glenn.md) — runs GSA account; uses JC's shared credentials on platforms; scope is CloseBot + supporting GHL/Retell.
+- [Problem Flagging Protocol](feedback_problem_flagging.md) — self-resolve low-prio silently; flag + pause for anything beyond explicit source; AI-generated docs = strict adherence only.
+- [Terse Responses by Default](feedback_terse_responses.md) — short, jargon-light; key decisions prominent; expand only when asked.
+- [No Em Dashes](feedback_no_em_dashes.md) — never use em dashes; use period, comma, colon, parentheses, or hyphen-with-spaces.
+- [Always Timestamp Logs and Checkpoints](feedback_always_timestamp.md) — every log entry, checkpoint, doc update gets ISO date (YYYY-MM-DD).
+- [Parrot Back Before Executing](feedback_parrot_before_execute.md) — for any non-trivial deploy/build/modify, parrot back the instruction first and wait for confirm before executing.
+- [Retry Before Concluding](feedback_retry_before_conclude.md) — never declare API broken/down after one fail; retry 2-3 times before reporting failure conclusions.
+- [Verify Before Diagnosing](feedback_verify_before_diagnosing.md) — never build a narrative from a single error string; query the underlying system before claiming a cause.
+- [Always Cross-Reference CloseBot Logs](feedback_closebot_logs_standard.md) — pull SSE events / node-execution data alongside the transcript when debugging.
+- [Auto-Allow Monitors](feedback_auto_allow_monitors.md) — silently re-arm Monitor tool calls when they time out.
+- [Legacy Workflow Archival](feedback_legacy_deactivation.md) — never delete legacy bots/workflows; deactivate + move to a "Deactivated" folder. Delete only when explicitly confirmed.
+- [Iteration Archival Rule](feedback_iteration_source_detach.md) — every CloseBot iteration archives the previous bot with detach + LEGACY rename + clear tag filter; new version reuses the SAME real trigger tag.
+- [Test Source Attach/Detach Protocol](feedback_test_attach_detach_protocol.md) — when testing bots, attach source BEFORE test and detach AFTER; one bot per source at a time.
+- [Test Identity Randomization](feedback_test_identity_randomization.md) — every eval run randomizes lastname/email/phone (firstname "Tester" stays); prevents GHL contact collision.
+- [Link Transcripts in Test Reports](feedback_link_transcripts.md) — every bot-test-result report includes clickable markdown links to all transcript logs.
+- [Reference Docs Need Templates](feedback_reference_needs_examples.md) — sloppy-prompts fix is worked before/after examples + per-slot templates, not more rules.
+- [CloseBot Prompt-Tier Discipline](feedback_closebot_prompt_discipline.md) — apply the proven tier map directly; consult docs ONLY for novel work; never cross-duplicate across tiers.
+- [CloseBot ExtraPrompt Framework](feedback_extraprompt_usage.md) — 3-gate decision framework; blank by default; Conversation nodes always need a short ExtraPrompt.
+- [CloseBot Variable References](feedback_closebot_variable_refs.md) — `{{contact.X}}`, `{{nodes.X.result}}`, `{{variable}}`, `{{location.X}}` work in nearly every field.
+- [CloseBot True/False AIExpression](feedback_closebot_truefalse_expression.md) — write the TRUE statement only; node handles routing.
+- [CloseBot Booking Short Description](feedback_closebot_booking_short_description.md) — appointment type + duration only; one sentence per docs §6.5.
+- [CloseBot Statement Not Conditional](feedback_closebot_statement_not_conditional.md) — Statements GIVE info; not if/else; branching belongs in True/False or Switch upstream.
+- [CloseBot prohibitedWords Stripped on Deploy](feedback_closebot_prohibitedwords_stripped_on_deploy.md) — every deploy strips prohibitedWords values; always read-back verify and restore.
+- [CloseBot Agent Node Chip Syntax](feedback_closebot_field_chip_syntax.md) — `{{contact.X}}` for fields, `@@[Tool Name]` for tools, `@@@[Exit Title]` for exits.
+- [CloseBot KDL Dedupe __zIndex Before Import](feedback_closebot_kdl_dedupe_zindex.md) — exports contain duplicate __zIndex per block; importer 500s on dupes. Strip per-block before POST /bot { importKdl }.
+- [CloseBot API Developer Docs](reference_closebot_api_docs.md) — developers.closebot.com — ALWAYS consult before any CloseBot API call.
+- [CloseBot Agency Source Endpoints](project_closebot_agency_sources.md) — /agency/source/{id}/{tags,fields,calendars,channels} exposes GHL schema per school without that client's PIT.
+- [CloseBot Skill System](project_closebot_skill_system.md) — API discovery done. 3-skill pipeline designed: /closebot-plan + /closebot-build + /closebot-test.
+- [CloseBot Agent Node Reference](reference_closebot_agent_node.md) — launched April 2026; full doc at references/closebot_agent_node.md; replaces all legacy conversational nodes.
+- [CloseBot Agent Node Exception (2026-04-25)](reference_closebot_agent_node_exception.md) — historical: importKdl path broke for Agent Node bots; workaround via /duplicate or /bot { sourceBotId }. VERIFY CURRENCY before relying.
+- [CloseBot Bryce Walkthrough](reference_closebot_walkthrough_bryce.md) — vendor-canon product tour; annotated Qualify agent-node example.
+- [Claude Account Switching](feedback_claude_account_switching.md) — claude-use can't hot-swap an active session; real switch is /logout + re-login. Verify via Anthropic /api/oauth/profile.

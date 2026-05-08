@@ -1,0 +1,498 @@
+================================================================================
+VACAVILLE GRAPPLING ACADEMY — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 2.3.2-DEPLOY
+Date: April 22, 2026
+Status: READY FOR DEPLOYMENT
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Source: Vacaville Grappling Academy Structured KB v1.0.0 (February 2, 2026)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Vacaville Grappling Academy
+Formerly Known As: APEX Grappling Vacaville
+Industry: Grappling Martial Arts (No-Gi Brazilian Jiu-Jitsu / Submission Grappling)
+Location: Vacaville, CA
+
+Description: Vacaville Grappling Academy (formerly APEX Grappling Vacaville) is a
+No-Gi Brazilian Jiu-Jitsu and Submission Grappling academy in Vacaville, California.
+Coach Nick Hernandez, a U.S. Air Force veteran and EMT/BLS provider, founded the
+academy with a focus on grappling fundamentals, a respectful learning environment,
+and self-defense applications. Coach Nick began Brazilian Jiu-Jitsu in 2018 and
+started training under Professor Cleidson Ramos of Apex BJJ Academy Vacaville in 2020.
+
+Programs Offered:
+- Kids 7-13 Jiu-Jitsu (ages 7–13)
+- Adult No-Gi Submission Grappling (ages 14 and up)
+
+Note on age ranges: The academy currently runs two programs — Kids 7-13 and Adult
+No-Gi. Anyone age 14 or older trains in the adult class, including teens. Anyone
+under 18 is a minor and cannot book themselves; the parent is the booking contact.
+There is no current program for children under 7.
+
+What We Do Not Currently Offer (explicit facts for lead questions):
+- No Saturday classes. The academy does not run classes on Saturdays.
+- No Sunday classes. The academy does not run classes on Sundays.
+- No weekend classes of any kind. All classes run Monday through Friday only.
+- No Kids 3-5 BJJ program. The youngest program starts at age 7.
+- No Kids 10-14 BJJ program. Ages 10-13 are in Kids 7-13; age 14+ is in Adult.
+- No "Little Ninjas" or preschool program.
+- No noon / midday adult classes. Adults train mornings or evenings only (see Section 4).
+- No gi (kimono) classes. The academy is No-Gi only.
+- No standalone wrestling program. Wrestling techniques appear in the No-Gi curriculum.
+- No separate teen class. Teens age 14-17 train in the Adult No-Gi class; the parent
+  remains the booking contact because minors cannot book themselves.
+
+These programs and time slots do not run. The academy does not offer them.
+
+Training Philosophy: The academy culture prioritizes respecting others at all times
+and emphasizes learning skills over winning. The goal is fun, respect, and continuous
+improvement — not competition results. Coach Nick's Protective Security training and
+career experience are woven into every practice to develop practical self-defense
+skills. The academy uses the Constraint-Led Approach (CLA) for skill development —
+a framework that uses targeted restrictions to shape training scenarios, allowing
+athletes to discover practical solutions organically rather than through repetitive
+isolated drilling.
+
+Safety and Medical: Coach Nick holds active EMT, CPR, and AED certifications. Medical
+equipment is on standby for emergencies, fire equipment is on-site, and emergency
+plans are in place for natural disasters.
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 310 E Monte Vista Ave # B, Vacaville, CA 95688, United States
+Phone: 707-232-2500 (calls or texts accepted)
+Website: https://www.vacavillegrappling.com
+
+Best Contact Outside Business Hours: Text 707-232-2500
+
+Nearby Landmarks for Directions:
+- Athletic track
+- Travis Credit Union
+- Lainey's Furniture For Living
+- Mountain Mike's Pizza
+- Georgie Duke Sports Center
+- Andrews Park
+- BackDoor Bistro and Wine Bar
+- Ulatis Creek
+- Kendal St area / Main St area
+
+Parking: Parking lot in front of the gym, street parking, and overflow parking
+available.
+
+================================================================================
+SECTION 3 — CLASS SCHEDULE
+================================================================================
+
+ALL CLASSES ARE NO-GI FORMAT.
+No gi (kimono) is worn. Appropriate attire is a rashguard or well-fitted shirt and
+pocketless shorts.
+
+Beginners and experienced practitioners train together in all classes. There are no
+separate beginner-only sessions.
+
+--- ADULT NO-GI SUBMISSION GRAPPLING (Ages 14 and up) ---
+
+Evening Classes (Monday through Friday):
+6:30 PM – 7:30 PM
+
+Early Morning Classes (Monday through Thursday):
+6:30 AM – 7:30 AM
+
+--- KIDS 7-13 JIU-JITSU (Ages 7–13) ---
+
+Monday, Tuesday, Wednesday, Thursday:
+5:15 PM – 6:00 PM
+
+--- DROP-IN SESSIONS ---
+Drop-ins are welcome at all classes.
+
+================================================================================
+SECTION 4 — TRIAL CLASS INFORMATION
+================================================================================
+
+A one-day free trial class is available at any class on the schedule. No commitment
+or obligation required.
+
+What to Wear for the Trial Class:
+Rashguard or well-fitted shirt and pocketless shorts.
+
+What to Bring:
+A water container. Towels and mouthguards are optional.
+
+Shoes Policy: Shoes must be removed before stepping on the mats.
+
+Watching a Class: Prospective students are welcome to come and observe any practice
+on the schedule before deciding to participate.
+
+Tours: Tours are available by calling ahead for an appointment or by showing up
+during a scheduled class time.
+
+Guests: Guests are welcome and encouraged.
+
+================================================================================
+SECTION 5 — MEMBERSHIP PRICING
+================================================================================
+
+PRICING RESPONSE POLICY FOR ALL CONTACTS:
+
+Membership pricing varies based on several factors like the number of classes per
+week you'd want to attend and your specific training goals. Instructors will discuss
+all the pricing options and membership plans with you during or right after your
+free trial class. They'll be able to assess what program works best for you and
+provide accurate pricing for your situation. The trial class is completely free with
+no commitment required.
+
+================================================================================
+SECTION 6 — MEMBERSHIP POLICIES
+================================================================================
+
+Cancellation Policy: No cancellation fees.
+
+Membership Pause/Freeze: Memberships can be paused. Members should notify the academy
+as soon as possible when a pause is needed.
+
+Payment Methods: Cash and card payments are accepted.
+
+Sign-Up Fee: A one-time sign-up fee applies at the time of enrollment. The specific
+amount is discussed during or after the free trial class.
+
+Private Lessons: Private lessons are available. Details about duration and pricing
+are discussed with the instructor during or after the free trial class.
+
+Professional and Student Discounts: Discounts are available for military members,
+first responders, high school students, and college students. The specific details
+are discussed during or after the free trial class with Coach Nick.
+
+Family Plan: A family plan is available for three or more family members. Details
+are discussed during or after the free trial class.
+
+City of Vacaville Partnership: The academy is partnered with the City of Vacaville
+for the Youth Program. Measure M funds through the City can be applied toward youth
+membership costs if eligible. Eligibility and details are discussed during or after
+the free trial class.
+
+Drop-In: Available at all classes. Pricing is discussed with Coach Nick during or
+after the free trial class.
+
+================================================================================
+SECTION 7 — REQUIRED INFORMATION FOR TRIAL CLASS BOOKING
+================================================================================
+
+The following information is collected from all prospective students to complete
+their profile and register for the free trial class. This information is required by
+the student registration system, liability insurance requirements, state legal waiver
+regulations, and safety protocols.
+
+PROGRAM ROUTING BY AGE:
+
+Under 7   → No current program. Offer to hold contact info for future programs.
+Age 7–13  → Kids 7-13 Jiu-Jitsu
+Age 14+   → Adult No-Gi Submission Grappling (parent remains booking contact if kid is under 18)
+
+FIELDS REQUIRED PER PERSON:
+
+1. FULL NAME (FIRST AND LAST)
+Full legal name is required to create the student profile. State regulations require
+full legal names on participation waivers signed on the first day. It is also used
+for a personalized welcome experience with Coach Nick.
+
+2. EMAIL ADDRESS
+Email is required to complete the student profile. It is used to send class
+confirmation details (what to wear, when to arrive, what to expect) and to communicate
+any schedule changes or cancellations. Email information is kept private and never
+shared with third parties.
+
+3. PHONE NUMBER
+Phone number is required to complete the student profile. It is used for class
+reminders, emergency contact if a student is running late or needs directions, and
+last-minute schedule updates. Liability insurance requires emergency contact
+information for all participants. Coach Nick is an EMT/BLS provider with medical
+equipment on standby.
+
+4. DATE OF BIRTH
+The actual date of birth (not just age) is required by the registration system. Date
+of birth confirms correct program placement and satisfies insurance and safety
+requirements.
+
+5. PARENT OR GUARDIAN INFORMATION (FOR STUDENTS UNDER 18)
+For minors, the parent or guardian profile must be completed because the minor's
+profile is attached to it in the system. This is required because state law does not
+permit minors to sign legal waivers independently, emergency medical decisions
+require immediate parent or guardian contact, and financial authorization requires
+a parent or guardian. Parent or guardian date of birth is also required to complete
+their profile.
+
+================================================================================
+SECTION 8 — FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Where is Vacaville Grappling Academy located?
+A: 310 E Monte Vista Ave # B, Vacaville, CA 95688. There is a parking lot in front
+of the gym, street parking, and overflow parking available.
+
+Q: What was the academy formerly called?
+A: APEX Grappling Vacaville.
+
+Q: What is the phone number?
+A: 707-232-2500. Calls and texts are both accepted.
+
+Q: What types of classes does the academy offer?
+A: All classes are No-Gi Brazilian Jiu-Jitsu and Submission Grappling. There are no
+gi (kimono) classes. Two programs run currently:
+- Kids 7-13 Jiu-Jitsu (ages 7–13)
+- Adult No-Gi Submission Grappling (ages 14 and up)
+
+Q: Do you have classes for kids?
+A: Yes. The Kids 7-13 Jiu-Jitsu program runs Monday through Thursday, 5:15 PM –
+6:00 PM, for ages 7 through 13.
+
+Q: My child is under 7 — do you have a class for them?
+A: Not right now. The youngest current program starts at age 7 (Kids 7-13 Jiu-Jitsu).
+Happy to keep your info on file and reach out if anything opens up for younger kids.
+
+Q: My child is 14 — which class should they attend?
+A: The Adult No-Gi Submission Grappling class. Teens 14 and up train in the adult
+class. Since they're still a minor, the parent stays the booking contact.
+
+Q: Are there classes for beginners?
+A: Yes. All classes accommodate beginners. Beginners and experienced practitioners
+train together in every session. There are no separate beginner-only classes.
+
+Q: Is there a free trial class?
+A: Yes. A one-day free trial is available at any class on the schedule, at no cost
+and with no commitment required.
+
+Q: What should I wear to my first class?
+A: A rashguard or well-fitted shirt and pocketless shorts. Shoes must be removed
+before stepping on the mats.
+
+Q: What do I need to bring?
+A: A water container. Towels and mouthguards are optional.
+
+Q: Do I need a gi (uniform) for class?
+A: No. All classes are No-Gi format. No gi is required. Academy rashguards and
+shorts are available for purchase at the online store or at the gym.
+
+Q: Can I watch a class before joining?
+A: Yes. Prospective students are welcome to observe any practice on the schedule.
+
+Q: Can I get a tour of the gym?
+A: Yes. Call ahead to schedule an appointment or simply show up during a scheduled
+class time.
+
+Q: Can I bring a guest?
+A: Yes. Guests are welcome and encouraged.
+
+Q: Do you allow drop-ins?
+A: Yes. Drop-in sessions are welcome at all classes. Membership pricing varies based
+on several factors like the number of classes per week you'd want to attend and your
+specific training goals. Instructors will discuss all the pricing options and
+membership plans with you during or right after your free trial class. They'll be
+able to assess what program works best for you and provide accurate pricing for your
+situation. The trial class is completely free with no commitment required.
+
+Q: Can I just drop in for one class? How much is it?
+A: Membership pricing varies based on several factors like the number of classes per
+week you'd want to attend and your specific training goals. Instructors will discuss
+all the pricing options and membership plans with you during or right after your
+free trial class. They'll be able to assess what program works best for you and
+provide accurate pricing for your situation. The trial class is completely free with
+no commitment required.
+
+Q: What is the difference between the free trial class and a drop-in class?
+A: The free trial class is for anyone in the area who is new to martial arts. The
+drop-in class is for people with prior training experience, or for visitors who are
+not from the area and are just passing through.
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of classes per
+week you'd want to attend and your specific training goals. Instructors will discuss
+all the pricing options and membership plans with you during or right after your
+free trial class. They'll be able to assess what program works best for you and
+provide accurate pricing for your situation. The trial class is completely free with
+no commitment required.
+
+Q: Are there discounts for military, first responders, or students?
+A: Yes. Discounts are available for military members, first responders, high school
+students, and college students. The specific details and amounts are discussed during
+or after the free trial class with Coach Nick.
+
+Q: Is there a family discount?
+A: Yes. A family plan is available for three or more family members. Details are
+discussed during or after the free trial class.
+
+Q: Is there a sign-up fee?
+A: Yes. A one-time sign-up fee applies at the time of enrollment. The specific
+amount is discussed during or after the free trial class.
+
+Q: Can I cancel my membership?
+A: Yes. There are no cancellation fees.
+
+Q: Can I pause my membership?
+A: Yes. If a pause is needed, members should notify the academy as soon as possible.
+
+Q: What payment methods are accepted?
+A: Cash and card payments are both accepted.
+
+Q: Are there private lessons available?
+A: Yes. Private lessons are available. Details about duration and pricing are
+discussed with the instructor during or after the free trial class.
+
+Q: How are belt promotions handled?
+A: There is no testing for belt promotions. Students are promoted based on three
+factors: (1) training consistency, (2) competitiveness with peers on the competition
+or practice mat, and (3) skill improvement in standing situations, guard, and
+pinning situations.
+
+Q: Can parents watch their children during class?
+A: Yes, though space is limited. Parents are encouraged to drop off their children.
+
+Q: Are there classes specifically for women?
+A: There are no separate women's classes. All classes are inclusive and open to
+everyone.
+
+Q: What is the student-to-instructor ratio?
+A: Ranges from 1 coach to 6 students up to 1 coach to 20 students depending on
+attendance.
+
+Q: What are the cleanliness protocols?
+A: The gym is cleaned before and after every class. Mats are vacuumed and then
+sprayed with a disinfectant, deodorizer, fungicide, and virucide. All other areas
+are also vacuumed and cleaned with disinfectant.
+
+Q: Is there a bullying policy?
+A: Zero tolerance. Coach Nick immediately addresses and investigates any incident,
+and actions are taken based on the findings.
+
+Q: What is the gym's conduct policy?
+A: The academy takes pride in a culture that emphasizes respecting others at all
+times and prioritizing learning over winning. Fun and respect are the core values
+on the mat.
+
+Q: Are there self-defense classes?
+A: There are no classes specifically titled "self-defense," but every practice
+includes standing situations — hand fighting and standing up while being held down
+— which are core self-defense skills. Coach Nick's Protective Security training and
+career experience are woven into practices.
+
+Q: Does the academy use the Constraint-Led Approach (CLA)?
+A: Yes. Vacaville Grappling Academy uses the Constraint-Led Approach (CLA) as part
+of its training methodology.
+
+Q: What is the Constraint-Led Approach (CLA)?
+A: The Constraint-Led Approach (CLA) is a skill development framework rooted in
+ecological dynamics research. Rather than relying on repetitive drilling of isolated
+techniques, CLA uses targeted restrictions — called constraints — to shape training
+scenarios. Athletes are guided to discover practical solutions organically through
+dynamic, interactive situations. The three types of constraints used are task
+constraints (the goal or objective of the drill), environmental constraints (factors
+related to space, time, or conditions), and individual constraints (limitations
+related to the athlete's capabilities or focus). Training under CLA develops
+adaptability, pattern recognition under pressure, and skills that transfer directly
+to live sparring.
+
+Q: Do you offer online classes?
+A: No online classes are available at this time.
+
+Q: Is Wi-Fi available?
+A: No.
+
+Q: Are there locker rooms?
+A: There are cubbies for personal storage and a single bathroom available.
+
+Q: Can members bring their own equipment?
+A: Yes. The only equipment needed is appropriate attire (rashguard or well-fitted
+shirt, pocketless shorts) and a water container.
+
+Q: Can I host a seminar or training event at the gym?
+A: Yes. Seminars and training events can be hosted at the gym.
+
+Q: Is there a City of Vacaville partnership?
+A: Yes. The academy is partnered with the City of Vacaville for the Youth Program.
+Measure M funds through the City can be used toward youth memberships if applicable.
+
+Q: How do I sign up or book a trial class?
+A: The best way to get started is to book a free trial class. The trial class is
+available at any class on the schedule, completely free, with no commitment required.
+
+Q: What happens if I have a question that can't be answered here?
+A: The free trial class is the best opportunity to get personalized answers from
+Coach Nick directly. Questions about grappling goals, experience level, training
+programs, pricing, and City of Vacaville Measure M fund eligibility are all
+addressed during or after the trial session.
+
+================================================================================
+SECTION 9 — COACH AND TEAM
+================================================================================
+
+Coach Nick Hernandez — Owner and Head Coach
+
+Background: Coach Nick and his family have been part of the Vacaville community
+since 2009. He is a U.S. Air Force veteran with a deep passion for health and
+physical fitness.
+
+BJJ Training History: Began Brazilian Jiu-Jitsu in 2018. Started training under
+Professor Cleidson Ramos of Apex BJJ Academy Vacaville in 2020.
+
+Additional Training: Has attended seminars focused on coaching and practice design.
+Has trained at multiple gyms throughout California. Has competed in boxing, football,
+and BJJ. Uses Protective Security training and career experience to integrate
+self-defense skills into every practice.
+
+Medical Certifications: Active EMT, CPR, and AED certifications. Medical equipment
+is on standby during all classes.
+
+================================================================================
+SECTION 10 — ACCOMMODATIONS AND SPECIAL NEEDS
+================================================================================
+
+Special Needs: Accommodations are available for members with special needs.
+Cases are handled individually.
+
+Allergies and Emergencies: In the event of any emergency, EMS will be called. Coach
+Nick is an EMT with medical equipment on standby. No specific allergy accommodations
+are built into the facility beyond standard emergency response.
+
+================================================================================
+SECTION 11 — TRIAL CLASS BOOKING — CONVERSATION CONTEXT
+================================================================================
+
+The free trial class is the primary entry point for all new members. It is available
+at any class on the schedule at no cost and with no commitment required.
+
+The trial class is also the setting where all personalized questions are addressed
+directly by Coach Nick. This includes questions about membership pricing, program
+structure, training frequency, professional discount eligibility, family plan
+options, Measure M fund eligibility, experience level assessment, and individual
+grappling goals.
+
+The booking process requires five pieces of information per person: full legal name,
+email address, phone number, date of birth, and parent or guardian information if
+the student is under 18. Each of these is required by the registration system,
+insurance requirements, state legal waiver regulations, and safety protocols.
+
+When booking for multiple people (e.g., a parent and children), each person requires
+their own complete set of the five fields above. For minors, the parent or guardian
+profile is created first and the minor's profile is linked to it.
+
+Program routing is determined by date of birth and confirmed against the booking
+calendar. Available programs:
+- Kids 7-13 Jiu-Jitsu: ages 7–13
+- Adult No-Gi Submission Grappling: ages 14 and up (teens 14-17 train in the adult class; parent remains the booking contact)
+- Under 7: no program currently available
+
+Phone and text: 707-232-2500
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================
+Version 2.3.2-DEPLOY | Updated: April 22, 2026
+Source: Vacaville Grappling Academy KB v2.0.0-working (April 18, 2026)
+Knowledge Base Type: Pure Context and Facts — No Behavioral Instructions
+Status: Ready for deployment to CloseBot Knowledge Library

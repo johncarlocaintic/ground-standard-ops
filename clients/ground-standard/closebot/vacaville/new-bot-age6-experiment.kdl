@@ -1,0 +1,843 @@
+__CONFIG__ {
+    conversationReason "You are \"Emma\", a front desk team member at Vacaville Grappling Academy, a No-Gi grappling and Brazilian Jiu-Jitsu academy in Vacaville, California. You introduce yourself by name on first contact. The contact reached out because they're interested in trying a class — your job is to qualify their interest, gather the information needed to book them into a free trial class, and complete the booking through the GHL booking system.\n\nONE QUESTION AT A TIME. Never stack multiple questions in a single message. Keep messages conversational and concise — short sentences, plain language, no corporate tone.\n\nFACTUAL QUESTIONS about the academy (classes, schedule, location, policies, coach, what to wear, what to bring, CLA methodology, etc.) are answered from the knowledge library. If an answer is not in the knowledge library, do not fabricate one — redirect the contact to the free trial class where the coach can answer directly.\n\nPRICING RESPONSE. Do not state specific pricing figures under any circumstance — no membership rates, sign-up fees, private lesson rates, drop-in fees, or discount percentages. When a contact asks about pricing, membership costs, fees, sign-up costs, discounts, or any related financial question, respond with this exact message:\n\n\"Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.\"\n\nPHONE NUMBER RULE. Do not volunteer the academy's phone number. Sign-up happens through the booking system, not via phone. Only share the phone number (707-232-2500) if the contact explicitly asks for it.\n\nFRICTION HANDLING. If a contact is reluctant to share required information (name, date of birth, email, phone), use the Data Collection Friction Handling guidance in the knowledge library. Do not push. Briefly explain why each field matters (student profile creation, insurance/waiver compliance, class confirmations, emergency contact). If they still decline, do not force — offer to have a team member follow up.\n\nSILVER TONGUE FALLBACK. When a contact asks something you cannot confidently answer, steer toward the free trial class as the setting where the coach can answer directly. Use this as a last resort, not a default deflection.\n\nBOOKING LANGUAGE. Do not use booking, scheduling, or appointment language outside the GHL Booking node. Before the booking step, frame the action as \"coming in to try a class\" or \"training with us\" — never \"book an appointment.\"\n\nMINORS. Kids cannot book themselves. Every booking that includes a minor must collect the parent or guardian's full contact info first (name, date of birth, email, phone). The minor's trial class is attached to the parent/guardian profile.\n\nWRESTLING. The academy focuses on No-Gi Brazilian Jiu-Jitsu and Submission Grappling. Wrestling techniques are taught within the grappling curriculum, but there is no standalone wrestling program. If a contact specifically asks about wrestling, acknowledge that grappling includes wrestling elements and point toward the free trial as the best way to experience it.\n\nGOAL. Your single objective is to help the contact (or their child) book a free trial class. You are not a salesperson — you're a helpful front-desk person making it easy for someone to try training."
+    businessInformation "The company name is Vacaville Grappling Academy. It is a No-Gi Brazilian Jiu-Jitsu and Submission Grappling academy located in Vacaville, California."
+    prohibitedWords
+}
+
+Source id="n01_source" {
+    globalAgentTools {
+        _ "EnableLibraryContext"
+        _ "EnableGhlBooking"
+    }
+    Next handle="n02_getname"
+    __position -2500.0 0.0
+}
+
+MultiObjective id="n02_getname" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank true
+            Variable "contact.first_name"
+            Title "Get Name"
+            Description "Determine the contact's first name to build rapport"
+            id "obj_getname"
+            Prompt "Introduce yourself briefly as Emma from Vacaville Grappling Academy, then ask for the contact's name."
+        }
+    }
+    __dynamicVariables
+    Next handle="n03_interest"
+    __position -2200.0 0.0
+}
+
+MultiObjective id="n03_interest" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.interest_level"
+            Title "Gauge Interest"
+            Description "Determine if the contact is interested in trying a free trial class"
+            id "obj_interest"
+            Prompt "Ask if the contact is interested in coming in to try a free trial class. Keep it casual — mention it's free with no commitment."
+        }
+    }
+    __dynamicVariables
+    Next handle="n04_interest_check"
+    __position -1900.0 0.0
+}
+
+Comparator id="n04_interest_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Interested in Free Trial?"
+    __dynamicVariables
+    AIExpression "The contact is interested in trying a free trial class based on their response: {{nodes.n03_interest.result[0]}}"
+    True handle="n06_whofor_ask"
+    False handle="n05_convince"
+    __position -1600.0 0.0
+}
+
+Conversation id="n05_convince" {
+    ExtraPrompt "Answer any questions the contact has about the academy, classes, coach Nick, schedule, or what to expect. Gently mention that the free trial class is the best way to experience the academy firsthand — no cost, no commitment. If they still decline, thank them and let them know they can come in anytime."
+    __dynamicVariables
+    Next handle="EOC"
+    __position -1600.0 300.0
+}
+
+MultiObjective id="n06_whofor_ask" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.program_interest"
+            Title "Who Is This For"
+            Description "Determine who the free trial is for — the adult contact themselves, their kid(s), or both the adult and their kid(s)"
+            id "obj_whofor"
+            Prompt "Ask if the trial class is for them (the adult), their kid or kids, or for both them and their kid(s). One simple question."
+        }
+    }
+    __dynamicVariables
+    Next handle="n07_whofor_switch"
+    __position -1300.0 0.0
+}
+
+AISwitch id="n07_whofor_switch" {
+    UseAI true
+    Title "Route By Enrollee Type"
+    __dynamicVariables
+    Description "Based on the contact's answer about who the class is for: {{nodes.n06_whofor_ask.result[0]}}"
+    AiCases {
+        _ {
+            id "case_adult_only"
+            CaseName "Just the adult contact, for themselves"
+        }
+        _ {
+            id "case_kid_only"
+            CaseName "Just the kid or kids, adult is inquiring on their behalf"
+        }
+        _ {
+            id "case_both"
+            CaseName "Both the adult and their kid or kids together"
+        }
+    }
+    AiCases:0 handle="n08_tag_adult"
+    AiCases:1 handle="n09_tag_youth"
+    AiCases:2 handle="n10_tag_both"
+    __position -1000.0 0.0
+}
+
+ModifyTags id="n08_tag_adult" {
+    Title "Tag: adult"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_adult"
+            Tag "adult"
+        }
+    }
+    Next handle="n11_adult_lastname"
+    __position -700.0 -300.0
+}
+
+ModifyTags id="n09_tag_youth" {
+    Title "Tag: youth"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_youth"
+            Tag "youth"
+        }
+    }
+    Next handle="n11_adult_lastname"
+    __position -700.0 0.0
+}
+
+ModifyTags id="n10_tag_both" {
+    Title "Tag: adult + youth"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_both_adult"
+            Tag "adult"
+        }
+        _ {
+            id "tag_both_youth"
+            Tag "youth"
+        }
+    }
+    Next handle="n11_adult_lastname"
+    __position -700.0 300.0
+}
+
+MultiObjective id="n11_adult_lastname" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.last_name"
+            Title "Adult Last Name"
+            Description "Determine the primary adult contact's last name for their student profile"
+            id "obj_adult_lastname"
+            Prompt "Ask for the contact's last name. If this is for their kid, explain briefly that we need it to set up their profile as the guardian."
+        }
+    }
+    __dynamicVariables
+    Next handle="n12_adult_dob"
+    __position -400.0 0.0
+}
+
+MultiObjective id="n12_adult_dob" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.date_of_birth"
+            Title "Adult Date of Birth"
+            Description "Determine the primary adult contact's date of birth"
+            id "obj_adult_dob"
+            Prompt "Ask for the contact's date of birth. Briefly mention it's for the student profile and insurance/waiver requirements."
+        }
+    }
+    __dynamicVariables
+    Next handle="n13_adult_email"
+    __position -100.0 0.0
+}
+
+MultiObjective id="n13_adult_email" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Adult Email"
+            Description "Determine the primary adult contact's email address"
+            id "obj_adult_email"
+            Prompt "Ask for the contact's email address. Briefly mention it's for class confirmations and schedule updates."
+        }
+    }
+    __dynamicVariables
+    Next handle="n14_adult_phone"
+    __position 200.0 0.0
+}
+
+MultiObjective id="n14_adult_phone" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.phone"
+            Title "Adult Phone"
+            Description "Determine the primary adult contact's phone number"
+            id "obj_adult_phone"
+            Prompt "Ask for the contact's phone number. Briefly mention it's for class reminders and emergency contact."
+        }
+    }
+    __dynamicVariables
+    Next handle="n15_book_this_adult_check"
+    __position 500.0 0.0
+}
+
+Comparator id="n15_book_this_adult_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Book This Adult?"
+    __dynamicVariables
+    AIExpression "The contact indicated that the trial class is either for themselves as an adult or for both them and their kid(s), based on: {{nodes.n06_whofor_ask.result[0]}}"
+    True handle="n16_book_adult_nogi"
+    False handle="n20_kid1_info"
+    __position 800.0 0.0
+}
+
+Booking id="n16_book_adult_nogi" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Submission Grappling"
+    Title "Book Adult No-Gi Submission Grappling"
+    Description "Book a free trial class for {{contact.first_name}} {{contact.last_name}} in the Adult No-Gi Submission Grappling program."
+    FailedTag "concierge - failed booking"
+    Next handle="n17_confirm_adult"
+    __position 1100.0 -300.0
+}
+
+Statement id="n17_confirm_adult" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Adult Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the adult's free trial class booking — include the date, time, class name, and remind them of what to wear (rashguard or fitted shirt, pocketless shorts) and bring (water)."
+    Next handle="n18_tag_booked_adult"
+    __position 1400.0 -300.0
+}
+
+ModifyTags id="n18_tag_booked_adult" {
+    Title "Tag: appointment booked (adult)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_booked_adult"
+            Tag "appointment booked"
+        }
+    }
+    Next handle="n19_has_kids_check"
+    __position 1700.0 -300.0
+}
+
+Comparator id="n19_has_kids_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Also Booking Kids?"
+    __dynamicVariables
+    AIExpression "The contact indicated that the trial class is also for their kid or kids, based on: {{nodes.n06_whofor_ask.result[0]}}"
+    True handle="n20_kid1_info"
+    False handle="n40_anyone_else_1"
+    __position 2000.0 -300.0
+}
+
+MultiObjective id="n20_kid1_info" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_name"
+            Title "Kid 1 Full Name"
+            Description "Determine the first kid's full name"
+            id "obj_kid1_name"
+            Prompt "Ask for the kid's full name (first and last)."
+        }
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_birthday"
+            Title "Kid 1 Date of Birth"
+            Description "Determine the first kid's date of birth"
+            id "obj_kid1_dob"
+            Prompt "Ask for the kid's date of birth. Mention it's to place them in the right age-appropriate program."
+        }
+    }
+    __dynamicVariables
+    Next handle="n20a_kid1_age6_check"
+    __position 2300.0 0.0
+}
+
+Comparator id="n20a_kid1_age6_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Kid 1 Age 6 Check"
+    __dynamicVariables
+    AIExpression "The current year is 2026. A child whose date of birth is {{contact.youth_birthday}} is exactly 6 years old right now — not 5, not 7. Answer TRUE only if they are exactly 6."
+    True handle="n25_age6_notify"
+    False handle="n21_kid1_age_switch"
+    __position 2450.0 0.0
+}
+
+AISwitch id="n21_kid1_age_switch" {
+    UseAI true
+    Title "Kid 1 Age Routing"
+    __dynamicVariables
+    Description "The current year is 2026. Based on the kid's date of birth {{contact.youth_birthday}}, compute their current age in years and choose the correct case. Age 6 has no program and should go to the no-program case. Ages 3-5, 7-13, and 10-14 each have their own program."
+    AiCases {
+        _ {
+            id "case_kid1_age_3_5"
+            CaseName "Age 3, 4, or 5 years old"
+        }
+        _ {
+            id "case_kid1_age_6"
+            CaseName "Exactly 6 years old - no program available"
+        }
+        _ {
+            id "case_kid1_age_7_13"
+            CaseName "Age 7, 8, 9, 10, 11, 12, or 13 years old (Kids 7-13 program)"
+        }
+        _ {
+            id "case_kid1_age_10_14"
+            CaseName "Age 10, 11, 12, 13, or 14 years old (Kids 10-14 program, overlap possible with 7-13)"
+        }
+    }
+    AiCases:0 handle="n22_book_kid1_3_5"
+    AiCases:1 handle="n25_age6_notify"
+    AiCases:2 handle="n23_book_kid1_7_13"
+    AiCases:3 handle="n24_book_kid1_10_14"
+    __position 2600.0 0.0
+}
+
+Booking id="n22_book_kid1_3_5" {
+    __dynamicVariables
+    CalendarName "Kids 3-5 BJJ"
+    Title "Book Kids 3-5 BJJ (Kid 1)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 3-5 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n26_confirm_kid1"
+    __position 2900.0 -300.0
+}
+
+Booking id="n23_book_kid1_7_13" {
+    __dynamicVariables
+    CalendarName "Kids 7-13 Jiu-Jitsu"
+    Title "Book Kids 7-13 Jiu-Jitsu (Kid 1)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 7-13 Jiu-Jitsu program."
+    FailedTag "concierge - failed booking"
+    Next handle="n26_confirm_kid1"
+    __position 2900.0 0.0
+}
+
+Booking id="n24_book_kid1_10_14" {
+    __dynamicVariables
+    CalendarName "Kids 10-14 BJJ"
+    Title "Book Kids 10-14 BJJ (Kid 1)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 10-14 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n26_confirm_kid1"
+    __position 2900.0 300.0
+}
+
+Statement id="n25_age6_notify" {
+    Attachment ""
+    MoveOn true
+    UseAI true
+    Title "Age 6 No Program"
+    __dynamicVariables
+    Statement "Politely inform the contact that there is no program currently available for age 6. The closest programs are Kids 3-5 BJJ (ages 3-5) and Kids 7-13 Jiu-Jitsu (ages 7-13). Encourage them to check back as program availability may change."
+    Next handle="n40_anyone_else_1"
+    __position 2900.0 600.0
+}
+
+Statement id="n26_confirm_kid1" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Kid 1 Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the kid's free trial class booking — include the date, time, program name, and remind the parent of what their kid should wear (rashguard or fitted shirt, pocketless shorts) and bring (water)."
+    Next handle="n27_tag_booked_kid1"
+    __position 3200.0 0.0
+}
+
+ModifyTags id="n27_tag_booked_kid1" {
+    Title "Tag: appointment booked (kid 1)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_booked_kid1"
+            Tag "appointment booked"
+        }
+    }
+    Next handle="n40_anyone_else_1"
+    __position 3500.0 0.0
+}
+
+AISwitch id="n40_anyone_else_1" {
+    UseAI true
+    Title "Anyone Else To Book 1"
+    __dynamicVariables
+    Description "Ask the contact if there is anyone else they want to book a free trial for — another kid, another adult (like a buddy or partner), or if they are done."
+    AiCases {
+        _ {
+            id "case_another_kid_1"
+            CaseName "Yes, they want to book another kid"
+        }
+        _ {
+            id "case_another_adult_1"
+            CaseName "Yes, they want to book another adult (not themselves, like a friend or buddy)"
+        }
+        _ {
+            id "case_done_1"
+            CaseName "No, they are done, no one else to book"
+        }
+    }
+    AiCases:0 handle="n41_kid2_info"
+    AiCases:1 handle="n70_adult2_info"
+    AiCases:2 handle="n80_reminders"
+    __position 3800.0 0.0
+}
+
+MultiObjective id="n41_kid2_info" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_name"
+            Title "Kid 2 Full Name"
+            Description "Determine the second kid's full name"
+            id "obj_kid2_name"
+            Prompt "Ask for the next kid's full name."
+        }
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_birthday"
+            Title "Kid 2 Date of Birth"
+            Description "Determine the second kid's date of birth"
+            id "obj_kid2_dob"
+            Prompt "Ask for the kid's date of birth for program placement."
+        }
+    }
+    __dynamicVariables
+    Next handle="n41a_kid2_age6_check"
+    __position 4100.0 0.0
+}
+
+Comparator id="n41a_kid2_age6_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Kid 2 Age 6 Check"
+    __dynamicVariables
+    AIExpression "Based on the date of birth {{contact.youth_birthday}}, the kid is exactly 6 years old (not 5, not 7, exactly 6). There is no program available for age 6."
+    True handle="n46_age6_notify_2"
+    False handle="n42_kid2_age_switch"
+    __position 4250.0 0.0
+}
+
+AISwitch id="n42_kid2_age_switch" {
+    UseAI true
+    Title "Kid 2 Age Routing"
+    __dynamicVariables
+    Description "The current year is 2026. Based on the second kid's date of birth {{contact.youth_birthday}}, compute their current age and choose the correct case. Age 6 has no program."
+    AiCases {
+        _ {
+            id "case_kid2_age_3_5"
+            CaseName "Age 3, 4, or 5 years old"
+        }
+        _ {
+            id "case_kid2_age_6"
+            CaseName "Exactly 6 years old - no program available"
+        }
+        _ {
+            id "case_kid2_age_7_13"
+            CaseName "Age 7 through 13 years old"
+        }
+        _ {
+            id "case_kid2_age_10_14"
+            CaseName "Age 10 through 14 years old, Kids 10-14 program"
+        }
+    }
+    AiCases:0 handle="n43_book_kid2_3_5"
+    AiCases:1 handle="n46_age6_notify_2"
+    AiCases:2 handle="n44_book_kid2_7_13"
+    AiCases:3 handle="n45_book_kid2_10_14"
+    __position 4400.0 0.0
+}
+
+Booking id="n43_book_kid2_3_5" {
+    __dynamicVariables
+    CalendarName "Kids 3-5 BJJ"
+    Title "Book Kids 3-5 BJJ (Kid 2)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 3-5 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n47_confirm_kid2"
+    __position 4700.0 -300.0
+}
+
+Booking id="n44_book_kid2_7_13" {
+    __dynamicVariables
+    CalendarName "Kids 7-13 Jiu-Jitsu"
+    Title "Book Kids 7-13 Jiu-Jitsu (Kid 2)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 7-13 Jiu-Jitsu program."
+    FailedTag "concierge - failed booking"
+    Next handle="n47_confirm_kid2"
+    __position 4700.0 0.0
+}
+
+Booking id="n45_book_kid2_10_14" {
+    __dynamicVariables
+    CalendarName "Kids 10-14 BJJ"
+    Title "Book Kids 10-14 BJJ (Kid 2)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 10-14 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n47_confirm_kid2"
+    __position 4700.0 300.0
+}
+
+Statement id="n46_age6_notify_2" {
+    Attachment ""
+    MoveOn true
+    UseAI true
+    Title "Age 6 No Program (Kid 2)"
+    __dynamicVariables
+    Statement "Politely inform the contact that there is no program currently available for age 6."
+    Next handle="n50_anyone_else_2"
+    __position 4700.0 600.0
+}
+
+Statement id="n47_confirm_kid2" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Kid 2 Appointment"
+    __dynamicVariables
+    Statement "Politely confirm this kid's free trial booking — date, time, program name, and gear/water reminders."
+    Next handle="n48_tag_booked_kid2"
+    __position 5000.0 0.0
+}
+
+ModifyTags id="n48_tag_booked_kid2" {
+    Title "Tag: appointment booked (kid 2)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_booked_kid2"
+            Tag "appointment booked"
+        }
+    }
+    Next handle="n50_anyone_else_2"
+    __position 5300.0 0.0
+}
+
+AISwitch id="n50_anyone_else_2" {
+    UseAI true
+    Title "Anyone Else To Book 2"
+    __dynamicVariables
+    Description "Ask the contact if there is still anyone else they want to book — another kid (third one), another adult (not them, like a buddy), or done."
+    AiCases {
+        _ {
+            id "case_another_kid_2"
+            CaseName "Yes, another kid - this would be their third kid"
+        }
+        _ {
+            id "case_another_adult_2"
+            CaseName "Yes, another adult, like a friend or buddy"
+        }
+        _ {
+            id "case_done_2"
+            CaseName "No, done, no more to book"
+        }
+    }
+    AiCases:0 handle="n51_kid3_info"
+    AiCases:1 handle="n70_adult2_info"
+    AiCases:2 handle="n80_reminders"
+    __position 5600.0 0.0
+}
+
+MultiObjective id="n51_kid3_info" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_name"
+            Title "Kid 3 Full Name"
+            Description "Determine the third kid's full name"
+            id "obj_kid3_name"
+            Prompt "Ask for this kid's full name."
+        }
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.youth_birthday"
+            Title "Kid 3 Date of Birth"
+            Description "Determine the third kid's date of birth"
+            id "obj_kid3_dob"
+            Prompt "Ask for this kid's date of birth for program placement."
+        }
+    }
+    __dynamicVariables
+    Next handle="n51a_kid3_age6_check"
+    __position 5900.0 0.0
+}
+
+Comparator id="n51a_kid3_age6_check" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Kid 3 Age 6 Check"
+    __dynamicVariables
+    AIExpression "Based on the date of birth {{contact.youth_birthday}}, the kid is exactly 6 years old (not 5, not 7, exactly 6). There is no program available for age 6."
+    True handle="n56_age6_notify_3"
+    False handle="n52_kid3_age_switch"
+    __position 6050.0 0.0
+}
+
+AISwitch id="n52_kid3_age_switch" {
+    UseAI true
+    Title "Kid 3 Age Routing"
+    __dynamicVariables
+    Description "The current year is 2026. Based on the third kid's date of birth {{contact.youth_birthday}}, compute current age. Age 6 has no program."
+    AiCases {
+        _ {
+            id "case_kid3_age_3_5"
+            CaseName "Age 3, 4, or 5"
+        }
+        _ {
+            id "case_kid3_age_6"
+            CaseName "Exactly 6 years old - no program available"
+        }
+        _ {
+            id "case_kid3_age_7_13"
+            CaseName "Age 7 through 13"
+        }
+        _ {
+            id "case_kid3_age_10_14"
+            CaseName "Age 10 through 14, Kids 10-14 program"
+        }
+    }
+    AiCases:0 handle="n53_book_kid3_3_5"
+    AiCases:1 handle="n56_age6_notify_3"
+    AiCases:2 handle="n54_book_kid3_7_13"
+    AiCases:3 handle="n55_book_kid3_10_14"
+    __position 6200.0 0.0
+}
+
+Booking id="n53_book_kid3_3_5" {
+    __dynamicVariables
+    CalendarName "Kids 3-5 BJJ"
+    Title "Book Kids 3-5 BJJ (Kid 3)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 3-5 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n57_confirm_kid3"
+    __position 6500.0 -300.0
+}
+
+Booking id="n54_book_kid3_7_13" {
+    __dynamicVariables
+    CalendarName "Kids 7-13 Jiu-Jitsu"
+    Title "Book Kids 7-13 Jiu-Jitsu (Kid 3)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 7-13 Jiu-Jitsu program."
+    FailedTag "concierge - failed booking"
+    Next handle="n57_confirm_kid3"
+    __position 6500.0 0.0
+}
+
+Booking id="n55_book_kid3_10_14" {
+    __dynamicVariables
+    CalendarName "Kids 10-14 BJJ"
+    Title "Book Kids 10-14 BJJ (Kid 3)"
+    Description "Book a free trial class for {{contact.youth_name}} in the Kids 10-14 BJJ program."
+    FailedTag "concierge - failed booking"
+    Next handle="n57_confirm_kid3"
+    __position 6500.0 300.0
+}
+
+Statement id="n56_age6_notify_3" {
+    Attachment ""
+    MoveOn true
+    UseAI true
+    Title "Age 6 No Program (Kid 3)"
+    __dynamicVariables
+    Statement "Politely inform the contact that there is no program available for age 6."
+    Next handle="n60_anyone_else_3"
+    __position 6500.0 600.0
+}
+
+Statement id="n57_confirm_kid3" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Kid 3 Appointment"
+    __dynamicVariables
+    Statement "Politely confirm this kid's free trial booking — date, time, program name, gear/water reminders."
+    Next handle="n58_tag_booked_kid3"
+    __position 6800.0 0.0
+}
+
+ModifyTags id="n58_tag_booked_kid3" {
+    Title "Tag: appointment booked (kid 3)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_booked_kid3"
+            Tag "appointment booked"
+        }
+    }
+    Next handle="n60_anyone_else_3"
+    __position 7100.0 0.0
+}
+
+AISwitch id="n60_anyone_else_3" {
+    UseAI true
+    Title "Anyone Else To Book 3"
+    __dynamicVariables
+    Description "Kid cap reached (3 kids). Ask if they want to book an additional adult (like a buddy) or are done. If more kids, inform we will have the team follow up."
+    AiCases {
+        _ {
+            id "case_another_adult_3"
+            CaseName "Another adult, buddy or friend"
+        }
+        _ {
+            id "case_more_kids_overflow"
+            CaseName "More kids to add beyond three — overflow to concierge"
+        }
+        _ {
+            id "case_done_3"
+            CaseName "Done, no more"
+        }
+    }
+    AiCases:0 handle="n70_adult2_info"
+    AiCases:1 handle="n61_tag_concierge_kid_overflow"
+    AiCases:2 handle="n80_reminders"
+    __position 7400.0 0.0
+}
+
+ModifyTags id="n61_tag_concierge_kid_overflow" {
+    Title "Tag: concierge follow-up (extra kids)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_concierge_kids"
+            Tag "concierge - additional kids booking"
+        }
+    }
+    Next handle="n80_reminders"
+    __position 7700.0 300.0
+}
+
+MultiObjective id="n70_adult2_info" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity 60
+            SkipIfNotBlank false
+            Variable "contact.additional_adult_note"
+            Title "Additional Adult Info (Option B)"
+            Description "Capture the additional adult's name so a concierge team member can follow up to complete their booking. Only the name is needed here — the concierge team will gather the rest."
+            id "obj_adult2_info"
+            Prompt "Acknowledge that we will have a team member reach out to them to complete the booking for the additional adult. Ask only for the additional adult's first and last name so the concierge can identify them."
+        }
+    }
+    __dynamicVariables
+    Next handle="n71_tag_concierge_adult"
+    __position 4100.0 500.0
+}
+
+ModifyTags id="n71_tag_concierge_adult" {
+    Title "Tag: concierge follow-up (additional adult)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "tag_concierge_adult"
+            Tag "concierge - additional adult booking"
+        }
+    }
+    Next handle="n80_reminders"
+    __position 4400.0 500.0
+}
+
+Statement id="n80_reminders" {
+    Attachment ""
+    MoveOn true
+    UseAI true
+    Title "Reminders"
+    __dynamicVariables
+    Statement "Give general reminders to {{contact.first_name}} about the academy rules (rashguard or fitted shirt and pocketless shorts, water, shoes off on mats, arrive a few minutes early). Ask if they have any questions before wrapping up."
+    Next handle="n81_openqa"
+    __position 8000.0 0.0
+}
+
+Conversation id="n81_openqa" {
+    ExtraPrompt "Answer any remaining questions the contact has about the academy, classes, what to expect at the trial, coach Nick, the facility, the CLA methodology, or anything else from the knowledge library. Never quote specific pricing figures — redirect pricing questions per the pricing response policy. When the conversation naturally ends, wrap up warmly."
+    __dynamicVariables
+    Next handle="EOC"
+    __position 8300.0 0.0
+}
+
+ScenarioCustom id="n90_scenario_signup" {
+    AllowReEntry ""
+    Priority 50
+    Threshold 7
+    Description "Contact shows clear intent to sign up or book a class (e.g. gives their name, DOB, says they want to enroll, or asks to schedule) before the bot has reached the Who Is This For step."
+    Title "Sign Up Interrupt"
+    __dynamicVariables
+    Next handle="n06_whofor_ask"
+    __position -2500.0 600.0
+}
+
+ScenarioCustom id="n91_scenario_no_additional" {
+    AllowReEntry ""
+    Priority 50
+    Threshold 7
+    Description "Contact has already booked at least one enrollee and is declining any additional bookings."
+    Title "No Additional Booking"
+    __dynamicVariables
+    Next handle="n80_reminders"
+    __position 7400.0 600.0
+}

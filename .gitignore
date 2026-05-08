@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+**/.env
+*.env.secret
+
+# Dependencies
+node_modules/
+
+# Logs
+shared/logs/
+shared/scripts/logs/
+*.log
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Claude Code local-only settings
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+
+# Build / cache
+dist/
+build/
+*.npm-cache/
