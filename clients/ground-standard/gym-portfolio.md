@@ -20,7 +20,7 @@
 | 10 | Artistry Brazilian Jiu-Jitsu | Houston, TX | | |
 | 11 | All In Jiu-Jitsu | | | |
 | 12 | SOMA MVMT | | | |
-| 13 | Plainville | | | No martial arts qualifier in workflow name — full name unconfirmed |
+| 13 | Plainville | | | No martial arts qualifier in workflow name — full name unconfirmed. **No bot — excluded 2026-05-11** |
 | 14 | Vacaville Grappling Academy | | | |
 | 15 | Killer B Combat Academy | | | |
 | 16 | Paragon Simi Valley | | | |
@@ -45,12 +45,12 @@
 | 35 | Jean Jacques Machado Brazilian Jiu-Jitsu | | | |
 | 36 | Royal Jiu-Jitsu | | | |
 | 37 | Mason Dixon Jiu-Jitsu | | | |
-| 38 | Logica Jiu-Jitsu | | | No-Gi only; uses Constraints-Led Approach (CLA) methodology — KB language adapted accordingly |
+| 38 | Logica Jiu-Jitsu | | | No-Gi only; uses Constraints-Led Approach (CLA) methodology — KB language adapted accordingly. **No bot — excluded 2026-05-11** |
 | 39 | Gracie Jiu-Jitsu | | | |
 | 40 | Sugoi Submission | | | |
 | 41 | Universal Mixed Martial Arts | | | |
 | 42 | Hammer Sports & Performance | | | |
-| 43 | Phoenix BJJ | | | |
+| 43 | Phoenix BJJ | | | **No bot — excluded 2026-05-11** |
 | 44 | Lucky Cat Grappling Co. | | | |
 | 45 | Ray Longo MMA | New Milford, CT | | Members-only class logic implemented in KB |
 | 46 | Montgomery Brazilian Jiu-Jitsu | | | |
