@@ -4,6 +4,32 @@
 
 ---
 
+## Two recurring KB instructional language patterns — now standardized (2026-05-09)
+
+Found these same issues in both the Academy Eden Prairie and Academy of Jiu-Jitsu Scottsdale KB builds. They are likely present in all existing GSA KBs not yet reviewed.
+
+**Pattern 1 — "See Section X" cross-references**
+Example: `"Open Mat is invite only — see Section 5 for requirements."`
+Why it's a problem: The bot reads this as an instruction to look somewhere else. It inlines the reference as a directive rather than providing the fact.
+Fix: Delete the cross-reference. Inline the actual fact where it's needed.
+`"Open Mat is invite only. Requires coach invite."` ← correct
+
+**Pattern 2 — Pricing bypass via "discussed directly with staff"**
+Example: `"Pricing details are discussed directly with instructors and staff."`
+Why it's a problem: Gives the bot a resolution path — "talk to staff" — that bypasses the trial booking node entirely. The bot will tell leads to contact someone rather than routing them to the booking flow.
+Fix: Remove the "discussed with staff" clause. Pricing section should only state that pricing is not published and that a free trial is available.
+`"Membership pricing is not published. A free trial class is available with no commitment required."` ← correct
+
+**Pattern 3 — Imperative hygiene / policy lines**
+Example: `"Shower before class."` / `"Wash your gi after every class."`
+Why it's a problem: Phrased as commands. Bot may output these as directives to leads.
+Fix: Restate as declarative policy facts.
+`"Showering before class is required."` / `"Gi uniforms are washed after every class."` ← correct
+
+Apply these checks to every KB before deploy. They will not be caught by a simple regex scan — requires line-by-line reading.
+
+---
+
 ## EOD reports must always use bullet format (2026-05-08)
 
 First EOD produced this session used flat unformatted lines. User corrected immediately — every body line must be prefixed with `•`. Updated `eod-report` SKILL.md to enforce this. Memory saved. Apply regardless of skill state.

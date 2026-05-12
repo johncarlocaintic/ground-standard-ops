@@ -1,6 +1,6 @@
 # tasks/todo.md
 
-**Last updated:** 2026-05-08
+**Last updated:** 2026-05-09
 
 ---
 
@@ -15,6 +15,37 @@ Glenn has taken over GSA operations from JC. Handoff repo integrated — active 
 - Vacaville production bookings land on `JFnXPPTB9Rkgyi0KOUv8` (Coach Nick's calendar)
 
 **Verify currency before relying on the above.** Some IDs in seed memory and lessons are point-in-time observations from April 2026.
+
+---
+
+## KB pipeline — new builds (2026-05-09)
+
+Two KBs built from scratch today. Both are DRAFT-clean and waiting on client-side gap confirmations before they can be promoted to DEPLOY.
+
+### Academy Eden Prairie (gym #25)
+**File:** `clients/ground-standard/closebot/academy_eden_prairie_kb_v1.1.0_DRAFT.txt`
+**Status:** Clean draft — no instructional language, no Section references, no action directives
+**Gaps pending client confirmation:**
+- Trial class booking process (URL / GHL calendar link?)
+- Front desk hours outside class schedule
+- Explicit Sunday closed confirmation
+- Staff / instructor names
+- Email address
+- Social media handles
+- Intro offer details (free trial class or different promotion?)
+
+### Academy of Jiu-Jitsu Scottsdale (gym #? — not in portfolio yet)
+**File:** `clients/ground-standard/closebot/academy_of_jiu_jitsu_scottsdale_kb_v1.2.0_DRAFT.txt`
+**Status:** Clean draft — no instructional language
+**Note:** `AJJScottsdale.com` (on flyer) is dead. Working URL is `academyofjiujitsuscottsdale.com`
+**Gaps pending client confirmation:**
+- Competition class — on website, no schedule slot on flyer; confirm days/times/eligibility
+- Staff / instructor full names and bios (only "Darin" from contact email)
+- Gi requirement for trial students (loaner available?)
+- Explicit Sunday closed confirmation
+- Social media handles
+- Adult Advanced prerequisites (open enrollment or Fundamentals required first?)
+- Little Tigers program description
 
 ---
 
