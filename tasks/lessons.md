@@ -4,6 +4,27 @@
 
 ---
 
+## KB build pipeline — operational patterns established (2026-05-14)
+
+Six KBs built this session (Gracie Farmington Valley, Gracie JJ East San Jose, Grit JJ & Muay Thai, Hammer Sports, Hamptons JJ, Inverted Gear Academy). Patterns that apply to every future KB build:
+
+**Mismatch table ships with the KB — always.**
+User corrected mid-session: the ClickUp vs website mismatch table must be included in the same response as the KB draft. Do not wait to be asked. Saved to memory `feedback_kb_mismatch_after_build.md`. Two-column format when sources are clean; split into two tables when ClickUp itself has internal conflicts (grid vs text note).
+
+**Live schedule links are frequently broken.**
+Schedule.hjj.live, Gymdesk links, bjjlink.com all returned 404 or empty shell pages during Hamptons JJ build. Do not treat external schedule links as reliable. Use ClickUp grid image as primary; flag currency as a critical gap.
+
+**Cancel/Freeze screenshots = member personal data. Exclude entirely.**
+Hamptons JJ ClickUp had a cancel/freeze log screenshot with member names and dates. Correct action: exclude entirely — don't reference the screenshot, don't extract any data from it, don't note its existence in the KB.
+
+**Voicemail scripts at top of ClickUp pages = operational content. Exclude from KB.**
+Several ClickUp PDFs open with a voicemail script block. This is staff-facing operational content. Never include in the KB.
+
+**Internal ClickUp conflicts are common and must be surfaced.**
+Hammer Sports and Grit both had schedule grids that disagreed with text notes in the same PDF. These are not ClickUp-vs-website mismatches — they are source credibility issues. Flag both versions explicitly in Section 11 and in the mismatch table under a separate "Internal ClickUp Conflicts" heading. Use the grid as primary when no other indication is given.
+
+---
+
 ## Two recurring KB instructional language patterns — now standardized (2026-05-09)
 
 Found these same issues in both the Academy Eden Prairie and Academy of Jiu-Jitsu Scottsdale KB builds. They are likely present in all existing GSA KBs not yet reviewed.

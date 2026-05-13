@@ -1,6 +1,6 @@
 # tasks/todo.md
 
-**Last updated:** 2026-05-09
+**Last updated:** 2026-05-14
 
 ---
 
@@ -18,34 +18,24 @@ Glenn has taken over GSA operations from JC. Handoff repo integrated — active 
 
 ---
 
-## KB pipeline — new builds (2026-05-09)
+## KB pipeline — DRAFT builds (all pending client gap confirmations)
 
-Two KBs built from scratch today. Both are DRAFT-clean and waiting on client-side gap confirmations before they can be promoted to DEPLOY.
+All KBs below are v1.0.0-DRAFT. None are cleared for deploy. Files are at
+`clients/ground-standard/closebot/{gym-slug}/`. All committed and pushed to
+`idriss/kb-builds` branch on `idrizz28/gs-bot-builds` (2026-05-14).
 
-### Academy Eden Prairie (gym #25)
-**File:** `clients/ground-standard/closebot/academy_eden_prairie_kb_v1.1.0_DRAFT.txt`
-**Status:** Clean draft — no instructional language, no Section references, no action directives
-**Gaps pending client confirmation:**
-- Trial class booking process (URL / GHL calendar link?)
-- Front desk hours outside class schedule
-- Explicit Sunday closed confirmation
-- Staff / instructor names
-- Email address
-- Social media handles
-- Intro offer details (free trial class or different promotion?)
-
-### Academy of Jiu-Jitsu Scottsdale (gym #? — not in portfolio yet)
-**File:** `clients/ground-standard/closebot/academy_of_jiu_jitsu_scottsdale_kb_v1.2.0_DRAFT.txt`
-**Status:** Clean draft — no instructional language
-**Note:** `AJJScottsdale.com` (on flyer) is dead. Working URL is `academyofjiujitsuscottsdale.com`
-**Gaps pending client confirmation:**
-- Competition class — on website, no schedule slot on flyer; confirm days/times/eligibility
-- Staff / instructor full names and bios (only "Darin" from contact email)
-- Gi requirement for trial students (loaner available?)
-- Explicit Sunday closed confirmation
-- Social media handles
-- Adult Advanced prerequisites (open enrollment or Fundamentals required first?)
-- Little Tigers program description
+| Gym | File | Critical gaps |
+|---|---|---|
+| Academy Eden Prairie | `academy_eden_prairie_kb_v1.1.0_DRAFT.txt` | Trial process, instructor names, email |
+| Academy of JJ Scottsdale | `academy_of_jiu_jitsu_scottsdale_kb_v1.2.0_DRAFT.txt` | Competition class schedule, Gi loaner |
+| Centerline Jiu-Jitsu | `centerline_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | See Section 11 |
+| Champion Martial Arts | `champion_martial_arts_kb_v1.0.0_DRAFT.txt` | See Section 11 |
+| Gracie Farmington Valley | `gracie_farmington_valley_kb_v1.0.0_DRAFT.txt` | Schedule transition, Wed booking scope |
+| Gracie JJ East San Jose | `gracie_jj_san_jose_kb_v1.0.0_DRAFT.txt` | Kids program name + age (Jr. Grapplers 7–12 vs Bullyproof 5–12); Cardio Kickboxing status |
+| Grit JJ & Muay Thai | `grit_jiu_jitsu_muay_thai_kb_v1.0.0_DRAFT.txt` | 4 internal Muay Thai schedule conflicts; minimum age (4 vs 5) |
+| Hammer Sports & Performance | `hammer_sports_performance_kb_v1.0.0_DRAFT.txt` | Mon/Fri kids class type; Mon 8 AM class name |
+| Hamptons Jiu-Jitsu | `hamptons_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Westhampton address (different street number); email domain typo; bot scope (1 vs 2 locations); all live schedule links 404 |
+| Inverted Gear Academy | `inverted_gear_academy_kb_v1.0.0_DRAFT.txt` | Address conflict — different cities (Bethlehem vs Allentown); trial duration (1-day vs 7-day); Nelson Puentes rank (2nd vs 3rd degree) |
 
 ---
 
