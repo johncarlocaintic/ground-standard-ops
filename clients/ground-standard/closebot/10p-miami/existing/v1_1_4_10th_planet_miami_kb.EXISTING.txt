@@ -1,0 +1,254 @@
+10TH PLANET JIU-JITSU MIAMI - KNOWLEDGE BASE
+
+Version: 1.1.4
+Date: April 7, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v1.1.4 | April 7, 2026
+- Updated FAQ "How do I sign up or get started?": removed phone, email, and website from answer — booking handled via GHL
+
+v1.1.3 | April 7, 2026
+- Added FAQ: How do I sign up / get started / join? — redirects contact to book a free trial class
+
+v1.1.2 | April 7, 2026
+- Updated Business Phone: (786) 809-0599 → 786-891-2900 (Business Info, Contact section, FAQs)
+- Updated Website: 10thplanetmiami.com → https://www.10thplanetmiami.com/ (Business Info, Contact section, FAQs)
+
+v1.1.1 | April 7, 2026
+- Updated FAQ: "Are there discounts or family pricing available?" — replaced staff-redirect wording with standard pricing redirect
+- Added FAQ: Drop-in / Drop-off pricing — explicit redirect to instructor consultation using standard pricing redirect
+- Updated Client Action Items #4: Open Mat Pricing — redirect now applied; pending client confirmation for full policy detail
+
+v1.1.0 | March 17, 2026
+- Updated MEMBERSHIP & PRICING section: replaced specific tier/price details with free trial redirect
+- Updated FAQ: "What are the membership pricing options?" answer updated to match new pricing redirect
+
+v1.0.0 | March 17, 2026
+- Initial release
+- Source: 10th Planet Jiu-Jitsu Miami intake PDF and business contact record
+- Sensitive data excluded: personal full name, personal cell number, default password
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Industry: Martial Arts Training
+Business Name: 10th Planet Jiu-Jitsu Miami
+Location: 6315 Miramar Parkway, Miramar, FL 33023
+
+Description: 10th Planet Jiu-Jitsu Miami is a martial arts training gym located in Miramar, Florida, offering Brazilian Jiu-Jitsu and striking programs for all ages and skill levels. The gym follows the 10th Planet Jiu-Jitsu system, which emphasizes a no-gi, submission-focused approach to grappling. Programs are available for Tiny Tots, kids, teens, and adults, with separate tracks for fundamentals, all-levels, advanced, and competition training.
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address: 6315 Miramar Parkway, Miramar, FL 33023
+Business Phone: 786-891-2900
+Business Email: 10thplanetmiamijj@gmail.com
+Website: https://www.10thplanetmiami.com/
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+MONDAY:
+8:00 AM - 10:00 AM     Morning Fundamentals
+10:00 AM - 12:00 PM    Pro Training (Invite Only)
+5:30 PM - 6:00 PM      Tiny Tots Class
+6:00 PM - 7:00 PM      Kids Class
+7:00 PM - 8:00 PM      Adults Fundamentals
+8:00 PM - 10:00 PM     Adults Advanced
+
+TUESDAY:
+10:00 AM - 12:00 PM    Afternoon All Levels
+5:00 PM - 6:00 PM      Kids Striking Class
+6:00 PM - 7:00 PM      Kids Class
+7:00 PM - 8:00 PM      Kickboxing
+8:00 PM - 10:00 PM     All Levels Adult Jiu-Jitsu
+
+WEDNESDAY:
+8:00 AM - 10:00 AM     Morning Fundamentals
+10:00 AM - 12:00 PM    Afternoon All Levels
+5:30 PM - 6:00 PM      Tiny Tots Class
+6:00 PM - 7:00 PM      Kids Jiu-Jitsu Class
+7:00 PM - 8:00 PM      Adults Fundamentals
+8:00 PM - 10:00 PM     Adults Advanced
+
+THURSDAY:
+10:00 AM - 12:00 PM    Afternoon All Levels
+5:00 PM - 6:00 PM      Kids Striking Class
+6:00 PM - 7:00 PM      Kids Class
+7:00 PM - 8:00 PM      Kickboxing
+8:00 PM - 10:00 PM     All Levels Adult Jiu-Jitsu
+
+FRIDAY:
+8:00 AM - 10:00 AM     Morning Fundamentals
+10:00 AM - 12:00 PM    Afternoon All Levels
+5:30 PM - 6:00 PM      Tiny Tots Class
+6:00 PM - 7:00 PM      Kids Class
+7:00 PM - 9:00 PM      Adults All Levels Competition Class
+
+SATURDAY:
+9:00 AM - 11:00 AM     MMA Class
+
+SUNDAY:
+11:00 AM - 1:00 PM     Open Mat
+
+================================================================================
+CLASS TYPES & PROGRAMS
+================================================================================
+
+TINY TOTS CLASS:
+A jiu-jitsu introductory class designed for the youngest students. Available Monday, Wednesday, and Friday from 5:30 PM to 6:00 PM.
+
+KIDS CLASS:
+A jiu-jitsu class for children covering foundational techniques in a structured environment. Available Monday, Tuesday, Wednesday, Thursday, and Friday evenings.
+
+KIDS JIU-JITSU CLASS (WEDNESDAY):
+A dedicated jiu-jitsu session for kids on Wednesday evenings from 6:00 PM to 7:00 PM.
+
+KIDS STRIKING CLASS:
+A striking-focused class for kids covering stand-up techniques. Available Tuesday and Thursday from 5:00 PM to 6:00 PM.
+
+MORNING FUNDAMENTALS:
+A fundamentals-focused adult jiu-jitsu class held in the morning. Available Monday, Wednesday, and Friday from 8:00 AM to 10:00 AM.
+
+AFTERNOON ALL LEVELS:
+An all-levels adult jiu-jitsu session held in the afternoon. Available Tuesday, Wednesday, Thursday, and Friday from 10:00 AM to 12:00 PM.
+
+ADULTS FUNDAMENTALS:
+An evening fundamentals class for adult students. Available Monday and Wednesday from 7:00 PM to 8:00 PM.
+
+ADULTS ADVANCED:
+An advanced adult jiu-jitsu class for students with prior training experience. Available Monday and Wednesday from 8:00 PM to 10:00 PM.
+
+ALL LEVELS ADULT JIU-JITSU:
+An adult jiu-jitsu class open to all skill levels. Available Tuesday and Thursday from 8:00 PM to 10:00 PM.
+
+KICKBOXING:
+A stand-up striking class for adults. Available Tuesday and Thursday from 7:00 PM to 8:00 PM.
+
+ADULTS ALL LEVELS COMPETITION CLASS:
+A Friday evening class focused on competition preparation for adult students. Available Friday from 7:00 PM to 9:00 PM.
+
+MMA CLASS:
+A mixed martial arts class combining grappling and striking disciplines. Available Saturday from 9:00 AM to 11:00 AM.
+
+OPEN MAT:
+An unstructured training session where students can drill, roll, and practice freely. Available Sunday from 11:00 AM to 1:00 PM.
+
+PRO TRAINING:
+An advanced training session reserved for invited participants only. Available Monday from 10:00 AM to 12:00 PM. Attendance is by invitation.
+
+================================================================================
+WHAT TO WEAR & WHAT TO BRING
+================================================================================
+
+ATTIRE:
+Attendees wear form-fitting shirts and shorts or sweatpants. Clothing with exposed zippers is not permitted on the mats.
+
+REQUIRED ITEMS:
+A photo ID and a water bottle are required for all class attendees.
+
+ARRIVAL:
+Students arrive at least 5 minutes before class begins and check in with the instructor upon arrival.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+PRICING INFORMATION:
+Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Where is 10th Planet Jiu-Jitsu Miami located?
+A: The gym is located at 6315 Miramar Parkway, Miramar, FL 33023.
+
+Q: How do I contact the gym?
+A: The gym can be reached by phone at 786-891-2900, by email at 10thplanetmiamijj@gmail.com, or through the website at https://www.10thplanetmiami.com/.
+
+Q: What style of jiu-jitsu is taught here?
+A: 10th Planet Jiu-Jitsu Miami follows the 10th Planet Jiu-Jitsu system, which is a no-gi, submission-focused grappling system.
+
+Q: Are there classes for kids?
+A: Yes. Kids classes are available Monday through Friday in the evenings. The Tiny Tots Class is available Monday, Wednesday, and Friday at 5:30 PM. A Kids Striking Class is available Tuesday and Thursday at 5:00 PM. General Kids Classes run Monday through Friday in the 6:00 PM to 7:00 PM time block.
+
+Q: Are there morning classes available?
+A: Yes. Morning Fundamentals classes are held Monday, Wednesday, and Friday from 8:00 AM to 10:00 AM. Afternoon All Levels sessions run Tuesday through Friday from 10:00 AM to 12:00 PM.
+
+Q: What are the membership pricing options?
+A: Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Q: Is there a class for beginners?
+A: Yes. The Morning Fundamentals and Adults Fundamentals classes are specifically structured for students building foundational skills. The All Levels classes on Tuesday and Thursday evenings also welcome students at any stage of training.
+
+Q: Is there an advanced class?
+A: Yes. Adults Advanced classes are held Monday and Wednesday from 8:00 PM to 10:00 PM.
+
+Q: Does the gym offer striking classes?
+A: Yes. Kickboxing classes are available Tuesday and Thursday from 7:00 PM to 8:00 PM. An MMA class combining grappling and striking is held Saturday from 9:00 AM to 11:00 AM. A Kids Striking Class is also available Tuesday and Thursday at 5:00 PM.
+
+Q: Is there Open Mat available?
+A: Yes. Open Mat is held every Sunday from 11:00 AM to 1:00 PM.
+
+Q: What should I wear to class?
+A: Form-fitting shirts and shorts or sweatpants without exposed zippers are appropriate for all classes.
+
+Q: What do I need to bring?
+A: A photo ID and a water bottle are required for attendance.
+
+Q: When should I arrive?
+A: Arriving at least 5 minutes before class starts is recommended. Students check in with the instructor upon arrival.
+
+Q: Is there a competition class?
+A: Yes. An All Levels Competition Class is held Friday evenings from 7:00 PM to 9:00 PM and is open to adult students preparing for competition.
+
+Q: How do I qualify for Pro Training?
+A: Pro Training is invite only. Details regarding eligibility and invitation criteria are discussed directly with gym staff and instructors.
+
+Q: Is there a class that fits a busy daytime schedule?
+A: Yes. Morning Fundamentals (Mon/Wed/Fri, 8:00 AM - 10:00 AM) and Afternoon All Levels (Tue-Fri, 10:00 AM - 12:00 PM) are available for those who prefer training earlier in the day.
+
+Q: How do I sign up or get started?
+A: The best way to get started is to book a free trial class. The trial class is completely free with no commitment required.
+
+Q: Can I try the gym before committing to a membership?
+A: Introductory visit details and any trial class options are best confirmed directly with staff by calling 786-891-2900, emailing 10thplanetmiamijj@gmail.com, or visiting https://www.10thplanetmiami.com/. Staff can walk through the options and help find a good starting point based on schedule and goals.
+
+Q: Are there discounts or family pricing available?
+A: Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Q: What is the drop-in or drop-off price?
+A: Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+================================================================================
+CLIENT ACTION ITEMS
+================================================================================
+
+The following items could not be resolved from the available source materials and require client input before the bot can answer these questions accurately.
+
+1. FREE TRIAL / INTRO CLASS POLICY: The source PDF does not mention whether a complimentary first class or intro visit is offered. The FAQ currently directs contacts to reach out to staff for this information. Client should confirm and provide the exact trial or intro class policy so this can be documented factually.
+
+2. CANCELLATION & MEMBERSHIP TERMS: No cancellation policy, contract length, or notice requirements are stated in the source. Client should confirm: minimum commitment period (if any), notice required to cancel, and any cancellation fees.
+
+3. KIDS STRIKING CLASS SCHEDULING NOTE: The Tuesday schedule lists the Kids Striking Class with the note "(begins August 1st)." The Thursday schedule lists the same class without this qualifier. It is unclear whether this note reflects a past launch date or whether the class schedule has since been updated. Client should confirm whether the Kids Striking Class is now a fully regular offering on both days or if there are any scheduling limitations.
+
+4. OPEN MAT PRICING: It is not stated whether Sunday Open Mat is included in all membership tiers or carries a separate drop-in fee. The bot now applies the standard pricing redirect for any drop-in or drop-off pricing questions. Client should still confirm the full Open Mat access policy per membership type so this can eventually be documented factually.
+
+5. PRO TRAINING ELIGIBILITY: The source states Pro Training is invite only but provides no eligibility criteria. Client should provide details so the bot can give contacts a useful answer if they ask how to qualify.
+
+6. STAFF INFORMATION: No instructor names, credentials, or bios are present in the source. Client should provide staff profiles if the bot should be able to answer questions about instructors or the coaching team.
+
+7. GI/NO-GI EQUIPMENT REQUIREMENTS: No specific gear list is provided beyond attire and water bottle. Client should clarify whether any additional equipment (mouth guard, rash guard, etc.) is required or recommended for any specific classes, particularly the MMA and competition classes.
+
+================================================================================
+
+Version 1.1.4 | Updated: April 7, 2026
+Knowledge Base Type: Pure Context & Facts - No Behavioral Instructions
