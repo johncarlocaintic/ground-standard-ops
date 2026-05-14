@@ -36,6 +36,10 @@ All KBs below are v1.0.0-DRAFT. None are cleared for deploy. Files are at
 | Hammer Sports & Performance | `hammer_sports_performance_kb_v1.0.0_DRAFT.txt` | Mon/Fri kids class type; Mon 8 AM class name |
 | Hamptons Jiu-Jitsu | `hamptons_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Westhampton address (different street number); email domain typo; bot scope (1 vs 2 locations); all live schedule links 404 |
 | Inverted Gear Academy | `inverted_gear_academy_kb_v1.0.0_DRAFT.txt` | Address conflict — different cities (Bethlehem vs Allentown); trial duration (1-day vs 7-day); Nelson Puentes rank (2nd vs 3rd degree) |
+| All In Jiu-Jitsu | `all_in_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Website inaccessible (bteamnj.com down); phone, email, instructors, all policies unknown |
+| Artistry BJJ | `artistry_bjj_kb_v1.0.0_DRAFT.txt` | Second location (Georgetown TX) — website only, not in ClickUp; confirm active/inactive |
+| Bodega Jiu-Jitsu | `bodega_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Adult class schedule completely missing from ClickUp |
+| Breathe Jiu-Jitsu | `breathe_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Georgetown TX phantom address (same as Artistry — likely GSA template artifact); confirm |
 
 ---
 
