@@ -40,6 +40,7 @@ All KBs below are v1.0.0-DRAFT. None are cleared for deploy. Files are at
 | Artistry BJJ | `artistry_bjj_kb_v1.0.0_DRAFT.txt` | Second location (Georgetown TX) — website only, not in ClickUp; confirm active/inactive |
 | Bodega Jiu-Jitsu | `bodega_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Adult class schedule completely missing from ClickUp |
 | Breathe Jiu-Jitsu | `breathe_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Georgetown TX phantom address (same as Artistry — likely GSA template artifact); confirm |
+| Ballantyne Martial Arts | `ballantyne_martial_arts_kb_v1.0.0_DRAFT.txt` | Instructor conflict (Sensei Sparks in source vs 4 new names on website — rebrand); full schedule not confirmed (hours only) |
 
 ---
 
