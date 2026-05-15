@@ -40,7 +40,7 @@ Generator script: `shared/scripts/maintenance/generate_kb_factcheck_report.py`
 | Hammer Sports & Performance | `hammer_sports_performance_kb_v1.0.0_DRAFT.txt` | Mon/Fri kids class type; Mon 8 AM class name; **RESOLVED (2026-05-15): Personal Training added to programs list** |
 | Hamptons Jiu-Jitsu | `hamptons_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): address + email updated; TRX added; Howard Greenberg added**; bot scope (1 vs 2 locations) still open; additional instructor credentials pending |
 | Inverted Gear Academy | `inverted_gear_academy_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): address updated to Allentown (804 N Gilmore St) throughout KB**; trial duration + Nelson rank still open |
-| All In Jiu-Jitsu | `all_in_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **bteamnj.com STILL DOWN (2026-05-15 second attempt)**; phone, email, instructors, adult schedule all unknown |
+| All In Jiu-Jitsu | `all_in_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): correct site = allinjiujitsu.com; phone + email + attire added**; instructor names still unknown; business name canonical form still open |
 | Artistry BJJ | `artistry_bjj_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown phantom closed; Competition Class added to programs** — schedule still needed |
 | Bodega Jiu-Jitsu | `bodega_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Adult class schedule completely missing; **RESOLVED (2026-05-15): Genesis adult beginner class added to programs — details still pending client confirmation** |
 | Breathe Jiu-Jitsu | `breathe_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown TX phantom closed — note and Section 11 gap removed from KB** |
