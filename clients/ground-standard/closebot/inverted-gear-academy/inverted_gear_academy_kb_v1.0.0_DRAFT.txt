@@ -8,10 +8,9 @@ Type: Context & Facts Only — No Behavioral Instructions
 Primary Sources: ClickUp (2026-05-14 PDF); invertedgearacademy.com (2026-05-14)
 Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
 
-NOTE ON ADDRESS CONFLICT: ClickUp shows 1114 W Broad St, Bethlehem PA 18018.
-The website shows 804 N Gilmore St, Allentown PA 18109. These are different
-cities and different addresses. This is a CRITICAL conflict. Do not deploy with
-this gap unresolved. See Section 11.
+NOTE ON ADDRESS: Website confirms 804 N Gilmore St, Allentown PA 18109 as the
+current address. ClickUp showed 1114 W Broad St, Bethlehem PA 18018. Website
+takes priority — KB updated to Allentown. See Section 11.
 
 NOTE ON TRIAL DURATION: ClickUp intro text states "1-day free trial (unlimited
 classes during the week)." The ClickUp FAQ states "7 day free trial." These
@@ -32,12 +31,11 @@ SECTION 1 — BUSINESS INFORMATION
 
 Full Business Name: Inverted Gear Academy
 Industry: Brazilian Jiu-Jitsu / Martial Arts
-Location: Bethlehem, PA (ClickUp); Allentown, PA (website) — confirm. See
-Section 11.
+Location: Allentown, PA
 Region: Lehigh Valley, PA
 
-Description: Inverted Gear Academy is a Brazilian Jiu-Jitsu academy in the
-Lehigh Valley, Pennsylvania, co-founded by Nelson Puentes and Hillary Witt.
+Description: Inverted Gear Academy is a Brazilian Jiu-Jitsu academy in
+Allentown, Pennsylvania, co-founded by Nelson Puentes and Hillary Witt.
 The academy offers Gi and No-Gi BJJ for adults and youth across beginner
 through advanced tracks. Youth programs are divided into Cubs (ages 4–6) and
 Juniors (ages 7–12). The academy holds SafeSport certification and maintains
@@ -60,9 +58,7 @@ Programs Offered:
 SECTION 2 — CONTACT AND LOCATION
 ================================================================================
 
-Address (ClickUp): 1114 W Broad St, Bethlehem, PA 18018
-[ GAP — Address conflict: website shows 804 N Gilmore St, Allentown, PA 18109.
-Different city. Confirm correct address before deploy. See Section 11. ]
+Address: 804 N Gilmore St, Allentown, PA 18109
 
 Location detail: Lower level. Rear entrance facing Raspberry St. Upper level
 is occupied by Mobility Doc.
@@ -276,10 +272,8 @@ offers adult and youth BJJ programs from beginner through advanced, including
 a dedicated youth program and a ladies-only class.
 
 Q: Where is Inverted Gear Academy located?
-A: The academy is at 1114 W Broad St, Bethlehem, PA 18018 — lower level with
+A: The academy is at 804 N Gilmore St, Allentown, PA 18109 — lower level with
 a rear entrance facing Raspberry St.
-[ NOTE — Address conflict: website shows a different city. Confirm before
-deploy. See Section 11. ]
 
 Q: What is the phone number?
 A: [ GAP — Two phone numbers appear: (484) 657-4674 and (484) 559-8900.
@@ -352,9 +346,9 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 ================================================================================
 
 [ CRITICAL ]
-[ ] Address conflict — ClickUp shows 1114 W Broad St, Bethlehem PA 18018.
-    Website shows 804 N Gilmore St, Allentown PA 18109. These are different
-    cities. Confirm the correct current address before any deploy.
+[x] RESOLVED (2026-05-15): Address — Website confirms 804 N Gilmore St,
+    Allentown PA 18109 as the correct address. KB updated throughout.
+    (ClickUp had 1114 W Broad St, Bethlehem PA — website takes priority.)
 
 [ ] Trial duration — ClickUp intro text: "1-day free trial (unlimited classes
     during the week)." ClickUp FAQ: "7 day free trial." Confirm correct policy.

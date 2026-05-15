@@ -8,10 +8,6 @@ Type: Context & Facts Only — No Behavioral Instructions
 Primary Sources: ClickUp (2026-05-14 PDF); artistrybjj.com (2026-05-14)
 Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
 
-NOTE ON SECOND LOCATION: The website lists a second address (181 Market St,
-Suite 106, Georgetown, TX 78626) not referenced in ClickUp. Confirm whether
-a second location is active and whether the bot covers both. See Section 11.
-
 NOTE ON SIGN-UP PROCESS: ClickUp states students "just show up" for a first
 class; formal membership sign-up is done in person. Confirm whether any
 online or phone pre-registration is expected before a first visit.
@@ -39,6 +35,7 @@ Programs Offered:
 - No-Gi BJJ (adult)
 - Gi BJJ (adult)
 - MMA (adult)
+- Competition Class (confirm schedule — see Section 11)
 - Kids Gi BJJ
 - Kids Striking
 - Open Mat
@@ -53,10 +50,6 @@ Email: info@artistrybjj.com
 Website: artistrybjj.com
 Facebook: facebook.com/artistrybjj
 Instagram: instagram.com/artistrybjj_htx
-
-[ GAP — Second location (181 Market St, Suite 106, Georgetown, TX 78626)
-appears on website but not in ClickUp. Confirm whether this location is active
-and whether the bot covers it. See Section 11. ]
 
 ================================================================================
 SECTION 3 — FULL CLASS SCHEDULE
@@ -290,17 +283,17 @@ commitment required.
 SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 ================================================================================
 
-[ CRITICAL ]
-[ ] Second location — Website lists 181 Market St, Suite 106, Georgetown, TX
-    78626 as a second address. Not mentioned in ClickUp. Confirm whether this
-    location is active and whether the bot should reference it.
-
 [ ADDITIONAL GAPS ]
 [ ] Sunday schedule — Not confirmed from any available source. Confirm whether
     the academy is open on Sundays.
 
+[x] RESOLVED (2026-05-15): Georgetown TX secondary address — Website confirmed
+    the address does not appear on current site. Identified as GSA website
+    template artifact; not a real second location.
+
 [ ] Competition class — Website lists a Competition class. Not in the ClickUp
-    schedule. Confirm current status and schedule.
+    schedule. Confirm schedule and whether this is a separate enroll or open
+    to all members.
 
 [ ] Belt promotion policy — Not confirmed from available sources.
 

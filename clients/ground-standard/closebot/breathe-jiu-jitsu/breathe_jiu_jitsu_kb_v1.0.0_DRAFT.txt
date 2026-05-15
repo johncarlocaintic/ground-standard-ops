@@ -8,12 +8,6 @@ Type: Context & Facts Only — No Behavioral Instructions
 Primary Sources: ClickUp (2026-05-14 PDF); breathejiujitsu.com (2026-05-14)
 Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
 
-NOTE ON SECONDARY WEBSITE ADDRESS: The website lists 181 Market Street,
-Suite 106, Georgetown, TX 78626 as a second location. This same address
-appears on another GSA client website and is almost certainly a website
-template artifact. The ClickUp makes no reference to a Texas location.
-Confirm whether a Georgetown TX location exists. See Section 11.
-
 NOTE ON TRIAL POLICY: Free trial consists of 3 free classes expiring 1 week
 after the initial visit (Little Kids Program: 2 weeks). The free trial is
 advertised as one-time use for Suffolk County residents. New students must
@@ -439,12 +433,6 @@ no commitment required.
 ================================================================================
 SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 ================================================================================
-
-[ CRITICAL ]
-[ ] Georgetown TX secondary address — Website shows 181 Market Street, Suite
-    106, Georgetown, TX 78626 as a second location. ClickUp makes no reference
-    to this. The same address appears on another GSA client's website. Confirm
-    whether this is a real second location or a website template artifact.
 
 [ ADDITIONAL GAPS ]
 [ ] Wednesday Gi Basics (5:15 PM) and Big Kids Gi (5:00 PM) overlap — these

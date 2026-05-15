@@ -13,12 +13,12 @@ NOTE ON TWO LOCATIONS: Hamptons Jiu-Jitsu operates at two confirmed locations
 the Southampton location. Confirm whether this bot covers one or both
 locations. See Section 11.
 
-NOTE ON WESTHAMPTON ADDRESS: ClickUp shows 48 Old Riverhead Rd. Website shows
-68 Old Riverhead Rd. Confirm correct Westhampton Beach address. See Section 11.
+NOTE ON WESTHAMPTON ADDRESS: Website shows 68 Old Riverhead Rd. ClickUp showed
+48 Old Riverhead Rd. Website value used — 68. See Section 11.
 
-NOTE ON EMAIL DOMAIN: ClickUp shows info@hamptonsjujitsu.com. Website contact
-shows greg@hamptonsjiujitsu.com. These are different domains (missing an "s").
-Confirm correct public-facing email. See Section 11.
+NOTE ON EMAIL: Website contact shows greg@hamptonsjiujitsu.com. ClickUp showed
+info@hamptonsjujitsu.com (different prefix and missing "s" in domain). Website
+value used. See Section 11.
 
 NOTE ON SCHEDULE: The Southampton schedule is read from the ClickUp schedule
 grid image. The live schedule link (Schedule.hjj.live) was inaccessible at
@@ -57,6 +57,8 @@ Programs Offered:
 - Advanced BJJ
 - Open Mat
 - Private Lessons
+- TRX Fitness (confirm whether HJJ program or Southampton Gym amenity —
+  see Section 11)
 
 ================================================================================
 SECTION 2 — CONTACT AND LOCATION
@@ -68,15 +70,13 @@ Located: Inside Southampton Gym, back room. Signs are outside the front door
 of the Southampton Gym. The address itself is the Southampton Gym, located
 in front of the Southampton library.
 Phone: (631) 900-2780
-Email: info@hamptonsjujitsu.com
+Email: greg@hamptonsjiujitsu.com
 Website: hamptonsjiujitsu.com
 Facebook: facebook.com/hamptonsjiujitsu
 Live Schedule: Schedule.hjj.live
 
 WESTHAMPTON BEACH
-Address: Old Riverhead Rd, Westhampton Beach, NY 11978
-[ GAP — Street number conflict: ClickUp shows 48, website shows 68.
-Confirm correct address. See Section 11. ]
+Address: 68 Old Riverhead Rd, Westhampton Beach, NY 11978
 
 [ GAP — Phone and email specific to the Westhampton Beach location not
 confirmed from available sources. See Section 11. ]
@@ -250,6 +250,8 @@ BLACK BELT INSTRUCTORS:
 - Josiah Tyte — Black Belt (under Rich Byrne and Greg Melita)
 - Jim MacWhinnie — Black Belt (under Greg Melita and Randy Nieves)
 - Greg Johnston — Black Belt (promoted by Ramon Flores)
+- Howard Greenberg — Black Belt (credentials not confirmed from available
+  sources; name from website fact-check 2026-05-15)
 
 BROWN BELT INSTRUCTORS:
 - Virva Hinnemo — East Hampton Head Instructor; also holds Brown Belt in
@@ -343,7 +345,7 @@ Q: What is the phone number?
 A: (631) 900-2780.
 
 Q: What is the email?
-A: info@hamptonsjujitsu.com.
+A: greg@hamptonsjiujitsu.com.
 
 Q: What programs are offered?
 A: No-Gi BJJ, Gi BJJ, Muay Thai, MMA, Wrestling, and youth BJJ programs for
@@ -422,12 +424,11 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 ================================================================================
 
 [ CRITICAL ]
-[ ] Westhampton Beach address — ClickUp shows 48 Old Riverhead Rd. Website
-    shows 68 Old Riverhead Rd. Confirm correct street number.
+[x] RESOLVED (2026-05-15): Westhampton Beach address — Website confirms 68 Old
+    Riverhead Rd. KB updated to 68. (ClickUp had 48.)
 
-[ ] Email domain — ClickUp shows info@hamptonsjujitsu.com. Website shows
-    greg@hamptonsjiujitsu.com. These differ by one "s" in the domain and
-    the prefix. Confirm correct public-facing email for the KB.
+[x] RESOLVED (2026-05-15): Email — Website confirms greg@hamptonsjiujitsu.com.
+    KB updated. (ClickUp had info@hamptonsjujitsu.com.)
 
 [ ] Drop-in policy — Westhampton ClickUp FAQ says drop-ins are not allowed.
     Southampton pricing sheet shows a drop-in rate. Confirm per-location
@@ -468,9 +469,17 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
     location not confirmed.
 
 [ ] TRX Fitness / Yoga / Cryotherapy / Sports Performance / Physical Therapy
-    — Listed on the website as specialties. Confirm whether these are
-    Hamptons JJ programs or services offered by the Southampton Gym building
-    that the KB should reference.
+    — Listed on the website as specialties. TRX Fitness added to programs list
+    pending confirmation. Confirm whether these are Hamptons JJ programs or
+    Southampton Gym building amenities. Resolve scope before deploy.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Howard Greenberg — Added to Black Belt instructor list from website.
+    Belt rank and credentials not yet confirmed. Confirm details.
+[ ] James Laspesa / James Lispesa — KB has "James Laspesa." Website may show
+    "James Lispesa." Confirm correct spelling.
+[ ] Additional instructors — Website may list additional staff not yet in KB.
+    Confirm full current roster.
 
 [ ] Social media — Facebook confirmed (facebook.com/hamptonsjiujitsu).
     Instagram not confirmed. Confirm all active social channels.

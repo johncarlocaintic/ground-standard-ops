@@ -1,6 +1,6 @@
 # tasks/todo.md
 
-**Last updated:** 2026-05-15
+**Last updated:** 2026-05-15 (website-priority KB updates applied)
 
 ---
 
@@ -30,22 +30,22 @@ Generator script: `shared/scripts/maintenance/generate_kb_factcheck_report.py`
 
 | Gym | File | Critical gaps / Fact-check status |
 |---|---|---|
-| Academy Eden Prairie | `academy_eden_prairie_kb_v1.1.0_DRAFT.txt` | Trial process, instructor names, email; **NEW (2026-05-15): city conflict — KB = Minneapolis, website = Edina (ZIP 55439)** |
+| Academy Eden Prairie | `academy_eden_prairie_kb_v1.1.0_DRAFT.txt` | Trial process, instructor names, email; **RESOLVED (2026-05-15): city updated to Edina (was Minneapolis) — website confirms ZIP 55439 = Edina** |
 | Academy of JJ Scottsdale | `academy_of_jiu_jitsu_scottsdale_kb_v1.2.0_DRAFT.txt` | Competition class schedule, Gi loaner; **fact-check CLEAN** |
 | Centerline Jiu-Jitsu | `centerline_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | See Section 11; **fact-check CLEAN** |
-| Champion Martial Arts | `champion_martial_arts_kb_v1.0.0_DRAFT.txt` | See Section 11; **NEW (2026-05-15): Silverback Fight Team affiliation not in KB** |
+| Champion Martial Arts | `champion_martial_arts_kb_v1.0.0_DRAFT.txt` | See Section 11; **RESOLVED (2026-05-15): Silverback Fight Team affiliation added to description** |
 | Gracie Farmington Valley | `gracie_farmington_valley_kb_v1.0.0_DRAFT.txt` | Schedule transition, Wed booking scope; **fact-check CLEAN** |
-| Gracie JJ East San Jose | `gracie_jj_san_jose_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): kids program = Gracie Bullyproof ages 5–12 confirmed**; Cardio Kickboxing status still open |
-| Grit JJ & Muay Thai | `grit_jiu_jitsu_muay_thai_kb_v1.0.0_DRAFT.txt` | 4 internal Muay Thai schedule conflicts; minimum age (4 vs 5); **RESOLVED (2026-05-15): phone = 509-392-4548, email = gritjiujitsu@gmail.com confirmed** |
-| Hammer Sports & Performance | `hammer_sports_performance_kb_v1.0.0_DRAFT.txt` | Mon/Fri kids class type; Mon 8 AM class name; **NEW (2026-05-15): Personal Training not in KB** |
-| Hamptons Jiu-Jitsu | `hamptons_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Westhampton = 68 Old Riverhead Rd; email = greg@hamptonsjiujitsu.com**; **NEW: 6 additional instructors + TRX Fitness program not in KB**; bot scope (1 vs 2 locations) still open |
-| Inverted Gear Academy | `inverted_gear_academy_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): website confirms Allentown (804 N Gilmore St) — ClickUp Bethlehem is wrong**; trial duration + Nelson rank still open |
+| Gracie JJ East San Jose | `gracie_jj_san_jose_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): kids program updated to Gracie Bullyproof ages 5–12 throughout KB**; Cardio Kickboxing status still open |
+| Grit JJ & Muay Thai | `grit_jiu_jitsu_muay_thai_kb_v1.0.0_DRAFT.txt` | 4 internal Muay Thai schedule conflicts; minimum age (4 vs 5); **RESOLVED (2026-05-15): phone = 509-392-4548, email = gritjiujitsu@gmail.com — gaps closed in Section 2 + 11** |
+| Hammer Sports & Performance | `hammer_sports_performance_kb_v1.0.0_DRAFT.txt` | Mon/Fri kids class type; Mon 8 AM class name; **RESOLVED (2026-05-15): Personal Training added to programs list** |
+| Hamptons Jiu-Jitsu | `hamptons_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): address + email updated; TRX added; Howard Greenberg added**; bot scope (1 vs 2 locations) still open; additional instructor credentials pending |
+| Inverted Gear Academy | `inverted_gear_academy_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): address updated to Allentown (804 N Gilmore St) throughout KB**; trial duration + Nelson rank still open |
 | All In Jiu-Jitsu | `all_in_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **bteamnj.com STILL DOWN (2026-05-15 second attempt)**; phone, email, instructors, adult schedule all unknown |
-| Artistry BJJ | `artistry_bjj_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown TX phantom confirmed not real; Competition Class confirmed exists** — schedule still needed |
-| Bodega Jiu-Jitsu | `bodega_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Adult class schedule completely missing; **NEW (2026-05-15): 'Genesis' adult beginner class on website not in KB** |
-| Breathe Jiu-Jitsu | `breathe_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown TX phantom confirmed not real** |
-| Ballantyne Martial Arts | `ballantyne_martial_arts_kb_v1.0.0_DRAFT.txt` | Instructor conflict (Sensei Sparks in source vs 4 new names on website — rebrand); kids min age (source = 6, website = 4–15); full schedule (hours only) |
-| Mason Dixon *(existing)* | `existing/v1.1.3_mason_dixon_kb.EXISTING.txt` | **NEW (2026-05-15): email masondixonjj@gmail.com on website, missing from KB** |
+| Artistry BJJ | `artistry_bjj_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown phantom closed; Competition Class added to programs** — schedule still needed |
+| Bodega Jiu-Jitsu | `bodega_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | Adult class schedule completely missing; **RESOLVED (2026-05-15): Genesis adult beginner class added to programs — details still pending client confirmation** |
+| Breathe Jiu-Jitsu | `breathe_jiu_jitsu_kb_v1.0.0_DRAFT.txt` | **RESOLVED (2026-05-15): Georgetown TX phantom closed — note and Section 11 gap removed from KB** |
+| Ballantyne Martial Arts | `ballantyne_martial_arts_kb_v1.0.0_DRAFT.txt` | Instructor conflict (Sensei Sparks in source vs 4 new names on website — rebrand); **RESOLVED (2026-05-15): kids age updated to 4–15 per website**; full schedule (hours only) still open |
+| Mason Dixon *(existing)* | `existing/v1.1.3_mason_dixon_kb.EXISTING.txt` | **RESOLVED (2026-05-15): email masondixonjj@gmail.com added to CONTACT section** |
 | 10th Planet Miami *(existing)* | `existing/v1_1_4_10th_planet_miami_kb.EXISTING.txt` | **fact-check CLEAN — existing KB fully accurate** |
 
 ---

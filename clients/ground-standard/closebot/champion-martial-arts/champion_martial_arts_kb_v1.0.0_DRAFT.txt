@@ -28,9 +28,10 @@ Location: Pasadena, TX
 Description: Champion Martial Arts is a martial arts academy in Pasadena, Texas
 with over 30 years of operation and thousands of students trained. The academy
 offers Judo, Carlson Gracie Brazilian Jiu-Jitsu, and Shotokan Karate across
-recreational and competitive tracks. The academy's guiding philosophy is
-"Be A Champion" — helping every student discover their inner champion on the mat
-and in life through self-defense, discipline, fitness, and competition.
+recreational and competitive tracks. The academy is affiliated with the
+Silverback Fight Team. The academy's guiding philosophy is "Be A Champion" —
+helping every student discover their inner champion on the mat and in life
+through self-defense, discipline, fitness, and competition.
 
 Programs Offered:
 - Judo (USA Judo registered instructors)
@@ -355,6 +356,10 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 [ ] Morning classes vs business hours conflict — ClickUp states business hours
     are Monday–Friday 5 PM – 9 PM. The class schedule shows Tuesday and Thursday
     classes at 7:30 AM and 9:00 AM. Confirm correct operating hours.
+
+[ NEW — 2026-05-15 website fact-check ]
+[x] Silverback Fight Team affiliation added to Section 1 description (found on
+    website; not in ClickUp source).
 
 [ ] Boxing / MMA program status — ClickUp lists MMA-focused Boxing as "in
     progression" (active). Website lists Boxing, Kickboxing, and MMA as

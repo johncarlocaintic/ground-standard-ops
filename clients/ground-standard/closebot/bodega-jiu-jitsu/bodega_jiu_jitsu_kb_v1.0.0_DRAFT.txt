@@ -41,6 +41,8 @@ intensity scaled to each student's experience level. The founders bring together
 expertise in BJJ, Muay Thai, Taekwondo, and boxing.
 
 Programs Offered:
+- Genesis (adult beginner No-Gi program — per website; details pending client
+  confirmation, see Section 11)
 - Adult No-Gi Grappling
 [ GAP — Full adult program list not confirmed. See Section 11. ]
 - Kids Grappling (ages 6–8 and ages 9–12, Saturday)
@@ -104,6 +106,11 @@ Confirm full adult schedule before deploy. See Section 11. ]
 ================================================================================
 SECTION 4 — PROGRAM DESCRIPTIONS
 ================================================================================
+
+GENESIS (ADULT BEGINNER)
+An adult beginner No-Gi program listed on the academy website. Specific
+schedule, format, and enrollment details not confirmed from available sources.
+Confirm with client before deploy.
 
 ADULT NO-GI GRAPPLING
 No-Gi Brazilian Jiu-Jitsu for adults. All classes are 100% live training,
@@ -245,6 +252,11 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 [ ] Adult class schedule — Completely missing from ClickUp. The ClickUp only
     contains the kids schedule. Provide the full adult weekly schedule before
     this KB can be deployed.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Genesis adult beginner program — Listed on website as a separate adult
+    beginner program. Added to KB programs list. Confirm schedule, format,
+    and enrollment details.
 
 [ ADDITIONAL GAPS ]
 [ ] Tuesday and Thursday kids schedule — ClickUp shows Mon/Wed kids at 6 PM.

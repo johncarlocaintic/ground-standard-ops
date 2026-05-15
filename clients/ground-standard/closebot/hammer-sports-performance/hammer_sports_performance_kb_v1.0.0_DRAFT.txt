@@ -46,6 +46,7 @@ Programs Offered:
 - MMA
 - Wrestling (K–8 and High School tracks)
 - Kettlebell
+- Personal Training (confirm details — see Section 11)
 - Open Mat
 - Little Hammer BJJ (youth)
 - Little Hammer Kickboxing (youth)
@@ -348,6 +349,10 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 [ ] Kids start time — Text note says kids classes start at 5:00 PM. Grid
     shows youth wrestling at 5:15 PM and Little Hammer classes at 5:30 PM.
     Confirm correct start time for each kids program.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Personal Training — Listed on website. Schedule, rates, and availability
+    not confirmed from available sources. Confirm with client before deploy.
 
 [ ADDITIONAL GAPS ]
 [ ] Trial class policy — Free trial offer details, number of sessions,

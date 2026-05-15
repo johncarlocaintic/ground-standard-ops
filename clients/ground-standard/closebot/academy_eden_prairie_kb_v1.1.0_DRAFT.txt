@@ -14,10 +14,10 @@ SECTION 1 — BUSINESS INFORMATION
 
 Full Business Name: The Academy Eden Prairie
 Industry: Martial Arts (Muay Thai, Jiu-Jitsu, MMA)
-Location: Minneapolis, MN (Eden Prairie area)
+Location: Edina, MN
 
 Description: The Academy Eden Prairie is a multi-discipline martial arts facility
-in the southwest Minneapolis area. The Academy offers Muay Thai, Gi Jiu-Jitsu,
+in Edina, Minnesota. The Academy offers Muay Thai, Gi Jiu-Jitsu,
 No-Gi Jiu-Jitsu, MMA, and dedicated Kids Martial Arts programs. Programs run for
 children starting at age 4 through adult, with a Women's Only class available on
 Thursday evenings. Classes are structured for all experience levels with separate
@@ -41,7 +41,7 @@ What Is Not Currently Listed on the Schedule:
 SECTION 2 — CONTACT AND LOCATION
 ================================================================================
 
-Address: 7501 Washington Ave S, Minneapolis, MN 55439
+Address: 7501 Washington Ave S, Edina, MN 55439
 Phone: 952-377-8111
 Website: academyedenprairie.com
 

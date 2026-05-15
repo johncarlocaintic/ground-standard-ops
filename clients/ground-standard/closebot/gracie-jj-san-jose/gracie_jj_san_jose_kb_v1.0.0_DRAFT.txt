@@ -8,10 +8,10 @@ Type: Context & Facts Only — No Behavioral Instructions
 Primary Sources: ClickUp (2026-05-14 PDF); gjjsanjose.com (2026-05-14)
 Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
 
-NOTE ON KIDS PROGRAM NAME: ClickUp refers to the youth program as
-"Jr. Grapplers" (ages 7–12). The website lists "Gracie Bullyproof®" (ages 5–12).
-Name and age range differ. Confirm canonical program name and age range.
-See Section 11.
+NOTE ON KIDS PROGRAM NAME: ClickUp refers to the youth program as "Jr. Grapplers"
+(ages 7–12). Website lists "Gracie Bullyproof®" (ages 5–12). Website takes
+priority — program is Gracie Bullyproof, ages 5–12. ClickUp age range and
+name are legacy. See Section 11.
 
 NOTE ON SCHEDULE SOURCE: The IMPORTANT DETAILS table from ClickUp is used as
 the primary schedule reference. The ClickUp schedule screenshot was captured
@@ -45,7 +45,7 @@ Programs Offered:
 - Gracie Combatives (adult beginner — entry point for all new students)
 - Reflex Development (adult intermediate)
 - Master Cycle (adult advanced)
-- Jr. Grapplers / Gracie Bullyproof (youth — ages confirmed in Section 11)
+- Gracie Bullyproof (youth — ages 5–12, per website)
 - Cardio Kickboxing (confirm current status — see Section 11)
 - Kickboxing / Filipino Martial Arts (confirm current status — see Section 11)
 
@@ -76,26 +76,26 @@ before deploy. See Section 11.
 
 --- MONDAY ---
 
-5:30 PM – 6:20 PM    Jr. Grapplers / Youth BJJ
+5:30 PM – 6:20 PM    Gracie Bullyproof
 6:30 PM – 7:30 PM    Master Cycle
 7:30 PM – 8:30 PM    Gracie Combatives
 
 --- TUESDAY ---
 
-5:30 PM – 6:20 PM    Jr. Grapplers / Youth BJJ
+5:30 PM – 6:20 PM    Gracie Bullyproof
 6:30 PM – 7:30 PM    Gracie Combatives
 7:30 PM – 8:30 PM    Master Cycle
 
 --- WEDNESDAY ---
 
-5:30 PM – 6:20 PM    Jr. Grapplers / Youth BJJ
+5:30 PM – 6:20 PM    Gracie Bullyproof
 6:30 PM – 7:30 PM    Reflex Development
 7:30 PM – 8:30 PM    Gracie Combatives
 
 --- THURSDAY ---
 
 11:00 AM – 12:00 PM  Master Cycle
-5:30 PM – 6:20 PM    Jr. Grapplers / Youth BJJ
+5:30 PM – 6:20 PM    Gracie Bullyproof
 6:30 PM – 7:30 PM    Gracie Combatives
 7:30 PM – 8:30 PM    Reflex Development
 
@@ -135,9 +135,9 @@ Advanced program for students who have completed Gracie Combatives. Features
 ground techniques, transitions, submissions, and live rolling. Available
 Monday, Tuesday, Thursday, and Saturday.
 
-JR. GRAPPLERS / GRACIE BULLYPROOF (YOUTH)
-Brazilian Jiu-Jitsu for youth students. Available Monday through Thursday
-evenings. Age range: confirm with client (ClickUp: 7–12; website: 5–12).
+GRACIE BULLYPROOF (YOUTH — AGES 5–12)
+Brazilian Jiu-Jitsu for youth students ages 5–12 (website). Available Monday
+through Thursday evenings.
 
 CARDIO KICKBOXING
 [ GAP — Listed in ClickUp FAQ as an active program. Not listed on current
@@ -300,7 +300,8 @@ A: Master Cycle runs Thursday at 11:00 AM. Reflex Development and Gracie
 Combatives run Saturday mornings.
 
 Q: Are there classes for kids?
-A: Yes. Youth BJJ runs Monday through Thursday evenings at 5:30 PM.
+A: Yes. Gracie Bullyproof runs Monday through Thursday evenings at 5:30 PM
+for youth ages 5–12.
 
 Q: Who teaches the classes?
 A: Julius Canonizado (Coach Julius) is the head instructor and sole Gracie
@@ -357,9 +358,9 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
 ================================================================================
 
 [ CRITICAL ]
-[ ] Kids program name and age range — ClickUp: "Jr. Grapplers" ages 7–12.
-    Website: "Gracie Bullyproof®" ages 5–12. Confirm canonical program name
-    and correct age range.
+[x] RESOLVED (2026-05-15): Kids program name and age range — Website confirms
+    "Gracie Bullyproof®" ages 5–12. KB updated throughout. (ClickUp had
+    "Jr. Grapplers" ages 7–12 — website takes priority.)
 
 [ ] Cardio Kickboxing status — Listed in ClickUp FAQ as active ("Gracie jiu
     jitsu, Cardio kickboxing and Filipino martial arts"). Not listed on current

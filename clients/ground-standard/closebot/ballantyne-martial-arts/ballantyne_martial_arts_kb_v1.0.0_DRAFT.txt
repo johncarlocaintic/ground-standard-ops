@@ -38,8 +38,8 @@ Location: Charlotte, NC
 
 Description: Ballantyne Martial Arts (formerly Sparks Martial Arts) is a
 martial arts academy in Charlotte, North Carolina offering Kickboxing and
-Brazilian Jiu-Jitsu for adults and youth. The academy serves students from
-age 4 through adult with separate Kids Martial Arts and Kids BJJ programs.
+Brazilian Jiu-Jitsu for adults and youth. The academy serves students ages 4
+through adult with separate Kids Martial Arts and Kids BJJ programs.
 All classes are beginner-friendly — new students may join any regular class
 without prior experience. The academy emphasizes personalized instruction,
 self-defense readiness, and student development both on and off the mat.
@@ -47,7 +47,7 @@ self-defense readiness, and student development both on and off the mat.
 Programs Offered:
 - Adult Kickboxing
 - Adult Brazilian Jiu-Jitsu (BJJ)
-- Kids Martial Arts (youth — confirm age range; see Section 11)
+- Kids Martial Arts (youth — ages 4–15 per website)
 - Kids Brazilian Jiu-Jitsu
 - Private Lessons
 - Women's Self Defense (quarterly seminar — not on regular schedule)
@@ -128,11 +128,9 @@ No prior experience required. Classes are structured for beginners through
 advanced students.
 
 KIDS MARTIAL ARTS
-Youth martial arts program for children.
-[ GAP — Age range conflict: source states program begins at age 6; website
-states ages 4–15. Confirm correct age range. See Section 11. ]
-Classes focus on confidence-building, self-defense skills, and bullying
-prevention in a fun, safe environment.
+Youth martial arts program for children ages 4–15 (website). Classes focus on
+confidence-building, self-defense skills, and bullying prevention in a fun,
+safe environment.
 
 KIDS BJJ
 Brazilian Jiu-Jitsu program for youth students. Age range not separately
@@ -386,8 +384,9 @@ SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
     class names, start times, and end times for each day.
 
 [ ADDITIONAL GAPS ]
-[ ] Kids program age range — Source states program begins at age 6. Website
-    states ages 4–15. Confirm correct minimum age and full age range.
+[x] RESOLVED (2026-05-15): Kids program age range — Website confirms ages 4–15.
+    Source data stated age 6 as minimum; website takes priority. Updated
+    throughout KB.
 
 [ ] Friday schedule — Not mentioned in any source. Confirm whether the academy
     is open on Fridays.
