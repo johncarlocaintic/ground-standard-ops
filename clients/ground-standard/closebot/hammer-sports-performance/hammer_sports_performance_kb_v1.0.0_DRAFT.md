@@ -1,0 +1,422 @@
+# HAMMER SPORTS & PERFORMANCE — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); hammertrained.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON INTERNAL SCHEDULE CONFLICTS: The ClickUp PDF contains two
+representations of the kids schedule that do not agree. A text note states
+Kids Mon = BJJ and Kids Fri = MMA. The schedule grid shows Kids Mon 5:30 PM
+= Little Hammer Kickboxing and Kids Fri 5:30 PM = Little Hammer Kickboxing.
+Confirm correct Kids Monday and Friday classes. See Section 11.
+
+NOTE ON MONDAY 8 AM: The schedule grid shows Monday 8:00 AM as Kettlebell.
+An owner note in the same ClickUp document states Monday 8 AM is the No-Gi
+time and 9 AM is standup. These conflict. Confirm correct Monday 8 AM class.
+See Section 11.
+
+NOTE ON SATURDAY / SUNDAY PROGRAMS: The schedule announces Saturday Kids
+Class and Girls Only Sunday wrestling started March 21–22, 2026. Both are
+now active as of the date of this KB.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Hammer Sports & Performance
+Industry: Mixed Martial Arts / Brazilian Jiu-Jitsu / Muay Thai / Wrestling
+Location: Hazlet, NJ
+
+Description: Hammer Sports & Performance is a martial arts and combat sports
+gym in Hazlet, New Jersey. The gym serves two tracks: a fight team for
+competitive athletes and a hobbyist track for recreational and fitness-focused
+members. Programs include Brazilian Jiu-Jitsu (No-Gi and Gi), Muay Thai,
+Kickboxing, Wrestling, MMA, and Kettlebell training. Youth programs run under
+the Little Hammer brand. All memberships include full gym access.
+
+Programs Offered:
+- No-Gi Jiu-Jitsu (Fundamentals and advanced)
+- Gi Jiu-Jitsu (Fundamentals)
+- Muay Thai
+- Kickboxing / Kickboxing Conditioning
+- MMA
+- Wrestling (K–8 and High School tracks)
+- Kettlebell
+- Personal Training (confirm details — see Section 11)
+- Open Mat
+- Little Hammer BJJ (youth)
+- Little Hammer Kickboxing (youth)
+- Girls Only Wrestling (Sunday)
+
+Gym Tracks:
+- Fight Team: competitive training track
+- Hobbyist: recreational and fitness-focused track
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 1719 Union Ave, Hazlet, NJ 07730
+Phone: (732) 795-5626
+Email: hammernation135@gmail.com
+Website: hammertrained.com
+
+Directions: Located on Union Ave (County Road 36), which runs parallel to
+the Garden State Parkway. The gym is past the Chinese restaurant on the
+corner. Nearby landmarks include Veterans Memorial Park on Union Ave,
+Hazlet Plaza, and Holy Family Church on the southern end of Union Ave.
+
+[ GAP — Social media handles not confirmed from available sources. See
+Section 11. ]
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule sourced from ClickUp class schedule grid. Saturday Kids Class and
+Girls Only Sunday are confirmed active (started 3/21–3/22/2026). Confirm
+internal schedule conflicts noted in the header before deploy. See Section 11.
+
+All sparring classes: No live sparring for introductory or new students.
+
+
+### Monday
+
+
+- **8:00 AM** — Kettlebell
+             [ GAP — Owner note indicates 8 AM = No-Gi. Grid shows Kettlebell.
+             Confirm. See Section 11. ]
+- **9:00 AM** — Kickboxing
+- **10:00 AM** — No-Gi Fundamentals
+- **5:30 PM** — Little Hammer Kickboxing (youth)
+             [ GAP — Text note says Mon kids = BJJ. Grid shows Kickboxing.
+             Confirm. See Section 11. ]
+- **6:30 PM** — No-Gi Fundamentals
+- **7:30 PM** — MMA
+
+
+### Tuesday
+
+
+- **5:15 PM** — Wrestling — K–8
+- **6:30 PM** — Kickboxing
+- **7:30 PM** — Gi Fundamentals
+
+
+### Wednesday
+
+
+- **8:00 AM** — Kettlebell
+- **9:00 AM** — Kickboxing
+- **10:00 AM** — Open Mat
+- **5:30 PM** — Little Hammer BJJ (youth)
+- **6:30 PM** — No-Gi Fundamentals
+- **7:30 PM** — Muay Thai
+
+
+### Thursday
+
+
+- **5:15 PM** — Wrestling — K–8
+- **6:30 PM** — Wrestling — High School
+- **8:00 PM** — MMA
+
+
+### Friday
+
+
+- **8:00 AM** — Kettlebell
+- **9:00 AM** — MMA
+- **10:00 AM** — No-Gi Fundamentals
+- **5:30 PM** — Little Hammer Kickboxing (youth)
+             [ GAP — Text note says Fri kids = MMA. Grid shows Kickboxing.
+             Confirm. See Section 11. ]
+- **6:30 PM** — Kickboxing
+- **7:30 PM** — Open Mat
+
+
+### Saturday
+
+
+- **9:00 AM** — Muay Thai
+- **10:00 AM** — Little Hammer BJJ (youth) — active from 3/21/2026
+- **11:00 AM** — No-Gi Fundamentals
+
+
+### Sunday
+
+
+- **10:00 AM** — Girls Only Wrestling — active from 3/22/2026
+- **11:00 AM** — Wrestling — High School
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+NO-GI JIU-JITSU (FUNDAMENTALS)
+Beginner and fundamental No-Gi BJJ for adults. Available Monday, Wednesday,
+Friday mornings and Monday, Wednesday evenings. Entry-level class for new
+adult grappling students.
+
+GI JITU-JITSU (FUNDAMENTALS)
+Gi-based BJJ fundamentals. Available Tuesday evenings.
+
+MUAY THAI
+Striking-focused training covering Muay Thai techniques. Available Wednesday
+evenings and Saturday mornings. Muay Thai is listed under kickboxing in the
+booking system.
+
+KICKBOXING / KICKBOXING CONDITIONING
+Striking and conditioning class available Monday and Wednesday mornings,
+Tuesday and Friday evenings. Pad and bag drills; class focus is kickboxing and
+Muay Thai technique, not MMA.
+
+MMA
+Mixed Martial Arts class. Available Monday evenings, Thursday evenings, Friday
+mornings, and Friday evenings.
+
+WRESTLING — K–8
+Youth wrestling for students K through 8th grade. Available Tuesday and
+Thursday at 5:15 PM.
+
+WRESTLING — HIGH SCHOOL
+Wrestling for high school-level students. Available Thursday evenings and
+Sunday mornings.
+
+GIRLS ONLY WRESTLING
+Women's and girls wrestling class. Available Sunday mornings at 10:00 AM.
+Active from March 22, 2026.
+
+KETTLEBELL
+Kettlebell and strength conditioning class. Available Monday, Wednesday, and
+Friday mornings at 8:00 AM.
+
+OPEN MAT
+Unstructured open training. Available Wednesday mornings and Friday evenings.
+
+LITTLE HAMMER BJJ (YOUTH)
+Brazilian Jiu-Jitsu for youth students. Available Wednesday evenings at
+5:30 PM and Saturday mornings at 10:00 AM.
+
+LITTLE HAMMER KICKBOXING (YOUTH)
+Kickboxing for youth students. Available Monday and Friday evenings at
+5:30 PM.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+No live sparring during any introductory or intro-level sessions. Introductory
+classes are technique and sport-based. Pad and drill classes focus on
+kickboxing and Muay Thai technique.
+
+[ GAP — Full trial class policy (free trial offer, number of sessions, loaner
+equipment, uniform requirements, arrival instructions, waiver) not confirmed
+from available sources. Confirm with client. See Section 11. ]
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing varies based on membership tier,
+age group, and contract length. Pricing and membership options are discussed
+with new students following the trial class.
+
+Membership tiers available:
+- Kids Membership (ages 5–7 and ages 8–12)
+- Teen Membership (ages 13 through high school or blue belt)
+- Conditioning Membership (bag and pad classes only)
+- Unlimited Membership (all classes)
+- Ultimate Membership (all classes plus private training sessions)
+  - Silver tier: includes 2 private training sessions per month
+  - Gold tier: includes 4 private training sessions per month
+
+All memberships include full gym access (kettlebell equipment, BJJ mat area,
+and cardio kickboxing equipment).
+
+[ GAP — Cancellation policy, pause/hold policy, payment methods, and contract
+terms not confirmed from available sources. See Section 11. ]
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+[ GAP — No instructor names, belt ranks, or credentials are confirmed from
+available sources. Confirm full instructor roster for KB. See Section 11. ]
+
+
+## SECTION 8 — POLICIES
+
+
+Sparring:
+No live sparring during introductory sessions. Technique and sport-based
+drilling are the focus for all intro and new students.
+
+Class Sizes:
+Morning classes: approximately 5 students. Evening classes: approximately 15
+students. Average class size: 8–12 students.
+
+Gym Access:
+All memberships include access to the gym facility including kettlebell
+equipment, the BJJ mat area, and cardio kickboxing equipment.
+
+[ GAP — Uniform requirements, parent/spectator policy, photography policy,
+and additional conduct policies not confirmed from available sources. See
+Section 11. ]
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Hammer Sports & Performance?
+**A:** Hammer Sports & Performance is a martial arts and combat sports gym in
+
+Hazlet, New Jersey, offering BJJ, Muay Thai, Kickboxing, Wrestling, MMA, and
+Kettlebell training for youth and adults. The gym serves both competitive
+athletes (fight team) and recreational members (hobbyist track).
+
+
+**Q:** Where is Hammer Sports & Performance located?
+**A:** 1719 Union Ave, Hazlet, NJ 07730. The gym is on Union Ave (County Road 36),
+
+past the Chinese restaurant on the corner. Nearby landmarks include Veterans
+Memorial Park and Hazlet Plaza.
+
+
+**Q:** What is the phone number?
+**A:** (732) 795-5626.
+
+
+**Q:** What is the email?
+**A:** hammernation135@gmail.com.
+
+
+**Q:** What is the website?
+**A:** hammertrained.com.
+
+
+**Q:** What programs are offered?
+**A:** No-Gi and Gi Brazilian Jiu-Jitsu, Muay Thai, Kickboxing, MMA, Wrestling
+
+(youth and high school), Kettlebell, and youth Little Hammer programs for BJJ
+and Kickboxing. Girls Only Wrestling is also available on Sundays.
+
+
+**Q:** Are there classes for kids?
+**A:** Yes. Little Hammer BJJ runs Wednesday evenings and Saturday mornings.
+
+Little Hammer Kickboxing runs Monday and Friday evenings. Youth Wrestling
+(K–8) runs Tuesday and Thursday at 5:15 PM.
+
+
+**Q:** Is there a girls-only class?
+**A:** Girls Only Wrestling is available Sunday mornings at 10:00 AM.
+
+
+**Q:** Are there morning classes?
+**A:** Yes. Kettlebell, Kickboxing, and No-Gi Fundamentals run Monday, Wednesday,
+
+and Friday mornings starting at 8:00 AM.
+
+
+**Q:** Is there Open Mat?
+**A:** Yes. Open Mat is available Wednesday mornings at 10:00 AM and Friday
+
+evenings at 7:30 PM.
+
+
+**Q:** Is sparring required for new students?
+**A:** No. There is no live sparring during introductory sessions. New students
+
+focus on technique and drills.
+
+
+**Q:** What is the class size?
+**A:** Morning classes have approximately 5 students. Evening classes have
+
+approximately 15. The average is 8–12 students per class.
+
+
+**Q:** Are there different membership options?
+**A:** Yes. Membership tiers include Kids, Teen, Conditioning (bag and pad classes
+
+only), Unlimited (all classes), and Ultimate (all classes plus private training
+sessions). All memberships include full gym access.
+
+
+**Q:** Does my membership include gym access?
+**A:** Yes. All memberships include access to the gym facility including kettlebell
+
+equipment, the BJJ mat area, and cardio kickboxing equipment.
+
+
+**Q:** Is there both a competitive and recreational track?
+**A:** Yes. The gym operates two tracks — a fight team for competitive athletes
+
+and a hobbyist track for recreational and fitness-focused members.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program, age
+group, and contract length. Pricing and membership options are discussed with
+new students following the trial class. The trial is completely free with no
+commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL — INTERNAL SCHEDULE CONFLICTS ]
+[ ] Monday kids class — Text note says Mon kids = BJJ. Schedule grid shows
+    Mon 5:30 PM = Little Hammer Kickboxing. Confirm correct Monday kids
+    program.
+
+[ ] Friday kids class — Text note says Fri kids = MMA. Schedule grid shows
+    Fri 5:30 PM = Little Hammer Kickboxing. Confirm correct Friday kids
+    program.
+
+[ ] Monday 8 AM — Schedule grid shows Kettlebell. Owner note in ClickUp
+    states Monday 8 AM is the No-Gi time and 9 AM is standup. Confirm
+    correct Monday 8 AM class name and type.
+
+[ ] Kids start time — Text note says kids classes start at 5:00 PM. Grid
+    shows youth wrestling at 5:15 PM and Little Hammer classes at 5:30 PM.
+    Confirm correct start time for each kids program.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Personal Training — Listed on website. Schedule, rates, and availability
+    not confirmed from available sources. Confirm with client before deploy.
+
+[ ADDITIONAL GAPS ]
+[ ] Trial class policy — Free trial offer details, number of sessions,
+    loaner equipment, arrival instructions, and waiver requirements are
+    not confirmed from available sources.
+
+[ ] Instructor roster — No instructor names, belt ranks, or credentials
+    are available from any source.
+
+[ ] Cancellation policy — Terms not confirmed from available sources.
+
+[ ] Pause/hold policy — Not confirmed from available sources.
+
+[ ] Payment methods — Not confirmed from available sources.
+
+[ ] Uniform requirements — Not confirmed for adult or youth programs.
+
+[ ] Parent/spectator policy — Not confirmed from available sources.
+
+[ ] Social media — Instagram, Facebook, or other handles not confirmed.
+
+[ ] Age range for Teen membership — Defined as "13 through high school
+    or blue belt." Confirm upper age/rank boundary for KB clarity.
+
+[ ] Sunday Wrestling High School — Grid shows Sunday 11 AM Wrestling High
+    School. Confirm whether this is open to all high school students or
+    fight team only.
+
+## END OF KNOWLEDGE BASE

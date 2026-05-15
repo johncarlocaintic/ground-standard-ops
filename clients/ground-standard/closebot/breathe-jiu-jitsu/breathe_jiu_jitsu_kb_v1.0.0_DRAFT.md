@@ -1,0 +1,506 @@
+# BREATHE JIU JITSU — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); breathejiujitsu.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON TRIAL POLICY: Free trial consists of 3 free classes expiring 1 week
+after the initial visit (Little Kids Program: 2 weeks). The free trial is
+advertised as one-time use for Suffolk County residents. New students must
+schedule their trial by phone or email — online self-booking is not currently
+available. See Section 11 for residency and scheduling gaps.
+
+NOTE ON CONCURRENT SCHEDULE TIMES: On Wednesday, Big Kids Gi (7-13) starts at
+5:00 PM and Gi Basics starts at 5:15 PM. On Thursday, Big Kids No-Gi starts at
+5:00 PM and No-Gi Basics starts at 5:15 PM. These classes run concurrently in
+parallel. Confirm if both run simultaneously or if there is a stagger.
+See Section 11.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Breathe Jiu Jitsu
+Legal Entity: Thrive New York Jiu Jitsu LLC
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Yaphank, NY (Long Island)
+
+Description: Breathe Jiu Jitsu is a Brazilian Jiu-Jitsu academy in Yaphank,
+New York, on Long Island. The academy offers Gi and No-Gi BJJ for adults and
+youth, with structured beginner and advanced adult tracks and two dedicated
+youth programs by age group. Breathe is founded and led by Professor Danny
+Stolfi, one of the Mendes Brothers' first black belts and a former head
+instructor at Art of Jiu-Jitsu Academy (AOJ). The academy maintains a
+culture of respect, ego-free training, and family-friendly community. The
+approach emphasizes building confidence, discipline, and resilience through
+jiu-jitsu, with equal respect for competitive goals and lifestyle training.
+
+Programs Offered:
+- Little Kids Gi BJJ (Ages 4–6)
+- Little Kids No-Gi BJJ (Ages 4–6)
+- Big Kids Gi BJJ (Ages 7–13)
+- Big Kids No-Gi BJJ (Ages 7–13)
+- Gi Basics (adult beginner)
+- No-Gi Basics (adult beginner)
+- Gi Fundamentals (adult intermediate)
+- No-Gi Fundamentals (adult intermediate)
+- Women's Only No-Gi (Saturday)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 84 Horseblock Rd. Unit H, Yaphank, NY 11980
+Phone: (631) 823-0098
+Email: info@breathejiujitsu.com
+Website: breathejiujitsu.com
+Facebook: facebook.com/breathejiujitsu
+Instagram: instagram.com/breathejiujitsu
+
+Parking: Parking is available on both sides of the lot.
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule sourced from ClickUp PDF. Closed Sundays confirmed.
+
+Gym open hours:
+- Mon–Wed: from 4:00 PM
+- Thu: from 5:00 PM
+- Fri: from 6:00 PM
+- Sat: from 9:00 AM
+- Sun: Closed
+
+
+### Monday
+
+
+- **4:15 PM – 5:00 PM** — Little Kids Gi (Ages 4–6)
+- **5:00 PM – 6:00 PM** — Big Kids Gi (Ages 7–13)
+- **6:15 PM – 7:15 PM** — Gi Basics
+- **7:15 PM – 8:15 PM** — Gi Fundamentals
+
+
+### Tuesday
+
+
+- **4:15 PM – 5:00 PM** — Little Kids No-Gi (Ages 4–6)
+- **5:00 PM – 6:00 PM** — Big Kids No-Gi (Ages 7–13)
+- **6:15 PM – 7:15 PM** — No-Gi Basics
+- **7:15 PM – 8:15 PM** — No-Gi Fundamentals
+
+
+### Wednesday
+
+
+- **4:15 PM – 5:00 PM** — Little Kids No-Gi (Ages 4–6)
+- **5:00 PM – 6:00 PM** — Big Kids Gi (Ages 7–13)
+- **5:15 PM – 6:15 PM** — Gi Basics
+                     [ NOTE — Runs concurrently with Big Kids Gi. Confirm
+                     if simultaneous or staggered. See Section 11. ]
+- **6:15 PM – 7:15 PM** — Gi Fundamentals
+
+
+### Thursday
+
+
+- **5:00 PM – 6:00 PM** — Big Kids No-Gi (Ages 7–13)
+- **5:15 PM – 6:15 PM** — No-Gi Basics
+                     [ NOTE — Runs concurrently with Big Kids No-Gi. Confirm
+                     if simultaneous or staggered. See Section 11. ]
+- **6:15 PM – 7:15 PM** — No-Gi Fundamentals
+
+
+### Friday
+
+
+- **6:15 PM – 7:15 PM** — No-Gi Fundamentals
+
+
+### Saturday
+
+
+- **9:00 AM – 10:00 AM** — Women's Only No-Gi (Ages 12+)
+- **10:00 AM – 11:00 AM** — Gi Fundamentals
+
+
+### Sunday
+
+
+Closed.
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+GI BASICS (ADULT BEGINNER)
+Entry-level adult class. Designed for new students but includes technical
+details beneficial to students at all levels — blue and purple belts attend
+regularly. Classes begin with a warm-up, followed by drilling of 3–4 techniques
+with detailed instruction and partner work, then specific/live training applying
+those drills, and sparring. Classes are 60 minutes. Available Monday and
+Wednesday evenings and Wednesday mornings (5:15 PM).
+
+NO-GI BASICS (ADULT BEGINNER)
+Entry-level adult No-Gi class. Same format and structure as Gi Basics. Available
+Tuesday evenings and Thursday mornings (5:15 PM).
+
+GI FUNDAMENTALS (ADULT INTERMEDIATE)
+Intermediate adult Gi BJJ. Available Monday, Wednesday, and Saturday.
+
+NO-GI FUNDAMENTALS (ADULT INTERMEDIATE)
+Intermediate adult No-Gi BJJ. Available Tuesday, Thursday, and Friday.
+
+WOMEN'S ONLY NO-GI
+Women's No-Gi class open to all levels, ages 12 and up. Available Saturday
+mornings at 9:00 AM.
+
+LITTLE KIDS GI BJJ (AGES 4–6)
+Gi Brazilian Jiu-Jitsu for younger youth students ages 4 to 6. Available Monday
+afternoons. Focuses on discipline, emotional regulation, confidence, and patience.
+
+LITTLE KIDS NO-GI BJJ (AGES 4–6)
+No-Gi Brazilian Jiu-Jitsu for younger youth students ages 4 to 6. Available
+Tuesday and Wednesday afternoons.
+
+BIG KIDS GI BJJ (AGES 7–13)
+Gi Brazilian Jiu-Jitsu for older youth students ages 7 to 13. Available Monday
+and Wednesday evenings.
+
+BIG KIDS NO-GI BJJ (AGES 7–13)
+No-Gi Brazilian Jiu-Jitsu for older youth students ages 7 to 13. Available
+Tuesday and Thursday evenings.
+
+Note: Students between ages 6 and 7 are placed in either the Little Kids or
+Big Kids program on a case-by-case basis.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial period is available for new students.
+
+Trial consists of 3 free classes expiring 1 week after the initial visit.
+For the Little Kids Program, families have 2 weeks after the initial visit to
+use the 3 trial classes.
+
+New students must schedule their trial by calling or emailing before the first
+visit. Online self-booking is not currently available.
+
+Trial classes for youth: beginners can attend any kids class.
+Trial classes for adults:
+- Basics (Gi): Monday evenings at 6:15 PM and Wednesday evenings at 5:15 PM
+- Basics (No-Gi): Tuesday evenings at 6:15 PM and Thursday evenings at 5:15 PM
+- If none of those days work, Fundamentals classes are also open to new students.
+
+No equipment is needed for the first class. Bring shoes that can be easily
+slipped on and off (barefoot on mats, shoes required elsewhere including
+bathrooms). Water is available but bringing a water bottle is recommended.
+Nails must be neatly trimmed. Jewelry should be removed during class.
+
+Gi rentals are available for Gi trial classes on a first-come, first-served
+basis. Reserve in advance when scheduling the trial.
+
+For No-Gi trial classes: wear a t-shirt and shorts (dry-wicking material
+preferred, all black if possible). Shorts should have no buttons or zippers.
+
+Minors must have a parent or legal guardian present at the first class for the
+waiver, or the waiver can be handled by email.
+
+Sparring is optional and never required, especially in the first classes.
+
+Observers are welcome to watch a class before joining.
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial period.
+
+Membership tiers are available for Little Kids (4–6), Big Kids (7–13), and
+Adults (14+). Multiple frequency options exist within each tier.
+
+Drop-in classes are available for adults.
+
+Gi rentals are available for a nominal fee and free during trial classes.
+Rentals are limited — reserving in advance is recommended.
+
+Membership pause: available by the month, up to 3 months per year. Medical,
+military assignment, and law enforcement academy enrollment have no pause
+limits. Exceptions for international travel lasting 3 or more weeks.
+
+Payment accepted via credit card, ACH/voided check (no additional fee), and
+cash. Cash requires an account on file.
+
+Family discounts are available. Structure varies by family size.
+
+Military, veterans, and first responders receive a discount applied to monthly
+membership. Discount extends to immediate family members (spouses and children).
+
+Members are expected to have their own uniform within 2 weeks of active
+membership.
+
+Private lessons are available. Packages are also available.
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+PROFESSOR DANNY STOLFI — Head Instructor & Co-Owner
+Black Belt under the Mendes Brothers (Professor Gui and Professor Rafa). One of
+the Mendes Brothers' first black belts. Former instructor and competitor at
+Art of Jiu-Jitsu Academy (AOJ) from 2012 to 2018. Over 16 years of training.
+Originally from Long Island; relocated to Southern California in 2012 to train
+and work under the Mendes Brothers before returning to open Breathe Jiu Jitsu.
+Holds both traditional BJJ and competition expertise.
+
+COACH JAMIE DE LEON STOLFI — Co-Owner
+Purple Belt under the Mendes Brothers. Business partner and co-owner. Manages
+day-to-day operations and student scheduling.
+
+COACH ADAM
+Purple Belt under Danny Stolfi. Judo Green Belt. Multiple-time IBJJF champion
+and Judo champion. Active competitor in both jiu-jitsu and judo.
+
+COACH STARR
+Purple Belt under Danny Stolfi. Multiple-time IBJJF champion.
+
+COACH JARED
+Purple Belt under Danny Stolfi. Multiple-time IBJJF medalist. Active competitor.
+
+
+## SECTION 8 — POLICIES
+
+
+Beginners:
+New students are identified to training partners and paired with more
+experienced athletes during live training. Instructor supervision is provided
+during all live training for new students.
+
+Sparring:
+Completely optional. Students train at their own comfort level. Students are
+encouraged to tap when unable to escape a submission.
+
+Uniform:
+No-Gi classes: all black (colored graphics and designs acceptable; any brand).
+Gi classes: all white (colored embroidery acceptable; any brand).
+Academy logos from other schools are not permitted, except for AOJ and
+academies associated with Mendes Brothers or Danny Stolfi black belts.
+Gi rentals are available for trial classes and on a limited basis.
+
+Belt Promotions:
+No formal testing. Promotions are surprise-based, evaluated quarterly by the
+coaching staff based on attendance, time dedicated to training, and technical
+improvement.
+
+Student-to-Instructor Ratio:
+Kids: 7:1 (typically 2 instructors per class regardless).
+Adults: 15:1. Additional assistant instructors added based on class growth.
+
+Parents:
+Parents may watch classes. Coaching or instructing from off the mat is
+not permitted.
+
+Attendance Tracking:
+Manual check-in managed by Coach Jamie using Zen Planner. Students do not
+self-register for individual classes.
+
+Photography / Filming:
+No filming during class instruction or training without prior owner consent.
+Short videos or photos for social media (Instagram stories, etc.) are generally
+acceptable. All students are notified if filming occurs during a class and
+may exclude themselves.
+
+Hygiene:
+Mats are thoroughly cleaned after each session. Clean uniforms required at all
+times. Nails must be neatly trimmed. Shoes required on all surfaces except the
+mat. Students cannot train if sick or with a contagious skin condition
+(e.g., ringworm).
+
+Conduct:
+Members are expected to treat each other and the facility with respect. Bullying
+or harassment is not tolerated. Violations are privately addressed; confirmed
+violations result in consequences up to membership termination. Neighboring
+academy owners may be notified in extreme cases.
+
+ADA Compliance:
+The facility is ADA compliant. Professor Danny has experience with special needs
+students.
+
+Allergies / Medical:
+Students requiring an EPI pen are asked to inform the gym of its location.
+Medical needs and allergies are noted in the membership system under 'Medical Notes.'
+
+Events:
+Birthday parties and private events are available. Schedule with Coach Jamie
+at info@breathejiujitsu.com.
+
+Online Resources:
+Videos available on Instagram and YouTube. Professor Danny has instructional
+content available for purchase through BJJ Fanatics, Digitsu, and Jiu Jitsu X.
+
+Guests:
+Guests are eligible to join on a free trial. Out-of-town visitors who are
+members or close friends of current members often have their first visit honored.
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Breathe Jiu Jitsu?
+**A:** Breathe Jiu Jitsu is a Brazilian Jiu-Jitsu academy in Yaphank, NY (Long
+
+Island) offering Gi and No-Gi BJJ for adults and youth. The head instructor is
+Professor Danny Stolfi, one of the Mendes Brothers' first black belts and a
+former instructor at Art of Jiu-Jitsu Academy.
+
+
+**Q:** Where is Breathe Jiu Jitsu located?
+**A:** 84 Horseblock Rd. Unit H, Yaphank, NY 11980. Parking is available on both
+
+sides of the lot.
+
+
+**Q:** What is the phone number?
+**A:** (631) 823-0098.
+
+
+**Q:** What is the email?
+**A:** info@breathejiujitsu.com.
+
+
+**Q:** What programs are offered?
+**A:** Adult programs include Basics (beginner) and Fundamentals (intermediate) in
+
+both Gi and No-Gi formats, plus a Women's Only No-Gi class on Saturdays. Youth
+programs include Little Kids (ages 4–6) and Big Kids (ages 7–13) in both Gi
+and No-Gi formats.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial period is available — 3 free classes expiring 1 week after the
+
+initial visit (2 weeks for Little Kids). New students must schedule their trial
+by phone or email first.
+
+
+**Q:** Do I need experience to start?
+**A:** No. Basics classes are designed for complete beginners, though experienced
+
+students also train in these classes.
+
+
+**Q:** What should I wear to my first class?
+**A:** For No-Gi: t-shirt and shorts (all black preferred), no buttons or zippers.
+
+For Gi: a gi rental can be reserved in advance. Bring shoes you can slip on
+and off easily.
+
+
+**Q:** What age can kids start?
+**A:** The Little Kids program starts at age 4. Ages 7–13 join the Big Kids program.
+
+Students ages 6–7 are placed in either program on a case-by-case basis.
+
+
+**Q:** Is there a class for women?
+**A:** Yes. Women's Only No-Gi runs Saturday mornings at 9:00 AM for ages 12 and up.
+
+
+**Q:** Is sparring required?
+**A:** No. Sparring is completely optional for all students.
+
+
+**Q:** Who teaches the classes?
+**A:** Professor Danny Stolfi is the head instructor — a black belt under the
+
+Mendes Brothers and former AOJ head instructor. The staff includes four
+additional coaches, all purple belts with competition credentials.
+
+
+**Q:** Are there morning or early classes?
+**A:** The earliest classes start at 4:15 PM on weekdays. Saturday classes begin
+
+at 9:00 AM.
+
+
+**Q:** Can I pause my membership?
+**A:** Yes. Memberships can be paused by the month, up to 3 months per year.
+
+Medical, military, and law enforcement situations have no pause limit.
+
+
+**Q:** Are there family discounts?
+**A:** Yes. Family discounts are available and vary based on family size.
+
+
+**Q:** Are there discounts for military or first responders?
+**A:** Yes. A discount is applied to monthly membership and extends to immediate
+
+family members (spouses and children).
+
+
+**Q:** Is parking available?
+**A:** Yes. Parking is available on both sides of the lot.
+
+
+**Q:** Is the gym ADA accessible?
+**A:** Yes. The facility is ADA compliant.
+
+
+**Q:** Can I host a birthday party or private event?
+**A:** Yes. Contact Coach Jamie at info@breathejiujitsu.com to arrange.
+
+
+**Q:** Are there private lessons?
+**A:** Yes. Private lessons with a black belt instructor are available. Packages
+
+are also available.
+
+
+**Q:** Is the gym closed on Sundays?
+**A:** Yes. Breathe Jiu Jitsu is closed on Sundays.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program, age
+group, and training frequency. Pricing and membership options are discussed with
+new students following the free trial period. The trial is completely free with
+no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ ADDITIONAL GAPS ]
+[ ] Wednesday Gi Basics (5:15 PM) and Big Kids Gi (5:00 PM) overlap — these
+    appear to run simultaneously. Confirm whether both classes run in parallel
+    at the same time or if the 5:15 PM class is staggered after the other ends.
+
+[ ] Thursday No-Gi Basics (5:15 PM) and Big Kids No-Gi (5:00 PM) overlap —
+    same issue as Wednesday. Confirm.
+
+[ ] Suffolk County residency — The free trial is advertised as one-time use
+    for Suffolk County residents. Confirm how the bot should handle leads from
+    outside Suffolk County.
+
+[ ] Trial scheduling — Currently by phone or email only. Confirm whether any
+    online booking is planned or currently available.
+
+[ ] Family discount structure — ClickUp notes discounts exist but states the
+    tiers are not clearly defined. Confirm structure for KB.
+
+[ ] Legal entity name — Website shows "Thrive New York Jiu Jitsu LLC." Not
+    referenced in ClickUp. Confirm whether this should appear in the KB.
+
+[ ] Social media — Facebook (facebook.com/breathejiujitsu) and Instagram
+    (instagram.com/breathejiujitsu) confirmed from website.
+
+## END OF KNOWLEDGE BASE

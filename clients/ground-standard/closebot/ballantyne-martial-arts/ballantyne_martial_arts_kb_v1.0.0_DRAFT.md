@@ -1,0 +1,458 @@
+# BALLANTYNE MARTIAL ARTS — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-15
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: PropertyBots scrape (192_Ballantyne.md, 2026-04-19);
+                 ballantynemartialarts.com (2026-05-15)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON REBRAND: The business was formerly known as Sparks Martial Arts (SMA).
+The current operating name is Ballantyne Martial Arts. Social media handles
+still reference "SMA" and may not yet reflect the rebrand. See Section 11.
+
+NOTE ON INSTRUCTORS: The scrape source references "Sensei Sparks" as the
+founder/head instructor. The current website lists four different staff names
+with no mention of Sensei Sparks. Confirm current staff and whether Sensei
+Sparks remains affiliated. See Section 11.
+
+NOTE ON KARATE: The original source data described the adult program as a blend
+of Karate, Kickboxing, and Aikido. Per client instruction, karate is not listed
+as a current program. The website confirms this — karate does not appear on the
+current program list. See Section 11.
+
+NOTE ON SCHEDULE: Business hours from the scrape source are used as class hour
+proxies. Specific class names and times within those windows are not confirmed.
+Confirm full weekly class schedule before deploy. See Section 11.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Ballantyne Martial Arts
+Formerly Known As: Sparks Martial Arts (SMA)
+Industry: Martial Arts — Kickboxing, Brazilian Jiu-Jitsu
+Location: Charlotte, NC
+
+Description: Ballantyne Martial Arts (formerly Sparks Martial Arts) is a
+martial arts academy in Charlotte, North Carolina offering Kickboxing and
+Brazilian Jiu-Jitsu for adults and youth. The academy serves students ages 4
+through adult with separate Kids Martial Arts and Kids BJJ programs.
+All classes are beginner-friendly — new students may join any regular class
+without prior experience. The academy emphasizes personalized instruction,
+self-defense readiness, and student development both on and off the mat.
+
+Programs Offered:
+- Adult Kickboxing
+- Adult Brazilian Jiu-Jitsu (BJJ)
+- Kids Martial Arts (youth — ages 4–15 per website)
+- Kids Brazilian Jiu-Jitsu
+- Private Lessons
+- Women's Self Defense (quarterly seminar — not on regular schedule)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 11914 Elm Lane, Suite 160, Charlotte, NC 28277
+Phone: (704) 931-8629
+Email: info@ballantynemartialarts.com
+Website: ballantynemartialarts.com
+Facebook: SMAMartialArtsAcademy
+Instagram: @sma.academy
+
+[ GAP — Social media handles reference old SMA branding. Confirm whether
+handles have been updated to reflect Ballantyne Martial Arts. See Section 11. ]
+
+Facility Notes:
+- Located in a strip mall — ample parking available
+- No locker rooms; restrooms available for changing
+- Mats over 1.5 inches thick
+- Water fountain on-site
+- Wi-Fi available
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule reflects confirmed business/class hours. Specific class names and
+times within each window are not confirmed. Confirm full schedule before deploy.
+See Section 11.
+
+
+### Monday
+
+
+- **6:00 PM – 9:00 PM** — Classes in session
+
+
+### Tuesday
+
+
+- **5:30 PM – 9:00 PM** — Classes in session
+
+
+### Wednesday
+
+
+- **6:00 PM – 9:00 PM** — Classes in session
+
+
+### Thursday
+
+
+- **5:30 PM – 9:00 PM** — Classes in session
+
+
+### Friday
+
+
+[ GAP — Friday not listed in available sources. Confirm whether the academy
+is open on Fridays. See Section 11. ]
+
+
+### Saturday
+
+
+- **9:30 AM – 1:00 PM** — Classes in session
+
+
+### Sunday
+
+
+[ GAP — Sunday not listed in available sources. Confirm whether the academy
+is open on Sundays. See Section 11. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+ADULT KICKBOXING
+Kickboxing for adults covering punching, kicking, and close-range techniques.
+Classes incorporate self-defense applications alongside fitness training, with
+an estimated 500–750 calories burned per session. Suitable for all fitness
+levels and experience. All classes are beginner-accessible.
+
+ADULT BRAZILIAN JIU-JITSU (BJJ)
+Brazilian Jiu-Jitsu for adults emphasizing leverage and technique, enabling
+a smaller or less athletic person to neutralize and control a larger opponent.
+No prior experience required. Classes are structured for beginners through
+advanced students.
+
+KIDS MARTIAL ARTS
+Youth martial arts program for children ages 4–15 (website). Classes focus on
+confidence-building, self-defense skills, and bullying prevention in a fun,
+safe environment.
+
+KIDS BJJ
+Brazilian Jiu-Jitsu program for youth students. Age range not separately
+confirmed — see Kids Martial Arts gap above.
+
+PRIVATE LESSONS
+One-on-one private instruction available for students seeking personalized
+coaching. Scheduling coordinated through gym staff.
+
+WOMEN'S SELF DEFENSE
+Periodic self-defense seminars for women, offered approximately once per
+quarter. Not on the regular weekly schedule. Open to the public at low cost.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students. No commitment is required.
+
+All regular classes are eligible for trial attendance. Up to two trial
+students are accepted per class.
+
+For the first visit:
+- Arrive 15 minutes early to meet the instructor
+- Fill out a participation waiver in person at the gym
+- Wear athletic clothing: t-shirt, shorts, or athletic pants. Avoid pockets.
+- Remove shoes and socks before stepping onto the mat
+- No equipment needed — bring a water bottle if preferred (fountain available)
+
+Trial sign-up is coordinated through the gym's web forms or direct contact.
+
+Guests are welcome to watch a class before deciding to join. Tours are
+available during class hours.
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and program options are discussed
+in person following the free trial class.
+
+All memberships are month-to-month. No long-term contract is required.
+
+Membership can be paused for extended vacations or illness.
+
+Cancellation: No cancellation fee with 30 days' notice.
+
+Drop-in classes are available. A mat fee applies.
+
+Family discounts are available. Families are encouraged to train together.
+
+Military and first responders are eligible for a discount on memberships.
+
+Private lessons are available at an additional rate. Scheduling coordinated
+with gym staff.
+
+Payment: Credit and debit cards required for recurring memberships. Cash or
+card accepted for private lessons, gear, and drop-in mat fees.
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+[ GAP — Instructor conflict between source data and website. See Section 11. ]
+
+Current website lists:
+- Sensei John Gilbert
+- Sensei Jason Berkwits
+- Deshi Kathy Lowrance
+- Sempai John Love
+
+[ GAP — Belt ranks, credentials, and individual instructor backgrounds for
+current staff are not confirmed from available sources. See Section 11. ]
+
+FOUNDER / ORIGINAL HEAD INSTRUCTOR (SENSEI SPARKS)
+The scrape source describes the original head instructor as "Sensei Sparks"
+with the following background:
+- 3rd Degree Black Belt in Kickboxing under Steve Snyder
+- Joe Lewis Fighting Systems (JLFS) 2nd Degree Black Belt — only JLFS Black
+  Belt in the Charlotte area
+- 1st Degree Black Belt under Bill "Superfoot" Wallace (Superfoot Systems)
+- Brown Belt in Brazilian Jiu-Jitsu
+- 29+ years of martial arts experience including Kickboxing, Submission
+  Grappling, Boxing, and Jiu-Jitsu
+- Former Full Contact and Bare Knuckle Fighter, Karate Champion,
+  NAGA/Newbreed BJJ Champion, Kickboxer, Boxer
+- Active IBJJF competitor
+- Academic background in Elementary and Special Education (LaSalle University)
+- Continues training under Steve Snyder
+
+[ GAP — Confirm whether Sensei Sparks (original founder) is still affiliated
+with Ballantyne Martial Arts following the rebrand. See Section 11. ]
+
+All current instructors have decades of experience in martial arts. Some have
+backgrounds in law enforcement and the military. Multiple black belt ranks
+across a variety of arts.
+
+
+## SECTION 8 — POLICIES
+
+
+Trial / New Students:
+Up to 2 trial students per class. Arrive 15 minutes early. Waiver signed in
+person. Wear athletic clothing; no pockets; remove shoes and socks on the mat.
+
+Uniforms:
+Uniforms are required for training. Kickboxing students receive appropriate
+uniform (shorts and jersey for teens/adults, kids gi for youth) with their
+enrollment down payment. BJJ students receive a rash guard with their down
+payment; a separate BJJ gi is required and available for purchase.
+
+Sparring gear can be purchased through the gym or brought from outside. Outside
+gear must be inspected prior to use and may not be accepted.
+
+Sparring / Safety:
+Mouth guards are required for any sparring or non-drill BJJ rolling.
+Effort level during drills is specified by instructors. Additional gear is
+required for advanced kickboxing sparring (headgear, shin guards, gloves,
+chest protectors for kids).
+
+Student-to-Instructor Ratio:
+Approximately 1:7. Multiple instructors or black belts are present on the mat
+even when not leading the class.
+
+Conduct:
+Bullying and harassment are not tolerated. Disrespectful conduct is addressed
+immediately. Sportsmanship is expected from all students.
+
+Belt Promotions:
+Testing every 3 months on the 3rd Saturday of the month. Black Belt tests are
+held in June and December only. Regular rank testing carries no fee. A one-time
+Black Belt testing fee applies.
+
+Parents / Spectators:
+Parents are welcome to watch youth classes. Minimal parental involvement from
+the sidelines is requested unless extenuating circumstances apply.
+
+Photography:
+Photographers are asked to remain in the lobby unless a special event is in
+progress on the mat.
+
+Special Needs / Disabilities:
+Students are placed in the appropriate class for their capabilities.
+Learning disabilities have been accommodated. More severe cases are reviewed
+on a case-by-case basis. Specialized instructors may be available.
+
+Private Events:
+Birthday parties and private events can be hosted. Details coordinated with
+staff.
+
+Hygiene:
+Mats, restrooms, and lobby are cleaned daily. Students are expected to keep
+themselves, clothing, and gear clean.
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Ballantyne Martial Arts?
+**A:** Ballantyne Martial Arts (formerly Sparks Martial Arts) is a martial arts
+
+academy in Charlotte, NC offering Kickboxing and Brazilian Jiu-Jitsu for adults
+and youth, with programs for children starting at age 4 through adult.
+
+
+**Q:** Where is Ballantyne Martial Arts located?
+**A:** 11914 Elm Lane, Suite 160, Charlotte, NC 28277 — in a strip mall with
+
+ample parking.
+
+
+**Q:** What is the phone number?
+**A:** (704) 931-8629.
+
+
+**Q:** What is the email?
+**A:** info@ballantynemartialarts.com.
+
+
+**Q:** What programs are offered?
+**A:** Adult Kickboxing, Adult BJJ, Kids Martial Arts, Kids BJJ, and Private
+
+Lessons. Women's Self Defense seminars are held quarterly.
+
+
+**Q:** Is there a free trial?
+**A:** Yes. A free trial class is available with no commitment required. New
+
+students can join any regular class.
+
+
+**Q:** Do I need experience to start?
+**A:** No. All classes are beginner-friendly. New students may join any class.
+
+
+**Q:** What should I wear to my first class?
+**A:** Athletic clothing — shorts and a t-shirt, or athletic pants. Avoid pockets.
+
+Remove shoes and socks before stepping onto the mat.
+
+
+**Q:** Do I need to bring equipment?
+**A:** No equipment needed for the first class. A water bottle is recommended but
+
+a fountain is available.
+
+
+**Q:** Are there classes for kids?
+**A:** Yes. Kids Martial Arts and Kids BJJ are available for youth students.
+
+
+**Q:** Can I drop in for a single class?
+**A:** Yes. Drop-in classes are available. A mat fee applies.
+
+
+**Q:** Are there family discounts?
+**A:** Yes. Families are encouraged to train together and discounts are available.
+
+
+**Q:** Are there discounts for military or first responders?
+**A:** Yes.
+
+
+**Q:** Are there private lessons?
+**A:** Yes. Private lessons are available by arrangement with gym staff.
+
+
+**Q:** Can I cancel my membership?
+**A:** No cancellation fee with 30 days' notice. All memberships are month-to-month.
+
+
+**Q:** Can I pause my membership?
+**A:** Yes. Memberships can be paused for extended vacations or illness.
+
+
+**Q:** How often are belt tests?
+**A:** Every three months on the 3rd Saturday. Black Belt tests are in June and
+
+December only.
+
+
+**Q:** Can parents watch kids classes?
+**A:** Yes. Parents are welcome to watch. Minimal involvement from the sidelines
+
+is requested.
+
+
+**Q:** Are there women's classes?
+**A:** Not on the regular schedule. Women's Self Defense seminars are offered
+
+approximately once a quarter.
+
+
+**Q:** Is parking available?
+**A:** Yes — the academy is in a strip mall with ample parking.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on program, training frequency, and individual
+goals. Pricing and program options are discussed in person following the free
+trial class. The trial class is completely free with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[ ] Instructor conflict — Scrape source references "Sensei Sparks" (original
+    founder/head instructor) with extensive credentials. Current website lists
+    four different staff: Sensei John Gilbert, Sensei Jason Berkwits, Deshi
+    Kathy Lowrance, Sempai John Love. No mention of Sensei Sparks. Confirm
+    current staff roster and whether Sensei Sparks remains affiliated following
+    the rebrand from Sparks Martial Arts to Ballantyne Martial Arts.
+
+[ ] Full class schedule — Source only provides business hours windows (not
+    specific class names/times per day). Confirm the full weekly schedule with
+    class names, start times, and end times for each day.
+
+[ ADDITIONAL GAPS ]
+[x] RESOLVED (2026-05-15): Kids program age range — Website confirms ages 4–15.
+    Source data stated age 6 as minimum; website takes priority. Updated
+    throughout KB.
+
+[ ] Friday schedule — Not mentioned in any source. Confirm whether the academy
+    is open on Fridays.
+
+[ ] Sunday schedule — Not mentioned in any source. Confirm whether the academy
+    is open on Sundays.
+
+[ ] Social media branding — Facebook (SMAMartialArtsAcademy) and Instagram
+    (@sma.academy) still reference old SMA branding. Confirm whether handles
+    have been updated or if these are still the correct accounts.
+
+[ ] Instructor belt ranks and credentials for current staff (John Gilbert,
+    Jason Berkwits, Kathy Lowrance, John Love) — not confirmed.
+
+[ ] Karate — Original source described adult program as including karate.
+    Per client instruction, karate has been removed from this KB. Website
+    confirms karate is not listed. No action needed — flagged for awareness.
+
+[ ] Women's Self Defense frequency — Source states "about once a quarter."
+    Confirm current schedule or next event.
+
+[ ] Drop-in policy details — Drop-ins are available with a mat fee. Confirm
+    whether drop-ins are available for all classes or specific sessions only.
+
+[ ] Gi purchase requirement details — Source states BJJ gi is a separate
+    purchase. Confirm current uniform policy and any updated gear package details.
+
+## END OF KNOWLEDGE BASE

@@ -1,0 +1,434 @@
+# INVERTED GEAR ACADEMY — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); invertedgearacademy.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON ADDRESS: Website confirms 804 N Gilmore St, Allentown PA 18109 as the
+current address. ClickUp showed 1114 W Broad St, Bethlehem PA 18018. Website
+takes priority — KB updated to Allentown. See Section 11.
+
+NOTE ON TRIAL DURATION: ClickUp intro text states "1-day free trial (unlimited
+classes during the week)." The ClickUp FAQ states "7 day free trial." These
+conflict. Confirm correct trial policy before deploy. See Section 11.
+
+NOTE ON LADIES-ONLY TIME: ClickUp schedule section shows Ladies-Only on
+Saturday at 9:00 AM. The ClickUp FAQ states Saturday 11:00 AM. These conflict.
+Confirm correct time before deploy. See Section 11.
+
+NOTE ON INSTRUCTOR RANK: ClickUp body text describes Nelson Puentes as a
+"3rd degree black belt." The ClickUp at-a-glance info box states "2nd Degree
+Black Belt (Rank Verified by Beltchecker.com)." These conflict. Confirm current
+belt rank before deploy. See Section 11.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Inverted Gear Academy
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Allentown, PA
+Region: Lehigh Valley, PA
+
+Description: Inverted Gear Academy is a Brazilian Jiu-Jitsu academy in
+Allentown, Pennsylvania, co-founded by Nelson Puentes and Hillary Witt.
+The academy offers Gi and No-Gi BJJ for adults and youth across beginner
+through advanced tracks. Youth programs are divided into Cubs (ages 4–6) and
+Juniors (ages 7–12). The academy holds SafeSport certification and maintains
+a dedicated student-to-instructor ratio for youth classes. Both co-founders are
+active black belt competitors with IBJJF championship credentials. Inverted
+Gear Academy is affiliated with the Inverted Gear brand, a Brazilian Jiu-Jitsu
+gear company (invertedgear.com).
+
+Programs Offered:
+- Express Fundamentals (early morning — Mon, Wed, Fri)
+- Fundamentals Gi BJJ (morning and evening — Mon through Fri, Sat)
+- Advanced Gi (Mon, Wed, Fri evenings)
+- Advanced No-Gi (Tue, Thu evenings)
+- Ladies-Only (Saturday)
+- Cubs — Youth BJJ, Ages 4–6 (Mon through Fri)
+- Juniors — Youth BJJ, Ages 7–12 (Mon through Fri)
+- Open Mat (weekends)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 804 N Gilmore St, Allentown, PA 18109
+
+Location detail: Lower level. Rear entrance facing Raspberry St. Upper level
+is occupied by Mobility Doc.
+
+Phone: (484) 657-4674 and (484) 559-8900
+[ GAP — Two phone numbers appear on the website. ClickUp is silent on phone.
+Confirm which is the primary contact number. See Section 11. ]
+
+Website: invertedgearacademy.com
+
+[ GAP — Email address not confirmed from available sources. See Section 11. ]
+
+[ GAP — Social media handles not confirmed from available sources.
+See Section 11. ]
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule sourced from ClickUp PDF. Confirm Ladies-Only Saturday time conflict
+before deploy (schedule shows 9 AM; FAQ shows 11 AM). See Section 11.
+
+
+### Monday
+
+
+- **6:00 AM** — Express Fundamentals
+- **9:00 AM** — Fundamentals
+- **5:00 PM** — Cubs — Ages 4–6
+- **5:00 PM** — Juniors — Ages 7–12
+- **6:00 PM** — Fundamentals
+- **7:00 PM** — Advanced Gi
+
+
+### Tuesday
+
+
+- **9:00 AM** — Fundamentals
+- **5:00 PM** — Cubs — Ages 4–6
+- **5:00 PM** — Juniors — Ages 7–12
+- **6:00 PM** — Fundamentals
+- **7:00 PM** — Advanced No-Gi
+
+
+### Wednesday
+
+
+- **6:00 AM** — Express Fundamentals
+- **9:00 AM** — Fundamentals
+- **5:00 PM** — Cubs — Ages 4–6
+- **5:00 PM** — Juniors — Ages 7–12
+- **6:00 PM** — Fundamentals
+- **7:00 PM** — Advanced Gi
+
+
+### Thursday
+
+
+- **9:00 AM** — Fundamentals
+- **5:00 PM** — Cubs — Ages 4–6
+- **5:00 PM** — Juniors — Ages 7–12
+- **6:00 PM** — Fundamentals
+- **7:00 PM** — Advanced No-Gi
+
+
+### Friday
+
+
+- **6:00 AM** — Express Fundamentals
+- **9:00 AM** — Fundamentals
+- **5:00 PM** — Cubs — Ages 4–6
+- **5:00 PM** — Juniors — Ages 7–12
+- **6:00 PM** — Fundamentals
+
+
+### Saturday
+
+
+- **9:00 AM** — Ladies-Only
+                     [ GAP — FAQ states 11:00 AM. Schedule section states 9:00 AM.
+                     Confirm correct time. See Section 11. ]
+- **10:00 AM** — Fundamentals
+Open Mat             [ GAP — Open Mat confirmed on Saturday. Exact time not
+                     confirmed. See Section 11. ]
+
+
+### Sunday
+
+
+Open Mat             [ GAP — Open Mat confirmed on Sunday. Exact time not
+                     confirmed. See Section 11. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+EXPRESS FUNDAMENTALS
+Early morning Brazilian Jiu-Jitsu class. Available Monday, Wednesday, and
+Friday at 6:00 AM. Entry-level track for students who prefer morning sessions.
+
+FUNDAMENTALS
+Core beginner-to-intermediate Brazilian Jiu-Jitsu program. Morning sessions
+run at 9:00 AM Monday through Saturday. Evening sessions run at 6:00 PM
+Monday through Friday. Entry point for new adult students.
+
+ADVANCED GI
+Advanced Gi Brazilian Jiu-Jitsu. Available Monday, Wednesday, and Friday
+evenings at 7:00 PM.
+
+ADVANCED NO-GI
+Advanced No-Gi Brazilian Jiu-Jitsu. Available Tuesday and Thursday evenings
+at 7:00 PM.
+
+LADIES-ONLY
+Brazilian Jiu-Jitsu class for women. Available Saturday mornings. Time
+confirmed as either 9:00 AM (schedule section) or 11:00 AM (FAQ) — confirm
+before deploy.
+
+CUBS — YOUTH BJJ (AGES 4–6)
+Brazilian Jiu-Jitsu for youth students ages 4 to 6. Available Monday through
+Friday at 5:00 PM. Student-to-instructor ratio: 6:1.
+
+JUNIORS — YOUTH BJJ (AGES 7–12)
+Brazilian Jiu-Jitsu for youth students ages 7 to 12. Available Monday through
+Friday at 5:00 PM. Student-to-instructor ratio: 6:1.
+
+OPEN MAT
+Unstructured open training. Available on weekends (Saturday and Sunday). Exact
+times not confirmed. See Section 11.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial is available for new students.
+
+[ GAP — Trial duration conflict: ClickUp intro text states "1-day free trial
+(unlimited classes during the week)." ClickUp FAQ states "7 day free trial."
+Confirm correct trial duration before deploy. See Section 11. ]
+
+No equipment is needed for the first class.
+
+[ GAP — Loaner uniform policy, arrival instructions, waiver requirements, and
+sign-up process not confirmed from available sources. See Section 11. ]
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial.
+
+Membership tiers available:
+- Adults
+- Kids
+- First Responders, Military, and Veterans
+- 10-Class Punch Card
+
+A free gi is included with membership.
+
+No cancellation fees. Membership pause is available at any time.
+
+Family discounts:
+- 20% off for the second family member
+- 30% off for each additional family member
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+NELSON PUENTES — Co-Founder & Head Instructor
+Brazilian Jiu-Jitsu Black Belt. Started training in 2007. Over 100 competition
+matches. IBJJF Champion. Brown Belt in Judo. SafeSport Certified.
+[ GAP — Belt rank conflict: ClickUp body text states 3rd degree. ClickUp
+at-a-glance box states 2nd Degree (Rank Verified by Beltchecker.com). Confirm
+current rank. See Section 11. ]
+
+HILLARY WITT — Co-Founder & Instructor
+Brazilian Jiu-Jitsu Black Belt. Started training in 2005. Multiple IBJJF
+championships including Masters Worlds, Europeans, and No-Gi Worlds. Described
+as the only female black belt teaching co-ed classes in the Lehigh Valley.
+
+
+## SECTION 8 — POLICIES
+
+
+Student-to-Instructor Ratio:
+- Youth programs (Cubs, Juniors): 6:1
+- Adult programs: 10:1
+
+Belt Promotions:
+- Youth students: monthly
+- Adult students: approximately every 6 months
+
+Safety:
+SafeSport certified instructors. SafeSport certification covers safe sport
+training and abuse prevention protocols.
+
+Hygiene:
+Mats are cleaned twice daily. Students are required to train in clean uniforms.
+Sandals must be removed before stepping on the mats.
+
+Facility:
+Wheelchair-accessible entrance. Locker rooms available. Wi-Fi availability not
+confirmed.
+
+Membership Cancellation:
+No cancellation fees. Membership pause is available at any time.
+
+Events:
+Annual family day cookout event is held. Birthday parties are not available.
+
+Online Resources:
+Students have access to gear through the affiliated Inverted Gear brand
+(invertedgear.com).
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Inverted Gear Academy?
+**A:** Inverted Gear Academy is a Brazilian Jiu-Jitsu academy in the Lehigh Valley,
+
+Pennsylvania, co-founded by Nelson Puentes and Hillary Witt. The academy
+offers adult and youth BJJ programs from beginner through advanced, including
+a dedicated youth program and a ladies-only class.
+
+
+**Q:** Where is Inverted Gear Academy located?
+**A:** The academy is at 804 N Gilmore St, Allentown, PA 18109 — lower level with
+
+a rear entrance facing Raspberry St.
+
+
+**Q:** What is the phone number?
+**A:** [ GAP — Two phone numbers appear: (484) 657-4674 and (484) 559-8900.
+
+Confirm primary number before deploy. See Section 11. ]
+
+
+**Q:** What programs are offered?
+**A:** Adult programs include Express Fundamentals (early morning), Fundamentals,
+
+Advanced Gi, Advanced No-Gi, and a Ladies-Only class on Saturdays. Youth
+programs include Cubs (ages 4–6) and Juniors (ages 7–12), running Monday
+through Friday. Open Mat is available on weekends.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial is available for new students.
+
+
+**Q:** What age can kids start?
+**A:** The Cubs program is for ages 4–6. The Juniors program is for ages 7–12.
+
+
+**Q:** Are there morning classes?
+**A:** Yes. Express Fundamentals runs Monday, Wednesday, and Friday at 6:00 AM.
+
+Fundamentals also runs Monday through Saturday at 9:00 AM.
+
+
+**Q:** Is there a class specifically for women?
+**A:** Yes. A Ladies-Only class is available on Saturday mornings.
+
+
+**Q:** Who teaches the classes?
+**A:** The academy was co-founded by Nelson Puentes and Hillary Witt, both black
+
+belt competitors with IBJJF championship credentials. Nelson Puentes has
+competed in over 100 matches. Hillary Witt holds multiple IBJJF titles
+including Masters Worlds, Europeans, and No-Gi Worlds.
+
+
+**Q:** Are there family discounts?
+**A:** Yes. The second family member receives 20% off, and each additional family
+
+member receives 30% off.
+
+
+**Q:** Are there discounts for military or first responders?
+**A:** Yes. A dedicated membership tier is available for first responders, military,
+
+and veterans.
+
+
+**Q:** Can I pause my membership?
+**A:** Yes. Membership can be paused at any time.
+
+
+**Q:** Is there a cancellation fee?
+**A:** No. There are no cancellation fees.
+
+
+**Q:** Is there a punch card option?
+**A:** Yes. A 10-class punch card is available.
+
+
+**Q:** Does membership include a gi?
+**A:** Yes. A free gi is included with membership.
+
+
+**Q:** Is the facility accessible?
+**A:** Yes. The academy has a wheelchair-accessible entrance and locker rooms.
+
+
+**Q:** Is there Open Mat?
+**A:** Yes. Open Mat is available on weekends (Saturday and Sunday).
+
+
+**Q:** Are instructors SafeSport certified?
+**A:** Yes. Instructors hold SafeSport certification.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on the program, age group, and membership tier.
+Pricing and membership options are discussed with new students following the
+free trial. The trial is completely free with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[x] RESOLVED (2026-05-15): Address — Website confirms 804 N Gilmore St,
+    Allentown PA 18109 as the correct address. KB updated throughout.
+    (ClickUp had 1114 W Broad St, Bethlehem PA — website takes priority.)
+
+[ ] Trial duration — ClickUp intro text: "1-day free trial (unlimited classes
+    during the week)." ClickUp FAQ: "7 day free trial." Confirm correct policy.
+
+[ ] Ladies-Only Saturday time — Schedule section: 9:00 AM. FAQ section:
+    11:00 AM. Confirm correct Saturday Ladies-Only class time.
+
+[ ] Nelson Puentes belt rank — ClickUp body text states 3rd degree black belt.
+    ClickUp at-a-glance info box states 2nd Degree Black Belt (Rank Verified by
+    Beltchecker.com). Confirm current belt rank.
+
+[ ADDITIONAL GAPS ]
+[ ] Primary phone number — Website lists two numbers: (484) 657-4674 and
+    (484) 559-8900. ClickUp is silent on phone. Confirm which is the primary
+    contact number for the KB.
+
+[ ] Email address — Not confirmed from any available source.
+
+[ ] Saturday Open Mat time — Confirmed as available. Exact time not in
+    available sources.
+
+[ ] Sunday Open Mat time — Confirmed as available. Exact time not in
+    available sources.
+
+[ ] Trial loaner uniform policy — Not confirmed from available sources.
+
+[ ] Trial sign-up process — Steps (waiver, enrollment form, etc.) not confirmed
+    from available sources.
+
+[ ] Trial arrival instructions — Not confirmed from available sources.
+
+[ ] Social media — Instagram, Facebook, or other handles not confirmed.
+
+[ ] Wi-Fi — Availability not confirmed from available sources.
+
+[ ] Schedule currency — Confirm the above schedule reflects current class
+    offerings as of deploy date.
+
+[ ] Express Fundamentals description — Summary and duration (60 min vs. shorter
+    session?) not confirmed from available sources.
+
+[ ] Gi vs. No-Gi designation for Fundamentals — Not explicitly specified in
+    available sources. Confirm whether Fundamentals is Gi-only, No-Gi, or both.
+
+## END OF KNOWLEDGE BASE

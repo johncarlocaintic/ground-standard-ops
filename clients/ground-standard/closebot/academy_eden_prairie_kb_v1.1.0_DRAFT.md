@@ -1,0 +1,266 @@
+# THE ACADEMY EDEN PRAIRIE — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.1.0-DRAFT
+Date: 2026-05-09
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Source: Academy Eden Prairie PDF (class schedule + Kids MA FAQ), May 2026
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: The Academy Eden Prairie
+Industry: Martial Arts (Muay Thai, Jiu-Jitsu, MMA)
+Location: Edina, MN
+
+Description: The Academy Eden Prairie is a multi-discipline martial arts facility
+in Edina, Minnesota. The Academy offers Muay Thai, Gi Jiu-Jitsu,
+No-Gi Jiu-Jitsu, MMA, and dedicated Kids Martial Arts programs. Programs run for
+children starting at age 4 through adult, with a Women's Only class available on
+Thursday evenings. Classes are structured for all experience levels with separate
+Foundations and All Levels tracks for adult programs.
+
+Programs Offered:
+- Kids Martial Arts Ages 4–7 (Gi and No-Gi Jiu-Jitsu)
+- Kids Martial Arts Ages 8–12 (Gi and No-Gi Jiu-Jitsu)
+- Gi Jiu-Jitsu — Adult (All Levels and Foundations tracks)
+- No-Gi Jiu-Jitsu — Adult (All Levels, Foundations, Mixed Levels, Open Mat)
+- Muay Thai — Adult (All Levels, Foundations, Mixed Levels, Sparring)
+- Women's Only No-Gi Jiu-Jitsu (Thursdays 6:30–7:30 PM)
+- MMA (advanced/invite-only — requires coach invite and minimum 2 months training)
+
+What Is Not Currently Listed on the Schedule:
+- No Sunday classes. The published schedule covers Monday through Saturday only.
+- MMA is not an open-enrollment class. Access requires a coach invite and a minimum
+  of 2 months of training at the Academy.
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 7501 Washington Ave S, Edina, MN 55439
+Phone: 952-377-8111
+Website: academyedenprairie.com
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+### Monday
+
+
+- **5:00–5:30 PM** — Kids Ages 4–7 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Kids Ages 8–12 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Gi Jiu-Jitsu All Levels **
+- **6:30–7:30 PM** — Gi Jiu-Jitsu Foundations
+- **6:30–7:30 PM** — Muay Thai All Levels **
+- **7:30–8:30 PM** — Muay Thai Foundations
+- **7:30–8:30 PM** — MMA **
+
+
+### Tuesday
+
+
+- **8:00–9:00 AM** — Muay Thai Mixed Levels
+10:00–11:00 AM No-Gi Jiu-Jitsu Mixed Levels
+11:00–12:00 PM No-Gi Jiu-Jitsu Open Mat **
+- **5:00–5:30 PM** — Kids Ages 4–7 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Kids Ages 8–12 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Muay Thai All Levels **
+- **6:30–7:30 PM** — No-Gi Jiu-Jitsu All Levels **
+- **6:30–7:30 PM** — Muay Thai Foundations
+- **7:30–8:30 PM** — No-Gi Jiu-Jitsu Foundations
+
+
+### Wednesday
+
+
+- **5:00–5:30 PM** — Kids Ages 4–7 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Kids Ages 8–12 | Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Gi Jiu-Jitsu All Levels **
+- **6:30–7:30 PM** — Gi Jiu-Jitsu Foundations
+- **6:30–7:30 PM** — Muay Thai All Levels **
+- **7:30–8:30 PM** — Muay Thai Foundations
+- **7:30–8:30 PM** — MMA **
+
+
+### Thursday
+
+
+- **8:00–9:00 AM** — Muay Thai Mixed Levels
+10:00–11:00 AM No-Gi Jiu-Jitsu Mixed Levels
+11:00–12:00 PM No-Gi Jiu-Jitsu Open Mat **
+- **5:00–5:30 PM** — Kids Ages 4–7 | No-Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Kids Ages 8–12 | No-Gi Jiu-Jitsu
+- **5:30–6:30 PM** — Muay Thai All Levels **
+- **6:30–7:30 PM** — No-Gi Jiu-Jitsu All Levels **
+- **6:30–7:30 PM** — Women's Only No-Gi Jiu-Jitsu
+- **6:30–7:30 PM** — Muay Thai Foundations
+- **7:30–8:30 PM** — No-Gi Jiu-Jitsu Foundations
+
+
+### Friday
+
+
+- **5:00–7:00 PM** — No-Gi Jiu-Jitsu Open Mat **
+- **6:00–7:00 PM** — Muay Thai Sparring **
+
+
+### Saturday
+
+
+- **8:30–9:00 AM** — Kids Ages 4–7 | No-Gi Jiu-Jitsu
+- **9:00–10:00 AM** — Kids Ages 8–12 | No-Gi Jiu-Jitsu
+10:00–11:00 AM Muay Thai Mixed Levels
+11:00–12:30 PM Jiu-Jitsu Open Mat **
+
+** = Advanced/invite-only class. Requires coach invite and minimum 2 months training at The Academy.
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+KIDS MARTIAL ARTS (Ages 4–12)
+Age Groups: 4–7 | 8–12
+Experience Required: None
+Kids classes focus on the fundamentals of exercise, basic martial arts techniques,
+how to handle age-appropriate life situations, and fun. Classes are split by age
+group to ensure appropriate pacing and skill development.
+
+GI JIU-JITSU (Adults)
+Tracks: Foundations | All Levels
+Gi Jiu-Jitsu classes use a traditional kimono (gi). Foundations is designed for
+newer students building core technique. All Levels is open to students of all
+experience levels.
+
+NO-GI JIU-JITSU (Adults)
+Tracks: Foundations | All Levels | Mixed Levels | Open Mat
+No-Gi classes are practiced without a kimono. Foundations is for newer students.
+All Levels and Mixed Levels welcome students at any experience level. Open Mat
+is an unstructured drilling/rolling session. Requires coach invite.
+
+MUAY THAI (Adults)
+Tracks: Foundations | All Levels | Mixed Levels | Sparring
+Muay Thai is a striking-based martial art. Foundations is entry-level. All Levels
+and Mixed Levels welcome all experience levels. Sparring is invite/advanced only. Requires coach invite and minimum 2 months training.
+
+WOMEN'S ONLY NO-GI JIU-JITSU
+Schedule: Thursdays 6:30–7:30 PM
+A dedicated No-Gi Jiu-Jitsu class for women. No experience required.
+
+MMA
+Schedule: Mondays and Wednesdays 7:30–8:30 PM
+Invite/advanced only. Requires coach invite and minimum 2 months training at The Academy.
+
+PRIVATE LESSONS
+All Academy instructors are available for private lessons.
+Scheduling is arranged directly with staff.
+
+
+## SECTION 5 — ADVANCED CLASS REQUIREMENTS (**)
+
+
+Classes marked ** on the schedule are advanced or invite-only.
+
+Access Requirements:
+- A minimum of 2 months of training at The Academy, AND/OR
+- A direct coach invite
+
+Required Equipment for Advanced/Sparring Classes:
+- Shin guards
+- 16 oz boxing gloves
+- Mouth guard
+- Cup
+
+Advanced class eligibility is determined by training duration and coach assessment.
+
+
+## SECTION 6 — GENERAL POLICIES AND EXPECTATIONS
+
+
+Attendance:
+- Students are responsible for attending class on time.
+- Proper equipment and uniform are required at each session.
+
+Hygiene Standards:
+- Showering before class is required.
+- Clean shirt, clean gi, and clean gear are required.
+- Short nails are required.
+
+
+## SECTION 7 — FAQs
+
+
+**Q:** Do I need to be athletic to start martial arts?
+**A:** No. Classes are designed to meet students where they are, whether a complete
+
+beginner or already active. Strength, coordination, flexibility, and endurance
+build naturally through training over time.
+
+
+**Q:** Are the classes fun?
+**A:** Classes are designed to be both fun and rewarding. Every class is structured
+
+to challenge students at their level in an engaging, supportive environment.
+
+
+**Q:** What is a good age for a child to start martial arts?
+**A:** Practically any age. The Academy has programs starting at age 4 through adult.
+
+Kids programs are split into 4–7 and 8–12 age groups.
+
+
+**Q:** Can martial arts cause injury?
+**A:** The Academy places a strong focus on safety and injury prevention. Because
+
+martial arts builds strength and flexibility, students often experience fewer
+injuries in daily life.
+
+
+**Q:** Do I have to be in good shape to start?
+**A:** No. Classes are tailored to challenge students appropriately and safely
+
+regardless of current fitness level. The program helps students get in shape
+as they train.
+
+
+**Q:** Is martial arts violent?
+**A:** No. The philosophies behind martial arts revolve around peace and harmony.
+
+The Academy teaches diplomacy and friendship alongside technique. Students
+develop practical self-defense skills as part of their training.
+
+
+**Q:** Are private lessons available?
+**A:** Yes. All Academy instructors are available for private lessons.
+
+Scheduling and details are handled directly with staff.
+
+
+**Q:** Is there a Women's Only class?
+**A:** Yes. Women's Only No-Gi Jiu-Jitsu runs Thursdays from 6:30 to 7:30 PM.
+
+
+**Q:** What disciplines does The Academy offer?
+**A:** Muay Thai, Gi Jiu-Jitsu, No-Gi Jiu-Jitsu, Kids Martial Arts, and MMA
+
+(advanced/invite only). A Women's Only No-Gi Jiu-Jitsu class also runs weekly.
+
+
+**Q:** How do I get into an advanced or invite-only class?
+**A:** Advanced classes require a minimum of 2 months of training at The Academy
+
+and/or a direct coach invite. Eligibility is assessed by coaches.
+
+
+## SECTION 8 — PRICING
+
+
+Membership pricing is not published. Pricing details are discussed directly with
+instructors and staff. A free trial class is available with no commitment required.
+Instructors review membership options and pricing during or after the trial class
+based on individual training goals and schedule.
+
+## END OF KNOWLEDGE BASE

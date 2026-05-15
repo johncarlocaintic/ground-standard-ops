@@ -1,0 +1,331 @@
+# CENTERLINE JIU-JITSU — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-13
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-13 screenshot); centerlinejiujitsuchandler.com (2026-05-13)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON LEGAL NAME: The business legal name is Quest Martial Arts LLC. The
+operating/trading name is Centerline Jiu-Jitsu. The bot-facing name is
+Centerline Jiu-Jitsu throughout this KB.
+
+NOTE ON FRIDAY/SUNDAY: Neither day appears in the ClickUp schedule. Confirm
+with client whether the academy is closed on those days.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Centerline Jiu-Jitsu
+Business Legal Name: Quest Martial Arts LLC
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Chandler, AZ
+
+Description: Centerline Jiu-Jitsu is a Brazilian Jiu-Jitsu academy in Chandler,
+Arizona. The academy offers BJJ programs for all ages — from pre-school children
+to adults — across beginner, intermediate, advanced, and competition tracks.
+Classes are structured to welcome new students directly into regular training
+from day one.
+
+Programs Offered:
+- Adult BJJ (All Levels Co-Ed, Beginner–Intermediate, Intermediate–Advanced)
+- Women's Only Jiu-Jitsu
+- Youth BJJ (Ages 8–14)
+- Kids BJJ (Ages 5–7)
+- Pre-School Jiu-Jitsu (Ages 3–4)
+- Black Belt Club / Advanced Youth (Ages 8–14)
+- Competition Class (noted on website — confirm schedule)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 3016 N Dobson Rd Suite 12, Chandler, AZ 85224
+Business Phone: (480) 756-2323
+Owner Cell: (480) 244-3314
+Email: michael@centerlinejiujitsu.com
+Website: centerlinejiujitsuchandler.com
+Instagram: @centerlinejiujitsu_chandler
+Facebook: CenterLineJiujitsu
+
+Owner: Michael Stinson
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+### Monday
+
+
+- **11:00 AM – 12:30 PM** — All Levels Co-Ed Adult
+- **4:30 PM – 5:10 PM** — Kids BJJ (Ages 5–7)
+- **5:15 PM – 6:00 PM** — Youth BJJ (Ages 8–14)
+- **6:00 PM – 7:00 PM** — All Levels Adult
+
+
+### Tuesday
+
+
+- **4:30 PM – 5:00 PM** — Pre-School BJJ (Ages 3–4)
+- **5:15 PM – 5:50 PM** — Kids BJJ (Ages 5–7)
+- **6:00 PM – 6:50 PM** — Youth BJJ (Ages 8–14)
+- **7:00 PM – 8:30 PM** — Adults All Levels Co-Ed
+
+
+### Wednesday
+
+
+- **11:00 AM – 12:30 PM** — All Levels Co-Ed Adult
+- **4:30 PM – 5:10 PM** — Kids BJJ (Ages 5–7)
+- **5:15 PM – 6:00 PM** — Youth BJJ (Ages 8–14)
+- **6:00 PM – 7:00 PM** — Adults Co-Ed Intermediate – Advanced
+- **7:00 PM – 8:00 PM** — Adults Co-Ed Beginner – Intermediate
+- **8:00 PM – 9:00 PM** — Women's Only Jiu-Jitsu
+
+
+### Thursday
+
+
+- **4:30 PM – 5:00 PM** — Pre-School BJJ (Ages 3–4)
+- **5:15 PM – 5:50 PM** — Kids BJJ (Ages 5–7)
+- **6:00 PM – 6:50 PM** — Youth BJJ (Ages 8–14)
+- **7:00 PM – 8:00 PM** — Adults Co-Ed Beginner to Intermediate
+- **8:00 PM – 9:30 PM** — Adults Co-Ed Intermediate to Advanced
+
+
+### Friday
+
+
+[ GAP — No Friday classes listed in source. Confirm with client. ]
+
+
+### Saturday
+
+
+- **9:15 AM – 9:50 AM** — Kids BJJ
+- **10:00 AM – 10:50 AM** — Youth BJJ
+- **11:00 AM – 11:50 AM** — Black Belt Club / Advanced Youth (Ages 8–14)
+- **11:00 AM – 11:50 AM** — Women's Only Jiu-Jitsu
+- **12:00 PM – 1:00 PM** — Adults Co-Ed Beginner – Intermediate
+- **1:00 PM – 2:30 PM** — Adults Co-Ed Intermediate – Advanced
+
+
+### Sunday
+
+
+[ GAP — No Sunday classes listed in source. Confirm with client. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+PRE-SCHOOL BJJ (AGES 3–4)
+Introductory jiu-jitsu for the youngest students. Available Tuesday and Thursday
+afternoons.
+
+KIDS BJJ (AGES 5–7)
+Brazilian Jiu-Jitsu for children ages 5 to 7. Classes run Monday, Tuesday,
+Wednesday, Thursday evenings and Saturday mornings.
+
+YOUTH BJJ (AGES 8–14)
+Brazilian Jiu-Jitsu for older children and teens ages 8 to 14. Available Monday,
+Tuesday, Wednesday, Thursday evenings and Saturday mornings.
+
+BLACK BELT CLUB / ADVANCED YOUTH (AGES 8–14)
+Advanced training class for youth students ages 8 to 14. Available Saturday
+mornings at 11:00 AM.
+
+ADULT BJJ — ALL LEVELS CO-ED
+Open-level adult class for all experience levels. Available Monday and Wednesday
+mornings (11:00 AM) and Tuesday evenings (7:00 PM).
+
+ADULT BJJ — BEGINNER–INTERMEDIATE
+Structured adult class for students in the early-to-mid development range.
+Available Wednesday and Thursday evenings, and Saturday midday.
+
+ADULT BJJ — INTERMEDIATE–ADVANCED
+Adult class for more experienced practitioners. Available Wednesday evening,
+Thursday evening, and Saturday afternoon.
+
+WOMEN'S ONLY JIU-JITSU
+A women's-only BJJ class. All levels are welcome. Available Wednesday evening
+at 8:00 PM and Saturday morning at 11:00 AM.
+
+COMPETITION CLASS
+Noted on the academy website as a program. Days, times, and eligibility are
+not confirmed in source materials. See Section 10.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students. Trial students join a regular
+class directly on their first visit — there are no separate intro-only sessions.
+
+Trial class appointments are scheduled 15 minutes before the class start time.
+For example, a 6:00 PM class has an appointment slot at 5:45 PM. New students
+should arrive at their scheduled appointment time, or early enough to receive
+a loaner uniform if needed.
+
+A loaner uniform (gi) is available for first-time students at no charge.
+Loaner uniform availability is not guaranteed — early arrival or advance notice
+is recommended.
+
+A participation waiver is part of the trial class process. Students receive
+the waiver by email and text prior to their appointment. Students who have not
+completed the waiver before arriving can complete it at the academy.
+
+A water bottle is recommended. A water machine with paper cups is available
+at the academy.
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing varies based on program, age group,
+and training frequency. Membership options and accurate pricing are discussed
+with new students following the free trial class.
+
+[ GAP — Membership policies (cancellation, pause/hold, contract terms, and
+payment methods) are not confirmed from available sources. See Section 10. ]
+
+
+## SECTION 7 — POLICIES
+
+
+Uniform:
+A loaner uniform is available for trial students. Enrolled members are expected
+to have their own uniform.
+
+Waiver:
+A participation waiver is required. It is sent to students by email and text
+before their first class. Students can also complete it at the academy on
+arrival.
+
+Conduct:
+[ GAP — No conduct or code-of-conduct policy is confirmed in available sources. ]
+
+Parents:
+[ GAP — No parent/spectator policy confirmed in available sources. ]
+
+
+## SECTION 8 — FAQs
+
+
+**Q:** What is Centerline Jiu-Jitsu?
+**A:** Centerline Jiu-Jitsu is a Brazilian Jiu-Jitsu academy in Chandler, Arizona,
+
+offering BJJ classes for all ages from pre-school through adult, including
+beginner, intermediate, advanced, and women's-only programs.
+
+
+**Q:** Where is Centerline Jiu-Jitsu located?
+**A:** 3016 N Dobson Rd Suite 12, Chandler, AZ 85224.
+
+
+**Q:** What programs are offered?
+**A:** Pre-School BJJ (ages 3–4), Kids BJJ (ages 5–7), Youth BJJ (ages 8–14),
+
+Black Belt Club / Advanced Youth (ages 8–14), Adult All Levels Co-Ed, Adult
+Beginner–Intermediate, Adult Intermediate–Advanced, and Women's Only
+Jiu-Jitsu. A Competition Class is also listed on the website.
+
+
+**Q:** Is there a free trial class?
+**A:** A free trial class is available. New students join a regular class directly
+
+on their first visit.
+
+
+**Q:** What should I expect at my first class?
+**A:** The trial class appointment is scheduled 15 minutes before the class start.
+
+A loaner uniform is available — arrive on time or early to receive it. A waiver
+is sent before the appointment; it can also be completed on arrival. Bring a
+water bottle — a water machine is available at the academy.
+
+
+**Q:** Are there morning classes?
+**A:** Yes. All Levels Co-Ed Adult classes run Monday and Wednesday mornings from
+
+11:00 AM to 12:30 PM.
+
+
+**Q:** Are there classes for young children?
+**A:** Pre-School BJJ for ages 3–4 runs Tuesday and Thursday at 4:30 PM. Kids BJJ
+
+for ages 5–7 runs Monday through Thursday evenings and Saturday mornings.
+
+
+**Q:** Is there a class for women only?
+**A:** Women's Only Jiu-Jitsu runs Wednesday evenings at 8:00 PM and Saturday
+
+mornings at 11:00 AM.
+
+
+**Q:** Who owns and runs the academy?
+**A:** Michael Stinson is the owner of Centerline Jiu-Jitsu.
+
+
+**Q:** What is the business phone number?
+**A:** The business phone is (480) 756-2323. The owner can also be reached at
+
+(480) 244-3314.
+
+
+**Q:** What is the email address?
+**A:** michael@centerlinejiujitsu.com.
+
+
+**Q:** Where can I find more information?
+**A:** centerlinejiujitsuchandler.com. The academy is also on Instagram
+
+(@centerlinejiujitsu_chandler) and Facebook (CenterLineJiujitsu).
+
+
+## SECTION 9 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program, age
+group, and the number of classes per week. Pricing and membership options are
+discussed with new students following the free trial class. The trial class
+is completely free with no commitment required.
+
+
+## SECTION 10 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[ ] Friday and Sunday schedule — Neither day is listed in the ClickUp source.
+    Confirm whether the academy is open or closed on those days.
+
+[ ] Membership policies — Cancellation terms, pause/hold policy, contract
+    length, and payment methods are not provided in available sources.
+
+[ ] Competition class — Listed on the website as a program. Not on the ClickUp
+    schedule. Confirm whether it is active and provide days, times, and
+    eligibility.
+
+[ ] Instructor credentials — Only the owner name (Michael Stinson) is confirmed.
+    Belt rank, credentials, background, and any additional instructors are not
+    confirmed from available sources.
+
+[ ] Black Belt Club eligibility — Confirm whether the Black Belt Club / Advanced
+    Youth class is invitation-only or open enrollment.
+
+[ ] Women's Only class age range — Confirm minimum age for Women's Only class
+    (adult-only, or teens eligible too?).
+
+[ ] Parent/spectator policy — Not confirmed in available sources.
+
+[ ] Conduct policy — Not confirmed in available sources.
+
+[ ] Drop-in availability — Whether drop-in attendance is offered and any
+    associated fee is not confirmed.
+
+[ ] Trial class loaner uniform — Confirm current availability and whether
+    advance reservation is recommended or required.
+
+## END OF KNOWLEDGE BASE

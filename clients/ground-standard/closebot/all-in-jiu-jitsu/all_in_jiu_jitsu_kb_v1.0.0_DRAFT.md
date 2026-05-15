@@ -1,0 +1,343 @@
+# ALL IN JIU-JITSU — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Updated: 2026-05-15 (website fact-check — allinjiujitsu.com)
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); allinjiujitsu.com (2026-05-15)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON BUSINESS NAME: ClickUp lists "All in Jiu-Jitsu." Website and Facebook
+use "All In Brazilian Jiu-Jitsu." Confirm canonical name for the bot.
+See Section 11.
+
+NOTE ON WEBSITE: The original source domain bteamnj.com was inaccessible.
+The correct active website is allinjiujitsu.com — confirmed 2026-05-15.
+Phone, email, and trial attire confirmed from that site. Instructor names
+and schedule still not publicly available on website.
+
+NOTE ON TRIAL CLASSES: ClickUp states beginners are recommended for Mon, Wed,
+Fri, or Saturday classes. New students may also attend any class that fits
+their schedule. The gym can accommodate up to 5 trial students per day.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: All in Jiu-Jitsu
+Also Known As: B-Team NJ / BTeam Jiu-Jitsu NJ
+Industry: Brazilian Jiu-Jitsu / Mixed Martial Arts / Martial Arts
+Location: Green Brook, New Jersey
+
+Description: All in Jiu-Jitsu is a Brazilian Jiu-Jitsu and martial arts gym
+in Green Brook, New Jersey, operating under the B-Team NJ brand. The gym offers
+No-Gi BJJ, MMA, and youth BJJ programs for students of all levels. Classes
+include dedicated beginner tracks, a ladies-only No-Gi class, open mat sessions,
+and live training. The gym is beginner-friendly with early morning and evening
+class options throughout the week.
+
+Programs Offered:
+- Beginner's No-Gi BJJ (adult)
+- All Level No-Gi BJJ (adult)
+- Beginner's MMA
+- Ladies No-Gi
+- Open Mat
+- Live Training
+- Kids Gi BJJ (ages 5–12)
+- Kids No-Gi BJJ (ages 5–12)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 263 Route 22 Suite B, Green Brook, NJ 08812
+Phone: (732) 903-2999
+Email: info@allinjiujitsu.com
+Website: allinjiujitsu.com
+Facebook: facebook.com/AllInBrazilianJiuJitsu
+
+[ GAP — Instagram and other social media handles not confirmed. See Section 11. ]
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule sourced from ClickUp PDF. Confirm all times before deploy.
+
+
+### Monday
+
+
+- **6:00 AM – 7:00 AM** — Beginner's No-Gi
+- **5:30 PM – 6:15 PM** — Kids Gi (Ages 5–12)
+- **6:30 PM – 7:30 PM** — Beginner's No-Gi
+- **7:30 PM – 8:30 PM** — All Level No-Gi
+- **8:30 PM – 9:30 PM** — Live Training
+
+
+### Tuesday
+
+
+- **5:30 PM – 6:15 PM** — Kids Gi (Ages 5–12)
+- **6:30 PM – 7:30 PM** — Beginner's MMA
+- **7:30 PM – 8:30 PM** — All Level No-Gi
+- **8:30 PM – 9:30 PM** — Live Training
+
+
+### Wednesday
+
+
+- **5:30 PM – 6:15 PM** — Kids Gi (Ages 5–12)
+- **6:30 PM – 7:30 PM** — Ladies No-Gi
+- **7:30 PM – 8:30 PM** — Beginner's No-Gi
+- **8:30 PM – 9:30 PM** — Live Training
+
+
+### Thursday
+
+
+- **5:30 PM – 6:15 PM** — Kids No-Gi (Ages 5–12)
+- **6:30 PM – 7:30 PM** — Open Mat
+- **7:30 PM – 8:30 PM** — All Level No-Gi
+- **8:30 PM – 9:30 PM** — Live Training
+
+
+### Friday
+
+
+- **6:00 AM – 7:00 AM** — Beginner's No-Gi
+- **5:30 PM – 6:15 PM** — Kids Gi (Ages 5–12)
+- **6:30 PM – 7:30 PM** — Beginner's No-Gi
+- **7:30 PM – 8:30 PM** — Open Mat
+- **8:30 PM – 9:30 PM** — Live Training
+
+
+### Saturday
+
+
+- **9:30 AM – 10:15 AM** — Kids Gi (Ages 5–12)
+- **10:30 AM – 11:30 AM** — Beginner's No-Gi
+- **11:30 AM – 12:30 PM** — Live Training
+
+
+### Sunday
+
+
+- **10:30 AM – 11:30 AM** — Beginner's No-Gi
+- **11:30 AM – 12:30 PM** — Live Training
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+BEGINNER'S NO-GI BJJ
+Entry-level No-Gi Brazilian Jiu-Jitsu for new students. Available Monday and
+Friday mornings at 6:00 AM; Monday, Wednesday, and Friday evenings at 6:30 PM;
+Saturday at 10:30 AM; and Sunday at 10:30 AM. The primary starting point for
+new adult students.
+
+RECOMMENDED TRIAL CLASSES
+New students are recommended to start with Beginner's No-Gi on Monday,
+Wednesday, Friday, or Saturday. If those days do not fit, any class is
+accessible to trial students. Up to 5 trial students are accepted per day.
+
+ALL LEVEL NO-GI BJJ
+No-Gi BJJ class open to all levels. Available Monday, Tuesday, and Thursday
+evenings.
+
+BEGINNER'S MMA
+Introductory Mixed Martial Arts class. Available Tuesday evenings at 6:30 PM.
+
+LADIES NO-GI
+No-Gi Brazilian Jiu-Jitsu class for women. Available Wednesday evenings at
+6:30 PM.
+
+OPEN MAT
+Unstructured open training. Available Thursday evenings at 6:30 PM and Friday
+evenings at 7:30 PM.
+
+LIVE TRAINING
+Sparring and live rolling session. Available Monday through Friday evenings
+at 8:30 PM and Saturday and Sunday midday at 11:30 AM. Live Training follows
+the structured class.
+
+KIDS GI BJJ (AGES 5–12)
+Gi Brazilian Jiu-Jitsu for youth students ages 5 to 12. Available Monday,
+Tuesday, Wednesday, and Friday evenings at 5:30 PM, and Saturday mornings at
+9:30 AM.
+
+KIDS NO-GI BJJ (AGES 5–12)
+No-Gi Brazilian Jiu-Jitsu for youth students ages 5 to 12. Available Thursday
+evenings at 5:30 PM.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students.
+
+New students are recommended to start with a Beginner's No-Gi class on Monday,
+Wednesday, Friday, or Saturday. If those days do not fit, students are welcome
+to attend any class that fits their schedule. The gym can accommodate up to 5
+trial students per day.
+
+First class attire (from website FAQ): athletic shirt (e.g. Under Armour style)
+and shorts.
+
+[ GAP — Full trial class policy (waiver requirements, loaner uniform, arrival
+instructions beyond attire, sign-up process) not confirmed from available
+sources. See Section 11. ]
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial class.
+
+Membership tiers include options for adults (multiple frequency tiers) and
+kids unlimited training.
+
+A one-time admin fee applies to new memberships. The admin fee is waived for
+members who commit to a 3-month contract.
+
+Family discounts are available.
+
+Drop-in classes are available. A mat fee applies.
+
+[ GAP — Cancellation policy, pause/hold policy, and payment methods not
+confirmed from available sources. See Section 11. ]
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+[ GAP — Instructor names, belt ranks, and credentials not confirmed from
+available sources. See Section 11. ]
+
+
+## SECTION 8 — POLICIES
+
+
+[ GAP — Gym policies (uniform requirements, sparring policy, photography,
+parental viewing, conduct standards) not confirmed from available sources.
+Website was inaccessible at time of drafting. See Section 11. ]
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is All in Jiu-Jitsu?
+**A:** All in Jiu-Jitsu (also known as B-Team NJ) is a Brazilian Jiu-Jitsu and
+
+martial arts gym in Green Brook, New Jersey offering No-Gi BJJ, MMA, and youth
+BJJ programs for all levels from beginner through advanced.
+
+
+**Q:** Where is All in Jiu-Jitsu located?
+**A:** 263 Route 22 Suite B, Green Brook, NJ 08812.
+
+
+**Q:** What is the phone number?
+**A:** (732) 903-2999.
+
+
+**Q:** What is the email?
+**A:** info@allinjiujitsu.com.
+
+
+**Q:** What is the website?
+**A:** allinjiujitsu.com.
+
+
+**Q:** What programs are offered?
+**A:** No-Gi BJJ (beginner and all levels), Beginner's MMA, Ladies No-Gi, Open
+
+Mat, Live Training, and youth Gi and No-Gi BJJ for ages 5–12.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial class is available. New students are recommended for Beginner's
+
+classes on Monday, Wednesday, Friday, or Saturday.
+
+
+**Q:** What age can kids start?
+**A:** Youth programs are available for ages 5–12.
+
+
+**Q:** Are there morning classes?
+**A:** Yes. Beginner's No-Gi runs Monday and Friday mornings at 6:00 AM.
+
+
+**Q:** Is there a class specifically for women?
+**A:** Yes. Ladies No-Gi runs Wednesday evenings at 6:30 PM.
+
+
+**Q:** Is there Open Mat?
+**A:** Yes. Open Mat is available Thursday evenings and Friday evenings. It is
+
+followed by Live Training on most days.
+
+
+**Q:** Are there family discounts?
+**A:** Yes. Family discounts are available.
+
+
+**Q:** Are there drop-ins?
+**A:** Yes. Drop-in classes are available.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program and
+training frequency. Pricing and membership options are discussed with new
+students following the free trial class. The trial class is completely free
+with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[ ] Business name — ClickUp: "All in Jiu-Jitsu." Website and Facebook:
+    "All In Brazilian Jiu-Jitsu." Confirm canonical name for the bot.
+
+[ ] Instructor names, belt ranks, and credentials — Still not available from
+    website (no public instructors/about page). Confirm with client.
+
+[ RESOLVED — 2026-05-15 website fact-check (allinjiujitsu.com) ]
+[x] Website — Correct site is allinjiujitsu.com (bteamnj.com was defunct).
+[x] Phone — (732) 903-2999 confirmed from website.
+[x] Email — info@allinjiujitsu.com confirmed from website.
+[x] First class attire — Athletic shirt and shorts (from website FAQ).
+
+[ ADDITIONAL GAPS ]
+
+[ ] Instructor names, belt ranks, credentials — Not available from website (no public instructors page). Confirm with client.
+
+[ ] Cancellation policy — Not confirmed from available sources.
+
+[ ] Pause/hold policy — Not confirmed from available sources.
+
+[ ] Payment methods — Not confirmed from available sources.
+
+[ ] Uniform requirements — Not confirmed from available sources.
+
+[ ] Sparring policy for new students — Not confirmed from available sources.
+
+[ ] Photography/filming policy — Not confirmed from available sources.
+
+[ ] Parent/spectator policy — Not confirmed from available sources.
+
+[ ] Social media (Instagram, etc.) — Facebook confirmed. Other handles not
+    confirmed.
+
+[ ] Trial sign-up process — Steps not confirmed from available sources.
+
+[ ] Sunday schedule — Two classes listed in ClickUp. Confirm whether Sunday
+    is a regular schedule day or seasonal/open mat only.
+
+## END OF KNOWLEDGE BASE

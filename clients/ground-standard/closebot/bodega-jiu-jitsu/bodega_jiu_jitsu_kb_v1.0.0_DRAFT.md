@@ -1,0 +1,317 @@
+# BODEGA JIU-JITSU — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); bodegajiujitsu.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON ADULT SCHEDULE: The ClickUp concierge notes contain only the kids
+class schedule. The adult class schedule is not available from any source
+reviewed. This is a CRITICAL gap — the bot cannot answer schedule questions
+for adult students until this is confirmed. See Section 11.
+
+NOTE ON NO-GI ONLY: Bodega Jiu-Jitsu is a No-Gi only academy. No Gi classes
+are offered. This is a core identity differentiator.
+
+NOTE ON CLASSES: ClickUp states all classes are 100% live training. This
+applies to beginners and experienced students alike.
+
+NOTE ON TRIAL SIGN-UP: The website states new students should schedule a free
+trial class by calling or emailing before arriving. Do not show up unannounced.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Bodega Jiu-Jitsu
+Industry: Brazilian Jiu-Jitsu / No-Gi Grappling
+Location: Maplewood, NJ
+Founded: Late 2022
+
+Description: Bodega Jiu-Jitsu is a No-Gi only Brazilian Jiu-Jitsu academy in
+Maplewood, New Jersey, founded in late 2022 by Kyvann Gonzalez and Chas Makk.
+The academy is located inside the Soma Movement studio. As a No-Gi only
+facility, Bodega offers grappling instruction without the traditional uniform,
+serving both competitive athletes and beginners from a beginner-friendly
+platform. All classes involve live training from day one, with techniques and
+intensity scaled to each student's experience level. The founders bring together
+expertise in BJJ, Muay Thai, Taekwondo, and boxing.
+
+Programs Offered:
+- Genesis (adult beginner No-Gi program — per website; details pending client
+  confirmation, see Section 11)
+- Adult No-Gi Grappling
+[ GAP — Full adult program list not confirmed. See Section 11. ]
+- Kids Grappling (ages 6–8 and ages 9–12, Saturday)
+- Kids No-Gi Grappling (ages 6–13, weekdays)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 6 W Parker Ave, Maplewood, NJ 07040
+Located inside: Soma Movement studio
+Phone: (908) 201-3863
+Email: bodega.martialarts@gmail.com
+Website: bodegajiujitsu.com
+
+[ GAP — Phone and email are from the website only; not confirmed in ClickUp.
+Confirm primary contact details. See Section 11. ]
+
+[ GAP — Social media handles not confirmed from available sources.
+See Section 11. ]
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+KIDS SCHEDULE (from ClickUp)
+
+
+### Monday
+
+
+- **6:00 PM – 6:45 PM** — Kids No-Gi Grappling (Ages 6–13)
+
+
+### Tuesday
+
+
+[ GAP — Tuesday kids schedule not confirmed. See Section 11. ]
+
+
+### Wednesday
+
+
+- **6:00 PM – 6:45 PM** — Kids No-Gi Grappling (Ages 6–13)
+
+
+### Thursday
+
+
+[ GAP — Thursday kids schedule not confirmed. See Section 11. ]
+
+
+### Friday
+
+
+[ GAP — Friday kids schedule not confirmed. See Section 11. ]
+
+
+### Saturday
+
+
+- **9:00 AM** — Kids Grappling (Ages 6–8)
+- **10:00 AM** — Kids Grappling (Ages 9–12)
+
+
+### Sunday
+
+
+[ GAP — Sunday schedule not confirmed from available sources. See Section 11. ]
+
+ADULT SCHEDULE
+[ GAP — Adult class schedule not available from any source reviewed.
+Confirm full adult schedule before deploy. See Section 11. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+GENESIS (ADULT BEGINNER)
+An adult beginner No-Gi program listed on the academy website. Specific
+schedule, format, and enrollment details not confirmed from available sources.
+Confirm with client before deploy.
+
+ADULT NO-GI GRAPPLING
+No-Gi Brazilian Jiu-Jitsu for adults. All classes are 100% live training,
+scaled to each student's experience level. Beginner-friendly instruction with
+progressive learning. Full-body fitness training combining strength and
+cardiovascular conditioning. No Gi uniform required — students train in
+athletic clothing.
+[ GAP — Full adult program schedule not confirmed. See Section 11. ]
+
+KIDS NO-GI GRAPPLING (AGES 6–13)
+No-Gi grappling for youth students ages 6 to 13, with a one-year exception on
+both sides on a case-by-case basis. Available Monday and Wednesday evenings
+at 6:00 PM. Youth programs include structured martial arts training and focus
+on social skill development and discipline alongside grappling technique.
+
+KIDS GRAPPLING — SATURDAY (SPLIT BY AGE)
+Saturday youth classes are divided by age group: ages 6–8 at 9:00 AM and
+ages 9–12 at 10:00 AM.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students.
+
+New students must schedule their first visit in advance by calling or emailing
+the gym. Do not arrive unannounced for a first visit.
+
+For the first class: wear shorts and a black t-shirt, bring a water bottle,
+and arrive 15 minutes early.
+
+All classes are beginner-friendly and scaled to newcomers.
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial class.
+
+Membership options include adult tiers based on training frequency.
+
+[ GAP — Cancellation policy, pause/hold policy, payment methods, and contract
+terms not confirmed from available sources. See Section 11. ]
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+KYVANN GONZALEZ — Co-Founder & Black Belt Instructor
+Black Belt in Brazilian Jiu-Jitsu under Andy and Mike Main, whose lineage
+traces through Jamie Cruz to Renzo Gracie. Lifelong martial artist with over
+a decade of grappling experience. Also trained in Muay Thai for seven years.
+Currently focused exclusively on coaching excellence.
+
+CHAS MAKK — Co-Founder & Black Belt Instructor
+Bodega's first Black Belt. Began martial arts training in Taekwondo at age 6.
+Added boxing and Muay Thai experience before committing to Brazilian Jiu-Jitsu
+at age 19. Trained under Jay Hayes (7 years) and at Essential under JT Torres
+(3 years). Outside of training, enjoys bouldering and exploring local restaurants.
+
+
+## SECTION 8 — POLICIES
+
+
+Training Style:
+All classes are 100% live training from the first session. Classes are scaled
+to individual skill levels, making them suitable for complete beginners.
+
+First Class:
+Arrive 15 minutes early. Wear shorts and a black t-shirt. Bring water.
+
+Scheduling:
+New students must schedule their first visit in advance by calling or emailing.
+Walk-ins are not accepted.
+
+Kids Age Range:
+The primary youth program serves ages 7–12. A one-year exception on both sides
+is made on a case-by-case basis, allowing students as young as 6 or as old as
+13 to join.
+
+[ GAP — Uniform requirements, photography policy, parent/spectator policy,
+and sparring policy not confirmed from available sources. See Section 11. ]
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Bodega Jiu-Jitsu?
+**A:** Bodega Jiu-Jitsu is a No-Gi only Brazilian Jiu-Jitsu academy in Maplewood,
+
+New Jersey, founded in late 2022 by Kyvann Gonzalez and Chas Makk. The academy
+is located inside the Soma Movement studio and offers grappling instruction for
+adults and youth.
+
+
+**Q:** Where is Bodega Jiu-Jitsu located?
+**A:** 6 W Parker Ave, Maplewood, NJ 07040 — inside the Soma Movement studio.
+
+
+**Q:** What is the phone number?
+**A:** (908) 201-3863.
+
+
+**Q:** What is the email?
+**A:** bodega.martialarts@gmail.com.
+
+
+**Q:** Does Bodega offer Gi classes?
+**A:** No. Bodega Jiu-Jitsu is a No-Gi only academy.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial class is available. New students must schedule their first visit
+
+in advance by calling or emailing — do not arrive unannounced.
+
+
+**Q:** Do I need experience to start?
+**A:** No. All classes are beginner-friendly and scaled to newcomers.
+
+
+**Q:** What should I wear to my first class?
+**A:** Shorts and a black t-shirt. Arrive 15 minutes early and bring water.
+
+
+**Q:** Are there classes for kids?
+**A:** Yes. Kids classes run Monday and Wednesday evenings for ages 6–13, and
+
+Saturday mornings split by age group (6–8 at 9:00 AM, 9–12 at 10:00 AM).
+
+
+**Q:** Who founded Bodega?
+**A:** Kyvann Gonzalez and Chas Makk, lifelong martial artists and close friends
+
+who founded the academy in late 2022.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program and
+training frequency. Pricing and membership options are discussed with new
+students following the free trial class. The trial class is completely free
+with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[ ] Adult class schedule — Completely missing from ClickUp. The ClickUp only
+    contains the kids schedule. Provide the full adult weekly schedule before
+    this KB can be deployed.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Genesis adult beginner program — Listed on website as a separate adult
+    beginner program. Added to KB programs list. Confirm schedule, format,
+    and enrollment details.
+
+[ ADDITIONAL GAPS ]
+[ ] Tuesday and Thursday kids schedule — ClickUp shows Mon/Wed kids at 6 PM.
+    Tuesday and Thursday kids schedule not confirmed.
+
+[ ] Friday and Sunday schedule — Not confirmed from any source.
+
+[ ] Phone and email — From website only (908-201-3863, bodega.martialarts@gmail.com).
+    Confirm these are the correct primary contact details.
+
+[ ] Cancellation policy — Not confirmed from available sources.
+
+[ ] Pause/hold policy — Not confirmed from available sources.
+
+[ ] Payment methods — Not confirmed from available sources.
+
+[ ] Drop-in policy — Not confirmed from available sources.
+
+[ ] Uniform requirements — Not confirmed from available sources.
+
+[ ] Sparring policy for new students — ClickUp says 100% live training; confirm
+    how this applies to first-day students specifically.
+
+[ ] Photography policy — Not confirmed from available sources.
+
+[ ] Parent/spectator policy — Not confirmed from available sources.
+
+[ ] Social media — Not confirmed from available sources.
+
+[ ] Belt promotion policy — Not confirmed from available sources.
+
+## END OF KNOWLEDGE BASE

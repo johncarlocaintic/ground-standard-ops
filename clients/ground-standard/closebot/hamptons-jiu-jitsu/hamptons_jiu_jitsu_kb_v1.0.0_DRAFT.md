@@ -1,0 +1,531 @@
+# HAMPTONS JIU-JITSU — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 screenshots); hamptonsjiujitsu.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON TWO LOCATIONS: Hamptons Jiu-Jitsu operates at two confirmed locations
+— Southampton (HQ) and Westhampton Beach. The schedule in this KB reflects
+the Southampton location. Confirm whether this bot covers one or both
+locations. See Section 11.
+
+NOTE ON WESTHAMPTON ADDRESS: Website shows 68 Old Riverhead Rd. ClickUp showed
+48 Old Riverhead Rd. Website value used — 68. See Section 11.
+
+NOTE ON EMAIL: Website contact shows greg@hamptonsjiujitsu.com. ClickUp showed
+info@hamptonsjujitsu.com (different prefix and missing "s" in domain). Website
+value used. See Section 11.
+
+NOTE ON SCHEDULE: The Southampton schedule is read from the ClickUp schedule
+grid image. The live schedule link (Schedule.hjj.live) was inaccessible at
+time of drafting. Confirm all class times before deploy. See Section 11.
+
+NOTE ON DROP-INS: The Westhampton ClickUp FAQ states drop-ins are not allowed.
+The Southampton pricing sheet lists a drop-in rate. These may be
+location-specific policies. Confirm per-location drop-in policy. See Section 11.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Hamptons Jiu-Jitsu
+Also Known As: HJJ
+Industry: Brazilian Jiu-Jitsu / Martial Arts / Combat Sports
+Founded: 2016
+Location: Southampton, NY (HQ); Westhampton Beach, NY (second location)
+
+Description: Hamptons Jiu-Jitsu is a Brazilian Jiu-Jitsu and martial arts
+academy founded in 2016 by Greg Melita. The academy offers Gi and No-Gi
+BJJ, Muay Thai, Wrestling, and MMA for youth and adults across beginner through
+competition-focused tracks. HJJ is known for having the largest youth martial
+arts program in the Hamptons. The coaching staff includes multiple IBJJF
+black belt instructors from different lineages and styles, providing a range
+of teaching approaches within the same academy.
+
+Programs Offered:
+- Brazilian Jiu-Jitsu — No-Gi (Fundamentals through Advanced)
+- Brazilian Jiu-Jitsu — Gi (Fundamentals through Advanced)
+- Muay Thai
+- MMA
+- Wrestling (including High School-level)
+- Youth No-Gi BJJ (All Ages)
+- Youth Gi BJJ (Ages 4–7 and Ages 8+)
+- Advanced BJJ
+- Open Mat
+- Private Lessons
+- TRX Fitness (confirm whether HJJ program or Southampton Gym amenity —
+  see Section 11)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+SOUTHAMPTON (HQ)
+Address: 395 County Rd 39A, Southampton, NY 11968
+Located: Inside Southampton Gym, back room. Signs are outside the front door
+of the Southampton Gym. The address itself is the Southampton Gym, located
+in front of the Southampton library.
+Phone: (631) 900-2780
+Email: greg@hamptonsjiujitsu.com
+Website: hamptonsjiujitsu.com
+Facebook: facebook.com/hamptonsjiujitsu
+Live Schedule: Schedule.hjj.live
+
+WESTHAMPTON BEACH
+Address: 68 Old Riverhead Rd, Westhampton Beach, NY 11978
+
+[ GAP — Phone and email specific to the Westhampton Beach location not
+confirmed from available sources. See Section 11. ]
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+SOUTHAMPTON SCHEDULE
+Schedule sourced from ClickUp grid image. Confirm all times via Schedule.hjj.live
+before deploy. See Section 11.
+
+
+### Monday
+
+
+- **7:00 AM – 8:00 AM** — Open Mat
+- **12:00 PM – 1:00 PM** — Adult No-Gi — All Levels
+- **5:30 PM – 6:30 PM** — Youth No-Gi — All Ages
+- **6:30 PM – 7:30 PM** — Adult No-Gi
+- **7:30 PM – 8:30 PM** — [ GAP — Class at this slot not confirmed from grid.
+                      See Section 11. ]
+
+
+### Tuesday
+
+
+- **4:30 PM – 5:15 PM** — Youth Gi — Ages 4–7
+- **5:30 PM – 6:30 PM** — Youth Gi — Ages 8+
+- **6:30 PM – 7:30 PM** — Adult Gi
+- **7:30 PM – 8:30 PM** — Fundamentals Gi
+
+
+### Wednesday
+
+
+- **12:00 PM – 1:00 PM** — Adult No-Gi
+- **6:30 PM – 7:30 PM** — Fundamentals Gi
+- **7:30 PM – 8:30 PM** — Adult MMA
+
+
+### Thursday
+
+
+- **4:30 PM – 5:15 PM** — Youth Gi — Ages 4–7
+- **5:30 PM – 6:30 PM** — Youth Gi — Ages 8+
+- **6:30 PM – 7:30 PM** — Adult Gi / Fundamentals
+
+
+### Friday
+
+
+- **6:30 PM – 7:30 PM** — Adult No-Gi — All Levels
+
+
+### Saturday
+
+
+- **8:30 AM – 9:30 AM** — Advanced BJJ
+- **10:00 AM – 11:00 AM** — Youth No-Gi — All Ages
+- **11:00 AM – 12:00 PM** — Adult Gi — All Levels
+Open Mat (time slot confirm — See Section 11)
+
+
+### Sunday
+
+
+Open Mat
+No-Gi and High School Wrestling
+[ GAP — Exact Sunday times not confirmed from grid. See Section 11. ]
+
+WESTHAMPTON BEACH SCHEDULE
+[ GAP — Separate schedule for Westhampton Beach location not confirmed from
+available sources. See Section 11. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+ADULT NO-GI BJJ
+Brazilian Jiu-Jitsu without the traditional uniform. All Levels classes
+welcome beginners. Available Monday, Wednesday, Friday evenings, Monday
+midday, and Wednesday midday. Intro/beginner classes run Monday and Wednesday.
+
+ADULT GI BJJ
+Traditional Brazilian Jiu-Jitsu in a gi uniform. Fundamentals track for newer
+students; advanced track for experienced practitioners. Available Tuesday
+through Thursday evenings and Saturday mornings.
+
+ADVANCED BJJ
+Competition-focused and higher-level BJJ. Available Saturday mornings.
+
+ADULT MMA
+Mixed Martial Arts class. Available Wednesday evenings.
+
+YOUTH NO-GI BJJ
+No-Gi Brazilian Jiu-Jitsu for youth students of all ages. Available Monday
+evenings and Saturday mornings.
+
+YOUTH GI BJJ
+Traditional Gi BJJ for youth in two age groups:
+- Ages 4–7: Tuesday and Thursday afternoons (4:30–5:15 PM)
+- Ages 8 and up: Tuesday and Thursday evenings (5:30–6:30 PM)
+
+OPEN MAT
+Unstructured open training. Available Monday mornings, Saturday, and Sunday.
+
+PRIVATE LESSONS
+Private instruction available at both locations.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students. New students sign up for
+the trial on the website.
+
+Intro and beginner classes run Monday and Wednesday. New students can attend
+any of the beginner-appropriate classes listed in the schedule.
+
+What to wear: Comfortable workout attire for the first class. A uniform is
+provided if the class requires one.
+
+No equipment is needed for the first class.
+
+Guests may observe a class before deciding to join.
+
+A tour of the facility is available.
+
+[ GAP — Full trial class policy (number of sessions, loaner uniform procedure,
+waiver requirements, arrival instructions) not confirmed from available sources.
+See Section 11. ]
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial class.
+
+All memberships are month-to-month. No long-term contracts.
+
+Membership tiers include options for kids (two age groups), adults unlimited,
+BJJ + MMA combined, and family plans (two members and three or more).
+
+A summer unlimited membership is available from Memorial Day through Labor Day.
+
+Drop-in classes are available at the Southampton location.
+
+Open mats are free for all students.
+
+Freeze or Cancel: 2 weeks lead time required to freeze or cancel a membership.
+No cancellation fee.
+
+Discounts available for:
+- Military, fire, and law enforcement (LEO)
+- Cash paid up front for one year
+
+Payment: Apple Pay and credit cards.
+
+Family discounts: Available.
+
+Additional apparel available for purchase.
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+GREG MELITA — Founder & Head Instructor
+IBJJF Certified 3rd Degree Black Belt. Over 20 years of experience in
+Jiu-Jitsu and combat sports.
+
+RICH BYRNE — 3rd Degree Black Belt
+CEO of KASAI Grappling. Trained under John Danaher. 2-time IBJJF Masters
+No-Gi World Champion.
+
+BLACK BELT INSTRUCTORS:
+- Ryan Saboe — Black Belt (2012, under Grand Master Francisco Mansor)
+- Dan Curro — Black Belt (under Grand Master Francisco Mansor, 2013)
+- Vinicius Carmo — Black Belt (under Greg Melita)
+- James Laspesa — Black Belt (under Greg Melita)
+- Randy Nieves — Black Belt, Co-Owner North Fork Jiu-Jitsu (under Rich Byrne
+  and Greg Melita)
+- Marty Johnson — Black Belt (under Greg Melita)
+- Josiah Tyte — Black Belt (under Rich Byrne and Greg Melita)
+- Jim MacWhinnie — Black Belt (under Greg Melita and Randy Nieves)
+- Greg Johnston — Black Belt (promoted by Ramon Flores)
+- Howard Greenberg — Black Belt (credentials not confirmed from available
+  sources; name from website fact-check 2026-05-15)
+
+BROWN BELT INSTRUCTORS:
+- Virva Hinnemo — East Hampton Head Instructor; also holds Brown Belt in
+  Shotokan Karate
+- Chet Schmid (under Greg Melita)
+- Hieke Sauerland
+- Kristen Falek — Co-Owner North Fork Jiu-Jitsu (under Rich Byrne and
+  Greg Melita)
+- Zev — Holds Black Belts in Judo and Aikido; Master Yogi
+
+The academy brings together black belts from multiple lineages and styles,
+offering students access to diverse teaching approaches within the same gym.
+
+
+## SECTION 8 — POLICIES
+
+
+Membership:
+All memberships are month-to-month with no long-term contracts. 2 weeks lead
+time required to freeze or cancel. No cancellation fee. Pause available with
+30-day notice.
+
+Uniform:
+Workout attire is acceptable for first class. A uniform is provided if the
+class requires one. Students may bring their own equipment.
+
+Belt Promotions:
+Belt promotions occur approximately every couple of months.
+
+Safety:
+Multiple coaches and supervisors are present during classes. Professional
+mats are used.
+
+Kids Progress Tracking:
+The academy uses an app to track both attendance and note-taking for children's
+classes.
+
+Parental Viewing:
+Parents may watch their children's classes.
+
+Photography:
+Photography is allowed with permission.
+
+Bullying / Harassment:
+Zero tolerance policy.
+
+Special Needs and Accessibility:
+The academy accommodates students with special needs to the best of its
+ability. Private or small group sessions are recommended where appropriate.
+
+Medical:
+Rescue epi-pens and a med kit are on-site.
+
+Community Outreach:
+The academy works with a local nonprofit to offer financial assistance programs
+for community members. Youth scholarship programs include access to martial
+arts, surfing, yoga, and tennis.
+
+Online Resources:
+BJJ online instruction is available through the head coach. Private lessons
+via video are also available.
+
+Guests:
+Guests may attend or observe a class.
+
+Events:
+Birthday parties and private events are available.
+
+Wi-Fi: Available.
+
+Parking: Available.
+
+Locker rooms: Not available.
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Hamptons Jiu-Jitsu?
+**A:** Hamptons Jiu-Jitsu is a Brazilian Jiu-Jitsu and martial arts academy
+
+founded in 2016 in Southampton, NY. The academy offers BJJ (Gi and No-Gi),
+Muay Thai, Wrestling, and MMA for youth and adults, with the largest youth
+martial arts program in the Hamptons.
+
+
+**Q:** Where is Hamptons Jiu-Jitsu located?
+**A:** The main location is 395 County Rd 39A, Southampton, NY 11968 — inside
+
+the Southampton Gym, back room, in front of the Southampton library. A second
+location is in Westhampton Beach.
+
+
+**Q:** What is the phone number?
+**A:** (631) 900-2780.
+
+
+**Q:** What is the email?
+**A:** greg@hamptonsjiujitsu.com.
+
+
+**Q:** What programs are offered?
+**A:** No-Gi BJJ, Gi BJJ, Muay Thai, MMA, Wrestling, and youth BJJ programs for
+
+ages 4 and up. Advanced BJJ, Open Mat, and private lessons are also available.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial class is available. New students sign up on the website.
+
+
+**Q:** What age can kids start?
+**A:** Youth Gi BJJ is available for ages 4–7 and ages 8 and up. Youth No-Gi
+
+is available for all ages on Monday and Saturday evenings/mornings.
+
+
+**Q:** What should I wear to my first class?
+**A:** Comfortable workout attire. A uniform will be provided if the class
+
+requires one.
+
+
+**Q:** When are beginner classes?
+**A:** Introductory and beginner-appropriate classes run Monday and Wednesday.
+
+
+**Q:** Are there morning or midday classes?
+**A:** Yes. Open Mat runs Monday mornings at 7:00 AM. Adult No-Gi runs Monday
+
+and Wednesday at 12:00 PM.
+
+
+**Q:** Is there Open Mat?
+**A:** Yes. Open Mat is available Monday mornings, on Saturday, and on Sunday.
+
+Open mats are free.
+
+
+**Q:** Who teaches the classes?
+**A:** Hamptons Jiu-Jitsu has over 10 black belt instructors. The founder and
+
+head instructor is Greg Melita, an IBJJF Certified 3rd Degree Black Belt
+with over 20 years of experience. The staff includes black belts from multiple
+lineages and styles.
+
+
+**Q:** Are there private lessons?
+**A:** Yes. Private lessons are available at both locations.
+
+
+**Q:** Is there parking?
+**A:** Yes.
+
+
+**Q:** Are there family discounts?
+**A:** Yes. Family membership plans are available.
+
+
+**Q:** Are there discounts for military or first responders?
+**A:** Yes. Discounts are available for military, fire, and law enforcement.
+
+
+**Q:** What is the cancellation policy?
+**A:** 2 weeks lead time is required to freeze or cancel. There is no cancellation
+
+fee.
+
+
+**Q:** Are there long-term contracts?
+**A:** No. All memberships are month-to-month.
+
+
+**Q:** Can I watch a class before joining?
+**A:** Yes.
+
+
+**Q:** Is there a women's class?
+**A:** [ GAP — Westhampton FAQ indicates a women's only class is planned. Current
+
+active status not confirmed. See Section 11. ]
+
+
+**Q:** Is there community outreach?
+**A:** The academy partners with a local nonprofit to offer financial assistance
+
+programs. Youth scholarship programs provide access to martial arts and
+other activities.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program, age
+group, and number of family members. Pricing and membership options are
+discussed with new students following the free trial class. The trial class
+is completely free with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[x] RESOLVED (2026-05-15): Westhampton Beach address — Website confirms 68 Old
+    Riverhead Rd. KB updated to 68. (ClickUp had 48.)
+
+[x] RESOLVED (2026-05-15): Email — Website confirms greg@hamptonsjiujitsu.com.
+    KB updated. (ClickUp had info@hamptonsjujitsu.com.)
+
+[ ] Drop-in policy — Westhampton ClickUp FAQ says drop-ins are not allowed.
+    Southampton pricing sheet shows a drop-in rate. Confirm per-location
+    drop-in policy.
+
+[ ] Southampton schedule times — Schedule read from grid image. Live link
+    (Schedule.hjj.live) was inaccessible at time of drafting. Confirm all
+    class times before deploy, especially Monday and Saturday evening slots
+    and Sunday exact times.
+
+[ ] Bot scope — Confirm whether this bot covers Southampton only, Westhampton
+    Beach only, or both locations.
+
+[ ] Westhampton Beach schedule — Not available from any source. Provide
+    full Westhampton class schedule.
+
+[ ] Women's Only class — Westhampton FAQ states "we will have women's only
+    yes" (future tense). Confirm current status at both locations.
+
+[ ] East Hampton location — Website lists Virva Hinnemo as East Hampton Head
+    Instructor, implying a third location. Confirm whether East Hampton is
+    active and whether the bot covers it.
+
+[ ] Monday 7:30–8:30 PM class — A class block exists in this slot on the
+    schedule grid but could not be read clearly. Confirm class name.
+
+[ ] Saturday Open Mat time — Open Mat appears on Saturday but exact time
+    slot not confirmed from grid. Confirm.
+
+[ ] Sunday times — Open Mat and No-Gi / HS Wrestling confirmed as Sunday
+    offerings but exact times not readable from grid. Confirm.
+
+[ ] Trial class full policy — Number of trial sessions, loaner uniform
+    procedure, waiver requirements, and arrival instructions not confirmed
+    from available sources.
+
+[ ] Westhampton contact info — Phone and email specific to the Westhampton
+    location not confirmed.
+
+[ ] TRX Fitness / Yoga / Cryotherapy / Sports Performance / Physical Therapy
+    — Listed on the website as specialties. TRX Fitness added to programs list
+    pending confirmation. Confirm whether these are Hamptons JJ programs or
+    Southampton Gym building amenities. Resolve scope before deploy.
+
+[ NEW — 2026-05-15 website fact-check ]
+[ ] Howard Greenberg — Added to Black Belt instructor list from website.
+    Belt rank and credentials not yet confirmed. Confirm details.
+[ ] James Laspesa / James Lispesa — KB has "James Laspesa." Website may show
+    "James Lispesa." Confirm correct spelling.
+[ ] Additional instructors — Website may list additional staff not yet in KB.
+    Confirm full current roster.
+
+[ ] Social media — Facebook confirmed (facebook.com/hamptonsjiujitsu).
+    Instagram not confirmed. Confirm all active social channels.
+
+## END OF KNOWLEDGE BASE

@@ -1,0 +1,436 @@
+# GRIT JIU-JITSU & MUAY THAI — CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.0.0-DRAFT
+Date: 2026-05-14
+Status: DRAFT — GAPS FLAGGED — REQUIRES CLIENT CONFIRMATION BEFORE DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-14 PDF); gritbjj.com (2026-05-14)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+NOTE ON SCHEDULE SOURCE: The primary schedule reference is the ClickUp grid
+dated January 12, 2026. A "new schedule" note in ClickUp updates Kids BJJ
+Fundamental and Advance times (Mon–Thu) and those are reflected here. Adult
+and Muay Thai schedule currency is unconfirmed. Confirm full schedule with
+client before deploy. See Section 11.
+
+NOTE ON INTERNAL SCHEDULE DISCREPANCY: The ClickUp PDF contains two
+representations of the Muay Thai schedule — the grid and a text summary below
+it — that do not fully agree. The grid is used as the primary reference.
+Key conflicts are flagged in Section 11.
+
+NOTE ON MINIMUM AGE: ClickUp lists Kids BJJ Fundamental as ages 4–13. The
+website FAQ states the minimum age is "above 5." Confirm correct minimum age
+with client before deploy. See Section 11.
+
+
+## SECTION 1 — BUSINESS INFORMATION
+
+
+Full Business Name: Grit Jiu-Jitsu & Muay Thai
+Also Known As: Grit Brazilian Jiu-Jitsu & Muay Thai
+Industry: Brazilian Jiu-Jitsu / Muay Thai / Martial Arts
+Location: Spokane Valley, WA
+
+Description: Grit Jiu-Jitsu & Muay Thai is a martial arts academy in Spokane
+Valley, Washington offering Brazilian Jiu-Jitsu and Muay Thai for all skill
+levels and ages. The academy provides structured programming for youth, teens,
+and adults across beginner through competition tracks. The academy's approach
+centers on encouragement over ego, growth over comparison, and personalized
+coaching to support each member's individual goals.
+
+Programs Offered:
+- Kids BJJ (Fundamental and Intermediate/Advance tracks — ages confirmed in
+  Section 11)
+- Kids Muay Thai (ages 5–13)
+- Teens JitZ BJJ (ages 13–15)
+- Adult BJJ Essentials (beginner)
+- Adult BJJ Intermediate / Advance
+- Adult Muay Thai Fundamental
+- Adult Muay Thai Intermediate / Advance
+- Women's JitZ (Wednesday — confirm website omission in Section 11)
+- Breakfast Club / Morning JitZ (Mon, Thu, Fri)
+- Jitz Lunch Rollz (Wednesday)
+- Open Mat (Saturday)
+
+
+## SECTION 2 — CONTACT AND LOCATION
+
+
+Address: 4808 E Sprague Ave Suite 205, Spokane Valley, WA 99212
+Phone: (509) 392-4548
+Email: gritjiujitsu@gmail.com
+Website: gritbjj.com
+Facebook: facebook.com/GritBjj
+
+
+## SECTION 3 — FULL CLASS SCHEDULE
+
+
+Schedule sourced from ClickUp grid (12-Jan-26) and confirmed new schedule
+note for Kids BJJ. Confirm currency of all adult and Muay Thai times before
+deploy. See Section 11.
+
+Sparring protection note: All sparring classes require mouth guard and shin
+guards.
+
+
+### Monday
+
+
+- **4:30 PM – 5:00 PM** — Kids Muay Thai
+- **5:00 PM – 5:30 PM** — Kids BJJ — Fundamental
+- **5:10 PM – 6:10 PM** — Adult Muay Thai Fundamental (session 1)
+- **5:35 PM – 6:25 PM** — Kids BJJ — Intermediate / Advance / Competition
+- **6:00 AM – 7:00 AM** — Breakfast Club JitZ (morning)
+- **6:20 PM – 7:20 PM** — Adult Muay Thai Fundamental (session 2 / sparring)
+- **6:30 PM – 7:30 PM** — Adult BJJ Essentials
+- **6:30 PM – 7:30 PM** — Teens JitZ (Ages 13–15)
+- **7:30 PM – 8:30 PM** — Adult BJJ Intermediate / Advance
+
+
+### Tuesday
+
+
+- **5:00 PM – 5:30 PM** — Kids BJJ — Fundamental
+- **5:30 PM – 6:30 PM** — Adult Muay Thai Fundamental (session 1)
+- **5:35 PM – 6:25 PM** — Kids BJJ — Intermediate / Advance / Competition
+- **6:30 PM – 7:30 PM** — Adult BJJ Essentials
+- **6:30 PM – 7:30 PM** — Teens JitZ (Ages 13–15)
+- **6:40 PM – 7:40 PM** — Adult Muay Thai Fundamental (session 2)
+- **7:30 PM – 8:30 PM** — Adult BJJ Intermediate / Advance
+
+
+### Wednesday
+
+
+- **5:00 PM – 5:30 PM** — Kids Muay Thai
+- **5:00 PM – 5:30 PM** — Kids BJJ — Fundamental
+- **5:30 PM – 6:30 PM** — Women's JitZ
+- **5:35 PM – 7:05 PM** — Adult Muay Thai Intermediate / Advance
+- **5:35 PM – 6:25 PM** — Kids BJJ — Intermediate / Advance / Competition (No-Gi)
+- **6:30 PM – 7:30 PM** — Adult BJJ Essentials
+- **6:30 PM – 7:30 PM** — Teens JitZ (Ages 13–15)
+- **7:10 PM – 8:10 PM** — Adult Muay Thai Fundamental
+- **7:30 PM – 8:30 PM** — Adult BJJ Intermediate / Advance (No-Gi)
+- **11:30 AM – 12:30 PM** — Jitz Lunch Rollz
+
+
+### Thursday
+
+
+- **5:00 PM – 5:30 PM** — Kids BJJ — Fundamental
+- **5:30 PM – 6:30 PM** — Adult Muay Thai Fundamental (session 1)
+- **5:35 PM – 6:25 PM** — Kids BJJ — Intermediate / Advance / Competition (No-Gi)
+- **6:00 AM – 7:00 AM** — Breakfast Club JitZ (morning)
+- **6:30 PM – 7:30 PM** — Adult BJJ Essentials
+- **6:30 PM – 7:30 PM** — Teens JitZ (Ages 13–15)
+- **6:40 PM – 7:40 PM** — Adult Muay Thai Fundamental (session 2)
+- **7:30 PM – 8:30 PM** — Adult BJJ Intermediate / Advance (No-Gi)
+
+
+### Friday
+
+
+- **5:00 PM – 5:30 PM** — Kids Muay Thai
+- **5:00 PM – 6:00 PM** — Adult BJJ — All Levels
+- **5:00 PM – 6:00 PM** — Teens JitZ (Ages 13–15)
+- **5:40 PM – 7:40 PM** — Adult Muay Thai Fundamental / Intermediate / Advance
+- **6:00 AM – 7:00 AM** — Breakfast Club JitZ (morning)
+
+
+### Saturday
+
+
+- **9:00 AM – 10:00 AM** — Open Mat
+
+
+### Sunday
+
+
+[ GAP — No Sunday classes listed in ClickUp. Confirm with client. See
+Section 11. ]
+
+
+## SECTION 4 — PROGRAM DESCRIPTIONS
+
+
+KIDS BJJ — FUNDAMENTAL
+Beginner-level Brazilian Jiu-Jitsu for youth students. Available Monday through
+Thursday. Classes run 5:00–5:30 PM.
+
+KIDS BJJ — INTERMEDIATE / ADVANCE / COMPETITION
+Advanced and competition-track youth BJJ. Available Monday through Thursday
+5:35–6:25 PM. Wednesday and Thursday classes are No-Gi.
+
+KIDS MUAY THAI
+Striking and Muay Thai for youth students ages 5–13. Available Monday
+(4:30–5:00 PM), Wednesday (5:00–5:30 PM), and Friday.
+
+TEENS JITZ BJJ (Ages 13–15)
+Brazilian Jiu-Jitsu for teens ages 13 to 15. Available Monday through Thursday
+evenings and Friday afternoon.
+
+ADULT BJJ ESSENTIALS
+Beginner adult BJJ class. All skill levels are welcome. Available Monday through
+Thursday evenings and Friday afternoon. Entry-point class for new adult students.
+
+ADULT BJJ INTERMEDIATE / ADVANCE
+Intermediate and advanced adult BJJ. Available Monday through Thursday evenings.
+Wednesday and Thursday are No-Gi sessions.
+
+WOMEN'S JITZ
+Women's Brazilian Jiu-Jitsu class. Available Wednesday evenings 5:30–6:30 PM.
+
+ADULT MUAY THAI FUNDAMENTAL
+Beginner to intermediate Muay Thai covering striking fundamentals, footwork,
+balance, coordination, and timing. Available Monday through Friday. Entry-point
+class for new students interested in Muay Thai.
+
+ADULT MUAY THAI INTERMEDIATE / ADVANCE
+Intermediate and advanced Muay Thai. Available Wednesday and Friday.
+
+BREAKFAST CLUB / MORNING JITZ
+Early morning BJJ sessions. Available Monday, Thursday, and Friday 6:00–7:00 AM.
+
+JITZ LUNCH ROLLZ
+Midday BJJ session. Available Wednesday 11:30 AM–12:30 PM.
+
+OPEN MAT
+Unstructured open training. Available Saturday 9:00–10:00 AM.
+
+
+## SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+
+
+A free trial class is available for new students. New students are directed
+to the introductory class for their program:
+
+Entry-point classes for new students:
+- Kids BJJ (ages 4–13): Kids BJJ Fundamental — Mon–Thu 5:00–5:30 PM
+- Kids Muay Thai (ages 5–13): Mon 4:30–5:00 PM or Wed 5:00–5:30 PM
+- Adult BJJ (ages 14+): Adult BJJ Essentials — Mon–Thu 6:30–7:30 PM or
+  Fri 5:00–6:00 PM (All Levels)
+- Adult Muay Thai (ages 14+): Mon 5:10 PM, or Tue / Thu 5:30 PM
+
+Equipment for striking classes: comfortable shorts and a white shirt.
+Equipment for Jiu-Jitsu: comfortable shorts and any t-shirt. The academy
+provides necessary equipment at no charge for beginners.
+
+No prior fitness level is required to begin.
+
+[ GAP — Full trial class policy (number of trial sessions, duration, loaner
+uniform policy, waiver requirements, arrival instructions) is not confirmed
+from available sources. Confirm with client before deploy. See Section 11. ]
+
+
+## SECTION 6 — MEMBERSHIP AND PRICING
+
+
+Membership pricing is not published. Pricing and membership options are
+discussed with new students following the free trial class.
+
+No long-term contracts.
+
+Cancellation: 30-day notice period required. No cancellation fee specified.
+
+[ GAP — Membership pause/hold policy, payment methods, and any additional
+fees are not confirmed from available sources. See Section 11. ]
+
+
+## SECTION 7 — INSTRUCTORS AND STAFF
+
+
+[ GAP — No instructor names, belt ranks, credentials, or lineage are confirmed
+from available sources. Confirm full instructor roster for KB. See Section 11. ]
+
+
+## SECTION 8 — POLICIES
+
+
+Sparring:
+Sparring is completely optional. Monday has a dedicated sparring class.
+Students who prefer not to spar may skip the Monday sparring class. All
+sparring classes require a mouth guard and shin guards.
+
+Conduct:
+Students are expected to treat training partners with respect and care for
+their partner's safety.
+
+Fitness Requirement:
+No prior fitness level is required. The academy welcomes all fitness levels
+and emphasizes improvement through training.
+
+[ GAP — Uniform policy, photography policy, parent/spectator policy, and
+other academy policies are not confirmed from available sources. See
+Section 11. ]
+
+
+## SECTION 9 — FAQs
+
+
+**Q:** What is Grit Jiu-Jitsu & Muay Thai?
+**A:** Grit Jiu-Jitsu & Muay Thai is a martial arts academy in Spokane Valley,
+
+Washington offering Brazilian Jiu-Jitsu and Muay Thai for all ages and skill
+levels, from complete beginners to competition-focused students.
+
+
+**Q:** Where is Grit located?
+**A:** 4808 E Sprague Ave Suite 205, Spokane Valley, WA 99212.
+
+
+**Q:** What is the phone number?
+**A:** (509) 392-4548.
+
+
+**Q:** What is the email?
+**A:** gritjiujitsu@gmail.com.
+
+
+**Q:** What programs are offered?
+**A:** Kids BJJ, Kids Muay Thai, Teens BJJ (ages 13–15), Adult BJJ (beginner
+
+through advanced), Adult Muay Thai (beginner through advanced), Women's JitZ,
+morning classes, a Wednesday lunch session, and Saturday Open Mat.
+
+
+**Q:** What age can students start?
+**A:** The academy has classes for students of all ages. Youth programs begin
+
+at age 5 for Muay Thai and ages 4–5 for BJJ (confirm minimum age with
+client — see gaps). Adults and teens 14 and up are welcome in adult classes.
+A teens class covers ages 13–15.
+
+
+**Q:** Is there a free trial?
+**A:** A free trial class is available for new students.
+
+
+**Q:** Do I need experience to start?
+**A:** No. The Adult BJJ Essentials and Adult Muay Thai Fundamental classes are
+
+designed for complete beginners. No prior fitness or martial arts experience
+is required.
+
+
+**Q:** What should I wear to my first class?
+**A:** For Jiu-Jitsu: comfortable shorts and a t-shirt. For Muay Thai or striking
+
+classes: comfortable shorts and a white shirt. The academy provides necessary
+equipment for beginners at no charge.
+
+
+**Q:** Are there morning classes?
+**A:** Yes. Breakfast Club / Morning JitZ runs Monday, Thursday, and Friday from
+
+6:00–7:00 AM.
+
+
+**Q:** Are there midday classes?
+**A:** Yes. Jitz Lunch Rollz runs Wednesday from 11:30 AM–12:30 PM.
+
+
+**Q:** Are there classes for kids?
+**A:** Yes. Kids BJJ runs Monday through Thursday. Kids Muay Thai runs Monday,
+
+Wednesday, and Friday. A Teens BJJ class is available for ages 13–15.
+
+
+**Q:** Is there a class specifically for women?
+**A:** Women's JitZ runs Wednesday evenings at 5:30 PM.
+
+
+**Q:** Is sparring required?
+**A:** No. Sparring is completely optional. The Monday evening class is the
+
+sparring class — students who prefer not to spar can simply skip it.
+
+
+**Q:** What protection is required for sparring?
+**A:** All sparring classes require a mouth guard and shin guards.
+
+
+**Q:** Is there Open Mat?
+**A:** Yes. Open Mat runs Saturday mornings from 9:00–10:00 AM.
+
+
+**Q:** Are there No-Gi classes?
+**A:** Yes. Adult BJJ Intermediate/Advance on Wednesday and Thursday is No-Gi.
+
+Kids BJJ Intermediate/Advance on Wednesday and Thursday is also No-Gi.
+
+
+**Q:** Are there contracts?
+**A:** No long-term contracts. A 30-day cancellation notice is required.
+
+
+**Q:** Where can I find more information?
+**A:** gritbjj.com. The academy is also on Facebook at facebook.com/GritBjj.
+
+
+## SECTION 10 — PRICING RESPONSE CONTEXT
+
+
+Membership pricing varies based on several factors including the program, age
+group, and training frequency. Pricing and membership options are discussed
+with new students following the free trial class. The trial class is completely
+free with no commitment required.
+
+
+## SECTION 11 — GAPS / PENDING CLIENT CONFIRMATION (NOT FOR DEPLOYMENT)
+
+
+[ CRITICAL ]
+[ ] Minimum age — ClickUp lists Kids BJJ Fundamental as ages 4–13. Website
+    FAQ states minimum age is "above 5." Confirm correct minimum age for each
+    program (BJJ kids and Muay Thai kids).
+
+[ ] Friday Kids Muay Thai duration — ClickUp grid shows Fri 5–5:30 PM (30
+    min). Text note on same page shows Fri 5–6 PM (60 min). Confirm correct
+    end time.
+
+[ ] Adult Muay Thai Monday times — ClickUp grid shows 5:10–6:10 PM and
+    6:20–7:20 PM. Text note shows 5–6 PM intro to sparring and 6–7 PM
+    sparring. Confirm correct Monday Muay Thai times.
+
+[ ] Adult Muay Thai Wednesday — Grid shows Fundamental 7:10–8:10 PM and
+    Inter/Advance 5:35–7:05 PM. Text note shows Tue–Thu as 5:30–6:30 and
+    6:40–7:40 PM, which would include Wednesday. Confirm correct Wednesday
+    Muay Thai schedule.
+
+[ ] Adult Muay Thai Friday — Grid shows 5:40–7:40 PM. Text note shows
+    6–8 PM. Confirm correct Friday Muay Thai times.
+
+[ ] Schedule currency — Grid is from January 12, 2026. New schedule note
+    confirms kids BJJ is current. Confirm full adult and Muay Thai schedule
+    is still accurate as of deploy date.
+
+[x] RESOLVED (2026-05-15): Phone — Website confirms 509-392-4548 as the
+    primary contact number. (509-800-8085 was a third-party source entry.)
+
+[x] RESOLVED (2026-05-15): Email — Website confirms gritjiujitsu@gmail.com.
+    (gritbrazilianjiujitsu@gmail.com was a third-party source entry.)
+
+[ ] Sunday schedule — Not in ClickUp. Confirm whether the academy is open
+    or closed on Sundays.
+
+[ ] Women's JitZ — Listed in ClickUp (Wed 5:30–6:30 PM). Not mentioned on
+    website. Confirm whether currently active.
+
+[ ] Trial class policy — Full details (number of sessions, loaner equipment
+    policy, arrival instructions, waiver) not confirmed from available sources.
+
+[ ] Instructor roster — No instructor names, belt ranks, or credentials are
+    available from any source. Confirm full roster for KB.
+
+[ ] Membership policies — Pause/hold policy, accepted payment methods, and
+    any additional fees not confirmed from available sources.
+
+[ ] Uniform policy — Requirements beyond first-class attire not confirmed.
+
+[ ] Parent/spectator policy — Not confirmed from available sources.
+
+[ ] Instagram — Not confirmed. Facebook (GritBjj) confirmed. Confirm
+    Instagram handle if active.
+
+## END OF KNOWLEDGE BASE
