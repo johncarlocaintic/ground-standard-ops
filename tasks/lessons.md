@@ -4,6 +4,39 @@
 
 ---
 
+## KB fact-check pipeline — patterns from 17-gym website sweep (2026-05-15)
+
+Full website fact-check run across all 17 GSA KB DRAFTs. Key patterns:
+
+**Georgetown TX phantom address = GSA website template artifact.**
+Address "181 Market St Suite 106, Georgetown TX 78626" appeared as a secondary
+location on both Artistry BJJ (Houston TX) and Breathe JJ (Yaphank NY) websites.
+Neither is in Texas. Confirmed phantom on second fetch — not present on either
+site today. Root cause: GSA uses a shared website template; the secondary address
+field was not cleared for these clients. Rule: if the same secondary address
+appears on two different client sites, it's a template artifact. Close the flag,
+do not escalate to client unless they ask.
+
+**Both GitHub repos are private — raw links require authentication.**
+`johncarlocaintic/ground-standard-ops` and `idrizz28/gs-bot-builds` both return
+404 on unauthenticated raw URL fetches. Cannot share public download links from
+either repo. If a shareable link is needed, upload to Google Drive or provide
+the GitHub blob URL (requires login). Do not promise a public link.
+
+**Website fact-check workflow is now repeatable — script saved.**
+Generator script: `shared/scripts/maintenance/generate_kb_factcheck_report.py`.
+Output: `clients/ground-standard/closebot/GSA_KB_FactCheck_Report_{date}.docx`.
+Run this whenever KBs are updated or new builds complete. Fetches are parallel —
+all 17 sites in one pass. Re-run after client confirmations close gaps.
+
+**Gap resolution via website is partial — still needs client sign-off.**
+Website confirms or contradicts KB data, but does not replace ClickUp as the
+authoritative source. Even when the website resolves a conflict (e.g., Hamptons
+Westhampton address = 68, not 48), the Section 11 gap stays open until the client
+explicitly confirms. Website resolution is evidence, not closure.
+
+---
+
 ## KB build pipeline — operational patterns established (2026-05-14)
 
 Six KBs built this session (Gracie Farmington Valley, Gracie JJ East San Jose, Grit JJ & Muay Thai, Hammer Sports, Hamptons JJ, Inverted Gear Academy). Patterns that apply to every future KB build:
