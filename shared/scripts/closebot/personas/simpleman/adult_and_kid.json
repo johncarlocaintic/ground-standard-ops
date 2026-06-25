@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_adult_and_kid",
+  "opening_message": "I want to sign up both myself and my daughter",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1991-06-14), enrolling both yourself (beginner, no prior experience) AND your daughter Sofia (DOB: 2017-03-22, age 8, BJJ). When asked who you are enrolling, say 'both me and my daughter'. Do NOT mention prior training for yourself. Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1991-06-14. Give child info when asked: name Sofia, DOB 2017-03-22. Expect your adult booking to be Adult Fundamentals BJJ AND your child booking to be Youth 4-12 BJJ. Accept the first time slots offered for each. When both bookings are confirmed, reply with [END]."
+}

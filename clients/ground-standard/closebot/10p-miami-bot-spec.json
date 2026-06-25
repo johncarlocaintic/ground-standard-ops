@@ -1,0 +1,93 @@
+{
+  "gym": {
+    "name": "10th Planet Jiu-Jitsu Miami",
+    "website": "https://www.10thplanetmiami.com/",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for 10th Planet Jiu-Jitsu Miami. We offer Brazilian Jiu-Jitsu (no-gi, 10th Planet system) and striking programs for kids and adults at our Miramar academy. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Always confirm which discipline the lead wants — Jiu-Jitsu or Striking — before booking. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is 10th Planet Jiu-Jitsu Miami.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Always confirm discipline (Jiu-Jitsu vs Striking) before routing to a booking calendar",
+      "Kids age 3-6 can only book Jiu-Jitsu (Striking minimum age is 7)"
+    ]
+  },
+  "ghl": {
+    "locationId": "98Z8PDW1sSiYSGSzyqGl",
+    "sourceId": "src_MXT2RCPXUZNTOP0S"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj", "calendarName": "Adult Fundamentals BJJ", "calendarId": "ylk5gbihjmLKsgcqX9RN", "program": "bjj", "ageMin": 14 },
+      { "label": "adult_striking", "calendarName": "Adult Striking", "calendarId": "arh3msnuCtEZBdyV2sD6", "program": "striking", "ageMin": 14 }
+    ],
+    "kids": [
+      { "label": "kids_3_6_bjj", "calendarName": "Kids 3-6 BJJ", "calendarId": "do1v2YwQuDU5tGychmXs", "program": "bjj", "ageMin": 3, "ageMax": 6 },
+      { "label": "kids_7_13_bjj", "calendarName": "Kids 7-13 BJJ", "calendarId": "7l3EvYO9s9f4LtebWksV", "program": "bjj", "ageMin": 7, "ageMax": 13 },
+      { "label": "kids_7_13_striking", "calendarName": "Kids Striking", "calendarId": "99dJQKbLGwdDbAlK31mn", "program": "striking", "ageMin": 7, "ageMax": 13 }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Open Mat (Sunday 11am-1pm)",
+    "MMA Class (Saturday 9-11am)",
+    "Pro Training (Monday 10am-12pm, invite only)",
+    "Adults Advanced",
+    "Adults All Levels Competition Class"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "kidsCalendarCount": 3,
+    "requiresDisciplineSwitch": true
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian",
+    "bjj": "bjj",
+    "striking": "striking"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": "file_ZMTWH9BDVHNP9KB0",
+    "fileName": "v1_1_4_10th_Planet_Miami_KB.txt",
+    "indexed": true,
+    "knownGaps": [
+      "Kids JJ age range: website says ages 7-12, GHL calendar label says '7-13 BJJ'. Bot routes 13yo to Kids 7-13 BJJ (trusting GHL calendar). Confirm with gym whether 13yo belongs in Kids or Adults.",
+      "Kids Striking upper age not stated on website (listed as 'ages 7+'). Bot routes 7-13 to Kids Striking and 14+ to Adult Striking — confirm this is correct.",
+      "Kids Striking ambiguous start date: ClickUp flagged 'begins August 1st' but website and KB both show it as an active class with no caveat. ClickUp data discarded. Treating as bookable.",
+      "Staff bios fully missing from KB — Gabe Tejada, Mike Miguel, Estella Fernandez, Alejandro Tellez, Anthony Molina Valdes. Website confirms they exist. KB should be updated when client provides bios."
+    ]
+  },
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-16",
+      "botId": "bot_ZC2MREMJ87S77LH1",
+      "botName": "10th Planet Jiu-Jitsu Miami - Launch v1.0 [initial build] (2026-05-16)",
+      "version": "v1.0"
+    },
+    {
+      "date": "2026-05-24",
+      "botId": "bot_ZC2MREMJ87S77LH1",
+      "botName": "10th Planet Jiu-Jitsu Miami - Launch v1.1 [fix: schedule dump in n10_intro] (2026-05-24)",
+      "version": "v1.1"
+    }
+  ]
+}

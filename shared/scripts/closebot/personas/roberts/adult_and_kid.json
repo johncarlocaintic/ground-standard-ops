@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_adult_and_kid",
+  "opening_message": "I want to sign up both myself and my son for martial arts",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1989-03-07), enrolling both yourself AND your son Ryan (DOB: 2015-11-22, age 9). When asked which discipline for yourself, say 'BJJ' (default). When asked which discipline for your child, say 'BJJ'. Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1989-03-07. Give child info when asked: name Ryan, DOB 2015-11-22. Expect your adult booking to be Adult Fundamentals BJJ AND your child booking to be Kids 5-10 BJJ. Accept the first time slots offered for each. When both bookings are confirmed, reply with [END]."
+}

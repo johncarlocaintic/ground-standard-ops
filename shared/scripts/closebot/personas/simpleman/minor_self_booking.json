@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_minor_self_booking",
+  "opening_message": "hey I want to try BJJ",
+  "brief": "You are {{firstName}} {{lastName}}, age 16 (DOB: 2009-08-11), trying to self-book without a parent present. When the bot asks for your date of birth, give 2009-08-11. If the bot asks for a parent or guardian, say 'I don't have their info right now'. When the bot says a parent or guardian needs to book and that the team will follow up, reply with [END]. Do NOT proceed to give parent info — stay in the role of the solo minor."
+}

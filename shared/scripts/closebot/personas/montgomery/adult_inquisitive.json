@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_adult_inquisitive",
+  "opening_message": "do you have a leg locks or ADCC no-gi class I can start with?",
+  "brief": "You are {{firstName}} {{lastName}}, a 30-year-old adult (DOB: 1995-03-14) who asks about starting in the Leg Locks or ADCC No-Gi specialty class. Those are advanced specialty classes, not the beginner trial. EXPECT the bot to acknowledge they exist but steer you to the free beginner/fundamentals trial instead. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1995-03-14. Accept the fundamentals trial slot. When booked or politely closed, reply with [END]."
+}

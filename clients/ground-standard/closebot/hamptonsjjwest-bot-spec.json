@@ -1,0 +1,101 @@
+{
+  "gym": {
+    "name": "Hamptons Jiu-Jitsu West",
+    "website": "https://www.hamptonsjiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Hamptons Jiu-Jitsu, a Brazilian Jiu-Jitsu and martial arts academy in Westhampton Beach, New York. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. For adult leads, default to booking Adult Fundamentals BJJ — if a lead explicitly mentions they have prior experience and want All Levels, book Adult All Levels BJJ instead. Adult Advanced BJJ is for current members only and is not bookable for new leads. Muay Thai, MMA, and TRX are available at the gym but do not have online trial booking — acknowledge they exist and let leads know the team will follow up. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Hamptons Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Default adult trial is Adult Fundamentals BJJ — only route to Adult All Levels BJJ if lead explicitly states they have prior BJJ experience",
+      "Adult Advanced BJJ is for current members only — not bookable for new leads",
+      "Muay Thai, MMA, and TRX have no online trial booking — acknowledge they exist, tell lead the team will follow up",
+      "Kids 3-5 BJJ, Kids 6-9 BJJ, Kids 10-14 BJJ are the three youth programs",
+      "Ages 15-17 have no dedicated calendar — capture guardian contact, tag minor - needs guardian, do not book, team follows up",
+      "Under age 3 — youngest program is Kids 3-5 BJJ; do not book, suggest contacting the gym directly"
+    ]
+  },
+  "ghl": {
+    "locationId": "uEHuCfRCBv7viqsKBbYx",
+    "sourceId": "src_8RHY7XBXZ50T5CXD"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_fundamentals", "calendarName": "Adult Fundamentals BJJ", "calendarId": "not_in_db", "ageMin": 18, "default": true },
+      { "label": "adult_all_levels", "calendarName": "Adult All Levels BJJ", "calendarId": "not_in_db", "ageMin": 18, "onlyOnExplicitRequest": true }
+    ],
+    "kids": [
+      { "label": "kids_3_5", "calendarName": "Kids 3-5 BJJ", "calendarId": "not_in_db", "ageMin": 3, "ageMax": 5 },
+      { "label": "kids_6_9", "calendarName": "Kids 6-9 BJJ", "calendarId": "not_in_db", "ageMin": 6, "ageMax": 9 },
+      { "label": "kids_10_14", "calendarName": "Kids 10-14 BJJ", "calendarId": "not_in_db", "ageMin": 10, "ageMax": 14 }
+    ],
+    "noCalendarAgeBands": [
+      { "band": "15-17", "status": "no calendar", "default": "treat as minor, capture guardian, do not book, team follows up" },
+      { "band": "under-3", "status": "no calendar", "default": "youngest is Kids 3-5 BJJ; suggest contacting the gym" }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Adult Advanced BJJ (members only)",
+    "Adult Muay Thai (no GHL calendar)",
+    "MMA (no GHL calendar)",
+    "TRX Fitness (no GHL calendar)",
+    "Private Lessons (no GHL calendar)"
+  ],
+  "nonBookableHandling": "Acknowledge program exists. For Muay Thai/MMA/TRX: tell lead that trial booking for that program is not available online and the team will follow up. For Advanced BJJ: tell lead it is for current members and redirect to Fundamentals trial. Never substitute a different calendar.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "kidsCalendarCount": 3,
+    "requiresDisciplineSwitch": false,
+    "youthNoCalGate": true,
+    "noCalBand": "15-17"
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": null,
+    "localFile": "clients/ground-standard/closebot/hamptonsjjwest-kb-v1.0.0.txt",
+    "indexed": false,
+    "knownGaps": [
+      "Adult All Levels BJJ — spec treats as bookable on explicit prior-experience request only. Confirm with gym whether new leads can trial All Levels directly.",
+      "Ages 15-17 have no dedicated calendar — handled as minor/team-referral. Confirm this is correct.",
+      "Calendar IDs are not_in_db — real GHL IDs need active PIT (pit-c7c4b1a0-bafc-4a42-8d0d-3a41032419fa) for QA appointment verification.",
+      "Class schedule and hours not confirmed from website — bot does not quote times."
+    ]
+  },
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-22",
+      "botId": "bot_LKQB3HGWKA1EHNF0",
+      "botName": "Hamptons Jiu-Jitsu West - Launch v1.0 [initial build] (2026-05-22)",
+      "version": "v1.0",
+      "status": "LIVE",
+      "prodSource": "src_8RHY7XBXZ50T5CXD",
+      "attachedAt": "2026-05-22",
+      "qaVerdict": "QA-PASSED",
+      "qaSummary": "clients/ground-standard/closebot/hamptonsjjwest-qa-summary-v1.md"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_adult_thai_boxing",
+  "opening_message": "hi I'm interested in Muay Thai / Thai Boxing",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1990-09-14), explicitly interested in Thai Boxing or Muay Thai. When the bot asks which discipline, say 'Thai Boxing'. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1990-09-14. Expect the bot to route to Adult Thai Boxing. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

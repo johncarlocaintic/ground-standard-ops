@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_nonbookable_steelmace",
+  "opening_message": "Can I book a Steel Mace Flow class as my first session?",
+  "brief": "You are {{firstName}} {{lastName}}, a 35-year-old interested specifically in Steel Mace Flow at SOMA. Your date of birth is 1991-09-05. Your email is {{email}}. Your phone is {{phone}}. You start by asking to book Steel Mace Flow directly. The bot should explain that all new members start with the SOMA MVMT Introduction Class — Steel Mace Flow is not directly bookable for new members. Accept this redirect, agree to book the Introduction Class instead. Confirm 'for me' when asked who the class is for. Give DOB 1991-09-05. Pick the first trial time offered. When booked or closed, reply with [END]."
+}

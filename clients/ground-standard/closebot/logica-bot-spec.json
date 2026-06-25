@@ -1,0 +1,219 @@
+{
+  "gym": {
+    "name": "Logica Jiu-Jitsu",
+    "website": "https://www.logicajiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Logica Jiu-Jitsu, a no-gi Brazilian Jiu-Jitsu academy in Chattanooga, TN that uses the Constraints-Led Approach. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Logica Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial",
+      "Free trial class for new students, no commitment",
+      "Never identify as AI",
+      "Single discipline (no-gi Brazilian Jiu-Jitsu) - no discipline confirmation step needed",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 8-13 book the Youth Jiu-Jitsu trial. They are minors and need a parent or guardian.",
+      "Ages 14-17 have no online class (kids end at 13, adults are 18+) - capture guardian, do not book, tell them the team will follow up.",
+      "Under age 8 - youngest program is Youth Jiu-Jitsu (ages 8-13); do not book, refer to the academy at (423) 565-4549.",
+      "New students start with a free Foundations (beginner) trial. All Levels, Takedowns, and Open Mat are not booked online as a trial - no coach-redirect, no substitute calendar. The grand re-opening event and free consultation are not online trial bookings."
+    ]
+  },
+  "ghl": {
+    "locationId": "sKr1YeqWZyYKNQL6yqLf",
+    "sourceId": "src_0HFNJJIYASHOG06Y"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_foundations_bjj",
+        "calendarName": "Adult Foundations BJJ",
+        "calendarId": "qULhIvCYkrLYo5lg3VPG",
+        "program": "bjj-nogi",
+        "ageMin": 18,
+        "default": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "youth_jiujitsu_8_13",
+        "calendarName": "Youth Jiu-Jitsu (8-13)",
+        "calendarId": "Lek30992aw6Ang5riW7K",
+        "program": "bjj-nogi",
+        "ageMin": 8,
+        "ageMax": 13,
+        "templateBand": "KIDS_7_13"
+      }
+    ],
+    "noCalendarAgeBands": [
+      {
+        "band": "14-17",
+        "status": "no calendar",
+        "default": "minor, capture guardian, do not book, team follows up"
+      },
+      {
+        "band": "under-8",
+        "status": "no calendar",
+        "default": "youngest is Youth Jiu-Jitsu (8-13); do not book, academy contact (423) 565-4549"
+      }
+    ],
+    "inactiveExcluded": [
+      {
+        "calendarName": "Women's Self Defense 6-Week Challenge",
+        "calendarId": "01n9JfRtruHEdbBSD1rm",
+        "note": "INACTIVE - not mirrored, not booked"
+      },
+      {
+        "calendarName": "Kids (8-13) - 6 Week Intro to Jiu-Jitsu Challenge",
+        "calendarId": "KDPjfgwChsLZ5q5klM1c",
+        "note": "INACTIVE"
+      },
+      {
+        "calendarName": "Adults - 6 Week Intro to Jiu-Jitsu Challenge",
+        "calendarId": "QuPJ1MGzRTs7za3fQZKy",
+        "note": "INACTIVE"
+      },
+      {
+        "calendarName": "Adult All Levels BJJ",
+        "calendarId": "bDbjywX9j0oGe7wigHb1",
+        "note": "INACTIVE; All Levels is intermediate, not a beginner trial"
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Free Consultation",
+        "calendarId": "kiieIViftkqALXhvf25I",
+        "note": "consult/sales call; not a trial booking"
+      },
+      {
+        "calendarName": "Logica 2.0 Grand Re-Opening",
+        "calendarId": "CZFbDdH9TOR8RXMd1Abh",
+        "note": "one-off reopening event; not a recurring trial - flag for Bobby"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "All Levels (intermediate - not a beginner trial; trial is Foundations)",
+    "Takedowns (standup - not a separate online trial)",
+    "Open Mat (unstructured, not a trial)",
+    "Free Consultation / Grand Re-Opening event (not online trial bookings)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free Foundations trial and it is not booked online otherwise. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 1,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 8-13 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB 14-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 13 (Youth Jiu-Jitsu 8-13), adults 18+, no teen calendar. Ages 14-17 are a no-calendar band. cb_youth_nocal_gate_inject.js inserts a DOB-age 14-17 gate before the kids-age AISwitch -> no-booking team-follow-up Statement -> EOC.",
+      "band": "14-17"
+    },
+    "ageRouting": {
+      "under-8": "no calendar - no booking, refer to academy (423) 565-4549",
+      "8-13": "Youth Jiu-Jitsu (8-13) - guardian required",
+      "14-17": "no calendar - minor, guardian capture, team follow-up, no booking (youth no-cal gate)",
+      "18+": "Adult Foundations BJJ (single discipline, beginner trial)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": "file_E1WFIYBK0YEJYERK",
+    "localFile": "clients/ground-standard/closebot/logica-kb-v1.0.0.txt",
+    "indexed": true,
+    "verification": "No Glenn draft. Legacy KB v1.1.3 (client MAP doc, CB library file_6C1SVLFJPFVBYU24, 2026-04-16) verified vs live site logicajiujitsu.com + live GHL 2026-05-18. Internal appendix (flags/inconsistencies/changelog incl. only $ figures) excluded. Facility corrected to operational per live site (stale construction/reopening dropped). Contact retained from client-confirmed legacy KB. Verification doc: clients/ground-standard/closebot/logica-kb-verification-2026-05-18.md",
+    "knownGaps": [
+      "Logica 2.0 Grand Re-Opening calendar treated non-bookable (one-off event, live site shows facility operational) - confirm with Bobby.",
+      "Kids band 8-13 from legacy KB + GHL calendar name; live site did not specify - confirm.",
+      "Under-8: no calendar - no online booking, academy (423) 565-4549.",
+      "14-17: no calendar (kids end at 13) - youth no-cal gate; team follow-up, no booking."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) confirm Adult Foundations BJJ is the beginner trial calendar; (b) confirm Youth Jiu-Jitsu age band 8-13; (c) confirm 14-17 handled as minor/team-follow-up (no online booking); (d) confirm under-8 handled as no-online-booking + academy phone referral; (e) confirm Logica 2.0 Grand Re-Opening is a one-off event, not the trial calendar; (f) Free Consultation + 4 inactive calendars excluded as non-trial"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-19",
+      "botId": "bot_7W616F4BTWVFG84C",
+      "botName": "Logica Jiu-Jitsu - Launch v2.0 [Agent Node rebuild] (2026-05-19)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from agentnode-base-template, Scottsdale-derived). Single adult discipline. Single kids band (8-13). 14-17 no-cal gate + under-8 deflect in n30_book routing prose.",
+      "verdict": "QA-PASSED 2026-05-19 — 10/10 standard PASS + 3/3 non-det PASS. Zero real blockers. Parity-or-better vs classic v1.3 baseline. Two judge flags cross-examined as FPs (adult_and_kid sandbox dedup artifact; minor_self_booking addressing nit). One verifier-miss FP (nonbookable_program persona used non-test email — same pattern as v1.3 baseline). Bot parked sandbox only. See logica-agentnode-qa-summary-v1.md.",
+      "supersedes": "bot_8F6LD2M4728TS05O (classic v1.3 A/B baseline)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_CXGYLTWOIJIP4ZCO",
+      "botName": "[LEGACY] Logica Jiu-Jitsu - Launch v1.0 [pre-phone-confirm baseline] (2026-05-18)",
+      "version": "v1.0",
+      "architecture": "canon classic + youth 14-17 no-cal gate + scope-guard + substitute v3. Single adult discipline.",
+      "verdict": "LEGACY — pre-tweak baseline. 10/13 PASS, non-det 3/3, teen_14_17 no-cal gate verified, 3 FAILs all known mnd_05 family (under8/minor false-pos, nonbookable residual non-det). Superseded by v1.1.",
+      "supersedes": "bot_RWQNLQEBWVY7JEXF [DEMO] (kept on prod)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_E6Y4SJY2DVO5VR45",
+      "botName": "Logica Jiu-Jitsu - Launch v1.1 [phone-confirm + humanization tweaks] (2026-05-18)",
+      "version": "v1.1",
+      "architecture": "canon classic + phone-confirm patched template (cb_phone_confirm_patch.js) + youth 14-17 no-cal gate + scope-guard + substitute v3. Single adult discipline. Global Emma persona: 5s reply delay + no-em-dash human-texting tone + phone-confirm reinforcement.",
+      "verdict": "LEGACY — real mnd_08 blocker (UNRESOLVED(contact.phone) merge token in phone Prompt when contact.phone blank). 8/10 PASS, non-det 2/3, nonbookable_program FAIL (real), minor_self_booking FAIL (false). Superseded by v1.2.",
+      "supersedes": "bot_CXGYLTWOIJIP4ZCO [LEGACY] v1.0 pre-phone-confirm baseline"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_AY8T1CQXIFFQYF4B",
+      "botName": "Logica Jiu-Jitsu - Launch v1.2 [phone-confirm merge-fix, full tweaks] (2026-05-19)",
+      "version": "v1.2",
+      "architecture": "canon classic (merge-safe phone Prompt, no {{contact.phone}} token) + youth 14-17 no-cal gate + scope-guard + substitute v3. Single adult discipline. Global Emma persona: 5s delay + no-em-dash + phone-confirm.",
+      "verdict": "QA-SUPERSEDED — adult_and_kid routing bug found (adult wired to youth calendar on 1st iteration). All other personas PASS. Superseded by v1.3 which fixes the routing.",
+      "supersedes": "bot_E6Y4SJY2DVO5VR45 [LEGACY] v1.1 pre-merge-fix"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_8F6LD2M4728TS05O",
+      "botName": "Logica Jiu-Jitsu - Launch v1.3 [multi-enrollee adult calendar fix] (2026-05-19)",
+      "version": "v1.3",
+      "architecture": "canon classic + youth 14-17 no-cal gate + scope-guard + substitute v3 + multi-enrollee adult routing fix (added missing adult DOB node 2a477ab8 on 1st iteration path). Single adult discipline. Global Emma persona.",
+      "verdict": "QA-PASSED 2026-05-19 — 10 standard personas PASS (4 FAILs all cross-examined as FPs or fixed in v1.3), non-det 3/3 PASS, multi-enrollee adult routing fix confirmed on v1.3. Bot parked sandbox only. See logica-qa-summary-v1.md.",
+      "supersedes": "bot_AY8T1CQXIFFQYF4B [LEGACY] v1.2"
+    }
+  ]
+}

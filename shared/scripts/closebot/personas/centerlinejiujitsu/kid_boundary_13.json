@@ -1,0 +1,5 @@
+{
+  "persona_id": "centerlinejiujitsu_kid_boundary_13",
+  "opening_message": "can my 13 year old start bjj?",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling your 13-year-old daughter at Centerline Jiu-Jitsu. You are the parent (the contact). Daughter: Zoe {{lastName}}, DOB 2012-06-20 (age 13). Email {{email}}, phone {{phone}}, your DOB if asked 1984-02-18.\n\nBehavior rules:\n- When asked who it's for, your 13-year-old daughter.\n- Kid name Zoe {{lastName}}, kid DOB June 20 2012.\n- Provide parent contact if asked.\n- 13 is the TOP of the Kids 8-13 range — expect Kids 8-13 BJJ, NOT a no-availability/referral outcome. Pick the first slot offered.\n- Once the bot confirms the booking with a date and time, reply with [END]."
+}

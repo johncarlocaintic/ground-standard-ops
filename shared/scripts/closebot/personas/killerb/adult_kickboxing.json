@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_adult_kickboxing",
+  "opening_message": "hi I'm interested in kickboxing classes",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1991-03-28), explicitly interested in kickboxing. When the bot asks which discipline, say 'kickboxing'. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1991-03-28. Expect the bot to route to Adult Kickboxing. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

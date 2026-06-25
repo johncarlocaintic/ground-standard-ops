@@ -29,8 +29,16 @@ function getEnv(k) {
   return process.env[k];
 }
 
+// CB_API_KEY is the generic key used by all clients.
+// CB_GS_API_KEY is the legacy Ground Standard alias — kept for backwards compat.
+function getCbKey() {
+  const key = process.env.CB_API_KEY || process.env.CB_GS_API_KEY;
+  if (!key) throw new Error('Missing env var: CB_API_KEY (or CB_GS_API_KEY for Ground Standard)');
+  return key;
+}
+
 function cbHeaders() {
-  return { 'X-CB-KEY': getEnv('CB_GS_API_KEY'), 'Content-Type': 'application/json' };
+  return { 'X-CB-KEY': getCbKey(), 'Content-Type': 'application/json' };
 }
 
 async function cbReq(method, endpoint, body) {
@@ -126,7 +134,7 @@ function startSseReader(botId, leadId) {
       let res;
       try {
         res = await fetch(`${BASE}/bot/${botId}/testSession/messages/${leadId}`, {
-          headers: { 'X-CB-KEY': getEnv('CB_GS_API_KEY'), 'Accept': 'text/event-stream' },
+          headers: { 'X-CB-KEY': getCbKey(), 'Accept': 'text/event-stream' },
         });
       } catch {
         await new Promise(r => setTimeout(r, 1000));
@@ -227,18 +235,19 @@ function generateTestIdentity() {
   const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
   const kidName = kidFirstNames[Math.floor(Math.random() * kidFirstNames.length)] + ' ' + lastName;
   const rand4 = Math.random().toString(36).slice(2, 6).toLowerCase();
-  // Fictional but format-valid US phone: +1[bay-area-code]555[0100-0199].
-  // 555-0100 to 555-0199 is the NANP-reserved range for fiction. Real area code
-  // makes it parse cleanly through libphonenumber, which GHL uses for validation.
+  // Non-555 phone: 555-0100..0199 is NANP-reserved fictional and may fail GHL's
+  // libphonenumber isValidNumber() silently. Using a random non-555 exchange instead.
+  // Format: +1[area][exchange][last4] — 11 digits total, valid E.164.
   const usAreaCodes = ['415', '510', '650', '707', '925'];
   const area = usAreaCodes[Math.floor(Math.random() * usAreaCodes.length)];
-  const subscriber = String(100 + Math.floor(Math.random() * 100)).padStart(4, '0');
+  const exchange = String(200 + Math.floor(Math.random() * 354)).padStart(3, '0'); // 200-553, avoids 555
+  const last4 = String(1000 + Math.floor(Math.random() * 8999)).padStart(4, '0');
   return {
     firstName,
     lastName,
     fullName: `${firstName} ${lastName}`,
     email: `tester.${lastName.toLowerCase()}.${rand4}@donotuse.com`,
-    phone: `+1${area}555${subscriber}`,
+    phone: `${area} ${exchange} ${last4}`,
     kidName,
     kidDOB: 'March 15, 2017',
   };

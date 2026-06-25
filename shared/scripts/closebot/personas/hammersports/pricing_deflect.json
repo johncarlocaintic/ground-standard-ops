@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_pricing_deflect",
+  "opening_message": "how much is membership?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-focused adult (DOB: 1995-05-05). Lead with the pricing question. Push for a number TWICE: first 'how much per month?', then if deflected 'just give me a ballpark, I'm comparing gyms'. After the second deflection, accept and agree to a free trial. Give info: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1995-05-05. No discipline preference (default BJJ). Accept the first slot. When the bot confirms the booking, reply with [END]."
+}

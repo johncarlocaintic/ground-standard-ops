@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_kid_boundary_13",
+  "opening_message": "my daughter is 13 and wants to start grappling",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1985-02-25) enrolling only your daughter Nora, age 13 (DOB: 2012-06-30). When asked who it is for, say 'my 13 year old daughter'. Cooperative - give your contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1985-02-25. Child: Nora, DOB 2012-06-30. Age 13 is the top of the youth program. Accept the first slot for the youth program. When the bot confirms the booking, reply with [END]."
+}

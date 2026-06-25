@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_adult_kettlebell",
+  "opening_message": "do you have kettlebell / conditioning classes?",
+  "brief": "You are {{firstName}} {{lastName}}, a 38-year-old adult (DOB: 1987-09-30) who explicitly wants kettlebell / conditioning, not a fighting discipline. Say 'kettlebell' or 'conditioning' clearly. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1987-09-30. Accept the first slot. Expect booking into Kettle Bell Workout. When the bot confirms, reply with [END]."
+}

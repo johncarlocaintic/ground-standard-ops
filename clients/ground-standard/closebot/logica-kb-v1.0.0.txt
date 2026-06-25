@@ -1,0 +1,121 @@
+LOGICA JIU-JITSU - KNOWLEDGE BASE
+
+Version: 1.0.0
+Date: 2026-05-18
+Type: Context & Facts Only (No Behavioral Instructions)
+Verification: Built from legacy KB v1.1.3 (client MAP intake doc, CB library file_6C1SVLFJPFVBYU24) as starting material, verified against the live site logicajiujitsu.com + live GHL calendars (2026-05-18). Bot-facing sections only; internal appendix (flags/inconsistencies/changelog) excluded. Facility updated to operational per live site (legacy "construction ongoing / grand reopening" language was stale and is dropped). Contact retained from client-confirmed legacy KB (FLAG 01 resolved). Single discipline (No-Gi BJJ) - no discipline confirmation step.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Name: Logica Jiu-Jitsu
+Industry: Brazilian Jiu-Jitsu academy
+Style: No-Gi (no-gi) Brazilian Jiu-Jitsu only - all training is conducted without a gi
+Training Methodology: Constraints-Led Approach (CLA)
+Address: 810 Dodson Ave., Chattanooga, TN 37406
+Phone: (423) 565-4549
+Email: logicajiujitsu@gmail.com
+Website: https://www.logicajiujitsu.com/
+
+Description: Logica Jiu-Jitsu is a no-gi Brazilian jiu-jitsu academy in Chattanooga, TN offering structured classes for adult and youth practitioners. The academy uses the Constraints-Led Approach (CLA) - a research-backed, non-traditional methodology focused on live, adaptive, problem-solving-based learning rather than isolated repetition. Programs serve beginner through intermediate adults plus a dedicated kids program ages 8-13. The academy operates from a modern, state-of-the-art facility.
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+ADULT - FOUNDATIONS (beginner-focused)
+Tuesday / Thursday: 12:00 PM
+Monday: 6:45 PM
+Tuesday / Wednesday / Thursday: 6:00 PM
+
+ADULT - ALL LEVELS (intermediate)
+Monday / Wednesday: 12:00 PM
+Monday: 7:30 PM
+Tuesday / Thursday: 7:00 PM
+Wednesday: 6:45 PM
+
+ADULT - TAKEDOWNS (standup)
+Monday: 6:00 PM
+
+OPEN MAT
+Friday: 12:00 PM and 5:30 PM
+Saturday: 11:00 AM - 12:30 PM
+
+KIDS PROGRAM (ages 8-13)
+Monday / Wednesday / Friday: 5:00 PM - 6:00 PM
+
+================================================================================
+CLASS DESCRIPTIONS
+================================================================================
+
+FOUNDATIONS - Structured for beginners and those newer to jiu-jitsu. Develops the fundamental movement patterns and positional understanding that form the basis of all training at Logica. The right starting point for new students. Multiple slots run through the week.
+
+ALL LEVELS - For intermediate practitioners with a working familiarity with jiu-jitsu, ready to train alongside a broader range of partners and skill levels.
+
+TAKEDOWNS - Standup range: clinch work, entries, and takedown mechanics for no-gi grappling. Mondays at 6:00 PM.
+
+OPEN MAT - Unstructured training time to roll freely with partners. No instruction is provided. Fridays at noon and 5:30 PM, Saturdays 11:00 AM-12:30 PM.
+
+KIDS PROGRAM - Ages 8-13. Develops movement, coordination, and grappling fundamentals in a structured, age-appropriate environment. Monday/Wednesday/Friday 5:00-6:00 PM.
+
+================================================================================
+TRAINING METHODOLOGY
+================================================================================
+
+Logica uses the Constraints-Led Approach (CLA): a research-backed coaching framework that develops skill through structured, live problem-solving within defined constraints rather than isolated repetition. Practitioners build adaptive, responsive movement through guided exploration and real-time decision-making. The CLA is used in high-performance sports environments globally. Logica is a no-gi academy with a non-traditional training atmosphere.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Membership pricing varies based on factors like the number of classes per week and individual training goals. Instructors discuss all membership options and pricing plans with prospective students during or right after the free trial class. The free trial class is completely free and requires no commitment. A drop-in option is available for attending individual sessions without a monthly membership; staff confirm drop-in eligibility and rates directly.
+
+================================================================================
+BOOKING & ENROLLMENT
+================================================================================
+
+The free trial class is the best way to get started - completely free, no commitment. Instructors confirm the right program for your level, available class times, and all membership options during or after the trial. Prospective students are also welcome to come in during class hours to meet an instructor, see the facility, and get started.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What style of jiu-jitsu does Logica teach?
+A: No-gi Brazilian jiu-jitsu. All training is conducted without a gi.
+
+Q: What is the Constraints-Led Approach?
+A: A coaching methodology that develops skill through live, problem-solving-based training within defined parameters, rather than isolated repetition. Practitioners develop adaptive responses through guided exploration. It is a research-backed framework used in high-performance sports coaching globally.
+
+Q: What class should a complete beginner start with?
+A: Foundations. It is the appropriate entry point for students new to jiu-jitsu, with multiple sessions through the week.
+
+Q: Do I need prior experience to join?
+A: No prior experience is required for Foundations classes.
+
+Q: What should I wear to class?
+A: Athletic shorts and a rash guard are standard. No gi is required - Logica is a no-gi academy. Specific gear can be confirmed with staff.
+
+Q: What is open mat and who is it for?
+A: Unstructured training time to roll freely with partners. No instruction is provided. Fridays at noon and 5:30 PM, Saturdays 11:00 AM-12:30 PM.
+
+Q: How do I sign up or get started?
+A: The free trial class is the best way to start - completely free, no commitment. Instructors discuss class times, confirm the right program for your level, and cover membership options during or after the trial.
+
+Q: How much does membership cost?
+A: Pricing varies based on class frequency and individual training goals. Instructors discuss all pricing options and membership plans during or after the free trial class. The trial class is free with no commitment.
+
+Q: What ages does the kids program serve?
+A: The kids program is for students ages 8-13.
+
+Q: When does the kids program meet?
+A: Monday, Wednesday, and Friday from 5:00 PM to 6:00 PM.
+
+Q: Is there a drop-in option?
+A: Yes, for attending individual sessions without a monthly membership. Staff confirm eligible sessions and rates directly.
+
+Q: I have more questions before committing. What should I do?
+A: The free trial class is the best starting point - completely free, no commitment. Instructors address all questions about training style, schedule, and membership options during or after the trial.
+
+Q: How do I reach the academy?
+A: Phone (423) 565-4549, email logicajiujitsu@gmail.com, or visit https://www.logicajiujitsu.com/. Address: 810 Dodson Ave., Chattanooga, TN 37406.

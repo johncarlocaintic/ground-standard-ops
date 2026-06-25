@@ -1,0 +1,108 @@
+================================================================================
+ALL IN Jiu-Jitsu — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-17
+Status: WEBSITE + GHL-CALENDAR BUILT — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: allinJiu-Jitsu.com (2026-05-17); live GHL calendars (2026-05-17);
+all_in_jiu_jitsu_mismatch_report (cross-check only — old KB/ClickUp untrusted)
+Verification: No trusted Glenn KB draft existed (doc had only a mismatch
+report). Built from the live website + live GHL calendars. Old data listed a
+dead site (bteamnj.com); working site is allinJiu-Jitsu.com. $35 mat fee in old
+data EXCLUDED per GS no-pricing rule.
+Purpose: CloseBot AI Chatbot — Lead Qualification & Free Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: All In Jiu-Jitsu
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Green Brook, NJ (serving Somerset County and surrounding communities)
+
+Description: All In Jiu-Jitsu is a Brazilian Jiu-Jitsu academy in Green Brook,
+New Jersey. The academy offers BJJ for adults and kids of all experience
+levels, with structured progression in a politics-free environment built
+around mutual respect.
+
+Programs Offered:
+- Adult Brazilian Jiu-Jitsu
+- Kids Brazilian Jiu-Jitsu
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 263 Route 22 Suite B, Green Brook, NJ 08812
+Phone: 732-903-2999
+Email: info@allinJiu-Jitsu.com
+Website: allinJiu-Jitsu.com
+
+================================================================================
+SECTION 3 — PROGRAMS
+================================================================================
+
+ADULT BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu for adults at all experience levels. New students start
+with the Fundamentals program; All Levels training is part of ongoing
+membership. No prior experience is required.
+
+KIDS BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu for children, with structured, age-appropriate
+instruction. No prior experience required.
+
+================================================================================
+SECTION 4 — CLASS SCHEDULE
+================================================================================
+
+Specific class days and times are confirmed when scheduling a trial. The
+academy runs adult and kids BJJ programs through the week.
+
+================================================================================
+SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+================================================================================
+
+The first class is free for new students, with no commitment required. New
+students join a regular class on their first visit. No prior martial arts or
+BJJ experience is required.
+
+================================================================================
+SECTION 6 — MEMBERSHIP AND PRICING
+================================================================================
+
+Membership pricing is not published. Pricing varies based on training goals
+and the number of classes per week. Membership options and accurate pricing
+are discussed by instructors with new students during or right after the free
+first class. The first class is completely free with no commitment required.
+
+================================================================================
+SECTION 7 — FAQs
+================================================================================
+
+Q: What is All In Jiu-Jitsu?
+A: A Brazilian Jiu-Jitsu academy in Green Brook, NJ, offering BJJ for adults
+and kids of all experience levels.
+
+Q: Where is All In Jiu-Jitsu located?
+A: 263 Route 22 Suite B, Green Brook, NJ 08812.
+
+Q: What programs are offered?
+A: Adult Brazilian Jiu-Jitsu and Kids Brazilian Jiu-Jitsu.
+
+Q: Is there a free trial?
+A: Yes. The first class is free with no commitment required.
+
+Q: Do I need experience to start?
+A: No prior experience is required. New students join a regular class on their
+first visit.
+
+Q: What is the phone number?
+A: 732-903-2999.
+
+Q: What is the email address?
+A: info@allinJiu-Jitsu.com.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

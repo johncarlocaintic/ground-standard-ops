@@ -1,0 +1,161 @@
+INVERTED GEAR ACADEMY - KNOWLEDGE BASE
+
+Version: 1.0.0
+Date: 2026-05-18
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot Chatbot
+Verification: Built from legacy KB (Inverted Gear Academy KB.3.txt, CloseBot library) as starting material, verified against the live academy website invertedgearacademy.com and live GHL calendars (2026-05-18). Academy website corrected to invertedgearacademy.com (legacy KB listed invertedgear.com, which is the separate apparel/gear brand). Phone + email added from live site. Address shows a legacy-vs-live conflict (see verification doc) - location stated neutrally and callers directed to phone for exact directions. Pricing kept redirect-only.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Inverted Gear Academy
+Industry: Brazilian Jiu-Jitsu Academy
+Academy Website: invertedgearacademy.com
+Phone: (484) 657-4674
+Email: academy@invertedgear.com
+
+Description: Inverted Gear Academy is a Brazilian Jiu-Jitsu school serving the Lehigh Valley area of Pennsylvania, offering fundamental and advanced BJJ training for adults and children. The academy uses constraint-led training, positional games, and controlled sparring to create a safe, supportive environment for all skill levels. (Note: invertedgear.com is the separate Inverted Gear apparel and equipment brand co-founded by the same instructors; the academy site is invertedgearacademy.com.)
+
+================================================================================
+LOCATION & DIRECTIONS
+================================================================================
+
+Inverted Gear Academy is located in the Lehigh Valley area of Pennsylvania. For the exact current address and directions, please call the academy at (484) 657-4674 - the team will confirm the location and the best parking and entrance for your visit.
+
+Parking: Parking is available on site and on nearby streets. The team will go over parking when you call to set up your visit.
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+ADULT CLASSES
+
+Express Fundamentals (All Levels)
+- Monday, Wednesday, Friday: 6:00 AM
+
+Fundamentals (All Levels)
+- Monday-Friday: 9:00 AM and 6:00 PM
+- Saturday: 10:00 AM
+
+Advanced Classes - Gi
+- Monday, Wednesday, Friday: 7:00 PM
+
+Advanced Classes - No-Gi
+- Tuesday, Thursday: 7:00 PM
+
+Ladies-Only Class
+- Saturday: 9:00 AM
+
+KIDS CLASSES
+
+Cubs (Ages 4-6)
+- Monday-Friday: 5:00 PM
+
+Juniors (Ages 7-12)
+- Monday-Friday: 5:00 PM
+
+CLASS DESCRIPTIONS
+
+Fundamentals Class: An hour-long session focused on basic drills and a constraint-led approach to games, building a deep, practical understanding of BJJ fundamentals.
+
+Advanced Class: An hour-long class building on the fundamentals with more complex techniques and supervised sparring sessions to apply skills in real time.
+
+================================================================================
+TRIAL CLASS INFORMATION
+================================================================================
+
+- Trial classes are completely free
+- No commitment or obligation required
+- One trial class per person
+- Trial students attend regular scheduled classes (no separate trial class times)
+- The first class is in the Fundamentals program; available Monday-Friday at 9:00 AM or 6:00 PM
+- Meet the instructors and get a facility tour on arrival
+
+WHAT TO BRING FOR FIRST CLASS:
+- Athletic t-shirt or rashguard
+- Athletic shorts or leggings
+- Flip-flops or sandals for walking off the mats
+- Water bottle recommended
+- No gi required - a loaner gi can be provided; a free gi is included with membership
+
+================================================================================
+DROP-INS & OBSERVATION
+================================================================================
+
+Drop-ins are allowed for visitors. Prospective students can watch a class before deciding to join or take a free trial. Guests brought by students are welcome to a free trial.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Specific membership pricing is discussed thoroughly with instructors during or after the free trial class. Instructors assess which program best fits the individual's goals, training preferences, and schedule, then provide accurate pricing for that situation.
+
+Factors that affect pricing: class types (Fundamentals, Advanced, No-Gi, Ladies-Only), number of classes per week, individual goals, family memberships, and Military/First Responder/Veteran status. Family discounts and Military/First Responder/Veteran discounts are available. A 10-class punch card is also available. All specific amounts are discussed with staff.
+
+There are no hidden fees or contracts. Memberships can be paused at any time. There are no cancellation fees. Card and cash payments are accepted.
+
+================================================================================
+BOOKING & SIGN-UP
+================================================================================
+
+Prospective students can schedule a free trial class through the academy or contact the academy directly to set one up. New members receive a free starter gi when they sign up after their trial.
+
+================================================================================
+INSTRUCTORS
+================================================================================
+
+NELSON PUENTES - Co-Founder. BJJ Black Belt 3rd Degree (verified by Beltchecker.com), Brown Belt in Judo, multiple-time IBJJF Open Champion, ongoing IBJJF masters circuit, SafeSport trained and certified. Began BJJ in 2007, 100+ competitive matches.
+
+HILLARY WITT - Co-Founder. BJJ Black Belt (verified by Beltchecker.com), multiple championships including Masters Worlds, Europeans, and No-Gi Worlds. Most accomplished Gi competitor in the Lehigh Valley and the only female Black Belt teaching co-ed classes in the area. SafeSport trained and certified. Began BJJ in 2005.
+
+Classes are always supervised by experienced instructors and trusted assistants who monitor the room, correct risky behavior, and adjust pairings as needed.
+
+================================================================================
+SAFETY & CULTURE
+================================================================================
+
+Safety is a core value. Students learn from day one that protecting themselves and their partners is a shared responsibility; aggressive or reckless behavior is not tolerated. Most training is done through controlled positional games. Coaches match students by size, strength, experience, and temperament. Tapping is taught as part of learning. Mats are disinfected at least twice a day. Beginners are never forced to spar and can modify sparring to their comfort level.
+
+Kids classes have extra coaches with small-group attention; the student-to-instructor ratio is 6:1 for kids and 10:1 for adults. Instructors are SafeSport trained and certified, upholding national standards for a safe, respectful environment, especially for minors. Zero tolerance for bullying or harassment. Wheelchair-accessible entrance via ramp. The academy works with families on allergy and medical accommodations.
+
+================================================================================
+BELT PROMOTIONS
+================================================================================
+
+Kids belt promotions happen every month. Adult belt promotions happen every 6 months. Promotions are based on time on the mat, attendance, attitude, and technical development. Stripes are awarded along the way.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What martial arts do you teach?
+A: Inverted Gear Academy specializes in Brazilian Jiu-Jitsu. Classes include Fundamentals, Advanced (Gi and No-Gi), a Ladies-Only class, and kids classes (Cubs ages 4-6, Juniors ages 7-12).
+
+Q: Do you have classes for kids?
+A: Yes. Cubs is for ages 4 to 6 and Juniors is for ages 7 to 12, Monday through Friday at 5:00 PM.
+
+Q: Is there a women's class?
+A: Yes, a Ladies-Only class every Saturday at 9:00 AM, plus periodic women's-only open mats.
+
+Q: Do you offer private lessons?
+A: Yes, private lessons are available depending on coach availability.
+
+Q: Is the trial really free?
+A: Yes. The trial class is completely free with no commitment. One trial class per person, attended within a regular scheduled class.
+
+Q: What should I bring to my first class?
+A: An athletic t-shirt or rashguard, athletic shorts or leggings, flip-flops or sandals for off the mats, and a water bottle. No gi needed - a loaner gi can be provided.
+
+Q: How much is membership?
+A: Pricing depends on class types, how many classes per week, your goals, and any family or Military/First Responder/Veteran discounts. Instructors go over exact pricing with you during or right after your free trial class. The trial is completely free.
+
+Q: How do I sign up?
+A: Schedule a free trial class with the academy or contact the academy directly. New members get a free starter gi when they join after the trial.
+
+Q: What is the phone number?
+A: You can reach Inverted Gear Academy at (484) 657-4674 or by email at academy@invertedgear.com.
+
+Q: Where are you located?
+A: The academy is in the Lehigh Valley area of Pennsylvania. Call (484) 657-4674 and the team will confirm the exact address and the best entrance and parking for your visit.

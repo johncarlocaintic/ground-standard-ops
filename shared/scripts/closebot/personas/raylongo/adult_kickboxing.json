@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_adult_kickboxing",
+  "opening_message": "do you have kickboxing classes I can try?",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old adult (DOB: 1994-02-20) who explicitly wants Kickboxing. Ask for kickboxing upfront. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-02-20. Accept the first slot. Expect to be booked into the Adult Kickboxing intro. When the bot confirms the booking, reply with [END]."
+}

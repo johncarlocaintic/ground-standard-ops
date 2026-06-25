@@ -1,0 +1,139 @@
+{
+  "bot": "gritjiujitsu",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a bookable program exists that is NOT one of: Adult Fundamentals BJJ, Adult Muay Thai, Kids 4-13 BJJ, Kids 5-13 Muay Thai. Also flag any source-bleed program names from other gyms (e.g. Artistry, Vacaville, Ballantyne)."
+    },
+    {
+      "id": "mnd_03",
+      "category": "must_not_do",
+      "description": "No AI identity disclosure",
+      "level": "blocker",
+      "look_for": "bot identifies itself as an AI, bot, assistant, automated system, or anything other than 'Emma' / a member of the front desk team."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer."
+    },
+    {
+      "id": "mnd_07",
+      "category": "must_not_do",
+      "description": "No booking before collecting required fields",
+      "level": "blocker",
+      "look_for": "bot calls @@[Book Appointments] before contact.first_name, last_name, email, phone, and date_of_birth (or youth_name + youth_birthday for a kid) are all collected."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'is this class for yourself, your child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Asks which discipline (BJJ or Muay Thai) before routing to a booking calendar",
+      "level": "blocker",
+      "look_for": "bot explicitly asks the lead which discipline they want — BJJ or Muay Thai — before calling @@[Book Appointments] or @@[Check Appointment Availability]. This is Grit-specific because Grit has two disciplines."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "Correct adult BJJ calendar routing",
+      "level": "blocker",
+      "look_for": "for adult lead choosing BJJ, the booking tool uses calendar 'Adult Fundamentals BJJ'. Verified via verified_score from GHL appointments."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Correct adult Muay Thai calendar routing",
+      "level": "blocker",
+      "look_for": "for adult lead choosing Muay Thai, the booking tool uses calendar 'Adult Muay Thai'."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Correct kids BJJ calendar routing (ages 4-13)",
+      "level": "blocker",
+      "look_for": "for a kid age 4-13 wanting BJJ, the booking tool uses 'Kids 4-13 BJJ' calendar."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Correct kids Muay Thai calendar routing (ages 5-13)",
+      "level": "blocker",
+      "look_for": "for a kid age 5-13 wanting Muay Thai, the booking tool uses 'Kids 5-13 Muay Thai' calendar."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Age 4 + Muay Thai handled correctly (redirect to BJJ or staff, no booking)",
+      "level": "blocker",
+      "look_for": "if a parent asks for Muay Thai for a 4-year-old, bot informs them Kids Muay Thai starts at age 5 and offers Kids BJJ as an alternative for age 4 (since Kids BJJ goes from age 4). Does NOT book the kid into Kids 5-13 Muay Thai."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or coach. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_11",
+      "category": "must_do",
+      "description": "Non-bookable programs acknowledged and redirected",
+      "level": "standard",
+      "look_for": "if lead asks about Teens JitZ, Women's JitZ, Open Mat, Breakfast Club, Lunch Rollz, or any Inter/Advance level — bot acknowledges the program exists and redirects to discuss with coach at the trial class, does NOT attempt to book into an unavailable calendar."
+    },
+    {
+      "id": "md_12",
+      "category": "must_do",
+      "description": "Free trial framing — no membership commitment language",
+      "level": "standard",
+      "look_for": "bot frames the booking as a free trial class with no membership commitment, not as a paid sign-up."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "gym": {
+    "name": "Simple Man Martial Arts",
+    "website": "https://simplemanmartialarts.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Simple Man Martial Arts, a No-Gi Brazilian Jiu-Jitsu academy in Austin, TX affiliated with B-Team JJ. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Simple Man Martial Arts.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "Free trial class for new students, no commitment (Pro Class requires a $50 mat fee but is not a trial for new students)",
+      "Never identify as AI",
+      "Two adult classes: Adult Fundamentals BJJ (default for beginners) and Adult All Levels BJJ (explicit request only, for students with prior grappling experience). No discipline confirmation needed for beginners.",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 4-8 book Youth 4-12 BJJ (guardian required). Ages 9-12 book Youth 9-12 BJJ (guardian required). Ages 7-17 can book Youth 7-17 Wrestling (guardian required for under-18).",
+      "Under age 4 - youngest program is Youth 4-12 BJJ (ages 4+); do not book, refer to the academy at (512) 814-0800.",
+      "Pro Class, Open Mat, and Women's Only classes are not booked online as a trial. Pro Class is advanced/invitation-based. If asked, redirect to the free trial Fundamentals class."
+    ]
+  },
+  "ghl": {
+    "locationId": "aKQzZVFXhecYncsbvsOH",
+    "sourceId": "src_XZH7NHD2M8NF0EQL",
+    "pit": "pit-1b8ce5fe-7308-4a07-b9ef-4874c1486757"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "q23lf3m5qdJKpk3L3nB0",
+        "program": "bjj-fundamentals",
+        "ageMin": 18,
+        "default": true
+      },
+      {
+        "label": "adult_all_levels_bjj",
+        "calendarName": "Adult All Levels BJJ",
+        "calendarId": "BCTZsRG4rfYKJelmvYj7",
+        "program": "bjj-all-levels",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true,
+        "note": "For leads who explicitly state they have prior BJJ or grappling experience"
+      }
+    ],
+    "kids": [
+      {
+        "label": "youth_4_12_bjj",
+        "calendarName": "Youth 4-12 BJJ",
+        "calendarId": "aTPMDz4APpqhvGW6Dj2L",
+        "ageMin": 4,
+        "ageMax": 8,
+        "discipline": "bjj",
+        "note": "Used for ages 4-8; Youth 9-12 BJJ used for 9-12"
+      },
+      {
+        "label": "youth_9_12_bjj",
+        "calendarName": "Youth 9-12 BJJ",
+        "calendarId": "5rFjXTmY6T0Tg5bjcaaw",
+        "ageMin": 9,
+        "ageMax": 12,
+        "discipline": "bjj"
+      },
+      {
+        "label": "youth_7_17_wrestling",
+        "calendarName": "Youth 7-17 Wrestling",
+        "calendarId": "Uav8SaATEF0cTcZ5Lli5",
+        "ageMin": 7,
+        "ageMax": 17,
+        "discipline": "wrestling",
+        "note": "Covers 7-17 including teens 13-17 for wrestling; guardian required for all under 18"
+      }
+    ],
+    "internalNotForTrial": []
+  },
+  "nonBookablePrograms": [
+    "Pro Class (advanced, invitation-based, $50 mat fee - not a free trial)",
+    "Community Open Mat (Sundays - members and guests, not a trial booking)",
+    "Women's Only classes (planned for future - not yet active)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked about Pro Class, state it is advanced and invitation-based and not part of the free trial. Redirect to the free Fundamentals trial. For Open Mat, state it is not booked online as a trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "kidsCalendarCount": 3,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 4-17 (via youth path) require a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor, no guardian)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no unsupervised self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB under 4 on the youth path (below youngest program)",
+          "action": "tag minor - needs guardian, Statement (team will follow up, academy phone (512) 814-0800), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": false,
+      "reason": "No absolute no-calendar gap for teens: Youth 7-17 Wrestling covers ages 7-17 including teens 13-17. Only under-4 has no calendar. Teens wanting BJJ only (no wrestling) have no BJJ calendar - handled via n30_book prose (team follows up) without a separate gate node."
+    },
+    "ageRouting": {
+      "under-4": "no calendar - no booking, refer to academy (512) 814-0800",
+      "4-8": "Youth 4-12 BJJ - guardian required",
+      "9-12": "Youth 9-12 BJJ - guardian required",
+      "7-17-wrestling": "Youth 7-17 Wrestling - guardian required for under 18",
+      "13-17-bjj-only": "no BJJ calendar for teens - note in prose: team will follow up for BJJ interest; wrestling available via Youth 7-17 Wrestling",
+      "18+": "Adult Fundamentals BJJ (default); Adult All Levels BJJ (explicit experienced grapplers only)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/simpleman-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.1.0 updated: Kids program marked 'coming soon' in legacy but GHL shows active Youth 4-12 BJJ, Youth 9-12 BJJ, Youth 7-17 Wrestling calendars as of 2026-05-20. Phone corrected: GHL shows (512) 814-0800 (vs KB's 512-612-6200 which is GM's direct line). Site shows 737-310-3838. Used GHL number as primary. Doc: clients/ground-standard/closebot/simpleman-kb-verification-2026-05-20.md",
+    "knownGaps": [
+      "Phone discrepancy: GHL=(512)814-0800, KB/GM=(512)612-6200, site=737-310-3838 - confirm booking line with Bobby.",
+      "Youth 4-12 BJJ vs Youth 9-12 BJJ overlap (4-8 routes to 4-12 calendar, 9-12 routes to 9-12 calendar) - confirm routing with Bobby.",
+      "Youth 7-17 Wrestling covers teens 13-17 but no BJJ for teens - confirm teen-BJJ handling (team follow-up) with Bobby.",
+      "Adult All Levels BJJ as explicit-request secondary: confirm with Bobby."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm Adult Fundamentals BJJ is the default beginner trial; (b) confirm Adult All Levels BJJ is for explicit experienced grapplers; (c) confirm Youth 4-12 BJJ (4-8) / Youth 9-12 BJJ (9-12) / Youth 7-17 Wrestling (7-17) age routing; (d) confirm teen BJJ handled as team-follow-up (no BJJ calendar for 13-17); (e) confirm under-4 phone referral and which number is the booking line"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_97Q687NTPLF6GHC7",
+      "botName": "Simple Man Martial Arts - Launch v1.0 [initial Agent Node build] (2026-05-20)",
+      "version": "v1.0",
+      "verdict": "QA-PASSED 2026-05-20 — adult_fundamentals + adult_all_levels + kid_bjj_older all GHL-confirmed. Platform flags: teen_wrestling bot timeout at booking step (routing correct md_03 PASS), kid_bjj_young NO REPORT (SSE infra), adult_and_kid kid GHL-confirmed/adult not GHL-verified (sandbox calendar), non-det blocked by SSE instability. 0 real blockers, 0 false negatives. See simpleman-qa-summary-v1.md. Parked sandbox, NOT on prod."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "bot": "roberts",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference in bot output. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is not one of: Adult Fundamentals BJJ, Adult Fundamentals No-Gi BJJ, Adult Boxing, Adult Thai Boxing, Kids 5-10 BJJ, Kids 5-10 Wrestling, Teens 11-17 BJJ, Kids 11-17 Wrestling. The gym's real KB-documented program brand names are NOT hallucinations. Flag only invented programs or source-bleed names from other gyms." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot hedges with 'let me check' when the answer is a firm known no." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains {{contact.first_name}}, {{variable}}, or similar unreplaced tokens." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self / child / both) before collecting names, DOBs, contact details." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before the booking tool fires." },
+    { "id": "md_03", "category": "must_do", "description": "Kids age-band routing", "level": "blocker", "look_for": "ages 5-10 → Kids 5-10 BJJ or Kids 5-10 Wrestling (ask discipline); ages 11-17 → Teens 11-17 BJJ or Kids 11-17 Wrestling (ask discipline). Under age 5 → NO booking, refer to (978) 581-0601." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects. Never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18 with no parent: bot must NOT book. Capture info, close with team-will-follow-up framing." },
+    { "id": "md_07", "category": "must_do", "description": "Non-bookable programs handled correctly", "level": "standard", "look_for": "Open Training, Female Only Jiu-Jitsu, Adult All-Levels BJJ: not booked online; new students start with a fundamentals trial." },
+    { "id": "md_09", "category": "must_do", "description": "Kids discipline routing", "level": "blocker", "look_for": "For kids, bot must determine BJJ or Wrestling preference before selecting calendar. Age 5-10 + BJJ → Kids 5-10 BJJ; age 5-10 + Wrestling → Kids 5-10 Wrestling; age 11-17 + BJJ → Teens 11-17 BJJ; age 11-17 + Wrestling → Kids 11-17 Wrestling." }
+  ]
+}

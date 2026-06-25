@@ -93,29 +93,28 @@ async function main() {
     results['GHL (agency)'] = r.ok;
   }
 
-  // GHL bot-scope check: contacts (covers tags) + calendars (covers booking).
-  // Avoid /locations/{id} — it requires a scope most bot PITs don't carry.
-  async function checkGhlBotScope(label, token, locId) {
-    const headers = { Authorization: `Bearer ${token}`, Version: '2021-07-28' };
-    const c = await get(`${label} contacts`,
-      `https://services.leadconnectorhq.com/contacts/?locationId=${locId}&limit=1`, headers);
-    const k = await get(`${label} calendars`,
-      `https://services.leadconnectorhq.com/calendars/?locationId=${locId}`, headers);
-    results[label] = c.ok && k.ok;
-  }
-
   // GHL - Ground Standard
   const ghlGS    = getEnv('GHL_GS_API_TOKEN');
   const ghlGSLoc = getEnv('GHL_GS_LOCATION_ID');
   if (ghlGS && ghlGSLoc) {
-    await checkGhlBotScope('GHL (Ground Standard)', ghlGS, ghlGSLoc);
+    const r = await get('GHL (Ground Standard)',
+      `https://services.leadconnectorhq.com/locations/${ghlGSLoc}`, {
+      Authorization: `Bearer ${ghlGS}`,
+      Version: '2021-07-28',
+    });
+    results['GHL (GS)'] = r.ok;
   }
 
   // GHL - Vacaville (nested under GS)
   const ghlVac    = getEnv('GHL_VACAVILLE_API_TOKEN');
   const ghlVacLoc = getEnv('GHL_VACAVILLE_LOCATION_ID');
   if (ghlVac && ghlVacLoc) {
-    await checkGhlBotScope('GHL (Vacaville)', ghlVac, ghlVacLoc);
+    const r = await get('GHL (Vacaville)',
+      `https://services.leadconnectorhq.com/locations/${ghlVacLoc}`, {
+      Authorization: `Bearer ${ghlVac}`,
+      Version: '2021-07-28',
+    });
+    results['GHL (Vacaville)'] = r.ok;
   }
 
   // OpenAI
@@ -134,24 +133,6 @@ async function main() {
       'X-CB-KEY': cbGS,
     });
     results['CloseBot (GS)'] = r.ok;
-  }
-
-  // CloseBot - PropertyBots
-  const cbPB = getEnv('CB_PB_API_KEY');
-  if (cbPB) {
-    const r = await get('CloseBot (PropertyBots)', 'https://api.closebot.com/bot', {
-      'X-CB-KEY': cbPB,
-    });
-    results['CloseBot (PB)'] = r.ok;
-  }
-
-  // ClickUp - PropertyBots workspace
-  const clickupPB = getEnv('CLICKUP_PB_API_KEY');
-  if (clickupPB) {
-    const r = await get('ClickUp (PB workspace)', 'https://api.clickup.com/api/v2/team', {
-      Authorization: clickupPB,
-    });
-    results['ClickUp (PB)'] = r.ok;
   }
 
   log('');

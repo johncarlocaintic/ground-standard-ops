@@ -1,0 +1,5 @@
+{
+  "persona_id": "centerlinejiujitsu_adult_womens_only",
+  "opening_message": "Do you have a women's only jiu-jitsu class?",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old woman who specifically wants a women's-only class at Centerline Jiu-Jitsu for yourself. DOB 1996-03-14. Email {{email}}, phone {{phone}}.\n\nBehavior rules:\n- Explicitly ask for a women's-only class up front. If the bot is vague, ask again to confirm whether they have one.\n- CORRECT: bot answers honestly YES it exists (never denies, never flip-flops) and books you into the Adult Women's Only Jiu-Jitsu class. Name {{firstName}} {{lastName}}, DOB March 14 1996, email {{email}}, phone {{phone}}. Pick the first slot offered.\n- Once the bot confirms your women's-only booking with a date and time, reply with [END]."
+}

@@ -1,0 +1,216 @@
+================================================================================
+CENTERLINE Jiu-Jitsu — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-17
+Status: CLEANED + WEBSITE/GHL-VERIFIED — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-13); centerlineJiu-Jitsuchandler.com (2026-05-13);
+GHL calendars (live, 2026-05-17)
+Verification: Website + GHL-calendar verified 2026-05-17. Free trial confirmed
+on site ("JOIN A FREE CLASS"). Bot-facing name = Centerline Jiu-Jitsu (legal
+name Quest Martial Arts LLC). Kids age buckets per live GHL (3-4, 5-7, 8-13).
+Purpose: CloseBot AI Chatbot — Lead Qualification & Free Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Centerline Jiu-Jitsu
+Business Legal Name: Quest Martial Arts LLC
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Chandler, AZ
+
+Description: Centerline Jiu-Jitsu is a Brazilian Jiu-Jitsu academy in Chandler,
+Arizona. The academy offers BJJ programs for all ages — from pre-school children
+to adults — across beginner, intermediate, advanced, and competition tracks.
+New students join regular training from day one.
+
+Programs Offered:
+- Adult BJJ (All Levels Co-Ed, Beginner-Intermediate, Intermediate-Advanced)
+- Women's Only Jiu-Jitsu
+- Youth BJJ (older children/teens)
+- Kids BJJ (younger children)
+- Pre-School Jiu-Jitsu (youngest children)
+- Black Belt Club / Advanced Youth
+- Competition Class
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 3016 N Dobson Rd Suite 12, Chandler, AZ 85224
+Website: centerlineJiu-Jitsuchandler.com
+Instagram: @centerlineJiu-Jitsu_chandler
+Facebook: CenterLineJiu-Jitsu
+Owner: Michael Stinson
+
+================================================================================
+SECTION 3 — CLASS SCHEDULE
+================================================================================
+
+--- MONDAY ---
+11:00 AM - 12:30 PM    All Levels Co-Ed Adult
+4:30 PM - 5:10 PM      Kids BJJ
+5:15 PM - 6:00 PM      Youth BJJ
+6:00 PM - 7:00 PM      All Levels Adult
+
+--- TUESDAY ---
+4:30 PM - 5:00 PM      Pre-School BJJ
+5:15 PM - 5:50 PM      Kids BJJ
+6:00 PM - 6:50 PM      Youth BJJ
+7:00 PM - 8:30 PM      Adults All Levels Co-Ed
+
+--- WEDNESDAY ---
+11:00 AM - 12:30 PM    All Levels Co-Ed Adult
+4:30 PM - 5:10 PM      Kids BJJ
+5:15 PM - 6:00 PM      Youth BJJ
+6:00 PM - 7:00 PM      Adults Co-Ed Intermediate - Advanced
+7:00 PM - 8:00 PM      Adults Co-Ed Beginner - Intermediate
+8:00 PM - 9:00 PM      Women's Only Jiu-Jitsu
+
+--- THURSDAY ---
+4:30 PM - 5:00 PM      Pre-School BJJ
+5:15 PM - 5:50 PM      Kids BJJ
+6:00 PM - 6:50 PM      Youth BJJ
+7:00 PM - 8:00 PM      Adults Co-Ed Beginner to Intermediate
+8:00 PM - 9:30 PM      Adults Co-Ed Intermediate to Advanced
+
+--- SATURDAY ---
+9:15 AM - 9:50 AM      Kids BJJ
+10:00 AM - 10:50 AM    Youth BJJ
+11:00 AM - 11:50 AM    Black Belt Club / Advanced Youth
+11:00 AM - 11:50 AM    Women's Only Jiu-Jitsu
+12:00 PM - 1:00 PM     Adults Co-Ed Beginner - Intermediate
+1:00 PM - 2:30 PM      Adults Co-Ed Intermediate - Advanced
+
+Friday and Sunday class availability is confirmed directly with the academy.
+
+================================================================================
+SECTION 4 — PROGRAM DESCRIPTIONS
+================================================================================
+
+PRE-SCHOOL BJJ
+Introductory Jiu-Jitsu for the youngest students. Available Tuesday and
+Thursday afternoons.
+
+KIDS BJJ
+Brazilian Jiu-Jitsu for younger children. Runs Monday through Thursday evenings
+and Saturday mornings.
+
+YOUTH BJJ
+Brazilian Jiu-Jitsu for older children and teens. Available Monday through
+Thursday evenings and Saturday mornings.
+
+BLACK BELT CLUB / ADVANCED YOUTH
+Advanced training class for youth students. Available Saturday mornings.
+
+ADULT BJJ - ALL LEVELS CO-ED
+Open-level adult class for all experience levels. Available Monday and
+Wednesday mornings and Tuesday evenings.
+
+ADULT BJJ - BEGINNER-INTERMEDIATE
+Structured adult class for students in the early-to-mid development range.
+Available Wednesday and Thursday evenings and Saturday midday.
+
+ADULT BJJ - INTERMEDIATE-ADVANCED
+Adult class for more experienced practitioners. Available Wednesday evening,
+Thursday evening, and Saturday afternoon.
+
+WOMEN'S ONLY Jiu-Jitsu
+A women's-only BJJ class. All levels welcome. Available Wednesday evening and
+Saturday morning.
+
+COMPETITION CLASS
+Listed as a program on the academy website. Days, times, and eligibility are
+confirmed directly with the academy.
+
+================================================================================
+SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+================================================================================
+
+A free trial class is available for new students. New students join a regular
+class directly on their first visit — there are no separate intro-only sessions.
+
+Trial class appointments are scheduled 15 minutes before the class start time
+(for example, a 6:00 PM class has an appointment slot at 5:45 PM). New students
+should arrive at their scheduled appointment time, or early enough to receive a
+loaner uniform if needed.
+
+A loaner uniform (gi) is available for first-time students at no charge.
+Availability is not guaranteed — early arrival or advance notice is recommended.
+
+A participation waiver is part of the trial class process. Students receive the
+waiver by email and text prior to their appointment, and can also complete it
+at the academy on arrival.
+
+A water bottle is recommended. A water machine with paper cups is available.
+
+================================================================================
+SECTION 6 — MEMBERSHIP AND PRICING
+================================================================================
+
+Membership pricing is not published. Pricing varies based on program, age
+group, and training frequency. Membership options and accurate pricing are
+discussed with new students following the free trial class. The trial class is
+completely free with no commitment required.
+
+================================================================================
+SECTION 7 — POLICIES
+================================================================================
+
+Uniform: A loaner uniform is available for trial students. Enrolled members are
+expected to have their own uniform.
+
+Waiver: A participation waiver is required. It is sent by email and text before
+the first class, and can also be completed at the academy on arrival.
+
+================================================================================
+SECTION 8 — FAQs
+================================================================================
+
+Q: What is Centerline Jiu-Jitsu?
+A: A Brazilian Jiu-Jitsu academy in Chandler, Arizona, offering BJJ classes for
+all ages from pre-school through adult, including beginner, intermediate,
+advanced, and women's-only programs.
+
+Q: Where is Centerline Jiu-Jitsu located?
+A: 3016 N Dobson Rd Suite 12, Chandler, AZ 85224.
+
+Q: What programs are offered?
+A: Pre-School BJJ, Kids BJJ, Youth BJJ, Black Belt Club / Advanced Youth, Adult
+All Levels Co-Ed, Adult Beginner-Intermediate, Adult Intermediate-Advanced, and
+Women's Only Jiu-Jitsu. A Competition Class is also listed on the website.
+
+Q: Is there a free trial class?
+A: A free trial class is available. New students join a regular class directly
+on their first visit.
+
+Q: What should I expect at my first class?
+A: The trial appointment is scheduled 15 minutes before the class start. A
+loaner uniform is available — arrive on time or early to receive it. A waiver
+is sent before the appointment and can also be completed on arrival. Bring a
+water bottle — a water machine is available.
+
+Q: Are there morning classes?
+A: Yes. All Levels Co-Ed Adult classes run Monday and Wednesday mornings from
+11:00 AM to 12:30 PM.
+
+Q: Are there classes for young children?
+A: Pre-School BJJ runs Tuesday and Thursday at 4:30 PM. Kids BJJ runs Monday
+through Thursday evenings and Saturday mornings.
+
+Q: Is there a class for women only?
+A: Women's Only Jiu-Jitsu runs Wednesday evenings at 8:00 PM and Saturday
+mornings at 11:00 AM.
+
+Q: Who owns and runs the academy?
+A: Michael Stinson is the owner of Centerline Jiu-Jitsu.
+
+Q: Where can I find more information?
+A: centerlineJiu-Jitsuchandler.com. The academy is also on Instagram
+(@centerlineJiu-Jitsu_chandler) and Facebook (CenterLineJiu-Jitsu).
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

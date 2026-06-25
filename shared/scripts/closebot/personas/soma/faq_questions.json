@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_faq_questions",
+  "opening_message": "Hi! Quick questions about SOMA before I sign up.",
+  "brief": "You are {{firstName}} {{lastName}}, a 41-year-old shopping carefully. Your date of birth is 1985-08-30. Your email is {{email}}. Your phone is {{phone}}. You ask the bot: (1) 'what's your address?' (should answer 6 W Parker Ave, Maplewood NJ 07040); (2) 'do you have kids classes?' (should firmly say no, adult-only — must NOT hedge); (3) 'what's the intro class like?' (should describe the 60-min Introduction Class); (4) 'how long is a session?' (should answer 60 minutes). Then agree to book the Intro Class for yourself. Give DOB 1985-08-30. Pick first time offered. Reply [END] when booked or closed."
+}

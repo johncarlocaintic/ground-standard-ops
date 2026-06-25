@@ -1,0 +1,302 @@
+================================================================================
+
+ARTISTRY BJJ — CLOSEBOT KNOWLEDGE BASE
+
+================================================================================
+
+Version: 1.1.0
+Date: 2026-05-14
+Status: CLEAN — READY FOR DEPLOY
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: artistrybjj.com (authoritative); Artistry BJJ ClickUp doc (supplementary)
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+================================================================================
+
+SECTION 1 — BUSINESS INFORMATION
+
+================================================================================
+
+Full Business Name: Artistry BJJ
+Industry: Brazilian Jiu-Jitsu / Mixed Martial Arts
+Location: Houston, TX (East Houston)
+
+Description: Artistry BJJ is a family-oriented Brazilian Jiu-Jitsu academy
+dedicated to helping kids and adults grow stronger, more confident, and more
+disciplined both on and off the mat. High-quality instruction is provided in a
+safe, respectful, and supportive environment where students of all experience
+levels can learn, train, and improve at their own pace. The academy emphasizes
+character, community, and personal growth alongside technique.
+
+Mission: Artistry BJJ is a family-oriented academy dedicated to building
+confidence, discipline, and resilience through Brazilian Jiu-Jitsu in a safe,
+respectful, and supportive environment for all ages.
+
+Programs Offered:
+- Adult No-Gi BJJ
+- Adult Gi BJJ
+- Adult MMA
+- Kids Gi BJJ (ages 5-13)
+- Kids Striking
+- Open Mat (Saturday)
+
+What Is Not on the Schedule:
+- No Sunday classes. The published schedule covers Monday through Saturday only.
+- No women's-only classes. The academy does not currently offer a women's-only program.
+
+================================================================================
+
+SECTION 2 — CONTACT AND LOCATION
+
+================================================================================
+
+Primary Location:
+Address: 10203 Market St Unit E, Houston, TX 77029
+Website: artistrybjj.com
+Instagram: @artistrybjj_htx
+Facebook: artistrybjj
+
+Second Location:
+Address: 181 Market St, Suite 106, Georgetown, TX
+
+================================================================================
+
+SECTION 3 — HEAD INSTRUCTOR
+
+================================================================================
+
+Head Instructor: Felipe Rocha
+Role: Owner and Head Instructor
+Experience: Nearly two decades of experience in Brazilian Jiu-Jitsu
+Background: Competitor and coach. Teaches effective, technical Jiu-Jitsu in a
+safe, family-oriented environment. Emphasizes character, confidence, and personal
+growth alongside technique development.
+
+================================================================================
+
+SECTION 4 — FULL CLASS SCHEDULE
+
+================================================================================
+
+--- MONDAY ---
+
+5:00 AM     No-Gi BJJ (Adult)
+5:30 PM     Kids Gi BJJ
+6:30 PM     MMA (Adult)
+7:30 PM     No-Gi BJJ (Adult)
+
+--- TUESDAY ---
+
+12:00 PM    No-Gi BJJ (Adult)
+5:30 PM     Kids Striking
+6:30 PM     Gi BJJ (Adult)
+
+--- WEDNESDAY ---
+
+5:00 AM     Gi BJJ (Adult)
+5:30 PM     Kids Gi BJJ
+6:30 PM     MMA (Adult)
+7:30 PM     No-Gi BJJ (Adult)
+
+--- THURSDAY ---
+
+12:00 PM    Gi BJJ (Adult)
+5:30 PM     Kids Striking
+6:30 PM     Gi BJJ (Adult)
+
+--- FRIDAY ---
+
+5:30 PM     Kids Gi BJJ
+6:30 PM     MMA (Adult)
+7:30 PM     No-Gi BJJ (Adult)
+
+--- SATURDAY ---
+
+11:30 AM    Open Mat
+
+================================================================================
+
+SECTION 5 — PROGRAM DESCRIPTIONS
+
+================================================================================
+
+ADULT NO-GI BJJ
+No-Gi Brazilian Jiu-Jitsu classes for adults. Covers technique, positional
+understanding, and controlled live training. Available Monday morning, Tuesday
+midday, and Monday, Wednesday, and Friday evenings.
+
+ADULT GI BJJ
+Gi Brazilian Jiu-Jitsu classes for adults using the traditional kimono. Available
+Wednesday morning, and Tuesday and Thursday midday and evening.
+
+ADULT MMA
+Professional, structured Mixed Martial Arts training. Focused on self-defense
+applications. Available Monday, Wednesday, and Friday evenings.
+
+KIDS GI BJJ
+Brazilian Jiu-Jitsu classes for children ages 5 to 13 using the traditional gi.
+Builds confidence, discipline, and resilience. Available Monday, Wednesday, and
+Friday evenings at 5:30 PM, and Saturday morning at 11:30 AM.
+
+KIDS STRIKING
+Striking-focused classes for children. Available Tuesday and Thursday evenings
+at 5:30 PM.
+
+OPEN MAT
+Unstructured training session for drilling and rolling. Saturday mornings only
+at 11:30 AM.
+
+NEW STUDENT CLASS EXPERIENCE
+New students join regular classes directly. The instructor is made aware of new
+students and pairs them with more experienced training partners. Class content
+is adjusted toward fundamentals when new students are present. Sparring is
+optional.
+
+================================================================================
+
+SECTION 6 — TRIAL CLASS
+
+================================================================================
+
+A one-week free trial is available for new students with no commitment required.
+New students are welcomed into regular classes and paired with experienced
+partners.
+
+================================================================================
+
+SECTION 7 — PRICING
+
+================================================================================
+
+Membership pricing is not published. A free one-week trial is available with no
+commitment required. Membership options and pricing are reviewed with students
+based on individual training goals and schedule preferences.
+
+================================================================================
+
+SECTION 8 — POLICIES
+
+================================================================================
+
+Sign-Up Process:
+New students can walk in to any regular class without an appointment. No prior
+registration is required to try a class. Formal gym enrollment is completed in
+person at the academy.
+
+Membership Pause:
+Membership holds require 30 days notice. A doctor's note waives the notice
+requirement.
+
+Cancellation:
+Membership cancellation requires 30 days notice.
+
+Payment Methods:
+Monthly memberships are paid by card. Yearly memberships are paid by cash.
+
+Equipment:
+Members are required to have their own gym gear. Gear is available for purchase
+at the academy. First-time visitors should wear comfortable clothing with no
+pockets or zippers.
+
+Additional Fees:
+A sign-up fee applies at enrollment. The sign-up fee includes gear.
+
+Guests:
+Guests are welcome at the academy.
+
+Military and First Responder Discount:
+Discounts are available for military members and first responders.
+
+Family Discount:
+A buy-two-get-two discount is available for families within the same household.
+
+Photography and Video:
+Photos and videos are permitted at the academy. Techniques shown during class
+are not to be posted online.
+
+Conduct Policy:
+Anyone who acts out of line or threatens the safety of others will be removed
+from the academy.
+
+Parents:
+Parents are welcome to watch their children's classes.
+
+Special Needs and Disabilities:
+Students with special needs or disabilities are paired with more experienced
+training partners to ensure a safe and productive experience.
+
+================================================================================
+
+SECTION 9 — FAQs
+
+================================================================================
+
+Q: What programs does Artistry BJJ offer?
+A: Brazilian Jiu-Jitsu and MMA for both adults and kids. Adult programs include
+No-Gi BJJ, Gi BJJ, and MMA. Kids programs include Gi BJJ (ages 5-13) and
+Striking. Saturday Open Mat is also available.
+
+Q: Is there a free trial?
+A: A one-week free trial is available with no commitment required.
+
+Q: Do I need experience to start?
+A: No experience is required. New students join regular classes and are paired
+with experienced training partners. Class content is adjusted to be fundamentals-
+focused when new students are present. Sparring is optional.
+
+Q: What should I wear to my first class?
+A: Comfortable clothing with no pockets or zippers is appropriate for a first
+visit. Gym gear is available for purchase at the academy for enrolled members.
+
+Q: Are there morning classes?
+A: Morning classes are available. No-Gi BJJ runs Monday mornings at 5:00 AM and
+Gi BJJ runs Wednesday mornings at 5:00 AM. Midday classes run Tuesday and
+Thursday at 12:00 PM.
+
+Q: Are there classes for kids?
+A: Kids Gi BJJ runs Monday, Wednesday, and Friday evenings at 5:30 PM and
+Saturday mornings at 11:30 AM. Kids Striking runs Tuesday and Thursday evenings
+at 5:30 PM. The kids program is for children ages 5 to 13.
+
+Q: Is there a women's-only class?
+A: A dedicated women's-only class is not currently offered.
+
+Q: Are there family discounts?
+A: A buy-two-get-two discount is available for families within the same household.
+
+Q: Is there a drop-in option?
+A: Membership pricing and drop-in details are reviewed with students based on
+training goals and schedule preferences. A one-week free trial is available with
+no commitment required.
+
+Q: Can I watch a class before deciding to join?
+A: Prospective students are welcome to observe a class before committing.
+
+Q: Who is the head instructor?
+A: Felipe Rocha is the owner and head instructor. He has nearly two decades of
+experience in Brazilian Jiu-Jitsu as both a competitor and coach.
+
+Q: Are discounts available for military or first responders?
+A: Discounts are available for military members and first responders.
+
+Q: What is the cancellation or pause policy?
+A: Membership cancellation and pause requests both require 30 days notice.
+A doctor's note waives the notice requirement for a hold.
+
+Q: Can parents watch their kids' classes?
+A: Parents are welcome to watch their children's classes.
+
+Q: What forms of payment are accepted?
+A: Monthly memberships are paid by card. Yearly memberships are paid by cash.
+
+Q: Is there an Open Mat session?
+A: Open Mat is available on Saturdays at 11:30 AM.
+
+Q: Does Artistry BJJ have a second location?
+A: A second location is listed at 181 Market St, Suite 106, Georgetown, TX.
+
+================================================================================
+
+END OF KNOWLEDGE BASE
+
+================================================================================

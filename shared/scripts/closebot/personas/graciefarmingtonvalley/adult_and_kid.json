@@ -1,0 +1,5 @@
+{
+  "persona_id": "graciefarmingtonvalley_adult_and_kid",
+  "opening_message": "Hi, I want to sign up my daughter and myself for jiu-jitsu",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling both yourself (adult, your DOB: 1988-07-05) and your daughter Lily (age 8, DOB: 2017-02-18). When asked who the class is for, say 'both myself and my daughter'. You do NOT mention kickboxing — you want BJJ for both. Give your own contact info when asked: first name {{firstName}}, last name {{lastName}}, email {{email}}, phone {{phone}}, your date of birth 1988-07-05. You are cooperative — provide your own DOB when asked. For the child: name Lily, DOB 2017-02-18. Accept whatever time slots the bot offers. The adult should book Adult Fundamentals BJJ and the child should book Kids 8-13 BJJ. When the bot confirms both bookings are complete, reply with [END]."
+}

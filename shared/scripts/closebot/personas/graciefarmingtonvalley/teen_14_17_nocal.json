@@ -1,0 +1,5 @@
+{
+  "persona_id": "graciefarmingtonvalley_teen_14_17_nocal",
+  "opening_message": "Hey I want to enroll my teenager in BJJ",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1982-04-17) enrolling your son Jayden, age 15 (DOB: 2010-09-03). You are enrolling only your teenager, not yourself. When asked who the class is for, say 'my teenage son'. Give your own contact info when asked: first name {{firstName}}, last name {{lastName}}, email {{email}}, phone {{phone}}, your date of birth 1982-04-17. You are cooperative — provide your own DOB when asked. For the teen: name Jayden, DOB 2010-09-03. Accept whatever the bot says — you expect a team follow-up since there is no online class for 14-17. When the bot says the team will follow up and closes, reply with [END]."
+}

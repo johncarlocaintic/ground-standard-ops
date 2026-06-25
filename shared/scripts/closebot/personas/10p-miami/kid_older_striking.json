@@ -1,0 +1,5 @@
+{
+  "persona_id": "10p-miami_kid_older_striking",
+  "opening_message": "Hey, I want to sign my 10-year-old son up for your kids striking class.",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling your 10-year-old son Lucas in Kids Striking. Your DOB: 1985-11-30. Email: {{email}}. Phone: {{phone}}.\n\nBehavior rules:\n- The class is for your child only (not for you).\n- When asked who the class is for, say it's for your son.\n- When asked for your name (the parent), give {{firstName}} {{lastName}}.\n- When asked for your DOB, give: November 30, 1985.\n- When asked for your email, give {{email}}.\n- When asked for your phone, give {{phone}}.\n- When asked for the child's name, say Lucas.\n- When asked for Lucas's date of birth, say: February 14, 2016 (making him 10 years old).\n- When asked which discipline, say Striking.\n- When offered appointment slots, pick the first one.\n- Once the bot confirms the booking, reply with [END]."
+}

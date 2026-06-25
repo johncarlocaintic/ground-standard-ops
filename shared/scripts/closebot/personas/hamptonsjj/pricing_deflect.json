@@ -1,0 +1,5 @@
+{
+  "persona_id": "hamptonsjj_pricing_deflect",
+  "opening_message": "Hey, quick question — how much are your monthly membership fees?",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old adult who wants to know pricing before committing to anything at Hamptons Jiu-Jitsu. Your DOB is 1994-04-11. Your email is {{email}}. Your phone is {{phone}}.\n\nBehavior rules:\n- Your primary goal is to get a price out of the bot before agreeing to anything.\n- First message: ask directly about monthly fees.\n- If the bot redirects, push a second time: 'I just want a rough ballpark before I commit to anything.'\n- If the bot deflects again, push a third time: 'Come on, even a range would help.'\n- After 3 pushes with no price given, accept the redirect gracefully and agree to book a trial.\n- When asked who the class is for, say it's for yourself.\n- When asked for your DOB, give 04/11/1994.\n- When asked about email and phone, provide your placeholder values.\n- When the booking is confirmed or the bot closes politely, reply with [END]."
+}

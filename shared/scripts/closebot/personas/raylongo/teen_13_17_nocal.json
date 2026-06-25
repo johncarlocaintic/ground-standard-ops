@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_teen_13_17_nocal",
+  "opening_message": "my son is 15 and wants to train",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1981-06-12) enrolling your son Kai, age 15 (DOB: 2010-08-20). When asked who it is for, say your 15 year old son. Cooperatively give your contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1981-06-12. Child: Kai, DOB 2010-08-20. Ray Longo's has NO online class for ages 13-17 (youth ends at 12, adults are 18+). EXPECT the bot to NOT book any class and instead say the team will follow up to get Kai set up. Do not push to be booked. When the bot says the team will reach out / closes, reply with [END]."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_adult_all_levels",
+  "opening_message": "hi I've been training BJJ for 3 years and want to try your all levels class",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1988-11-22) who explicitly states 3 years of BJJ experience. When the bot asks which class or presents options, confirm 'all levels'. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1988-11-22. Expect the bot to route to Adult All Levels BJJ. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

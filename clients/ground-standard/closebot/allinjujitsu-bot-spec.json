@@ -1,0 +1,166 @@
+{
+  "gym": {
+    "name": "All In Jiu-Jitsu",
+    "website": "https://allinjiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for All In Jiu-Jitsu, a Brazilian Jiu-Jitsu academy in Green Brook, NJ offering BJJ for kids and adults. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is All In Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing",
+      "Free first class for new students only",
+      "Never identify as AI",
+      "Single discipline (Brazilian Jiu-Jitsu) — no discipline confirmation step needed",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian — route to the youth/guardian path, never self-book a minor.",
+      "Only offer the free trial in a bookable program: Adult Fundamentals BJJ, Kids 5-12 BJJ. Adult All Levels BJJ is an ongoing-member class, NOT a trial calendar. Do not proactively bring up any other program. If a lead asks to book All Levels or anything else with no calendar, tell them that is not available to book online and new students start with a free Fundamentals trial — no coach-redirect, no substitute calendar.",
+      "Age 13-17 has no dedicated calendar (kids cap at 12, adults are 18+) — treat as a minor with no bookable class: capture guardian, do not book, tell them the team will follow up.",
+      "Under age 5 — youngest program is Kids 5-12 BJJ; do not book, suggest contacting the gym directly at 732-903-2999."
+    ]
+  },
+  "ghl": {
+    "locationId": "7jz3trWsyu4R0zBlnCRI",
+    "sourceId": "src_PQQCANSMZ8CS09UA"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "gicbjCQ004KHLYVYlPfw",
+        "program": "bjj",
+        "ageMin": 18,
+        "default": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_5_12_bjj",
+        "calendarName": "Kids 5-12 BJJ",
+        "calendarId": "deuaXkSEzYGTm5zbRp1c",
+        "program": "bjj",
+        "ageMin": 5,
+        "ageMax": 12
+      }
+    ],
+    "noCalendarAgeBands": [
+      {
+        "band": "13-17",
+        "status": "no calendar",
+        "default": "treat as minor, capture guardian, do not book, team follows up"
+      },
+      {
+        "band": "under-5",
+        "status": "no calendar",
+        "default": "youngest is Kids 5-12; suggest gym contact 732-903-2999"
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Adult All Levels BJJ",
+        "calendarId": "fqS7MHeEhy2dtc11h7AM",
+        "note": "ongoing-member class; bot never books this for a trial — trial is Adult Fundamentals BJJ"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Adult All Levels BJJ (ongoing-member class, not a trial calendar)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked to book All Levels or anything without a trial calendar, state it is not available to book online and new students start with a free Fundamentals trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 1,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB shows under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC — no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB shows 13-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC — no booking"
+        }
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": null,
+    "localFile": "clients/ground-standard/closebot/allinjujitsu-kb-v1.0.0.txt",
+    "indexed": false,
+    "verification": "No Glenn draft existed; built from live website + live GHL calendars. Phone/email cross-checked vs mismatch report (match). Dead bteamnj.com replaced with allinjiujitsu.com. $35 mat fee excluded.",
+    "knownGaps": [
+      "Class schedule days/times not reliably available (old data uncertain, site doesn't show; booking is GHL-calendar driven). Mismatch-report open questions for Glenn/Bobby: Wed Ladies No-Gi time, Tue evening block, trial days (T=Tue/Thu).",
+      "Kids age range from GHL calendar (5-12); site did not specify — confirm.",
+      "Adult All Levels BJJ treated as non-bookable ongoing-member class (trial = Fundamentals). Confirm intended.",
+      "Site describes adult as no-gi format; GHL calendars are generic BJJ. Bot books by calendar name, no gi/no-gi branch."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) confirm Adult All Levels BJJ is not a trial calendar (b) confirm kids age band 5-12 (c) confirm 13-17 handled as minor/team-follow-up (d) answer the All In schedule open questions"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_15WPBGYMS6HLGC5E",
+      "botName": "All In Jiu-Jitsu - Launch v3.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v3.0",
+      "architecture": "agent-node (scaffold-and-fill from Scottsdale-derived canonical template). Single discipline (BJJ). 1 adult cal (Adult Fundamentals BJJ 18+) + 1 kids cal (Kids 5-12 BJJ). Adult All Levels BJJ non-bookable (members-only). No-cal gates: under-5, 13-17. Adult-path minor gate. Multi-enrollee support. Explicit calendar names in n30_book to avoid sandbox cross-contamination.",
+      "verdict": "QA-PASSED 2026-05-21 — 11/11 personas PASS + 3/3 non-det PASS. qaReport: clients/ground-standard/closebot/allinjujitsu-qa-summary-v1.md. Parked sandbox, NOT on prod."
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_IAHRWLP8HI2X82V1",
+      "botName": "All In Jiu-Jitsu - Launch v2.0 [canon rebuild from Vacaville template] (2026-05-18)",
+      "version": "v2.0",
+      "architecture": "canon classic (Vacaville 195-node template)",
+      "supersedes": "bot_W7SALTJ86VFW8LA0 [LEGACY-BROKEN] lean v1.0 (parent-for-child dead-end + multi-enrollee no-book)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_V192XD11LN16POGQ",
+      "botName": "All In Jiu-Jitsu - Launch v2.1 [canon classic, template-native conversationReason fix] (2026-05-18)",
+      "version": "v2.1",
+      "architecture": "canon classic (Vacaville 195-node template, template-native conversationReason)",
+      "verdict": "LEGACY — superseded by v2.2 scope guard rebuild",
+      "supersedes": "bot_IAHRWLP8HI2X82V1 [LEGACY] v2.0 false-closure"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_D4H6ZU35D7Z2LICH",
+      "botName": "All In Jiu-Jitsu - Launch v2.2 [scope guard fix, multi-enrollee] (2026-05-18)",
+      "version": "v2.2",
+      "architecture": "canon classic (Vacaville 195-node template) + scope-guard Description suffix + age-range normalization (substitute script v3)",
+      "verdict": "QA-PASSED — parked sandbox, NOT on prod",
+      "qaReport": "clients/ground-standard/closebot/allinjujitsu-qa-summary-v4.md",
+      "supersedes": "bot_V192XD11LN16POGQ [LEGACY] v2.1"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_teen_13_17_nocal",
+  "opening_message": "my son is 15 and wants to try MMA",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your own DOB: 1981-06-25), asking about your 15-year-old son Brandon (DOB: 2010-03-12). You expect NO online booking — the kids program caps at age 12 and the adult program requires 18+, with no calendar for ages 13-17. When the bot says it will capture your info and the team will follow up, give your contact info: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1981-06-25. Also give child info if asked: Brandon, DOB 2010-03-12. Then reply with [END]."
+}

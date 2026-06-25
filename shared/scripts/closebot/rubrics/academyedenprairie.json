@@ -1,0 +1,160 @@
+{
+  "bot": "academyedenprairie",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a BOOKABLE program exists that is NOT one of: Adult Fundamentals BJJ, Adult Fundamentals Muay Thai, Kids 4-7 BJJ, Kids 8-12 BJJ. Also flag any source-bleed program names from other gyms (e.g. Striking, 10th Planet, Gi/No-Gi as separate bookable tracks, Hamptons/Vacaville/Grit programs)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "mnd_09",
+      "category": "must_not_do",
+      "description": "Does not proactively volunteer non-bookable programs",
+      "level": "standard",
+      "look_for": "bot brings up MMA, Women's Only No-Gi, Open Mat, Sparring, advanced/invite-only classes, or private lessons on its own without the lead asking. It should only offer Jiu-Jitsu or Muay Thai trials."
+    },
+    {
+      "id": "mnd_10",
+      "category": "must_not_do",
+      "description": "No coach-redirect or substitute-calendar for non-bookable asks",
+      "level": "blocker",
+      "look_for": "when asked to book a non-bookable program, bot says 'discuss it with the coach at your trial' OR routes/books them into a different program's calendar (e.g. books a Women's Only ask into Adult BJJ). Correct behavior is a plain 'that's not available to book online' with no coach-redirect and no substitution."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient. Age must be derived from DOB."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Discipline confirmed before booking — Jiu-Jitsu or Muay Thai",
+      "level": "blocker",
+      "look_for": "bot asks whether the lead wants Jiu-Jitsu or Muay Thai before routing to any booking calendar. Booking must not proceed without an explicit discipline confirmation."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Under-18 self-booker handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if the contact themselves is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent/guardian contact info, tag 'minor - needs guardian', then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Adult (18+) BJJ routes to Adult Fundamentals BJJ calendar",
+      "level": "blocker",
+      "look_for": "adult lead (18 or older by DOB) interested in Jiu-Jitsu is booked into the 'Adult Fundamentals BJJ' calendar. Any other calendar is a routing failure."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Adult (18+) Muay Thai routes to Adult Fundamentals Muay Thai calendar",
+      "level": "blocker",
+      "look_for": "adult lead (18 or older by DOB) interested in Muay Thai is booked into the 'Adult Fundamentals Muay Thai' calendar. Any other calendar is a routing failure."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Kid age 4-7 JJ routes to Kids 4-7 BJJ calendar",
+      "level": "blocker",
+      "look_for": "child aged 4-7 interested in Jiu-Jitsu is booked into 'Kids 4-7 BJJ'. Booking to Kids 8-12 BJJ or any other calendar for this age group is a routing failure."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Kid age 8-12 JJ routes to Kids 8-12 BJJ calendar",
+      "level": "blocker",
+      "look_for": "child aged 8-12 interested in Jiu-Jitsu is booked into 'Kids 8-12 BJJ'. Booking to Kids 4-7 BJJ or an adult calendar for this age group is a routing failure."
+    },
+    {
+      "id": "md_11",
+      "category": "must_do",
+      "description": "Age 13-17 has no calendar — no booking, referral instead",
+      "level": "blocker",
+      "look_for": "enrollee aged 13-17 (any discipline) must NOT be booked into any calendar (kids cap at 12, adult floors at 18). Bot must say there is no online slot for ages 13-17, tag 'minor - needs guardian', and tell them the team will reach out."
+    },
+    {
+      "id": "md_12",
+      "category": "must_do",
+      "description": "Kids Muay Thai not bookable — redirect to Kids JJ",
+      "level": "standard",
+      "look_for": "if a child under 18 wants Muay Thai, bot must NOT book any calendar. Must state kids Muay Thai is not available to book online, and (if the kid is 4-12) offer Kids Jiu-Jitsu as the available alternative."
+    },
+    {
+      "id": "md_13",
+      "category": "must_do",
+      "description": "Under age 4 redirected to gym contact",
+      "level": "standard",
+      "look_for": "if a child under age 4 is presented, bot does NOT book. States the youngest program is Kids Jiu-Jitsu starting at age 4 and suggests contacting the gym directly (952-377-8111)."
+    },
+    {
+      "id": "ec_01",
+      "category": "edge_case",
+      "description": "MMA ask -> not available online, no coach redirect",
+      "level": "standard",
+      "look_for": "if lead asks about MMA, bot states it is not available to book online. Does NOT say 'ask the coach at your trial' and does NOT route them into a BJJ/Muay Thai calendar as a substitute. May steer back to a Jiu-Jitsu or Muay Thai free trial."
+    },
+    {
+      "id": "ec_02",
+      "category": "edge_case",
+      "description": "Women's Only No-Gi ask -> not available online, NOT booked into Adult BJJ",
+      "level": "blocker",
+      "look_for": "if lead asks to book Women's Only No-Gi Jiu-Jitsu, bot states it is not available to book online. CRITICAL: must NOT book it into the Adult Fundamentals BJJ calendar as a substitute."
+    },
+    {
+      "id": "ec_03",
+      "category": "edge_case",
+      "description": "Open Mat / Sparring / advanced (**) -> not available online",
+      "level": "standard",
+      "look_for": "if lead asks about Open Mat, Muay Thai Sparring, or any advanced/invite-only (**) class, bot states it is not available to book online, no coach-redirect, no substitution."
+    }
+  ]
+}

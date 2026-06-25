@@ -1,6 +1,8 @@
 # SETUP — first-time checklist
 
-This is your day-one walkthrough. Do these once, in order. Should take 30-45 minutes.
+This is the day-one walkthrough for the operator running Ground Standard in this repo (currently
+**Mark Cabel**, on JC's behalf). Do these once, in order. Should take 30-45 minutes. Clone into a
+clean `ground-standard-ops` folder of its own — don't reuse a folder from another client.
 
 ---
 

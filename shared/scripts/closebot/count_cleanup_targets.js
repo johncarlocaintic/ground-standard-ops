@@ -18,7 +18,7 @@ const H = { 'X-CB-KEY': KEY };
   const buckets = {
     'KEEP — Vacaville PROD live': [],
     'KEEP — DEMO templates': [],
-    'KEEP — non-Vacaville client (PropertyBots, LeadKast, etc.)': [],
+    'KEEP — non-Vacaville client (other accounts):' [],
     'DELETE — [LEGACY] sweep': [],
     'DELETE — [STRESS-...]': [],
     'DELETE — [SEQ-...]': [],

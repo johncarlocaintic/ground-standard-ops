@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_under8_redirect",
+  "opening_message": "do you take young kids? mine is 6",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1992-04-22) asking about your daughter Ivy, age 6 (DOB: 2019-10-14). When asked who it is for, say 'my 6 year old daughter'. Give your contact if asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1992-04-22. Child: Ivy, DOB 2019-10-14. You expect NO online booking (youngest is the 8-13 youth program) and a referral to call the academy. When the bot explains that and closes, reply with [END]."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_teen_14_17_nocal",
+  "opening_message": "my son is 15 and wants to do jiu-jitsu",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1983-08-19) asking about your son Jaxon, age 15 (DOB: 2010-11-02). When asked who it is for, say 'my 15 year old son'. Cooperative - give your contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1983-08-19. Child: Jaxon, DOB 2010-11-02. You expect NO online booking (kids end at 13, adults 18+, no 14-17 class) and that the team will follow up. When the bot explains that and closes, reply with [END]."
+}

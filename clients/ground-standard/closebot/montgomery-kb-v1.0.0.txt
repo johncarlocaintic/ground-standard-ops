@@ -1,0 +1,403 @@
+MONTGOMERY BRAZILIAN Jiu-Jitsu - KNOWLEDGE BASE
+Version: 1.0.1
+Date: March 3, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Purpose: CloseBot Chatbot - Lead Qualification & Trial Class Booking
+
+================================================================================
+INCONSISTENCIES IDENTIFIED FROM SOURCE MATERIAL
+================================================================================
+
+The following inconsistencies were found during content review and should be
+clarified with the client before deployment:
+
+INCONSISTENCY 1 — Wednesday 6:15 PM Class Is No-Gi, Not Gi
+The full class schedule notes that Wednesday's 6:15 PM class is "Beginner Gi
+(No-Gi on Wed)" — meaning Wednesday beginners attend a No-Gi class, not Gi.
+However, the Introductory Class Schedule simply lists "Monday through Thursday
+@ 6:15 PM" without flagging this distinction. A prospect registering for their
+trial on a Wednesday expecting a Gi class would be misinformed. Recommend
+client confirm and clarify Wednesday intro class type in all public-facing
+materials. This KB reflects the schedule detail (Wednesday = No-Gi).
+
+INCONSISTENCY 2 — "One Free Trial Class" vs. "2 Free Weeks at Sign-Up"
+The document states two separate offers: (1) one free trial class for
+prospective students before joining, and (2) two free weeks given to new
+members at sign-up. These are distinct offers at different stages of the
+funnel, but they are listed together without clear separation, which could
+cause confusion. This KB treats them as two separate offers and labels them
+accordingly. Client should confirm both offers are current and active.
+
+INCONSISTENCY 3 — Kids Competition Class vs. Kids Intro Class
+The 5:00 PM Monday "Kids Comp Class" is a competition-track class, not a
+general or introductory session. The introductory schedule for kids lists
+Monday–Thursday at 5:30 PM and Saturdays at 9:30 AM. The 5 PM Comp class
+is not an appropriate intro option and has been excluded from the trial class
+schedule in this KB. Client should confirm this is correct.
+
+INCONSISTENCY 4 — Drop-In Fee Not Specified
+The document confirms drop-ins are allowed but provides no pricing. This KB
+notes that drop-in pricing is available by contacting the school directly.
+Client should provide a specific drop-in rate to improve bot answer quality.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Montgomery Brazilian Jiu-Jitsu
+Commonly Known As: Montgomery BJJ
+Industry: Martial Arts Training
+Year Established: 2017
+
+Description: Montgomery Brazilian Jiu-Jitsu has been serving the Montgomery
+Township and Somerset County community since 2017. Through Brazilian Jiu-Jitsu,
+the school teaches adults and children the importance of self-defense and
+bully-proofing. The school has served hundreds of community residents and is
+committed to making a positive impact on individuals and the broader community.
+
+Programs Offered: Brazilian Jiu-Jitsu — Gi and No-Gi formats for adults and
+children, including beginner, all-levels, competition, and specialty classes
+(Leg Locks, ADCC No-Gi).
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address: 21 Belle Mead Griggstown Road, Montgomery, New Jersey 08502
+Business Phone: (609) 577-4445
+Cell Phone: (609) 851-5132
+Email: montgomerybjj@yahoo.com
+Website: montgomerybjj.com
+
+================================================================================
+BUSINESS HOURS
+================================================================================
+
+Monday:      11:00 AM – 12:30 PM | 5:00 PM – 9:00 PM
+Tuesday:     6:00 AM – 7:00 AM  | 5:00 PM – 9:00 PM
+Wednesday:   11:00 AM – 12:30 PM | 5:00 PM – 9:00 PM
+Thursday:    6:00 AM – 7:00 AM  | 5:00 PM – 9:00 PM
+Friday:      11:00 AM – 12:30 PM | 5:30 PM (Open Mat only)
+Saturday:    9:30 AM – 12:30 PM
+Sunday:      Closed
+
+Note: The school operates two separate time windows on most weekdays —
+a late morning session and an evening session.
+
+================================================================================
+FULL CLASS SCHEDULE
+================================================================================
+
+MONDAY:
+• 11:00 AM — All Levels No-Gi (Adults)
+• 5:00 PM  — Kids Competition Class (Competition track; not a beginner/intro class)
+• 5:30 PM  — Kids All Levels
+• 6:15 PM  — Beginner Gi (Adults)
+• 7:00 PM  — All Levels Leg Locks (Adults; specialty class)
+
+TUESDAY:
+• 6:00 AM  — All Levels No-Gi (Adults)
+• 5:30 PM  — Kids All Levels No-Gi
+• 6:15 PM  — Beginner Gi (Adults)
+• 7:00 PM  — All Levels ADCC No-Gi (Adults; specialty class)
+
+WEDNESDAY:
+• 11:00 AM — All Levels No-Gi (Adults)
+• 5:30 PM  — Kids All Levels
+• 6:15 PM  — Beginner No-Gi (Adults) [Note: Wednesday's 6:15 PM class is No-Gi,
+              not Gi, despite the shared timeslot with Mon/Tue/Thu]
+• 7:00 PM  — All Levels Leg Locks (Monday only — not held Wednesday)
+
+THURSDAY:
+• 6:00 AM  — All Levels No-Gi (Adults)
+• 5:30 PM  — Kids All Levels No-Gi
+• 6:15 PM  — Beginner Gi (Adults)
+• 7:00 PM  — All Levels ADCC No-Gi (Adults; specialty class)
+
+FRIDAY:
+• 11:00 AM — All Levels No-Gi (Adults)
+• 5:30 PM  — Open Mat (Adults)
+
+SATURDAY:
+• 9:30 AM  — Kids No-Gi
+• 10:30 AM — Adults All Levels No-Gi
+
+SUNDAY: No classes scheduled.
+
+================================================================================
+INTRODUCTORY / TRIAL CLASS INFORMATION
+================================================================================
+
+TRIAL CLASS POLICY:
+Montgomery BJJ offers one free introductory/trial class for all prospective
+students. No commitment or obligation is required to attend the trial class.
+
+WHAT TO EXPECT:
+Introductory classes are held during regularly scheduled beginner classes or
+the 11:00 AM All Levels No-Gi classes. There is no separate time slot reserved
+exclusively for trial students — new students join existing scheduled classes.
+
+GI PROVISION:
+A gi (uniform) is provided by the school for introductory Gi classes. Students
+attending a No-Gi trial class do not need a gi — traditional gym attire is
+appropriate.
+
+ARRIVAL REQUIREMENT:
+New students are asked to arrive 10 to 15 minutes before class start time to
+complete any required intake steps before joining the mat.
+
+WHAT TO WEAR:
+• For Gi classes: A gi is provided. Wear comfortable athletic clothing underneath.
+• For No-Gi classes: Traditional gym attire (shorts, rash guard, or athletic
+  t-shirt) is appropriate.
+• Water bottles are recommended. Water is available on-site.
+
+INTRODUCTORY CLASS SCHEDULE:
+
+Adults — Eligible Trial Sessions:
+• Monday through Thursday at 6:15 PM
+  (Note: Wednesday 6:15 PM is a No-Gi class; Mon/Tue/Thu are Gi)
+• Monday, Wednesday, Friday at 11:00 AM (All Levels No-Gi)
+• Saturday at 10:30 AM (All Levels No-Gi)
+
+Kids — Eligible Trial Sessions:
+• Monday through Thursday at 5:30 PM
+• Saturday at 9:30 AM (Kids No-Gi)
+
+================================================================================
+PROGRAMS OFFERED
+================================================================================
+
+BRAZILIAN Jiu-Jitsu — GI
+Traditional BJJ training using the gi (uniform). Beginner classes are offered
+Monday, Tuesday, and Thursday evenings at 6:15 PM. The Gi format emphasizes
+grips, control, and technical application using the uniform.
+
+BRAZILIAN Jiu-Jitsu — NO-GI
+No-Gi training removes the uniform, with students wearing shorts and rash
+guards or athletic gear. Classes are available across multiple time slots
+throughout the week including morning and evening sessions.
+
+KIDS PROGRAM
+BJJ training for children in a safe, structured environment focused on
+self-defense skills and bully-proofing. Both Gi and No-Gi kids classes are
+available. A competition-track Kids Comp Class is available on Monday evenings
+at 5:00 PM for students pursuing competitive training.
+
+SPECIALTY CLASSES (Adults):
+• Leg Locks — Monday evenings at 7:00 PM. Focused submission training.
+• ADCC No-Gi — Tuesday and Thursday evenings at 7:00 PM. No-Gi grappling
+  following ADCC ruleset.
+
+OPEN MAT:
+Friday evenings at 5:30 PM. Open mat allows students to roll and drill freely
+without structured instruction. Typically available to current members.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+MEMBERSHIP OPTIONS:
+
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program works
+best for you and provide accurate pricing for your situation. The trial class
+is completely free with no commitment required.
+
+NEW MEMBER OFFER:
+New members receive 2 free weeks at the time of sign-up. This is a separate
+benefit from the introductory trial class and applies after a student officially
+enrolls as a member.
+
+PRICING DISCUSSION CONTEXT:
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program works
+best for you and provide accurate pricing for your situation. The trial class
+is completely free with no commitment required.
+
+================================================================================
+BOOKING INFORMATION
+================================================================================
+
+HOW TO BOOK A TRIAL CLASS:
+Prospective students can book a trial class by contacting Montgomery BJJ
+directly via phone or email, or through the school's website.
+
+Business Phone: (609) 577-4445
+Cell: (609) 851-5132
+Email: montgomerybjj@yahoo.com
+Website: montgomerybjj.com
+
+WHAT TO BRING:
+• Comfortable athletic clothing (gym attire or gi if you have one — gi provided
+  for Gi intro classes)
+• Water bottle (recommended)
+• No equipment or gear required for the trial class
+
+DROP-INS:
+Drop-ins are accepted at Montgomery BJJ. Specific drop-in pricing is available
+by contacting the school directly.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Do you offer a free trial class?
+A: Yes. Montgomery BJJ offers one free introductory class for all prospective
+students. No commitment is required. Trial students join a regularly scheduled
+beginner or all-levels class — there is no separate trial-only session. For Gi
+classes, a gi is provided at no charge.
+
+Q: When can I take my free trial class?
+A: Adults can attend a trial during the 6:15 PM beginner classes Monday through
+Thursday (note: Wednesday's 6:15 PM session is No-Gi while Mon/Tue/Thu are Gi),
+or at the 11:00 AM No-Gi classes on Monday, Wednesday, and Friday, or Saturday
+at 10:30 AM. Kids trial classes are available Monday through Thursday at
+5:30 PM, and Saturdays at 9:30 AM.
+
+Q: What should I wear to my first class?
+A: For Gi trial classes, a gi is provided — wear comfortable athletic clothing
+underneath. For No-Gi classes, standard gym attire such as shorts and a t-shirt
+or rash guard works well. No special equipment is needed for the trial.
+
+Q: How much does a membership cost?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Do you offer family discounts?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Do you offer discounts for military or first responders?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Is there any special offer for new members?
+A: Yes. New members receive 2 free weeks at the time of enrollment. This is
+separate from the initial free trial class and begins once a student officially
+signs up as a member.
+
+Q: Do you offer classes for kids?
+A: Yes. Kids classes are available Monday through Thursday at 5:30 PM and
+Saturdays at 9:30 AM. A competition-track Kids Comp Class is available Monday
+at 5:00 PM for kids pursuing competitive BJJ. Trial classes for kids follow the
+same schedule as the general kids sessions.
+
+Q: What is the school's address?
+A: Montgomery BJJ is located at 21 Belle Mead Griggstown Road, Montgomery,
+New Jersey 08502.
+
+Q: What are your business hours?
+A: On Monday, Wednesday, and Friday, classes run from 11:00 AM to 12:30 PM and
+again in the evenings from 5:00 PM to 9:00 PM. Tuesday and Thursday have an
+early morning session from 6:00 AM to 7:00 AM and an evening session from
+5:00 PM to 9:00 PM. Friday evenings wind down with Open Mat starting at
+5:30 PM. Saturday hours are 9:30 AM to 12:30 PM. The school is closed on
+Sundays.
+
+Q: What is Open Mat?
+A: Open Mat is held on Friday evenings at 5:30 PM. It is an unstructured
+session where students roll and drill at their own pace without formal
+instruction.
+
+Q: What is the difference between Gi and No-Gi BJJ?
+A: Gi BJJ is trained wearing the traditional uniform (gi), which allows for
+grip-based techniques using the fabric. No-Gi BJJ is trained in athletic shorts
+and a rash guard without the uniform, and focuses on body-based grappling
+without gi grips. Montgomery BJJ offers both formats across the weekly schedule.
+
+Q: What are the Leg Locks and ADCC No-Gi classes?
+A: These are specialty adult classes. Leg Locks (Mondays at 7:00 PM) focus
+specifically on lower-body submission techniques. ADCC No-Gi (Tuesdays and
+Thursdays at 7:00 PM) follows the ADCC ruleset, which is one of the most
+prestigious formats in competitive submission grappling.
+
+Q: Do I need any experience to join?
+A: No experience is required. Beginner classes are specifically designed to
+welcome students at all levels, and the 11:00 AM All Levels No-Gi and Saturday
+10:30 AM classes are also open to newcomers.
+
+Q: Who is the head instructor?
+A: Miguel Benitez is the owner and head instructor of Montgomery BJJ. He is a
+third-degree black belt under Tom DeBlass and has been training Brazilian
+Jiu-Jitsu since 2007. He brings nearly 20 years of competition and coaching
+experience to the mats. Miguel was recently named Head Referee for ADCC
+America and has officiated for ONE FC in Thailand.
+
+Q: How long has Montgomery BJJ been open?
+A: Montgomery BJJ has been serving the Montgomery Township and Somerset County
+community since 2017.
+
+Q: Can I drop in for a class without a membership?
+A: Yes, drop-ins are welcome. Specific drop-in pricing is available by
+contacting the school at (609) 577-4445 or montgomerybjj@yahoo.com.
+
+Q: I have more questions about pricing or which program is right for me.
+A: The best way to get accurate, personalized answers is to come in for a free
+trial class. Instructors take the time after class to walk through all the
+program options and pricing based on your specific goals, schedule, and
+experience level. That conversation is much more useful than a generic overview
+because it is tailored to you.
+
+================================================================================
+ABOUT THE INSTRUCTOR
+================================================================================
+
+MIGUEL BENITEZ — Owner & Head Instructor
+
+Miguel Benitez is a third-degree black belt in Brazilian Jiu-Jitsu under Tom
+DeBlass. He began training BJJ in 2007 and has since competed and coached
+across various rulesets and events. He brings nearly 20 years of Jiu-Jitsu and
+coaching experience to the mats and is committed to sharing his knowledge with
+every student.
+
+Miguel was recently named Head Referee for ADCC America and has officiated for
+ONE FC in Thailand — two of the most prestigious organizations in submission
+grappling and mixed martial arts.
+
+================================================================================
+POLICIES
+================================================================================
+
+TRIAL CLASS POLICY:
+One free introductory class is available to all prospective students. No
+commitment or obligation is required to attend.
+
+MEMBERSHIP:
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program works
+best for you and provide accurate pricing for your situation. The trial class
+is completely free with no commitment required.
+
+DROP-INS:
+Drop-ins are accepted. Pricing available by contacting the school directly.
+
+NEW MEMBER BENEFIT:
+Two free weeks of training are included at the time of membership sign-up,
+separate from the initial free trial class.
+
+================================================================================
+
+Version 1.0.1 | Updated: March 3, 2026
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions
+Source Documents: Montgomery BJJ intake PDF (Miguel-Benitez-Benny720)
+Reference Logic Source: Ballantyne Martial Arts KB v3.0.0 (pricing response
+framing and friction-handling tone only — no Ballantyne content included)

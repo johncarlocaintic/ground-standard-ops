@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_nonbookable_mindfulness",
+  "opening_message": "Hi, I want to try the mindfulness and meditation class. Can you sign me up?",
+  "brief": "You are {{firstName}} {{lastName}}, a 39-year-old interested in SOMA's mindfulness and meditation programming. Your date of birth is 1987-04-18. Your email is {{email}}. Your phone is {{phone}}. You ask to book the mindfulness class directly. The bot should explain that all new members start with the SOMA MVMT Introduction Class — mindfulness sessions are part of regular membership accessed through the Intro Class. Accept the redirect. Confirm 'for me'. Give DOB 1987-04-18. Pick the first trial time offered. When booked or closed, reply with [END]."
+}

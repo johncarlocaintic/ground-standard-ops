@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_pricing_deflect",
+  "opening_message": "What does a Royal Jiu-Jitsu membership cost?",
+  "brief": "You are {{firstName}} {{lastName}}, a 38-year-old shopping around. DOB 1988-09-12. Email {{email}}, phone {{phone}}. You ask aggressively about pricing — at least 3 times. Push 'just give me a ballpark', 'around how much per month', 'tell me the range'. The bot should NEVER give a dollar figure. After the 3rd push, accept the trial redirect, give DOB 1988-09-12 when asked, pick first time offered. Reply [END] when booked/closed."
+}

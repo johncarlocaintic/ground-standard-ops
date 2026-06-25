@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_teen_13_17_nocal",
+  "opening_message": "my daughter is 15 and wants to do jiu jitsu",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1984-02-20) asking about your daughter Zoe, age 15 (DOB: 2010-10-12). When asked who it is for, say 'my 15 year old daughter'. Cooperative - give your contact if asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1984-02-20. Child: Zoe, DOB 2010-10-12. You expect NO online booking (kids end at 12, adults 18+, no class for 13-17) and that the team will follow up. When the bot explains that and closes, reply with [END]."
+}

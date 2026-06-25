@@ -1,0 +1,513 @@
+GRIT Jiu-Jitsu & MUAY THAI - KNOWLEDGE BASE
+
+Version: 1.0.0
+Date: February 28, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Purpose: CloseBot Chatbot - Trial Class Booking Qualification
+
+================================================================================
+INCONSISTENCY REPORT
+(Flagged for client review before deployment)
+================================================================================
+
+The following conflicts exist between the schedule table and the text list within
+the Grit Jiu-Jitsu PDF. The schedule TABLE has been used as the authoritative
+source throughout this knowledge base. These items require client confirmation.
+
+INCONSISTENCY 1 - Kids Muay Thai (Friday End Time):
+  Table says:  Friday 5:00pm - 5:30pm
+  Text says:   Friday 5:00pm - 6:00pm
+  Used in KB:  Table value (5:00pm - 5:30pm)
+  Action required: Client to confirm correct end time.
+
+INCONSISTENCY 2 - Adult Muay Thai Fundamental (Monday Start Times):
+  Table says:  5:10pm - 6:10pm / 6:20pm - 7:20pm
+  Text says:   5:00pm - 6:00pm / 6:00pm - 7:00pm
+  Used in KB:  Table values (5:10pm and 6:20pm starts)
+  Action required: Client to confirm correct class start times.
+
+INCONSISTENCY 3 - Adult Muay Thai (Friday Times):
+  Table says:  5:40pm - 7:40pm
+  Text says:   6:00pm - 8:00pm
+  Used in KB:  Table value (5:40pm - 7:40pm)
+  Action required: Client to confirm correct Friday Muay Thai block.
+
+INCONSISTENCY 4 - Kids BJJ Upper Levels (Labels):
+  Table shows: Two separate rows for "KidZ JitZ Intermediate" and
+               "KidZ JitZ Advance/Competition" — both at 5:35pm-6:25pm.
+  Text shows:  One combined label "Kids BJJ Advance" for the same slot.
+  Used in KB:  Table values (two distinct tracks listed separately).
+  Action required: Client to confirm whether these are distinct classes
+                   or a single combined session.
+
+INCONSISTENCY 5 - Intro Age Cutoff for Teens vs. Adult JitZ:
+  Text says:   Adult BJJ Fundamental starts at age 14.
+  Table shows: A separate "Teens JitZ 13-15yrs Old" row that runs at the
+               same time (6:30pm-7:30pm) as Adult JitZ Essentials.
+  Used in KB:  Both classes are listed separately. Intro schedule notes
+               age 14+ for Adult BJJ as stated in the text.
+  Action required: Client to clarify whether age 13-15 prospects are
+                   directed to Teens JitZ or Adult JitZ Essentials
+                   for their intro class.
+
+INCONSISTENCY 6 - "IMPORTANT DETAILS" Section (Page 3):
+  The PDF page 3 header reads "IMPORTANT DETAILS" but the content is
+  cut off and unavailable. This section may contain trial class policies,
+  pricing notes, staff info, or other booking-relevant details.
+  Used in KB:  Not included (content unavailable).
+  Action required: Client to provide full contents of the
+                   "IMPORTANT DETAILS" section.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Name: Grit Jiu-Jitsu & Muay Thai
+Industry: Martial Arts Training
+Location: 4808 E Sprague Ave Suite 205, Spokane Valley, WA 99212
+
+Description: Grit Jiu-Jitsu & Muay Thai is a martial arts academy in Spokane
+Valley, Washington, offering Brazilian Jiu-Jitsu (JitZ) and Muay Thai training
+for all ages and experience levels. Programs are available for children as young
+as 4 years old through adult, with structured beginner and advanced tracks in
+both disciplines.
+
+Specialties:
+  - Brazilian Jiu-Jitsu (Gi and No-Gi formats)
+  - Muay Thai (Fundamental and Inter/Advance levels)
+  - Kids martial arts (ages 4 and up)
+  - Teens martial arts (ages 13-15)
+  - Women's Jiu-Jitsu
+  - Open Mat / Lunch Rolling sessions
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address:  4808 E Sprague Ave Suite 205, Spokane Valley, WA 99212
+Website:  [TO BE PROVIDED]
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+NOTE: Schedule based on the official schedule table from Grit Jiu-Jitsu PDF.
+Sparring classes require personal protection: mouth guard and shin guards.
+No-Gi classes are noted where applicable.
+
+--- BRAZILIAN Jiu-Jitsu (JitZ) ---
+
+BREAKFAST CLUB (JitZ):
+  Monday:    6:00am - 7:00am
+  Thursday:  6:00am - 7:00am
+  Friday:    6:00am - 7:00am
+
+KIDZ JITZ FUNDAMENTAL:
+  Monday:    5:00pm - 5:30pm
+  Tuesday:   5:00pm - 5:30pm
+  Wednesday: 5:00pm - 5:30pm
+  Thursday:  5:00pm - 5:30pm
+
+KIDZ JITZ INTERMEDIATE:
+  Monday:    5:35pm - 6:25pm
+  Tuesday:   5:35pm - 6:25pm
+  Wednesday: 5:35pm - 6:25pm (No-Gi)
+  Thursday:  5:35pm - 6:25pm (No-Gi)
+
+KIDZ JITZ ADVANCE / COMPETITION:
+  Monday:    5:35pm - 6:25pm
+  Tuesday:   5:35pm - 6:25pm
+  Wednesday: 5:35pm - 6:25pm (No-Gi)
+  Thursday:  5:35pm - 6:25pm (No-Gi)
+
+TEENS JITZ (Ages 13-15):
+  Monday:    6:30pm - 7:30pm
+  Tuesday:   6:30pm - 7:30pm
+  Wednesday: 6:30pm - 7:30pm
+  Thursday:  6:30pm - 7:30pm
+  Friday:    5:00pm - 6:00pm
+
+ADULT JITZ ESSENTIALS (All Levels):
+  Monday:    6:30pm - 7:30pm
+  Tuesday:   6:30pm - 7:30pm
+  Wednesday: 6:30pm - 7:30pm
+  Thursday:  6:30pm - 7:30pm
+  Friday:    5:00pm - 6:00pm  [Listed as "ALL LEVELS"]
+
+ADULT JITZ INTER / ADVANCE:
+  Monday:    7:30pm - 8:30pm
+  Tuesday:   7:30pm - 8:30pm
+  Wednesday: 7:30pm - 8:30pm (No-Gi)
+  Thursday:  7:30pm - 8:30pm (No-Gi)
+
+JITZ LUNCH ROLLZ:
+  Wednesday: 11:30am - 12:30pm
+
+WOMENS JITZ:
+  Wednesday: 5:30pm - 6:30pm
+
+OPEN MAT:
+  Saturday:  9:00am - 10:00am
+
+--- MUAY THAI ---
+
+KIDZ MUAY THAI CLASS:
+  Monday:    4:30pm - 5:00pm
+  Wednesday: 5:00pm - 5:30pm
+  Friday:    5:00pm - 5:30pm
+  [Note: Friday end time per schedule table. See Inconsistency 1 above.]
+
+ADULT MUAY THAI FUNDAMENTAL:
+  Monday:    5:10pm - 6:10pm  (first session)
+             6:20pm - 7:20pm  (second session)
+  Tuesday:   5:30pm - 6:30pm  (first session)
+             6:40pm - 7:40pm  (second session)
+  Wednesday: 7:10pm - 8:10pm
+  Thursday:  5:30pm - 6:30pm  (first session)
+             6:40pm - 7:40pm  (second session)
+  [Note: Monday times per schedule table. See Inconsistency 2 above.]
+
+ADULT MUAY THAI INTER / ADVANCE:
+  Wednesday: 5:35pm - 7:05pm
+  Friday:    5:40pm - 7:40pm
+  [Note: Friday times per schedule table. See Inconsistency 3 above.]
+
+================================================================================
+INTRO / TRIAL CLASS SCHEDULE
+================================================================================
+
+The following schedule applies to new and first-time students (intro classes).
+
+KIDS BJJ - Fundamental (Ages 4 to 13):
+  Monday through Thursday: 5:00pm - 5:30pm
+
+ADULT BJJ - Fundamental (Ages 14 and up):
+  Monday through Thursday: 6:30pm - 7:30pm
+
+ADULT MUAY THAI (Ages 14 and up):
+  Monday:              5:00pm  (intro session start)
+  Tuesday, Wednesday,
+  and Thursday:        5:30pm - 6:30pm  (first session)
+                       6:40pm - 7:40pm  (second session)
+
+KIDS MUAY THAI (Ages 5 to 13):
+  Monday:    4:30pm - 5:00pm
+  Wednesday: 5:00pm - 5:30pm
+
+================================================================================
+PROGRAMS OVERVIEW
+================================================================================
+
+BRAZILIAN Jiu-Jitsu (JitZ)
+
+Grit offers BJJ in both Gi and No-Gi formats. Classes are structured into
+distinct levels so students train with peers at a compatible skill level.
+The Fundamental track is designed for beginners and covers foundational
+techniques and positions. Intermediate and Advance/Competition tracks
+build on that foundation for students progressing in their training.
+The Breakfast Club and Lunch Rollz sessions offer additional mat time
+for adults outside of evening hours. Open Mat on Saturdays is available
+for all students to roll freely and practice techniques.
+
+TEENS JIT (Ages 13-15)
+
+A dedicated class track for teenagers that runs parallel to the adult
+evening schedule. Teens attend Monday through Thursday evenings and
+have access to a Friday session as well.
+
+WOMENS JITZ
+
+A dedicated Jiu-Jitsu session for women, held every Wednesday evening.
+This class runs at the same time as other evening sessions, providing
+a focused environment for women who prefer training together.
+
+MUAY THAI
+
+Muay Thai is offered at Fundamental and Inter/Advance levels for adults.
+The Fundamental classes run multiple sessions per evening on weekdays,
+allowing students to choose a session that fits their schedule. The
+Inter/Advance class runs on Wednesday evenings and Friday afternoons.
+Monday's adult Muay Thai schedule includes intro-to-sparring and sparring
+blocks in sequence. All sparring classes require personal protection:
+mouth guard and shin guards are mandatory.
+
+KIDS MUAY THAI (Ages 5 to 13)
+
+Short-format Muay Thai classes for children run on Monday, Wednesday,
+and Friday. These sessions are designed to introduce young students
+to striking fundamentals in a safe, structured environment.
+
+================================================================================
+TRIAL CLASS & BOOKING INFORMATION
+================================================================================
+
+TRIAL CLASS AVAILABILITY:
+Trial and introductory classes are available at Grit Jiu-Jitsu & Muay Thai.
+New students are directed to the Intro Schedule classes listed above based
+on their age and the discipline they are interested in.
+
+BOOKING CONTACT:
+  Website: [TO BE PROVIDED]
+
+FIRST CLASS GUIDANCE:
+New students are encouraged to arrive a few minutes early before their
+first class to meet with staff, complete any required paperwork, and get
+oriented with the facility.
+
+WHAT TO WEAR:
+Comfortable athletic clothing suitable for movement — shorts and a t-shirt
+or athletic pants. No shoes on the mats. No prior experience or equipment
+is required for the introductory class.
+
+SPARRING GEAR NOTE:
+Sparring classes require mouth guard and shin guards. These are not needed
+for introductory or fundamental classes.
+
+================================================================================
+REQUIRED INFORMATION FOR TRIAL CLASS BOOKING
+================================================================================
+
+To book a trial class, the following information is collected for safety,
+liability, and communication purposes.
+
+REQUIRED FIELDS:
+  1. Full Name (First and Last)
+  2. Email Address
+  3. Phone Number
+  4. Date of Birth
+  5. Parent or Guardian Information (required if student is under 18)
+
+WHY THIS INFORMATION IS COLLECTED:
+
+Full legal name is required to create a student profile in the registration
+system and is also necessary for liability waiver completion on the first day.
+
+Email address is used to send class confirmation details, schedule reminders,
+and any communication regarding the booked session. Email is kept private and
+not shared with third parties.
+
+Phone number is used for text or call reminders about the scheduled class
+and for last-minute communication regarding any schedule changes.
+
+Date of birth is required to complete the student profile and to confirm
+correct program placement. Kids programs (ages 4-13), Teens (ages 13-15),
+and Adult programs (ages 14 and up) have different class tracks, and date
+of birth ensures each student is placed in the appropriate class.
+
+Parent or guardian information is required for students under 18 because
+minors cannot sign legal waivers independently. A parent or guardian must
+provide consent, and their profile is linked to the child's record in
+the registration system.
+
+================================================================================
+MEMBERSHIP & PRICING INFORMATION
+================================================================================
+
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program
+works best for you and provide accurate pricing for your situation. The trial
+class is completely free with no commitment required.
+
+================================================================================
+PRICING QUESTION RESPONSE FRAMEWORK
+================================================================================
+
+NOTE: This section describes factual context about how pricing discussions
+work at Grit Jiu-Jitsu & Muay Thai. It is not a script — it is factual
+information about the consultation process.
+
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program
+works best for you and provide accurate pricing for your situation. The trial
+class is completely free with no commitment required.
+
+================================================================================
+FRICTION HANDLING — FACTUAL CONTEXT
+================================================================================
+
+NOTE: This section describes factual realities about common concerns
+prospective students raise. It is declarative context, not behavioral
+instructions for the bot.
+
+ON PRICING BEFORE COMMITTING:
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program
+works best for you and provide accurate pricing for your situation. The trial
+class is completely free with no commitment required.
+
+ON SCHEDULE CONCERNS:
+Grit offers multiple class times across weekday mornings, afternoons,
+and evenings, plus Saturday open mat. Most working adults and
+school-age children can find a session that fits their availability
+within the existing schedule.
+
+ON EXPERIENCE LEVEL:
+Fundamental classes are designed specifically for beginners with zero
+prior experience. All introductory classes are beginner-appropriate.
+No prior martial arts background is needed to start.
+
+ON COMMITMENT CONCERNS:
+The trial class has no commitment attached to it. The purpose of the
+trial is to give the prospective student full information before
+making any membership decision.
+
+ON QUESTIONS ONLY STAFF CAN ANSWER:
+Certain questions — including detailed pricing, membership terms,
+discount eligibility, specific program recommendations, and facility
+policies not covered in this knowledge base — are best addressed by
+instructors and staff during the trial class visit. The trial class
+is the appropriate setting for those conversations.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What martial arts does Grit Jiu-Jitsu & Muay Thai offer?
+A: Grit offers Brazilian Jiu-Jitsu and Muay Thai. BJJ is available in
+   Gi and No-Gi formats across Fundamental, Intermediate, and Advance
+   levels. Muay Thai is offered at Fundamental and Inter/Advance levels.
+   Both disciplines are available for kids, teens, and adults.
+
+Q: What age can my child start training?
+A: Kids BJJ starts at age 4 and up. Kids Muay Thai starts at age 5
+   and up. Both programs run Monday through Friday with age-appropriate
+   class times. Teens (ages 13-15) have their own dedicated JitZ track.
+
+Q: Do I need any experience to join?
+A: No prior experience is required. Fundamental classes in both BJJ and
+   Muay Thai are designed for complete beginners. New students start with
+   introductory classes regardless of background.
+
+Q: Is there a free trial class available?
+A: Introductory trial classes are available. New students follow the
+   Intro Schedule based on their age and chosen discipline. Specific
+   trial class policies and availability are confirmed by contacting
+   staff directly.
+
+Q: What do I need to bring to my first class?
+A: Comfortable athletic clothing such as shorts and a t-shirt or athletic
+   pants. No shoes are worn on the mats. No equipment is needed for
+   introductory and fundamental classes. Sparring classes require a
+   mouth guard and shin guards, but those are not required for first visits.
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of
+   classes per week you'd want to attend and your specific training goals.
+   Instructors will discuss all the pricing options and membership plans
+   with you during or right after your free trial class. They'll be able
+   to assess what program works best for you and provide accurate pricing
+   for your situation. The trial class is completely free with no
+   commitment required.
+
+Q: What is the schedule for beginners?
+A: Kids BJJ Fundamental runs Monday through Thursday from 5:00pm to 5:30pm
+   for ages 4-13. Adult BJJ Fundamental runs Monday through Thursday from
+   6:30pm to 7:30pm for ages 14 and up. Kids Muay Thai intro runs Monday
+   at 4:30pm and Wednesday at 5:00pm. Adult Muay Thai intro runs Monday
+   at 5:00pm and Tuesday through Thursday starting at 5:30pm.
+
+Q: Are classes available in the morning?
+A: Yes. The Breakfast Club JitZ session runs Monday, Thursday, and Friday
+   from 6:00am to 7:00am. A Lunch Rollz session is also available on
+   Wednesdays from 11:30am to 12:30pm.
+
+Q: Is there a women-only class?
+A: Yes. Women's JitZ is offered every Wednesday from 5:30pm to 6:30pm.
+
+Q: What is Open Mat?
+A: Open Mat is a free-rolling session held every Saturday from 9:00am to
+   10:00am. It is an opportunity for students to practice techniques and
+   roll without structured instruction.
+
+Q: Do you offer No-Gi BJJ?
+A: Yes. No-Gi classes are held on Wednesday and Thursday evenings for
+   the KidZ JitZ Intermediate, KidZ JitZ Advance/Competition, and Adult
+   JitZ Inter/Advance tracks.
+
+Q: What gear is required for sparring?
+A: All sparring classes require a mouth guard and shin guards as personal
+   protection. These are not required for Fundamental or introductory classes.
+
+Q: Can I watch a class before signing up?
+A: Specific observation policies are confirmed by contacting staff directly.
+
+Q: Is Grit right for someone focused on competition?
+A: A KidZ JitZ Advance/Competition track exists for younger students with
+   competitive goals. Adult competitive training options are best discussed
+   with instructors during the trial class visit.
+
+Q: How do I book my first class?
+A: Booking is done by contacting Grit directly via their website.
+   [Note: Website URL marked as TO BE PROVIDED — update before deployment.]
+
+================================================================================
+MISSING INFORMATION — ITEMS REQUIRING CLIENT INPUT
+================================================================================
+
+The following placeholders are present in this knowledge base and must be
+filled in before the bot is deployed to production:
+
+  1. Website URL
+  4. Full contents of the "IMPORTANT DETAILS" section (PDF page 3, cut off)
+  5. Whether a free trial class is explicitly offered (assumed based on
+     industry standard and the intro schedule — client to confirm)
+  6. Membership pricing structure (if any should be disclosed)
+  7. Cancellation and membership pause policies
+  8. Payment methods accepted
+  9. Parking and facility access notes
+  10. Staff names and instructor credentials
+  11. Confirmation of age 13-15 routing: Teens JitZ vs. Adult JitZ Essentials
+      for intro class purposes
+  12. Resolution of all six schedule inconsistencies noted above
+
+================================================================================
+VALIDATION REPORT
+================================================================================
+
+INSTRUCTION LANGUAGE CHECK: PASSED
+  No instances of "you must," "always say," "never tell," "when X say Y,"
+  "make sure to," "ensure that," or second-person commands directed at
+  the AI agent were found in this document.
+
+PLACEHOLDER CHECK: FLAGGED
+  Phone, email, and website are marked [TO BE PROVIDED].
+  These must be resolved before production deployment.
+
+SENSITIVE INFORMATION CHECK: PASSED
+  No passwords, personal emails, private contact details, or confidential
+  staff information are included.
+
+BALLANTYNE CONTAMINATION CHECK: PASSED
+  No Ballantyne-specific facts appear in this document (no Charlotte address,
+  no Sensei Sparks, no JLFS credentials, no Ballantyne pricing or program
+  names). Only the response logic pattern was adapted.
+
+QUALITY SCORE:
+
+  Business info (name, description)          10 / 10
+  Contact info (address present)              7 / 10  [phone/email TBD]
+  Services with descriptions                 15 / 15
+  Booking information                         8 / 10  [contact info TBD]
+  FAQs (13 Q&A pairs - exceeds minimum)      15 / 15
+  Policies (partial - missing cancellation)   6 / 10
+  Hours of operation                         10 / 10
+  Services have detailed descriptions        10 / 10
+  No validation errors                        5 / 5
+
+  TOTAL SCORE: 86 / 100  —  Grade: B (Good)
+
+  Score will reach 95+ once contact info, cancellation policy, and
+  "IMPORTANT DETAILS" content are added from the client.
+
+================================================================================
+END OF KNOWLEDGE BASE
+
+Grit Jiu-Jitsu & Muay Thai | Version 1.0.0 | February 28, 2026
+Prepared by PropertyBots AI | For CloseBot Deployment
+================================================================================

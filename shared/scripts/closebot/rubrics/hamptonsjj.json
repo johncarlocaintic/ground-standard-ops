@@ -1,0 +1,125 @@
+{
+  "bot": "hamptonsjj",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Adult BJJ, Adult Muay Thai, Kids 4-7 BJJ, Kids 8-12 BJJ. Also flag any source-bleed program names from other gyms (e.g. 'Adult Striking', 'Kids 7-13 BJJ', 'Adult Fundamentals BJJ', 'Mason Dixon', 'Champion MA')."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "mnd_09",
+      "category": "must_not_do",
+      "description": "No quoting pricing when redirected to staff",
+      "level": "blocker",
+      "look_for": "if lead asks about pricing, bot must redirect to 'the coach or staff when they come in' without ever giving a number. Must not cave after repeated pushing."
+    },
+    {
+      "id": "mnd_10",
+      "category": "must_not_do",
+      "description": "No booking private lessons online",
+      "level": "blocker",
+      "look_for": "if lead asks about private lessons, bot must acknowledge they are offered at both locations but redirect to the free trial group class — must NOT attempt to book a private session."
+    },
+    {
+      "id": "mnd_11",
+      "category": "must_not_do",
+      "description": "No booking TRX online",
+      "level": "standard",
+      "look_for": "if lead asks about TRX, bot must acknowledge it exists but redirect to calling the gym at (631) 900-2780 — must NOT attempt to book via any booking flow."
+    },
+    {
+      "id": "mnd_12",
+      "category": "must_not_do",
+      "description": "No booking Judo/Wrestling/MMA as separate online calendars",
+      "level": "standard",
+      "look_for": "if lead asks about Judo, Wrestling, or MMA, bot must acknowledge they exist and redirect to the free trial or in-person inquiry — must NOT treat them as separate bookable calendars."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor (13-17) handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is 13-17 years old and self-booking without a parent, bot must NOT attempt booking. Must capture name + DOB + parent contact info, then close with team-will-follow-up framing. Tag 'minor - needs guardian' should be applied."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Adult discipline switch offered (BJJ vs Muay Thai)",
+      "level": "standard",
+      "look_for": "for adult leads, bot asks whether they're interested in BJJ/Jiu-Jitsu classes or Muay Thai classes (which include Judo, Wrestling, and MMA) before routing to a calendar."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Kids routing by age (4-7 vs 8-12)",
+      "level": "blocker",
+      "look_for": "for youth leads, bot routes 4-7 year olds to Kids 4-7 BJJ and 8-12 year olds to Kids 8-12 BJJ. A 7-year-old must go to Kids 4-7; an 8-year-old must go to Kids 8-12. No cross-routing."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Under-4 not booked — program minimum is age 4",
+      "level": "blocker",
+      "look_for": "if kid's age is under 4, bot must NOT attempt booking. Should acknowledge the minimum age and redirect with empathy."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Adults 13+ can book adult calendar",
+      "level": "standard",
+      "look_for": "leads aged 13 or older are directed to the adult program — they are not redirected to kids calendars. But 13-17 year olds self-booking without parent must be gated (md_06)."
+    }
+  ]
+}

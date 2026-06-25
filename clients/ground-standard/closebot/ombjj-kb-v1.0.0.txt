@@ -1,0 +1,433 @@
+================================================================================
+OM BRAZILIAN Jiu-Jitsu & JUDO — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+
+Version: 1.1.0
+Date: March 13, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot (SMS/Chat)
+Primary Source: OM BJJ Concierge FAQ Document
+Logic Reference: Ballantyne Martial Arts KB v3.0.0 (pricing response logic & friction handling only)
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v1.1.0 — March 13, 2026
+  - Pricing redirect applied: all specific pricing figures removed from KB body
+  - MEMBERSHIP & PRICING section replaced with pricing redirect context
+  - PRIVATE LESSONS section: specific rates removed, redirect applied
+  - DROP-IN and GI PURCHASE figures removed
+  - All pricing-related FAQ answers updated to pricing redirect
+  - PRICING DISCUSSION CONTEXT updated to reflect redirect
+  - FRICTION HANDLING pricing response pattern updated to verbatim redirect
+  - Version bump: 1.0.0 → 1.1.0
+
+v1.0.0 — March 13, 2026
+  - Initial build
+  - Source: OM BJJ Concierge FAQ PDF
+  - Pricing logic framework adapted from Ballantyne KB (logic only, not facts)
+  - Sensitive credentials excluded (see build notes)
+  - Inconsistencies documented in Client Action Items appendix
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: OM Brazilian Jiu-Jitsu & Judo
+Short Name: OM BJJ
+Owner: Milard Roper
+Location: 220 Church St, Northport, New York
+Phone: (631) 327-8094
+Website: ombjj.org
+
+Mission: OM Brazilian Jiu-Jitsu and Judo provides traditional martial arts training with the innovative technique and methodology of Brazilian Jiu-Jitsu and Judo to enrich the lives of both children and adults.
+
+Specialties:
+- Brazilian Jiu-Jitsu (BJJ)
+- Judo
+- JKD (Jeet Kune Do) Striking
+- Youth martial arts programs (Kids and Teens)
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address: 220 Church St, Northport, New York
+Phone: (631) 327-8094
+Website: ombjj.org
+After-Hours Contact: Owner's cell phone (same business number)
+
+Wi-Fi: Available for guests
+Parking: Ample parking available
+Locker Rooms: Not available — restrooms available for changing
+
+================================================================================
+BUSINESS HOURS
+================================================================================
+
+General Hours of Operation: 7:00 AM – 8:00 PM
+
+[See Client Action Items — Item 1 and Item 2 for flagged inconsistencies regarding opening time and the Wednesday 6:00 AM class]
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+MONDAY
+- 9:30 AM   — Judo
+- 4:30 PM   — Kids & Teens Judo
+- 6:00 PM   — No-Gi Brazilian Jiu-Jitsu
+
+TUESDAY
+- 9:30 AM   — No-Gi Brazilian Jiu-Jitsu
+- 4:30 PM   — Kids Brazilian Jiu-Jitsu & Judo
+- 5:15 PM   — Teen & Preteen Brazilian Jiu-Jitsu & Judo
+- 6:00 PM   — No-Gi Brazilian Jiu-Jitsu
+
+WEDNESDAY
+- 6:00 AM   — Brazilian Jiu-Jitsu & Judo [see Client Action Items — Item 2]
+- 9:30 AM   — No-Gi Brazilian Jiu-Jitsu
+- 6:00 PM   — Fundamentals Brazilian Jiu-Jitsu & Judo (Dedicated Fundamentals Class)
+
+THURSDAY
+- 9:30 AM   — Brazilian Jiu-Jitsu
+- 4:30 PM   — Kids Brazilian Jiu-Jitsu & Judo
+- 5:15 PM   — Teen & Preteen Brazilian Jiu-Jitsu
+- 6:00 PM   — Adult Brazilian Jiu-Jitsu & Judo
+
+FRIDAY
+- 9:30 AM   — Adult Brazilian Jiu-Jitsu & Judo
+
+SATURDAY
+- 9:00 AM   — Teen & Adult Judo
+- 10:00 AM  — Kids Brazilian Jiu-Jitsu & Judo
+- 10:30 AM  — Adult Brazilian Jiu-Jitsu & Judo
+- 11:30 AM  — Striking
+
+SUNDAY
+- 9:00 AM   — Striking
+- 10:00 AM  — Open Mat (Brazilian Jiu-Jitsu & Judo)
+
+================================================================================
+PROGRAMS & CLASSES
+================================================================================
+
+BRAZILIAN Jiu-Jitsu (BJJ)
+Gi and No-Gi Brazilian Jiu-Jitsu training for all levels. Classes blend traditional martial arts principles with modern grappling methodology.
+
+JUDO
+Traditional Judo training available for kids, teens, and adults. Separate kids/teens and adult sessions offered throughout the week.
+
+JKD (JEET KUNE DO) STRIKING
+Striking classes available on Saturday and Sunday mornings.
+
+FUNDAMENTALS CLASS
+Every Wednesday at 6:00 PM is a dedicated Fundamentals class for Brazilian Jiu-Jitsu & Judo. This is the only class that separates skill levels — all other classes mix beginners, intermediate, and advanced students together.
+
+KIDS PROGRAM
+Classes available for kids across BJJ, Judo, and combined BJJ & Judo sessions. Kids are promoted approximately every month with a minimum of two classes per week.
+
+TEENS & PRETEENS PROGRAM
+Dedicated Teen and Preteen sessions for BJJ and Judo available Tuesday through Thursday.
+
+OPEN MAT
+Sunday 10:00 AM — Open Mat session for Brazilian Jiu-Jitsu and Judo.
+
+STUDENT-TO-INSTRUCTOR RATIO
+Approximately 5 students to 1 instructor, ensuring personalized attention.
+
+BEGINNER GUIDANCE
+All classes except the Wednesday 6:00 PM Fundamentals class mix beginners, intermediate, and advanced students. The Wednesday Fundamentals class is the recommended starting point for new students but not the only option.
+
+================================================================================
+TRIAL CLASS INFORMATION
+================================================================================
+
+TRIAL CLASS OFFER
+The first class is always free for new students. No commitment or obligation required.
+
+WHAT TO WEAR FOR FIRST CLASS
+Shorts and a T-shirt are appropriate. A Gi is welcome if the new student already owns one. No special equipment is required for the first class.
+
+EQUIPMENT FOR FIRST CLASS
+No specific gear is required. The academy can provide or sell gear as needed.
+
+VISITOR POLICY
+Visitors are welcome to watch classes or participate. Tours are available anytime during business hours.
+
+GUEST EQUIPMENT
+Guests may bring their own equipment.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+PRICING INFORMATION
+Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+MEMBERSHIP OPTIONS
+Membership plans are available for teens, adults, and kids. Options vary based on commitment level and training frequency. Specific plans and pricing are discussed with instructors during or after the free trial class.
+
+FAMILY DISCOUNTS
+Family discounts are available. Details are discussed with staff.
+
+PAUSE POLICY
+Memberships can be paused for vacations or personal reasons.
+
+CANCELLATION POLICY
+Cancellations require one month's notice. A cancellation fee applies. Specific terms are discussed with staff.
+
+DROP-IN OPTION
+A drop-in option is available for those who prefer to train without a membership commitment. Drop-in rates are discussed with staff.
+
+GI PURCHASE
+A Gi is available for purchase directly through the owner. Pricing is discussed with the owner directly.
+
+PAYMENT METHODS
+- Credit card (primary)
+- Venmo accepted for drop-ins and merchandise
+
+================================================================================
+PRIVATE LESSONS
+================================================================================
+
+HEAD INSTRUCTOR — MILARD ROPER
+Private lessons are available with Milard Roper. Pricing is discussed directly with Milard. Book by phone at (631) 327-8094.
+
+ASSISTANT INSTRUCTOR — SEAMUS ROPER
+Private lessons are also available with Seamus Roper. Seamus holds a Brown Belt in BJJ and a Black Belt in Judo. Pricing is discussed directly with Seamus.
+
+================================================================================
+POLICIES
+================================================================================
+
+HYGIENE & UNIFORM
+- Uniforms must be clean and odor-free before every class.
+- No body odor, alcohol smell, or marijuana smell permitted.
+- Students are expected to wash their uniform before each class.
+
+FILMING & PHOTOGRAPHY
+No filming or photography without permission.
+
+PARENTAL PRESENCE
+Parents are welcome to watch kids' classes.
+
+KIDS PROGRESS TRACKING
+Progress and attendance for children are not formally tracked.
+
+CONDUCT
+Safe environment — bullying and harassment are not tolerated.
+Core values: loose with humility, win with grace.
+
+BIRTHDAY PARTIES & PRIVATE EVENTS
+Not available at this time.
+
+ONLINE CLASSES
+No online classes or digital training available.
+
+ALLERGY & EMERGENCY MEDICAL POLICY
+No formal allergy or emergency medical policy is currently in place.
+
+BELT PROMOTIONS
+Students are promoted when ready. Kids are typically promoted approximately every month with a minimum of two classes per week.
+
+================================================================================
+INSTRUCTORS & STAFF
+================================================================================
+
+MILARD ROPER — HEAD INSTRUCTOR & OWNER
+- Over 30 years of martial arts experience
+- Trained under multiple traditional teachers
+- Background in yoga: 15+ years of yoga practice, previously owned yoga studios
+- Brings mindfulness and body awareness to martial arts instruction
+- Focus on blending traditional martial principles with modern grappling methodology
+- Private lessons available — contact: (631) 327-8094
+
+SEAMUS ROPER — ASSISTANT INSTRUCTOR
+- Brown Belt in Brazilian Jiu-Jitsu
+- Black Belt in Judo
+- Private lessons available
+
+================================================================================
+FACILITY & AMENITIES
+================================================================================
+
+- Location: 220 Church St, Northport, New York
+- Ample parking available
+- Wi-Fi available for guests
+- No locker rooms; restrooms available for changing
+- Gi available for purchase through the owner (pricing discussed directly with owner)
+- Clean, safe training environment
+
+================================================================================
+TRAINING CULTURE & PHILOSOPHY
+================================================================================
+
+OM BJJ is grounded in traditional martial arts principles including self-discipline, respect, and continuous improvement. The owner integrates yoga philosophy into the training approach, emphasizing mindfulness and body awareness alongside technical skill.
+
+Core philosophy: "Loose with humility, win with grace."
+
+================================================================================
+COMMUNITY OUTREACH
+================================================================================
+
+OM BJJ offers a free Judo class every Monday at 4:30 PM for a local youth group from a lower-income area.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Is the first class really free?
+A: Yes. The first class is always free for new students with no commitment or obligation.
+
+Q: What should I wear to my first class?
+A: Shorts and a T-shirt are fine. A Gi is welcome if you already own one. No special equipment is needed for the first visit.
+
+Q: Do I need to bring any equipment?
+A: No. The academy can provide or sell gear as needed for new students.
+
+Q: What martial arts styles are offered?
+A: Brazilian Jiu-Jitsu, Judo, and JKD (Jeet Kune Do) Striking.
+
+Q: Are there classes for beginners?
+A: Yes. Most classes mix all skill levels together. The Wednesday 6:00 PM Fundamentals class is specifically designed for beginners and foundational skills.
+
+Q: Are there classes for kids?
+A: Yes. Kids classes for Brazilian Jiu-Jitsu and Judo are available Monday through Saturday.
+
+Q: Are there classes for teens?
+A: Yes. Dedicated Teen and Preteen sessions are available Tuesday through Thursday, and Teen & Adult Judo is offered Saturday mornings.
+
+Q: Can I watch a class before deciding to join?
+A: Yes. Visitors are welcome to observe classes during regular business hours.
+
+Q: Can I get a tour of the gym?
+A: Yes. Tours are available anytime during business hours.
+
+Q: Is there parking?
+A: Yes. Ample parking is available at the location.
+
+Q: Is Wi-Fi available?
+A: Yes. Wi-Fi is available for guests.
+
+Q: Can I bring my own gear?
+A: Yes. Guests may bring their own equipment.
+
+Q: Are there family discounts?
+A: Yes. Family discounts are available. Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Q: Can I pause my membership?
+A: Yes. Memberships can be paused for vacations or personal reasons.
+
+Q: How do I book a private lesson?
+A: Private lessons are booked directly with Milard Roper by phone at (631) 327-8094.
+
+Q: Is there a drop-in option?
+A: Yes. A drop-in option is available. Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Q: What is the cancellation policy?
+A: One month's notice is required. A cancellation fee applies. Specific terms are discussed with staff.
+
+Q: Are birthday parties or private events available?
+A: Not at this time.
+
+Q: Are there online classes?
+A: No online classes are currently available.
+
+Q: Do parents need to stay during kids' classes?
+A: No. Parents are welcome to watch but are not required to stay.
+
+Q: What is the student-to-instructor ratio?
+A: Approximately 5 students to 1 instructor.
+
+Q: What is the Wednesday Fundamentals class?
+A: The Wednesday 6:00 PM class is a dedicated Fundamentals class for Brazilian Jiu-Jitsu and Judo. It is the only class that separates skill levels — all other classes mix beginners through advanced.
+
+================================================================================
+PRICING DISCUSSION CONTEXT
+================================================================================
+
+Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Specific questions about family discounts, payment plans, or special circumstances are best addressed directly with staff by calling (631) 327-8094.
+
+================================================================================
+CLIENT ACTION ITEMS — INCONSISTENCIES FROM SOURCE DOCUMENT
+================================================================================
+
+The following inconsistencies were found in the source FAQ document. Client review and clarification is required before these can be resolved in the KB.
+
+ITEM 1 — Opening Time Conflict
+The source document lists Hours of Operation as "7 AM – 8 PM" in one field, and separately lists "Opening Time: 7:30 AM" in another field. These two entries conflict. Clarify: does the gym open at 7:00 AM or 7:30 AM?
+
+ITEM 2 — Wednesday 6:00 AM Class Predates Stated Opening Hours
+The Wednesday schedule includes a 6:00 AM Brazilian Jiu-Jitsu & Judo class. This class time predates both the 7:00 AM and 7:30 AM opening time figures above. Clarify: is the 6:00 AM Wednesday class currently active, and does it operate before general office hours as an early access class?
+
+ITEM 3 — Sunday Opening Hours Not Explicitly Stated
+The general Hours of Operation field lists a single range (7 AM – 8 PM) without a day-by-day breakdown. Sunday has classes starting at 9:00 AM, which falls within the general range, but no explicit Sunday open/close hours are confirmed. Clarify: does the gym follow the same 7 AM – 8 PM range on Sundays?
+
+ITEM 4 — After-Hours Contact Number
+The source notes "Contact After Hours: Owner's cell phone" but does not provide a number separate from the main business line (631) 327-8094. Clarify: is the main business number also the after-hours contact, or is there a separate number?
+
+================================================================================
+FRICTION HANDLING & PRICING RESPONSE LOGIC
+— FOR SYSTEM PROMPT / CLOSEBOT NODE USE ONLY —
+— DO NOT INJECT THIS SECTION INTO THE BOT-FACING KB CONTEXT —
+================================================================================
+
+The following response logic is adapted from the Ballantyne Martial Arts KB (v3.0.0) for use as a behavioral reference in CloseBot node instructions and system prompts. This section is NOT part of the factual KB. It is a guide for how to structure responses — not a source of facts.
+
+--------------------------------------------------------------------------------
+PRICING RESPONSE PATTERN
+--------------------------------------------------------------------------------
+
+When a contact asks about membership pricing, drop-in rates, private lesson rates, or any pricing-related question:
+
+Use the following verbatim redirect as the response context:
+
+"Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required."
+
+Redirect to booking the free trial class as the natural next step.
+
+--------------------------------------------------------------------------------
+FRICTION HANDLING PATTERN
+--------------------------------------------------------------------------------
+
+When a contact pushes back, hesitates, or raises an objection:
+
+1. Acknowledge and validate their concern genuinely — do not dismiss it.
+2. Use a soft transition ("Here's the thing though," "Ultimately," "What I can tell you is").
+3. Briefly explain the value behind what's being asked (their benefit, not just process).
+4. Redirect to the next concrete step.
+5. If resistance continues, acknowledge again with additional context and redirect once more to the same step — do not escalate or pressure.
+
+Key transition phrases:
+- "I totally understand"
+- "That's a fair point"
+- "Here's the thing though"
+- "Ultimately"
+- "The only thing we'd need is"
+
+--------------------------------------------------------------------------------
+SILVER-TONGUE / LAST-RESORT REDIRECT
+--------------------------------------------------------------------------------
+
+For questions the bot cannot answer from the KB — use this pattern only as a last resort after the KB has been exhausted:
+
+Acknowledge the question genuinely, note that it is a great detail to bring up, and frame the free trial class as the place where that question will be answered directly by the instructor. Position the trial class as the fastest and most accurate path to the answer — not a deflection, but a genuine resolution.
+
+Example framing: "That's exactly the kind of thing Milard can cover with you when you come in for your first class — and since it's free with no commitment, it's the best way to get that answer straight from the source."
+
+This redirect is a last resort. The bot should attempt to answer from KB facts first.
+
+--------------------------------------------------------------------------------
+WHAT BALLANTYNE IS NOT A SOURCE FOR
+--------------------------------------------------------------------------------
+
+Ballantyne KB is the logic reference ONLY. It is not a source of facts for OM BJJ. Ballantyne's programs, pricing, schedule, location, staff, and policies do not apply to OM BJJ in any way. Zero content from Ballantyne's factual sections carries over.
+
+================================================================================
+
+Version 1.1.0 | OM Brazilian Jiu-Jitsu & Judo | March 13, 2026
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions in KB Body

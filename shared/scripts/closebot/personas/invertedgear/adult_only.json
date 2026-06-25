@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_adult_only",
+  "opening_message": "Hi, I want to try a BJJ class",
+  "brief": "You are {{firstName}} {{lastName}}, a 30-year-old adult (DOB: 1995-08-14), new to BJJ, booking a free trial for yourself. Inverted Gear is BJJ-only so do not expect a discipline question. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1995-08-14. Accept the first time slot offered. Expect a Fundamentals trial booking. When the bot confirms the booking, reply with [END]."
+}

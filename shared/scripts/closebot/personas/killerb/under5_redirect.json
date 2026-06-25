@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_under5_redirect",
+  "opening_message": "my daughter is 4, do you have martial arts for her?",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1987-10-30), asking about classes for your 4-year-old daughter. You expect NO online booking — the youngest program (Kids MMA & Fitness) requires age 5+. When the bot refers you to the gym phone number (732) 996-8146, reply with [END]. Do not try to book anything."
+}

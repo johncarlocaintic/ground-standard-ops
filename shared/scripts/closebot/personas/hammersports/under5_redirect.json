@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_under5_redirect",
+  "opening_message": "do you take little kids? mine is 4",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1992-07-19) asking about your daughter Lily, age 4 (DOB: 2021-09-10). When asked who it is for, say 'my 4 year old daughter'. Give your contact if asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1992-07-19. Child: Lily, DOB 2021-09-10. You expect NO online booking (too young - youngest program is 5-12) and a referral to call the gym. When the bot explains that and closes, reply with [END]."
+}

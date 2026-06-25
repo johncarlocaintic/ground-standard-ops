@@ -4,6 +4,68 @@
 
 ---
 
+## Handoff note — JC takes GS back over, Mark Cabel operates (2026-06-26)
+
+GS work was paused mid-June and is now resuming. JC owns the client; Mark Cabel runs
+the day-to-day in this repo (replacing Glenn). The entries below (2026-05-18 → 2026-06-24)
+were distilled from the GS session docs now in this repo, not copied from the agency-wide
+log. For full detail read the source docs in `clients/ground-standard/closebot/`:
+`_ARCHITECTURE-BLAST-RADIUS-AUDIT-2026-05-19.md`, `_GYM-STATUS-CHECKLIST-2026-05-20.md`,
+`_QA-AUDIT-2026-05-21.md`, `_SESSION-2026-05-22-SUMMARY.md`.
+
+## Never touch real leads or real contacts without explicit permission (2026-06-02) 🔑
+
+A bot trigger, a tag, or a test that writes to live contacts can disrupt a real customer
+conversation. Before anything that touches production data, get an explicit go-ahead. This
+is a hard rule for every GS account.
+
+## Verify what is already applying a GHL tag before using it as a bot trigger (2026-06-02) 🔑
+
+Manual-activation bots fire on a "Contact Tag Added" trigger. If another workflow or an
+import is already applying that tag, the bot fires on contacts you did not intend. Always
+check what else applies a tag before wiring it as a trigger.
+
+## CloseBot persona↔bot attachment is UI-only — and it blocks both publish and replies (2026-06-21) ⚠️
+
+You cannot attach a persona to a bot through the API. If a bot has no persona attached in
+the UI, API publish fails AND test-session replies come back empty. For GS this matters
+because Emma is the shared persona across every gym bot — confirm the attachment in the UI,
+do not assume the API did it.
+
+## CloseBot reply restrictions are channel-scoped, set via PUT /agency/source/{id} (2026-06-24)
+
+Reply windows live on the source as `botRespondWindows`, per channel. A channel with no
+entry replies 24/7. Times are account-local despite the `*Utc` field names. Read-back after
+any change. (See memory `reference_closebot_reply_windows`.)
+
+## Rename CloseBot test-session leads (Guest → label) via PUT /lead (2026-06-22)
+
+Test sessions create "Guest" leads. Rename them with `PUT /lead/{id}` (set
+`contact.first_name`/`last_name`) so you can find and screenshot a specific test conversation
+later. Map lead → session via `GET /bot/{id}/testSession`.
+
+## Agent Node rebuild — ~28 gym bots migrated, QA-passed, parked on sandbox (2026-05-19 → 2026-05-22) 🔑
+
+The legacy multi-node gym flows were rebuilt on CloseBot's Agent Node architecture (instructions
++ Sections + @@-tools/@@@-exits), salvaged in five phases. By 2026-05-22, ~28 bots were
+QA-passed and parked on the GS Ads sandbox source `src_4R4DUIQTMMX2NFPU`, awaiting per-gym
+cutover. Two real bugs were found and fixed during QA: Gracie Farmington Valley age-cap and a
+Mason Dixon discipline-switch misroute. Edit Agent Node bots via `PUT /bot/{id} { importKdl }`
+(plain `POST` 500s for them — memory `reference_closebot_agent_node_put_pattern`).
+
+## Bulk API fixes across many bots are not reliable — verify each one (2026-05-21) ⚠️
+
+A single script applying a JJ-capitalization + handoff fix across 19 live bots did not land
+cleanly on all of them. Treat any fan-out edit as best-effort and re-verify every bot
+individually before calling it done. Detail: `_QA-AUDIT-2026-05-21.md`.
+
+## Vacaville prod-source filter restored to v4.6 spec (2026-05-19) 🔑
+
+Vacaville's production source tag filter was restored to the v4.6 spec (concierge include +
+9 excludes). Vacaville is the one GS bot LIVE on production (`bot_F0VNPTPCIW88YI3J`,
+source `src_GDKORXSW4Q8RQUQ8`) — never use that production source as a test `mimicSourceId`.
+(See memory `project_vacaville_prod_filter_spec`, `project_vacaville_test_source_routing`.)
+
 ## KB fact-check pipeline — patterns from 17-gym website sweep (2026-05-15)
 
 Full website fact-check run across all 17 GSA KB DRAFTs. Key patterns:

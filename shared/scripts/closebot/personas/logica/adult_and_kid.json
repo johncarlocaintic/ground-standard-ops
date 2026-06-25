@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_adult_and_kid",
+  "opening_message": "I want to train and also sign up my kid",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling BOTH yourself (adult, your DOB: 1990-11-08) and your son Max (age 11, DOB: 2014-03-15). When asked who it is for, say 'both myself and my son'. Cooperative - give your own contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1990-11-08. Child: Max, DOB 2014-03-15. Adult books Adult Foundations BJJ, child books the youth program. Accept the slots offered. When the bot confirms BOTH bookings, reply with [END]."
+}

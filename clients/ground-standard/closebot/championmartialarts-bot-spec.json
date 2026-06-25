@@ -1,0 +1,100 @@
+{
+  "gym": {
+    "name": "Champion Martial Arts",
+    "website": "https://www.championmaf.com/",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Champion Martial Arts. We offer Judo, Carlson Gracie Brazilian Jiu-Jitsu, Shotokan Karate, and Champion Conditioning at our Pasadena, Texas academy. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Always confirm which program the lead wants — Judo, Jiu-Jitsu, Karate, or Conditioning — before booking. Age gates you must enforce: BJJ and Jiu-Jitsu require age 12 and up — never confirm or book BJJ for anyone under 12; offer Judo (ages 5+) as an alternative. Karate and Conditioning require age 14 and up — never confirm or book either for under-14; offer Judo as an alternative. For any youth enrollment, always confirm the child's date of birth before confirming program availability. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Champion Martial Arts.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Always confirm program (Judo, Jiu-Jitsu, Karate, or Conditioning) before routing to a booking calendar",
+      "Jiu-Jitsu (BJJ) is for ages 12 and up only — under 12 cannot book BJJ; offer Judo (ages 5+) as an alternative",
+      "Karate trials are not available for ages under 14 — offer Judo (ages 5+) for kids ages 5-13 as an alternative",
+      "Conditioning trials are not available for ages under 14",
+      "Boxing, Kickboxing/Muay Thai, and MMA are coming soon and not yet available — acknowledge that they are coming and redirect to a current trial in Judo, Jiu-Jitsu, Karate, or Conditioning"
+    ]
+  },
+  "ghl": {
+    "locationId": "ffkMyOy6QOwqrvn4OvoK",
+    "sourceId": "src_EJODL02HM128RGZH"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj", "calendarName": "Adult Brazilian Jiu-Jitsu", "calendarId": "JmUzoadMqyHXNCncJJRu", "program": "bjj", "ageMin": 14 },
+      { "label": "adult_judo", "calendarName": "Adult Judo", "calendarId": "G57e8ocnwCA6uEdo0h1q", "program": "judo", "ageMin": 14 },
+      { "label": "adult_karate", "calendarName": "Adult Karate", "calendarId": "vEhQxdnh1OlwggdFLD7a", "program": "karate", "ageMin": 14 },
+      { "label": "adult_conditioning", "calendarName": "Adult Strength and Conditioning", "calendarId": "4Q6Pnhz7SypjU9Z4dMR3", "program": "conditioning", "ageMin": 14 }
+    ],
+    "kids": [
+      { "label": "kids_12_13_bjj", "calendarName": "Youth Jiu-Jitsu", "calendarId": "HbwXZCkFyizUYjKr5lqx", "program": "bjj", "ageMin": 12, "ageMax": 13 },
+      { "label": "kids_5_13_judo", "calendarName": "Youth Judo", "calendarId": "SgP4SBEaw92iNA6sQtxa", "program": "judo", "ageMin": 5, "ageMax": 13 }
+    ]
+  },
+  "nonBookablePrograms": [
+    "BJJ Open Mat / Technique Review (Saturday)",
+    "Boxing (Coming Soon per website)",
+    "Kickboxing / Muay Thai (Coming Soon per website)",
+    "MMA (Coming Soon per website)"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 4,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": true
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian",
+    "bjj": "bjj",
+    "judo": "judo",
+    "karate": "karate",
+    "conditioning": "conditioning"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": "file_KNVD94TXIV2LNDZ7",
+    "fileName": "v1.1.2 Champion_Martial_Arts_CloseBot_KB_v1_1_0.txt",
+    "indexed": true,
+    "knownGaps": [
+      "Karate ages 5+ per KB but no Youth Karate calendar in GHL — bot treats Karate as 14+ only and redirects 5-13 to Judo. Confirm with gym whether Youth Karate should be added or whether KB age range is wrong.",
+      "Business hours discrepancy: KB says M-F 5-9 PM, website /contact says M-F 4-9 PM. KB also says Sat 9-12, website says Sat 9-1. Low impact since bot doesn't quote opening times directly.",
+      "Youth Jiu-Jitsu and Youth Judo age bands: bot uses 14+ = adult convention (standard GS). Confirm with gym that 13yo BJJ/Judo goes to Youth, 14yo+ goes to Adult.",
+      "Boxing/Kickboxing/MMA status: KB v1.1.2 flagged ClickUp/website conflict — website confirmed 'Coming Soon' as of 2026-05-16, so bot treats all three as non-bookable redirects."
+    ]
+  },
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-16",
+      "botId": "bot_G1X60E6OOHJD0C2K",
+      "botName": "Champion Martial Arts - Launch v1.0 [initial build] (2026-05-16)",
+      "version": "v1.0",
+      "status": "legacy"
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_GEGYNE5WQNOYH7UB",
+      "botName": "Champion Martial Arts - Launch v1.1 [age gate fix + KB attach] (2026-05-16)",
+      "version": "v1.1",
+      "status": "qa-complete-ready-to-attach"
+    }
+  ]
+}

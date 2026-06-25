@@ -1,0 +1,83 @@
+{
+  "gym": {
+    "name": "Gracie Jiu Jitsu East San Jose",
+    "website": "https://www.gjjsanjose.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Gracie Jiu Jitsu East San Jose. Your goal is to help new leads learn about our Gracie Jiu Jitsu programs and book a free trial class. Never quote membership pricing — redirect all pricing questions to the instructor consultation after the trial.",
+    "businessInformation": "The company name is Gracie Jiu Jitsu East San Jose.",
+    "rules": []
+  },
+  "ghl": {
+    "locationId": "wy55JSUKKC3h6TPHfHOo",
+    "sourceId": "src_257VE0Q8RX3IEDVD"
+  },
+  "calendars": {
+    "adult": "Adult Gracie Combatives",
+    "adultId": "t6qNhkiOoAddJddLytLa",
+    "kids": [
+      {
+        "label": "kids_7_13",
+        "calendarName": "Kids 7-13 BJJ",
+        "calendarId": "XfVsX7id0etaN8pOhDnf",
+        "ageMin": 7,
+        "ageMax": 13
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Kids under 7 (no active calendar — redirect to staff)",
+    "Cardio Kickboxing",
+    "Kickboxing / Filipino Martial Arts",
+    "Master Cycle",
+    "Black Belt Club",
+    "Reflex Development"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_UMEBUHOW9YQOLIHU",
+      "botName": "Gracie JJ East San Jose - Launch v2.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from canonical template). Single adult discipline (Adult Gracie Combatives, 18+). 1 kids cal (Kids 7-13 BJJ). Under-7 no-cal gate. 14-17 no-cal gate (minor, guardian, team follow-up). Adult-path minor gate. Multi-enrollee support. Explicit calendar IDs in n30_book.",
+      "verdict": "QA-PENDING — published, NOT sandbox-attached (queued)"
+    },
+    {
+      "date": "2026-05-15",
+      "botId": "bot_0IRK2PH0UC43WYYU",
+      "botName": "Gracie Jiu Jitsu East San Jose - Launch v1.0 [initial build] (2026-05-15)",
+      "version": "v1.0"
+    }
+  ],
+  "kb": {
+    "fileId": "file_TVNOGGMULZXWL4L1",
+    "fileName": "v1.1.2 Gracie_JJ_San_Jose_KB.txt",
+    "indexed": true,
+    "note": "Legacy KB from CloseBot library — used for v2.0 sweep"
+  }
+}

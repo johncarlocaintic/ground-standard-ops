@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_kid_5_12",
+  "opening_message": "my son is 9 and wants to try MMA / martial arts",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your own DOB: 1985-01-14). Your son Caleb wants to try MMA or martial arts (DOB: 2016-06-05, age 9). Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1985-01-14. Give child info when asked: name Caleb, DOB 2016-06-05. Expect the bot to route to Kids MMA & Fitness. A guardian must accompany the child — acknowledge this. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

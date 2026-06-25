@@ -1,0 +1,102 @@
+{
+  "gym": {
+    "name": "Academy of Jiu-Jitsu Scottsdale",
+    "website": "https://academyofjiujitsuscottsdale.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Academy of Jiu-Jitsu Scottsdale. We offer Brazilian Jiu-Jitsu for kids and adults at our Scottsdale, AZ academy. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Academy of Jiu-Jitsu Scottsdale.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Single discipline (Brazilian Jiu-Jitsu) — no discipline confirmation step needed",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian — route to the youth/guardian path, never self-book a minor.",
+      "Only offer the free trial in a bookable program: Adult Fundamentals BJJ, Kids 5-7 BJJ, Kids 8-13 BJJ. Do not proactively bring up any other program. If a lead specifically asks to book a program with no calendar (Adult BJJ Advanced, Fundamentals Live Training, Competition Class), tell them that program is not available to book online — do not offer to discuss it with the coach and do not route it into another calendar; new students start with a free trial in the Fundamentals/Kids class.",
+      "Age 14-17 has no dedicated calendar (kids cap at 13, adult floors at 18) — FLAG FOR GYM VERIFICATION. Until confirmed, treat 14-17 as a minor with no bookable class: capture guardian, do not book, tell them the team will follow up.",
+      "Under age 5 — youngest program is Little Tigers (Kids 5-7 BJJ); do not book, suggest contacting the gym directly at (480) 270-6040."
+    ]
+  },
+  "ghl": {
+    "locationId": "8XPm2yy1DqYc7fDpSj4O",
+    "sourceId": "src_G95K8VC8HQTNWPGL"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj", "calendarName": "Adult Fundamentals BJJ", "calendarId": "9jVZSK73p5tR2XjCeUU4", "program": "bjj", "ageMin": 18 }
+    ],
+    "kids": [
+      { "label": "kids_5_7_bjj", "calendarName": "Kids 5-7 BJJ", "calendarId": "XkcxzmFl0EGXb3nKLKjN", "program": "bjj", "ageMin": 5, "ageMax": 7 },
+      { "label": "kids_8_13_bjj", "calendarName": "Kids 8-13 BJJ", "calendarId": "IqyIo2fAYXKhhQwc1E0d", "program": "bjj", "ageMin": 8, "ageMax": 13 }
+    ],
+    "noCalendarAgeBands": [
+      { "band": "14-17", "status": "FLAG_FOR_VERIFICATION", "default": "treat as minor, capture guardian, do not book, team follows up" },
+      { "band": "under-5", "status": "no calendar", "default": "youngest is Kids 5-7; suggest gym contact (480) 270-6040" }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Adult BJJ Advanced (progression class for existing students, no trial calendar)",
+    "Fundamentals Live Training (Saturday-only bridging class, no trial calendar)",
+    "Competition Class (website-only, no KB/flyer or calendar basis)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If a lead asks to book one, state it is not available to book online and that new students start with a free trial in the Fundamentals or Kids class. No 'discuss with the coach' redirect. No routing into a substitute calendar.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult.",
+      "comparators": [
+        { "path": "adult", "after": "adult_dob", "catches": "DOB shows under 18 on the adult path (self-booking minor)", "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC — no self-booking" },
+        { "path": "youth", "after": "kid_dob", "catches": "DOB shows 14-17 on the youth path (no calendar for this band)", "action": "tag minor - needs guardian, Statement (team will follow up), EOC — no booking" }
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": null,
+    "localFile": "clients/ground-standard/closebot/academyjjscottsdale-kb-v1.0.0.txt",
+    "indexed": false,
+    "verification": "Website-verified against academyofjiujitsuscottsdale.com + calendars pulled live from GHL (2026-05-17). Dual-source KB (flyer + website), no corrections needed.",
+    "knownGaps": [
+      "Adult BJJ Advanced + Fundamentals Live Training: KB programs with no bookable calendar (progression classes). Not bookable; bot says not available online, trial books into Adult Fundamentals BJJ.",
+      "'Competition Class' on website, not in KB/flyer or any calendar. Not added (no source basis). Non-bookable, not mentioned by bot.",
+      "Age 14-17 has no bookable calendar (kids cap at 13, adult floor at 18). FLAGGED FOR GYM VERIFICATION. Interim: treat as minor, capture guardian, do not book, team follows up.",
+      "Under age 5: no calendar; youngest is Kids 5-7. Bot suggests contacting the gym directly."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) is there a class/calendar for ages 14-17? (b) confirm Adult BJJ Advanced / Fundamentals Live Training / Competition Class are correctly treated as not online-bookable"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-18",
+      "botId": "bot_2VZ3SF0B9LMF537T",
+      "botName": "Academy of Jiu-Jitsu Scottsdale - Launch v1.0 [initial canon build, scope guard] (2026-05-18)",
+      "version": "v1.0",
+      "architecture": "canon classic (Vacaville 195-node template) + scope-guard Description suffix + age-range normalization (substitute script v3)"
+    }
+  ]
+}

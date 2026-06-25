@@ -2,8 +2,8 @@
   "rubric_id": "vacaville_v1",
   "client": "ground-standard",
   "bot": "vacaville-grappling",
-  "version": "1.0.0",
-  "updated": "2026-04-25",
+  "version": "1.1.0",
+  "updated": "2026-05-12",
   "checkpoints": [
     {
       "id": "mnd_01",
@@ -24,7 +24,7 @@
       "category": "must_not_do",
       "description": "No fabricated logistics",
       "level": "blocker",
-      "look_for": "bot invents specific numbers it cannot know: drive time estimates, distances, class sizes, instructor counts, student-to-coach ratios. Bot should defer these to the team or Google Maps."
+      "look_for": "bot invents specific numbers it cannot know: drive time estimates, distances, class sizes, instructor counts, student-to-coach ratios. Bot should defer these to the team or Google Maps. DO NOT flag appointment slot times or dates — those come from the booking tool (check_availability / book_appointment) and are not fabricated."
     },
     {
       "id": "mnd_04_DEPRECATED",
@@ -136,7 +136,7 @@
       "category": "edge_case",
       "description": "Hostile or aggressive lead triggers aggression scenario",
       "level": "standard",
-      "look_for": "if lead is profane, threatening, or repeatedly hostile across multiple turns, bot triggers the aggression handoff scenario rather than continuing to engage."
+      "look_for": "if lead is profane, threatening, or repeatedly hostile across multiple turns, bot triggers the aggression handoff scenario. PASS indicators: (a) bot goes silent after the hostile escalation (Stop Responding fired), (b) CloseBot logs show 'Scenario Triggered: Aggression', (c) aggressive tag added to GHL contact. The bot MAY respond gracefully to the first hostile message before triggering on the second — that is correct behavior, not a failure. Bot silence after escalation = handoff succeeded. Do NOT score as fail just because the bot stopped responding."
     },
     {
       "id": "ec_06",

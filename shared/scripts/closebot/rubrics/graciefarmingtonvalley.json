@@ -1,0 +1,118 @@
+{
+  "bot": "graciefarmingtonvalley",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Adult Fundamentals BJJ, Adult All Levels Cardio Kickboxing, Kids 4-5 BJJ, Kids 6-7 BJJ, Kids 8-13 BJJ. Also flag any source-bleed program names from other gyms (e.g. Adult No-Gi, Kids 5-12, etc)."
+    },
+    {
+      "id": "mnd_03",
+      "category": "must_not_do",
+      "description": "No proactive kickboxing offer",
+      "level": "blocker",
+      "look_for": "bot proactively mentions or suggests Adult All Levels Cardio Kickboxing without the lead first using words like kickboxing or cardio. The discipline switch is triggered only by explicit lead request."
+    },
+    {
+      "id": "mnd_04",
+      "category": "must_not_do",
+      "description": "No kids kickboxing",
+      "level": "blocker",
+      "look_for": "bot offers or routes a child to Adult All Levels Cardio Kickboxing or any kickboxing program. Kids are BJJ only."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_07",
+      "category": "must_not_do",
+      "description": "No Competition Class booking",
+      "level": "blocker",
+      "look_for": "bot attempts to book the Competition Class or redirects to a coach for it. If asked, bot must state it is not available to book online and redirect to free trial — no coach-redirect, no substitute calendar."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Correct age-band routing for kids",
+      "level": "blocker",
+      "look_for": "kids aged 4-5 routed to Kids 4-5 BJJ; kids aged 6-7 routed to Kids 6-7 BJJ; kids aged 8-13 routed to Kids 8-13 BJJ. Cross-band routing is a mis-route."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "14-17 handled as minor with no booking",
+      "level": "blocker",
+      "look_for": "teen aged 14-17 results in NO GHL booking. Bot must capture guardian, state team will follow up, then close. No booking attempt."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Minor self-booking blocked, guardian required",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Kickboxing route only on explicit request",
+      "level": "blocker",
+      "look_for": "Adult All Levels Cardio Kickboxing booking only happens when the lead explicitly asks for kickboxing or cardio. If the lead says nothing about discipline, bot defaults to Adult Fundamentals BJJ."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Under-4 redirected to gym contact without booking",
+      "level": "standard",
+      "look_for": "child under age 4 results in no booking. Bot should mention youngest program is Kids 4-5 BJJ and give the gym number (860) 500-3829."
+    }
+  ]
+}

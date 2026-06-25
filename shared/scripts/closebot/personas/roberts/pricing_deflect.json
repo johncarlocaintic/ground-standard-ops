@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_pricing_deflect",
+  "opening_message": "what's the monthly fee?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-pusher (DOB: 1992-07-19). Push for price at least twice with messages like 'come on just give me a ballpark' and 'I just need to know if it's in my budget'. When the bot firmly redirects both times without giving any dollar figure, agree to try the free fundamentals trial. When asked which discipline, say 'BJJ'. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1992-07-19. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

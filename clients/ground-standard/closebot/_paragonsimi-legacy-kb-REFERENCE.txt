@@ -1,0 +1,457 @@
+PARAGON SIMI VALLEY - CLOSEBOT KNOWLEDGE BASE
+
+Version: 1.1.0
+Date: February 28, 2026
+Purpose: CloseBot Chatbot — Trial Class Booking Support
+
+================================================================================
+INCONSISTENCY LOG — SOURCE CONFLICTS IDENTIFIED
+================================================================================
+
+The following inconsistencies were found between the primary source (Paragon Simi
+Valley TXT Knowledge Base v1.0.0) and the PDF schedule reference. These are
+documented for client review before deployment.
+
+INCONSISTENCY 1 — Adult Gi BJJ and Kids Jiu-Jitsu share identical time slots:
+  On Monday and Wednesday, Adult Gi BJJ is listed at 5:00 PM–6:20 PM. Kids
+  Jiu-Jitsu is also listed at 5:00 PM–6:20 PM on the same days. Neither source
+  clarifies whether these run simultaneously in separate mat areas or if one is
+  a misprint. This KB reflects both as written. Client should confirm and clarify.
+
+INCONSISTENCY 2 — Friday No-Gi time discrepancy:
+  Raw PDF notes reference a "5–6" No-Gi slot on Friday. The formatted schedule
+  section in the Paragon TXT KB records Friday No-Gi as 6:00 PM–7:00 PM. This
+  KB uses 6:00 PM–7:00 PM, consistent with the structured schedule table.
+
+INCONSISTENCY 3 — Friday Muay Thai (7:00 PM–8:00 PM) absent from TXT KB:
+  The PDF schedule image shows a Friday Muay Thai class at 7:00 PM–8:00 PM,
+  but this session does not appear anywhere in the Paragon TXT KB Muay Thai
+  schedule. Included in this KB per client instruction. Client should verify
+  this class is active before deploying.
+
+INCONSISTENCY 4 — Saturday Adult Gi time not confirmed:
+  Saturday Gi is referenced in the source as existing ("Saturday: session time
+  listed") but no specific time is provided in any source document. This KB
+  notes Saturday Gi as available with times to be confirmed by staff, per
+  client instruction.
+
+INCONSISTENCY 5 — Youth Jiu-Jitsu vs. Kids Jiu-Jitsu time discrepancy:
+  Kids Jiu-Jitsu on Monday/Wednesday is listed at 5:00 PM–6:20 PM. Youth
+  Jiu-Jitsu on the same days is listed at 5:00 PM–6:15 PM (a 5-minute
+  difference). Both appear to be distinct programs serving overlapping age
+  groups. The source describes Youth Jiu-Jitsu ambiguously as "2 Youth
+  jiu-jitsu." Client should confirm whether these are truly separate programs
+  and clarify the Monday/Wednesday end times.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Name: Paragon Simi Valley
+Industry: Martial Arts Training and Combat Sports
+Website: www.paragonsimivalley.com
+Phone: 805-744-5449
+
+Description:
+Paragon Simi Valley is a comprehensive martial arts academy in Simi Valley,
+California. The academy offers Brazilian Jiu-Jitsu (Gi and No-Gi), Muay Thai,
+and Mixed Martial Arts training for all ages and experience levels. Programs
+range from Fun Jitsu for children ages 3–6 through advanced adult classes.
+The academy's approach centers on structured progression, with instructors
+providing specific direction so no student is lost. Beginners are paired with
+more experienced training partners for hands-on support.
+
+Specialties:
+  - Brazilian Jiu-Jitsu — Gi and No-Gi formats
+  - Muay Thai
+  - Mixed Martial Arts (MMA)
+  - Fun Jitsu (ages 3–6)
+  - Kids Jiu-Jitsu (ages 8–12+)
+  - Youth Jiu-Jitsu
+  - Adult Jiu-Jitsu — All Levels and Advanced tracks
+  - Private lessons (available upon request)
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address: 4210 E Los Angeles Ave, Suite D, Simi Valley, CA 93063
+Phone: 805-744-5449
+Website: www.paragonsimivalley.com
+
+Location Notes:
+Paragon Simi Valley is located on E Los Angeles Ave, a major road in Simi
+Valley, within a commercial area with clear signage. Parking is available in
+nearby lots and designated parking spaces adjacent to the facility.
+
+Nearby Landmarks:
+  - Rancho Santa Susana Community Park
+  - Simi Valley High School
+  - Shopping centers and restaurants along E Los Angeles Ave
+
+Directions:
+Head toward E Los Angeles Ave from your current location. If coming from the
+west, travel east on E Los Angeles Ave. If coming from the east, travel west.
+Look for the address 4210 E Los Angeles Ave with clear facility signage.
+
+================================================================================
+CLASSES & PROGRAMS
+================================================================================
+
+--- YOUTH PROGRAMS ---
+
+FUN JITSU
+  Ages: 3–6
+  Schedule:
+    Monday    — 4:15 PM to 5:00 PM
+    Wednesday — 4:15 PM to 5:00 PM
+
+KIDS JIU-JITSU
+  Ages: 8–12+
+  Schedule:
+    Monday    — 5:00 PM to 6:20 PM
+    Wednesday — 5:00 PM to 6:20 PM
+    Saturday  — 11:45 AM to 1:00 PM
+
+YOUTH JIU-JITSU
+  Note: A distinct program from Kids Jiu-Jitsu, serving an overlapping
+  youth age group. Specific age range to be confirmed with staff.
+  Schedule:
+    Monday    — 5:00 PM to 6:15 PM
+    Wednesday — 5:00 PM to 6:15 PM
+    Saturday  — 11:45 AM to 1:00 PM
+
+--- ADULT PROGRAMS ---
+
+ADULT JIU-JITSU — GI
+  Recommended Trial Days: Tuesday 5:00 PM–6:20 PM or Thursday 6:30 PM–8:00 PM
+  Full Schedule:
+    Monday    — 5:00 PM to 6:20 PM
+    Tuesday   — 5:00 PM to 6:20 PM
+    Wednesday — 5:00 PM to 6:20 PM
+    Thursday  — 6:30 PM to 8:00 PM
+    Saturday  — Time to be confirmed with staff
+
+ADULT JIU-JITSU — NO-GI
+  Recommended Trial Days: Monday or Wednesday 6:30 PM–8:00 PM,
+  or Saturday morning 8:30 AM–10:00 AM
+  Full Schedule:
+    Monday    — 6:30 PM to 8:00 PM
+    Tuesday   — 6:00 PM to 7:00 PM
+    Wednesday — 6:30 PM to 8:30 PM
+    Thursday  — 6:00 PM to 7:00 PM
+    Friday    — 6:00 PM to 7:00 PM
+    Saturday  — 8:30 AM to 10:00 AM
+
+ADVANCED GI
+  Note: This class is for more advanced practitioners.
+  Schedule:
+    Thursday  — 6:30 PM to 8:00 PM
+
+--- MUAY THAI ---
+
+ADULT MUAY THAI
+  Recommended Trial Days: Tuesday 6:30 PM–8:00 PM or Saturday 10:00 AM–11:30 AM
+  Why These Days: The Tuesday evening and Saturday morning sessions are full
+  structured classes that include warmup, technique instruction, drilling, and
+  optional sparring. Other Muay Thai sessions may have a singular training focus
+  rather than a complete class structure, making the recommended days better
+  suited for a first-time experience.
+  Full Schedule:
+    Tuesday   — 6:30 PM to 8:00 PM  (Full structured class — recommended for trial)
+    Thursday  — 8:00 PM to 9:00 PM  (Muay Thai Sparring)
+    Friday    — 7:00 PM to 8:00 PM
+    Saturday  — 10:00 AM to 11:30 AM (Full structured class — recommended for trial)
+    Saturday  — 7:00 PM to 8:00 PM
+
+--- MIXED MARTIAL ARTS ---
+
+MMA
+  Schedule:
+    Sunday    — 11:30 AM to 12:30 PM
+
+================================================================================
+CLASS ENVIRONMENT & STRUCTURE
+================================================================================
+
+Instructor Guidance:
+All classes have instructors providing specific direction so no student is
+lost. New students receive clear guidance throughout each session.
+
+Beginner Support:
+Beginners are paired with more experienced training partners who assist
+them alongside the instructors.
+
+Class Capacity:
+There is no limit on the number of students per class. The academy has
+ample loaner gear and plenty of mat space to accommodate all attendees.
+
+Private Lessons:
+Private lessons are available at Paragon Simi Valley upon request.
+
+================================================================================
+TRIAL CLASS INFORMATION
+================================================================================
+
+Trial Class Availability:
+New students can attend trial classes to experience the training environment
+and instruction style firsthand before committing to a membership.
+
+Loaner Gear:
+Loaner gear is available for trial students. No equipment purchase is required
+before attending a first class.
+
+Recommended Trial Classes by Program:
+
+  Fun Jitsu (Ages 3–6):
+    Monday or Wednesday — 4:15 PM to 5:00 PM
+
+  Kids / Youth Jiu-Jitsu:
+    Monday or Wednesday — 5:00 PM to 6:15 PM or 5:00 PM to 6:20 PM
+    Saturday — 11:45 AM to 1:00 PM
+
+  Adult Gi Jiu-Jitsu:
+    Tuesday — 5:00 PM to 6:20 PM
+    Thursday — 6:30 PM to 8:00 PM
+
+  Adult No-Gi Jiu-Jitsu:
+    Monday or Wednesday — 6:30 PM to 8:00 PM
+    Saturday — 8:30 AM to 10:00 AM
+
+  Muay Thai:
+    Tuesday — 6:30 PM to 8:00 PM
+    Saturday — 10:00 AM to 11:30 AM
+    (These sessions are full structured classes with warmup, technique
+    instruction, drilling, and optional sparring.)
+
+Trial Class Experience:
+During trial classes, prospective members can experience the structured
+training approach firsthand, meet instructors, observe how beginners are
+paired with experienced partners, and ask detailed questions about program
+options, training goals, and membership directly with staff.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Membership Overview:
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program
+works best for you and provide accurate pricing for your situation. The trial
+class is completely free with no commitment required.
+
+Private Lessons:
+Private lessons are available upon request. Specific pricing and scheduling
+are discussed with staff.
+
+================================================================================
+REQUIRED INFORMATION FOR TRIAL CLASS BOOKING
+================================================================================
+
+The following information is collected from all new students to complete their
+student profile and register for a trial class. Each field is required for
+safety, legal compliance, and communication purposes.
+
+1. FULL NAME (First and Last)
+   Full legal name is required to create the student profile in the registration
+   system, which requires both first and last name. Full legal name also satisfies
+   liability insurance requirements and is needed for legal waiver documentation,
+   as state regulations require full legal names on participation waivers.
+
+2. EMAIL ADDRESS
+   Email is required to complete the student profile and send class confirmation
+   details, including what to wear, when to arrive, and what to expect. Email is
+   also used for notifications about schedule changes or cancellations. Contact
+   information is kept private and secure and is never shared with third parties.
+
+3. PHONE NUMBER
+   Phone number is required to complete the student profile. It is used for
+   text reminders about classes, emergency contact if a student is running late
+   or unable to locate the facility, and last-minute communication for schedule
+   changes. Liability insurance also requires emergency contact information for
+   all participants.
+
+4. DATE OF BIRTH
+   The actual date of birth — not age — is required because the profile system
+   needs it to be entered directly. Date of birth confirms appropriate program
+   placement (Fun Jitsu for ages 3–6, Kids/Youth Jiu-Jitsu for ages 8–12+,
+   Adult programs for older students), supports safety considerations, and
+   meets insurance requirements.
+
+5. PARENT OR GUARDIAN INFORMATION (Required if student is under 18)
+   For minors, parent or guardian information — including the parent/guardian's
+   date of birth — is required because the child's profile is attached to the
+   parent/guardian profile in the registration system. State law requires that
+   minors cannot sign legal waivers independently; a parent or guardian must
+   provide consent. Emergency medical decisions and financial authorization
+   for payments also require parent or guardian involvement.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Where is Paragon Simi Valley located?
+A: 4210 E Los Angeles Ave, Suite D, Simi Valley, CA 93063.
+
+Q: What is the phone number?
+A: 805-744-5449.
+
+Q: What is the website?
+A: www.paragonsimivalley.com.
+
+Q: Is parking available at the facility?
+A: Yes, parking is available in nearby lots and designated spaces adjacent
+   to the facility.
+
+Q: What martial arts does Paragon Simi Valley offer?
+A: Brazilian Jiu-Jitsu (Gi and No-Gi), Muay Thai, and Mixed Martial Arts (MMA).
+
+Q: What age groups are served?
+A: Fun Jitsu for ages 3–6, Kids and Youth Jiu-Jitsu for ages 8–12+, and
+   Adult programs for older students and adults.
+
+Q: Do I need to bring my own equipment for a trial class?
+A: No. Loaner gear is available for trial students. No equipment purchase
+   is needed before attending a first class.
+
+Q: Is there a limit on class size?
+A: No. There is no class capacity limit. The academy has ample loaner gear
+   and mat space to accommodate all students.
+
+Q: What is Fun Jitsu?
+A: Fun Jitsu is a Jiu-Jitsu program designed for young children ages 3–6.
+   Classes are held Monday and Wednesday from 4:15 PM to 5:00 PM.
+
+Q: When are Kids Jiu-Jitsu classes?
+A: Monday and Wednesday from 5:00 PM to 6:20 PM, and Saturday from
+   11:45 AM to 1:00 PM.
+
+Q: What is the difference between Gi and No-Gi Jiu-Jitsu?
+A: Gi classes use the traditional martial arts uniform (the Gi). No-Gi
+   classes are practiced without the uniform, typically in rashguards
+   and shorts or athletic pants.
+
+Q: When are Adult Gi Jiu-Jitsu classes?
+A: Monday, Tuesday, and Wednesday from 5:00 PM to 6:20 PM, Thursday from
+   6:30 PM to 8:00 PM, and Saturday (time to be confirmed with staff).
+
+Q: When are Adult No-Gi Jiu-Jitsu classes?
+A: Monday and Wednesday from 6:30 PM to 8:00 PM, Tuesday and Thursday from
+   6:00 PM to 7:00 PM, Friday from 6:00 PM to 7:00 PM, and Saturday from
+   8:30 AM to 10:00 AM.
+
+Q: When are Muay Thai classes?
+A: Tuesday from 6:30 PM to 8:00 PM, Thursday from 8:00 PM to 9:00 PM
+   (sparring), Friday from 7:00 PM to 8:00 PM, Saturday from 10:00 AM
+   to 11:30 AM, and Saturday from 7:00 PM to 8:00 PM.
+
+Q: Why are specific Muay Thai class times recommended for trial students?
+A: The Tuesday evening (6:30–8:00 PM) and Saturday morning (10:00–11:30 AM)
+   Muay Thai sessions are full structured classes that begin with warmup,
+   cover specific techniques, include drilling, and end with optional sparring.
+   Other Muay Thai sessions may have a singular training focus. The recommended
+   times give trial students the most complete and representative first class
+   experience.
+
+Q: Are there MMA classes?
+A: Yes. MMA classes are held Sunday from 11:30 AM to 12:30 PM.
+
+Q: Are there advanced classes?
+A: Yes. Advanced Gi Jiu-Jitsu is offered Thursday from 6:30 PM to 8:00 PM.
+
+Q: How are beginners supported during class?
+A: Instructors provide specific direction throughout every class so no
+   student is ever lost. Beginners are paired with more experienced training
+   partners who can assist them alongside the instructors.
+
+Q: Are private lessons available?
+A: Yes. Private lessons are available upon request. Specific details are
+   discussed with staff.
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of
+   classes per week you'd want to attend and your specific training goals.
+   Instructors will discuss all the pricing options and membership plans
+   with you during or right after your free trial class. They'll be able
+   to assess what program works best for you and provide accurate pricing
+   for your situation. The trial class is completely free with no
+   commitment required.
+
+Q: Can I get pricing information before attending a trial class?
+A: Membership pricing varies based on several factors like the number of
+   classes per week you'd want to attend and your specific training goals.
+   Instructors will discuss all the pricing options and membership plans
+   with you during or right after your free trial class. They'll be able
+   to assess what program works best for you and provide accurate pricing
+   for your situation. The trial class is completely free with no
+   commitment required.
+
+Q: What days are recommended for trial classes in each program?
+A: For Adult Gi: Tuesday 5:00–6:20 PM or Thursday 6:30–8:00 PM.
+   For Adult No-Gi: Monday or Wednesday 6:30–8:00 PM, or Saturday 8:30–10:00 AM.
+   For Muay Thai: Tuesday 6:30–8:00 PM or Saturday 10:00–11:30 AM.
+   For Fun Jitsu: Monday or Wednesday 4:15–5:00 PM.
+   For Kids/Youth Jiu-Jitsu: Monday or Wednesday 5:00–6:15 PM or 5:00–6:20 PM,
+   or Saturday 11:45 AM–1:00 PM.
+
+Q: What information is needed to book a trial class?
+A: Full name (first and last), email address, phone number, date of birth,
+   and parent or guardian information if the student is under 18.
+
+Q: Why is a date of birth required?
+A: The actual date of birth is required by the registration system and is
+   used to confirm age-appropriate program placement, support safety
+   considerations, and satisfy insurance requirements.
+
+Q: Why is parent or guardian information required for minors?
+A: The child's profile is linked to the parent or guardian profile in the
+   registration system. State law also requires that a parent or guardian
+   provide consent for minors, as minors cannot independently sign legal
+   waivers. Emergency medical decisions and payment authorization also
+   require parent or guardian involvement.
+
+Q: Will my contact information be shared with anyone?
+A: No. All contact information collected is kept private and secure and
+   is never shared with third parties.
+
+Q: What should I expect during a trial class?
+A: Trial classes follow the regular class structure. Instructors provide
+   specific direction throughout, and beginners are paired with more
+   experienced partners. The trial class is also an opportunity to meet
+   staff, ask questions about programs and pricing, and experience the
+   training environment before making any commitment.
+
+Q: Are there classes for families training together?
+A: Paragon Simi Valley offers programs across multiple age groups, from
+   Fun Jitsu for ages 3–6 through adult programs. Family membership
+   applicability is among the factors discussed with staff during the
+   membership consultation at the trial class.
+
+================================================================================
+COMPLEX INQUIRY CONTEXT
+================================================================================
+
+Certain questions about program combinations, training paths, specific
+competitive goals, or detailed comparisons between disciplines are best
+addressed in a direct conversation with instructors and staff. The trial
+class is the primary setting where staff can assess an individual's
+experience level, goals, and program needs, and provide personalized
+guidance that accounts for the full picture.
+
+Questions that go beyond general schedule and booking information — such
+as which disciplines to combine, what progression looks like, or how
+training is structured for specific goals — receive the most accurate and
+useful answers from instructors who can observe the student's starting
+point firsthand.
+
+================================================================================
+
+Version: 1.1.0
+Date: February 28, 2026
+        PDF Schedule Reference (Paragon Simi Valley)
+        Response Logic Reference: Ballantyne Martial Arts KB v3.0.0
+        (pricing & friction handling logic only — no Ballantyne-specific content)
+Type: Pure Context & Facts — No Behavioral Instructions
+Platform: CloseBot Chatbot

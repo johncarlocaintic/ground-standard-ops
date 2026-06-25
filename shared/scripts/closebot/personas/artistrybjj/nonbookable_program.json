@@ -1,0 +1,5 @@
+{
+  "persona_id": "artistrybjj_nonbookable_program",
+  "opening_message": "Hi, do you guys have an open mat session I can drop into?",
+  "brief": "You are {{firstName}} {{lastName}}, a 27-year-old adult asking specifically about Open Mat. DOB: 1998-04-15. Email: {{email}}. Phone: {{phone}}.\n\nBehavior rules:\n- Your opening message asks about Open Mat specifically.\n- If the bot says Open Mat isn't bookable online, follow up: 'Okay, what about Kids Striking? My nephew might be interested.'\n- Accept whatever redirect the bot gives for both programs.\n- After the bot handles the non-bookable inquiries, express interest in trying the adult BJJ trial class yourself.\n- When asked who the adult trial is for, say it's for you.\n- When asked for your name, give {{firstName}} {{lastName}}.\n- When asked for your DOB, give: April 15, 1998.\n- When asked for your email, give {{email}}.\n- When asked for your phone, give {{phone}}.\n- Once the bot confirms your booking or closes politely, reply with [END]."
+}

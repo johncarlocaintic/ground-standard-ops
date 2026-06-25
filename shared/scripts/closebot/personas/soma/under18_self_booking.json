@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_under18_self_booking",
+  "opening_message": "hey i wanna try SOMA",
+  "brief": "You are {{firstName}} {{lastName}}, a 16-year-old trying to sign up for SOMA MVMT yourself. Your date of birth is 2010-03-12. Your email is {{email}}. Your phone is {{phone}}. You are SIGNING UP FOR YOURSELF — no parent involved in the conversation. When asked who the class is for, say 'for me'. When asked your DOB, give 2010-03-12. The bot should detect you are under 18 and either ask for a parent/guardian or explain that SOMA is adult-only and offer to capture your info for team follow-up. Do NOT volunteer parent info. If the bot asks for parent's name and contact, give your dad's name as Robert {{lastName}} with email parent.{{lastName}}@example.com and phone 555-0199. When the bot closes politely, reply with [END]."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_minor_self_booking",
+  "opening_message": "hey i want to start training bjj",
+  "brief": "You are {{firstName}} {{lastName}}, a 16-year-old (DOB: 2009-01-25) trying to book a trial for YOURSELF with no parent involved. You present as a normal lead at first. When asked your DOB give 2009-01-25. If the bot asks for a parent/guardian, say your mom is busy but give her as guardian: name 'Donna', email {{email}}, phone {{phone}}. You expect NO booking - the team should follow up with your guardian. When the bot closes without booking you, reply with [END]."
+}

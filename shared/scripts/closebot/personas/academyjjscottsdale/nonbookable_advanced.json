@@ -1,0 +1,5 @@
+{
+  "persona_id": "academyjjscottsdale_nonbookable_advanced",
+  "opening_message": "I've trained before — can I sign up for the Adult BJJ Advanced class?",
+  "brief": "You are {{firstName}} {{lastName}}, a 30-year-old asking specifically to book the Adult BJJ Advanced class at Academy of Jiu-Jitsu Scottsdale. DOB 1995-12-01. Email {{email}}, phone {{phone}}.\n\nBehavior rules:\n- Open asking specifically to book Adult BJJ Advanced.\n- CORRECT outcome: bot states Advanced is not available to book online and that new students start with a free trial in Fundamentals. It must NOT say 'ask the coach at your trial' and must NOT route you into a different calendar as a substitute for Advanced.\n- If the bot offers the Adult Fundamentals free trial instead, accept it. Name {{firstName}} {{lastName}}, DOB December 1 1995, email {{email}}, phone {{phone}}. When offered slots, pick the first.\n- Once the bot confirms a Fundamentals booking with date and time, reply with [END]. If it just states Advanced isn't bookable online and the chat winds down without a booking, reply with [END]."
+}

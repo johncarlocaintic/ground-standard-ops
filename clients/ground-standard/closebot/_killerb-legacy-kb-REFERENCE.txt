@@ -1,0 +1,368 @@
+KILLER B COMBAT — KNOWLEDGE BASE
+
+Version: 1.1.0
+Date: March 11, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+
+================================================================================
+INCONSISTENCY & GAP LOG (Internal Reference — Not Bot-Facing)
+================================================================================
+
+The following issues were identified during source review of the Killer B Combat
+intake PDF. These are flagged for client review and resolution before or after
+deployment.
+
+GAP-001: No phone number provided anywhere in the source document.
+         Contact section is incomplete. Placeholder used below.
+
+GAP-002: No email address provided in the source document.
+         Placeholder used below.
+
+GAP-003: No website URL provided in the source document.
+         Placeholder used below.
+
+GAP-004: No staff or instructor bios, credentials, or names provided.
+         Staff section omitted entirely pending client input.
+
+GAP-005: No uniform or gear requirements mentioned for any program.
+         Section omitted pending client input.
+
+INCONSISTENCY-001: The FAQ entry "Is there a cancellation fee?" does not answer
+         the question directly. The answer states "We require 60 days' notice
+         to cancel" without confirming whether a fee exists for non-compliance.
+         KB reflects the 60-day notice requirement as stated; fee ambiguity
+         flagged for client clarification.
+
+INCONSISTENCY-002: Military/first responder discount (10%) and family discount
+         (10%) — no information provided on whether these stack or are mutually
+         exclusive. KB lists both separately without implying stackability.
+
+INCONSISTENCY-003: College student rate listed as "$499 per semester" with no
+         definition of semester length or eligible enrollment periods.
+         KB reflects the rate as stated; definition flagged for client
+         clarification.
+
+INCONSISTENCY-004: Voicemail scripts included in source PDF were excluded from
+         this KB. They are operational scripts for staff, not knowledge base
+         content.
+
+INCONSISTENCY-005: "Best times for tours or meetings" appears inline under
+         General Information in the source document without a clear heading.
+         Interpreted as facility visit/tour scheduling guidance and placed
+         under Facility Information.
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v1.1.0 | March 11, 2026
+- Standardized all pricing-related FAQ responses to instructor redirect.
+  Affected FAQs: "How much does membership cost?", "Are there any family
+  discounts?", "Do you offer discounts for military or first responders?",
+  "Is there a college student rate?", "Which plan gives the best value?"
+- Raw membership pricing data retained in MEMBERSHIP & PRICING section
+  as factual reference only.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Killer B Combat
+Industry: Martial Arts Training & Combat Sports Academy
+Location: 1604 Hwy 35 S, Oakhurst, NJ, 07755
+Founded: 1998
+
+Description: Killer B Combat is a full-service combat sports academy in
+Oakhurst, NJ, offering training in Kickboxing, Boxing, Brazilian Jiu Jitsu,
+MMA, and Kids Martial Arts. With over 25 years in operation, the academy trains
+students at every level — from complete beginners with zero experience to
+active UFC roster athletes. Members have 24-hour facility access and unlimited
+class attendance across all programs.
+
+Specialties:
+- Kickboxing
+- Boxing
+- Brazilian Jiu Jitsu (BJJ)
+- Mixed Martial Arts (MMA)
+- Kids Martial Arts (ages 5 to 12)
+- Sparring
+- Training athletes from beginner to professional / UFC roster level
+
+================================================================================
+CONTACT & ACCESS
+================================================================================
+
+Address: 1604 Hwy 35 S, Oakhurst, NJ, 07755
+Phone: [TO BE PROVIDED]
+Email: [TO BE PROVIDED]
+Website: [TO BE PROVIDED]
+
+Member Access: 24 hours a day, 7 days a week
+Class Hours: 6:00 AM to 9:00 PM
+
+================================================================================
+FACILITY INFORMATION
+================================================================================
+
+Parking: Available on-site.
+Restrooms: Available for changing. No dedicated locker rooms.
+Wi-Fi: Available for members and guests.
+Member Access: 24-hour keycard or credential access for active members.
+
+Best Times for Tours or In-Person Visits:
+- Monday through Thursday: 10:00 AM–11:00 AM or 5:00 PM–8:00 PM
+- Saturday: 8:00 AM–11:00 AM
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+KIDS MARTIAL ARTS (Ages 5 to 12):
+- Monday: 5:00 PM – 6:00 PM
+- Tuesday: 5:00 PM – 6:00 PM
+- Wednesday: 5:00 PM – 6:00 PM
+- Thursday: 5:00 PM – 6:00 PM
+- Saturday: 9:00 AM – 10:00 AM
+
+BOXING:
+- Tuesday: 5:00 PM
+- Thursday: 5:00 PM
+
+KICKBOXING:
+- Monday: 6:00 AM, 7:00 PM
+- Tuesday: 10:00 AM, 6:00 PM
+- Wednesday: 6:00 AM, 7:00 PM
+- Thursday: 10:00 AM, 6:00 PM
+- Friday: 6:00 AM
+- Saturday: 9:00 AM
+
+JIU JITSU:
+- Monday: 6:00 PM
+- Tuesday: 7:00 PM
+- Wednesday: 6:00 PM
+- Thursday: 7:00 PM
+
+MMA (Mixed Martial Arts):
+- Tuesday: 8:00 PM
+- Thursday: 8:00 PM
+- Saturday: 10:00 AM
+
+SPARRING:
+- Monday: 8:00 PM
+- Wednesday: 8:00 PM
+- Saturday: 9:00 AM
+
+INTRODUCTORY CLASSES:
+Leads and new prospects are welcome to attend any regularly scheduled class
+as their introductory session. There are no separate or exclusive intro class
+times — any class on the schedule is eligible.
+
+================================================================================
+PROGRAMS
+================================================================================
+
+KIDS MARTIAL ARTS (Ages 5 to 12)
+Martial arts training designed for children ages 5 to 12. Classes run Monday
+through Thursday at 5:00 PM and Saturday mornings at 9:00 AM.
+
+BOXING
+Fundamental and technical boxing training open to all skill levels. Classes
+held Tuesday and Thursday at 5:00 PM.
+
+KICKBOXING
+Kickboxing classes offered at multiple time slots throughout the week, including
+early morning and evening options Monday through Saturday. Suitable for all
+experience levels.
+
+JIU JITSU (BJJ — Brazilian Jiu Jitsu)
+Ground-based grappling and submission training. Classes held Monday through
+Thursday evenings.
+
+MMA (MIXED MARTIAL ARTS)
+Mixed martial arts training integrating striking and grappling disciplines.
+Classes held Tuesday and Thursday evenings and Saturday mornings.
+
+SPARRING
+Live sparring sessions available Monday, Wednesday evenings and Saturday
+mornings. Intended for students ready to apply techniques in a live context.
+
+================================================================================
+INTRODUCTORY CLASS INFORMATION
+================================================================================
+
+TRIAL / INTRO CLASS POLICY:
+New prospects may attend any regularly scheduled class as their introductory
+class. There are no separate new student time slots — all classes on the
+schedule are open to introductory attendance.
+
+The academy trains students at all levels, from complete beginners with zero
+prior experience to current professional athletes. New students do not need
+prior martial arts experience to attend.
+
+WHAT TO BRING FOR FIRST CLASS:
+- Comfortable athletic clothing (shorts and t-shirt, or athletic pants)
+- Water bottle recommended
+- No equipment required for the introductory class
+
+WHAT TO EXPECT:
+Classes are conducted in a structured training environment. Beginners are
+integrated into regular classes alongside more experienced students.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+MEMBERSHIP PLANS:
+
+Monthly:           $199 per month
+3-Month Plan:      $570 (covers 3 months)
+6-Month Plan:      $1,080 (covers 6 months)
+12-Month Plan:     $2,040 (covers 12 months)
+
+All memberships include:
+- Unlimited classes across all programs
+- 24-hour facility access
+- No hidden fees or extra charges
+
+DISCOUNTS:
+
+Family Discount:
+Families receive 10% off total training costs.
+
+Military & First Responders:
+Active and veteran military personnel and first responders receive 10% off.
+
+College Students:
+A college student rate of $499 per semester is available.
+(Note: Semester length and enrollment verification details discussed with staff.)
+
+MEMBERSHIP PAUSE:
+Memberships may be paused for up to 3 months per calendar year.
+
+CANCELLATION POLICY:
+60 days' notice is required to cancel a membership.
+
+ADDITIONAL FEES:
+No hidden or additional fees beyond membership costs.
+
+PAYMENT METHODS:
+All major forms of payment are accepted.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What martial arts programs do you offer?
+A: Killer B Combat offers Kickboxing, Boxing, Brazilian Jiu Jitsu, MMA, Sparring,
+and a Kids Martial Arts program for ages 5 to 12.
+
+Q: Do I need experience to join?
+A: No prior experience is required. The academy trains students from complete
+beginners with zero experience all the way to current professional and UFC-level
+athletes. New students are welcome at any class.
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Are there any family discounts?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Do you offer discounts for military or first responders?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Is there a college student rate?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: Can I try a class before committing to a membership?
+A: Yes. New prospects are welcome to attend any scheduled class as an introductory
+session. There are no separate intro class times — any class on the schedule
+is eligible. No equipment is needed for the first class.
+
+Q: What time does the gym open?
+A: Members have 24-hour access to the facility. Scheduled classes run from
+6:00 AM to 9:00 PM.
+
+Q: What are the best times to come in for a visit or tour?
+A: The best times for a tour or in-person visit are Monday through Thursday
+between 10:00 AM–11:00 AM or 5:00 PM–8:00 PM, and Saturday between
+8:00 AM–11:00 AM.
+
+Q: Where are you located?
+A: Killer B Combat is located at 1604 Hwy 35 S, Oakhurst, NJ, 07755.
+
+Q: Is parking available?
+A: Yes, parking is available on-site.
+
+Q: Do you have locker room facilities?
+A: Restrooms are available for changing. There are no dedicated locker rooms.
+
+Q: Do you have Wi-Fi?
+A: Yes. Wi-Fi is available.
+
+Q: Can I pause my membership?
+A: Yes. Memberships can be paused for up to 3 months per year.
+
+Q: Is there a cancellation fee?
+A: Cancellation requires 60 days' notice. Specific terms regarding fees for
+early or notice-period cancellations are discussed with staff.
+
+Q: Are there any extra or hidden fees?
+A: No. There are no hidden or additional fees beyond the membership cost.
+
+Q: What payment methods do you accept?
+A: All major forms of payment are accepted.
+
+Q: How long has Killer B Combat been in business?
+A: Killer B Combat has been in operation since 1998.
+
+Q: What experience levels do you train?
+A: The academy trains students at every level — from people with zero prior
+martial arts experience to current professional athletes on the UFC roster.
+
+Q: What should I wear to my first class?
+A: Comfortable athletic clothing works well — shorts and a t-shirt, or athletic
+pants. No special equipment is needed for the introductory class.
+
+Q: When can I start?
+A: New students can attend any class on the current schedule as their
+introductory class. There are no special start dates or waiting periods.
+
+Q: Do you offer classes for kids?
+A: Yes. The Kids Martial Arts program is available for children ages 5 to 12.
+Classes run Monday through Thursday at 5:00 PM and Saturday at 9:00 AM.
+
+Q: Which plan gives the best value?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+================================================================================
+
+Version 1.1.0 | Updated: March 11, 2026
+Knowledge Base Type: Context & Facts Only — No Behavioral Instructions
+Primary Source: Killer B Combat intake PDF
+Logic Reference: Ballantyne Martial Arts KB v3.0.0 (pricing response &
+friction handling patterns only — no Ballantyne facts carried over)

@@ -1,0 +1,5 @@
+{
+  "persona_id": "championmartialarts_nonbookable_openmat",
+  "opening_message": "Hey, do you have an open mat on Saturdays? I want to come in and roll.",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old adult male who has done some BJJ before and is asking specifically about the Saturday Open Mat / Technique Review session. DOB: 1995-08-17. Email: {{email}}. Phone: {{phone}}.\n\nYou already know a bit about BJJ and want to drop in for open mat. If the bot says the Open Mat isn't bookable online, you are disappointed but ask if you can try a free trial class instead. You accept the redirect and cooperate with the booking for a regular BJJ trial. Once the bot confirms a booking with a date and time, reply with [END].\n\nIf the bot tries to book you directly into Open Mat, let it proceed and reply with [END] when confirmed."
+}

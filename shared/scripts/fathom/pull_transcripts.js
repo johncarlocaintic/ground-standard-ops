@@ -76,8 +76,29 @@ function formatTranscript(meeting) {
   return lines.join('\n');
 }
 
+// Map an account selector to its env-var key. Default = Idriss (this is Idriss's repo).
+const ACCOUNTS = {
+  idriss: 'FATHOM_IDRISS_API_KEY',
+  jc: 'FATHOM_API_KEY',
+  pb: 'FATHOM_PB_API_KEY',
+};
+
+function resolveKey() {
+  // CLI: --account=jc  (or)  env: FATHOM_ACCOUNT=jc. Default idriss, fall back to JC's key if Idriss's is unset.
+  const flag = process.argv.find(a => a.startsWith('--account='));
+  const account = (flag ? flag.split('=')[1] : process.env.FATHOM_ACCOUNT) || 'idriss';
+  const varName = ACCOUNTS[account];
+  if (!varName) { console.error(`Unknown --account=${account}. Use: ${Object.keys(ACCOUNTS).join(', ')}`); process.exit(1); }
+  if (!process.env[varName] && account === 'idriss' && process.env.FATHOM_API_KEY) {
+    log(`WARNING: ${varName} not set; falling back to JC's FATHOM_API_KEY.`);
+    return { apiKey: process.env.FATHOM_API_KEY, account: 'jc (fallback)' };
+  }
+  return { apiKey: getEnv(varName), account };
+}
+
 async function main() {
-  const apiKey = getEnv('FATHOM_API_KEY');
+  const { apiKey, account } = resolveKey();
+  log(`Using Fathom account: ${account}`);
 
   // Optional: filter to last N days via CLI arg (default: all time)
   const daysBack = parseInt(process.argv[2]) || null;

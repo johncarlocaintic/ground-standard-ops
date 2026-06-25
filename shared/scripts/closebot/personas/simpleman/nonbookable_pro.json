@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_nonbookable_pro",
+  "opening_message": "do you have a pro class or advanced class?",
+  "brief": "You are {{firstName}} {{lastName}} (DOB: 1987-05-19) asking about the Pro Class. When the bot tells you it's an advanced, invitation-based class and not available as a free trial, say 'ok can I just try the fundamentals class'. Then book Adult Fundamentals BJJ. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1987-05-19. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

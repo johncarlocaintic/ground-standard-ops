@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_nonbookable_advanced",
+  "opening_message": "I've been training for 5 years. Can I book the Adult Advanced BJJ class as my first session?",
+  "brief": "You are {{firstName}} {{lastName}}, an experienced 30-year-old BJJ practitioner. DOB 1996-06-18. Email {{email}}, phone {{phone}}. You ask to book Adult Advanced BJJ directly. The bot should explain that Adult Advanced is a members-only / advanced-track class — new students start with the Adult Fundamentals BJJ trial regardless of experience. Accept the redirect. Confirm 'for me'. Give DOB 1996-06-18. Pick first time offered. Reply [END] when booked/closed."
+}

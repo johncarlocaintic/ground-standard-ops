@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_under5_redirect",
+  "opening_message": "my kid is 4, do you have classes?",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1986-09-14), asking about classes for your 4-year-old son. You expect NO online booking — the youngest programs are Kids 5-10, which requires age 5+. When the bot refers you to the academy phone number (978) 581-0601, reply with [END]. Do not try to book anything."
+}

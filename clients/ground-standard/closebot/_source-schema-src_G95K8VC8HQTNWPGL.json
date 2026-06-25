@@ -1,0 +1,1488 @@
+{
+  "sourceId": "src_G95K8VC8HQTNWPGL",
+  "fetchedAt": "2026-05-17T09:26:04.943Z",
+  "calendars": [
+    {
+      "name": "Adult Fundamentals BJJ",
+      "id": "not_in_db"
+    },
+    {
+      "name": "Kids 8-13 BJJ",
+      "id": "not_in_db"
+    },
+    {
+      "name": "Kids 5-7 BJJ",
+      "id": "not_in_db"
+    }
+  ],
+  "fields": {
+    "contact": [
+      {
+        "name": "First Name",
+        "fieldKey": "contact.first_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Last Name",
+        "fieldKey": "contact.last_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Full Name",
+        "fieldKey": "contact.name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Email",
+        "fieldKey": "contact.email",
+        "dataType": "EMAIL",
+        "id": null
+      },
+      {
+        "name": "Phone",
+        "fieldKey": "contact.phone",
+        "dataType": "PHONE",
+        "id": null
+      },
+      {
+        "name": "Date Of Birth",
+        "fieldKey": "contact.date_of_birth",
+        "dataType": "DATE",
+        "id": null
+      },
+      {
+        "name": "Contact Source",
+        "fieldKey": "contact.source",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Contact Type",
+        "fieldKey": "contact.type",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Name",
+        "fieldKey": "contact.company_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Full Address",
+        "fieldKey": "contact.address",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Street Address",
+        "fieldKey": "contact.address1",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "City",
+        "fieldKey": "contact.city",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Country",
+        "fieldKey": "contact.country",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "State",
+        "fieldKey": "contact.state",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Postal Code",
+        "fieldKey": "contact.postal_code",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Website",
+        "fieldKey": "contact.website",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Time Zone",
+        "fieldKey": "contact.timezone",
+        "dataType": "TIMEZONE",
+        "id": null
+      },
+      {
+        "name": "ID",
+        "fieldKey": "contact.id",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Tags",
+        "fieldKey": "contact.tags",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Last Message",
+        "fieldKey": "contact.last_message",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Concierge Lead Response",
+        "fieldKey": "contact.concierge_lead_response",
+        "dataType": "TEXT",
+        "id": "01WCP38BcVCoaUoFA3bc"
+      },
+      {
+        "name": "Youth Birthday",
+        "fieldKey": "contact.youth_birthday",
+        "dataType": "DATE",
+        "id": "1F1ht6tlEs4Qacz6n8xW"
+      },
+      {
+        "name": "Referred By",
+        "fieldKey": "contact.referred_by",
+        "dataType": "TEXT",
+        "id": "1m4XF8RIzBEQNWxANx8a"
+      },
+      {
+        "name": "Lead Generation Date",
+        "fieldKey": "contact.lead_generation_date",
+        "dataType": "TEXT",
+        "id": "3AvZ0PY4OsWa5hWBnThw"
+      },
+      {
+        "name": "Liability Waiver Signature",
+        "fieldKey": "contact.liability_waiver_signature",
+        "dataType": "SIGNATURE",
+        "id": "3GByzrqzItzB3INv4YcB"
+      },
+      {
+        "name": "Concierge Reply Intro",
+        "fieldKey": "contact.reply_intro",
+        "dataType": "LARGE_TEXT",
+        "id": "3Ppji7VY92U1PQOhBJfw"
+      },
+      {
+        "name": "Response Type",
+        "fieldKey": "contact.response_type",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "3d9mYh80BtR6Rez6mqOs"
+      },
+      {
+        "name": "Cancel Date",
+        "fieldKey": "contact.cancel_date",
+        "dataType": "DATE",
+        "id": "3e3nLHb6BqboVy2ElAhX"
+      },
+      {
+        "name": "CalendarID",
+        "fieldKey": "contact.calendar_id",
+        "dataType": "TEXT",
+        "id": "4KRqeujvhX5hUzFcD7e4"
+      },
+      {
+        "name": "Unsubscribe Reason",
+        "fieldKey": "contact.unsubscribe_reason",
+        "dataType": "RADIO",
+        "id": "4XbcArRqfZgszBBjRjCL"
+      },
+      {
+        "name": "Concierge History",
+        "fieldKey": "contact.concierge_history",
+        "dataType": "TEXT",
+        "id": "4gbXKS2lyg2fppDRFCsI"
+      },
+      {
+        "name": "OpenAI Prompt",
+        "fieldKey": "contact.openai_prompt",
+        "dataType": "TEXT",
+        "id": "562sjD6TwrpQfnDUB6Xn"
+      },
+      {
+        "name": "Concierge Reply Channel",
+        "fieldKey": "contact.reply_channel",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "6Rw5TLMcp1gZLMoRytqq"
+      },
+      {
+        "name": "Concierge Reach Back Time",
+        "fieldKey": "contact.concierge_reach_back_time",
+        "dataType": "TEXT",
+        "id": "7BShQOIFXBNLYHAlt571"
+      },
+      {
+        "name": "Cancel Reason",
+        "fieldKey": "contact.cancel_reason",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "8VVSnhvRjkegvgC8KyUC"
+      },
+      {
+        "name": "Do you have health insurance?",
+        "fieldKey": "contact.do_you_have_health_insurance",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "8cVFMbAcNTXiRrdM5kms"
+      },
+      {
+        "name": "Old | Agent History",
+        "fieldKey": "contact.ai_memory",
+        "dataType": "TEXT",
+        "id": "9LMXFutkFj08F6AREU0Y"
+      },
+      {
+        "name": "Origin Source",
+        "fieldKey": "contact.origin_source",
+        "dataType": "RADIO",
+        "id": "A3SvBnx9dRZxR35zdr8O"
+      },
+      {
+        "name": "Old | Goodbye",
+        "fieldKey": "contact.goodbye",
+        "dataType": "TEXT",
+        "id": "AZneBvwCjBn5nyZJJm4T"
+      },
+      {
+        "name": "Time Offered 2",
+        "fieldKey": "contact.time_offered_2",
+        "dataType": "TEXT",
+        "id": "CFDsV6dq95EYJpMeaHl1"
+      },
+      {
+        "name": "Program Interest",
+        "fieldKey": "contact.program_interest",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "D6mMANruKAM9rvR0JZVL"
+      },
+      {
+        "name": "Old | History",
+        "fieldKey": "contact.memory",
+        "dataType": "TEXT",
+        "id": "DwWKshWMIZp9wSISYkGr"
+      },
+      {
+        "name": "Response Channel",
+        "fieldKey": "contact.response_channel",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "EIAxFnoG54nZvQQxvNcc"
+      },
+      {
+        "name": "Concierge Report",
+        "fieldKey": "contact.concierge_report",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "F3dlPjR5ftDXQ79OGWK5"
+      },
+      {
+        "name": "Response Context",
+        "fieldKey": "contact.response_context",
+        "dataType": "LARGE_TEXT",
+        "id": "Fhdbi5R7aLERU5zyeMfh"
+      },
+      {
+        "name": "Program Type",
+        "fieldKey": "contact.program_type",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "GIxqAP8cNxrpz44girrd"
+      },
+      {
+        "name": "Concierge Reply Interest",
+        "fieldKey": "contact.reply_interest",
+        "dataType": "TEXT",
+        "id": "GYIWu4Rqwc91JfD49oGB"
+      },
+      {
+        "name": "Calendar Interest",
+        "fieldKey": "contact.calendar_interest",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "HAUZvb1YGt6M035JGecY"
+      },
+      {
+        "name": "Health Concerns",
+        "fieldKey": "contact.health_concerns",
+        "dataType": "LARGE_TEXT",
+        "id": "Hlb1yqLP3lY9SzsSIgOu"
+      },
+      {
+        "name": "Service Interest",
+        "fieldKey": "contact.service_interest",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "IVL6Kj0W1ZJtENCBtVHv"
+      },
+      {
+        "name": "Last Known Activity",
+        "fieldKey": "contact.last_known_activity",
+        "dataType": "DATE",
+        "id": "Ij8koA7YSps3c9KOMG90"
+      },
+      {
+        "name": "Response Intro",
+        "fieldKey": "contact.response_intro",
+        "dataType": "LARGE_TEXT",
+        "id": "JVBEdLzMpMwUui1fl0ZW"
+      },
+      {
+        "name": "Old Kids-Name",
+        "fieldKey": "contact.kidsname",
+        "dataType": "TEXT",
+        "id": "JfDxPW5wzdqrTQKuOTmJ"
+      },
+      {
+        "name": "Concierge Reply Context",
+        "fieldKey": "contact.reply_context",
+        "dataType": "LARGE_TEXT",
+        "id": "O5cgquK7TAhRcpUhs5lQ"
+      },
+      {
+        "name": "Participant Info",
+        "fieldKey": "contact.participant_info",
+        "dataType": "RADIO",
+        "id": "O6J27Fkftq5xLUfDM7Iw"
+      },
+      {
+        "name": "Old | Lead Response",
+        "fieldKey": "contact.lead_response",
+        "dataType": "TEXT",
+        "id": "PB4s3r7lPvyEGz2rJVGO"
+      },
+      {
+        "name": "Concierge Time 02",
+        "fieldKey": "contact.concierge_time_02",
+        "dataType": "TEXT",
+        "id": "QmcgGLQkNMGkLBm8luIV"
+      },
+      {
+        "name": "Concierge Prompt",
+        "fieldKey": "contact.concierge_prompt",
+        "dataType": "TEXT",
+        "id": "QqmO7lDyBezGK2sMJnws"
+      },
+      {
+        "name": "Old | Prompt",
+        "fieldKey": "contact.prompt",
+        "dataType": "TEXT",
+        "id": "QxB0ZbNY44AcZSmchbYR"
+      },
+      {
+        "name": "Concierge Conversation",
+        "fieldKey": "contact.concierge_conversation",
+        "dataType": "LARGE_TEXT",
+        "id": "RVXR8zYQDlbHmLzr4mJO"
+      },
+      {
+        "name": "Concierge Goodbye",
+        "fieldKey": "contact.concierge_goodbye",
+        "dataType": "TEXT",
+        "id": "RnMNCnwLOEQDAuxQBqSt"
+      },
+      {
+        "name": "Concierge | System",
+        "fieldKey": "contact.concierge__system",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "SIVCJvb5FVNrEn6qwfw4"
+      },
+      {
+        "name": "Concierge Agent History",
+        "fieldKey": "contact.concierge_agent_history",
+        "dataType": "TEXT",
+        "id": "SWRa0D6n4Zo5VAtcDTkf"
+      },
+      {
+        "name": "Liability Agreement",
+        "fieldKey": "contact.liability_agreement",
+        "dataType": "RADIO",
+        "id": "Timk1Xi0VcfinRf7Q2jc"
+      },
+      {
+        "name": "Last LRN",
+        "fieldKey": "contact.last_lrn",
+        "dataType": "DATE",
+        "id": "UVnfA0dB9Ldvr7GarMfh"
+      },
+      {
+        "name": "Unsubscribe Setting",
+        "fieldKey": "contact.unsubscribe_setting",
+        "dataType": "RADIO",
+        "id": "WD9vSOAuIiGH8YpPPk6Y"
+      },
+      {
+        "name": "Concierge Time 01",
+        "fieldKey": "contact.concierge_time_01",
+        "dataType": "TEXT",
+        "id": "Xwk1AW4iHJzy9uVH9ZOJ"
+      },
+      {
+        "name": "Response",
+        "fieldKey": "contact.response",
+        "dataType": "TEXT",
+        "id": "YI8WEZOrYJIqimo3Gcwy"
+      },
+      {
+        "name": "Call Back Time",
+        "fieldKey": "contact.call_back_time",
+        "dataType": "TEXT",
+        "id": "Z5gwQ9Hc1rvK8OxhnMrJ"
+      },
+      {
+        "name": "Original Signup Date",
+        "fieldKey": "contact.original_signup_date",
+        "dataType": "DATE",
+        "id": "ZAXJXba76plEhi0LD25c"
+      },
+      {
+        "name": "Concierge Callback Time",
+        "fieldKey": "contact.concierge_callback_time",
+        "dataType": "TEXT",
+        "id": "a2662amuZ2KvIFylvoGz"
+      },
+      {
+        "name": "Custom Field 1",
+        "fieldKey": "contact.custom_field_1",
+        "dataType": "TEXT",
+        "id": "ashEBpQk011kPJ4b4n8S"
+      },
+      {
+        "name": "Trial Type",
+        "fieldKey": "contact.trial_type",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "atxqE1CIIKA6ZGRmkxcf"
+      },
+      {
+        "name": "Origin Date",
+        "fieldKey": "contact.origin_date",
+        "dataType": "DATE",
+        "id": "azsaOrptVxj8tDFD7TBZ"
+      },
+      {
+        "name": "Custom Field 2",
+        "fieldKey": "contact.custom_field_2",
+        "dataType": "TEXT",
+        "id": "bJYDaqCLB8c8dHoS3AMg"
+      },
+      {
+        "name": "Old Kids-Birthday",
+        "fieldKey": "contact.kidsbirthday",
+        "dataType": "TEXT",
+        "id": "bLqU0cwRrcg47MHks80X"
+      },
+      {
+        "name": "Concierge Custom 02",
+        "fieldKey": "contact.concierge_custom_02",
+        "dataType": "TEXT",
+        "id": "bYWp7yGYLg2R8KlSST0Q"
+      },
+      {
+        "name": "Athletic Experience",
+        "fieldKey": "contact.athletic_experience",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "cQ74uMdlfMQ5QCUvup3R"
+      },
+      {
+        "name": "Response Status",
+        "fieldKey": "contact.response_status",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "cxn3ZnokahFkfVEP0sRf"
+      },
+      {
+        "name": "How We Can Support",
+        "fieldKey": "contact.how_we_can_support",
+        "dataType": "LARGE_TEXT",
+        "id": "d97Ja2kXwVE8LeLKUJG2"
+      },
+      {
+        "name": "Service Interest",
+        "fieldKey": "contact.service_interest",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "fZ4KThFbLca0bBvYTX5H"
+      },
+      {
+        "name": "Reach Back Out Time",
+        "fieldKey": "contact.reach_back_out_time",
+        "dataType": "TEXT",
+        "id": "fzfk6b4c0klixX5MapNt"
+      },
+      {
+        "name": "Time Offered 1",
+        "fieldKey": "contact.time_offered_1",
+        "dataType": "TEXT",
+        "id": "gBqk5iAjeScMFLBirUjt"
+      },
+      {
+        "name": "Concierge Youth Name",
+        "fieldKey": "contact.concierge_youth_name",
+        "dataType": "TEXT",
+        "id": "iBRpN6aSALRO4GQkS8eb"
+      },
+      {
+        "name": "Old | Agent",
+        "fieldKey": "contact.chatgpt",
+        "dataType": "TEXT",
+        "id": "j2auHPS9hyHGNiQ4PJxf"
+      },
+      {
+        "name": "Next LRN Date",
+        "fieldKey": "contact.next_lrn_date",
+        "dataType": "DATE",
+        "id": "j5lWVESjeHWcVIJNrBJp"
+      },
+      {
+        "name": "Training Goals",
+        "fieldKey": "contact.training_goals",
+        "dataType": "MULTIPLE_OPTIONS",
+        "id": "jWDsSYNYsQhkcQ1GHiQz"
+      },
+      {
+        "name": "Concierge Origin Date",
+        "fieldKey": "contact.concierge_origin_date",
+        "dataType": "TEXT",
+        "id": "lrJqCHI2oWb9KBCXx01V"
+      },
+      {
+        "name": "Concierge | Audience",
+        "fieldKey": "contact.concierge__audience",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "qgT6UQu1YwYnt4Z2B58v"
+      },
+      {
+        "name": "Youth Name",
+        "fieldKey": "contact.youth_name",
+        "dataType": "TEXT",
+        "id": "qmz80GoHLrErS7oTlmoF"
+      },
+      {
+        "name": "Concierge Youth DOB",
+        "fieldKey": "contact.concierge_youth_dob",
+        "dataType": "TEXT",
+        "id": "r0sQP1Otdg1SmZXIpc06"
+      },
+      {
+        "name": "Concierge Agent",
+        "fieldKey": "contact.concierge_agent",
+        "dataType": "TEXT",
+        "id": "rwdwVV81dAxw55NTv0Lk"
+      },
+      {
+        "name": "Waivers",
+        "fieldKey": "contact.waivers",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "s9I4SViosHwCykDdu3Ed"
+      },
+      {
+        "name": "Intro Message",
+        "fieldKey": "contact.intro_message",
+        "dataType": "TEXT",
+        "id": "t7qF6SuouHMp8LR3XLsy"
+      },
+      {
+        "name": "Concierge Reply Status",
+        "fieldKey": "contact.reply_status",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "tzcjwX7kV8uTc8MnffEM"
+      },
+      {
+        "name": "Concierge Custom 01",
+        "fieldKey": "contact.concierge_custom_01",
+        "dataType": "TEXT",
+        "id": "wa9bDV8rIBpaxaahc6zh"
+      },
+      {
+        "name": "Grade",
+        "fieldKey": "contact.grade",
+        "dataType": "TEXT",
+        "id": "yolTpbVVN88C8rE5IGfW"
+      },
+      {
+        "name": "Concierge Reply Type",
+        "fieldKey": "contact.reply_type",
+        "dataType": "SINGLE_OPTIONS",
+        "id": "zU2pyfg9hDJsBIRCkDIM"
+      },
+      {
+        "name": "Participant List",
+        "fieldKey": "contact.participant_list",
+        "dataType": "TEXT",
+        "id": "znpGPhKia4Ja3I5q04uR"
+      }
+    ],
+    "location": [
+      {
+        "name": "ID",
+        "fieldKey": "location.id",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Name",
+        "fieldKey": "location.name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Domain",
+        "fieldKey": "location.domain",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Address",
+        "fieldKey": "location.address",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "City",
+        "fieldKey": "location.city",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "State",
+        "fieldKey": "location.state",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Country",
+        "fieldKey": "location.country",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Postal Code",
+        "fieldKey": "location.postal_code",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Website",
+        "fieldKey": "location.website",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Time Zone",
+        "fieldKey": "location.timezone",
+        "dataType": "TIMEZONE",
+        "id": null
+      },
+      {
+        "name": "First Name",
+        "fieldKey": "location.first_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Last Name",
+        "fieldKey": "location.last_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Email",
+        "fieldKey": "location.email",
+        "dataType": "EMAIL",
+        "id": null
+      },
+      {
+        "name": "Phone",
+        "fieldKey": "location.phone",
+        "dataType": "PHONE",
+        "id": null
+      },
+      {
+        "name": "Business Name",
+        "fieldKey": "location.business_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Address",
+        "fieldKey": "location.business_address",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business City",
+        "fieldKey": "location.business_city",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business State",
+        "fieldKey": "location.business_state",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Country",
+        "fieldKey": "location.business_country",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Postal Code",
+        "fieldKey": "location.business_postal_code",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Website",
+        "fieldKey": "location.business_website",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Business Time Zone",
+        "fieldKey": "location.business_timezone",
+        "dataType": "TIMEZONE",
+        "id": null
+      },
+      {
+        "name": "Access Token",
+        "fieldKey": "location.access_token",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Current Date Time",
+        "fieldKey": "location.current_date_time",
+        "dataType": "TEXT",
+        "id": null
+      }
+    ],
+    "customValue": [
+      {
+        "name": "Counter Booked",
+        "fieldKey": "custom_values.counter_booked",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Counter Leads",
+        "fieldKey": "custom_values.counter_leads",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Review Link Facebook",
+        "fieldKey": "custom_values.review_link_facebook",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Review Link Yelp",
+        "fieldKey": "custom_values.review_link_yelp",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Review Link Google",
+        "fieldKey": "custom_values.review_link_google",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Calendar ID",
+        "fieldKey": "custom_values.calendar_id",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Appointment Notification",
+        "fieldKey": "custom_values.appointment_notification",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Intro Message",
+        "fieldKey": "custom_values.intro_message",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Appointment Status Check",
+        "fieldKey": "custom_values.appointment_status_check",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Owner Name",
+        "fieldKey": "custom_values.owner_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Facebook Group",
+        "fieldKey": "custom_values.facebook_group",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Owner Email",
+        "fieldKey": "custom_values.owner_email",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Welcome Email",
+        "fieldKey": "custom_values.welcome_email",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "VCard",
+        "fieldKey": "custom_values.vcard",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Notice Email",
+        "fieldKey": "custom_values.notice_email",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Instructor Name",
+        "fieldKey": "custom_values.instructor_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Logo",
+        "fieldKey": "custom_values.academy_logo",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Phone",
+        "fieldKey": "custom_values.academy_phone",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Address City State",
+        "fieldKey": "custom_values.academy_address_city_state",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Address Street",
+        "fieldKey": "custom_values.academy_address_street",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Legal",
+        "fieldKey": "custom_values.academy_legal",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Address",
+        "fieldKey": "custom_values.academy_address",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Name",
+        "fieldKey": "custom_values.academy_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Privacy Link",
+        "fieldKey": "custom_values.academy_privacy_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Email",
+        "fieldKey": "custom_values.academy_email",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Privacy Date",
+        "fieldKey": "custom_values.academy_privacy_date",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Website",
+        "fieldKey": "custom_values.academy_website",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy State",
+        "fieldKey": "custom_values.academy_state",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "City",
+        "fieldKey": "custom_values.city",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Owner Photo",
+        "fieldKey": "custom_values.owner_photo",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Terms Link",
+        "fieldKey": "custom_values.academy_terms_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Academy Style",
+        "fieldKey": "custom_values.academy_style",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Lead Value Youth",
+        "fieldKey": "custom_values.lead_value_youth",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Thank You Page",
+        "fieldKey": "custom_values.thank_you_page",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Youth Offer Page",
+        "fieldKey": "custom_values.funnel_youth_offer_page",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Adult Opt-In",
+        "fieldKey": "custom_values.funnel_adult_optin",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Youth Booking",
+        "fieldKey": "custom_values.booking_page_youth",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Adult Offer Page",
+        "fieldKey": "custom_values.funnel_adult_offer_page",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Thank You Page Adult",
+        "fieldKey": "custom_values.thank_you_page_adult",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Offer Name Youth",
+        "fieldKey": "custom_values.offer_name_youth",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Youth Opt-In",
+        "fieldKey": "custom_values.funnel_youth_optin",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Thank You Page Youth",
+        "fieldKey": "custom_values.thank_you_page_youth",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Lead Value Adults",
+        "fieldKey": "custom_values.lead_value_adults",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Trial Start Date",
+        "fieldKey": "custom_values.trial_start_date",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Liability Waiver Link",
+        "fieldKey": "custom_values.liability_waiver_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Lead Capture Page",
+        "fieldKey": "custom_values.lead_capture_page",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Offer Name",
+        "fieldKey": "custom_values.offer_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Funnel Adult Booking",
+        "fieldKey": "custom_values.booking_page_adults",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Offer Name Adults",
+        "fieldKey": "custom_values.offer_name_adults",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event Birthday Name",
+        "fieldKey": "custom_values.event_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Source",
+        "fieldKey": "custom_values.event_pno_source",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Date",
+        "fieldKey": "custom_values.event_pno_date",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Opt-In Link",
+        "fieldKey": "custom_values.event_pno_optin_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Value",
+        "fieldKey": "custom_values.event_pno_value",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Link",
+        "fieldKey": "custom_values.event_pno_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "Event PNO Name",
+        "fieldKey": "custom_values.event_pno_name",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "LRN Offer Value",
+        "fieldKey": "custom_values.lrn_offer_value",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "LRN Reactivation Message",
+        "fieldKey": "custom_values.lrn_reactivation_message",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "LRN Booking Link",
+        "fieldKey": "custom_values.lrn_booking_link",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "LRN Source",
+        "fieldKey": "custom_values.lrn_source",
+        "dataType": "TEXT",
+        "id": null
+      },
+      {
+        "name": "LRN Offer Name",
+        "fieldKey": "custom_values.lrn_offer_name",
+        "dataType": "TEXT",
+        "id": null
+      }
+    ]
+  },
+  "tags": [
+    {
+      "name": "abandoned",
+      "id": "abandoned"
+    },
+    {
+      "name": "action abandon",
+      "id": "action abandon"
+    },
+    {
+      "name": "action book",
+      "id": "action book"
+    },
+    {
+      "name": "action cancel",
+      "id": "action cancel"
+    },
+    {
+      "name": "action deactivate",
+      "id": "action deactivate"
+    },
+    {
+      "name": "action email",
+      "id": "action email"
+    },
+    {
+      "name": "action followup",
+      "id": "action followup"
+    },
+    {
+      "name": "action lost",
+      "id": "action lost"
+    },
+    {
+      "name": "action opt-in",
+      "id": "action opt-in"
+    },
+    {
+      "name": "action payment",
+      "id": "action payment"
+    },
+    {
+      "name": "action reactivate",
+      "id": "action reactivate"
+    },
+    {
+      "name": "action rebook",
+      "id": "action rebook"
+    },
+    {
+      "name": "action stop",
+      "id": "action stop"
+    },
+    {
+      "name": "action subscribe",
+      "id": "action subscribe"
+    },
+    {
+      "name": "action trial",
+      "id": "action trial"
+    },
+    {
+      "name": "action unready",
+      "id": "action unready"
+    },
+    {
+      "name": "action unsubscribe",
+      "id": "action unsubscribe"
+    },
+    {
+      "name": "action veteran",
+      "id": "action veteran"
+    },
+    {
+      "name": "action waiver",
+      "id": "action waiver"
+    },
+    {
+      "name": "action win",
+      "id": "action win"
+    },
+    {
+      "name": "adult",
+      "id": "adult"
+    },
+    {
+      "name": "aggressive",
+      "id": "aggressive"
+    },
+    {
+      "name": "alert",
+      "id": "alert"
+    },
+    {
+      "name": "alumni",
+      "id": "alumni"
+    },
+    {
+      "name": "booked",
+      "id": "booked"
+    },
+    {
+      "name": "booking",
+      "id": "booking"
+    },
+    {
+      "name": "cancelled",
+      "id": "cancelled"
+    },
+    {
+      "name": "check",
+      "id": "check"
+    },
+    {
+      "name": "concierge",
+      "id": "concierge"
+    },
+    {
+      "name": "couldn't find caller name",
+      "id": "couldn't find caller name"
+    },
+    {
+      "name": "day 07",
+      "id": "day 07"
+    },
+    {
+      "name": "day 10",
+      "id": "day 10"
+    },
+    {
+      "name": "dead",
+      "id": "dead"
+    },
+    {
+      "name": "drop-in",
+      "id": "drop-in"
+    },
+    {
+      "name": "fast",
+      "id": "fast"
+    },
+    {
+      "name": "fitness",
+      "id": "fitness"
+    },
+    {
+      "name": "followup",
+      "id": "followup"
+    },
+    {
+      "name": "full",
+      "id": "full"
+    },
+    {
+      "name": "hot",
+      "id": "hot"
+    },
+    {
+      "name": "invalid",
+      "id": "invalid"
+    },
+    {
+      "name": "long",
+      "id": "long"
+    },
+    {
+      "name": "lost",
+      "id": "lost"
+    },
+    {
+      "name": "lrn",
+      "id": "lrn"
+    },
+    {
+      "name": "member",
+      "id": "member"
+    },
+    {
+      "name": "no show",
+      "id": "no show"
+    },
+    {
+      "name": "opted-in",
+      "id": "opted-in"
+    },
+    {
+      "name": "paid",
+      "id": "paid"
+    },
+    {
+      "name": "pno",
+      "id": "pno"
+    },
+    {
+      "name": "reach back",
+      "id": "reach back"
+    },
+    {
+      "name": "reactivate",
+      "id": "reactivate"
+    },
+    {
+      "name": "reception",
+      "id": "reception"
+    },
+    {
+      "name": "remove",
+      "id": "remove"
+    },
+    {
+      "name": "rep bump",
+      "id": "rep bump"
+    },
+    {
+      "name": "rep bump 01",
+      "id": "rep bump 01"
+    },
+    {
+      "name": "rep bump 02",
+      "id": "rep bump 02"
+    },
+    {
+      "name": "rep bump 03",
+      "id": "rep bump 03"
+    },
+    {
+      "name": "rep dnd",
+      "id": "rep dnd"
+    },
+    {
+      "name": "rep send info",
+      "id": "rep send info"
+    },
+    {
+      "name": "rep stop",
+      "id": "rep stop"
+    },
+    {
+      "name": "rep takeover",
+      "id": "rep takeover"
+    },
+    {
+      "name": "reply generating",
+      "id": "reply generating"
+    },
+    {
+      "name": "reply no bump",
+      "id": "reply no bump"
+    },
+    {
+      "name": "reply now",
+      "id": "reply now"
+    },
+    {
+      "name": "reply pause",
+      "id": "reply pause"
+    },
+    {
+      "name": "reply reactivate",
+      "id": "reply reactivate"
+    },
+    {
+      "name": "requesting",
+      "id": "requesting"
+    },
+    {
+      "name": "reset",
+      "id": "reset"
+    },
+    {
+      "name": "responded",
+      "id": "responded"
+    },
+    {
+      "name": "responding",
+      "id": "responding"
+    },
+    {
+      "name": "response",
+      "id": "response"
+    },
+    {
+      "name": "response none",
+      "id": "response none"
+    },
+    {
+      "name": "reviewing",
+      "id": "reviewing"
+    },
+    {
+      "name": "rollover",
+      "id": "rollover"
+    },
+    {
+      "name": "running",
+      "id": "running"
+    },
+    {
+      "name": "service",
+      "id": "service"
+    },
+    {
+      "name": "showed",
+      "id": "showed"
+    },
+    {
+      "name": "social",
+      "id": "social"
+    },
+    {
+      "name": "source ad",
+      "id": "source ad"
+    },
+    {
+      "name": "spam",
+      "id": "spam"
+    },
+    {
+      "name": "staff",
+      "id": "staff"
+    },
+    {
+      "name": "stuck",
+      "id": "stuck"
+    },
+    {
+      "name": "system",
+      "id": "system"
+    },
+    {
+      "name": "trial",
+      "id": "trial"
+    },
+    {
+      "name": "trial unset",
+      "id": "trial unset"
+    },
+    {
+      "name": "underage",
+      "id": "underage"
+    },
+    {
+      "name": "unready",
+      "id": "unready"
+    },
+    {
+      "name": "unsubscribed",
+      "id": "unsubscribed"
+    },
+    {
+      "name": "waiver",
+      "id": "waiver"
+    },
+    {
+      "name": "youth",
+      "id": "youth"
+    }
+  ]
+}

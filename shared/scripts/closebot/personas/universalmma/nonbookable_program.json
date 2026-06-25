@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_nonbookable_program",
+  "opening_message": "can I book the Weapons Class or the Sparring class as my first session?",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1989-12-05) asking specifically to book the Weapons Class, Sparring Class, or Health & Fitness as your first/trial session. These have no online trial booking. EXPECT the bot to acknowledge they exist but NOT book them, and instead offer the regular martial arts trial class. Give your info if asked. When the bot redirects you to the martial arts trial or closes, reply with [END]."
+}

@@ -8,17 +8,60 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 ---
 
+## WHAT THIS REPO IS FOR
+
+This is the operating workspace and full memory for **Ground Standard (GSA) — Bobby Freda's
+martial-arts marketing agency**. Two jobs:
+
+1. **Run the work.** It's where the GS CloseBot SMS bots and the supporting GHL infrastructure
+   get built, tested, and maintained.
+2. **Hold the memory.** Everything Bobby/GS-related lives here, CloseBot above all: every bot
+   build, KB, QA run, session summary, and the lessons learned along the way. Read it and you
+   know the whole history without having been there.
+
+**Who runs it:** JC owns the Ground Standard client. **Mark Cabel** operates this repo day-to-day
+on JC's behalf. JC is rusty on CloseBot, so this file leads with a refresher (next section) — read
+it to get back up to speed fast.
+
+---
+
 ## BEFORE YOU START
 
 Every new session, in this order:
-1. Read `tasks/todo.md` — current state + immediate next action.
-2. Read `clients/ground-standard/context.md` — operational rules, KB methodology, QA standards, persona facts.
-3. Skim memory index (auto-loaded) — check for relevant feedback/project notes.
-4. Only then pick up new work.
+1. Read the **CLOSEBOT REFRESHER** below if you're getting (re)oriented.
+2. Read `tasks/todo.md` — current state + immediate next action.
+3. Read `clients/ground-standard/context.md` — operational rules, KB methodology, QA standards, persona facts.
+4. Skim memory index (auto-loaded) — check for relevant feedback/project notes.
+5. Only then pick up new work.
 
 If behavior seems off mid-session, read `tasks/lessons.md`.
 
 First-time setup: see `SETUP.md` at the repo root.
+
+---
+
+## CLOSEBOT REFRESHER (start here if you're rusty)
+
+GS is, in practice, a CloseBot shop: SMS bots that answer gym leads and book free trial classes
+through GoHighLevel. If you've been away, get back up to speed in this order:
+
+1. `references/closebot_architecture.md` — how we design flows (Tier 2: node types, NEPQ mapping, archetypes).
+2. `references/closebot_agent_node.md` — the current node model. All GS bots are now **Agent Node** bots (instructions + Sections + `@@`-tools / `@@@`-exits).
+3. `references/closebot_walkthrough_bryce.md` — an annotated end-to-end example.
+4. `references/gsa_bot_build_playbook.md` — the GS-specific build playbook. Read before any bot build.
+5. `references/closebot_docs_reference.md` — vendor canon (Tier 3). Skim, then treat as reference.
+
+**Where the fleet stands right now (verify before relying — IDs are point-in-time):**
+- **Vacaville Grappling Academy** is the one bot LIVE on production: `bot_F0VNPTPCIW88YI3J` (v4.6), source `src_GDKORXSW4Q8RQUQ8`. It's the flagship/reference build.
+- **~28 Agent Node gym bots are QA-passed and parked** on the GS Ads sandbox source `src_4R4DUIQTMMX2NFPU`, waiting for per-gym cutover to production.
+- **Emma is the shared persona across every GS bot.** A persona edit changes every bot at once — gym-specific behavior goes in the bot's instructions/Sections, never on the persona.
+
+**The few things that bite if you forget them** (full versions in the CLOSEBOT section below):
+- No pricing in any bot-facing content. Redirect to the free trial.
+- Trial class is in every GS flow; every GS bot blocks under-18 self-booking by default.
+- Max 5 `ScenarioCustom` nodes per bot; dedupe `__zIndex` before `POST /bot { importKdl }`.
+- KBs attach to GHL sources, not bots. Pass `mimicSourceId` on a test session for bookings to write.
+- The Vacaville production source is NEVER a test `mimicSourceId`.
 
 ---
 
@@ -53,13 +96,24 @@ No `npm run` scripts — `package.json` is a dep holder only (Playwright). There
 
 ---
 
-## WHO IS GLENN
+## WHO RUNS THIS WORKSPACE
 
-Glenn is the operator of this workspace. He runs the Ground Standard (GSA) account end-to-end on behalf of the agency.
+**JC owns Ground Standard. Mark Cabel operates this repo on JC's behalf.** (This replaces Glenn,
+who previously ran GS.)
 
-- Communicates with Bobby Freda (GSA founder) directly for client-side decisions.
-- Uses JC's credentials (shared) when interacting with platform UIs (GHL, CloseBot, Retell, n8n). Logs on those platforms appear under "JC".
-- Scope: AI chatbot automation for the GSA gym portfolio. Specifically CloseBot SMS bots and supporting GHL infrastructure. Voice agent work via Retell is in scope where applicable. No Meta ads work.
+- **JC** holds the client relationship and makes the calls. Bobby Freda (GSA founder) knows this
+  work as JC's.
+- **Mark** does the day-to-day: builds, tests, and maintains the bots and GHL infrastructure here.
+- Scope: AI chatbot automation for the GSA gym portfolio — CloseBot SMS bots and supporting GHL
+  infrastructure. Retell voice agent work is in scope where applicable. No Meta ads work.
+
+### Persona rule (HARD)
+
+Ground Standard is a NewWine client. **Everything client-facing fronts as JC** — drafts, messages,
+EODs, signatures, platform logs (shared JC credentials, so UI logs already appear under "JC").
+**Never name Mark, Glenn, or any associate to Bobby.** All the work is JC's as far as the client
+is concerned. (Mark fronts under a different identity on other accounts — keep those separate; on
+Ground Standard he is invisible and the face is JC.)
 
 Communication rule: keep explanations simple, plain English, avoid unnecessary jargon.
 
@@ -89,7 +143,7 @@ curl -s -H "Authorization: Bearer $(jq -r .accessToken ~/.claude/.credentials.js
 
 ## CLIENT
 
-**Ground Standard Agency (GSA)** — owned by Bobby Freda. Full-service marketing agency for martial arts gyms. ~48+ gym clients in the GSA roster (see `clients/ground-standard/gym-portfolio.md`). Glenn's primary work: CloseBot SMS bots driving trial-class bookings via GHL. The flagship/reference bot is **Vacaville Grappling Academy**.
+**Ground Standard Agency (GSA)** — owned by Bobby Freda. Full-service marketing agency for martial arts gyms. ~48+ gym clients in the GSA roster (see `clients/ground-standard/gym-portfolio.md`). The primary work: CloseBot SMS bots driving trial-class bookings via GHL. The flagship/reference bot is **Vacaville Grappling Academy**.
 
 Full operational context: `clients/ground-standard/context.md`. Read this first before making any client-facing changes.
 

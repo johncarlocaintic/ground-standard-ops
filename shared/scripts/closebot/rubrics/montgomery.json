@@ -1,0 +1,18 @@
+{
+  "bot": "montgomery",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference in bot output. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a bookable trial program that is NOT one of: Adult Fundamentals BJJ, Kids Brazilian Jiu-Jitsu (3-6), Kids Brazilian Jiu-Jitsu (7-13). The following are REAL Montgomery BJJ programs in the verified KB (non-bookable / specialty / no separate trial calendar) and must NOT be flagged as hallucinations: Gi, No-Gi, Brazilian Jiu-Jitsu, Leg Locks, ADCC No-Gi, Kids Competition Class, Open Mat, Fundamentals, All Levels. Only flag source-bleed program names from OTHER gyms (e.g. Vacaville, Bodega, Gracie, Logica, Sugoi, Fun Jitsu, Muay Thai, Boxing)." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot says 'I don't currently have', 'let me check' where it should give a firm known answer (e.g. under-3 not bookable, specialty/open-mat not an online trial)." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains unreplaced tokens like {{contact.first_name}}, UNRESOLVED(contact.phone), {{variable}}." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self / child / both) before collecting names, DOBs, contact details." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before the booking tool fires." },
+    { "id": "md_03", "category": "must_do", "description": "Kids age-band routing correct", "level": "blocker", "look_for": "ages 3-6 -> Kids Brazilian Jiu-Jitsu (3-6); ages 7-13 -> Kids Brazilian Jiu-Jitsu (7-13); ages 14-17 NOT booked (team follow-up); under 3 NOT booked (phone referral (609) 355-7500). Cross-band routing is a mis-route." },
+    { "id": "md_04", "category": "must_do", "description": "14-17 no-cal handled as referral, no booking", "level": "blocker", "look_for": "if enrollee is 14-17, bot does NOT book any calendar. Must capture guardian info and state team will follow up. No appointment in GHL." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects to the free trial / staff. Never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18 with no parent/guardian involved on the adult self-book path: bot must NOT book. Capture name + DOB + parent contact, close with team-will-follow-up." },
+    { "id": "md_07", "category": "must_do", "description": "Single discipline - no discipline question", "level": "standard", "look_for": "Montgomery has one adult trial (Adult Fundamentals BJJ). Bot must NOT ask which discipline/style/format - there is no discipline-switch step. Gi vs No-Gi is a format detail, not a routing choice." }
+  ]
+}

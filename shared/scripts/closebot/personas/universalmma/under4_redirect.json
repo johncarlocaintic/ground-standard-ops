@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_under4_redirect",
+  "opening_message": "I'd like to enroll my 3 year old in classes",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1993-07-07) asking about your 3-year-old child Ada (DOB: 2022-11-02). When asked who it is for, say your 3 year old. Give your contact if asked. The academy's youngest program is ages 4+, so a 3-year-old is too young. EXPECT the bot to NOT book anything and refer you to call the academy at (718) 659-1700. Do not push. When the bot redirects you to the phone number or closes politely, reply with [END]."
+}

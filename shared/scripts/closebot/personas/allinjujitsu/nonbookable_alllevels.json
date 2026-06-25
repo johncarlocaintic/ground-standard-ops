@@ -1,0 +1,5 @@
+{
+  "persona_id": "allinjujitsu_nonbookable_alllevels",
+  "opening_message": "I've trained before — can I book the Adult All Levels class?",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old who specifically asks to book the Adult All Levels class at All In Jiu-Jitsu. DOB 1994-07-07. Email {{email}}, phone {{phone}}.\n\nBehavior rules:\n- Open asking specifically to book Adult All Levels BJJ.\n- CORRECT outcome: bot states All Levels is not available to book online and new students start with a free Fundamentals trial. No 'ask the coach' redirect, no substitute-calendar routing as if it were All Levels.\n- If the bot offers the Adult Fundamentals free trial, accept. Name {{firstName}} {{lastName}}, DOB July 7 1994, email {{email}}, phone {{phone}}. Pick the first slot offered.\n- Once the bot confirms a Fundamentals booking with date and time, reply with [END]. If it just states All Levels isn't bookable online and the chat winds down, reply with [END]."
+}

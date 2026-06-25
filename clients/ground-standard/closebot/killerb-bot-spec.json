@@ -1,0 +1,220 @@
+{
+  "gym": {
+    "name": "Killer B Combat Sports Academy",
+    "website": "https://www.killerbcombatsports.academy/",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Killer B Combat Sports Academy, a combat sports gym in Oakhurst, NJ offering MMA, Kickboxing, Boxing, No-Gi Grappling, and Kids Martial Arts. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the gym.",
+    "businessInformation": "The company name is Killer B Combat Sports Academy.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "Free trial class for new students, no commitment",
+      "Never identify as AI",
+      "Multiple adult disciplines: Adult MMA (default), Adult Kickboxing, Adult Boxing, Adult Nogi Grappling. Ask which discipline the adult wants. Default to Adult MMA if no preference stated.",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 5-12 book Kids MMA & Fitness. Guardian required.",
+      "Ages 13-17 have no online class (kids end at 12, adults are 18+) - capture guardian, do not book, tell them the team will follow up.",
+      "Under age 5 - youngest program is Kids MMA & Fitness (ages 5+); do not book, refer to the gym at (732) 996-8146.",
+      "Sparring, Yoga, Personal Training, BLAB Fitness, and Women's Self Defense Seminar are not booked online as a trial - acknowledge they exist, do not book them; new students start with a free trial in an open discipline."
+    ]
+  },
+  "ghl": {
+    "locationId": "uIW84chF6pVm03ifxxlB",
+    "sourceId": "src_YJOFG6926ILNHH1R",
+    "pit": "pit-4d5cdc78-f3a6-420f-93a9-ebd07e298e78"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_mma",
+        "calendarName": "Adult MMA",
+        "calendarId": "3BmU4UVAN0xxbCF5AYfh",
+        "program": "mma",
+        "ageMin": 18,
+        "default": true
+      },
+      {
+        "label": "adult_kickboxing",
+        "calendarName": "Adult Kickboxing",
+        "calendarId": "rRVZexebtr5kJ8Npr6gA",
+        "program": "kickboxing",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_boxing",
+        "calendarName": "Adult Boxing",
+        "calendarId": "rRujrlhmyqnimqt3XwI1",
+        "program": "boxing",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_nogi_grappling",
+        "calendarName": "Adult Nogi Grappling",
+        "calendarId": "4MjOucx9Fp6wOjyaDKfk",
+        "program": "nogi-grappling",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_mma_fitness",
+        "calendarName": "Kids MMA & Fitness",
+        "calendarId": "p3Kq0qmqfAjIIYkxRYqm",
+        "ageMin": 5,
+        "ageMax": 12
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Adult Yoga",
+        "calendarId": "CWjbyZvjPfMGHPT9nMmF",
+        "note": "not a martial arts trial"
+      },
+      {
+        "calendarName": "KB Personal Training Consultation",
+        "calendarId": "KPzlLNqM7E0MoqPrrlsl",
+        "note": "personal training consult - not a trial"
+      },
+      {
+        "calendarName": "Follow Up",
+        "calendarId": "N6tdiUmqoBQKluHgCppY",
+        "note": "internal follow-up calendar"
+      },
+      {
+        "calendarName": "JC Caintic's Personal Calendar",
+        "calendarId": "NqorYgFTASSqzlc7qBQ8",
+        "note": "personal calendar - not bookable"
+      },
+      {
+        "calendarName": "test calendar 1",
+        "calendarId": "SXhChbvtqSrYvD7hBFzd",
+        "note": "test calendar - not bookable"
+      },
+      {
+        "calendarName": "Women's Self Defense Seminar: Sunday 10/20",
+        "calendarId": "ZTQjZeeTnHwGzhiUBZlj",
+        "note": "one-time past event - not bookable"
+      },
+      {
+        "calendarName": "Taylor Manning-Drake's Personal Calendar",
+        "calendarId": "t6UHWENoHSjHBaC7XqB0",
+        "note": "personal calendar - not bookable"
+      },
+      {
+        "calendarName": "Adult BLAB Fitness",
+        "calendarId": "yMRdsSbJKZ0AOQFLUToz",
+        "note": "fitness class - not a martial arts trial"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Sparring (not a beginner trial class)",
+    "Adult Yoga (fitness/wellness, no martial arts trial)",
+    "Adult BLAB Fitness (fitness class, no martial arts trial)",
+    "Personal Training Consultation (not a group trial)",
+    "Women's Self Defense Seminar (one-time event)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked about Sparring, state it is for students already in training and new students start with a free trial in their preferred discipline. For Yoga/BLAB Fitness, state those are fitness programs and not booked online as a martial arts trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 4,
+    "kidsCalendarCount": 1,
+    "requiresDisciplineSwitch": true,
+    "disciplineSwitch": {
+      "path": "adult",
+      "default": "Adult MMA",
+      "alternates": [
+        "Adult Kickboxing",
+        "Adult Boxing",
+        "Adult Nogi Grappling"
+      ],
+      "trigger": "ask the adult which discipline interests them; route on their stated choice, default to Adult MMA only if no preference"
+    },
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 5-12 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB 13-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 12 (Kids MMA & Fitness), adults 18+, no calendar for 13-17. cb_youth_nocal_gate_inject.js inserts a DOB-age 13-17 gate before the kids-age AISwitch -> no-booking team-follow-up Statement -> EOC.",
+      "band": "13-17"
+    },
+    "ageRouting": {
+      "under-5": "no calendar - no booking, refer to gym (732) 996-8146",
+      "5-12": "Kids MMA & Fitness - guardian required",
+      "13-17": "no calendar - minor, guardian capture, team follow-up, no booking (youth no-cal gate)",
+      "18+": "4-way adult discipline switch (MMA default)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/killerb-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.1.0 (file_XPQ1Y8AMAB862NIY) updated: phone and website were missing - recovered from GHL: (732) 996-8146 and killerbcombatsports.academy. Trial calendars identified from live GHL: Adult MMA (default), Kickboxing, Boxing, Nogi Grappling, Kids MMA & Fitness (5-12). 8 non-trial calendars excluded. Doc: clients/ground-standard/closebot/killerb-kb-verification-2026-05-20.md",
+    "knownGaps": [
+      "Phone and website were missing in legacy KB - filled from GHL: (732) 996-8146, killerbcombatsports.academy.",
+      "13-17 has no trial calendar - youth no-cal gate, team follow-up.",
+      "JC Caintic personal calendar found in Killer B GHL location - not bookable, excluded.",
+      "Kids age band (5-12) from KB - confirm with Bobby.",
+      "Adult MMA as default discipline: confirm with Bobby."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm Adult MMA is the default intro discipline; (b) confirm 3 explicit adult disciplines (Kickboxing, Boxing, Nogi Grappling); (c) confirm Kids MMA & Fitness is ages 5-12; (d) confirm 13-17 minor/team-follow-up (no online booking); (e) confirm under-5 phone referral (732) 996-8146; (f) Sparring/Yoga/BLAB/PT excluded as non-trial; (g) JC Caintic personal calendar in GHL needs review/cleanup"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_FMMFAFOFG7IG89XI",
+      "botName": "Killer B Combat Sports Academy - Launch v1.1 [teen age-18+ fix] (2026-05-20)",
+      "version": "v1.1",
+      "architecture": "agent-node (scaffold-and-fill). 4 adult disciplines (MMA default, Kickboxing, Boxing, Nogi) + Kids MMA & Fitness 5-12 + 13-17 no-cal gate + youth no-cal gate enabled. Fix: n10_intro Push Toward Booking Body explicit (age 18+) for adult disciplines + instruction not to state age min when under-18 mentioned.",
+      "verdict": "QA-PASSED 2026-05-21 (full re-sweep) — 10/10 PASS + 3/3 non-det PASS. Booking persona GHL-verified: adult_mma_default 1 appt + adult/booked tags, adult_kickboxing PASS, kid_5_12 1 appt + youth/booked, adult_and_kid 1 appt + adult/youth/booked, teen_13_17_nocal 0 appts + teen_program_inquiry/youth tags (correct no-cal gate).",
+      "qaDate": "2026-05-21"
+    },
+    {
+      "date": "2026-05-20",
+      "botId": "bot_AXZH003J1SL05374",
+      "botName": "Killer B Combat Sports Academy - Launch v1.0 [initial Agent Node build] (2026-05-20)",
+      "version": "v1.0",
+      "verdict": "QA-NOT-PASSED 2026-05-19 — teen 13-17 hallucination (n10_intro Push Toward Booking missing age-18+ specification); superseded by v1.1",
+      "qaDate": "2026-05-19"
+    }
+  ]
+}

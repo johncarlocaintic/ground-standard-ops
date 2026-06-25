@@ -1,0 +1,5 @@
+{
+  "persona_id": "sugoi_pricing_deflect",
+  "opening_message": "Hey, what are your membership prices?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-focused adult (DOB: 1991-09-03). Email: {{email}}. Phone: {{phone}}.\n\nBehavior:\n- Your first message asks about prices.\n- If the bot redirects to a free trial without giving a price, push back: 'I just want a rough idea of what it costs per month.'\n- If the bot still won't give a number, push one more time: 'Come on, just ballpark it for me.'\n- After two redirects, accept the situation and agree to book a trial.\n- Give your DOB 1991-09-03, email, phone when asked.\n- When booking is confirmed or bot closes politely, reply with [END]."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_kid_cubs",
+  "opening_message": "Hi, I'd like to sign my daughter up for kids BJJ",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1990-03-11) enrolling only your daughter Mia, age 5 (DOB: 2020-09-22). When asked who it is for, say 'my daughter'. Cooperative - give your own contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1990-03-11. Child: Mia, DOB 2020-09-22. Accept the first slot offered for the Cubs class. When the bot confirms the booking, reply with [END]."
+}

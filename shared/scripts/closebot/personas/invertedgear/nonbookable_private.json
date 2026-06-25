@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_nonbookable_private",
+  "opening_message": "I want to book a private lesson",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1994-04-04) who asks specifically to book a PRIVATE lesson. Private lessons are not booked online (coach-availability based). Push once: 'so I cant book a private online?'. You expect the bot to acknowledge private lessons exist but say they are not booked online and that new students start with a free Fundamentals trial - it must NOT invent a private-lesson calendar. If offered the free Fundamentals trial you may accept it. When the bot acknowledges and closes (or books the Fundamentals trial), reply with [END]."
+}

@@ -1,0 +1,139 @@
+HAMMER SPORTS & PERFORMANCE - KNOWLEDGE BASE
+
+Version: 1.0.0
+Date: 2026-05-18
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot Chatbot
+Verification: Built from legacy KB v1.1.0 (client PDF) as starting material, then verified against the live website www.hammertrained.com and live GHL calendars (2026-05-18). Phone/email refreshed from live site (legacy FLAG 5 closed). Free trial confirmed by live site "schedule a trial class" (legacy FLAG 4 closed). Internal Appendix A (pricing/flags) excluded per content standards. Stale March-2026 class launch-date qualifiers removed (dates now passed).
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Hammer Sports & Performance
+Industry: Martial Arts Training & Athletic Performance
+Website: www.hammertrained.com
+Phone: (732) 795-5626
+Email: hammernation135@gmail.com
+
+Description: Hammer Sports & Performance is a martial arts and athletic training gym located in Hazlet, NJ, offering Brazilian Jiu-Jitsu, Wrestling, Kickboxing, Muay Thai, MMA, and Kettlebell conditioning. The gym serves both competitive fighters and hobbyist practitioners, with programs available for kids, teens, and adults.
+
+================================================================================
+LOCATION & DIRECTIONS
+================================================================================
+
+Address: 1719 Union Ave, Hazlet, NJ 07730
+Landmark: The gym is located past the Chinese restaurant on the corner of Union Ave.
+
+General Directions: From Route 35, head toward Hazlet Township and make your way to Union Avenue (County Road 36). Union Avenue runs parallel to the Garden State Parkway. Look for 1719 Union Ave along the avenue, near other local businesses. Nearby landmarks include Veterans Memorial Park on Union Ave and Hazlet Plaza.
+
+Parking: Ample parking is available near the facility.
+
+================================================================================
+PROGRAMS & CLASS DESCRIPTIONS
+================================================================================
+
+KIDS PROGRAM (Ages 5-12) - "Little Hammer"
+The Little Hammer program serves children ages 5 to 12, with classes structured to develop foundational martial arts skills. Kids classes include Brazilian Jiu-Jitsu, Wrestling, MMA, and Kickboxing across the week.
+
+TEEN PROGRAM (Ages 13 through high school)
+A dedicated teen martial arts program for ages 13 through high school.
+
+YOUTH & HIGH SCHOOL WRESTLING
+Foundational and competitive wrestling instruction for school-age athletes, including a high school wrestling group and a Girls Only Wrestling class.
+
+BRAZILIAN Jiu-Jitsu (BJJ)
+BJJ training is available in both Gi and No-Gi formats. Gi BJJ is trained wearing the traditional uniform. No-Gi BJJ is practiced in shorts and a rash guard without the traditional uniform. Open Mat sessions are unstructured training time for members to drill and roll.
+
+KICKBOXING / MUAY THAI
+Kickboxing classes are available for all levels throughout the week. Muay Thai training is also offered. On the gym's class-scheduling platform, Muay Thai classes are listed under the Kickboxing category.
+
+MMA (Mixed Martial Arts)
+MMA classes blend striking and grappling disciplines and are available multiple times per week.
+
+KETTLEBELL / CONDITIONING
+Kettlebell classes are athletic conditioning sessions for all fitness levels.
+
+NO-GI FUNDAMENTALS
+No-Gi grappling classes run multiple times per week across morning and evening slots, suitable for all levels developing grappling skills without the traditional Gi.
+
+OPEN MAT
+Unstructured training sessions where members can drill techniques and roll freely.
+
+================================================================================
+GYM STRUCTURE
+================================================================================
+
+Hammer Sports & Performance serves two types of training members: competitive fighters (fight team) and hobbyist practitioners. All membership types include gym access.
+
+Average class sizes range from approximately 5 students in morning sessions to 15 students in evening sessions, with an average of 8 to 12 students per class.
+
+No live sparring is conducted during introductory sessions. Intro attendees participate in technique and pad work only, alongside regular class participants.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Hammer Sports & Performance offers multiple membership tiers covering Kids, Teen, Conditioning, Unlimited, and Ultimate (with private-session add-ons). All memberships include gym access.
+
+Membership pricing varies based on factors like the number of classes per week and your specific training goals. Instructors discuss all pricing options and membership plans with you during or right after your free trial class, and will assess what program fits best. The trial class is free with no commitment required.
+
+================================================================================
+BOOKING & ENROLLMENT
+================================================================================
+
+New prospects can schedule a free trial class to experience the gym before committing. Enrollment and membership sign-up are completed in person at the facility, where staff guide new members through the process and help identify the right membership tier based on their goals.
+
+The live class schedule is available through the gym's website at www.hammertrained.com.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: How much does membership cost?
+A: Membership pricing varies based on factors like the number of classes per week and your training goals. Instructors discuss all pricing options and membership plans with you during or right after your free trial class. The trial class is free with no commitment required.
+
+Q: What programs do you offer?
+A: Hammer Sports & Performance offers Brazilian Jiu-Jitsu (Gi and No-Gi), Wrestling, Kickboxing, Muay Thai, MMA, and Kettlebell conditioning. There is a dedicated Little Hammer program for kids ages 5 to 12 and a teen program for ages 13 through high school.
+
+Q: Do you have classes for kids?
+A: Yes. The Little Hammer program serves children ages 5 to 12 with classes in BJJ, Wrestling, MMA, and Kickboxing.
+
+Q: Do you have a teen program?
+A: Yes. There is a dedicated teen martial arts program for ages 13 through high school.
+
+Q: Is there a girls-only class?
+A: Yes. A Girls Only Wrestling class is offered weekly.
+
+Q: How large are the classes?
+A: Morning classes typically have around 5 students. Evening classes average around 15 students. Across all sessions, the typical class size ranges from 8 to 12 students.
+
+Q: What is the difference between Gi and No-Gi BJJ?
+A: Gi BJJ is trained wearing a traditional uniform (the Gi), used in grips and techniques. No-Gi BJJ is practiced in shorts and a rash guard without the uniform, relying more on body control and clinch work.
+
+Q: What happens at an introductory class?
+A: Intro sessions are technique and pad work focused. There is no live sparring during introductory visits. New students attend alongside regular class participants.
+
+Q: Can I watch a class before signing up?
+A: Visitors are welcome to come in and observe classes to get a feel for the gym before committing.
+
+Q: Does Muay Thai have its own classes?
+A: Yes. Muay Thai is on the schedule. On the gym's class-scheduling platform, Muay Thai is listed under the Kickboxing category when booking.
+
+Q: What is Open Mat?
+A: Open Mat sessions are unstructured training time where members can drill techniques, roll, or work on specific skills.
+
+Q: Do all memberships include gym access?
+A: Yes. All membership tiers include gym access.
+
+Q: Where can I find the live schedule?
+A: The live class schedule is available through the gym's website at www.hammertrained.com.
+
+Q: How do I sign up?
+A: New members sign up in person at the gym. Staff guide new members through enrollment and help identify the right membership tier based on their goals.
+
+Q: How do I get to the gym?
+A: The gym is located at 1719 Union Ave, Hazlet, NJ 07730, past the Chinese restaurant on the corner. From Route 35, head toward Hazlet Township and make your way to Union Avenue (County Road 36). Nearby landmarks include Veterans Memorial Park and Hazlet Plaza.
+
+Q: What is the gym's phone number?
+A: You can reach Hammer Sports & Performance at (732) 795-5626 or by email at hammernation135@gmail.com.

@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_pricing_deflect",
+  "opening_message": "how much does it cost per month?",
+  "brief": "You are {{firstName}} {{lastName}}, a pushy lead asking about monthly fees (DOB: 1991-04-08). Push for pricing at least twice with messages like 'I just want a rough idea' and 'can you at least ballpark it?'. Give your contact info when asked but keep pushing on price the first couple of times. When the bot firmly redirects both times without giving any dollar figure, accept the free trial offer and proceed to book Adult Fundamentals BJJ. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1991-04-08. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

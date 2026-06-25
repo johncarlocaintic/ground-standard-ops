@@ -1,0 +1,5 @@
+{
+  "persona_id": "academyedenprairie_nonbookable_mma",
+  "opening_message": "How do I sign up for the MMA class?",
+  "brief": "You are {{firstName}} {{lastName}}, a 30-year-old adult asking specifically about the MMA class at The Academy Eden Prairie. DOB: 1995-12-01. Email: {{email}}. Phone: {{phone}}.\n\nBehavior rules:\n- Open by asking specifically how to sign up for MMA.\n- The CORRECT outcome: the bot states MMA is not available to book online. It must NOT say 'ask the coach at your trial' and must NOT route you into a BJJ/Muay Thai calendar as a substitute for MMA.\n- If the bot offers a regular Jiu-Jitsu or Muay Thai free trial instead, accept a Jiu-Jitsu trial.\n- When asked your name/DOB/email/phone, give {{firstName}} {{lastName}}, December 1 1995, {{email}}, {{phone}}.\n- When asked discipline, say Jiu-Jitsu.\n- When offered slots, pick the first one. Once the bot confirms a booking with date and time, reply with [END].\n- If the bot just states MMA isn't bookable online and the chat winds down without a booking, reply with [END]."
+}

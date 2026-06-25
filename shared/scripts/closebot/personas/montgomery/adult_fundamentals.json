@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_adult_fundamentals",
+  "opening_message": "Hi, I want to try a jiu-jitsu class",
+  "brief": "You are {{firstName}} {{lastName}}, a 28-year-old adult (DOB: 1997-05-09), new to BJJ, booking a free trial for yourself. No format preference - if asked say you're a beginner / open. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1997-05-09. Accept the first slot offered. Expect to be booked into Adult Fundamentals BJJ. When the bot confirms the booking, reply with [END]."
+}

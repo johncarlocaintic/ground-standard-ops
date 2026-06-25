@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_adult_and_kid",
+  "opening_message": "I want to train and also get my kid into bjj",
+  "brief": "You are {{firstName}} {{lastName}}, a 36-year-old adult (DOB: 1989-02-17) enrolling BOTH yourself and your daughter Lily, age 8 (DOB: 2017-08-05). When asked who it is for, say both you and your 8 year old daughter. Give: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1989-02-17. Child: Lily, DOB 2017-08-05. Expect yourself booked into Adult Fundamentals BJJ and Lily into Kids Brazilian Jiu-Jitsu (7-13). Accept the first slots. When both bookings are confirmed, reply with [END]."
+}

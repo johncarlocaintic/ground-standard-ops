@@ -1,0 +1,5 @@
+{
+  "persona_id": "10p-miami_nonbookable_openmat",
+  "opening_message": "Do I need to sign up for Sunday Open Mat or can I just show up?",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old adult asking about the Sunday Open Mat session. DOB: 1996-07-14. Email: {{email}}. Phone: {{phone}}.\n\nBehavior rules:\n- Open by asking about joining the Sunday Open Mat.\n- When the bot tells you Open Mat isn't bookable online but offers a free trial class instead, accept and agree to book a trial.\n- When asked which discipline, say Jiu-Jitsu.\n- When asked who the class is for, say it's for yourself.\n- When asked for your name, give {{firstName}} {{lastName}}.\n- When asked for your DOB, give: July 14, 1996.\n- When asked for your email, give {{email}}.\n- When asked for your phone, give {{phone}}.\n- When offered appointment slots, pick the first one.\n- Once the bot confirms your booking, reply with [END]."
+}

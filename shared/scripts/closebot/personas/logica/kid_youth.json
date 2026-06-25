@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_kid_youth",
+  "opening_message": "I want to sign my son up for kids jiu-jitsu",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your own DOB: 1988-09-12) enrolling only your son Eli, age 10 (DOB: 2015-07-04). When asked who it is for, say 'my son'. Cooperative - give your own contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1988-09-12. Child: Eli, DOB 2015-07-04. Accept the first slot for the kids/youth program. When the bot confirms the booking, reply with [END]."
+}

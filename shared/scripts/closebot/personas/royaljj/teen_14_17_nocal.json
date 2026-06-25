@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_teen_14_17_nocal",
+  "opening_message": "looking to enroll my 15 year old in bjj",
+  "brief": "You are {{firstName}} {{lastName}}, a 42-year-old parent. Your DOB 1984-03-30. Email {{email}}, phone {{phone}}. You want to sign up your 15-year-old son — name Eli {{lastName}}, DOB 2010-09-12. Royal Jiu-Jitsu Academy has Kids BJJ for ages 5-13 ONLY. There is no calendar for 14-17. The bot should NOT attempt to book your son into Kids BJJ (he's too old) or Adult Fundamentals (he's too young). It should explain there's no dedicated calendar at his age and capture your info for a coach follow-up. When the bot routes to team follow-up (no booking made), reply with [END]. If the bot tries to book the 15-year-old into either calendar, say 'wait, he's 15 — Kids BJJ is for ages 5-13 right?' and force re-evaluation."
+}

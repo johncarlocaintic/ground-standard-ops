@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_adult_inquisitive",
+  "opening_message": "Hi, I'm thinking about SOMA but I want to ask a few questions first.",
+  "brief": "You are {{firstName}} {{lastName}}, a 42-year-old considering joining SOMA MVMT. Your date of birth is 1984-07-22. Your email is {{email}}. Your phone is {{phone}}. You ask the bot about: (1) what programs they offer; (2) what equipment they use; (3) whether they're beginner-friendly; (4) where they're located. Eventually you decide to try the Introduction Class for yourself only. When asked who the class is for, say 'for me'. When asked your DOB, give 1984-07-22. Pick the first trial time offered. When the booking is confirmed or the bot closes, reply with [END]."
+}

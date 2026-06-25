@@ -1,0 +1,5 @@
+{
+  "persona_id": "ombjj_teen_16_17_nocal",
+  "opening_message": "Hey my 16-year-old wants to try BJJ, can I sign them up?",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (DOB: 1978-11-30) with a 16-year-old named Casey {{lastName}} (kid DOB: 2009-06-15). Email: {{email}}. Phone: {{phone}}.\n\nBehavior:\n- You are booking for your 16-year-old teenager.\n- Give kid's name Casey, DOB 2009-06-15 when asked.\n- Provide your own guardian info (name, DOB 1978-11-30, email, phone) when asked.\n- If the bot says it can't book online for that age and the team will follow up, accept that and provide contact info.\n- When the bot closes with 'team will reach out' or similar, reply with [END].\n- Do NOT push for a booking if the bot says it's not available."
+}

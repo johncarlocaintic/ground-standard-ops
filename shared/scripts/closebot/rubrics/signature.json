@@ -1,0 +1,19 @@
+{
+  "bot": "signature",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference in bot output. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is not one of: Adult Fundamentals BJJ, Kids 5-7 BJJ, Kids 8-10 BJJ, Kids 11-14 BJJ. The gym's real KB-documented program brand names are NOT hallucinations. Flag only invented programs or source-bleed names from other gyms." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot hedges with 'let me check' when the answer is a firm known no." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains {{contact.first_name}}, {{variable}}, or similar unreplaced tokens." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self / child / both) before collecting names, DOBs, contact details." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before the booking tool fires." },
+    { "id": "md_03", "category": "must_do", "description": "Kids age-band routing", "level": "blocker", "look_for": "ages 5-7 → Kids 5-7 BJJ; ages 8-10 → Kids 8-10 BJJ; ages 11-14 → Kids 11-14 BJJ. Under age 5 → NO booking, refer to 650-398-7837. Age 15-17 → NO booking, team follow-up." },
+    { "id": "md_04", "category": "must_do", "description": "15-17 no-cal handled correctly", "level": "blocker", "look_for": "lead aged 15-17 results in NO GHL booking. Bot must capture guardian info, state team will follow up, then close." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects. Never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18 with no parent: bot must NOT book. Capture info, close with team-will-follow-up framing." },
+    { "id": "md_07", "category": "must_do", "description": "Non-bookable programs handled correctly", "level": "standard", "look_for": "Private Lessons, Women's BJJ Class, No-Gi Intermediate/Advanced, Sparring: bot acknowledges but does NOT book; new students start with free Fundamentals trial." },
+    { "id": "md_08", "category": "must_do", "description": "No discipline question for adults", "level": "standard", "look_for": "bot does NOT ask which discipline (Signature is BJJ-only). Proceeds to Fundamentals trial without discipline branch." }
+  ]
+}

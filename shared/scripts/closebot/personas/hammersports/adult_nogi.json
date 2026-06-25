@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_adult_nogi",
+  "opening_message": "do you guys have no-gi?",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old adult (DOB: 1994-03-22) who explicitly wants No-Gi Brazilian Jiu-Jitsu. Say 'no-gi' clearly in your opening and again if asked which discipline. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-03-22. Accept the first slot offered. Expect booking into Adult No-Gi Brazilian Jiu-Jitsu. When the bot confirms, reply with [END]."
+}

@@ -54,7 +54,26 @@ function extractEmailFingerprint(email) {
   return m ? m[1].toLowerCase() : null;
 }
 
-async function findContact(baseUrl, token, locationId, identity, log, runWindow) {
+// Resolve youth custom field IDs from the GHL location — IDs differ per account.
+// Falls back to empty strings (override will simply never fire) if lookup fails.
+async function resolveYouthFieldIds(baseUrl, token, locationId, log) {
+  const r = await ghlGet(baseUrl, token, `/locations/${locationId}/customFields`);
+  if (!r.ok) {
+    log(`custom field lookup failed (${r.status}) — youth field IDs unresolved`);
+    return { youthNameId: '', youthBirthdayId: '' };
+  }
+  const fields = r.json.customFields || [];
+  const youthNameField = fields.find(f => f.fieldKey === 'contact.youth_name');
+  const youthBirthdayField = fields.find(f => f.fieldKey === 'contact.youth_birthday');
+  const ids = {
+    youthNameId: youthNameField?.id || '',
+    youthBirthdayId: youthBirthdayField?.id || '',
+  };
+  log(`resolved youth field IDs: youth_name=${ids.youthNameId}, youth_birthday=${ids.youthBirthdayId}`);
+  return ids;
+}
+
+async function findContact(baseUrl, token, locationId, identity, log, runWindow, youthFieldIds = {}) {
   const fingerprint = extractEmailFingerprint(identity.email);
 
   // Primary: search by identity (synthetic test identity from tester.js).
@@ -142,6 +161,33 @@ async function findContact(baseUrl, token, locationId, identity, log, runWindow)
     }
   }
 
+  // Fallback C — kid-only: the bot overwrites email+phone with parent info, clearing
+  // all fingerprint trails, and may not add minor tags. Scan recent contacts in the
+  // run window for a populated youth_name custom field — the one signal that survives
+  // the parent-data overwrite.
+  if (runWindow && youthFieldIds.youthNameId) {
+    log('tag fallback empty; trying youth_name field scan (kid-only contact morphed to parent)');
+    const YOUTH_NAME_FIELD = youthFieldIds.youthNameId;
+    const r = await ghlGet(baseUrl, token, `/contacts/?locationId=${locationId}&limit=30&order=desc`);
+    if (r.ok) {
+      const recent = (r.json.contacts || []).filter(c => {
+        if (!c.dateAdded) return false;
+        const added = new Date(c.dateAdded).getTime();
+        return added >= runWindow.start && added <= runWindow.end;
+      });
+      for (const candidate of recent) {
+        const det = await ghlGet(baseUrl, token, `/contacts/${candidate.id}`);
+        if (!det.ok) continue;
+        const fields = det.json.contact?.customFields || [];
+        if (fields.some(f => f.id === YOUTH_NAME_FIELD && f.value)) {
+          log(`youth_name field scan matched: ${candidate.id} (${candidate.email || 'no email'})`);
+          return candidate;
+        }
+      }
+      log('youth_name field scan: no match found in run window');
+    }
+  }
+
   return null;
 }
 
@@ -164,7 +210,7 @@ function looksLikeDob(value) {
   return false;
 }
 
-function applyOverrides(score, ghlFacts, log) {
+function applyOverrides(score, ghlFacts, log, youthFieldIds = {}) {
   const verified = JSON.parse(JSON.stringify(score));
   verified.verifier_overrides = [];
 
@@ -175,11 +221,9 @@ function applyOverrides(score, ghlFacts, log) {
 
   const aptCount = ghlFacts.appointments.length;
   const dobFields = (ghlFacts.custom_fields || []).filter(f => looksLikeDob(f.value));
-  const tags = ghlFacts.tags || [];
-  const hasMinorTags = tags.includes('unaccompanied_minor') && tags.includes('parent referral lead');
-  const youthName = (ghlFacts.custom_fields || []).find(f => f.id === 'ofSm228f46nQZHVVGGcU');
-  const youthBirthday = (ghlFacts.custom_fields || []).find(f => f.id === 'ngltZB9FHC9RH9BnMDOl');
-  const minorReferralComplete = hasMinorTags && aptCount === 0 && youthName?.value && youthBirthday?.value;
+  const youthName = (ghlFacts.custom_fields || []).find(f => f.id === youthFieldIds.youthNameId);
+  const youthBirthday = (ghlFacts.custom_fields || []).find(f => f.id === youthFieldIds.youthBirthdayId);
+  const minorReferralComplete = aptCount === 0 && youthName?.value && youthBirthday?.value;
 
   for (const r of verified.results) {
     if (r.checkpoint_id === 'mnd_05' && r.verdict === 'fail' && aptCount > 0) {
@@ -199,7 +243,7 @@ function applyOverrides(score, ghlFacts, log) {
     if (r.checkpoint_id === 'md_06' && (r.verdict === 'fail' || r.verdict === 'flag') && minorReferralComplete) {
       const before = r.verdict;
       r.verdict = 'pass';
-      r.notes = `verifier override: GHL shows minor referral completed — youth_name="${youthName.value}", youth_birthday="${youthBirthday.value}", tags=[unaccompanied_minor, parent referral lead], 0 appointments`;
+      r.notes = `verifier override: GHL shows minor referral completed — youth_name="${youthName.value}", youth_birthday="${youthBirthday.value}", 0 appointments`;
       verified.verifier_overrides.push({ checkpoint_id: 'md_06', from: before, to: 'pass', reason: 'minor referral data persisted in GHL' });
       log(`override md_06: ${before} → pass (minor referral persisted)`);
     }
@@ -231,7 +275,21 @@ export async function runVerifier({ identity, transcript: _transcript, score, ru
 
   log(`Verifier start: locationId=${ghl.locationId}, lookup by email="${identity.email}" / phone="${identity.phone}"${runWindow ? ` (run window: ${new Date(runWindow.start).toISOString()} → ${new Date(runWindow.end).toISOString()})` : ''}`);
 
-  const contact = await findContact(baseUrl, ghl.token, ghl.locationId, identity, log, runWindow);
+  const youthFieldIds = await resolveYouthFieldIds(baseUrl, ghl.token, ghl.locationId, log);
+
+  // Retry-with-backoff: GHL's contact search index can lag a contact's creation
+  // by 30-60s. Without retry, we false-negative when the contact actually exists.
+  // (See tasks/test_methodology_issues.md Issue 7.)
+  let contact = null;
+  const retrySchedule = [0, 15_000, 30_000]; // attempts at +0s, +15s, +45s
+  for (let i = 0; i < retrySchedule.length; i++) {
+    if (retrySchedule[i] > 0) {
+      log(`Verifier retry ${i + 1}/${retrySchedule.length - 1}: waiting ${retrySchedule[i] / 1000}s for GHL eventual consistency`);
+      await new Promise(r => setTimeout(r, retrySchedule[i]));
+    }
+    contact = await findContact(baseUrl, ghl.token, ghl.locationId, identity, log, runWindow, youthFieldIds);
+    if (contact) break;
+  }
 
   const ghlFacts = {
     found: !!contact,
@@ -253,7 +311,7 @@ export async function runVerifier({ identity, transcript: _transcript, score, ru
     log(`GHL facts: ${ghlFacts.tags.length} tags, ${ghlFacts.custom_fields.length} custom fields, ${ghlFacts.appointments.length} appointments`);
   }
 
-  let verifiedScore = applyOverrides(score, ghlFacts, log);
+  let verifiedScore = applyOverrides(score, ghlFacts, log, youthFieldIds);
   verifiedScore = recomputeTotals(verifiedScore, rubric);
   verifiedScore.ghl_verified = ghlFacts.found;
   verifiedScore.ghl_appointment_count = ghlFacts.appointments.length;

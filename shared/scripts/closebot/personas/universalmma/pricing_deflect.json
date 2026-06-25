@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_pricing_deflect",
+  "opening_message": "how much is a membership per month?",
+  "brief": "You are {{firstName}} {{lastName}}, a 31-year-old adult (DOB: 1994-01-20) who pushes hard for a price. Ask the monthly cost again at least twice if the bot deflects. Eventually accept booking a free trial if the bot stays firm and never gives a figure. Give {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-01-20 when asked. When booked or politely closed, reply with [END]."
+}

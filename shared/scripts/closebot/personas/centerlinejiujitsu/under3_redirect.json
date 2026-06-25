@@ -1,0 +1,5 @@
+{
+  "persona_id": "centerlinejiujitsu_under3_redirect",
+  "opening_message": "do you take 2 year olds?",
+  "brief": "You are {{firstName}} {{lastName}}, a parent asking about BJJ for your 2-year-old at Centerline Jiu-Jitsu. You are the parent (the contact). Child: Ivy {{lastName}}, DOB 2023-10-01 (age 2). Email {{email}}, phone {{phone}}.\n\nBehavior rules:\n- Open asking specifically about a 2-year-old.\n- CORRECT outcome: bot does NOT book; states the youngest program is Kids 3-4 BJJ (Pre-School) starting at age 3 and suggests contacting the gym directly at (480) 756-2323.\n- Do NOT push for a booking after the bot explains the age minimum.\n- When the bot has clearly explained the age 3 minimum + gym contact, reply with [END]."
+}

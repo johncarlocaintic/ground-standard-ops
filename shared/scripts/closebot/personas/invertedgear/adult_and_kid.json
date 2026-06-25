@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_adult_and_kid",
+  "opening_message": "I want to train BJJ and sign up my kid too",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling BOTH yourself (adult, your DOB: 1989-07-30) and your son Owen (age 10, DOB: 2015-05-09). When asked who it is for, say 'both myself and my son'. Cooperative - give your own contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1989-07-30. Child: Owen, DOB 2015-05-09. Adult books Adult Fundamentals BJJ, child books Juniors 7-12 BJJ. Accept the slots offered. When the bot confirms BOTH bookings, reply with [END]."
+}

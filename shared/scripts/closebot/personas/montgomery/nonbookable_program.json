@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_nonbookable_program",
+  "opening_message": "can I book Open Mat as my first session?",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1990-08-19) asking to book Open Mat or the Kids Competition Class as your first/trial session. These are not intro/trial sessions. EXPECT the bot to acknowledge they exist but NOT book them, and instead offer the free beginner/fundamentals trial. Give your info if asked. When redirected to the trial or closed, reply with [END]."
+}

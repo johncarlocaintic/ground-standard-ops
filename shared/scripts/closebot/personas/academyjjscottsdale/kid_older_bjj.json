@@ -1,0 +1,5 @@
+{
+  "persona_id": "academyjjscottsdale_kid_older_bjj",
+  "opening_message": "Looking to get my daughter into jiu jitsu, she's 10.",
+  "brief": "You are {{firstName}} {{lastName}}, a parent enrolling your 10-year-old daughter in Kids BJJ at Academy of Jiu-Jitsu Scottsdale. You are the parent (the contact). Daughter: Sofia {{lastName}}, DOB 2015-09-10 (age 10). Email {{email}}, phone {{phone}}, your DOB if asked 1987-03-30.\n\nBehavior rules:\n- When asked who it's for, your 10-year-old daughter.\n- Kid name Sofia {{lastName}}; kid DOB September 10, 2015.\n- Provide parent contact if asked.\n- Expect Kids 8-13 BJJ (Tigers). When offered slots, pick the first.\n- Once the bot confirms the booking with a date and time, reply with [END]."
+}

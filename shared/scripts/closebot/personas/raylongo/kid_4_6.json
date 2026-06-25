@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_kid_4_6",
+  "opening_message": "I want to sign my 5 year old up for martial arts",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1989-04-09) enrolling your son Mason, age 5 (DOB: 2020-08-12). When asked who it is for, say your 5 year old son. Cooperatively give your contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1989-04-09. Child: Mason, DOB 2020-08-12. Expect Mason booked into Youth 4-6 Martial Arts. Accept the first slot. When the bot confirms the booking, reply with [END]."
+}

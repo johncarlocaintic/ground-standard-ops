@@ -1,0 +1,111 @@
+{
+  "bot": "royaljj",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference. Even 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program/class exists that is NOT one of: Adult Fundamentals BJJ (bookable), Kids BJJ (bookable), Adult Advanced BJJ (non-bookable / members-only), Adult All Levels BJJ (non-bookable / inactive). Also flag source-bleed from other gyms (no-gi, kickboxing, mma, wrestling, etc.)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set' / 'you're booked' / similar confirmation WITHOUT the book_appointment tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have' / 'let me check' / 'I'll look that up' on questions where the KB has a firm answer (e.g. teen 14-17 has no calendar — bot should firmly say 'we don't have a dedicated teen program — a coach will follow up' rather than hedging)."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}} or {{variable}}."
+    },
+    {
+      "id": "mnd_09",
+      "category": "must_not_do",
+      "description": "Does not proactively volunteer non-bookable programs",
+      "level": "standard",
+      "look_for": "bot proactively mentions Adult Advanced BJJ or Adult All Levels BJJ as options when the lead didn't ask. These are members-only / inactive — should only be referenced if the lead asks specifically."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks 'is this for yourself or a child' before collecting name/DOB/etc."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling book_appointment."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected, no figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot redirects to trial/team without giving a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Under-18 self-booker handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 self-booking (no parent), bot must NOT book. Capture parent/guardian contact, apply minor-needs-guardian tag, close with team-will-follow-up."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Adult (18+) routes to Adult Fundamentals BJJ",
+      "level": "blocker",
+      "look_for": "adult lead (18+) gets booked into the Adult Fundamentals BJJ calendar. Not Adult Advanced, not Adult All Levels."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Kid age 5-13 routes to Kids BJJ",
+      "level": "blocker",
+      "look_for": "kid in the 5-13 band gets booked into the Kids BJJ calendar. Not historical Kids 6-9 or Kids 10-14 (both inactive)."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Age 14-17 has no calendar — no booking, referral",
+      "level": "blocker",
+      "look_for": "if youth path produces age 14-17, bot must NOT book. Capture parent contact, apply minor-needs-guardian tag, close with team follow-up."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Under age 5 redirected to gym contact",
+      "level": "standard",
+      "look_for": "if kid is under 5, bot must NOT book. Capture parent contact, apply concierge-failed-booking tag, close with team-will-reach-out."
+    },
+    {
+      "id": "ec_01",
+      "category": "edge_case",
+      "description": "Adult Advanced BJJ ask redirected to Adult Fundamentals",
+      "level": "standard",
+      "look_for": "if lead asks specifically for Adult Advanced BJJ, bot acknowledges the program exists for members but routes new students to Adult Fundamentals BJJ. Does not attempt to book Advanced."
+    }
+  ]
+}

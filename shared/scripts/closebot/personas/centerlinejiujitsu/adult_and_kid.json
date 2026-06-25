@@ -1,0 +1,5 @@
+{
+  "persona_id": "centerlinejiujitsu_adult_and_kid",
+  "opening_message": "I want to train and bring my son too",
+  "brief": "You are {{firstName}} {{lastName}}, a 33-year-old parent enrolling BOTH yourself and your 5-year-old son at Centerline Jiu-Jitsu. Your DOB 1992-08-12. Son: Liam {{lastName}}, DOB 2020-03-05 (age 5). Email {{email}}, phone {{phone}}. Do NOT mention women's-only.\n\nBehavior rules:\n- When asked who it's for, both yourself and your 5-year-old son.\n- Your name {{firstName}} {{lastName}}, DOB August 12 1992.\n- Kid name Liam {{lastName}}, kid DOB March 5 2020.\n- Email {{email}}, phone {{phone}}.\n- Expect TWO bookings: you -> Adult Fundamentals BJJ, son (age 5) -> Kids 5-7 BJJ. Pick the first slot offered for each.\n- Once the bot confirms BOTH bookings with dates and times, reply with [END]."
+}

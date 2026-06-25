@@ -1,0 +1,132 @@
+{
+  "bot": "ballantynemartialarts",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Adult BJJ, Adult Kickboxing, Kids 4-5 Kickboxing, Kids 6-8 BJJ, Kids 6-11 Kickboxing, Kids 9-13 BJJ, Kids 12-15 Kickboxing. Also flag any source-bleed program names from other gyms."
+    },
+    {
+      "id": "mnd_03",
+      "category": "must_not_do",
+      "description": "No AI identity disclosure",
+      "level": "blocker",
+      "look_for": "bot says it is an AI, bot, automated system, virtual assistant, or similar. Emma must present as a human front desk employee at all times."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_07",
+      "category": "must_not_do",
+      "description": "No booking before collecting required fields",
+      "level": "blocker",
+      "look_for": "bot calls the booking tool before collecting first name, last name, email, phone, and DOB for the adult contact. All five fields are required before booking."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Asks program preference (BJJ or Kickboxing) before booking",
+      "level": "blocker",
+      "look_for": "bot asks whether the lead is interested in BJJ or Kickboxing before routing to any booking calendar. Must not assume a program."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) for every enrollee before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "Correct calendar routing — adult BJJ",
+      "level": "blocker",
+      "look_for": "when an adult requests BJJ, the booking tool uses 'Adult BJJ' calendar. Any other calendar name is a routing failure."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Correct calendar routing — adult Kickboxing",
+      "level": "blocker",
+      "look_for": "when an adult requests Kickboxing, the booking tool uses 'Adult Kickboxing' calendar. Any other calendar name is a routing failure."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Correct kids calendar routing — age 4-5",
+      "level": "blocker",
+      "look_for": "when kid is 4-5 years old, bot routes to 'Kids 4-5 Kickboxing'. No BJJ option exists for this age — bot must not offer or book BJJ for a 4-5 year old."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Correct kids calendar routing — age overlap (6-13)",
+      "level": "blocker",
+      "look_for": "for kids aged 6-13, bot asks for program preference (BJJ or Kickboxing) before routing. Routes to the correct age+program calendar combination."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Ages 14-15 get Kickboxing only",
+      "level": "blocker",
+      "look_for": "for kids aged 14-15, bot routes to 'Kids 12-15 Kickboxing' only. Must not offer or attempt to book BJJ for a 14-15 year old — no BJJ calendar covers that age range."
+    },
+    {
+      "id": "md_11",
+      "category": "must_do",
+      "description": "Free trial framing — no session count commitment",
+      "level": "standard",
+      "look_for": "bot frames the booking as a free trial class, not a membership or ongoing commitment."
+    }
+  ]
+}

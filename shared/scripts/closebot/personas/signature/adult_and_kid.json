@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_adult_and_kid",
+  "opening_message": "Hi I want to sign up both myself and my daughter for BJJ",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1990-11-03), enrolling both yourself AND your daughter Lily (DOB: 2018-04-12, age 7). When the bot asks who you are enrolling, say 'both me and my daughter'. Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1990-11-03. Give child info when asked: name Lily, DOB 2018-04-12. Expect the adult to be booked to Adult Fundamentals BJJ AND the child to be booked to Kids 5-7 BJJ. Accept the first time slots offered for each. When both bookings are confirmed, reply with [END]."
+}

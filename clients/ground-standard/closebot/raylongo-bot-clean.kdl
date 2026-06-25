@@ -1,0 +1,3009 @@
+__CONFIG__ {
+    conversationReason "You are part of the front desk team named \"Emma\" who works for \"Ray Longo's MMA\". Introduce yourself as \"Emma\" with Ray Longo's MMA. The contact reached out to us to learn more about our martial arts classes. You will professionally guide the contact thru series of questions and get important information about the enrollee and potentially book them for their free trial. \n\nTheir website is https://www.longosmma.com\n\nWhen asking questions, we ask them one by one and avoid asking multiple questions in one go. \nHard rules:\n- Never mention pricing - redirect to the free intro class\n- Multiple adult disciplines (MMA, Kickboxing, BJJ, No-Gi BJJ, Boxing) - confirm which discipline the adult wants; default to the Intro to Mixed Martial Arts class if none stated\n- Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.\n- Kids ages 4-6 book Youth 4-6 Martial Arts. Ages 7-12 book Youth 7-12 Martial Arts. Both are minors and need a parent or guardian.\n- Ages 13-17 have no online class (youth ends at 12, adults are 18+) - capture guardian, do not book, tell them the team will follow up.\n- Under age 4 - youngest program is Youth 4-6; do not book, refer to the gym at (516) 900-9042.\n- Members Only classes (advanced MMA, advanced Kickboxing, Sparring) are not available to new or prospective students - acknowledge they exist, do not book them; new students start with an intro class in a non-Members-Only discipline.\n\nUse Data Collection Friction Handling in knowledge base when contact refuses to provide information for whatever reason.\n"
+    businessInformation "The company name is Ray Longo's MMA\n\n"
+    prohibitedWords
+}
+Source id="source" {
+    globalAgentTools {
+        _ "EnableLibraryContext"
+        _ "EnableGhlBooking"
+    }
+    Next handle="8e1dfbef-5138-4768-912c-d974df32d271"
+    __position -2629.5457 -253.32938
+}
+MultiObjective id="8e1dfbef-5138-4768-912c-d974df32d271" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity 60
+            SkipIfNotBlank true
+            Variable "contact.first_name"
+            Title "Get Name"
+            Description "Determine the contact's name for building rapport"
+            id "f093b9b8-f699-4a81-a21c-311aae7e59ee"
+            Prompt "Give a short introduction of Ray Longo's MMA then ask for their name."
+        }
+    }
+    __dynamicVariables
+    Next handle="f2e586aa-9432-47de-a988-e56b9c683c20"
+    __position -2406.1123 -264.92398
+}
+AISwitch id="a4ad7d05-c6eb-403f-a1bc-a693169d627d" {
+    UseAI true
+    Title "Kids or Adult or more "
+    __dynamicVariables
+    Description "the age range of the applicant {{nodes.d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567-1770306949269.result[0]}}"
+    AiCases {
+        _ {
+            id "dc56e515-6031-46c2-84af-b1e6cc9b8806"
+            CaseName "youth (below 18 years old)"
+        }
+        _ {
+            id "8e7518cc-18c0-47d5-a799-edbb4d70add9"
+            CaseName "adult (18 years old and above)"
+        }
+        _ {
+            id "ff7d8f01-7fb8-4da2-89c1-1379cf004d2b"
+            CaseName "both parent and child"
+        }
+        _ {
+            id "71f866ec-e460-40c3-bb73-a7a5c9e260f2"
+            CaseName "multiple enrollees (kids and/or adult)"
+        }
+    }
+    AiCases:0 handle="143890a1-b087-4b25-adca-acd4907b2437-1768844532463"
+    AiCases:1 handle="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976"
+    AiCases:2 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604"
+    AiCases:3 handle="71994e0a-0c4f-46cc-919e-77c127f6d050"
+    __position -1334.7522 -261.0872
+}
+ModifyTags id="143890a1-b087-4b25-adca-acd4907b2437-1768844532463" {
+    Title "add tag (youth)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "684f045e-eff1-4160-9ea7-691d02f1349e"
+            Tag "youth"
+        }
+    }
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545"
+    __position -1026.1503 -560.893
+}
+ModifyTags id="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976" {
+    Title "add tag (adult)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "45063801-51a1-429d-8f5b-2f02c21aa976"
+            Tag "adult"
+        }
+    }
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713"
+    __position -884.2572 -253.53389
+}
+MultiObjective id="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483" {
+    Objectives {
+        _ {
+            MaxAttempts 0
+            Sensitivity 70
+            SkipIfNotBlank false
+            Title "Kids Classes 1"
+            Description "Confirm with {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} what class {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}} based on their age {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767.result[0]}}"
+            Prompt ""
+            id "562b50ab-ff21-4b09-8cf7-4364abbc9c3e"
+        }
+    }
+    __dynamicVariables
+    Next handle="85d4ae55-0977-4d3e-9838-9fcdde2e9a1e-1779135184585"
+    __position -109.50755 -687.2155
+}
+AISwitch id="44682e4d-95b3-4ee6-844a-39a09f00bdfc" {
+    UseAI true
+    Title "Types of Kids Classes"
+    __dynamicVariables
+    Description "Depending on the age range of the applicant {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767.result[0]}}"
+    AiCases {
+        _ {
+            id "34c4fdf8-ff82-49ea-ae23-51736d3b5b2a"
+            CaseName "Ages 4 to 6 years old"
+        }
+        _ {
+            id "eb1e9e62-e75f-4401-b018-a586e372952e"
+            CaseName "Ages 7 to 12 years old"
+        }
+        _ {
+            id "cf085220-5b79-406c-b816-7e3223c0ded0"
+            CaseName "Ages 7 to 12 years old "
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878"
+    AiCases:1 handle="86b4a781-3d49-453d-a13b-9e40f28d4732"
+    AiCases:2 handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b"
+    __position -2.4062352 -577.41766
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931"
+    __position 388.34375 -586.30646
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931"
+    __position 388.94913 -756.0646
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Adult's First Name 1"
+            Description "Determine first name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the adult's last name"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030"
+    __position -685.12897 -250.38934
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f"
+    __position -468.0209 -579.4901
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388"
+    __position 214.76135 -247.61658
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the kid's appointment schedule, date and time along with name, email, phone number, and the class they are booking for "
+    Next handle="c646cc63-eb48-4271-a019-9d0fb906963e"
+    __position 695.63214 -578.5094
+}
+ModifyTags id="14af1e66-3d8d-4b2e-b2a3-8847e420d0b0" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "41de9f6e-bbab-4f2e-831d-998f78427c91"
+            Tag "booked"
+        }
+    }
+    Next handle="14a07523-2650-4cc9-9012-6bade8bac61c"
+    __position 1084.3104 -580.4683
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba"
+    __position 719.0889 -250.33633
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="239afc6a-919d-4c2a-bebf-9829dabe5af3-1776115062333"
+    __position 996.8681 -254.14836
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Minor's Full Name 1"
+            Description "Determine the kid's full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767"
+    __position -886.5858 -566.4194
+}
+Conversation id="14a07523-2650-4cc9-9012-6bade8bac61c" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 1311.4778 -580.61633
+}
+Statement id="c646cc63-eb48-4271-a019-9d0fb906963e" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Reminders"
+    __dynamicVariables
+    Statement "Give general reminders for {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} about rules and regulations. Ask {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} if they have questions."
+    Next handle="14af1e66-3d8d-4b2e-b2a3-8847e420d0b0"
+    __position 873.1361 -580.2841
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Adult's First Name"
+            Description "Determine first name of the adult or guardian"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+            Prompt "we will be using their name as main contact for their kid's enrollment"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the last name of the adult or guardian"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3"
+    __position -609.10895 -577.2811
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877"
+    __position -315.82764 -250.34143
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273"
+    __position -340.1158 -577.0
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="4c0e8f56-e7fe-4d0b-a4f1-806f638ac0db-1779135184458"
+    __position -126.98901 -251.04147
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity 60
+            SkipIfNotBlank "True"
+            Title "Date of Birth (Adult)"
+            Description "Determine the date of birth of {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}"
+            Variable "contact.date_of_birth"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958"
+    __position -481.54254 -249.74695
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity 60
+            SkipIfNotBlank "True"
+            Title "Date of Birth (Kid)1"
+            Description "confirm date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}} . If not, inquire from contact. {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}"
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944"
+    __position -742.057 -572.3955
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Date of Birth (Adult)"
+            Description "Determine the guardian's or adult's date of birth"
+            Variable "contact.date_of_birth"
+            Prompt "This is required to fill out the profile for their child. The guardian or adult will be the basis for their children's profile."
+        }
+    }
+    __dynamicVariables
+    Next handle="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483"
+    __position -213.0381 -576.5297
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Minor's Full Name 2"
+            Description "Determine the kid's full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939"
+    __position -1021.69415 1626.3882
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Date of Birth (Kid)2"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604.result[0]}}"
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252"
+    __position -866.65857 1623.5153
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Adult's First Name 2"
+            Description "Determine first name of the adult or guardian"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+            Prompt "we will be using their name as main contact for their kid's enrollment"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the last name of the adult or guardian"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769116634483"
+    __position -695.8531 1622.6826
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769116634483" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1769116639514"
+    __position -528.83496 1627.9647
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1769116639514" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="670f7ba2-54bb-4d16-8645-82f75da804ef-1779135184685"
+    __position -400.69492 1626.407
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1769116899252" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769200677935"
+    __position 549.2048 1841.7008
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976-1769200677935"
+    __position 1300.7188 1691.1355
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117041744" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="a64bef42-c421-41c9-ac2f-8fb2deb607fb-1779135184623"
+    __position 829.13367 1822.6093
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117061559" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="14a07523-2650-4cc9-9012-6bade8bac61c-1769117512301"
+    __position 1785.3075 1700.4017
+}
+Conversation id="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117066426" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 904.01447 1269.219
+}
+AISwitch id="a4ad7d05-c6eb-403f-a1bc-a693169d627d-1769117276567" {
+    UseAI true
+    Title "Kids or Adult"
+    __dynamicVariables
+    Description "determine what training category they are interested in enrolling in{{nodes.d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567.result[0]}}"
+    AiCases {
+        _ {
+            id "dc56e515-6031-46c2-84af-b1e6cc9b8806"
+            CaseName "youth (below 18 years old)"
+        }
+        _ {
+            id "8e7518cc-18c0-47d5-a799-edbb4d70add9"
+            CaseName "adult (above 18 years old)"
+        }
+        _ {
+            id "ff7d8f01-7fb8-4da2-89c1-1379cf004d2b"
+            CaseName "both"
+        }
+    }
+    AiCases:1 handle="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769117315285"
+    AiCases:0 handle="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769117357673"
+    AiCases:2 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189"
+    __position -774.6154 2756.7798
+}
+MultiObjective id="d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Identify Enrollee 2"
+            Description "Determine if the class is for them, another adult or for their another child."
+            Variable "contact.program_interest"
+            Prompt "answer here should just be \"Youth\" or \"Adult\""
+        }
+    }
+    __dynamicVariables
+    Next handle="a4ad7d05-c6eb-403f-a1bc-a693169d627d-1769117276567"
+    __position -967.37787 2755.8853
+}
+ModifyTags id="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769117315285" {
+    Title "add tag (youth)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "684f045e-eff1-4160-9ea7-691d02f1349e"
+            Tag "adult"
+        }
+    }
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285"
+    __position -417.53137 2889.4722
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769117315285" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1769117315285"
+    __position -48.81236 2890.038
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name 3"
+            Description "Determine first name of the adult or guardian"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+            Prompt "we will be using their name as main contact for their kid's enrollment"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the last name of the adult or guardian"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769117315285"
+    __position -232.13768 2884.9248
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1769117315285" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769117315285"
+    __position 111.58266 2887.8948
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769117315285" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult)"
+            Description "Determine the adult's date of birth of {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}"
+            Variable "contact.date_of_birth"
+        }
+    }
+    __dynamicVariables
+    Next handle="1f158a45-d02b-4e98-bca0-c92e7caa77e1-1779135184724"
+    __position 326.50873 2879.977
+}
+ModifyTags id="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769117357673" {
+    Title "add tag (youth)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "684f045e-eff1-4160-9ea7-691d02f1349e"
+            Tag "youth"
+        }
+    }
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673"
+    __position -493.79837 2505.8972
+}
+MultiObjective id="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts 0
+            Sensitivity 70
+            SkipIfNotBlank false
+            Title "Kids Classes 2"
+            Description "Confirm with {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} what class {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673.result[0]}} based on their age {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769117357673.result[0]}}"
+            Prompt "There are five kids classes along with their respective age group: \"Kickboxing: Kids age 4 to 5\" are for kids ages 4 to 5 interested in kickboxing; \"BJJ: Kids age 6 to 8\" are for kids ages 6 to 8 interested in BJJ; \"Kickboxing: Kids age 6 to 11\" are for kids ages 6 to 11 interested in kickboxing; \"BJJ: Kids age 9 to 13\" are for kids ages 9 to 13 interested in BJJ;  \"Kickboxing: Kids age 12 to 15\" are for kids ages 12 to 15 interested in kickboxing. \n"
+            id "562b50ab-ff21-4b09-8cf7-4364abbc9c3e"
+        }
+    }
+    __dynamicVariables
+    Next handle="739d750b-ae6e-4024-ad85-bec29f945caf-1779135184785"
+    __position 437.8342 2492.6663
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1769117357673"
+    __position 54.745598 2493.1975
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Minor's Full Name 3"
+            Description "Determine the kid's full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769117357673"
+    __position -353.39307 2511.0894
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name"
+            Description "Determine first name of the adult or guardian"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+            Prompt "we will be using their name as main contact for their kid's enrollment"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the last name of the adult or guardian"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769117357673"
+    __position -77.82212 2495.5305
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769117357673"
+    __position 183.77943 2494.6226
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Kid)3"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}}"
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117357673"
+    __position -210.89435 2501.6055
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769117357673" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult)"
+            Description "Determine the adult's date of birth of {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}"
+            Variable "contact.date_of_birth"
+        }
+    }
+    __dynamicVariables
+    Next handle="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483-1769117357673"
+    __position 306.56366 2494.6572
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Minor's Full Name 4"
+            Description "Determine the kid's full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1769117406189"
+    __position -474.7628 3199.0984
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Kid)4"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}}"
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252-1769117406189"
+    __position -321.7272 3201.545
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name 4"
+            Description "Determine first name of the adult or guardian"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+            Prompt "we will be using their name as main contact for their kid's enrollment"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the last name of the adult or guardian"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769116634483-1769117406189"
+    __position -147.61067 3199.1082
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1769116634483-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email"
+            Description "Determine the contact's email"
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1769116639514-1769117406189"
+    __position 31.541437 3206.8135
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1769116639514-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769116642796-1769117406189"
+    __position 181.09067 3210.6418
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1768937128273-1769116642796-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity 70
+            SkipIfNotBlank "True"
+            Title "Date of Birth (Adult)"
+            Description "Determine the adult's date of birth of {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}"
+            Variable "contact.date_of_birth"
+        }
+    }
+    __dynamicVariables
+    Next handle="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483-1769116766635-1769117406189"
+    __position 345.70483 3210.2622
+}
+MultiObjective id="ca8a1ab0-1fa1-4e23-ad8b-fdd324805483-1769116766635-1769117406189" {
+    Objectives {
+        _ {
+            MaxAttempts 0
+            Sensitivity 70
+            SkipIfNotBlank false
+            Title "Kids Classes 3"
+            Description "Confirm with {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} what class {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}} based on their age {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1769117406189.result[0]}}"
+            Prompt "There are five kids classes along with their respective age group: \"Kickboxing: Kids age 4 to 5\" are for kids ages 4 to 5 interested in kickboxing; \"BJJ: Kids age 6 to 8\" are for kids ages 6 to 8 interested in BJJ; \"Kickboxing: Kids age 6 to 11\" are for kids ages 6 to 11 interested in kickboxing; \"BJJ: Kids age 9 to 13\" are for kids ages 9 to 13 interested in BJJ;  \"Kickboxing: Kids age 12 to 15\" are for kids ages 12 to 15 interested in kickboxing. \n"
+            id "562b50ab-ff21-4b09-8cf7-4364abbc9c3e"
+        }
+    }
+    __dynamicVariables
+    Next handle="8f2680dc-0496-4d5a-a869-56cea5e40943-1779135184885"
+    __position 505.87708 3214.707
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1769117512301" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the kid's appointment schedule, date and time along with name, email, phone number, and the class they are booking for "
+    Next handle="c646cc63-eb48-4271-a019-9d0fb906963e-1769117512301"
+    __position 1134.0667 2295.4062
+}
+ModifyTags id="14af1e66-3d8d-4b2e-b2a3-8847e420d0b0-1769117512301" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "41de9f6e-bbab-4f2e-831d-998f78427c91"
+            Tag "booked"
+        }
+    }
+    Next handle="EOC"
+    __position 1707.8309 2297.015
+}
+Conversation id="14a07523-2650-4cc9-9012-6bade8bac61c-1769117512301" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 2044.9465 1702.2058
+}
+Statement id="c646cc63-eb48-4271-a019-9d0fb906963e-1769117512301" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Reminders"
+    __dynamicVariables
+    Statement "Give general reminders for {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} about rules and regulations. Ask {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} if they have questions."
+    Next handle="14af1e66-3d8d-4b2e-b2a3-8847e420d0b0-1769117512301"
+    __position 1402.1602 2294.0508
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117580447"
+    __position 877.6793 2871.405
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117580447" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117580447"
+    __position 1164.125 2865.5547
+}
+Conversation id="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117580447" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 1462.6647 2872.896
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1769116899252-1769117619078" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769200802290"
+    __position 1352.2385 3226.0005
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976-1769200802290"
+    __position 2156.744 3236.8242
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117041744-1769117619078" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="ec3e371a-2a90-4e49-bf4c-62479a57d9ab-1779135184924"
+    __position 1709.6171 3229.4763
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117061559-1769117619078" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117066426-1769117619078"
+    __position 2725.2102 3222.668
+}
+Conversation id="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117066426-1769117619078" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 2973.6294 3222.9277
+}
+ModifyTags id="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769200677935" {
+    Title "add tag (youth)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "684f045e-eff1-4160-9ea7-691d02f1349e"
+            Tag "youth"
+        }
+    }
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117041744"
+    __position 662.4325 1668.7118
+}
+ModifyTags id="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976-1769200677935" {
+    Title "add tag (adult)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "45063801-51a1-429d-8f5b-2f02c21aa976"
+            Tag "adult"
+        }
+    }
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117061559"
+    __position 1503.007 1692.2732
+}
+ModifyTags id="143890a1-b087-4b25-adca-acd4907b2437-1768844532463-1769200802290" {
+    Title "add tag (youth)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "684f045e-eff1-4160-9ea7-691d02f1349e"
+            Tag "youth"
+        }
+    }
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117041744-1769117619078"
+    __position 1535.1656 3228.5793
+}
+ModifyTags id="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976-1769200802290" {
+    Title "add tag (adult)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "45063801-51a1-429d-8f5b-2f02c21aa976"
+            Tag "adult"
+        }
+    }
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1769117061559-1769117619078"
+    __position 2492.6748 3222.5105
+}
+Conversation id="e82a5344-db49-4626-b75e-313a874c1211" {
+    ExtraPrompt "-asnwer any questions\n-convince contact to say that they are interested in trying our free trial class"
+    __dynamicVariables
+    Next handle="EOC"
+    __position -1736.8331 -53.29074
+}
+ScenarioCustom id="77201da7-7204-499e-b6a2-f455e4ed6409" {
+    AllowReEntry ""
+    Priority 50
+    Threshold 7
+    Description "Contact shows interest in signing up and is giving information like date of birth or name of applicant"
+    Title "Sign Up"
+    __dynamicVariables
+    Next handle="d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567-1770306949269"
+    __position -1947.8477 -447.8098
+}
+Comparator id="258e0a8a-bbbc-4f02-8d7f-d072a430db54" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    Title "Interested in Sign Up?"
+    __dynamicVariables
+    AIExpression "if contact is interested in trying out our free trial {{nodes.f2e586aa-9432-47de-a988-e56b9c683c20.result[0]}}"
+    False handle="e82a5344-db49-4626-b75e-313a874c1211"
+    True handle="d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567-1770306949269"
+    __position -1917.5658 -267.57962
+}
+MultiObjective id="d9f3bf31-dd44-40cc-a8ed-b014716cdf26-1769117276567-1770306949269" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Identify Enrollee 1"
+            Description "Determine if the class is for them, or for more than 1 adult or 1 kid or for both of them adult and kid"
+            Variable "contact.program_interest"
+            Prompt "answer here should just be \"Youth\" - below 18 years old or \"Adult\" - 18 and above"
+        }
+    }
+    __dynamicVariables
+    Next handle="a4ad7d05-c6eb-403f-a1bc-a693169d627d"
+    __position -1601.818 -266.21677
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931"
+    __position 389.22266 -428.06308
+}
+AISwitch id="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577" {
+    UseAI true
+    Title "Types of Kids Classes"
+    __dynamicVariables
+    Description "Depending on the age range of the applicant {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939.result[0]}}"
+    AiCases {
+        _ {
+            id "34c4fdf8-ff82-49ea-ae23-51736d3b5b2a"
+            CaseName "Ages 4 to 6 years old"
+        }
+        _ {
+            id "eb1e9e62-e75f-4401-b018-a586e372952e"
+            CaseName "Ages 7 to 12 years old"
+        }
+        _ {
+            id "cf085220-5b79-406c-b816-7e3223c0ded0"
+            CaseName "Ages 7 to 12 years old "
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682"
+    AiCases:1 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179"
+    AiCases:2 handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543"
+    __position -313.9863 1838.5145
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for ages 4 to 6 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252"
+    __position 70.915016 1714.2831
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252"
+    __position 45.73041 1868.9797
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252"
+    __position 30.32127 2041.7417
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130327949" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187"
+    __position 1051.632 1690.6526
+}
+AISwitch id="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577-1772130816944" {
+    UseAI true
+    Title "Types of Kids Classes"
+    __dynamicVariables
+    Description "Depending on the age range of the applicant {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769117357673.result[0]}}"
+    AiCases {
+        _ {
+            id "34c4fdf8-ff82-49ea-ae23-51736d3b5b2a"
+            CaseName "Ages 4 to 6 years old"
+        }
+        _ {
+            id "eb1e9e62-e75f-4401-b018-a586e372952e"
+            CaseName "Ages 7 to 12 years old"
+        }
+        _ {
+            id "cf085220-5b79-406c-b816-7e3223c0ded0"
+            CaseName "Ages 7 to 12 years old "
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682-1772130828366"
+    AiCases:1 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179-1772130832451"
+    AiCases:2 handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543-1772130837086"
+    __position 578.4155 2459.6118
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682-1772130828366" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769117512301"
+    __position 861.59216 2203.6707
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179-1772130832451" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769117512301"
+    __position 856.23773 2388.0151
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543-1772130837086" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769117357673.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769117512301"
+    __position 861.8675 2571.3186
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130887916" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447"
+    __position 576.76135 2876.0208
+}
+AISwitch id="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577-1772130913049" {
+    UseAI true
+    Title "Types of Kids Classes"
+    __dynamicVariables
+    Description "Depending on the age range of the applicant {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1769117406189.result[0]}}"
+    AiCases {
+        _ {
+            id "34c4fdf8-ff82-49ea-ae23-51736d3b5b2a"
+            CaseName "Ages 4 to 6 years old"
+        }
+        _ {
+            id "eb1e9e62-e75f-4401-b018-a586e372952e"
+            CaseName "Ages 7 to 12 years old"
+        }
+        _ {
+            id "cf085220-5b79-406c-b816-7e3223c0ded0"
+            CaseName "Ages 7 to 12 years old "
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682-1772130922830"
+    AiCases:1 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179-1772130930267"
+    AiCases:2 handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543-1772130937747"
+    __position 677.05316 3216.442
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1772130255682-1772130922830" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252-1769117619078"
+    __position 1035.718 3063.1458
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1772130263179-1772130930267" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252-1769117619078"
+    __position 1027.7246 3224.501
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1772130268543-1772130937747" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1769116899252-1769117619078"
+    __position 1036.5842 3382.7783
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130327949-1772130979696" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078"
+    __position 1933.0408 3233.4155
+}
+MultiObjective id="f2e586aa-9432-47de-a988-e56b9c683c20" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Interest"
+            Description "Determine if the contact is interested to try out our free trial"
+        }
+    }
+    __dynamicVariables
+    Next handle="258e0a8a-bbbc-4f02-8d7f-d072a430db54"
+    __position -2167.877 -264.57986
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600" {
+    Objectives {
+        _ {
+            MaxAttempts 10
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Minor's Full Name 2.1"
+            Description "Determine the kids' full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+            Prompt "Ask the contact about their kids' full name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261"
+    __position -574.7159 28.629143
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Kid)2.1"
+            Description "Determine the birthdates of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}} "
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="f60d4848-2ae5-4c5c-a974-0c1fe454628d"
+    __position -365.78098 30.035717
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for kids ages 4 to 6 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776115041011"
+    __position 556.2037 -24.316357
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776115041011"
+    __position 905.8785 51.927074
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776115041011"
+    __position 911.1411 192.59604
+}
+MultiObjective id="f60d4848-2ae5-4c5c-a974-0c1fe454628d" {
+    Objectives {
+        _ {
+            MaxAttempts 1
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Booking Confirm 1"
+            Description "Confirm from {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}}  the ages of the kids{{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}} "
+            id "e5d0043a-cea9-496e-a4bf-ce8108472cac"
+        }
+    }
+    __dynamicVariables
+    Next handle="7a19a86c-823e-4c12-968d-e520536a65c3"
+    __position -115.47551 34.27988
+}
+Comparator id="7a19a86c-823e-4c12-968d-e520536a65c3" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The age range is 3 to 5 years old"
+    Title "3 - 5 Age Range"
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765"
+    False handle="44abf063-fba4-45de-bbfe-fa1f3ca365ee-1776168061629-1776168103215"
+    __position 131.2228 33.81113
+}
+MultiObjective id="71994e0a-0c4f-46cc-919e-77c127f6d050" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "For Kids or For Adults Booking"
+            Description "Determine whether {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} is inquiring for themselves (adult), for their child or children (minor), or for both. Collect the exact number of participants and their age group. Adults are 18 years old and above. Minors are under 18."
+            Prompt "Ask if how many people would they want to book. For example, is this for more than one kid, or more than one adult booking. The booking direction only for Adults or Kids"
+        }
+    }
+    __dynamicVariables
+    Next handle="a9e0a4c5-7f67-4b16-95b4-ce068337929b"
+    __position -971.44995 22.103367
+}
+Comparator id="a9e0a4c5-7f67-4b16-95b4-ce068337929b" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The contact mentioned that the booking is for adults"
+    Title "For adults?"
+    False handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600"
+    True handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720"
+    __position -780.51544 28.052118
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name 1.1"
+            Description "Determine first name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the adult's last name"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681"
+    __position -942.21045 325.99677
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult) 1.1"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}} "
+            Variable "contact.date_of_birth"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400"
+    __position -696.8703 330.03
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email 1.1 "
+            Description "Determine the email of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}} "
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669"
+    __position -455.43652 335.0174
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone 1.1"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="435da67a-a550-4a3c-affb-06dfe76db87f-1779135184824"
+    __position -211.25748 331.3097
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913"
+    __position 44.40053 336.58075
+}
+Comparator id="cf5045f3-200b-46aa-8f1f-00ff87042c68" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    ExpressionLeftValue ""
+    AIExpression "The age range is within 7 to 14 years old based from {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261.result[0]}} "
+    Title "Booking based on Age Range "
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196"
+    False handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863"
+    __position 546.26917 139.67393
+}
+MultiObjective id="5c82b5a9-4491-46a9-b1c4-a6a369190299" {
+    Objectives {
+        _ {
+            MaxAttempts 1
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Another adult? 1"
+            Description "Determine if they want to book a trial class for another adult, a kid, or no longer wish to book."
+        }
+    }
+    __dynamicVariables
+    Next handle="3fa93b6b-f3d1-49f4-b60a-188312bf90bb"
+    __position -949.6617 575.30786
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671"
+    __position 271.63614 338.7362
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="5c82b5a9-4491-46a9-b1c4-a6a369190299"
+    __position 521.1991 337.68976
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name 1.2"
+            Description "Determine first name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+        }
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the adult's last name"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176"
+    __position -584.9022 670.37756
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult) 1.2"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}  "
+            Variable "contact.date_of_birth"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176"
+    __position -403.74164 677.4714
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email 1.2"
+            Description "Determine the email of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}  "
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176"
+    __position -242.79785 678.50024
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176" {
+    Objectives {
+        _ {
+            MaxAttempts 2
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone 1.2"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="3a58fa7f-8f07-449c-afae-52f202ba4f7b-1779135185024"
+    __position -110.77699 677.4316
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176"
+    __position 37.383854 678.21454
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176"
+    __position 227.83669 679.4826
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600"
+    __position 462.71576 678.13855
+}
+MultiObjective id="5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600" {
+    Objectives {
+        _ {
+            MaxAttempts 1
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Another adult? 2"
+            Description "Determine if they want to book a trial class for another adult, a kid, or no longer wish to book."
+        }
+    }
+    __dynamicVariables
+    Next handle="3fa93b6b-f3d1-49f4-b60a-188312bf90bb-1776278916668"
+    __position -954.0041 889.0347
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Adult's First Name 1.3"
+            Description "Determine adult's first name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+        }
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the adult's last name"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176-1776094144882"
+    __position -498.2661 969.9801
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176-1776094144882" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult) 1.3"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}  "
+            Variable "contact.date_of_birth"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176-1776094144882"
+    __position -337.46716 969.43494
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176-1776094144882" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email 1.3"
+            Description "Determine the email of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}  "
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176-1776094144882"
+    __position -159.7302 969.10516
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176-1776094144882" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone 1.3"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="a5d13392-11f5-4c44-bef1-e45ae2e5be19-1779135185124"
+    __position 21.431873 967.8021
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176-1776094144882" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882"
+    __position 199.55904 966.6901
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176-1776094845488"
+    __position 370.2101 966.1912
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176-1776094845488" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600-1776094953504"
+    __position 556.13855 967.0242
+}
+Comparator id="41a8a79e-902d-4dab-ba48-5b2d1ff54c88-1776094047952-1776094953504" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "Confirmed that there is another adult to book {{nodes.5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600.result[0]}}  "
+    Title "another adult for booking 2?"
+    Next handle="EOC"
+    __position 879.84186 869.55634
+}
+MultiObjective id="5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600-1776094953504" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank "True"
+            Title "Another adult? 3"
+            Description "Determine if they want to book a trial class for another adult, a kid, or no longer wish to book."
+        }
+    }
+    __dynamicVariables
+    Next handle="3fa93b6b-f3d1-49f4-b60a-188312bf90bb-1776278916668-1776278985561"
+    __position -950.9489 1185.8942
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity 3
+            SkipIfNotBlank false
+            Title "Adult's First Name 1.4"
+            Description "Determine adult's first name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.first_name"
+        }
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            id "48182d48-52c8-4bfd-b0dd-2ba7df82141b"
+            Title "Adult's Last Name"
+            Description "Determine the adult's last name"
+            Variable "contact.last_name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176-1776094144882-1776094953504"
+    __position -496.72665 1266.8396
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1776085969681-1776093878176-1776094144882-1776094953504" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Date of Birth (Adult) 1.4"
+            Description "Determine the date of birth of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}  "
+            Variable "contact.date_of_birth"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176-1776094144882-1776094953504"
+    __position -336.68555 1266.2943
+}
+MultiObjective id="5dabb164-dffa-4df5-86f0-89265a83d9f3-1768921732958-1776085973400-1776093878176-1776094144882-1776094953504" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Variable "contact.email"
+            Title "Get Email 1.4"
+            Description "Determine the email of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}   "
+        }
+    }
+    __dynamicVariables
+    Next handle="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176-1776094144882-1776094953504"
+    __position -185.75685 1265.7706
+}
+MultiObjective id="3f814f36-e4ce-474f-954b-bf248ee0722f-1768921782877-1776085976669-1776093878176-1776094144882-1776094953504" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank "False"
+            Variable "contact.phone"
+            Title "Get Phone 1.4"
+            Description "Confirm the contact's phone number"
+            Prompt "We are texting this contact so we usually already have their phone number on file. Look at the contact profile. If a real phone number is on file for this contact, tell them you have their number as that specific number and ask if that is the best number to reach them, and accept a yes or a corrected number. If no phone number is on file (or it is blank), just ask them for their best phone number. Never output placeholder text or unresolved variable names like UNRESOLVED or curly braces. Never use em dashes."
+        }
+    }
+    __dynamicVariables
+    Next handle="132f69d1-276a-4843-859d-3f1387f24877-1779135185225"
+    __position -22.24448 1265.0248
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176-1776094144882-1776094953504" {
+    __dynamicVariables
+    CalendarName "Adult Intro to Mixed Martial Arts"
+    Title "Booking Adult No-Gi "
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}. Book one trial only - additional enrollees are handled in a separate step    "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504"
+    __position 143.20274 1265.4498
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176-1776094845488-1776094953504"
+    __position 329.23892 1264.7675
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776093717671-1776093878176-1776094845488-1776094953504" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="239afc6a-919d-4c2a-bebf-9829dabe5af3-1769117066426"
+    __position 568.0234 1268.0176
+}
+MultiObjective id="fc10a3d6-6b37-41f4-ac46-e3ede02cdc58" {
+    Objectives {
+        _ {
+            MaxAttempts 10
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "For another kid? 1"
+            Description "Determine if there is another kid they want to schedule a free trial class"
+        }
+    }
+    __dynamicVariables
+    Next handle="14eb88f5-9006-45ac-9fa2-89b6841c0ee5"
+    __position 1564.0913 -29.650356
+}
+Comparator id="1a670420-4e90-4dc9-87e4-adc1dd3ca5c7" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    Title "Another kid? 1"
+    AIExpression "Confirmed to want to book free trial class for {{nodes.fc10a3d6-6b37-41f4-ac46-e3ede02cdc58.result[0]}} "
+    Next handle="EOC"
+    __position 2054.4458 -264.02185
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776114610830"
+    __position 3456.6787 -15.64428
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688" {
+    Objectives {
+        _ {
+            MaxAttempts 10
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Minor's Full Name 3.1"
+            Description "Determine the kids' full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+            Prompt "Ask the contact about their kids' full name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688"
+    __position 1948.6522 113.06547
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Kid)3.1"
+            Description "Determine the birthdates of {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688.result[0]}}  "
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="f60d4848-2ae5-4c5c-a974-0c1fe454628d-1776114029688"
+    __position 2139.8694 113.88441
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765-1776114029688" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for kids ages 4 to 6 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688"
+    __position 2992.3936 -17.290216
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196-1776114029688" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688"
+    __position 3001.5566 113.85662
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863-1776114029688" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688"
+    __position 3006.819 254.52559
+}
+MultiObjective id="f60d4848-2ae5-4c5c-a974-0c1fe454628d-1776114029688" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Booking Confirm 3.1"
+            Description "Confirm from contact  the ages of the kids {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688.result[0]}}   "
+            id "e5d0043a-cea9-496e-a4bf-ce8108472cac"
+        }
+    }
+    __dynamicVariables
+    Next handle="7a19a86c-823e-4c12-968d-e520536a65c3-1776114029688"
+    __position 2308.8943 -10.274341
+}
+Comparator id="7a19a86c-823e-4c12-968d-e520536a65c3-1776114029688" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The age range is 3 to 5 years old "
+    Title "3 - 5 Age Range"
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765-1776114029688"
+    False handle="44abf063-fba4-45de-bbfe-fa1f3ca365ee-1776168061629"
+    __position 2506.1108 -8.257038
+}
+Comparator id="cf5045f3-200b-46aa-8f1f-00ff87042c68-1776114029688" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    ExpressionLeftValue ""
+    AIExpression "The age range is within 7 to 14 years old based from {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261.result[0]}} "
+    Title "Booking based on Age Range "
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196-1776114029688"
+    False handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863-1776114029688"
+    __position 2722.4634 130.59132
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776114610830" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="ca7375c4-10d7-4f96-ba07-b16d13549c29"
+    __position 3701.6018 -14.132056
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776115041011" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776115045029"
+    __position 1130.7523 -35.665913
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776115045029" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="fc10a3d6-6b37-41f4-ac46-e3ede02cdc58"
+    __position 1350.3807 -32.55258
+}
+Conversation id="239afc6a-919d-4c2a-bebf-9829dabe5af3-1776115062333" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 1217.5508 -259.08902
+}
+Statement id="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688-1776115251120" {
+    Attachment ""
+    MoveOn ""
+    UseAI true
+    Title "Confirm Appointment"
+    __dynamicVariables
+    Statement "Politely confirm the {{contact.first_name}}'s appointment schedule, date and time along with name, email, phone number, and the class they are booking for."
+    Next handle="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776114610830-1776278142677"
+    __position 3504.374 543.073
+}
+MultiObjective id="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120" {
+    Objectives {
+        _ {
+            MaxAttempts 10
+            Sensitivity 60
+            SkipIfNotBlank false
+            Title "Minor's Full Name 3.2"
+            Description "Determine the another kids' full name"
+            id "f9ad3ff8-6d7f-48cb-a3ee-dc4b546c1c91"
+            Variable "contact.youth_name"
+            Prompt "Ask the contact politely about another kids' full name"
+        }
+    }
+    __dynamicVariables
+    Next handle="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688-1776115251120"
+    __position 2017.0172 546.42346
+}
+MultiObjective id="d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688-1776115251120" {
+    Objectives {
+        _ {
+            MaxAttempts 10
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Date of Birth (Kid)3.2"
+            Description "Determine the birthdate of   {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120.result[0]}} "
+            Variable "contact.youth_birthday"
+            Prompt "ask {{contact.first_name}} politely and be respectful"
+        }
+    }
+    __dynamicVariables
+    Next handle="f60d4848-2ae5-4c5c-a974-0c1fe454628d-1776114029688-1776115251120"
+    __position 2207.3638 547.24243
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765-1776114029688-1776115251120" {
+    __dynamicVariables
+    CalendarName "Youth 4-6 Martial Arts"
+    Title "Booking Kids (3-5) BJJ"
+    Description "Book a free trial class for kids ages 4 to 6 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688-1776115251120"
+    __position 3039.2183 416.0678
+}
+Booking id="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196-1776114029688-1776115251120" {
+    __dynamicVariables
+    CalendarName "Youth 7-12 Martial Arts"
+    Title "Booking Kids (7-13) BJJ"
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688-1776115251120"
+    __position 3049.2517 672.5739
+}
+Booking id="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863-1776114029688-1776115251120" {
+    CalendarName "Youth 7-12 Martial Arts"
+    __dynamicVariables
+    Description "Book a free trial class for kids ages 7 to 12 {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    Title "Booking Kids (10-14) BJJ"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776114029688-1776115251120"
+    __position 3054.5144 813.2429
+}
+MultiObjective id="f60d4848-2ae5-4c5c-a974-0c1fe454628d-1776114029688-1776115251120" {
+    Objectives {
+        _ {
+            MaxAttempts 3
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "Booking Confirm 3.2"
+            Description "Confirm from contact  the ages of the kids {{nodes.d806b6fd-f8da-440b-b83a-84586ba01030-1768937043767-1769116574939-1775851007261-1776114029688.result[0]}}   "
+            id "e5d0043a-cea9-496e-a4bf-ce8108472cac"
+        }
+    }
+    __dynamicVariables
+    Next handle="7a19a86c-823e-4c12-968d-e520536a65c3-1776114029688-1776115251120"
+    __position 2384.13 544.443
+}
+Comparator id="7a19a86c-823e-4c12-968d-e520536a65c3-1776114029688-1776115251120" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The age range is 3 to 5 years old "
+    Title "3 - 5 Age Range"
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768849927878-1775851932765-1776114029688-1776115251120"
+    False handle="44abf063-fba4-45de-bbfe-fa1f3ca365ee"
+    __position 2552.806 549.27106
+}
+Comparator id="cf5045f3-200b-46aa-8f1f-00ff87042c68-1776114029688-1776115251120" {
+    ExpressionOperator "LessThan"
+    UseAI true
+    __dynamicVariables
+    ExpressionLeftValue ""
+    AIExpression "The age range is within 7 to 14 years old based from {{nodes.f60d4848-2ae5-4c5c-a974-0c1fe454628d-1776114029688-1776115251120.result[0]}}  "
+    Title "Booking based on Age Range "
+    True handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1775851936196-1776114029688-1776115251120"
+    False handle="fc465a07-0b03-40c0-bf2e-0cd3f282b80b-1775851940863-1776114029688-1776115251120"
+    __position 2798.9976 688.872
+}
+rectangle id="8c3b679b-e705-46f8-a2fb-a003c87bbc99" {
+    color "gray"
+    positionMode "center"
+    fontSize 46
+    textPosition {
+        x 412.75
+        y 202.25
+    }
+    text "Child Booking Flow\n\n\n \n\n\n(Additional Children)\n\n"
+    Next handle="EOC"
+    __position 6104.0063 107.61461
+    __style 876.0 402.0
+    __zIndex -1
+}
+rectangle id="5413a9f8-41b7-4867-97a1-3a3992d84a1e" {
+    color "indigo"
+    positionMode "center"
+    fontSize 32
+    textPosition {
+        x 308.75
+        y 137
+    }
+    text "Adult Booking Flow (Additional Participants)"
+    Next handle="EOC"
+    __position 6010.587 530.59656
+    __style 667.0 300.0
+    __zIndex -1
+}
+Conversation id="239afc6a-919d-4c2a-bebf-9829dabe5af3-1776115863187" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position 3965.6082 545.60315
+}
+Statement id="44abf063-fba4-45de-bbfe-fa1f3ca365ee" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Notif"
+    __dynamicVariables
+    Statement "Give info to the contact that we'll book them now based on the kids' age range between 7 to 14 years old"
+    Next handle="cf5045f3-200b-46aa-8f1f-00ff87042c68-1776114029688-1776115251120"
+    __position 2679.534 635.8214
+}
+Statement id="44abf063-fba4-45de-bbfe-fa1f3ca365ee-1776168061629" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Notif"
+    __dynamicVariables
+    Statement "Give info to the contact that we'll book them now based on the kids' age range between 7 to 14 years old"
+    Next handle="cf5045f3-200b-46aa-8f1f-00ff87042c68-1776114029688"
+    __position 2579.9277 129.94635
+}
+Statement id="44abf063-fba4-45de-bbfe-fa1f3ca365ee-1776168061629-1776168103215" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Notif"
+    __dynamicVariables
+    Statement "Give info to the contact that we'll book them now based on their kids' age range. The age range is between 7 to 14 years old"
+    Next handle="cf5045f3-200b-46aa-8f1f-00ff87042c68"
+    __position 349.48154 126.2511
+}
+ModifyTags id="fcb14888-4c48-4638-b4d6-1ad9d452c8ba-1776114610830-1776278142677" {
+    Title "add tag (booked)"
+    __dynamicVariables
+    TagsToAdd {
+        _ {
+            id "0b6aa783-9f91-4199-8368-5fdffbca5f6c"
+            Tag "booked"
+        }
+    }
+    Next handle="239afc6a-919d-4c2a-bebf-9829dabe5af3-1776115863187"
+    __position 3727.663 542.4219
+}
+ScenarioCustom id="4adde512-0473-40c7-a0d1-2811f3b18352" {
+    AllowReEntry ""
+    Priority 50
+    Threshold 9
+    Description "If Contact has already booked at least one enrollee and is now declining to add more."
+    Title "No additional Booking"
+    __dynamicVariables
+    Next handle="c646cc63-eb48-4271-a019-9d0fb906963e-1776094005648-1776278620377"
+    __position -2669.818 290.4247
+}
+Statement id="c646cc63-eb48-4271-a019-9d0fb906963e-1776094005648-1776278620377" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "Reminders"
+    __dynamicVariables
+    Statement "Give general reminders for {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} about rules and regulations. Ask {{nodes.8e1dfbef-5138-4768-912c-d974df32d271.result[0]}} if they have questions."
+    Next handle="14a07523-2650-4cc9-9012-6bade8bac61c-1769117512301-1776278657701"
+    __position -2354.465 291.0081
+}
+Conversation id="14a07523-2650-4cc9-9012-6bade8bac61c-1769117512301-1776278657701" {
+    ExtraPrompt "answer questions if prompted"
+    __dynamicVariables
+    Next handle="EOC"
+    __position -2077.488 288.1261
+}
+AISwitch id="3fa93b6b-f3d1-49f4-b60a-188312bf90bb" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed that there is another adult to book {{nodes.5c82b5a9-4491-46a9-b1c4-a6a369190299.result[0]}} "
+    Title "Another Booking for Adult 1?"
+    AiCases {
+        _ {
+            id "524662ff-73e2-4cf7-b13a-5ab1156ff863"
+            CaseName "adult"
+        }
+        _ {
+            id "948a9d94-e370-4b87-a036-93d39761c36f"
+            CaseName "kid"
+        }
+    }
+    AiCases:1 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600"
+    AiCases:0 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176"
+    __position -777.56537 575.1359
+}
+AISwitch id="3fa93b6b-f3d1-49f4-b60a-188312bf90bb-1776278916668" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed that there is another adult to book {{nodes.5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600.result[0]}}  "
+    Title "Another Booking for Adult 2?"
+    AiCases {
+        _ {
+            id "524662ff-73e2-4cf7-b13a-5ab1156ff863"
+            CaseName "adult"
+        }
+        _ {
+            id "948a9d94-e370-4b87-a036-93d39761c36f"
+            CaseName "kid"
+        }
+    }
+    AiCases:0 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882"
+    AiCases:1 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600"
+    __position -763.1084 892.76105
+}
+AISwitch id="3fa93b6b-f3d1-49f4-b60a-188312bf90bb-1776278916668-1776278985561" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed that there is another adult to book {{nodes.5c82b5a9-4491-46a9-b1c4-a6a369190299-1776094066600-1776094953504.result[0]}}   "
+    Title "Another Booking for Adult 3?"
+    AiCases {
+        _ {
+            id "524662ff-73e2-4cf7-b13a-5ab1156ff863"
+            CaseName "adult"
+        }
+        _ {
+            id "948a9d94-e370-4b87-a036-93d39761c36f"
+            CaseName "kid"
+        }
+    }
+    AiCases:0 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504"
+    AiCases:1 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600"
+    __position -746.0157 1187.8538
+}
+AISwitch id="14eb88f5-9006-45ac-9fa2-89b6841c0ee5" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed to want to book free trial class for {{nodes.fc10a3d6-6b37-41f4-ac46-e3ede02cdc58.result[0]}} "
+    Title "Another Kid? 1"
+    AiCases {
+        _ {
+            id "63eb292f-cdb2-4c46-a8b8-ba6ea910a5cd"
+            CaseName "kid"
+        }
+        _ {
+            id "4edaee82-1963-4b69-aed5-58b351a801e6"
+            CaseName "adult"
+        }
+    }
+    AiCases:0 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688"
+    AiCases:1 handle="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976"
+    __position 1756.1597 -27.312796
+}
+AISwitch id="14eb88f5-9006-45ac-9fa2-89b6841c0ee5-1776279274095" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed to want to book free trial class for {{nodes.ca7375c4-10d7-4f96-ba07-b16d13549c29.result[0]}}   "
+    Title "Another Kid? 2"
+    AiCases {
+        _ {
+            id "63eb292f-cdb2-4c46-a8b8-ba6ea910a5cd"
+            CaseName "kid"
+        }
+        _ {
+            id "4edaee82-1963-4b69-aed5-58b351a801e6"
+            CaseName "adult"
+        }
+    }
+    AiCases:0 handle="3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1775850855600-1776114029688-1776115251120"
+    AiCases:1 handle="a4211953-cf33-4ccd-b791-84897c5c9ea9-1768844537976"
+    __position 1818.9349 484.96533
+}
+AISwitch id="14eb88f5-9006-45ac-9fa2-89b6841c0ee5-1776279274095-1776279333683" {
+    UseAI true
+    __dynamicVariables
+    Description "Confirmed to want to book free trial class for {{nodes.fc10a3d6-6b37-41f4-ac46-e3ede02cdc58-1776114783662.result[0]}}  "
+    Title "Another Kid? 2"
+    AiCases {
+        _ {
+            id "63eb292f-cdb2-4c46-a8b8-ba6ea910a5cd"
+            CaseName "Yes"
+        }
+        _ {
+            id "4edaee82-1963-4b69-aed5-58b351a801e6"
+            CaseName "No"
+        }
+    }
+    Next handle="EOC"
+    __position 1172.5652 136.8503
+}
+MultiObjective id="ca7375c4-10d7-4f96-ba07-b16d13549c29" {
+    Objectives {
+        _ {
+            MaxAttempts "99"
+            Sensitivity "50"
+            SkipIfNotBlank false
+            Title "For another kid? 2"
+            Description "Determine if they want to book a trial class for another kid, an adult, or no longer wish to book."
+        }
+    }
+    __dynamicVariables
+    Next handle="14eb88f5-9006-45ac-9fa2-89b6841c0ee5-1776279274095"
+    __position 1647.9971 488.10358
+}
+AISwitch id="4c0e8f56-e7fe-4d0b-a4f1-806f638ac0db-1779135184458" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "118c9fd7-17b4-4685-a10c-b8e283d06080"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "2246ed65-74ac-44ec-ac4c-22471954286f"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "74e4a97f-3a96-419f-be14-d5cce5f8f77a"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "7a63937b-2b21-44fc-89c5-f1b2c8173c4d"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "547204f8-f906-44a9-8f09-5f07f5ec69d0"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353"
+    AiCases:1 handle="821c305a-4ec7-4b85-b241-efa2c97cc4cb-1779135190049"
+    AiCases:2 handle="6df4ca2f-d411-461b-bda0-6e1e00f2a5e8-1779135192123"
+    AiCases:3 handle="5a0b3cd7-2e97-4de7-8d0f-eda9a5026285-1779135189621"
+    AiCases:4 handle="ceeef00a-ba40-40bc-92f5-ec662fd76408-1779135186463"
+    __position 0.0 0.0
+}
+Booking id="821c305a-4ec7-4b85-b241-efa2c97cc4cb-1779135190049" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388"
+    __position 100.0 0.0
+}
+Booking id="6df4ca2f-d411-461b-bda0-6e1e00f2a5e8-1779135192123" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388"
+    __position 100.0 60.0
+}
+Booking id="5a0b3cd7-2e97-4de7-8d0f-eda9a5026285-1779135189621" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388"
+    __position 100.0 120.0
+}
+Booking id="ceeef00a-ba40-40bc-92f5-ec662fd76408-1779135186463" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388"
+    __position 100.0 180.0
+}
+AISwitch id="a64bef42-c421-41c9-ac2f-8fb2deb607fb-1779135184623" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "9da414d9-bb84-4cbf-a164-b1dde039c620"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "cb98e61b-3c50-4254-b4a6-d5a19ebf6a58"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "ebbf34ef-5036-4e76-9c02-ba5d19ff4d23"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "29973675-6980-4535-b410-5ca655cc069d"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "244684d9-2fdd-4973-a4b6-fe44e3aa5eff"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130327949"
+    AiCases:1 handle="36bd47db-0ba7-4619-a68f-c09945942de1-1779135187243"
+    AiCases:2 handle="9abe0e59-1d54-41a1-b9d7-e5ebb1df6cd7-1779135187535"
+    AiCases:3 handle="cbb9f0dc-e359-4c31-bc26-516430ffd049-1779135193540"
+    AiCases:4 handle="7a1567ee-5a39-43c1-9e2a-b95e6346370c-1779135186586"
+    __position 0.0 0.0
+}
+Booking id="36bd47db-0ba7-4619-a68f-c09945942de1-1779135187243" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187"
+    __position 100.0 0.0
+}
+Booking id="9abe0e59-1d54-41a1-b9d7-e5ebb1df6cd7-1779135187535" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187"
+    __position 100.0 60.0
+}
+Booking id="cbb9f0dc-e359-4c31-bc26-516430ffd049-1779135193540" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187"
+    __position 100.0 120.0
+}
+Booking id="7a1567ee-5a39-43c1-9e2a-b95e6346370c-1779135186586" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769116624252.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187"
+    __position 100.0 180.0
+}
+AISwitch id="1f158a45-d02b-4e98-bca0-c92e7caa77e1-1779135184724" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "8724cb69-1923-4c19-8b3b-d094ebe94917"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "9004492c-1cad-412a-9458-69d226efed1c"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "7ed986bf-bc63-4229-9d37-98efdde4cd2a"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "eff3ee5e-cf3d-4274-917b-b1776e1fc3b3"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "90158b88-d6a1-46e8-91ca-e04b5b63aacd"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130887916"
+    AiCases:1 handle="a43595f5-e892-43bb-b396-92cbb44022ce-1779135193509"
+    AiCases:2 handle="9d9ebf61-884a-4fcb-a81a-8c898f9af531-1779135190667"
+    AiCases:3 handle="3fd0c9dc-90b8-4612-82df-09fe85d88575-1779135193207"
+    AiCases:4 handle="544985f2-900a-4ea5-8865-2212b3d3e161-1779135189781"
+    __position 0.0 0.0
+}
+Booking id="a43595f5-e892-43bb-b396-92cbb44022ce-1779135193509" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447"
+    __position 100.0 0.0
+}
+Booking id="9d9ebf61-884a-4fcb-a81a-8c898f9af531-1779135190667" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447"
+    __position 100.0 60.0
+}
+Booking id="3fd0c9dc-90b8-4612-82df-09fe85d88575-1779135193207" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447"
+    __position 100.0 120.0
+}
+Booking id="544985f2-900a-4ea5-8865-2212b3d3e161-1779135189781" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1768919793944-1769117315285.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117580447"
+    __position 100.0 180.0
+}
+AISwitch id="435da67a-a550-4a3c-affb-06dfe76db87f-1779135184824" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "c1d785b3-e280-436a-b5a8-eb59510cce23"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "6421906f-4583-430a-837e-929c4848d389"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "0423a6ef-9664-44b9-8914-021918a6f1d0"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "0c1caa09-3654-4a1b-b321-e33e6ce216bc"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "6971f26b-37a2-4a99-bc9c-ee0f362bcdb2"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155"
+    AiCases:1 handle="dd63377e-9f3b-4b4e-9dd8-fdaf28ad8d52-1779135185025"
+    AiCases:2 handle="f4a219ef-3385-4a1f-97b2-e900f394751b-1779135190236"
+    AiCases:3 handle="7d4c16e2-c7e1-4f8c-8bd4-f04c1428d6a9-1779135187761"
+    AiCases:4 handle="73accf69-6194-4e71-bc68-8a0e62a3dbbf-1779135193301"
+    __position 0.0 0.0
+}
+Booking id="dd63377e-9f3b-4b4e-9dd8-fdaf28ad8d52-1779135185025" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913"
+    __position 100.0 0.0
+}
+Booking id="f4a219ef-3385-4a1f-97b2-e900f394751b-1779135190236" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913"
+    __position 100.0 60.0
+}
+Booking id="7d4c16e2-c7e1-4f8c-8bd4-f04c1428d6a9-1779135187761" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913"
+    __position 100.0 120.0
+}
+Booking id="73accf69-6194-4e71-bc68-8a0e62a3dbbf-1779135193301" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720.result[0]}}. Book one trial only - additional enrollees are handled in a separate step "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913"
+    __position 100.0 180.0
+}
+AISwitch id="ec3e371a-2a90-4e49-bf4c-62479a57d9ab-1779135184924" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "9708054a-770c-44a7-b852-e37106db4d64"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "3613701f-d71b-415d-93ac-d26467aea86f"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "9abfefba-413b-446f-9f3b-d1f8e0063b38"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "e7f71bb5-dfe9-4e6e-a7f7-4676171c51b0"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "d81c74b1-ec22-42b8-8255-3cec791fcfe8"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1772130327949-1772130979696"
+    AiCases:1 handle="848fb57b-4040-45a9-b917-0f125f87be0c-1779135185315"
+    AiCases:2 handle="32739cc0-afd8-4447-9357-d2e359516a1c-1779135186713"
+    AiCases:3 handle="4eaf0ea4-7f40-40e2-af4d-32e8c04ae783-1779135192799"
+    AiCases:4 handle="a13d4b45-4425-4870-ae00-0ffceabb2607-1779135185833"
+    __position 0.0 0.0
+}
+Booking id="848fb57b-4040-45a9-b917-0f125f87be0c-1779135185315" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078"
+    __position 100.0 0.0
+}
+Booking id="32739cc0-afd8-4447-9357-d2e359516a1c-1779135186713" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078"
+    __position 100.0 60.0
+}
+Booking id="4eaf0ea4-7f40-40e2-af4d-32e8c04ae783-1779135192799" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078"
+    __position 100.0 120.0
+}
+Booking id="a13d4b45-4425-4870-ae00-0ffceabb2607-1779135185833" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768854224545-1769116418604-1769117406189.result[0]}}. Book one trial only - additional enrollees are handled in a separate step"
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1769117021187-1769117619078"
+    __position 100.0 180.0
+}
+AISwitch id="3a58fa7f-8f07-449c-afae-52f202ba4f7b-1779135185024" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "42f70740-a899-4cb4-b763-0c0eef0ef89e"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "b56407e4-f1b1-4a7d-aff9-76cb2c01798d"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "3c8d4ede-edc6-4545-965d-298c8b1c3ae2"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "e8788720-ad8a-4177-9e5a-da9c26485566"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "f65215c2-0396-4996-a0c7-96791d5b01d9"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176"
+    AiCases:1 handle="926802df-a8b3-4e59-a633-f550fe9f00b7-1779135188577"
+    AiCases:2 handle="2d093de5-f156-49ee-8c14-e28a9833047f-1779135193161"
+    AiCases:3 handle="dcc9dec0-f039-4144-bb43-4bd600c5b75c-1779135189889"
+    AiCases:4 handle="c973ca64-506b-46ce-b6da-441df7b3802f-1779135187568"
+    __position 0.0 0.0
+}
+Booking id="926802df-a8b3-4e59-a633-f550fe9f00b7-1779135188577" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176"
+    __position 100.0 0.0
+}
+Booking id="2d093de5-f156-49ee-8c14-e28a9833047f-1779135193161" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176"
+    __position 100.0 60.0
+}
+Booking id="dcc9dec0-f039-4144-bb43-4bd600c5b75c-1779135189889" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176"
+    __position 100.0 120.0
+}
+Booking id="c973ca64-506b-46ce-b6da-441df7b3802f-1779135187568" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176.result[0]}}. Book one trial only - additional enrollees are handled in a separate step  "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176"
+    __position 100.0 180.0
+}
+AISwitch id="a5d13392-11f5-4c44-bef1-e45ae2e5be19-1779135185124" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "bbc98c98-557e-4e5c-bead-126918f2e304"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "9ff0a050-14e4-43c9-b28b-67fd1eb96df3"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "affafd7c-2411-4552-8cfb-1d1df9c3ba83"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "2f0701d8-b0c4-40b8-8bec-025715bb27f0"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "2cccebbc-3028-4fd1-892d-658421b0fd76"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176-1776094144882"
+    AiCases:1 handle="f0368529-201f-4d9e-a531-6c2331fce9c5-1779135189040"
+    AiCases:2 handle="e1349dfa-dda7-4e91-aac7-ef7aa8d5587f-1779135186965"
+    AiCases:3 handle="1920c521-4beb-4bff-b731-de3db6cccf66-1779135191964"
+    AiCases:4 handle="c6d12142-b625-47f9-9c2f-3d49616e7b7c-1779135188509"
+    __position 0.0 0.0
+}
+Booking id="f0368529-201f-4d9e-a531-6c2331fce9c5-1779135189040" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882"
+    __position 100.0 0.0
+}
+Booking id="e1349dfa-dda7-4e91-aac7-ef7aa8d5587f-1779135186965" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882"
+    __position 100.0 60.0
+}
+Booking id="1920c521-4beb-4bff-b731-de3db6cccf66-1779135191964" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882"
+    __position 100.0 120.0
+}
+Booking id="c6d12142-b625-47f9-9c2f-3d49616e7b7c-1779135188509" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882.result[0]}}. Book one trial only - additional enrollees are handled in a separate step   "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882"
+    __position 100.0 180.0
+}
+AISwitch id="132f69d1-276a-4843-859d-3f1387f24877-1779135185225" {
+    UseAI true
+    Title "Adult Discipline Switch"
+    __dynamicVariables
+    Description "Route the adult to the discipline they asked for. Default to Adult Intro to Mixed Martial Arts if they have no preference or did not name a specific discipline. Only pick an alternate discipline when the adult explicitly named it."
+    AiCases {
+        _ {
+            id "840c9875-1910-4683-a483-bf4608880f99"
+            CaseName "Adult Intro to Mixed Martial Arts - default when no specific discipline is requested"
+        }
+        _ {
+            id "6480c351-cba6-4467-9269-1741c319d8ef"
+            CaseName "Adult Kickboxing - only when the adult explicitly asks for Muay Thai, kickboxing, or striking"
+        }
+        _ {
+            id "575e1561-56b2-45c6-9e31-0a2049d6026a"
+            CaseName "Adult Brazilian Jiu-Jitsu - only when the adult explicitly asks for that specific BJJ format"
+        }
+        _ {
+            id "9f2db695-1ca8-45d7-838f-409dcd2e0958"
+            CaseName "Adult No-Gi Brazilian Jiu-Jitsu - only when the adult explicitly asks for no-gi or no-gi BJJ / no-gi grappling"
+        }
+        _ {
+            id "9ba9d1cd-f83e-4611-ba78-769704cd84f0"
+            CaseName "Adult Boxing - only when the adult explicitly asks for Adult Boxing"
+        }
+    }
+    AiCases:0 handle="86b4a781-3d49-453d-a13b-9e40f28d4732-1768850028015-1768850217038-1768850273031-1768850902353-1776086079155-1776093878176-1776094144882-1776094953504"
+    AiCases:1 handle="f5cb80f7-46e9-4e38-b7d5-1b9fec3e5f17-1779135186594"
+    AiCases:2 handle="41f6d27f-04b4-4cd5-b594-8586d1a5572d-1779135188214"
+    AiCases:3 handle="5746e671-fbc7-4333-a8b5-4ffae466380b-1779135191882"
+    AiCases:4 handle="1a02ee56-b60b-47ab-a9b1-51f8b8bdcf87-1779135190425"
+    __position 0.0 0.0
+}
+Booking id="f5cb80f7-46e9-4e38-b7d5-1b9fec3e5f17-1779135186594" {
+    __dynamicVariables
+    CalendarName "Adult Kickboxing"
+    Title "Booking Adult Kickboxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}. Book one trial only - additional enrollees are handled in a separate step    "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504"
+    __position 100.0 0.0
+}
+Booking id="41f6d27f-04b4-4cd5-b594-8586d1a5572d-1779135188214" {
+    __dynamicVariables
+    CalendarName "Adult Brazilian Jiu-Jitsu"
+    Title "Booking Adult Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}. Book one trial only - additional enrollees are handled in a separate step    "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504"
+    __position 100.0 60.0
+}
+Booking id="5746e671-fbc7-4333-a8b5-4ffae466380b-1779135191882" {
+    __dynamicVariables
+    CalendarName "Adult No-Gi Brazilian Jiu-Jitsu"
+    Title "Booking Adult No-Gi Brazilian Jiu-Jitsu"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}. Book one trial only - additional enrollees are handled in a separate step    "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504"
+    __position 100.0 120.0
+}
+Booking id="1a02ee56-b60b-47ab-a9b1-51f8b8bdcf87-1779135190425" {
+    __dynamicVariables
+    CalendarName "Adult Boxing"
+    Title "Booking Adult Boxing"
+    Description "Book a free trial class for {{nodes.3ba0712d-b09d-41de-bcea-2a9a2090a27b-1768845441789-1768850499713-1776085959720-1776093878176-1776094144882-1776094953504.result[0]}}. Book one trial only - additional enrollees are handled in a separate step    "
+    FailedTag "concierge - failed booking"
+    Next handle="0cee3b69-b209-464d-9390-916c82c79931-1768853645388-1776093702913-1776093878176-1776094144882-1776094953504"
+    __position 100.0 180.0
+}
+Statement id="youth-nocal-msg-c6143782-54f7-4f18-ab29-fc2e5e519717" {
+    Attachment ""
+    MoveOn true
+    UseAI "true"
+    Title "13-17 No Online Class"
+    __dynamicVariables
+    Statement "Let the contact know we do not have an online class to book for ages 13 to 17 - our youth program ends at 12 and adult classes are 18 and over. Make sure we have a parent or guardian name, phone, and email on file, let them know our team will reach out directly to help get the teen started, and do not book any appointment."
+    Next handle="EOC"
+    __position 0.0 240.0
+}
+Comparator id="85d4ae55-0977-4d3e-9838-9fcdde2e9a1e-1779135184585" {
+    ExpressionOperator "GreaterThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The person being enrolled is aged 13, 14, 15, 16, or 17 years old based on their date of birth (13 or older but under 18)"
+    Title "Youth 13-17 No-Calendar Gate"
+    True handle="youth-nocal-msg-c6143782-54f7-4f18-ab29-fc2e5e519717"
+    False handle="44682e4d-95b3-4ee6-844a-39a09f00bdfc"
+    __position 0.0 0.0
+}
+Comparator id="670f7ba2-54bb-4d16-8645-82f75da804ef-1779135184685" {
+    ExpressionOperator "GreaterThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The person being enrolled is aged 13, 14, 15, 16, or 17 years old based on their date of birth (13 or older but under 18)"
+    Title "Youth 13-17 No-Calendar Gate"
+    True handle="youth-nocal-msg-c6143782-54f7-4f18-ab29-fc2e5e519717"
+    False handle="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577"
+    __position 0.0 0.0
+}
+Comparator id="739d750b-ae6e-4024-ad85-bec29f945caf-1779135184785" {
+    ExpressionOperator "GreaterThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The person being enrolled is aged 13, 14, 15, 16, or 17 years old based on their date of birth (13 or older but under 18)"
+    Title "Youth 13-17 No-Calendar Gate"
+    True handle="youth-nocal-msg-c6143782-54f7-4f18-ab29-fc2e5e519717"
+    False handle="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577-1772130816944"
+    __position 0.0 0.0
+}
+Comparator id="8f2680dc-0496-4d5a-a869-56cea5e40943-1779135184885" {
+    ExpressionOperator "GreaterThan"
+    UseAI true
+    __dynamicVariables
+    AIExpression "The person being enrolled is aged 13, 14, 15, 16, or 17 years old based on their date of birth (13 or older but under 18)"
+    Title "Youth 13-17 No-Calendar Gate"
+    True handle="youth-nocal-msg-c6143782-54f7-4f18-ab29-fc2e5e519717"
+    False handle="44682e4d-95b3-4ee6-844a-39a09f00bdfc-1772130245577-1772130913049"
+    __position 0.0 0.0
+}

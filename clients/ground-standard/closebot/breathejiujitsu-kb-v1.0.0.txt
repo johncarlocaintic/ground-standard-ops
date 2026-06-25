@@ -1,0 +1,130 @@
+================================================================================
+BREATHE Jiu-Jitsu — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-17
+Status: CLEANED + WEBSITE/GHL-VERIFIED — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-13); breatheJiu-Jitsu.com (2026-05-13);
+GHL calendars (live, 2026-05-17)
+Verification: Website + GHL-calendar verified 2026-05-17. Free trial confirmed
+on site ("TRY A CLASS FREE"). Kids age buckets taken from live GHL calendars
+(4-6, 7-13) which supersede the KB's 7-9/10-12 class naming. Georgetown TX
+address excluded (template artifact, also on an unrelated gym site).
+Purpose: CloseBot AI Chatbot — Lead Qualification & Free Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Breathe Jiu-Jitsu
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Yaphank, NY
+
+Description: Breathe Jiu-Jitsu is a Brazilian Jiu-Jitsu academy in Yaphank,
+New York. The academy offers BJJ training for adults and children of all
+experience levels, from first-time students to competitive athletes. No prior
+experience is needed to begin. Classes provide a welcoming environment where
+students can challenge themselves, learn, and develop through martial arts.
+
+Programs Offered:
+- Adult Brazilian Jiu-Jitsu
+- Kids Brazilian Jiu-Jitsu
+- Competition Class
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 84 Horseblock Rd. Unit H, Yaphank, NY 11980
+Website: breatheJiu-Jitsu.com
+
+================================================================================
+SECTION 3 — INSTRUCTORS
+================================================================================
+
+Professor Danny Stolfi — Head Instructor / Professor
+Coach Jamie — Instructor
+
+All instructors hold recognized martial arts certifications and have years of
+teaching experience.
+
+================================================================================
+SECTION 4 — CLASS SCHEDULE
+================================================================================
+
+Class schedule is available at breatheJiu-Jitsu.com. Specific class days and
+times are confirmed when scheduling a trial. Programs run for adults and for
+children's age groups.
+
+================================================================================
+SECTION 5 — PROGRAM DESCRIPTIONS
+================================================================================
+
+ADULT BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu training for adults at all experience levels. No prior
+experience is required. Free trial class available with no commitment.
+
+KIDS BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu for children, with structured, safe, age-appropriate
+instruction grouped by age. Builds discipline, technique, and confidence.
+
+COMPETITION CLASS
+Advanced training class for students pursuing competition. Availability and
+eligibility are confirmed directly with the academy.
+
+================================================================================
+SECTION 6 — NEW STUDENT / TRIAL CLASS INFORMATION
+================================================================================
+
+A free trial class is available for new students. No commitment is required to
+attend a trial class. No prior martial arts or BJJ experience is required. All
+classes are designed to accommodate newcomers alongside experienced students.
+When a new student asks how to sign up or get started, the path is to book a
+free trial class.
+
+================================================================================
+SECTION 7 — MEMBERSHIP AND PRICING
+================================================================================
+
+Membership pricing is not published. Pricing varies based on training goals and
+the number of classes per week. Membership options and accurate pricing are
+discussed by instructors with new students during or right after the free trial
+class, based on what program is the right fit. The trial class is completely
+free with no commitment required.
+
+================================================================================
+SECTION 8 — FAQs
+================================================================================
+
+Q: What is Breathe Jiu-Jitsu?
+A: A Brazilian Jiu-Jitsu academy in Yaphank, New York, offering BJJ programs
+for adults and children of all experience levels.
+
+Q: Where is Breathe Jiu-Jitsu located?
+A: 84 Horseblock Rd. Unit H, Yaphank, NY 11980.
+
+Q: What programs are offered?
+A: Adult BJJ, Kids BJJ, and a Competition Class.
+
+Q: Is there a free trial class?
+A: A free trial class is available with no commitment required.
+
+Q: How do I sign up?
+A: The first step is to book a free trial class. Membership enrollment is
+handled following the trial.
+
+Q: Do I need experience to start?
+A: No prior experience is needed. All classes accommodate newcomers.
+
+Q: Who are the instructors?
+A: Professor Danny Stolfi is the head instructor. Coach Jamie is also on staff.
+All instructors hold recognized martial arts certifications with years of
+teaching experience.
+
+Q: Where can I find the class schedule?
+A: The class schedule is available at breatheJiu-Jitsu.com.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

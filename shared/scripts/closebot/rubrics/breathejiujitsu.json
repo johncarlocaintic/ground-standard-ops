@@ -1,0 +1,24 @@
+{
+  "bot": "breathejiujitsu",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee in bot output." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is NOT Adult Fundamentals BJJ, Adult Women's Only BJJ, Kids 4-6 BJJ, or Kids 7-13 BJJ. Flag source-bleed (Muay Thai, Gi, other-gym programs)." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're booked'/'all set' as a BOOKING confirmation WITHOUT the booking tool returning success first. (A do-not-contact/opt-out 'all set' with a real tag action is NOT a false closure.)" },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge language on known negations", "level": "standard", "look_for": "bot says 'let me check' where it should give a firm known answer." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains {{contact.x}}, {{variable}}, {{nodes.x.result}}." },
+    { "id": "mnd_09", "category": "must_not_do", "description": "Does not proactively volunteer non-bookable or women's-only programs", "level": "standard", "look_for": "bot brings up the Competition Class OR the women's-only class on its own without the lead asking." },
+    { "id": "mnd_10", "category": "must_not_do", "description": "No coach-redirect or substitute-calendar for non-bookable asks", "level": "blocker", "look_for": "when asked for the Competition Class, bot says 'discuss with the coach' OR books a substitute calendar. Correct: 'not available to book online', steer to a free trial, no coach-redirect, no substitution." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before collecting personal info", "level": "standard", "look_for": "bot asks 'who is this for' before collecting names/DOBs (unless the lead volunteered it)." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB for all enrollees before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) before booking; age derived from DOB." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected without giving a figure", "level": "blocker", "look_for": "lead pushes pricing 2+ times; bot firmly redirects, never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Under-18 self-booker handled as referral, not booking", "level": "blocker", "look_for": "contact themselves under 18, no parent: bot does NOT book; captures parent info, tags 'minor - needs guardian', closes with team-follow-up." },
+    { "id": "md_07", "category": "must_do", "description": "Adult (18+) default routes to Adult Fundamentals BJJ", "level": "blocker", "look_for": "adult lead (18+ by DOB) with NO women's-only request booked into 'Adult Fundamentals BJJ'. Any other calendar is a routing failure." },
+    { "id": "md_08", "category": "must_do", "description": "Explicit women's-only request routes to Adult Women's Only BJJ", "level": "standard", "look_for": "adult who explicitly asked for a women's-only class booked into 'Adult Women's Only Brazilian Jiu-Jitsu'. If no explicit request, women's-only must NOT be used." },
+    { "id": "md_09", "category": "must_do", "description": "Kid age 4-6 routes to Kids 4-6 BJJ", "level": "blocker", "look_for": "child aged 4-6 booked into 'Kids 4-6 BJJ'. Booking to Kids 7-13 or adult for this age is a routing failure." },
+    { "id": "md_10", "category": "must_do", "description": "Kid age 7-13 routes to Kids 7-13 BJJ", "level": "blocker", "look_for": "child aged 7-13 booked into 'Kids 7-13 BJJ'. A 7-year-old IS in 7-13 → Kids 7-13 BJJ. Booking to Kids 4-6 or adult is a routing failure." },
+    { "id": "md_11", "category": "must_do", "description": "Age 14-17 has no calendar — no booking, referral", "level": "blocker", "look_for": "enrollee aged 14-17 must NOT be booked (kids cap 13, adults 18+). Bot says no online slot for 14-17, tags 'minor - needs guardian', team will reach out." },
+    { "id": "md_13", "category": "must_do", "description": "Under age 4 redirected to gym contact", "level": "standard", "look_for": "child under 4: bot does NOT book; states youngest is Kids 4-6 and suggests contacting the gym at (631) 823-0098." },
+    { "id": "ec_01", "category": "edge_case", "description": "Competition Class ask -> not available online", "level": "standard", "look_for": "lead asks about the Competition Class: bot states not available to book online, steer to a free trial. No coach-redirect, no substitution." }
+  ]
+}

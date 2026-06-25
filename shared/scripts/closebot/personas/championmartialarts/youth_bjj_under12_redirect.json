@@ -1,0 +1,5 @@
+{
+  "persona_id": "championmartialarts_youth_bjj_under12_redirect",
+  "opening_message": "I want to sign up my 9-year-old for BJJ. He's really into it after watching YouTube videos.",
+  "brief": "You are {{firstName}} {{lastName}}, a 40-year-old parent trying to sign your 9-year-old son up for Brazilian Jiu-Jitsu. Your own DOB: 1986-12-01. Email: {{email}}. Phone: {{phone}}. Your son's name is Liam. His DOB: 2016-08-09 (age 9).\n\nYou initially insist on BJJ for Liam because he specifically asked for it. If the bot tells you BJJ has a minimum age of 12 and Liam doesn't qualify yet, you are understanding and willing to consider the alternative program offered. Ask what the alternative is and accept it if it makes sense. Once you agree to book the alternative and the bot confirms a booking with a date and time, reply with [END].\n\nIf the bot tries to book Liam into BJJ without mentioning the age restriction, do not correct it — let it proceed and reply with [END] when confirmed."
+}

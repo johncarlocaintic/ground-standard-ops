@@ -1,0 +1,101 @@
+{
+  "gym": {
+    "name": "Grit Jiu-Jitsu & Muay Thai",
+    "website": "https://www.gritbjj.com/",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Grit Jiu-Jitsu & Muay Thai. We offer both Brazilian Jiu-Jitsu and Muay Thai for kids and adults at our Spokane Valley academy. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Always confirm which discipline the lead wants — BJJ or Muay Thai — before booking. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Grit Jiu-Jitsu & Muay Thai.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Always confirm discipline (BJJ vs Muay Thai) before routing to a booking calendar",
+      "Kids age 4 can only book BJJ (Muay Thai minimum age is 5)"
+    ]
+  },
+  "ghl": {
+    "locationId": "JPFHqtf4KnkqVtiUU9Bk",
+    "sourceId": "src_6MS3RHIRTR8OEKMO"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj", "calendarName": "Adult Fundamentals BJJ", "calendarId": "6arbkYsRDvZX2NYGw3Vk", "program": "bjj", "ageMin": 14 },
+      { "label": "adult_muaythai", "calendarName": "Adult Muay Thai", "calendarId": "eWs78zyvrQeaqPKvIfdD", "program": "muaythai", "ageMin": 14 }
+    ],
+    "kids": [
+      { "label": "kids_4_13_bjj", "calendarName": "Kids 4-13 BJJ", "calendarId": "D5HRfFd5QtI3G2D7Ug4S", "program": "bjj", "ageMin": 4, "ageMax": 13 },
+      { "label": "kids_5_13_muaythai", "calendarName": "Kids 5-13 Muay Thai", "calendarId": "CEe34zvSRoAr3ao7Ktdc", "program": "muaythai", "ageMin": 5, "ageMax": 13 }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Teens JitZ (ages 13-15)",
+    "Women's JitZ",
+    "Open Mat",
+    "Breakfast Club JitZ",
+    "Lunch Rollz",
+    "Adult JitZ Intermediate",
+    "Adult JitZ Advance/Competition",
+    "KidZ JitZ Intermediate",
+    "KidZ JitZ Advance/Competition",
+    "Adult Muay Thai Intermediate/Advance"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": true
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian",
+    "bjj": "bjj",
+    "muaythai": "muay thai"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": "file_RTVL6SI0SOAML9JE",
+    "fileName": "v 1.1.2 grit_jiujitsu_knowledge_base.txt",
+    "indexed": true,
+    "knownGaps": [
+      "Phone, email, website still [TO BE PROVIDED] in KB — values exist on gritbjj.com, patch to v1.2 recommended",
+      "6 schedule time inconsistencies between PDF table and text (Kids MT Fri, Adult MT Mon/Fri, BJJ upper level labels, age 13-15 routing, IMPORTANT DETAILS page missing) — blocked on Bobby/Kurt input"
+    ]
+  },
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-15",
+      "botId": "bot_0DBO3CUFM0I8HXYI",
+      "botName": "Grit Jiu-Jitsu - Launch v1.0 [initial build] (2026-05-15)",
+      "version": "v1.0"
+    },
+    {
+      "date": "2026-05-15",
+      "botId": "bot_YE304TLZ351NWW1H",
+      "botName": "Grit Jiu-Jitsu - Launch v1.1 [non-bookable program handling] (2026-05-15)",
+      "version": "v1.1"
+    },
+    {
+      "date": "2026-05-15",
+      "botId": "bot_7H147LLL7WMR506K",
+      "botName": "Grit Jiu-Jitsu - Launch v1.2 [teen 14-17 routing] (2026-05-15)",
+      "version": "v1.2"
+    }
+  ]
+}

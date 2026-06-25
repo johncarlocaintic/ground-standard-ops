@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_adult_wrestling",
+  "opening_message": "looking to train wrestling as an adult",
+  "brief": "You are {{firstName}} {{lastName}}, a 24-year-old adult (DOB: 2001-05-18) who explicitly wants wrestling. Say 'wrestling' clearly. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 2001-05-18. Accept the first slot. Expect booking into Adult Wrestling. When the bot confirms, reply with [END]."
+}

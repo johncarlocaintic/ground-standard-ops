@@ -1,0 +1,541 @@
+UNIVERSAL MIXED MARTIAL ARTS - KNOWLEDGE BASE
+
+Version: 1.1.0
+Date: February 27, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot Chatbot AI
+Purpose: Supports lead qualification and trial class booking
+
+================================================================================
+INCONSISTENCIES & DATA GAPS FLAGGED (FOR INTERNAL REFERENCE)
+================================================================================
+
+[FLAG 1 - PRICING AMBIGUITY RESOLVED BY CLIENT]
+The source PDF listed "$99 - Unlimited" in close proximity to the Afterschool
+Program section, creating ambiguity about whether this applies to martial arts
+membership alone or the combined Afterschool package. Per client instruction,
+all pricing responses defer to the standard consultation response. The $99
+figure is excluded from this knowledge base.
+
+[FLAG 2 - CONTACT PHONE & EMAIL MISSING]
+Neither source document contains a phone number or email address for the
+academy. Placeholders are used below. These must be provided by the client
+before deployment.
+
+[FLAG 3 - TRIAL CLASS FREE STATUS NOT EXPLICITLY STATED IN SOURCE]
+The source PDF does not explicitly confirm that trial classes are free.
+The client's pricing response text states "The trial class is completely free
+with no commitment required." This knowledge base reflects that language. Client
+should confirm this is accurate.
+
+[FLAG 4 - NO GENERAL BUSINESS / OFFICE HOURS PROVIDED]
+The source only contains class schedules. There is no information about walk-in
+hours, reception availability, or when someone can call. This has been omitted.
+Client should provide this information.
+
+[FLAG 5 - NO MEMBERSHIP CANCELLATION OR PAUSE POLICY]
+No cancellation notice period, pause policy, or payment methods are mentioned in
+any source document. These are likely to come up in chat. Client should provide
+this information for a future KB update.
+
+[FLAG 6 - NO STAFF / INSTRUCTOR INFORMATION]
+Unlike comparable academies, no instructor names, credentials, or bios were
+provided. The staff section has been omitted. Client may want to add this.
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Universal Mixed Martial Arts
+
+Industry: Martial Arts Training, Afterschool Programs, Fitness
+
+Address: 114-10 Liberty Ave, South Richmond Hill, NY 11419
+
+Phone: [TO BE PROVIDED BY CLIENT]
+
+Email: [TO BE PROVIDED BY CLIENT]
+
+Description: Universal Mixed Martial Arts is a comprehensive martial arts
+academy in South Richmond Hill, New York. The academy offers martial arts
+training for children ages 4-12 and adults ages 13 and up, Health & Fitness
+classes, specialized Weapons and Sparring classes, a full Afterschool Program
+with academic support, and a Martial Arts Summer Program. The academy
+emphasizes a structured, supportive environment that combines martial arts
+training with educational reinforcement, making it particularly well-suited for
+working parents seeking comprehensive afterschool solutions.
+
+Specialties:
+- Children's Martial Arts (ages 4-12)
+- Adult Martial Arts (ages 13+, no upper age limit)
+- Health & Fitness classes (exercise-based, adults only)
+- Weapons Class (children and adults combined)
+- Sparring Class (children and adults combined)
+- Afterschool Program with homework assistance priority
+- Martial Arts Summer Program (7:00 AM - 8:00 PM)
+- Birthday party rentals (Saturday afternoons)
+- Tax-deductible program documentation available
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+MONDAY
+- Children's Martial Arts: 5:00 PM - 5:45 PM
+- Children's Martial Arts: 6:00 PM - 6:45 PM
+- Adults Martial Arts: 7:00 PM - 7:45 PM
+- Health & Fitness: 8:00 PM - 8:45 PM
+
+TUESDAY
+- Children & Adults Weapons Class: 4:00 PM - 4:45 PM
+- Children's Martial Arts: 5:00 PM - 5:45 PM
+- Children's Martial Arts: 6:00 PM - 6:45 PM
+- Adults Martial Arts: 7:00 PM - 7:45 PM
+
+WEDNESDAY
+- Children's Martial Arts: 5:00 PM - 5:45 PM
+- Children's Martial Arts: 6:00 PM - 6:45 PM
+- Adults Martial Arts: 7:00 PM - 7:45 PM
+
+THURSDAY
+- Children & Adults Sparring Class: 4:00 PM - 4:45 PM
+- Children's Martial Arts: 5:00 PM - 5:45 PM
+- Children's Martial Arts: 6:00 PM - 6:45 PM
+- Adults Martial Arts: 7:00 PM - 7:45 PM
+- Health & Fitness: 8:00 PM - 8:45 PM
+
+FRIDAY
+- Children's Martial Arts: 5:00 PM - 5:45 PM
+- Children's Martial Arts: 6:00 PM - 6:45 PM
+- Adults Martial Arts: 7:00 PM - 7:45 PM
+- Health & Fitness: 8:00 PM - 8:45 PM
+
+SATURDAY
+- Children's Martial Arts: 11:00 AM - 11:45 AM
+- Children's Martial Arts: 12:00 PM - 12:45 PM
+- Children & Adults Weapons Class: 1:00 PM - 1:15 PM
+- Children & Adults Sparring Class: 1:15 PM - 2:00 PM
+- Adults Martial Arts: 2:00 PM - 2:45 PM
+- Birthday Party Rentals: Saturday afternoons (by arrangement)
+
+SUNDAY: No classes scheduled.
+
+================================================================================
+PROGRAMS & CLASSES
+================================================================================
+
+CHILDREN'S MARTIAL ARTS (Ages 4-12)
+
+45-minute classes teaching a comprehensive martial arts curriculum at an
+age-appropriate intensity level. Classes are held Monday through Friday from
+5:00 PM to 6:45 PM (two time slots available) and on Saturday mornings from
+11:00 AM to 12:45 PM (two time slots available). All children's classes
+accommodate beginners. Students who perform exceptionally well in children's
+classes may be assessed by the instructor for placement in adult classes
+regardless of their age.
+
+ADULT MARTIAL ARTS (Ages 13+)
+
+45-minute classes teaching the same martial arts curriculum as the children's
+program but at a significantly higher intensity level. Adult classes are
+available Monday through Friday at 7:00 PM and on Saturday at 2:00 PM. There
+is no upper age limit. Adults starting at age 13 join this program. New
+students are welcome to join the regular scheduled classes.
+
+HEALTH & FITNESS (Adults Only)
+
+Exercise-based classes designed for adults who want a challenging fitness
+experience without focusing on martial arts techniques. Classes include
+cardio, strength training, yoga, H.I.I.T training, and additional fitness
+modalities. Health & Fitness classes run Monday, Thursday, and Friday from
+8:00 PM to 8:45 PM.
+
+WEAPONS CLASS (Children & Adults Combined)
+
+A combined class open to both children and adults covering weapons training.
+Held on Tuesday from 4:00 PM to 4:45 PM and Saturday from 1:00 PM to 1:15 PM.
+
+SPARRING CLASS (Children & Adults Combined)
+
+A combined class open to both children and adults focusing on sparring
+techniques and application. Held on Thursday from 4:00 PM to 4:45 PM and
+Saturday from 1:15 PM to 2:00 PM.
+
+CURRICULUM NOTE
+
+The children's and adult martial arts programs teach the same curriculum. The
+only difference between the two is the intensity level. Adult classes are
+considerably more intense. High-performing children's students may be moved to
+adult classes at the instructor's discretion, regardless of age.
+
+================================================================================
+AFTERSCHOOL PROGRAM
+================================================================================
+
+PROGRAM OVERVIEW
+
+The Afterschool Program is a structured after-school service that prioritizes
+academic homework assistance alongside martial arts training. It is designed
+specifically to support working parents by providing comprehensive after-school
+coverage, extended hours, and school closure day coverage.
+
+DAILY PROGRAM STRUCTURE
+
+Homework assistance is the first priority. Staff ensure homework is completed
+correctly and guide students through understanding what they are learning, not
+just completing assignments. Following homework time, the program includes:
+
+- Martial arts training (45 minutes, 3 times per week, included in program)
+- Academic reinforcement including reading, writing, penmanship, and math
+  (based on individual student needs)
+- Structured social activities
+- Group games and team-building activities
+- Free time to relax and enjoy a snack
+
+EXTENDED HOURS & COVERAGE
+
+- Late pickup available until 8:00 PM, Monday through Friday
+- Half-day pickups available at no additional charge
+- Open at 7:00 AM on days when school is closed, providing a full day of
+  structured activities to support working parents
+
+TAX BENEFITS
+
+The Afterschool Program is tax-deductible. The academy provides tax
+documentation for credit and deduction purposes.
+
+ENROLLMENT
+
+Space in the Afterschool Program is very limited and enrollment fills quickly.
+Prospective families are encouraged to inquire about availability promptly.
+
+================================================================================
+MARTIAL ARTS SUMMER PROGRAM
+================================================================================
+
+PROGRAM DATES
+
+The Martial Arts Summer Program begins on the first business day after school
+ends and concludes on the last business day before school resumes in September.
+
+PROGRAM HOURS
+
+7:00 AM to 8:00 PM daily.
+
+DAILY ACTIVITIES
+
+Each day in the Summer Program includes:
+- 45 minutes of martial arts training
+- 1.5 hours of academics (reading, writing, math review, and related subjects)
+- Group activities focused on social development
+- Fun time, outdoor time (as scheduled), games, and structured social
+  interaction
+
+PROGRAM PHILOSOPHY
+
+The Summer Program is designed to balance learning, martial arts, and fun
+throughout the summer. Academic reinforcement prevents summer learning loss
+while maintaining the physical and social development benefits of martial arts.
+
+ENROLLMENT
+
+Space in the Summer Program is very limited. Families are encouraged to inquire
+early about availability.
+
+================================================================================
+TRIAL CLASS INFORMATION
+================================================================================
+
+TRIAL CLASS POLICY
+
+The trial class is completely free with no commitment required. Prospective
+students are welcome to come in and experience the training environment and
+meet the instructors before making any decision about membership.
+
+WHAT HAPPENS DURING A TRIAL CLASS
+
+Students attend a regular scheduled class appropriate for their age group.
+Children ages 4-12 attend a Children's Martial Arts class. Individuals 13 and
+older attend an Adult Martial Arts class. Instructors observe student
+performance during the trial and can assess whether a child who performs
+exceptionally well might be a strong candidate for the adult class.
+
+WHAT TO WEAR
+
+Comfortable athletic clothing such as a t-shirt and shorts or athletic pants.
+No special equipment or martial arts uniform is required for a trial class.
+
+WHAT TO EXPECT
+
+Martial arts training appropriate for the student's age group and intensity
+level. For families interested in the Afterschool Program or Summer Program,
+the trial visit is also an opportunity to speak with staff and instructors
+directly about program structure, academic support, scheduling, and
+availability.
+
+================================================================================
+REQUIRED INFORMATION FOR TRIAL CLASS BOOKING
+================================================================================
+
+The following information is required to book a trial class. This information
+is collected for safety compliance, insurance requirements, and communication
+purposes.
+
+FULL NAME (FIRST AND LAST)
+
+Full legal name is required to complete the student profile and register for
+the trial class. The profile system requires first and last name to process
+enrollment. Full legal names are also required on participation waivers under
+state regulations.
+
+EMAIL ADDRESS
+
+Email address is required to complete the student profile and to send class
+confirmations containing important details such as what to wear, when to
+arrive, and what to expect. Email is also used for notifications about schedule
+changes or cancellations. Contact information is kept private and secure and is
+never shared with third parties.
+
+PHONE NUMBER
+
+Phone number is required to complete the student profile. Phone is used for
+text reminders about upcoming classes, emergency contact if a student is
+running late or cannot locate the facility, and last-minute communication
+regarding schedule changes or cancellations. Liability insurance requires
+emergency contact information for all participants.
+
+DATE OF BIRTH
+
+Date of birth is required to complete the student profile. The profile system
+requires the actual date of birth — not just age — to be entered. Date of birth
+is used to confirm age-appropriate program placement: Children's Martial Arts
+for ages 4-12, Adult Martial Arts for ages 13 and up, and Health & Fitness for
+adults only. Date of birth also satisfies insurance requirements and ensures
+proper safety considerations are applied.
+
+PARENT OR GUARDIAN INFORMATION (FOR STUDENTS UNDER 18)
+
+For students under 18, a parent or guardian's information — including their
+date of birth — is required because the minor's profile is linked to the parent
+or guardian profile in the registration system. The parent or guardian profile
+must be completed to register the minor for a trial class. State law requires
+that minors cannot sign legal waivers independently; parent or guardian consent
+is mandatory. Emergency medical decisions also require immediate parent or
+guardian contact, and financial authorization for any future payments requires
+parent or guardian information.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+MEMBERSHIP OVERVIEW
+
+Universal Mixed Martial Arts offers membership options covering martial arts
+training for children (ages 4-12) and adults (ages 13+), as well as the
+Afterschool Program and Summer Program. Programs are structured to accommodate
+different training goals, class frequency preferences, and family needs.
+
+PRICING
+
+Membership pricing varies based on several factors like the number of classes
+per week a student would want to attend and their specific training goals.
+Instructors will discuss all pricing options and membership plans during or
+right after the free trial class. They will assess what program works best for
+the student and provide accurate pricing for their specific situation. The
+trial class is completely free with no commitment required.
+
+AFTERSCHOOL AND SUMMER PROGRAM PRICING
+
+Pricing for the Afterschool Program and Martial Arts Summer Program is
+discussed with staff during a consultation or trial visit. These programs
+include martial arts training as part of a broader academic and social
+development package. Both programs are tax-deductible, and the academy
+provides tax documentation for credit and deduction purposes.
+
+FACTORS THAT INFORM PROGRAM RECOMMENDATIONS
+
+Staff and instructors consider the following when discussing membership options:
+- Age group (Children ages 4-12 or Adults ages 13+)
+- Interest in martial arts only versus the Afterschool Program package
+- Summer Program participation interest
+- Interest in Health & Fitness classes (adults)
+- Desired frequency of Weapons and Sparring class attendance
+- Individual training goals and schedule preferences
+- Birthday party rental interest
+
+================================================================================
+COMMUNICATION APPROACH - TONE & RESPONSE CONTEXT
+================================================================================
+
+GENERAL TONE
+
+The academy's communication style is accommodating and friendly while
+remaining clear about requirements and procedures. Staff and representatives
+acknowledge concerns, validate them, and explain the reasons behind policies
+in terms of the benefit to the student or family.
+
+COMMON TRANSITION PHRASES USED IN CONTEXT
+
+The phrases below reflect the natural conversational tone the academy uses
+when addressing questions or guiding contacts through the booking process:
+"I totally understand," "I appreciate you sharing that," "That's actually
+really smart," "That makes total sense," "Here's the thing though,"
+"Ultimately," "What we need is," and "The reason being."
+
+HANDLING QUESTIONS BEYOND STANDARD INFORMATION
+
+For questions about training intensity, personalized program fit, specific
+class combinations, instructor credentials, or detailed program comparisons,
+trial class visits are the primary setting where staff provide direct,
+personalized guidance. Instructors assess student performance, discuss program
+options, and recommend the right membership structure based on individual needs.
+
+COLLECTING REQUIRED BOOKING INFORMATION
+
+When contacts express hesitation about providing personal information such as
+full name, email, phone number, or date of birth, the reasons for each
+requirement are documented in the "Required Information for Trial Class
+Booking" section above. Each field is tied to system requirements, insurance
+compliance, state regulations, or direct communication needs — all framed
+around the benefit and safety of the student.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Where is Universal Mixed Martial Arts located?
+A: The academy is located at 114-10 Liberty Ave, South Richmond Hill, NY 11419.
+
+Q: What types of classes are offered?
+A: The academy offers Children's Martial Arts (ages 4-12), Adult Martial Arts
+(ages 13+), Health & Fitness (adults only), Weapons Class (children and adults
+combined), and Sparring Class (children and adults combined). There is also an
+Afterschool Program and Martial Arts Summer Program.
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+Q: What ages do you accept?
+A: Children's Martial Arts starts at age 4. Adult Martial Arts begins at age 13
+with no upper age limit. Health & Fitness classes are for adults.
+
+Q: What is the difference between children's and adult classes?
+A: Both programs teach the same martial arts curriculum. The only difference is
+intensity level — adult classes are considerably more intense.
+
+Q: Can a child be placed in an adult class?
+A: Yes. If an instructor observes that a child is performing exceptionally well
+in the children's class and would benefit from the adult environment, the child
+can be moved to an adult class regardless of their age.
+
+Q: What is the Health & Fitness class?
+A: An exercise-based class for adults who want a fitness-focused workout without
+learning martial arts techniques. It includes cardio, strength training, yoga,
+H.I.I.T training, and more.
+
+Q: When are children's classes held?
+A: Monday through Friday at 5:00 PM - 5:45 PM and 6:00 PM - 6:45 PM, and on
+Saturday at 11:00 AM - 11:45 AM and 12:00 PM - 12:45 PM.
+
+Q: When are adult classes held?
+A: Monday through Friday at 7:00 PM - 7:45 PM, and Saturday at 2:00 PM -
+2:45 PM.
+
+Q: When are Health & Fitness classes held?
+A: Monday, Thursday, and Friday at 8:00 PM - 8:45 PM.
+
+Q: When are Weapons classes?
+A: Tuesday at 4:00 PM - 4:45 PM and Saturday at 1:00 PM - 1:15 PM. These
+classes are open to both children and adults together.
+
+Q: When are Sparring classes?
+A: Thursday at 4:00 PM - 4:45 PM and Saturday at 1:15 PM - 2:00 PM. These
+classes are open to both children and adults together.
+
+Q: Do you offer an Afterschool Program?
+A: Yes. The Afterschool Program prioritizes homework assistance, includes 45
+minutes of martial arts training 3 times per week, academic reinforcement,
+structured social activities, group games, and free time. Late pickup is
+available until 8:00 PM Monday through Friday.
+
+Q: Is the Afterschool Program open on school closure days?
+A: Yes. The academy opens at 7:00 AM on days when school is closed, providing
+a full structured day of activities for students.
+
+Q: Is the Afterschool Program tax-deductible?
+A: Yes. The program is tax-deductible and the academy provides tax
+documentation for credit and deduction purposes.
+
+Q: Is there a Summer Program?
+A: Yes. The Martial Arts Summer Program runs from the first business day after
+school ends until the last business day before school resumes in September,
+from 7:00 AM to 8:00 PM daily. It includes 45 minutes of martial arts, 1.5
+hours of academics, group activities for social development, and recreational
+time.
+
+Q: How limited is enrollment?
+A: Space is very limited in both the Afterschool Program and the Summer
+Program. Enrollment fills quickly and families are encouraged to inquire early.
+
+Q: Can I rent the facility for a birthday party?
+A: Yes. Birthday party rentals are available on Saturday afternoons and must
+be arranged with staff.
+
+Q: Is the trial class free?
+A: Yes. The trial class is completely free with no commitment required.
+
+Q: What should I wear to a trial class?
+A: Comfortable athletic clothing such as a t-shirt and shorts or athletic
+pants. No martial arts uniform or equipment is needed.
+
+Q: What information is needed to book a trial class?
+A: Full name (first and last), email address, phone number, date of birth, and
+parent or guardian information for students under 18.
+
+Q: Why is a date of birth required for booking?
+A: The registration system requires the actual date of birth — not just age —
+to be entered. It is used to confirm correct program placement and to meet
+insurance requirements.
+
+Q: Why is parent or guardian information required for minors?
+A: State law requires minors to have a parent or guardian sign legal waivers.
+The minor's profile is also linked to the parent or guardian profile in the
+registration system, and emergency medical decisions require immediate parent
+or guardian contact.
+
+Q: Are there any special programs or pricing for families with multiple
+   children enrolling?
+A: Membership and program structures for families with multiple enrolling
+students are best discussed directly with staff, who can provide accurate
+information based on availability and current program options.
+
+================================================================================
+
+Version 1.1.0 | Updated: February 27, 2026
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions
+Platform Target: CloseBot Chatbot AI
+Prepared by: PropertyBots AI
+
+================================================================================
+DEPLOYMENT CHECKLIST (PRE-LAUNCH)
+================================================================================
+
+Before deploying this knowledge base, confirm the following with the client:
+
+[ ] Phone number provided and inserted to replace placeholder
+[ ] Email address provided and inserted to replace placeholder
+[ ] Trial class confirmed as completely free (currently assumed per client)
+[ ] General business / office hours provided for walk-in and call inquiries
+[ ] Membership cancellation notice period confirmed
+[ ] Membership pause policy confirmed
+[ ] Payment methods confirmed (credit card, cash, etc.)
+[ ] Instructor / staff names and bios provided (optional but recommended)
+[ ] $99 pricing exclusion confirmed — all pricing to defer to consultation
+[ ] Afterschool Program and Summer Program pricing strategy confirmed
+
+================================================================================

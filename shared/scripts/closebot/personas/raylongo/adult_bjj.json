@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_adult_bjj",
+  "opening_message": "I want to try Brazilian Jiu-Jitsu",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old adult (DOB: 1996-11-05) who explicitly wants Brazilian Jiu-Jitsu (Gi). Ask for BJJ upfront. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1996-11-05. Accept the first slot. Expect the Adult Brazilian Jiu-Jitsu intro. When the bot confirms the booking, reply with [END]."
+}

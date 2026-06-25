@@ -1,0 +1,128 @@
+{
+  "gym": {
+    "name": "Hamptons Jiu-Jitsu South",
+    "website": "https://www.hamptonsjiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Hamptons Jiu-Jitsu. Your goal is to help new leads learn about our martial arts programs and book a free trial class. Never quote membership pricing — redirect all pricing questions to the coach or staff when they come in.",
+    "businessInformation": "The company name is Hamptons Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing or membership fees — redirect to free trial and let the coach or staff handle it when they come in.",
+      "Private training is offered at both locations but not bookable online — redirect to the free trial for that conversation.",
+      "TRX, Judo, Wrestling, and MMA are offered but have no online booking — redirect to the free trial.",
+      "When asked about the class schedule, let the lead know availability will show once you have their info and the booking tool pulls live slots.",
+      "Adults must be 13 or older to train. If a minor (13-17) is self-booking without a parent, capture their info and flag for staff follow-up — do not complete the booking."
+    ]
+  },
+  "ghl": {
+    "locationId": "7rOciO3DHa7ZfaXTZ0CC",
+    "pitToken": "pit-9160ad3d-2b0f-4d5b-8e15-0c26fc872223",
+    "sourceId": "src_3HPZKL5NULBRLNLX"
+  },
+  "calendars": {
+    "adultCalendars": [
+      {
+        "label": "adult_bjj",
+        "calendarId": "3Rt21MmCWcURorQxJilE",
+        "calendarName": "Adult BJJ",
+        "programs": ["bjj", "jiu-jitsu", "grappling", "gi", "no-gi", "fundamentals"]
+      },
+      {
+        "label": "adult_muay_thai",
+        "calendarId": "SoGSt7H7OGmVv6rdghfH",
+        "calendarName": "Adult Muay Thai",
+        "programs": ["muay thai", "striking", "mma", "judo", "wrestling"]
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_4_7",
+        "calendarId": "S5dIqvZ3DsqwUKOnRXw6",
+        "calendarName": "Kids 4-7 BJJ",
+        "ageMin": 4,
+        "ageMax": 7
+      },
+      {
+        "label": "kids_8_12",
+        "calendarId": "1ZexVKGM176mU02DVr0L",
+        "calendarName": "Kids 8-12 BJJ",
+        "ageMin": 8,
+        "ageMax": 12
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Private Lessons (both locations — offered but no GHL calendar; redirect to free trial)",
+    "TRX Group Classes — has a GHL calendar (ntkZyNnnCppOf46jMtId) but excluded from bot booking; redirect to gym contact",
+    "Judo — offered but no dedicated GHL calendar; redirect to Adult Muay Thai trial or in-person",
+    "Wrestling — offered but no dedicated GHL calendar; redirect to Adult Muay Thai trial or in-person",
+    "MMA — offered but no dedicated GHL calendar; redirect to Adult Muay Thai trial or in-person"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "adultProgramSwitch": true
+  },
+  "kb": {
+    "fileId": "file_R2H1G3T1XFE4NRMR",
+    "fileName": "hamptonsjj_kb_v1.0.0.txt",
+    "attachedToSource": "src_3HPZKL5NULBRLNLX",
+    "indexed": true,
+    "uploadedDate": "2026-05-16"
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "openDependencies": [
+    "Adult age minimum set to 13 based on calendar structure (kids max at 12) — confirm with Bobby before go-live",
+    "Production trigger tag — pending Bobby (needed at attach time only)"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_WWB97FEM611TC5SY",
+      "botName": "Hamptons Jiu-Jitsu South - Launch v2.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from canonical template). 2 adult cals (Adult BJJ default + Adult Muay Thai on explicit request). 2 kids cals (Kids 4-7 + Kids 8-12 BJJ). Teens 13-17 route to adult cals with guardian. Under-4 no-cal. Adult-path minor gate (under-18 self-book gated). Multi-enrollee support. Explicit calendar IDs in n30_book.",
+      "verdict": "QA-PENDING — published, NOT sandbox-attached (queued)"
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_A78VFXFMMPYYJE4P",
+      "botName": "Hamptons Jiu-Jitsu South - Launch v1.0 [initial build] (2026-05-16)",
+      "version": "v1.0",
+      "notes": "Superseded by v1.1 — minor gate loop fix"
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_59M2X11QYFERW4AN",
+      "botName": "Hamptons Jiu-Jitsu South - Launch v1.1 [minor gate + loop fix] (2026-05-16)",
+      "version": "v1.1",
+      "notes": "Minor gate conversationReason fix — bot now closes correctly after collecting parent name + phone. Known gap: minor-needs-guardian tag requires KDL Comparator node (future enhancement)."
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_5HSEXPZLA5DJYAMG",
+      "botName": "Hamptons Jiu-Jitsu South - Launch v1.2 [minor gate KDL comparator] (2026-05-16)",
+      "version": "v1.2",
+      "notes": "Adds Comparator after adult DOB node to hard-gate minors on the adult booking path and apply 'minor - needs guardian' tag. Protects against lying-minor case (minor claims adult age). Honest self-booking minors (who say 'I'm 16') still route through youth path via AISwitch — Comparator not triggered for that case. Tag gap for youth-path minors remains; requires v1.3 Comparator on youth path."
+    }
+  ]
+}

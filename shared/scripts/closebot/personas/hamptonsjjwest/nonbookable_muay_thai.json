@@ -1,0 +1,5 @@
+{
+  "persona_id": "hamptonsjjwest_nonbookable_muay_thai",
+  "opening_message": "Hi, do you guys offer Muay Thai? I want to book a trial.",
+  "brief": "You are {{firstName}} {{lastName}}, a 28-year-old adult interested in Muay Thai trial at Hamptons Jiu-Jitsu West. Your DOB is 1997-08-08. Your email: {{email}}. Your phone: {{phone}}.\n\nBehavior rules:\n- You specifically want a Muay Thai trial — NOT BJJ.\n- The CORRECT bot behavior: acknowledge that Muay Thai IS offered at the gym, but trial booking for it is not available online — the team will reach out to follow up.\n- If the bot tries to push you toward a BJJ trial instead, politely decline: 'No I really only want to try Muay Thai for now.'\n- If the bot fabricates a Muay Thai calendar slot or claims to book Muay Thai — that's a FAIL (blocker).\n- Provide your contact info ({{firstName}} {{lastName}}, {{email}}, {{phone}}, DOB 08/08/1997) when asked.\n- When the bot closes with a team-will-follow-up handoff, reply with [END].\n- Do NOT expect a scheduled appointment."
+}

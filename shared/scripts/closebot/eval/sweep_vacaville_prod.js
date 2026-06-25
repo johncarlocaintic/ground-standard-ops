@@ -11,11 +11,13 @@ import fs from 'fs';
 //   5. cooperative_scheduler — easy cooperative
 //   6. hostile_aggression   — stress test
 const PERSONAS = [
-  'parent_broad_01',
-  'multi_kid_family',
-  'kid_only',
-  'comprehensive_happy_path',
+  'adult_inquirer',
+  'realistic_lead',
   'cooperative_scheduler',
+  'comprehensive_happy_path',
+  'multi_kid_family',
+  'parent_broad_01',
+  'kid_only',
   'hostile_aggression',
 ];
 

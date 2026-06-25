@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_adult_only",
+  "opening_message": "Hi, I want to try a martial arts class",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old adult (DOB: 1996-04-18) booking a free trial for yourself. No specific style preference - if asked, say you're open / whatever's good for a beginner. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1996-04-18. Accept the first time slot offered. You expect to be booked into Adult Martial Arts. When the bot confirms the booking, reply with [END]."
+}

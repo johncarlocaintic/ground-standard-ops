@@ -1,0 +1,22 @@
+{
+  "bot": "allinjujitsu",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee in bot output." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is NOT Adult Fundamentals BJJ or Kids 5-12 BJJ. Flag source-bleed (Muay Thai, Gi, other-gym programs)." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're booked'/'all set' as a booking confirmation WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge language on known negations", "level": "standard", "look_for": "bot says 'let me check' where it should give a firm known answer." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains {{contact.x}}, {{variable}}, {{nodes.x.result}}." },
+    { "id": "mnd_09", "category": "must_not_do", "description": "Does not proactively volunteer non-bookable programs", "level": "standard", "look_for": "bot brings up Adult All Levels BJJ on its own without the lead asking." },
+    { "id": "mnd_10", "category": "must_not_do", "description": "No coach-redirect or substitute-calendar for non-bookable asks", "level": "blocker", "look_for": "when asked for Adult All Levels, bot says 'discuss with the coach' OR books a substitute calendar. Correct: 'not available to book online', steer to a free Fundamentals trial, no coach-redirect, no substitution." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before collecting personal info", "level": "standard", "look_for": "bot asks 'who is this for' before collecting names/DOBs (unless volunteered)." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB for all enrollees before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) before booking; age derived from DOB." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected without giving a figure", "level": "blocker", "look_for": "lead pushes pricing 2+ times; bot firmly redirects, never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Under-18 self-booker handled as referral, not booking", "level": "blocker", "look_for": "contact themselves under 18, no parent: bot does NOT book; captures parent info, tags 'minor - needs guardian', closes with team-follow-up." },
+    { "id": "md_07", "category": "must_do", "description": "Adult (18+) routes to Adult Fundamentals BJJ", "level": "blocker", "look_for": "adult lead (18+ by DOB) booked into 'Adult Fundamentals BJJ'. Adult All Levels or any other calendar is a routing failure." },
+    { "id": "md_09", "category": "must_do", "description": "Kid age 5-12 routes to Kids 5-12 BJJ", "level": "blocker", "look_for": "child aged 5-12 booked into 'Kids 5-12 BJJ'. A 12-year-old IS in 5-12 → Kids 5-12 BJJ. Other calendar = routing failure." },
+    { "id": "md_11", "category": "must_do", "description": "Age 13-17 has no calendar — no booking, referral", "level": "blocker", "look_for": "enrollee aged 13-17 must NOT be booked (kids cap 12, adults 18+). Bot says no online slot for 13-17, tags 'minor - needs guardian', team will reach out." },
+    { "id": "md_13", "category": "must_do", "description": "Under age 5 redirected to gym contact", "level": "standard", "look_for": "child under 5: bot does NOT book; states youngest is Kids 5-12 and suggests contacting the gym at 732-903-2999." },
+    { "id": "ec_01", "category": "edge_case", "description": "Adult All Levels ask -> not available online", "level": "standard", "look_for": "lead asks to book Adult All Levels: bot states not available to book online, new students start with a free Fundamentals trial. No coach-redirect, no substitution." }
+  ]
+}

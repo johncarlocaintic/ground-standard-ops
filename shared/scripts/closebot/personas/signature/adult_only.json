@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_adult_only",
+  "opening_message": "Hi, I'm interested in trying a BJJ class",
+  "brief": "You are {{firstName}} {{lastName}}, a 30-year-old adult (DOB: 1994-06-22), new to BJJ, self-booking. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-06-22. No discipline question is expected — Signature is BJJ-only and routes all adults to Fundamentals. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

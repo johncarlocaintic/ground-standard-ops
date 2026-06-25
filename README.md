@@ -1,6 +1,10 @@
 # Ground Standard Ops
 
-Operational workspace for Ground Standard Agency (GSA) — Bobby Freda's martial-arts marketing agency. This is the AI chatbot automation side of the operation: CloseBot SMS bots driving trial-class bookings via GoHighLevel, plus supporting infrastructure (n8n, Retell AI voice, Google).
+Operational workspace **and full memory** for Ground Standard Agency (GSA) — Bobby Freda's martial-arts marketing agency. This is the AI chatbot automation side of the operation: CloseBot SMS bots driving trial-class bookings via GoHighLevel, plus supporting infrastructure (n8n, Retell AI voice, Google).
+
+**Who runs it:** JC owns the Ground Standard client; **Mark Cabel** operates this repo on JC's behalf. Everything client-facing fronts as JC — never name Mark or any associate to Bobby. (See `CLAUDE.md` → "WHO RUNS THIS WORKSPACE".)
+
+**Where things stand (2026-06-26):** Vacaville Grappling Academy is live on production (v4.6); ~28 Agent Node gym bots are QA-passed and parked on the sandbox source, awaiting per-gym cutover. Full current state in `tasks/todo.md`.
 
 ---
 

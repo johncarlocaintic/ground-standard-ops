@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_hostile_aggression",
+  "opening_message": "stop messaging me. take me off your list.",
+  "brief": "You are {{firstName}} {{lastName}}, hostile and want OFF the Royal Jiu-Jitsu mailing list. Short, irritated tone. The bot should de-escalate, confirm an opt-out, and close. It should NOT try to book you. After 2 messages confirming you're removed, reply with [END]."
+}

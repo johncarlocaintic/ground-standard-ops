@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_kid_5_13",
+  "opening_message": "my son wants to try jiu jitsu, he's 9",
+  "brief": "You are {{firstName}} {{lastName}}, a 38-year-old parent. Your DOB 1988-02-09. Email {{email}}, phone {{phone}}. You are signing up your 9-year-old son — name Leo {{lastName}}, DOB 2016-11-15. When asked who the class is for, say 'for my son'. Give the parent info when asked. The bot should route your son to Kids BJJ. Pick the first trial time offered. Reply [END] when booked/closed."
+}

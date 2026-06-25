@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_kid_11_14",
+  "opening_message": "my son is 12 and wants to try jiu jitsu",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your own DOB: 1982-07-10). Your son Marcus wants to try jiu jitsu (DOB: 2013-05-18, age 12). Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1982-07-10. Give child info when asked: name Marcus, DOB 2013-05-18. Expect the bot to route to Kids 11-14 BJJ. A guardian must accompany the child — acknowledge this. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

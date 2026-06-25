@@ -1,0 +1,116 @@
+================================================================================
+GRACIE FARMINGTON VALLEY — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-18
+Status: WEBSITE + GHL-CALENDAR BUILT — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: graciefarmingtonvalley.com (2026-05-18); live GHL calendars
+(2026-05-18). No Glenn draft existed — built from website + calendars.
+Verification: Website-verified + calendars pulled live from GHL. Georgetown TX
+header address excluded as a template artifact (CT is the real location).
+Source reconciled to src_LGA6WCCJSAEE8X6R (pit-inventory's other id was empty).
+Purpose: CloseBot AI Chatbot — Lead Qualification & Free Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Gracie Farmington Valley (legal: GFV Mega LLC)
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Canton, CT (serving the Farmington Valley — Canton, Avon, Simsbury)
+
+Description: Gracie Farmington Valley is a Brazilian Jiu-Jitsu academy in
+Canton, Connecticut, operating for more than a decade. It offers adult and
+kids Brazilian Jiu-Jitsu and an adult Cardio Kickboxing program in a safe,
+comfortable, and welcoming atmosphere, emphasizing respect, safety, and
+personal development.
+
+Programs Offered:
+- Adult Brazilian Jiu-Jitsu
+- Adult Cardio Kickboxing
+- Kids Brazilian Jiu-Jitsu
+- Competition Class
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 15 Cheryl Drive, Suite D, Canton, CT 06019
+Phone: (860) 500-3829
+Email: gfvJiu-Jitsu@gmail.com
+Website: graciefarmingtonvalley.com
+
+================================================================================
+SECTION 3 — PROGRAMS
+================================================================================
+
+ADULT BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu for adults at all experience levels. No prior experience
+required. New students start with the Fundamentals program.
+
+ADULT CARDIO KICKBOXING
+An adult cardio kickboxing fitness program. All levels welcome.
+
+KIDS BRAZILIAN Jiu-Jitsu
+Brazilian Jiu-Jitsu for children, grouped by age, with structured,
+age-appropriate instruction in a safe environment.
+
+COMPETITION CLASS
+An advanced training class for students pursuing competition. Availability and
+eligibility are confirmed directly with the academy.
+
+================================================================================
+SECTION 4 — CLASS SCHEDULE
+================================================================================
+
+Specific class days and times are confirmed when scheduling a trial. The
+academy runs adult Jiu-Jitsu, adult Cardio Kickboxing, and age-grouped kids
+Jiu-Jitsu programs through the week.
+
+================================================================================
+SECTION 5 — TRIAL / FIRST CLASS INFORMATION
+================================================================================
+
+A free trial class is available for new students with no commitment required.
+No prior martial arts experience is needed to start.
+
+================================================================================
+SECTION 6 — MEMBERSHIP AND PRICING
+================================================================================
+
+Membership pricing is not published. Pricing varies based on program and
+training frequency. Membership options and accurate pricing are discussed with
+new students during or right after the free trial class. The trial class is
+completely free with no commitment required.
+
+================================================================================
+SECTION 7 — FAQs
+================================================================================
+
+Q: What is Gracie Farmington Valley?
+A: A Brazilian Jiu-Jitsu academy in Canton, CT, operating for over a decade,
+offering adult and kids BJJ and an adult Cardio Kickboxing program.
+
+Q: Where is it located?
+A: 15 Cheryl Drive, Suite D, Canton, CT 06019.
+
+Q: What programs are offered?
+A: Adult Brazilian Jiu-Jitsu, Adult Cardio Kickboxing, Kids Brazilian
+Jiu-Jitsu, and a Competition Class.
+
+Q: Is there a free trial?
+A: Yes. A free trial class is available with no commitment required.
+
+Q: Do I need experience to start?
+A: No prior experience is required.
+
+Q: What is the phone number?
+A: (860) 500-3829.
+
+Q: What is the email address?
+A: gfvJiu-Jitsu@gmail.com.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

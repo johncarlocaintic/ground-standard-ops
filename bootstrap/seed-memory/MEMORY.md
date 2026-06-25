@@ -1,34 +1,70 @@
 # Memory Index
 
-- [User Identity — Glenn (Ground Standard operator)](user_identity_glenn.md) — runs GSA account; uses JC's shared credentials on platforms; scope is CloseBot + supporting GHL/Retell.
-- [Problem Flagging Protocol](feedback_problem_flagging.md) — self-resolve low-prio silently; flag + pause for anything beyond explicit source; AI-generated docs = strict adherence only.
-- [Terse Responses by Default](feedback_terse_responses.md) — short, jargon-light; key decisions prominent; expand only when asked.
-- [No Em Dashes](feedback_no_em_dashes.md) — never use em dashes; use period, comma, colon, parentheses, or hyphen-with-spaces.
-- [Always Timestamp Logs and Checkpoints](feedback_always_timestamp.md) — every log entry, checkpoint, doc update gets ISO date (YYYY-MM-DD).
-- [Parrot Back Before Executing](feedback_parrot_before_execute.md) — for any non-trivial deploy/build/modify, parrot back the instruction first and wait for confirm before executing.
-- [Retry Before Concluding](feedback_retry_before_conclude.md) — never declare API broken/down after one fail; retry 2-3 times before reporting failure conclusions.
-- [Verify Before Diagnosing](feedback_verify_before_diagnosing.md) — never build a narrative from a single error string; query the underlying system before claiming a cause.
-- [Always Cross-Reference CloseBot Logs](feedback_closebot_logs_standard.md) — pull SSE events / node-execution data alongside the transcript when debugging.
-- [Auto-Allow Monitors](feedback_auto_allow_monitors.md) — silently re-arm Monitor tool calls when they time out.
-- [Legacy Workflow Archival](feedback_legacy_deactivation.md) — never delete legacy bots/workflows; deactivate + move to a "Deactivated" folder. Delete only when explicitly confirmed.
-- [Iteration Archival Rule](feedback_iteration_source_detach.md) — every CloseBot iteration archives the previous bot with detach + LEGACY rename + clear tag filter; new version reuses the SAME real trigger tag.
-- [Test Source Attach/Detach Protocol](feedback_test_attach_detach_protocol.md) — when testing bots, attach source BEFORE test and detach AFTER; one bot per source at a time.
-- [Test Identity Randomization](feedback_test_identity_randomization.md) — every eval run randomizes lastname/email/phone (firstname "Tester" stays); prevents GHL contact collision.
-- [Link Transcripts in Test Reports](feedback_link_transcripts.md) — every bot-test-result report includes clickable markdown links to all transcript logs.
-- [Reference Docs Need Templates](feedback_reference_needs_examples.md) — sloppy-prompts fix is worked before/after examples + per-slot templates, not more rules.
-- [CloseBot Prompt-Tier Discipline](feedback_closebot_prompt_discipline.md) — apply the proven tier map directly; consult docs ONLY for novel work; never cross-duplicate across tiers.
-- [CloseBot ExtraPrompt Framework](feedback_extraprompt_usage.md) — 3-gate decision framework; blank by default; Conversation nodes always need a short ExtraPrompt.
-- [CloseBot Variable References](feedback_closebot_variable_refs.md) — `{{contact.X}}`, `{{nodes.X.result}}`, `{{variable}}`, `{{location.X}}` work in nearly every field.
-- [CloseBot True/False AIExpression](feedback_closebot_truefalse_expression.md) — write the TRUE statement only; node handles routing.
-- [CloseBot Booking Short Description](feedback_closebot_booking_short_description.md) — appointment type + duration only; one sentence per docs §6.5.
-- [CloseBot Statement Not Conditional](feedback_closebot_statement_not_conditional.md) — Statements GIVE info; not if/else; branching belongs in True/False or Switch upstream.
-- [CloseBot prohibitedWords Stripped on Deploy](feedback_closebot_prohibitedwords_stripped_on_deploy.md) — every deploy strips prohibitedWords values; always read-back verify and restore.
-- [CloseBot Agent Node Chip Syntax](feedback_closebot_field_chip_syntax.md) — `{{contact.X}}` for fields, `@@[Tool Name]` for tools, `@@@[Exit Title]` for exits.
-- [CloseBot KDL Dedupe __zIndex Before Import](feedback_closebot_kdl_dedupe_zindex.md) — exports contain duplicate __zIndex per block; importer 500s on dupes. Strip per-block before POST /bot { importKdl }.
-- [CloseBot API Developer Docs](reference_closebot_api_docs.md) — developers.closebot.com — ALWAYS consult before any CloseBot API call.
-- [CloseBot Agency Source Endpoints](project_closebot_agency_sources.md) — /agency/source/{id}/{tags,fields,calendars,channels} exposes GHL schema per school without that client's PIT.
-- [CloseBot Skill System](project_closebot_skill_system.md) — API discovery done. 3-skill pipeline designed: /closebot-plan + /closebot-build + /closebot-test.
-- [CloseBot Agent Node Reference](reference_closebot_agent_node.md) — launched April 2026; full doc at references/closebot_agent_node.md; replaces all legacy conversational nodes.
-- [CloseBot Agent Node Exception (2026-04-25)](reference_closebot_agent_node_exception.md) — historical: importKdl path broke for Agent Node bots; workaround via /duplicate or /bot { sourceBotId }. VERIFY CURRENCY before relying.
-- [CloseBot Bryce Walkthrough](reference_closebot_walkthrough_bryce.md) — vendor-canon product tour; annotated Qualify agent-node example.
-- [Claude Account Switching](feedback_claude_account_switching.md) — claude-use can't hot-swap an active session; real switch is /logout + re-login. Verify via Anthropic /api/oauth/profile.
+_Seeded into the operator's Claude Code auto-memory by `bootstrap/setup.sh`. One line per memory. Ground Standard / CloseBot scope only._
+
+- [user_identity_mark.md](user_identity_mark.md) — Mark Cabel operates this Ground Standard repo on JC's behalf; fronts as JC to Bobby, never named to the client
+- [feedback_agent_node_intro_age_band_explicit.md](feedback_agent_node_intro_age_band_explicit.md) — Agent Node n10_intro must state adult age band explicitly (e.g. "18+"); LLM infers wrong band from n30_book routing when intro is vague
+- [feedback_always_link_output.md](feedback_always_link_output.md) — After producing any file output (rendered PNG, generated doc, exported asset, etc.), always include a clickable file link so the user can open it immediately
+- [feedback_always_timestamp.md](feedback_always_timestamp.md) — every log entry, checkpoint, and documentation update must include an ISO date (YYYY-MM-DD) stamp; preferably full ISO timestamp for high-resolution events
+- [feedback_auto_allow_monitors.md](feedback_auto_allow_monitors.md) — When a Monitor times out or a new one is needed, re-arm/spawn it silently — don't ask for permission
+- [feedback_claude_account_switching.md](feedback_claude_account_switching.md) — claude-use script failed its promise; real account switching is /logout + re-login inside the extension
+- [feedback_closebot_booking_scope_guard.md](feedback_closebot_booking_scope_guard.md) — Booking node AI is greedy — append a one-line multi-enrollee scope guard to every Booking Description. Critical for single-kids-cal gyms; harmless for multi-cal.
+- [feedback_closebot_booking_short_description.md](feedback_closebot_booking_short_description.md) — The Short Description on a Booking node is literally meant to be short. Docs §6.5 example is one sentence. No procedural STEP 1/2/3 instructions  -  that's over-prompting that breaks booking behavior.
+- [feedback_closebot_discipline_switch.md](feedback_closebot_discipline_switch.md) — cb_discipline_switch_inject.js is now N-way spec-driven — use it for any GS gym with 2+ adult discipline calendars (BJJ/No-Gi/Muay Thai/Wrestling/etc)
+- [feedback_closebot_field_chip_syntax.md](feedback_closebot_field_chip_syntax.md) — When drafting Agent Node bodies, enclose contact/location fields in {{...}}, tools in @@[...], exits in @@@[...] so the UI renders them as styled chips and the LLM treats them as live references
+- [feedback_closebot_kdl_dedupe_zindex.md](feedback_closebot_kdl_dedupe_zindex.md) — CloseBot exports duplicate __zIndex lines per block; the import endpoint now rejects them with HTTP 500 (empty body). Sanitize before POST /bot { importKdl }.
+- [feedback_closebot_logs_standard.md](feedback_closebot_logs_standard.md) — When debugging bot behavior, always pull SSE events / node-execution data and trace which node fired vs what the bot said — never rely on transcript text alone
+- [feedback_closebot_prohibitedwords_stripped_on_deploy.md](feedback_closebot_prohibitedwords_stripped_on_deploy.md) — CloseBot's KDL import drops the prohibitedWords values on every deploy. Local KDL has the words; exported deployed KDL has an empty field. Always read-back verify and restore.
+- [feedback_closebot_prompt_discipline.md](feedback_closebot_prompt_discipline.md) — Apply the proven prompt-tier map directly for standardized work. Only consult CloseBot docs first when doing something NOVEL — a field/combination/technique we haven't already standardized. Never cross-duplicate content across tiers.
+- [feedback_closebot_statement_not_conditional.md](feedback_closebot_statement_not_conditional.md) — Statement nodes are monologues (give information to contact). Not if/else. Conditional behavior belongs upstream in True/False or Switch nodes. A Statement should just say what you want to say.
+- [feedback_closebot_truefalse_expression.md](feedback_closebot_truefalse_expression.md) — The AI-powered Comparator evaluates whether the stated expression is TRUE. Just write the true statement; node routes FALSE automatically if not true. No "Answer TRUE if / Answer FALSE if" prose.
+- [feedback_closebot_variable_refs.md](feedback_closebot_variable_refs.md) — Always use {{contact.X}}, {{nodes.X.result}}, {{variable}}, {{location.X}} to reference state deterministically. Works in almost every input field in the builder  -  not just Descriptions or AIExpressions.
+- [feedback_closebot_youth_nocal_gate.md](feedback_closebot_youth_nocal_gate.md) — Vacaville canon template has no 14-17 no-calendar gate; any gym whose kids cap below 14 needs cb_youth_nocal_gate_inject.js or it books teens into the oldest kids calendar
+- [feedback_cross_examine_judge_output.md](feedback_cross_examine_judge_output.md) — never parrot judge_assessment.json verdicts to Idriss without first confirming the claims against ghl_facts.json, events.json logs, and the GHL API directly
+- [feedback_emma_universal_persona.md](feedback_emma_universal_persona.md) — Emma is the universal persona for all GS gym bots — never ask about persona name for any GS build
+- [feedback_extraprompt_usage.md](feedback_extraprompt_usage.md) — Framework for when to fill vs empty ExtraPrompt fields on any CloseBot node. Default is empty; fills are exceptions that must pass all three gates.
+- [feedback_gs_ads_kb_swap_protocol.md](feedback_gs_ads_kb_swap_protocol.md) — Always swap KBs on GS Ads sandbox source between bot tests — previous KB causes source bleed into new bot's responses
+- [feedback_gs_kb_verification_standard.md](feedback_gs_kb_verification_standard.md) — Every GS gym KB must be website-verified AND have its calendars pulled live from GHL before /closebot-plan
+- [feedback_gs_minor_gate_universal.md](feedback_gs_minor_gate_universal.md) — Every Ground Standard gym CloseBot includes the under-18 self-book minor gate by default; don't ask per-gym.
+- [feedback_gs_no_calendar_default.md](feedback_gs_no_calendar_default.md) — GS bots — if a program has no dedicated GHL calendar, do not mention it; if asked, say not available to book online (never redirect/substitute)
+- [feedback_iteration_source_detach.md](feedback_iteration_source_detach.md) — Every CloseBot iteration must archive the previous version with all three steps — detach source, rename to "[LEGACY] ...", AND clear its tag filter. New version uses the SAME real trigger tag (no fake test tags).
+- [feedback_legacy_deactivation.md](feedback_legacy_deactivation.md) — Deactivate + archive legacy bots/workflows to a "Deactivated" folder instead of deleting — preserves audit trail
+- [feedback_link_transcripts.md](feedback_link_transcripts.md) — When reporting on any bot test run (adversarial sweep, QA eval, etc.), include clickable markdown links to every transcript log file, not just the analysis.
+- [feedback_martial_arts_multi_kid.md](feedback_martial_arts_multi_kid.md) — Adult = GHL contact. Kids never contacts. Multi-kid packed comma-separated in single Youth Name/Birthday field — don't split into synthetic Kid 2/3 fields
+- [feedback_martial_arts_no_pricing.md](feedback_martial_arts_no_pricing.md) — Universal rule for all GSA martial arts chatbots — bot never mentions specific pricing; always redirects to in-person/trial
+- [feedback_no_em_dashes.md](feedback_no_em_dashes.md) — Never use em dashes (—) in any output, including user-facing text, drafted comments, messages, docs, or code comments
+- [feedback_own_mistakes.md](feedback_own_mistakes.md) — When Claude makes a mistake, say "I" not "we" - never rope the user into shared blame
+- [feedback_parrot_before_execute.md](feedback_parrot_before_execute.md) — before deploying, building, or running anything Idriss asks for, parrot back the instruction to confirm understanding; only execute after he confirms
+- [feedback_persona_is_global.md](feedback_persona_is_global.md) — the Emma persona (pers_CB1LLPENDKDRB5S2) is shared across ALL Ground Standard gym bots; persona-level settings affect every bot using it, not just one workflow
+- [feedback_problem_flagging.md](feedback_problem_flagging.md) — How JC wants problems/issues handled during tasks — flag urgency, pause on high-priority, self-resolve low-priority
+- [feedback_reference_needs_examples.md](feedback_reference_needs_examples.md) — When JC calls CloseBot prompts "sloppy," the fix is worked before/after examples, not more rules — rules without templates keep sprawling
+- [feedback_retry_before_conclude.md](feedback_retry_before_conclude.md) — never declare "X is broken" or "API down" after one failed call; retry first (at least 2-3 times with brief pauses) before reporting any failure conclusion
+- [feedback_sub18_adult_band_guardian_capture.md](feedback_sub18_adult_band_guardian_capture.md) — GS gym whose adult calendar serves under-18 (e.g. 13+) — book the 13-17 band via youth path with guardian capture, NOT no-cal gate or strict block
+- [feedback_terse_responses.md](feedback_terse_responses.md) — User (Idriss) wants minimal-jargon short answers; key decisions must be prominent not buried; only expand when asked
+- [feedback_test_attach_detach_protocol.md](feedback_test_attach_detach_protocol.md) — when testing CloseBot bots, attach source BEFORE the test and detach AFTER, before moving to the next bot. one bot attached at a time per source.
+- [feedback_test_identity_randomization.md](feedback_test_identity_randomization.md) — every eval/orchestrator run must use randomized name/email/phone so each test creates a new GHL contact instead of overwriting; only first name "Tester" stays static for easy lookup
+- [feedback_trial_class_always_true.md](feedback_trial_class_always_true.md) — Trial class is always included in every GS bot flow — never gate it on KB language
+- [feedback_use_bot_names_not_ids.md](feedback_use_bot_names_not_ids.md) — When referring to any CloseBot bot in chat, always use the exact bot name as it appears in the CloseBot UI — never show the bot_XXXX ID unless the user explicitly asks for it.
+- [feedback_verify_before_diagnosing.md](feedback_verify_before_diagnosing.md) — When an API/tool error says "X not found" or similar, query the source of truth (GHL, CloseBot, etc.) directly before building any explanation around it
+- [project_bot_tester.md](project_bot_tester.md) — Automated bot tester using Playwright + GPT-4o-mini. Status, scripts, findings, and next steps for the bot testing system.
+- [project_closebot_agency_sources.md](project_closebot_agency_sources.md) — CloseBot API exposes per-source GHL schema (tags/fields/calendars/channels) without needing that sub-account's PIT — works for any school connected to Bobby's agency
+- [project_closebot_skill_system.md](project_closebot_skill_system.md) — On hold. Vacaville v2 is the reference build — once it passes end-to-end it becomes the universal template for all GSA gym clients, then skills get packaged from it.
+- [project_ground_standard_ghl.md](project_ground_standard_ghl.md) — Bobby's GS Ads GHL sub-account used for bot automation testing via Claude Code
+- [project_gs_only_vacaville_on_prod.md](project_gs_only_vacaville_on_prod.md) — GS account: only Vacaville is on a real prod source; masondixon is NOT soft-launched (verified 2026-05-19)
+- [project_vacaville_pricing_not_the_bot.md](project_vacaville_pricing_not_the_bot.md) — 2026-05-17 Vacaville 'bot quoting prices' incident traced to a Facebook Page auto-reply, NOT the CloseBot. Do not rebuild the bot for this.
+- [project_vacaville_prod_filter_spec.md](project_vacaville_prod_filter_spec.md) — Vacaville prod source filter canonical spec + restore script; found empty 2026-05-19 and restored
+- [project_vacaville_test_source_routing.md](project_vacaville_test_source_routing.md) — Which CloseBot mimicSourceId routes to which GHL location for the Vacaville test bench bot_J56AWZ5TYQI9HKJS — and which one is safe for evals
+- [reference_closebot_agent_node.md](reference_closebot_agent_node.md) — Full reference doc for Agent Node (launched April 2026) — instructions, tools, exits, custom tools, pricing. Stored at references/closebot_agent_node.md.
+- [reference_closebot_agent_node_exception.md](reference_closebot_agent_node_exception.md) — confirmed server-side exception in Agent Node Method processing path; concrete actionId/timestamps available; CloseBot devs notified
+- [reference_closebot_agent_node_put_pattern.md](reference_closebot_agent_node_put_pattern.md) — Agent Node bot edits must use PUT /bot/{id} { importKdl } — POST /bot returns 500 for Agent Node bots
+- [reference_closebot_api_docs.md](reference_closebot_api_docs.md) — Official CloseBot V2 API documentation site — must be consulted before any CloseBot API call.
+- [reference_closebot_eval_false_negatives.md](reference_closebot_eval_false_negatives.md) — Known QA/judge false-negative patterns in the GS closebot eval — cross-examine these against GHL ground truth before trusting a FAIL
+- [reference_closebot_free_tier_limits.md](reference_closebot_free_tier_limits.md) — CloseBot Free plan = 100 messages/month then $0.08/msg overage (no hard stop); 1 bot, 1MB KB
+- [reference_closebot_kb_index_stall.md](reference_closebot_kb_index_stall.md) — A freshly POST-created CloseBot library file can stall at fileStatus "uploaded"; a PUT content-replace re-triggers indexing
+- [reference_closebot_library_blob_uri.md](reference_closebot_library_blob_uri.md) — CloseBot library files expose an Azure blob URI for direct content read — use it to pull current CB state before mutating
+- [reference_closebot_rename_test_lead.md](reference_closebot_rename_test_lead.md) — Rename CloseBot test-session leads (Guest) via PUT /lead fields so API-test conversations are findable + screenshottable in the CloseBot UI
+- [reference_closebot_reply_windows.md](reference_closebot_reply_windows.md) — CloseBot reply restrictions are channel-scoped and API-writable via PUT /agency/source/{id} botRespondWindows
+- [reference_closebot_walkthrough_bryce.md](reference_closebot_walkthrough_bryce.md) — Vendor-canon walkthrough by Bryce (CloseBot founder) — full product tour including a real Qualify agent-node example with annotated instructions. Use as reference for how the product is framed officially and as a template shape for qualifier → booker funnels.
+- [reference_closebot_widget_ui_only.md](reference_closebot_widget_ui_only.md) — CloseBot chat widget is UI-only — no API endpoints; embed snippet must be copied from the UI; Live_Chat is the widget channel id
+- [reference_gs_bot_builds_vercel.md](reference_gs_bot_builds_vercel.md) — gs-bot-builds.vercel.app is git-linked to a separate GitHub repo — NOT the playbook-viz folder in this repo
+- [reference_gs_pit_inventory_stale_sources.md](reference_gs_pit_inventory_stale_sources.md) — GS pit-inventory.md (2026-05-14) has wrong CloseBot source ids; always verify source by GHL-location-key before attaching

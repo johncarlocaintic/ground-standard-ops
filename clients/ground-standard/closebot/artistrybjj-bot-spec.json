@@ -1,0 +1,104 @@
+{
+  "gym": {
+    "name": "Artistry BJJ",
+    "website": "https://www.artistrybjj.com/",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Artistry BJJ. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Artistry BJJ.",
+    "rules": ["Never mention pricing", "Free trial for first class only", "Never identify as AI"]
+  },
+  "ghl": {
+    "locationId": "3SIWDTRfqtCBE9gSr1bY",
+    "sourceId": "src_D87BKGBV6H9K4WRS"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj", "calendarName": "Adult Fundamentals BJJ", "calendarId": "zekzktAAbiO3xmvaOVIj", "program": "bjj" },
+      { "label": "adult_mma", "calendarName": "Adult Fundamentals MMA", "calendarId": "SSs1T9pdl8wdidH4EJxn", "program": "mma" }
+    ],
+    "kids": [
+      { "label": "kids_5_13", "calendarName": "Kids 5-13 BJJ", "calendarId": "iUxOoSFF7RF8uP9VpN9b", "ageMin": 5, "ageMax": 13, "program": "bjj" }
+    ]
+  },
+  "nonBookablePrograms": ["Kids Striking", "Open Mat", "Competition class"],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "architecture": "method-nodes",
+    "nodePattern": ["intro", "data-capture", "booking"],
+    "programSwitchInBooking": true
+  },
+  "nodes": {
+    "intro": {
+      "type": "Method",
+      "title": "Intro",
+      "tools": { "EnableSmartFaq": true, "EnableLibraryContext": true, "EnableAddTag": true, "EnableUpdateContact": false, "EnableGhlBooking": false, "EnableCheckAvailability": false },
+      "enableThinking": true,
+      "highIntelligence": true,
+      "removeLimits": true,
+      "exitPaths": ["Interested", "Parent for Child"]
+    },
+    "dataCapture": {
+      "type": "Method",
+      "title": "Data Capture",
+      "tools": { "EnableUpdateContact": true, "EnableAddTag": true, "EnableLibraryContext": true, "EnableSmartFaq": false, "EnableGhlBooking": false, "EnableCheckAvailability": false },
+      "enableThinking": true,
+      "highIntelligence": true,
+      "removeLimits": true,
+      "exitPaths": ["Ready to Book", "Minor Detected"]
+    },
+    "booking": {
+      "type": "Method",
+      "title": "Booking",
+      "tools": { "EnableGhlBooking": true, "EnableCheckAvailability": true, "EnableUpdateContact": true, "EnableAddTag": true, "EnableLibraryContext": true, "EnableModifyAppointment": true, "EnableSmartFaq": false },
+      "enableThinking": true,
+      "highIntelligence": true,
+      "removeLimits": true,
+      "exitPaths": []
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    },
+    {
+      "title": "Booking Failure Handoff",
+      "description": "The contact tag list contains 'alert' applied when booking could not be secured",
+      "threshold": 6,
+      "priority": 80
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian",
+    "alert": "alert"
+  },
+  "kbReady": true,
+  "kbFileId": "file_QLH6ZXWGT1269JO3",
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-15",
+      "botId": "bot_PTLGN3MT5GNWEEUG",
+      "botName": "Artistry BJJ - Launch v1.0 [initial build] (2026-05-15)",
+      "version": "v1.0"
+    },
+    {
+      "date": "2026-05-15",
+      "botId": "bot_WPGXC5YR7VT13RVY",
+      "botName": "Artistry BJJ - Launch v1.1 [minor tag guard] (2026-05-15)",
+      "version": "v1.1"
+    }
+  ]
+}

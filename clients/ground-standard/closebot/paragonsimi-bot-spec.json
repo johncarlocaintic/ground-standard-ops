@@ -1,0 +1,251 @@
+{
+  "gym": {
+    "name": "Paragon Simi Valley",
+    "website": "https://www.paragonsimivalley.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Paragon Simi Valley, a martial arts academy in Simi Valley, CA offering Brazilian Jiu-Jitsu (Gi and No-Gi), Muay Thai, and MMA for adults plus kids programs. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Paragon Simi Valley.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial",
+      "Free trial class for new students, no commitment",
+      "Never identify as AI",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Adults (18+) train in one of four disciplines: Adult Gi BJJ, Adult No-Gi BJJ, Adult Muay Thai, or Adult Mixed Martial Arts. Ask which discipline the adult wants. Default to Adult Gi BJJ only if they have no preference. Do not proactively push one discipline.",
+      "Kids ages 3-6 book the Kids 3-6 Fun Jitsu trial. Kids ages 7-14 book the Kids 7-14 BJJ trial. Both are minors and need a parent or guardian.",
+      "Ages 15-17 have no online class (kids end at 14, adults are 18+) - capture guardian, do not book, tell them the team will follow up.",
+      "Under age 3 - youngest program is Fun Jitsu (ages 3-6); do not book, refer to the academy at (805) 744-5449.",
+      "Advanced Gi and private lessons are not booked online as a trial; new students start with a free beginner trial - no coach-redirect, no substitute calendar."
+    ]
+  },
+  "ghl": {
+    "locationId": "SO522NFKOtYUxfAzLbYW",
+    "sourceId": "src_SFJ08L818G37B5CP"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_gi_bjj",
+        "calendarName": "Adult Gi BJJ",
+        "calendarId": "tXUikVuCUy8KaHZCxC9u",
+        "program": "bjj-gi",
+        "ageMin": 18,
+        "default": true
+      },
+      {
+        "label": "adult_nogi_bjj",
+        "calendarName": "Adult No-Gi BJJ",
+        "calendarId": "EywP00tCh2wlXmnIekZm",
+        "program": "bjj-nogi",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_muay_thai",
+        "calendarName": "Adult Muay Thai",
+        "calendarId": "YVbgt1gmdm2CpKMnHS1T",
+        "program": "muay-thai",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_mma",
+        "calendarName": "Adult Mixed Martial Arts",
+        "calendarId": "FN0tQiwHjyigzUmdihJd",
+        "program": "mma",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_3_6_funjitsu",
+        "calendarName": "Kids 3-6 Fun Jitsu",
+        "calendarId": "ddmOhTfUkXV1RdDKOfpY",
+        "program": "funjitsu",
+        "ageMin": 3,
+        "ageMax": 6,
+        "templateBand": "KIDS_3_5"
+      },
+      {
+        "label": "kids_7_14_bjj",
+        "calendarName": "Kids 7-14 BJJ",
+        "calendarId": "AFoWlffSZq18isEuVqwO",
+        "program": "bjj",
+        "ageMin": 7,
+        "ageMax": 14,
+        "templateBand": "KIDS_7_13"
+      }
+    ],
+    "noCalendarAgeBands": [
+      {
+        "band": "15-17",
+        "status": "no calendar",
+        "default": "minor, capture guardian, do not book, team follows up"
+      },
+      {
+        "band": "under-3",
+        "status": "no calendar",
+        "default": "youngest is Fun Jitsu (3-6); do not book, academy contact (805) 744-5449"
+      }
+    ],
+    "inactiveExcluded": [
+      {
+        "calendarName": "Kids 6-9 BJJ",
+        "calendarId": "7vZi4GhfxeiXTPSPbRTs",
+        "note": "INACTIVE - not mirrored, not booked"
+      },
+      {
+        "calendarName": "Adult Advanced BJJ",
+        "calendarId": "YQDaxE0GhSrFaUnqBF2P",
+        "note": "INACTIVE; advanced, not a beginner trial"
+      },
+      {
+        "calendarName": "Adult All Levels BJJ",
+        "calendarId": "vg23tU8G6NRpdxlLlHnu",
+        "note": "INACTIVE"
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Taylor Manning-Drake's Personal Calendar",
+        "calendarId": "WYz8CdK5jGEJ13xW0mW5",
+        "note": "staff personal calendar; internal only"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Advanced Gi (advanced practitioners - not a beginner trial)",
+    "Private lessons (upon request, not booked online)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free beginner trial and it is not booked online otherwise. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 4,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": true,
+    "disciplineSwitch": {
+      "path": "adult",
+      "default": "Adult Gi BJJ",
+      "alternates": [
+        "Adult No-Gi BJJ",
+        "Adult Muay Thai",
+        "Adult Mixed Martial Arts"
+      ],
+      "trigger": "ask the adult which discipline; route on their stated choice, default to Adult Gi BJJ only if no preference",
+      "implementation": "4-way adult-discipline AISwitch via cb_discipline_switch_inject.js (N-way spec-driven); all 4 adult Bookings wire into the same downstream confirm path; 0 orphan handles."
+    },
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 3-14 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB 15-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 14 (Kids 7-14 BJJ), adults 18+, no teen calendar. Ages 15-17 are a no-calendar band. cb_youth_nocal_gate_inject.js inserts a DOB-age 15-17 gate before the kids-age AISwitch -> no-booking team-follow-up Statement -> EOC.",
+      "band": "15-17"
+    },
+    "ageRouting": {
+      "under-3": "no calendar - no booking, refer to academy (805) 744-5449",
+      "3-6": "Kids 3-6 Fun Jitsu - guardian required",
+      "7-14": "Kids 7-14 BJJ - guardian required",
+      "15-17": "no calendar - minor, guardian capture, team follow-up, no booking (youth no-cal gate)",
+      "18+": "adult discipline AISwitch (Gi BJJ default / No-Gi BJJ / Muay Thai / MMA)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": null,
+    "localFile": "clients/ground-standard/closebot/paragonsimi-kb-v1.0.0.txt",
+    "indexed": false,
+    "verification": "Legacy KB v1.1.0 (CB library file_OFQEJOJ4OOVXZMQY, 2026-02-28) verified vs live site paragonsimivalley.com + live GHL 2026-05-18. Internal inconsistency log + procedural booking-requirements section excluded. Email paragonsv@yahoo.com added from live site. Kids bands aligned to live GHL (Fun Jitsu 3-6, Kids 7-14). Verification doc: clients/ground-standard/closebot/paragonsimi-kb-verification-2026-05-18.md",
+    "knownGaps": [
+      "Kids bands from live GHL (Fun Jitsu 3-6, Kids 7-14); legacy KB Kids-vs-Youth ambiguity resolved to GHL - confirm.",
+      "15-17: no calendar (kids end at 14) - youth no-cal gate; team follow-up, no booking.",
+      "Under-3: no calendar (Fun Jitsu starts at 3) - no online booking, academy (805) 744-5449.",
+      "Advanced Gi / private lessons: not online trial bookings (KB-acknowledged, no flow path)."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) confirm 4 adult disciplines Gi BJJ/No-Gi BJJ/Muay Thai/MMA; (b) confirm kids bands Fun Jitsu 3-6 / Kids 7-14; (c) confirm 15-17 minor/team-follow-up (no online booking); (d) confirm under-3 no-online-booking + academy phone referral; (e) Taylor Manning-Drake's Personal + 3 inactive calendars excluded as non-trial"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_3CLH0PGK4HNLX144",
+      "botName": "Paragon Simi Valley - Launch v2.0 [Agent Node rebuild] (2026-05-20)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from agentnode-base-template). 4 adult disciplines (Gi BJJ default / No-Gi BJJ / Muay Thai / MMA explicit). 2 kids bands (3-6 Fun Jitsu, 7-14 BJJ). 15-17 no-cal gate. Under-3 deflect.",
+      "verdict": "QA-PASSED 2026-05-20 — 13 runs (10 PASS, 3 FAIL all FALSE NEGATIVES: under3_redirect md_04 FP + minor_self_booking md_04b/md_06 FP [GHL 0 appts correct, judge safe=true] + hostile_aggression mnd_05 FP [opt-out ack not booking confirm]). Non-det adult_gi_default 1/1 PASS. All 4 disciplines + both kids bands + multi-enrollee + 15-17 gate + minor gate verified. 0 real blockers. See paragonsimi-qa-summary-v2.md. Parked sandbox, NOT on prod."
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_PLD788X8PTDLRZ8A",
+      "botName": "[LEGACY] Paragon Simi Valley - Launch v1.0 [pre-phone-confirm] (2026-05-18)",
+      "version": "v1.0",
+      "architecture": "canon classic + 4-way disc switch + youth 15-17 no-cal gate + scope-guard + substitute v3.",
+      "verdict": "LEGACY — pre-tweak, untested. Superseded by v1.1 before any sweep (no throwaway QA).",
+      "supersedes": "bot_A6FT1DEJ00RECPX8 [DEMO] (kept on prod)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_DKYCMV7K02MJPJCJ",
+      "botName": "Paragon Simi Valley - Launch v1.1 [phone-confirm + humanization tweaks, 4-way disc switch] (2026-05-18)",
+      "version": "v1.1",
+      "architecture": "canon classic + phone-confirm patched template (cb_phone_confirm_patch.js) + 4-way adult-discipline AISwitch (cb_discipline_switch_inject.js N-way) + youth 15-17 no-cal gate (cb_youth_nocal_gate_inject.js) + scope-guard + substitute v3. Global Emma persona: 5s delay + no-em-dash human-texting tone + phone-confirm reinforcement.",
+      "verdict": "LEGACY — same merge bug as Logica v1.1 ({{contact.phone}} token). Superseded by v1.2 before any sweep.",
+      "supersedes": "bot_PLD788X8PTDLRZ8A [LEGACY] v1.0 pre-phone-confirm"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_VEOBBZE8IB5SVJJF",
+      "botName": "Paragon Simi Valley - Launch v1.2 [phone-confirm merge-fix, 4-way disc switch, full tweaks] (2026-05-19)",
+      "version": "v1.2",
+      "architecture": "canon classic (merge-safe phone Prompt) + 4-way adult-discipline AISwitch + youth 14-17 no-cal gate (BUG: gate was hardcoded 14-17, should be 15-17 for kids cap 14). Superseded by v1.3.",
+      "verdict": "LEGACY — wrong no-cal gate band (14 catches Kids 7-14 BJJ eligibles incorrectly). Superseded by v1.3.",
+      "supersedes": "bot_DKYCMV7K02MJPJCJ [LEGACY] v1.1 pre-merge-fix"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_9C7WRU5YB74XR55E",
+      "botName": "Paragon Simi Valley - Launch v1.3 [15-17 gate fix, 4-way disc switch, full tweaks] (2026-05-19)",
+      "version": "v1.3",
+      "architecture": "canon classic (merge-safe phone Prompt) + 4-way adult-discipline AISwitch (cb_discipline_switch_inject.js N-way) + youth 15-17 no-cal gate (spec-driven cb_youth_nocal_gate_inject.js with spec.json) + scope-guard + substitute v3. Global Emma persona: 5s delay + no-em-dash + phone-confirm.",
+      "verdict": "QA-PASSED 2026-05-19 — 12 standard personas (10 PASS, 2 FAIL: under3 mnd_05 FP + adult_gi_default run#1 non-det), non-det adult_gi_default 1x PASS w/ GHL appt. All 4 disciplines + kids bands + multi-enrollee + 15-17 gate verified. 0 real blockers. See paragonsimi-qa-summary-v1.md. Parked sandbox, NOT on prod.",
+      "supersedes": "bot_VEOBBZE8IB5SVJJF [LEGACY] v1.2 wrong-gate-band"
+    }
+  ]
+}

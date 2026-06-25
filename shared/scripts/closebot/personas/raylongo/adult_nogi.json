@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_adult_nogi",
+  "opening_message": "do you offer no-gi jiu-jitsu?",
+  "brief": "You are {{firstName}} {{lastName}}, a 33-year-old adult (DOB: 1992-08-14) who explicitly wants No-Gi Brazilian Jiu-Jitsu. Ask for no-gi upfront. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1992-08-14. Accept the first slot. Expect the Adult No-Gi Brazilian Jiu-Jitsu intro. When the bot confirms the booking, reply with [END]."
+}

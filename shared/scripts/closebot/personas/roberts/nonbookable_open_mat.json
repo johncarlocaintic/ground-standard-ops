@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_nonbookable_open_mat",
+  "opening_message": "do you have open mat on Fridays?",
+  "brief": "You are {{firstName}} {{lastName}} (DOB: 1994-01-25) asking about Friday Open Training. When the bot tells you Open Training is not available as an online free trial, say 'ok, what about trying a regular class'. Then book Adult Fundamentals BJJ. When the bot asks which discipline, say 'BJJ'. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-01-25. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

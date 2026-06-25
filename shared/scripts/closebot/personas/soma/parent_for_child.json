@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_parent_for_child",
+  "opening_message": "My 10 year old wants to try a class at SOMA. Can I sign her up?",
+  "brief": "You are {{firstName}} {{lastName}}, a 38-year-old parent. Your date of birth is 1988-06-25. Your email is {{email}}. Your phone is {{phone}}. You are trying to sign up your 10-year-old daughter for SOMA MVMT. SOMA is an ADULT-ONLY STUDIO and does not offer kids/youth classes. The bot must NOT attempt to book your daughter into the Introduction Class. It should explain SOMA is adult-only and either offer a team follow-up or decline politely. Your daughter's name is Sophie {{lastName}} born 2015-11-08. If the bot offers to capture info and have the team follow up, accept. If the bot tries to book your daughter anyway, say 'wait, she's 10 — are you sure?' and force the bot to re-evaluate. When the bot closes appropriately (no booking made for the kid), reply with [END]."
+}

@@ -1,0 +1,320 @@
+HAMMER SPORTS & PERFORMANCE - KNOWLEDGE BASE
+
+Version: 1.1.0
+Date: March 17, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot Chatbot
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v1.1.0 | March 17, 2026
+- Standardized pricing redirect response applied across MEMBERSHIP OVERVIEW
+  and FAQ sections (all pricing touchpoints)
+- New FAQ entry added: "How much does membership cost?" with canonical redirect
+- NOTE: Redirect language references "free trial class" and "completely free"
+  trial — this conflicts with FLAG 4 (Appendix A), which notes that a free
+  introductory class was not confirmed in the source PDF. Applied per explicit
+  client instruction. FLAG 4 retained in Appendix A for the record.
+
+v1.0.0 | March 17, 2026
+- Initial build from client-supplied PDF source material
+- Pricing section applies redirect logic (no figures in bot-facing content)
+- Inconsistencies and data gaps documented in Appendix A
+- Flagged items pending client clarification before v1.1.0
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Hammer Sports & Performance
+Industry: Martial Arts Training & Athletic Performance
+Website: www.hammertrained.com
+
+Description: Hammer Sports & Performance is a martial arts and athletic training gym located in Hazlet, NJ, offering a wide range of programs including Brazilian Jiu Jitsu, Wrestling, Kickboxing, Muay Thai, MMA, and Kettlebell training. The gym serves two sides of the training community — competitive fighters and hobbyist practitioners — with programs available for kids, teens, and adults.
+
+================================================================================
+LOCATION & DIRECTIONS
+================================================================================
+
+Address: 1719 Union Ave, Hazlet, NJ 07730
+Landmark: The gym is located past the Chinese restaurant on the corner of Union Ave.
+
+General Directions:
+From Route 35, head toward Hazlet Township and make your way to Union Avenue (County Road 36). Union Avenue runs parallel to the Garden State Parkway and connects several local streets. Look for 1719 Union Ave along the avenue, near other local businesses. Nearby landmarks include Veterans Memorial Park on Union Ave, Hazlet Plaza (a shopping area close to Union Ave), Hazlet Train Station on Holmdel Road, and Holy Family Church on the southern end of Union Ave.
+
+Parking: Ample parking is available near the facility.
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+NOTE: Muay Thai classes book under the Kickboxing category on the scheduling platform (GSPro).
+NOTE: Saturday Kids Class and Girls Only Sundays are new programs beginning March 21–22, 2026.
+
+MONDAY
+- Kettlebell | 8:00 AM
+- Kickboxing | 9:00 AM
+- No-Gi Fundamentals | 10:00 AM
+- Little Hammer Kickboxing | 5:30 PM
+- No-Gi Fundamentals | 6:30 PM
+- MMA | 7:30 PM
+
+TUESDAY
+- Wrestling (K–8th Grade) | 5:15 PM
+- Kickboxing | 6:30 PM
+- GI Fundamentals | 7:30 PM
+
+WEDNESDAY
+- Kettlebell | 8:00 AM
+- Kickboxing | 9:00 AM
+- Open Mat | 10:00 AM
+- Little Hammer BJJ | 5:30 PM
+- No-Gi Fundamentals | 6:30 PM
+- Muay Thai | 7:30 PM
+
+THURSDAY
+- Wrestling (K–8th Grade) | 5:15 PM
+- Wrestling High School | 6:30 PM
+- MMA | 8:00 PM
+
+FRIDAY
+- Kettlebell | 8:00 AM
+- MMA | 9:00 AM
+- No-Gi Fundamentals | 10:00 AM
+- Little Hammer Kickboxing | 5:30 PM
+- Kickboxing | 6:30 PM
+- Open Mat | 7:30 PM
+
+SATURDAY (Beginning March 21, 2026)
+- Muay Thai | 9:00 AM
+- Little Hammer BJJ | 10:00 AM
+- No-Gi Fundamentals | 11:00 AM
+
+SUNDAY (Beginning March 22, 2026)
+- Girls Only Wrestling | 10:00 AM
+- Wrestling High School | 11:00 AM
+
+================================================================================
+PROGRAMS & CLASS DESCRIPTIONS
+================================================================================
+
+KIDS PROGRAM (Ages 5–12) — "Little Hammer"
+The Little Hammer program serves children ages 5 to 12, with classes structured to develop foundational martial arts skills in a progressive environment. Kids classes run Monday through Friday from 5:00 PM to 6:00 PM, with Saturday Little Hammer classes beginning March 21, 2026.
+
+Little Hammer class breakdown by discipline:
+- Monday and Wednesday: Brazilian Jiu Jitsu
+- Tuesday and Thursday: Wrestling
+- Friday: MMA
+- Saturday (starting 3/21/2026): Little Hammer BJJ at 10:00 AM
+- Monday, Wednesday, Friday (starting schedule): Little Hammer Kickboxing at 5:30 PM
+
+YOUTH WRESTLING (K–8th Grade)
+Competitive and foundational wrestling instruction for school-age athletes. Classes run Tuesday and Thursday at 5:15 PM.
+
+HIGH SCHOOL WRESTLING
+Advanced wrestling training for high school-level athletes. Classes run Thursday at 6:30 PM and Sunday at 11:00 AM (starting 3/22/2026).
+
+GIRLS ONLY WRESTLING (New — Starting March 22, 2026)
+A dedicated wrestling class for girls, offered every Sunday at 10:00 AM beginning March 22, 2026.
+
+BRAZILIAN JIU JITSU (BJJ)
+BJJ training available across multiple formats — Gi Fundamentals (Tuesday 7:30 PM), No-Gi Fundamentals (multiple sessions throughout the week), and Open Mat (Wednesday 10:00 AM and Friday 7:30 PM).
+
+KICKBOXING
+Kickboxing classes are available for all levels throughout the week. Muay Thai classes also appear on the schedule and are booked under the Kickboxing category on GSPro.
+
+MUAY THAI
+Muay Thai training is offered Wednesday at 7:30 PM and Saturday at 9:00 AM (starting 3/21/2026). On the booking platform, Muay Thai classes are listed under the Kickboxing category.
+
+MMA (Mixed Martial Arts)
+MMA classes are available Monday at 7:30 PM, Thursday at 8:00 PM, and Friday at 9:00 AM. MMA blends striking and grappling disciplines.
+
+KETTLEBELL / CONDITIONING
+Kettlebell classes run Monday, Wednesday, and Friday at 8:00 AM. These are athletic conditioning sessions for all fitness levels.
+
+NO-GI FUNDAMENTALS
+No-Gi grappling classes run multiple times per week across morning and evening slots. Suitable for all levels looking to develop grappling skills without the traditional Gi uniform.
+
+OPEN MAT
+Open Mat sessions are available Wednesday at 10:00 AM and Friday at 7:30 PM. These are unstructured training sessions for members to drill and roll freely.
+
+================================================================================
+GYM STRUCTURE
+================================================================================
+
+Hammer Sports & Performance serves two types of training members: competitive fighters (fight team) and hobbyist practitioners. All membership types include gym access.
+
+Average class sizes range from approximately 5 students in morning sessions to 15 students in evening sessions, with an average of 8 to 12 students per class.
+
+No live sparring is conducted during introductory sessions. Intro attendees participate in technique and pad work only.
+
+================================================================================
+MEMBERSHIP OVERVIEW
+================================================================================
+
+Hammer Sports & Performance offers multiple membership tiers to accommodate different training goals and schedules — from children's programs to conditioning-only memberships to unlimited and private-session packages. Membership options cover Kids (ages 5–12), Teen (ages 13 through high school), Conditioning, Unlimited, and Ultimate tiers with private session add-ons.
+
+All memberships include gym access. Membership commitments are available across different term lengths. Specific pricing, commitment lengths, and the membership option that best fits a prospect's goals and schedule are discussed directly with staff.
+
+Factors that affect which membership is the right fit include age, training goals, preferred disciplines, desired class frequency, and whether private sessions are part of the training plan. Staff assess these factors to help new members select the appropriate tier.
+
+Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+================================================================================
+BOOKING & ENROLLMENT
+================================================================================
+
+Class scheduling is managed through GSPro, the gym's scheduling platform. Prospects can view the live schedule through the gym's website at www.hammertrained.com.
+
+Enrollment and membership sign-up are handled in person at the facility. Staff assist new members through the enrollment process on-site.
+
+For inquiries about booking a class or getting started, prospects can visit www.hammertrained.com or come into the gym directly.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: How much does membership cost?
+A: Membership pricing varies based on several factors like the number of classes per week you'd want to attend and your specific training goals. Instructors will discuss all the pricing options and membership plans with you during or right after your free trial class. They'll be able to assess what program works best for you and provide accurate pricing for your situation. The trial class is completely free with no commitment required.
+
+Q: What programs do you offer?
+A: Hammer Sports & Performance offers Brazilian Jiu Jitsu (Gi and No-Gi), Wrestling, Kickboxing, Muay Thai, MMA, and Kettlebell conditioning. There is a dedicated Little Hammer program for kids ages 5 to 12, and a Girls Only Wrestling class starting March 22, 2026.
+
+Q: Do you have classes for kids?
+A: Yes. The Little Hammer program serves children ages 5 to 12, with classes in BJJ, Wrestling, MMA, and Kickboxing running Monday through Friday from 5:00 PM to 6:00 PM, plus new Saturday classes beginning March 21, 2026.
+
+Q: Is there a girls-only class?
+A: Yes. A Girls Only Wrestling class launches Sunday, March 22, 2026 at 10:00 AM and runs weekly.
+
+Q: How large are the classes?
+A: Morning classes typically have around 5 students. Evening classes average around 15 students. Across all sessions, the typical class size ranges from 8 to 12 students.
+
+Q: What is the difference between Gi and No-Gi BJJ?
+A: Gi BJJ is trained wearing a traditional uniform (the Gi), which is used in grips and techniques. No-Gi BJJ is practiced in shorts and a rash guard, without the traditional uniform, and relies more on body control and clinch work.
+
+Q: What happens at an introductory class?
+A: Intro sessions are technique and pad work focused. There is no live sparring during introductory visits. New students attend alongside regular class participants.
+
+Q: Can I watch a class before signing up?
+A: Visitors are welcome to come in and observe classes to get a feel for the gym before committing.
+
+Q: Does Muay Thai have its own classes?
+A: Yes. Muay Thai classes are on the schedule — Wednesday at 7:30 PM and Saturday at 9:00 AM (starting March 21, 2026). On the GSPro booking platform, Muay Thai is listed under the Kickboxing category when booking.
+
+Q: What is Open Mat?
+A: Open Mat sessions are unstructured training time where members can drill techniques, roll, or work on specific skills. Open Mat is available Wednesday at 10:00 AM and Friday at 7:30 PM.
+
+Q: Do all memberships include gym access?
+A: Yes. All membership tiers include gym access.
+
+Q: Where can I find the live schedule?
+A: The live class schedule is available through the gym's website at www.hammertrained.com.
+
+Q: How do I sign up?
+A: New members sign up in person at the gym. Staff guide new members through the enrollment process and help identify the right membership tier based on their goals.
+
+Q: How do I get to the gym?
+A: The gym is located at 1719 Union Ave, Hazlet, NJ 07730, past the Chinese restaurant on the corner. From Route 35, head toward Hazlet Township and make your way to Union Avenue (County Road 36). Nearby landmarks include Veterans Memorial Park and Hazlet Plaza.
+
+================================================================================
+APPENDIX A — INTERNAL USE ONLY
+DO NOT LOAD INTO CLOSEBOT
+================================================================================
+
+This appendix documents source inconsistencies, data gaps, and internal pricing reference
+identified during the v1.0.0 build. Items require client review and resolution before
+inclusion in any future bot-facing KB version.
+
+--------------------------------------------------------------------------------
+SECTION A1: PRICING REFERENCE (Internal Only — Not for Bot Deployment)
+--------------------------------------------------------------------------------
+
+The following pricing data is extracted directly from the source PDF for internal
+reference. This information is not included in the bot-facing KB and is not to be
+loaded into CloseBot.
+
+KIDS MEMBERSHIP
+  Ages 5–7:     $75 / 6 months | $89 / 12 months
+  Ages 8–12:    $99 / 6 months | $89 / 12 months
+
+TEEN MEMBERSHIP (Ages 13 – High School, or Blue Belt)
+  $115 / 6 months | $100 / 12 months
+
+CONDITIONING MEMBERSHIP (Bag & Pad Classes Only)
+  $99 / 6 months | $89 / 12 months
+
+UNLIMITED MEMBERSHIP (All Classes)
+  $165 / 6 months
+  $150 / 12 months
+  $185 / month
+  $399 / 3 months (Paid in Full)
+
+ULTIMATE MEMBERSHIP (All Classes + Private Sessions)
+  Silver — 2 private sessions/month: $299/month (3-month contract)
+  Gold   — 4 private sessions/month: $399/month (3-month contract)
+
+--------------------------------------------------------------------------------
+SECTION A2: INCONSISTENCIES FLAGGED
+--------------------------------------------------------------------------------
+
+FLAG 1 — Kids Pricing: Identical Annual Rate Across Age Groups
+  Source: Pricing section of client PDF
+  Issue: Both the 5–7 and 8–12 age brackets show the same 12-month rate of $89/month,
+  despite having different 6-month rates ($75 vs $99). This may be intentional
+  (flat annual rate regardless of age group) or a data entry error.
+  Status: Pending client confirmation. Bot-facing content defers all pricing to staff.
+
+FLAG 2 — Teen Membership Qualifier: "or Blue Belt"
+  Source: Pricing section of client PDF
+  Issue: The teen membership is defined as ages 13 through high school "or blue belt."
+  The blue belt qualifier implies an adult practitioner at a rank milestone could be
+  categorized under the teen tier, which is non-standard. May affect how staff qualify
+  prospects.
+  Status: Pending client clarification. Bot-facing content does not reference this qualifier.
+
+FLAG 3 — Monday 8:00 AM Class Labeled Incorrectly in Internal Note
+  Source: Internal staff note within client PDF ("Monday 8am as an option for standup
+  — that's the No-Gi time, 9am is the standup")
+  Issue: The 8:00 AM Monday slot is No-Gi Fundamentals (grappling), not a standup/
+  striking class. The 9:00 AM Monday slot is Kickboxing (standup). This distinction
+  is important for routing prospects to the correct class type.
+  Status: Accounted for in schedule section. No action needed unless client wants
+  additional clarification language added.
+
+FLAG 4 — Intro / Trial Class Policy: "Free Trial" Not Explicitly Confirmed
+  Source: Client PDF — no explicit mention of a free introductory class offer
+  Issue: The source material does not state whether the first class or introductory
+  visit is free of charge. This is a significant bot-facing gap, as prospects commonly
+  ask about trying before committing.
+  Status: FLAGGED — Pending client confirmation. Current bot-facing KB directs
+  prospects to staff and website for enrollment details. Do not add "free trial"
+  language until confirmed.
+
+FLAG 5 — No Phone Number or Email Address Provided
+  Source: Client PDF
+  Issue: The PDF does not include a phone number or contact email for the gym.
+  Only the website (www.hammertrained.com) and physical address are available.
+  Status: Flagged as data gap. Bot-facing FAQ routes all direct contact to the website.
+  Recommend client supply phone and email for v1.1.0.
+
+FLAG 6 — New Saturday/Sunday Classes: Launch Date Not Yet Passed at Build Time
+  Source: Schedule image in client PDF
+  Issue: Saturday Kids Class and Girls Only Sundays are noted as starting 3/21 and
+  3/22/2026, which is 4 days from the build date (March 17, 2026). These classes
+  are included in the schedule section but should be confirmed as launched and
+  active before the bot promotes them as currently available.
+  Status: Included with launch date noted. Recommend verifying and updating language
+  to remove the date qualifier after 3/22/2026.
+
+--------------------------------------------------------------------------------
+END OF APPENDIX A
+--------------------------------------------------------------------------------
+
+================================================================================
+
+Version 1.0.0 | Built: March 17, 2026
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions
+Platform Target: CloseBot (SMS Chatbot)
+Appendix: Internal Use Only — Do Not Load Into CloseBot

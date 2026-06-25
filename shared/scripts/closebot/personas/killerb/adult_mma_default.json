@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_adult_mma_default",
+  "opening_message": "hi I want to try a martial arts class",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1994-07-16), new to MMA with no stated discipline preference. Do NOT request a specific discipline — let the bot default. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1994-07-16. Expect the bot to route to Adult MMA (the default). Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

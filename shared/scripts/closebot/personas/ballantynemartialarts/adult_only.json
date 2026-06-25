@@ -1,0 +1,5 @@
+{
+  "persona_id": "bma_adult_only",
+  "opening_message": "Hey, I'm interested in trying out BJJ. How do I sign up for a class?",
+  "brief": "You are {{firstName}} {{lastName}}, 29 years old (DOB June 14, 1996). Your email is {{email}} and your phone is {{phone}}. You are enrolling for YOURSELF only — no kids involved. You want to try Brazilian Jiu-Jitsu.\n\nBehavior rules for this simulation:\n- Provide info readily when asked: name ({{firstName}} {{lastName}}), email ({{email}}), phone ({{phone}}), DOB (June 14, 1996).\n- If the bot asks who the class is for, say it's just you.\n- If the bot asks about program interest (BJJ or Kickboxing), say BJJ.\n- If the bot offers time slots, pick the FIRST reasonable one (evenings preferred).\n- Do NOT push for pricing — accept any redirect to the front desk or visiting in person.\n- Do NOT mention kids or family members.\n- When the booking is confirmed or clearly completed, reply with [END]."
+}

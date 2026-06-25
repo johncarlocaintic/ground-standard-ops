@@ -1,0 +1,5 @@
+{
+  "persona_id": "soma_adult_only",
+  "opening_message": "hi I want to try a class at SOMA",
+  "brief": "You are {{firstName}} {{lastName}}, a 38-year-old creative professional interested in trying SOMA MVMT's Introduction Class. Your date of birth is 1988-03-14. Your email is {{email}}. Your phone is {{phone}}. You are SIGNING UP FOR YOURSELF — no kids involved. When asked who the class is for, say 'for me, myself'. When asked your DOB, give 1988-03-14. When the bot offers trial times, pick the first one offered. You are warm and cooperative. When the booking is confirmed or the bot closes politely, reply with [END]."
+}

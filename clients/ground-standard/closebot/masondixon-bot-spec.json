@@ -1,0 +1,128 @@
+{
+  "gym": {
+    "name": "Mason Dixon Jiu-Jitsu",
+    "website": "https://masondixonjiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Mason Dixon Jiu-Jitsu. Your goal is to help new leads learn about our martial arts programs and book a free trial class. Never quote membership pricing — redirect all pricing questions to the instructor consultation after the trial.",
+    "businessInformation": "The company name is Mason Dixon Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing or membership fees — redirect to free trial and let the instructor handle it.",
+      "Adults must be 14 or older to train. If a minor is self-booking without a parent, capture their info and flag for staff follow-up — do not complete the booking.",
+      "Private training is offered but not bookable online — redirect to the free trial for that conversation.",
+      "When asked about the class schedule, let the lead know availability will show up once you have their info and the booking tool pulls live slots."
+    ]
+  },
+  "ghl": {
+    "locationId": "UC4YCK5VFS9k9JX74NeV",
+    "sourceId": "src_WEF7GLL3UCZIR97M"
+  },
+  "calendars": {
+    "adult": null,
+    "adultCalendars": [
+      {
+        "label": "adult_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "programs": [
+          "bjj",
+          "jiu-jitsu",
+          "grappling",
+          "no-gi"
+        ],
+        "calendarId": "fOMhL9TQ3i5KKw9VOYQN"
+      },
+      {
+        "label": "adult_striking",
+        "calendarName": "Adult Striking",
+        "programs": [
+          "striking",
+          "muay thai",
+          "kickboxing",
+          "mma"
+        ],
+        "calendarId": "Nm3MgApQroVomSkUwXxd"
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_4_7",
+        "calendarName": "Kids 4-7 Martial Arts",
+        "ageMin": 4,
+        "ageMax": 7,
+        "calendarId": "7s5mdmENiQ99WUAHVfn7"
+      },
+      {
+        "label": "kids_8_13",
+        "calendarName": "Kids 8-13 Martial Arts",
+        "ageMin": 8,
+        "ageMax": 13,
+        "calendarId": "Jjf0FN9wdLDYPD6uaG9v"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Private Training (BJJ) — offered but no GHL calendar; redirect to free trial",
+    "Private Training (Muay Thai) — offered but no GHL calendar; redirect to free trial"
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 2,
+    "adultProgramSwitch": true
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "kb": {
+    "fileId": "file_K8E6900W9STUOHBZ",
+    "fileName": "mason_dixon_kb_v2.0.0.txt",
+    "indexed": true
+  },
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_0HQBLZA2NO9T1ZFM",
+      "botName": "Mason Dixon Jiu-Jitsu - Launch v2.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from canonical template). 2 adult cals (Adult Fundamentals BJJ default + Adult Striking on explicit request). 2 kids cals (Kids 4-7 + Kids 8-13 MA). Teens 14-17 route to adult cals with guardian. Under-4 no-cal. Adult-path minor gate. Multi-enrollee support. Explicit calendar IDs in n30_book.",
+      "verdict": "QA-PENDING — published, NOT sandbox-attached (queued)"
+    },
+    {
+      "date": "2026-05-15",
+      "botId": "bot_JDWCEFQQ097FFE14",
+      "botName": "Mason Dixon Jiu-Jitsu - Launch v1.0 [initial build] (2026-05-15)",
+      "version": "v1.0",
+      "archived": true
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_3P1NY57E1LMYV52X",
+      "botName": "Mason Dixon Jiu-Jitsu - Launch v1.1 [discipline ask node] (2026-05-16)",
+      "version": "v1.1",
+      "archived": true
+    },
+    {
+      "date": "2026-05-16",
+      "botId": "bot_KD1I3PQ8YECAUHQO",
+      "botName": "Mason Dixon Jiu-Jitsu - Launch v1.2 [multi+closure fixes] (2026-05-16)",
+      "version": "v1.2"
+    }
+  ],
+  "openDependencies": []
+}

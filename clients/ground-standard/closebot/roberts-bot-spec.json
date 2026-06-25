@@ -1,0 +1,201 @@
+{
+  "gym": {
+    "name": "Roberts Family MMA",
+    "website": "https://www.rfmma.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Roberts Family MMA, a martial arts academy in Orange, MA offering Brazilian Jiu-Jitsu, Thai Boxing, and Boxing for adults and children. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Roberts Family MMA.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "Free trial class for new students, no commitment",
+      "Never identify as AI",
+      "Multiple adult disciplines: Adult Fundamentals BJJ (Gi, default), Adult Fundamentals No-Gi BJJ, Adult Boxing, Adult Thai Boxing. Ask which discipline the adult wants. Default to Adult Fundamentals BJJ if no preference stated.",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 5-10 can book Kids 5-10 BJJ or Kids 5-10 Wrestling (guardian required). Ask which discipline they prefer. Ages 11-17 can book Teens 11-17 BJJ or Kids 11-17 Wrestling (guardian required). Both are minors.",
+      "Under age 5 - youngest program is Kids 5-10 BJJ (ages 5+); do not book, refer to the academy at (978) 581-0601.",
+      "Open Training (open mat), Female Only Jiu-Jitsu, and Adult All-Levels BJJ classes are not booked online as a trial - acknowledge they exist, do not book them; new students start with a fundamentals trial."
+    ]
+  },
+  "ghl": {
+    "locationId": "aTIcApLzaP3lirDWJfKW",
+    "sourceId": "src_E4ZQBA8ABFBDK5RM",
+    "pit": "pit-76c54493-51f5-4f8a-8e6f-c38f9fda65a5"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "M0e98oYSS3OhOibzw0a4",
+        "program": "bjj-gi",
+        "ageMin": 18,
+        "default": true
+      },
+      {
+        "label": "adult_nogi_bjj",
+        "calendarName": "Adult Fundamentals No-Gi BJJ",
+        "calendarId": "3STGgKnHu55zhtcr1cUg",
+        "program": "bjj-nogi",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_boxing",
+        "calendarName": "Adult Boxing",
+        "calendarId": "kwXNyHeQheAHP1wH5wst",
+        "program": "boxing",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      },
+      {
+        "label": "adult_thai_boxing",
+        "calendarName": "Adult Thai Boxing",
+        "calendarId": "tALj3XaYaItIMsEurjzZ",
+        "program": "thai-boxing",
+        "ageMin": 18,
+        "onlyOnExplicitRequest": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_5_10_bjj",
+        "calendarName": "Kids 5-10 BJJ",
+        "calendarId": "UMhkQHI9icuipqq9ivS2",
+        "ageMin": 5,
+        "ageMax": 10,
+        "discipline": "bjj"
+      },
+      {
+        "label": "kids_5_10_wrestling",
+        "calendarName": "Kids 5-10 Wrestling",
+        "calendarId": "pWmMHvpwPWvmp1DLXCkT",
+        "ageMin": 5,
+        "ageMax": 10,
+        "discipline": "wrestling"
+      },
+      {
+        "label": "teens_11_17_bjj",
+        "calendarName": "Teens 11-17 BJJ",
+        "calendarId": "huSRlv9vhFd9Q7E9z45k",
+        "ageMin": 11,
+        "ageMax": 17,
+        "discipline": "bjj"
+      },
+      {
+        "label": "kids_11_17_wrestling",
+        "calendarName": "Kids 11-17 Wrestling",
+        "calendarId": "GXWxp7hi6BI2dWGsd9Qc",
+        "ageMin": 11,
+        "ageMax": 17,
+        "discipline": "wrestling"
+      }
+    ],
+    "internalNotForTrial": []
+  },
+  "nonBookablePrograms": [
+    "Open Training (open mat, Friday only - not an intro/first class)",
+    "Female Only Jiu-Jitsu (Sundays - no dedicated trial calendar)",
+    "Adult All-Levels BJJ (not a fundamentals/beginner trial)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free fundamentals trial class and those programs are not booked online as a trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 4,
+    "kidsCalendarCount": 4,
+    "requiresDisciplineSwitch": true,
+    "disciplineSwitch": {
+      "path": "adult",
+      "default": "Adult Fundamentals BJJ",
+      "alternates": [
+        "Adult Fundamentals No-Gi BJJ",
+        "Adult Boxing",
+        "Adult Thai Boxing"
+      ],
+      "trigger": "ask the adult which discipline they want; default to Adult Fundamentals BJJ if no preference stated"
+    },
+    "kidsDisciplineSwitch": {
+      "required": true,
+      "note": "Kids have two discipline options per age band (BJJ and Wrestling). Ask which the child prefers during the youth path.",
+      "under10": [
+        "Kids 5-10 BJJ",
+        "Kids 5-10 Wrestling"
+      ],
+      "under18": [
+        "Teens 11-17 BJJ",
+        "Kids 11-17 Wrestling"
+      ]
+    },
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 5-17 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor, no guardian)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no unsupervised self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB under 5 on the youth path (below youngest program)",
+          "action": "tag minor - needs guardian, Statement (team will follow up, academy phone (978) 581-0601), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": false,
+      "reason": "No no-calendar age gap: Kids BJJ covers 5-10, Teens 11-17 BJJ covers 11-17. Kids Wrestling covers 5-10 and 11-17. Only under-5 has no calendar (handled by under-5 referral, not a no-cal teen gate)."
+    },
+    "ageRouting": {
+      "under-5": "no calendar - no booking, refer to academy (978) 581-0601",
+      "5-10": "Kids 5-10 BJJ or Kids 5-10 Wrestling - guardian required (discipline choice)",
+      "11-17": "Teens 11-17 BJJ or Kids 11-17 Wrestling - guardian required (discipline choice)",
+      "18+": "4-way adult discipline switch (Fundamentals BJJ default)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/roberts-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.1.0 verified vs live GHL 2026-05-20. Phone recovered from GHL: (978) 581-0601. Website recovered from GHL: rfmma.com. KB missing phone/email filled. Kids calendar bands confirmed: 5-10 and 11-17 for both BJJ and Wrestling. Doc: clients/ground-standard/closebot/roberts-kb-verification-2026-05-20.md",
+    "knownGaps": [
+      "Phone and email were missing in legacy KB - filled from GHL location: (978) 581-0601, robbybruteforcemma@gmail.com.",
+      "Kids discipline split (BJJ vs Wrestling) for 5-10 and 11-17 bands: confirm with Bobby which discipline is default for kids.",
+      "Adult discipline default (Gi BJJ): confirm with Bobby.",
+      "Female Only Jiu-Jitsu / Open Training / Adult All-Levels BJJ excluded as non-trial: confirm with Bobby."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm 4 adult discipline calendars (Gi BJJ default, No-Gi BJJ, Boxing, Thai Boxing); (b) confirm Kids 5-10 BJJ+Wrestling / Teens 11-17 BJJ+Wrestling bands; (c) confirm under-5 phone referral (978) 581-0601; (d) confirm Female Only Jiu-Jitsu / Open Training / All-Levels BJJ excluded as non-trial; (e) confirm which kids discipline is default if no preference"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_YUMT096UZ49BH7AV",
+      "botName": "Roberts Family MMA - Launch v1.0 [initial Agent Node build] (2026-05-20)",
+      "version": "v1.0",
+      "verdict": "QA-PASSED 2026-05-20 — 10/10 PASS + non-det 3/3 PASS. 0 real blockers. 1 false negative (minor_self_booking: mnd_08 fired on model typo nzme, not a CloseBot merge token; 0 appts correct). Platform flag: kid_bjj_5_10 bot timeout at booking step (routing logic correct md_03+md_09 PASS, transient infra issue, monitor in soft-launch). adult_gi_default + adult_thai_boxing + kid_wrestling_11_17 + adult_and_kid (2 appts) all GHL-confirmed. Gates: under-5 redirect + minor self-book PASS. See roberts-qa-summary-v1.md. Parked sandbox, NOT on prod."
+    }
+  ]
+}

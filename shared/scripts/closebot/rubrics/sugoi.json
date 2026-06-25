@@ -1,0 +1,97 @@
+{
+  "bot": "sugoi",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of the bookable trial calendars: Adult Fundamentals BJJ, Kids 4-8 Fundamentals Jiu-Jitsu, Teens 9-15 Fundamentals Jiu-Jitsu. The following are REAL Sugoi Submissions programs in the verified KB (non-bookable, no online trial calendar) and must NOT be flagged as hallucinations: Gi Jiu-Jitsu, No-Gi Jiu-Jitsu, Wrestling, Wrestling for Jiu-Jitsu, Women's Only Jiu-Jitsu, Mat Mobility, Mobility & Movement, Open Mat, Fundamentals, Competition. Only flag source-bleed program names from OTHER gyms (e.g. Fun Jitsu, Ballantyne, Logica, Vacaville, JKD, Judo, Muay Thai)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, UNRESOLVED(contact.phone), or any curly-brace placeholder text."
+    },
+    {
+      "id": "mnd_09",
+      "category": "must_not_do",
+      "description": "No non-trial program booked online",
+      "level": "blocker",
+      "look_for": "bot attempts to book No-Gi, Wrestling, Women's Only Jiu-Jitsu, Mat Mobility, or Open Mat as a free trial. These have no online trial calendar. Bot must keep the trial as Fundamentals BJJ or redirect to contacting the academy."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for - you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Kids/teen age-band routing correct",
+      "level": "blocker",
+      "look_for": "ages 4-8 routed to Kids 4-8 Fundamentals Jiu-Jitsu; ages 9-15 routed to Teens 9-15 Fundamentals Jiu-Jitsu; ages 16-17 NOT booked (team follow-up); under 4 NOT booked (phone referral to (361) 336-0859)."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "16-17 no-cal handled as referral, no booking",
+      "level": "blocker",
+      "look_for": "if enrollee is 16 or 17, bot does NOT book any calendar. Must capture guardian info and state team will follow up. No appointment in GHL."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved on the adult self-booking path, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Single discipline - no discipline question",
+      "level": "standard",
+      "look_for": "Sugoi has one adult trial (Adult Fundamentals BJJ). Bot must NOT ask the lead which discipline/style they want - there is no discipline-switch step."
+    }
+  ]
+}

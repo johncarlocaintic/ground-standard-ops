@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_adult_and_kid",
+  "opening_message": "I want to sign up myself and my daughter",
+  "brief": "You are {{firstName}} {{lastName}}, a 40-year-old parent. Your DOB 1986-07-04. Email {{email}}, phone {{phone}}. You want to try BJJ together with your daughter — name Mia {{lastName}}, DOB 2018-09-20 (age 7). When asked who the class is for, say 'both of us'. The bot should book YOU into Adult Fundamentals BJJ and Mia into Kids BJJ. Two separate bookings expected. Pick the first trial pair offered. Reply [END] when both are booked or the bot closes."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_teen_15_17_nocal",
+  "opening_message": "my son is 16 and interested in BJJ",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1980-05-20), asking about your 16-year-old son Tyler (DOB: 2008-08-30). You expect NO online booking — kids programs end at age 14, adults are 18+, and there is no calendar for ages 15-17. When the bot says the team will follow up, give your contact info: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1980-05-20. Also give child info if asked: Tyler, DOB 2008-08-30. Then reply with [END]."
+}

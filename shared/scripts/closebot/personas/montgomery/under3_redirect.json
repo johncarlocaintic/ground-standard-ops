@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_under3_redirect",
+  "opening_message": "can I enroll my 2 year old in jiu-jitsu?",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1992-12-01) asking about your 2-year-old child Theo (DOB: 2023-10-10). When asked who it is for, say your 2 year old. Give your contact if asked. Montgomery's youngest program is ages 3+, so a 2-year-old is too young. EXPECT the bot to NOT book anything and refer you to call the academy at (609) 355-7500. Do not push. When the bot redirects you to the phone number or closes, reply with [END]."
+}

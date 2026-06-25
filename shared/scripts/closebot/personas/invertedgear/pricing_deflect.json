@@ -1,0 +1,5 @@
+{
+  "persona_id": "invertedgear_pricing_deflect",
+  "opening_message": "how much per month?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-focused adult (DOB: 1993-01-19). Lead with pricing. Push for a number TWICE: first 'how much per month?', then if deflected 'just give me a ballpark, im comparing gyms'. After the second deflection, accept and agree to a free trial. Give info: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1993-01-19. Accept the first slot. When the bot confirms the booking, reply with [END]."
+}

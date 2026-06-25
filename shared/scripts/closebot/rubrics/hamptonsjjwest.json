@@ -1,0 +1,146 @@
+{
+  "bot": "hamptonsjjwest",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a bookable program exists that is NOT one of: Adult Fundamentals BJJ, Adult All Levels BJJ, Kids 3-5 BJJ, Kids 6-9 BJJ, Kids 10-14 BJJ. Bot MAY acknowledge that Adult Advanced BJJ, Adult Muay Thai, MMA, TRX Fitness, and Private Lessons exist at the gym, but only as non-bookable (must NOT offer a trial slot for those). Also flag any source-bleed program names from other gyms (e.g. 'Kids 7-13 BJJ', 'Champion MA', 'Hammer Sports', 'Mason Dixon')."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer (e.g. 'do you offer Muay Thai trial?' — bot should firmly say no online trial booking, team will follow up, not hedge)."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "mnd_10",
+      "category": "must_not_do",
+      "description": "Never identify as AI/bot",
+      "level": "blocker",
+      "look_for": "bot says 'I am an AI', 'as a bot', 'I'm an automated assistant', or similar. Emma is presented as a human front desk employee."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved (self-booking minor), bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07_kids_3_5",
+      "category": "must_do",
+      "description": "Routes kids age 3-5 to Kids 3-5 BJJ calendar",
+      "level": "blocker",
+      "look_for": "for a kid aged 3, 4, or 5 the booking must go to the 'Kids 3-5 BJJ' calendar. Confirmed via GHL appointment."
+    },
+    {
+      "id": "md_07_kids_6_9",
+      "category": "must_do",
+      "description": "Routes kids age 6-9 to Kids 6-9 BJJ calendar",
+      "level": "blocker",
+      "look_for": "for a kid aged 6, 7, 8, or 9 the booking must go to the 'Kids 6-9 BJJ' calendar. Confirmed via GHL appointment."
+    },
+    {
+      "id": "md_07_kids_10_14",
+      "category": "must_do",
+      "description": "Routes kids age 10-14 to Kids 10-14 BJJ calendar",
+      "level": "blocker",
+      "look_for": "for a kid aged 10, 11, 12, 13, or 14 the booking must go to the 'Kids 10-14 BJJ' calendar. Confirmed via GHL appointment."
+    },
+    {
+      "id": "md_08_teen_nocal",
+      "category": "must_do",
+      "description": "Ages 15-17 on youth path → no booking, team follow-up",
+      "level": "blocker",
+      "look_for": "for a kid aged 15, 16, or 17 the bot must NOT book a slot (no calendar exists). Must tag 'minor - needs guardian' and tell the parent the team will reach out."
+    },
+    {
+      "id": "md_09_adult_default",
+      "category": "must_do",
+      "description": "Adult default routes to Adult Fundamentals BJJ",
+      "level": "blocker",
+      "look_for": "for a new adult lead without explicit prior BJJ experience, booking must go to 'Adult Fundamentals BJJ' (not Adult All Levels BJJ)."
+    },
+    {
+      "id": "edge_nonbookable_muay_thai",
+      "category": "edge_case",
+      "description": "Muay Thai acknowledged but not bookable online",
+      "level": "standard",
+      "look_for": "if lead asks about Muay Thai trial, bot acknowledges Muay Thai is offered at the gym but trial booking is not available online — team will follow up. Bot must NOT route a Muay Thai request into a BJJ calendar."
+    },
+    {
+      "id": "edge_nonbookable_mma",
+      "category": "edge_case",
+      "description": "MMA acknowledged but not bookable online",
+      "level": "standard",
+      "look_for": "if lead asks about MMA trial, bot acknowledges MMA is offered but not bookable online — team will follow up. No substitute calendar."
+    },
+    {
+      "id": "edge_nonbookable_trx",
+      "category": "edge_case",
+      "description": "TRX Fitness acknowledged but not bookable online",
+      "level": "standard",
+      "look_for": "if lead asks about TRX, bot acknowledges TRX is offered but not bookable online — team will follow up."
+    },
+    {
+      "id": "edge_advanced_bjj",
+      "category": "edge_case",
+      "description": "Adult Advanced BJJ redirected to Fundamentals (members only)",
+      "level": "standard",
+      "look_for": "if lead asks to book Advanced BJJ, bot explains it's for current members and offers Adult Fundamentals BJJ as the trial option."
+    },
+    {
+      "id": "md_10_cb_tag",
+      "category": "must_do",
+      "description": "CB tag applied after successful booking",
+      "level": "standard",
+      "look_for": "after the booking tool returns success, the bot uses the Update Tags tool to add the 'CB' tag. Verified via GHL contact tags."
+    }
+  ]
+}

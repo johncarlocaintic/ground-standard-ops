@@ -1,0 +1,336 @@
+MASON DIXON JIU-JITSU - KNOWLEDGE BASE
+
+Version: 2.0.0
+Date: 2026-05-16
+Type: Facts and Context Only (No Behavioral Instructions)
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v2.0.0 | 2026-05-16
+- Full rebuild from scraped site + spec rules as source of truth
+- Kids program restructured: combined Jiu-Jitsu + striking curriculum across two
+  age groups (4-7 and 8-13). Previously v1.1.3 incorrectly split kids into four
+  separate discipline-specific programs.
+- Added explicit age policy: kids program is ages 4-13, adult program is 14+
+- Added dedicated PRIVATE TRAINING section (offered but not bookable online)
+- Removed hardcoded weekly class schedule; schedule questions are answered via
+  the booking system once contact info is collected
+- Calendar names aligned to GHL: "Adult Fundamentals BJJ", "Adult Striking",
+  "Kids 4-7 Martial Arts", "Kids 8-13 Martial Arts"
+- All [CLIENT ACTION NEEDED] flag blocks resolved or removed
+- Dropped participation waiver mention from first-class info (site does not
+  explicitly confirm waiver requirement)
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Mason Dixon Jiu-Jitsu
+Industry: Martial Arts Training
+Location: Chambersburg, Pennsylvania
+Service Area: Chambersburg, Franklin County, and surrounding areas including
+Greencastle, Waynesboro, Shippensburg PA, and Hagerstown MD.
+
+Description: Mason Dixon Jiu-Jitsu is a martial arts academy in Chambersburg,
+Pennsylvania offering No-Gi Brazilian Jiu-Jitsu and Muay Thai (striking) for
+adults and a combined martial arts program for kids. The academy serves
+students of all backgrounds, from complete beginners to experienced
+practitioners.
+
+Mission: Martial arts should be accessible to everyone, not just fighters or
+athletes. Mason Dixon Jiu-Jitsu is a place where people of all backgrounds
+come together, train in a structured environment, and grow stronger in body
+and mind. The academy teaches No-Gi Jiu-Jitsu and Muay Thai in a way that is
+practical, respectful, and grounded in real progress.
+
+Specialties:
+- Adult No-Gi Brazilian Jiu-Jitsu
+- Adult Striking (Muay Thai)
+- Kids Martial Arts (combined Jiu-Jitsu + striking curriculum, ages 4-13)
+- Private Training (Jiu-Jitsu and Muay Thai)
+- Open Mat sessions
+
+================================================================================
+CONTACT & LOCATION
+================================================================================
+
+Address: 1495 Lincoln Way East, Chambersburg, PA 17201
+Business Phone: (717) 402-8999
+Website: https://www.masondixonjiujitsu.com
+
+================================================================================
+AGE POLICY
+================================================================================
+
+Kids program: ages 4 through 13
+- Younger group: ages 4-7 (30-minute sessions)
+- Older group: ages 8-13 (1-hour sessions)
+
+Adult program: ages 14 and older
+- Includes Adult No-Gi Jiu-Jitsu and Adult Striking (Muay Thai)
+- Anyone 14 or older trains in adult classes, not the kids program
+
+A prospective student who is 14 to 17 years old can attend adult classes but
+must be enrolled with a parent or guardian involved in the sign-up. The
+academy does not enroll unaccompanied minors through online booking; minors
+without a parent involved are captured for staff follow-up.
+
+================================================================================
+PROGRAMS & CLASS TYPES
+================================================================================
+
+ADULT NO-GI BRAZILIAN JIU-JITSU
+For ages 14 and older. Practical, technique-based grappling with no traditional
+Gi uniform. Welcoming to complete beginners and advanced grapplers alike.
+Focus on control, calm under pressure, ground-based self-defense, and using
+technique over strength. Booking calendar: "Adult Fundamentals BJJ".
+
+ADULT STRIKING (MUAY THAI)
+For ages 14 and older. Muay Thai, known as the Art of Eight Limbs, uses fists,
+elbows, knees, and shins. Classes are welcoming to beginners while challenging
+for experienced strikers. Whether the goal is fitness, self-defense, or
+competition, training builds coordination, timing, and conditioning.
+Booking calendar: "Adult Striking".
+
+KIDS MARTIAL ARTS — AGES 4 TO 7
+A combined martial arts program for younger kids ages 4 to 7 that blends
+striking and Jiu-Jitsu. Sessions are 30 minutes. Classes are age-appropriate
+and carefully supervised. Each class begins with warm-ups, transitions into
+technique instruction, and concludes with games or drills that reinforce
+lessons. Booking calendar: "Kids 4-7 Martial Arts".
+
+KIDS MARTIAL ARTS — AGES 8 TO 13
+A combined martial arts program for kids ages 8 to 13 that blends striking
+and Jiu-Jitsu. Sessions are 1 hour. Classes are age-appropriate and carefully
+supervised. Same instructional structure as the younger group but at a more
+advanced pace and intensity. Booking calendar: "Kids 8-13 Martial Arts".
+
+PRIVATE TRAINING (NOT BOOKABLE ONLINE)
+Private one-on-one training is offered for both No-Gi Jiu-Jitsu and Muay Thai.
+Private sessions are personalized to the student's goals, allow faster progress
+through direct coach feedback, and can be scheduled outside of regular group
+class hours. Private training is a good fit for beginners who want extra
+confidence before joining group classes, busy adults whose schedules don't fit
+regular class times, competitors preparing for a tournament or fight, and kids
+who thrive with individual attention.
+
+Private training is NOT available for online booking. The right next step for
+anyone interested in private training is to attend a free trial group class
+first and discuss private training details directly with the coach in person.
+
+OPEN MAT
+Free rolling and open mat sessions are available after all adult Jiu-Jitsu
+classes throughout the week. A dedicated Open Mat session also runs on Friday
+evenings from 7:00 PM to 8:00 PM. Open Mat is not a booked trial class; it is
+a recurring drop-in session for current students and adults exploring the
+academy.
+
+================================================================================
+WHAT KIDS LEARN
+================================================================================
+
+The kids program combines striking and Jiu-Jitsu to build confidence, focus,
+discipline, and respect, while keeping kids active and having fun. Parents
+report quick improvements: better behavior at home, more focus on schoolwork,
+and healthier routines. Kids look forward to training and gain friendships
+that support positive social development.
+
+Benefits emphasized for kids:
+- Confidence through skill mastery
+- Focus and listening that carry over to school
+- Respect for partners, instructors, and teamwork
+- Discipline and accountability
+- Healthy active outlet
+
+The academy emphasizes control and responsibility — kids learn when and how
+to use their skills appropriately. Classes are divided by age and sometimes
+by experience level. Parents are welcome to stay and watch, especially during
+a child's first classes.
+
+================================================================================
+WHAT TO EXPECT — FIRST CLASS
+================================================================================
+
+The entry point for any new student is a free trial class. The trial class has
+no cost and no commitment.
+
+What to bring:
+- Water bottle
+- Athletic clothing suitable for training (no special uniform required for
+  No-Gi or Striking)
+
+Arrival: Plan to arrive 10-15 minutes early to get checked in and meet the
+coach before class begins.
+
+After the trial class: The instructor will discuss membership options,
+program fit, and pricing in person based on the student's goals and the right
+program for them.
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+Class schedules are managed through the live booking system. Specific class
+times and trial slot availability are pulled directly from the calendar once
+contact information is collected. The booking tool shows the available trial
+class slots that match the program and age group requested.
+
+Adult Jiu-Jitsu classes run multiple times per week including early morning
+options. Adult Striking (Muay Thai) sessions and kids classes are scheduled
+across weekday evenings. The exact times and openings shown to a new student
+come from the live booking calendar, not a fixed weekly grid.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Membership pricing varies based on several factors like the number of classes
+per week a student would want to attend and their specific training goals.
+Instructors discuss all the pricing options and membership plans during or
+right after the free trial class. They assess what program works best for
+each student and provide accurate pricing for their situation. The trial
+class is completely free with no commitment required.
+
+Available programs to enroll in:
+- Adult No-Gi Jiu-Jitsu
+- Adult Striking (Muay Thai)
+- Kids Martial Arts (ages 4-7 or 8-13)
+- Combinations of the above for adults training both disciplines
+
+================================================================================
+STAFF
+================================================================================
+
+RYAN CHADWICK — Instructor / Main Point of Contact
+Ryan Chadwick is the primary contact for Mason Dixon Jiu-Jitsu. Inquiries
+about classes, enrollment, and scheduling can be directed to the gym at
+(717) 402-8999.
+
+STEVE XEREAS — Team Member
+Additional team member supporting gym operations.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What martial arts does Mason Dixon Jiu-Jitsu offer?
+A: Mason Dixon Jiu-Jitsu offers No-Gi Brazilian Jiu-Jitsu and Muay Thai
+striking for adults, and a combined martial arts program for kids that blends
+Jiu-Jitsu and striking across two age groups.
+
+Q: Is Gi training available?
+A: No. Mason Dixon Jiu-Jitsu focuses exclusively on No-Gi Jiu-Jitsu. No
+traditional Gi uniform is required or used.
+
+Q: What is the kids program structure?
+A: The kids program is a combined martial arts curriculum that blends
+Jiu-Jitsu and striking. Kids enroll into one of two age groups: ages 4-7 with
+30-minute sessions, or ages 8-13 with 1-hour sessions. Kids are not split into
+separate Jiu-Jitsu and striking enrollments — both are part of the same
+program for their age group.
+
+Q: What is the minimum age for adult classes?
+A: Adult classes are for ages 14 and older. Anyone under 14 enrolls in the
+kids program. Teens aged 14-17 can train in adult classes but must be enrolled
+through a parent or guardian.
+
+Q: Can I sign up my child for just Jiu-Jitsu or just striking?
+A: The kids program is a combined curriculum, not separate enrollments. Kids
+in the program get both Jiu-Jitsu and striking instruction across the week's
+classes as part of one martial arts program.
+
+Q: Do you offer private training?
+A: Yes. Private training is available for both No-Gi Jiu-Jitsu and Muay Thai
+striking. Private sessions are one-on-one with a coach and are scheduled
+outside of regular group class hours. Private training is not available for
+online booking — the right next step is to attend a free trial group class
+first and discuss private training details with the coach in person.
+
+Q: Is there open mat available?
+A: Yes. Free rolling and open mat are available after all adult Jiu-Jitsu
+classes throughout the week. A dedicated Open Mat session also runs on
+Friday evenings from 7:00 PM to 8:00 PM.
+
+Q: What should I bring to my first class?
+A: Bring a water bottle and wear athletic clothing suitable for training.
+Plan to arrive 10-15 minutes early to check in and meet the coach.
+
+Q: Is the trial class actually free?
+A: Yes. The trial class is completely free with no commitment required.
+
+Q: When are classes scheduled?
+A: Class times are managed through our booking system. Once contact info is
+collected, the booking tool shows the available trial slots that match the
+requested program and age group.
+
+Q: Where is the gym located?
+A: Mason Dixon Jiu-Jitsu is located at 1495 Lincoln Way East, Chambersburg,
+PA 17201, serving Franklin County and surrounding areas including
+Greencastle, Waynesboro, Shippensburg PA, and Hagerstown MD.
+
+Q: How can I reach the gym?
+A: The gym can be reached by phone at (717) 402-8999, or through the
+website at https://www.masondixonjiujitsu.com.
+
+Q: Will martial arts make my child aggressive?
+A: No. The kids program emphasizes control, respect, and responsibility. Kids
+learn when and how to use their skills appropriately.
+
+Q: Can parents stay and watch class?
+A: Yes. Parents are welcome to stay and watch, especially during a child's
+first classes. Many parents find it reassuring to see how their child adapts
+to training.
+
+================================================================================
+PRICING REDIRECT & FRICTION HANDLING CONTEXT
+(Last-Resort Reference Only — Facts Provided Above Are the Authority)
+================================================================================
+
+CANONICAL PRICING RESPONSE:
+When a contact asks about pricing, membership costs, or any related topic,
+the accurate and complete response is:
+
+"Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors
+will discuss all the pricing options and membership plans with you during or
+right after your free trial class. They'll be able to assess what program
+works best for you and provide accurate pricing for your situation. The trial
+class is completely free with no commitment required."
+
+This is the factual pricing context for Mason Dixon Jiu-Jitsu. It is not an
+evasion — it reflects how the gym structures enrollment and introduces pricing
+to prospective students.
+
+TONE AND APPROACH FOR PRICING CONVERSATIONS:
+The gym offers multiple programs (Adult Jiu-Jitsu, Adult Striking, Kids
+Martial Arts in two age groups) across different training frequencies. The
+right combination and associated pricing vary by student. Pricing is
+determined through instructor consultation during or after the free trial
+class.
+
+If a contact continues to press for a specific number before attending,
+the most helpful context available is:
+- Multiple program options exist at different structures
+- The free trial class requires no commitment and no payment
+- Instructors assess the right program fit and provide accurate pricing in person
+- The best next step is attending the free trial class
+
+SILVER TONGUE REDIRECT (Last Resort Only):
+If a question cannot be answered from the facts in this knowledge base — such
+as highly specific pricing demands, unusual policy edge cases, or situations
+not covered above — the appropriate response is to acknowledge the question
+warmly, note that the instructors and staff at the gym are best positioned to
+answer it fully, and guide the contact toward scheduling their free trial
+class or calling the gym directly at (717) 402-8999.
+
+This redirect is a last resort, used only when the question genuinely cannot
+be resolved from available facts. It is not a default deflection for common
+questions that do have factual answers in this knowledge base.
+
+================================================================================
+
+Version 2.0.0 | 2026-05-16
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions
+Client: Mason Dixon Jiu-Jitsu | Chambersburg, PA

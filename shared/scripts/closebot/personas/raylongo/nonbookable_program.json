@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_nonbookable_program",
+  "opening_message": "can I book the advanced MMA or the Sparring class?",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1993-03-03) asking specifically to book the Members Only advanced MMA, advanced Kickboxing, or Sparring class. These are Members Only, not open to new students. EXPECT the bot to acknowledge they exist but NOT book them, and instead offer a free intro class in an open discipline. Give your info if asked. When redirected to the intro or closed, reply with [END]."
+}

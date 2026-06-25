@@ -7,9 +7,9 @@ const count = parseInt(process.argv[3] || '5', 10);
 
 const env = {
   ...process.env,
-  CB_TEST_BOT_ID: 'bot_J56AWZ5TYQI9HKJS',
-  RUBRIC: 'shared/scripts/closebot/rubrics/vacaville.json',
-  PERSONA: `shared/scripts/closebot/personas/vacaville/${persona}.json`,
+  CB_TEST_BOT_ID: process.env.CB_TEST_BOT_ID || 'bot_PZOCDUEO686MS1O3',
+  RUBRIC: process.env.RUBRIC || 'shared/scripts/closebot/rubrics/vacaville.json',
+  PERSONA: process.env.PERSONA || `shared/scripts/closebot/personas/vacaville/${persona}.json`,
   MIMIC_SOURCE_ID: process.env.MIMIC_SOURCE_ID || 'src_4R4DUIQTMMX2NFPU',
 };
 

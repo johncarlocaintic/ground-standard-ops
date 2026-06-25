@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_adult_inquisitive",
+  "opening_message": "Hi! I'm thinking about jiu-jitsu but I have some questions first.",
+  "brief": "You are {{firstName}} {{lastName}}, a 36-year-old considering joining Royal Jiu-Jitsu Academy Queens. DOB 1990-08-14. Email {{email}}, phone {{phone}}. You ask the bot: (1) 'what's the address?'; (2) 'who teaches?'; (3) 'I've never trained before — is it OK for beginners?'; (4) 'how long are classes?'. Then agree to try the Adult Fundamentals BJJ trial for yourself. Confirm 'for me', give DOB 1990-08-14, pick first time offered. Reply [END] when booked/closed."
+}

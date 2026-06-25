@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_under5_redirect",
+  "opening_message": "my daughter is 4, do you have classes for her?",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your DOB: 1988-12-01), asking about your 4-year-old daughter Sofia (DOB: 2021-03-22). You expect NO online booking — the youngest program is Kids 5-7 BJJ, which requires age 5+. When the bot refers you to the academy phone number (650-398-7837), reply with [END]. Do not try to book anything."
+}

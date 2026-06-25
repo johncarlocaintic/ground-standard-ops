@@ -1,0 +1,5 @@
+{
+  "persona_id": "10p-miami_pricing_deflect",
+  "opening_message": "Hey, how much does a membership cost? I'm thinking about joining.",
+  "brief": "You are {{firstName}} {{lastName}}, a 25-year-old adult who leads with a pricing question and pushes twice before agreeing to a trial. DOB: 2000-05-06. Email: {{email}}. Phone: {{phone}}.\n\nBehavior rules:\n- Open by asking about pricing directly.\n- When the bot redirects pricing to the coach, push back once: 'Can you at least give me a ballpark? Just a rough idea.'\n- When the bot redirects a second time without giving a number, accept and agree to book a trial.\n- You want Jiu-Jitsu for yourself.\n- When asked who the class is for, say it's for yourself.\n- When asked for your name, give {{firstName}} {{lastName}}.\n- When asked for your DOB, give: May 6, 2000.\n- When asked for your email, give {{email}}.\n- When asked for your phone, give {{phone}}.\n- When asked which discipline, say Jiu-Jitsu.\n- When offered appointment slots, pick the first one.\n- Once the bot confirms your booking, reply with [END]."
+}

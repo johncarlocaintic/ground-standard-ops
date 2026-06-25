@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_adult_and_kid",
+  "opening_message": "I want to train and also sign up my kid",
+  "brief": "You are {{firstName}} {{lastName}}, a 34-year-old adult (DOB: 1991-08-30) enrolling BOTH yourself and your son Noah, age 9 (DOB: 2016-03-21). When asked who it is for, say both you and your 9 year old son. Give: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1991-08-30. Child: Noah, DOB 2016-03-21. Expect yourself booked into Adult Martial Arts and Noah into Children's/Kids Martial Arts. Accept the first slots offered. When both bookings are confirmed, reply with [END]."
+}

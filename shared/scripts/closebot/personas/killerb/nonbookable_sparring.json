@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_nonbookable_sparring",
+  "opening_message": "do you have sparring sessions I can try?",
+  "brief": "You are {{firstName}} {{lastName}} (DOB: 1988-04-17) asking about sparring. When the bot tells you sparring is only for current students and not a free trial option, say 'ok, I'll start with MMA then'. Book Adult MMA. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1988-04-17. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

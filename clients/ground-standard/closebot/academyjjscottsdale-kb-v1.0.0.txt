@@ -1,0 +1,199 @@
+================================================================================
+ACADEMY OF Jiu-Jitsu SCOTTSDALE — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-17
+Status: CLEANED + WEBSITE-VERIFIED — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: Academy of Jiu-Jitsu Scottsdale class schedule flyer (May 2026);
+                 academyofJiu-Jitsuscottsdale.com (May 2026)
+Verification: Cross-checked against academyofJiu-Jitsuscottsdale.com 2026-05-17 —
+name, address, phone, free trial, no-public-pricing all confirmed; no
+corrections needed.
+Purpose: CloseBot AI Chatbot — Lead Qualification & Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Academy of Jiu-Jitsu Scottsdale
+Industry: Brazilian Jiu-Jitsu (BJJ)
+Location: Scottsdale, AZ
+
+Description: Academy of Jiu-Jitsu Scottsdale is a Brazilian Jiu-Jitsu school
+located in The Pavilions at Talking Stick Shopping Center in Scottsdale,
+Arizona. The Academy offers adult BJJ programs across beginner, intermediate,
+and advanced levels, as well as Kids BJJ programs split into two age groups.
+All instructors hold recognized martial arts certifications and have years of
+teaching experience. Classes are designed for beginners through advanced
+students, with instruction customized to individual skill levels and goals.
+
+Programs Offered:
+- Little Tigers BJJ (Ages 5–7)
+- Tigers BJJ (Ages 8–13)
+- Adult BJJ Fundamentals (Beginner to Intermediate — White Belt to Blue Belt path)
+- Fundamentals Live Training (Saturday only — intermediate bridging class)
+- Adult BJJ Advanced (Intermediate to Advanced curriculum)
+
+What Is Not on the Schedule:
+- No Sunday classes. The published schedule covers Monday through Saturday only.
+- No Wednesday evening adult classes. Wednesday adult training is morning only.
+- No Friday evening adult classes. Friday adult training is morning only.
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 8969 E. Talking Stick Way, Suite C-1, Scottsdale, AZ 85250
+Neighborhood: The Pavilions at Talking Stick Shopping Center
+Website: academyofJiu-Jitsuscottsdale.com
+
+================================================================================
+SECTION 3 — FULL CLASS SCHEDULE
+================================================================================
+
+--- MONDAY ---
+11:00am–12:00pm   Adult BJJ Fundamentals
+12:00pm–1:00pm    Adult BJJ Advanced
+4:00pm–4:45pm     Little Tigers (Ages 5–7)
+6:00pm–7:00pm     Adult BJJ Fundamentals
+7:00pm–8:30pm     Adult BJJ Advanced
+
+--- TUESDAY ---
+4:00pm–4:45pm     Little Tigers (Ages 5–7)
+5:00pm–6:00pm     Tigers (Ages 8–13)
+6:00pm–7:00pm     Adult BJJ Fundamentals
+7:00pm–8:30pm     Adult BJJ Advanced
+
+--- WEDNESDAY ---
+11:00am–12:00pm   Adult BJJ Fundamentals
+4:00pm–4:45pm     Little Tigers (Ages 5–7)
+5:00pm–6:00pm     Tigers (Ages 8–13)
+
+--- THURSDAY ---
+4:00pm–4:45pm     Little Tigers (Ages 5–7)
+5:00pm–6:00pm     Tigers (Ages 8–13)
+6:00pm–7:00pm     Adult BJJ Fundamentals
+7:00pm–8:30pm     Adult BJJ Advanced
+
+--- FRIDAY ---
+11:00am–12:00pm   Adult BJJ Fundamentals
+12:00pm–1:00pm    Adult BJJ Advanced
+
+--- SATURDAY ---
+9:00am–9:45am     Little Tigers (Ages 5–7)
+10:00am–11:00am   Tigers (Ages 8–13)
+11:00am–12:00pm   Adult BJJ Fundamentals
+12:00pm–12:30pm   Fundamentals Live Training
+12:30pm–1:30pm    Adult BJJ Advanced
+
+================================================================================
+SECTION 4 — PROGRAM DESCRIPTIONS
+================================================================================
+
+LITTLE TIGERS (Ages 5–7)
+Age Group: 5–7 years
+Experience Required: None
+Kids BJJ program for children ages 5 to 7.
+
+TIGERS (Ages 8–13)
+Age Group: 8–13 years
+Experience Required: None
+Kids BJJ program for children ages 8 to 13.
+
+ADULT BJJ FUNDAMENTALS
+Experience Level: Beginner to Intermediate
+Adult Fundamentals covers a range of beginner and intermediate Brazilian
+Jiu-Jitsu, including self-defense, foundational understanding of BJJ positions,
+techniques, and concepts. This curriculum is structured as the path from White
+Belt to Blue Belt.
+
+FUNDAMENTALS LIVE TRAINING
+Schedule: Saturdays 12:00pm–12:30pm only
+Experience Level: Fundamentals students
+Fundamentals Live Training focuses on applying Fundamentals techniques to bridge
+the gap between drilling and full-intensity sparring. Students practice specific
+techniques and sequences in real-time, resistance-based scenarios that replicate
+the dynamic pressure of a live roll.
+
+ADULT BJJ ADVANCED
+Experience Level: Intermediate to Advanced
+Adult Advanced covers a wide range of intermediate and advanced BJJ curriculum.
+
+================================================================================
+SECTION 5 — TRIAL CLASS
+================================================================================
+
+A free trial class is available with no commitment required. Trial class
+booking options are:
+- Online at academyofJiu-Jitsuscottsdale.com
+- By contacting the front desk directly
+
+Program options at the time of booking: Adult, Youth, or Both.
+
+================================================================================
+SECTION 6 — PRICING
+================================================================================
+
+Membership pricing is not published. A free trial class is available with no
+commitment required. Membership options and pricing are reviewed with students
+based on individual training goals and schedule preferences.
+
+================================================================================
+SECTION 7 — SCHOOL CULTURE AND EXPECTATIONS
+================================================================================
+
+The Academy operates with a culture of mutual respect among all students and
+instructors. A collaborative learning environment is maintained where students
+share techniques and knowledge with one another. Students are expected to arrive
+10–15 minutes before their scheduled class. Gi uniforms are washed after every
+class as a standard hygiene expectation.
+
+================================================================================
+SECTION 8 — FAQs
+================================================================================
+
+Q: What programs are available for kids?
+A: Two kids programs are offered — Little Tigers for ages 5 to 7, and Tigers for
+ages 8 to 13. Little Tigers runs Monday through Thursday afternoons and Saturday
+mornings. Tigers runs Tuesday through Thursday afternoons and Saturday mornings.
+
+Q: What is Adult BJJ Fundamentals?
+A: Adult Fundamentals covers beginner and intermediate BJJ, including
+self-defense, BJJ positions, techniques, and concepts. It is structured as the
+path from White Belt to Blue Belt.
+
+Q: What is Fundamentals Live Training?
+A: Fundamentals Live Training is a Saturday-only class that bridges the gap
+between drilling techniques and full-intensity sparring. Students practice
+techniques in real-time, resistance-based scenarios that replicate a live roll.
+
+Q: What is Adult BJJ Advanced?
+A: Adult Advanced covers a wide range of intermediate and advanced BJJ
+curriculum. It runs Monday, Tuesday, Thursday evenings and Saturday mornings.
+
+Q: Is there a free trial class?
+A: A free trial class is available with no commitment required. Booking is
+available online at academyofJiu-Jitsuscottsdale.com or by contacting the front desk directly.
+
+Q: Do I need experience to start?
+A: No experience is required for the Fundamentals or Kids programs. Classes are
+designed for all levels from complete beginners through advanced students, with
+instruction customized to individual skill levels and goals.
+
+Q: Are there morning classes available?
+A: Adult morning classes run Monday, Wednesday, and Friday from 11:00am to
+12:00pm (Fundamentals) and Monday and Friday from 12:00pm to 1:00pm (Advanced).
+
+Q: Do you offer classes on weekends?
+A: Saturday classes are available for all programs — Little Tigers, Tigers,
+Adult Fundamentals, Fundamentals Live Training, and Adult Advanced. No Sunday
+classes are currently scheduled.
+
+Q: Where is the Academy located?
+A: The Academy is at 8969 E. Talking Stick Way, Suite C-1, Scottsdale, AZ
+85250, inside The Pavilions at Talking Stick Shopping Center.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

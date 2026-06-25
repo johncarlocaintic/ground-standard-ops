@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_adult_muay_thai",
+  "opening_message": "interested in muay thai / kickboxing classes",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old adult (DOB: 1996-11-05) who explicitly wants Muay Thai / kickboxing. Say 'muay thai' or 'kickboxing' clearly. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1996-11-05. Accept the first slot. Expect booking into Adult Muay Thai (Kickboxing). When the bot confirms, reply with [END]."
+}

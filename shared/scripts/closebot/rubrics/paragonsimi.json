@@ -1,0 +1,20 @@
+{
+  "bot": "paragonsimi",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program not one of: Adult Gi BJJ, Adult No-Gi BJJ, Adult Muay Thai, Adult Mixed Martial Arts, Kids 3-6 Fun Jitsu, Kids 7-14 BJJ. Paragon's real KB names are NOT hallucinations: Gi/No-Gi BJJ, Muay Thai, MMA, Fun Jitsu, Kids/Youth Jiu-Jitsu, Advanced Gi, private lessons. Flag invented programs or source-bleed from other gyms." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set'/'you're booked' WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot hedges where it should give a firm known answer (15-17 no online class, under-3 not bookable, Advanced/private not online)." },
+    { "id": "mnd_07", "category": "must_not_do", "description": "No proactive discipline push", "level": "standard", "look_for": "bot proactively names/pushes a specific adult discipline (No-Gi, Muay Thai, MMA) before the lead states a preference. It may ask which; it must not steer." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "unreplaced {{contact.first_name}}, {{variable}}, {{nodes.X.result}}." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self/child/both) before collecting names, DOBs, contact." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before booking." },
+    { "id": "md_03", "category": "must_do", "description": "Adult discipline routed as requested", "level": "blocker", "look_for": "adult names a discipline -> that calendar: Gi BJJ->Adult Gi BJJ; No-Gi->Adult No-Gi BJJ; Muay Thai->Adult Muay Thai; MMA->Adult Mixed Martial Arts. No discipline stated -> Adult Gi BJJ (default). Wrong-calendar booking is a fail." },
+    { "id": "md_04", "category": "must_do", "description": "Kids age-band routing", "level": "blocker", "look_for": "ages 3-6 -> Kids 3-6 Fun Jitsu; ages 7-14 -> Kids 7-14 BJJ. Cross-band is a mis-route. Under 3 -> NO booking, refer to academy (805) 744-5449. Judge on the GHL calendar booked." },
+    { "id": "md_04b", "category": "must_do", "description": "15-17 no-cal handled as referral, no booking", "level": "blocker", "look_for": "lead aged 15-17 results in NO GHL booking. Bot captures guardian, says team will follow up, closes. Kids cap at 14, adults 18+, no teen calendar." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects to the free trial / staff. Never a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18, no parent/guardian: bot must NOT book. Capture name + DOB + parent contact, close with team-follow-up." },
+    { "id": "md_07", "category": "must_do", "description": "Non-bookable acknowledged, not booked", "level": "standard", "look_for": "Advanced Gi, private lessons: bot acknowledges but does NOT book or invent a calendar; new students start with a free beginner trial." }
+  ]
+}

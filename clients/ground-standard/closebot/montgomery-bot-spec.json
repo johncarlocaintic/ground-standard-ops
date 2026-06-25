@@ -1,0 +1,171 @@
+{
+  "gym": {
+    "name": "Montgomery Brazilian Jiu-Jitsu",
+    "website": "https://montgomerybjj.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Montgomery Brazilian Jiu-Jitsu, a Brazilian Jiu-Jitsu academy in Montgomery, NJ serving adults and children since 2017. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Montgomery Brazilian Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "First class is free for new students, no commitment",
+      "Never identify as AI",
+      "Single discipline (Brazilian Jiu-Jitsu, Gi and No-Gi formats) - no discipline confirmation step needed; new students start with a beginner/fundamentals trial",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 3-6 book Kids Brazilian Jiu-Jitsu (3-6). Ages 7-13 book Kids Brazilian Jiu-Jitsu (7-13). Both are minors and need a parent or guardian.",
+      "Ages 14-17 have no online class (kids end at 13, adults are 18+) - capture guardian, do not book, tell them the team will follow up.",
+      "Under age 3 - youngest program is Kids 3-6; do not book, refer to the academy at (609) 355-7500.",
+      "Leg Locks, ADCC No-Gi, the Kids Competition Class, and Open Mat are not beginner/intro trial sessions - acknowledge they exist, do not book them online; the new-student trial is the beginner/fundamentals class."
+    ]
+  },
+  "ghl": {
+    "locationId": "jzXRITAw6MM4hJZkG9A0",
+    "sourceId": "src_4VEFF108BZ7GDG4K",
+    "pit": "pit-01d47e41-ce24-41ef-b334-41d7a2715a70"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "59I9RtWqB7vimQZZYBdr",
+        "program": "bjj-fundamentals",
+        "ageMin": 18,
+        "default": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_3_6",
+        "calendarName": "Kids Brazilian Jiu-Jitsu (3-6)",
+        "calendarId": "5A25XDYECvtokbzfeaMT",
+        "ageMin": 3,
+        "ageMax": 6
+      },
+      {
+        "label": "kids_7_13",
+        "calendarName": "Kids Brazilian Jiu-Jitsu (7-13)",
+        "calendarId": "6wFCGH31Qm14muq997ic",
+        "ageMin": 7,
+        "ageMax": 13
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Adult Advanced BJJ",
+        "calendarId": "7aLyaiURMltbcZzLupKV",
+        "note": "inactive round_robin - not bookable"
+      },
+      {
+        "calendarName": "Adult All Levels BJJ",
+        "calendarId": "8MTqnCKqoyjnj5CBFddU",
+        "note": "inactive round_robin - not bookable"
+      },
+      {
+        "calendarName": "Kids 6-9 BJJ",
+        "calendarId": "XluEU933dyEYvVI3IKRZ",
+        "note": "inactive round_robin - not bookable"
+      },
+      {
+        "calendarName": "Kids 10-14 BJJ",
+        "calendarId": "vyUP9yNZ82FNxtTUTMSP",
+        "note": "inactive round_robin - not bookable"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Leg Locks (advanced specialty class)",
+    "ADCC No-Gi (advanced specialty class)",
+    "Kids Competition Class (competition track, not intro)",
+    "Open Mat (not an intro/first class)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free beginner/fundamentals trial and specialty/competition/open-mat sessions are not booked online as a trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 3-13 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB 14-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 13 (Kids BJJ 7-13), adults 18+, no calendar for 14-17. cb_youth_nocal_gate_inject.js inserts a DOB-age 14-17 gate before the kids-age AISwitch -> no-booking team-follow-up Statement -> EOC.",
+      "band": "14-17"
+    },
+    "ageRouting": {
+      "under-3": "no calendar - no booking, refer to academy (609) 355-7500",
+      "3-6": "Kids Brazilian Jiu-Jitsu (3-6) - guardian required",
+      "7-13": "Kids Brazilian Jiu-Jitsu (7-13) - guardian required",
+      "14-17": "no calendar - minor, guardian capture, team follow-up, no booking (youth no-cal gate)",
+      "18+": "Adult Fundamentals BJJ (single discipline)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/montgomery-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.0.1 verified vs live site montgomerybjj.com + live GHL 2026-05-19. Phone/email site-vs-KB mismatch flagged (live site phone used). Doc: clients/ground-standard/closebot/montgomery-kb-verification-2026-05-19.md",
+    "knownGaps": [
+      "Phone of record: KB (609) 577-4445 vs site 609-355-7500 - confirm booking line with Bobby.",
+      "Kids bands 3-6 / 7-13 from GHL; site doesn't state - confirm.",
+      "14-17 has no trial calendar - youth no-cal gate, team follow-up."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm Adult Fundamentals BJJ is the beginner trial calendar; (b) confirm Kids 3-6 + 7-13 bands; (c) confirm 14-17 handled as minor/team-follow-up; (d) confirm under-3 phone referral + which phone is the booking line; (e) Leg Locks/ADCC No-Gi/Kids Comp/Open Mat excluded as non-trial"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_96PAT3JCI2YC32KY",
+      "botName": "Montgomery Brazilian Jiu-Jitsu - Launch v2.0 [Agent Node rebuild] (2026-05-20)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill). Single discipline (BJJ). 2 kids bands (3-6, 7-13). 14-17 no-cal gate. Under-3 deflect.",
+      "verdict": "QA-PASSED 2026-05-20 — see montgomery-qa-summary-v2.md",
+      "qaDate": "2026-05-20"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_5W8EDYF0CBPOT036",
+      "botName": "Montgomery Brazilian Jiu-Jitsu - Launch v1.0 [initial build, 14-17 no-cal gate] (2026-05-19)",
+      "version": "v1.0",
+      "architecture": "canon classic (merge-safe phone Prompt) + single discipline (no discipline switch) + youth 14-17 no-cal gate (spec-driven cb_youth_nocal_gate_inject.js) + scope-guard + substitute v3. Global Emma persona. Sandbox-attached src_4R4DUIQTMMX2NFPU only; DEMO bot_ZLPS10P745H18PMH untouched on prod src_4VEFF108BZ7GDG4K.",
+      "verdict": "QA-NOT-PASSED 2026-05-19 (clean re-sweep, paused 9/12 - verdict decisive). 7 PASS verified + 1 non-det FP, but REAL blocker: minor_self_booking - adult-path DOB<18 minor-gate Comparator did NOT fire, bot told a 17yo \"you can book your own trial class\" + claimed booking (mnd_05+md_04+md_06). Distinct from Sugoi (youth-path 16-17); Montgomery youth 14-17 gate works (teen_14_17_nocal PASS). Needs v1.1 adult-path minor-gate fix + re-test. See montgomery-qa-summary-v1.md. Parked sandbox, NOT prod."
+    }
+  ]
+}

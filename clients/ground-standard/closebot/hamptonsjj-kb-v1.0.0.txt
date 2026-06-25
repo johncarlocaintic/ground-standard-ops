@@ -1,0 +1,338 @@
+HAMPTONS Jiu-Jitsu (SOUTH) - KNOWLEDGE BASE
+
+Version: 1.0.0
+Date: 2026-05-16
+Type: Facts and Context Only (No Behavioral Instructions)
+
+================================================================================
+CHANGELOG
+================================================================================
+
+v1.0.0 | 2026-05-16
+- Initial build from website scrape (hamptonsJiu-Jitsu.com) + GHL calendar audit
+- Bookable calendars confirmed via GHL API: Adult BJJ, Adult Muay Thai,
+  Kids 4-7 BJJ, Kids 8-12 BJJ
+- TRX Group Classes calendar is active in GHL but excluded from bot booking
+- Judo, Wrestling, MMA mentioned on site; no dedicated GHL calendar — handled
+  as non-bookable, redirect to Adult Muay Thai trial or in-person inquiry
+- Private lessons offered at both locations; not bookable online
+- Schedule deflects to booking tool (no live schedule on website)
+
+[CLIENT ACTION NEEDED]
+- Confirm adult age minimum: website shows Kids 8-12 calendar, implying adult
+  program starts at 13. Confirm whether 13-17 year olds use the adult calendar
+  or require special handling.
+- Confirm which location (Southampton or Westhampton Beach) the bot's
+  bookable calendars serve — or if both locations share the same calendars.
+- Confirm whether Judo, Wrestling, and MMA classes have their own schedule or
+  are folded into Adult Muay Thai sessions.
+- Confirm TRX: include in bot booking (use existing GHL calendar) or keep
+  excluded?
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+Business Name: Hamptons Jiu-Jitsu
+Also known as: HJJ
+Legal Entity: Brava Holdings Inc.
+Industry: Martial Arts Training
+Service Area: The Hamptons, Long Island, New York (Southampton, Westhampton
+Beach, and surrounding areas)
+
+Description: Hamptons Jiu-Jitsu is the premier martial arts academy in the
+Hamptons, offering Brazilian Jiu-Jitsu, Muay Thai, and youth martial arts
+programs across two locations. Founded by Greg Melita with over two decades
+of experience, HJJ is known for bringing together coaches from multiple
+lineages and teaching styles — giving students access to a diverse range of
+techniques and perspectives under one roof.
+
+Mission: To provide world-class martial arts training to students of all ages
+and backgrounds in the Hamptons community. HJJ was built on the belief that
+training should not be locked into a single style or team — students here
+benefit from multiple lineages, different teaching methods, and a supportive,
+inclusive community.
+
+================================================================================
+CONTACT & LOCATIONS
+================================================================================
+
+Phone: (631) 900-2780
+Email: greg@hamptonsJiu-Jitsu.com
+Website: https://www.hamptonsJiu-Jitsu.com
+
+SOUTHAMPTON HEADQUARTERS
+395 County Road 39A
+Southampton, New York 11968
+(Inside Southampton Gym)
+
+WESTHAMPTON BEACH LOCATION
+68 Old Riverhead Rd
+Westhampton Beach, New York 11978
+
+Both locations are active. Private lessons are available at both locations.
+
+================================================================================
+AGE POLICY
+================================================================================
+
+Youth program: ages 4 through 12
+- Younger group: ages 4-7 (Kids 4-7 BJJ)
+- Older group: ages 8-12 (Kids 8-12 BJJ)
+
+Adult program: ages 13 and older
+- Includes Adult BJJ and Adult Muay Thai
+- Students 13-17 train in adult classes but enrollment requires parent or
+  guardian involvement. Unaccompanied minors (ages 13-17 self-booking without
+  a parent) are captured for staff follow-up and not booked online.
+
+[CLIENT ACTION NEEDED] Confirm the adult age minimum — the GHL calendars
+suggest 13+ but please verify before go-live.
+
+================================================================================
+PROGRAMS & CLASS TYPES
+================================================================================
+
+ADULT BRAZILIAN Jiu-Jitsu
+For ages 13 and older. HJJ offers the full spectrum of Brazilian Jiu-Jitsu
+from beginner Fundamentals to advanced training, covering both Gi and No-Gi
+formats. The Fundamentals program is the starting point for new students and
+is designed for those with no prior BJJ experience. Classes are welcoming to
+complete beginners and advanced practitioners alike. The focus is on
+technique, leverage, and strategy — the art of using skill over strength.
+Booking calendar: "Adult BJJ".
+
+ADULT MUAY THAI
+For ages 13 and older. Muay Thai, also known as the Art of Eight Limbs,
+uses punches, kicks, elbows, and knees. HJJ's striking program is designed
+for all levels from fitness-focused beginners to serious practitioners. HJJ
+also offers Judo, Wrestling, and MMA classes that complement the Muay Thai
+program (see Non-Bookable Programs below for details).
+Booking calendar: "Adult Muay Thai".
+
+YOUTH Jiu-Jitsu — AGES 4 TO 7
+Jiu-Jitsu-focused classes for children ages 4 to 7. Sessions are
+age-appropriate and supervised, building foundational movement patterns,
+confidence, and basic technique in a fun and structured environment.
+Hamptons JJ runs the largest youth martial arts program in the Hamptons.
+Booking calendar: "Kids 4-7 BJJ".
+
+YOUTH Jiu-Jitsu — AGES 8 TO 12
+Jiu-Jitsu-focused classes for kids ages 8 to 12. Classes are more
+technically advanced than the younger group and build on fundamentals with
+more complex technique work, drilling, and live training at an age-appropriate
+pace. Booking calendar: "Kids 8-12 BJJ".
+
+================================================================================
+NON-BOOKABLE PROGRAMS
+================================================================================
+
+PRIVATE LESSONS
+One-on-one private training is available at both the Southampton and
+Westhampton Beach locations. Private sessions are personalized to the
+student's specific goals — whether that is accelerating fundamentals,
+competition prep, technique refinement, or a schedule that does not fit
+group classes. Private lessons are not available for online booking. The
+best next step for anyone interested in private lessons is to attend a free
+trial group class first and speak with the instructor in person.
+
+TRX GROUP CLASSES (HAMPTONS POWERED BY TRX)
+HJJ offers a functional fitness program powered by TRX — a suspension
+training system that uses adjustable straps and bodyweight to build
+strength, conditioning, and movement. Sessions are led by certified
+instructors and are designed to complement martial arts training. TRX classes
+are not currently available for online booking through this system. Contact
+the gym directly at (631) 900-2780 to ask about TRX class availability and
+scheduling.
+
+JUDO, WRESTLING, AND MMA
+HJJ offers Judo, Wrestling, and MMA classes as part of its broader martial
+arts programming. These classes are not currently available as separate online
+bookings. The free trial class is the best starting point — students can
+explore the full range of programs and discuss which disciplines fit their
+goals with the instructor during or after the trial.
+
+================================================================================
+WHAT KIDS LEARN
+================================================================================
+
+The youth programs at HJJ build confidence, focus, discipline, and respect
+while keeping kids active and engaged. HJJ's youth program is the largest in
+the Hamptons, reflecting the quality and consistency that has earned the trust
+of families in the community.
+
+Key benefits:
+- Confidence that builds as skills develop
+- Focus and listening that transfer to school performance
+- Respect for partners, teammates, and instructors
+- Discipline and follow-through
+- Active, healthy outlet in a structured and supervised environment
+
+Parents are welcome to watch classes, especially during a child's first
+visits. The youth programs use Jiu-Jitsu technique and movement as the
+vehicle for building these broader life skills.
+
+================================================================================
+INSTRUCTORS & TEAM
+================================================================================
+
+GREG MELITA — Founder & Head Instructor
+Greg Melita is the founder of Hamptons Jiu-Jitsu and has over 20 years of
+experience in Jiu-Jitsu and other combat sports. He has developed a deep
+understanding of technique, strategy, and the pedagogy of martial arts
+instruction. Greg built HJJ around the vision of offering students access
+to multiple lineages and teaching styles rather than locking them into a
+single approach.
+
+THE COACHING TEAM
+HJJ brings together coaches from different Jiu-Jitsu lineages, styles, and
+teams. The team includes Black Belts and coaches with diverse competitive and
+teaching backgrounds. Coaches include James Lispesa, Randy Nieves, Josiah
+Tyte, Richard Byrne, Dan Curro, and Howard Greenberg, alongside Greg Melita.
+
+This multi-lineage approach is intentional — students at HJJ are exposed to
+a broader range of techniques and perspectives than they would find at most
+single-affiliation academies.
+
+================================================================================
+HAMPTONS YOUTH CAMPS
+================================================================================
+
+Hamptons Jiu-Jitsu runs a youth scholarship program through Hamptons Youth
+Camps. Donations and contributions support scholarships for local kids,
+connecting them with high-end professional recreational services including
+martial arts, fitness, surfing, yoga, tennis, and more.
+
+This program reflects the academy's commitment to the broader Hamptons
+community beyond the gym itself.
+
+================================================================================
+WHAT TO EXPECT — FIRST CLASS (FREE TRIAL)
+================================================================================
+
+The entry point for any new student is a free trial class. The trial has no
+cost and no commitment required.
+
+What to bring:
+- Water bottle
+- Athletic clothing appropriate for training (no uniform required for the
+  trial class)
+
+Arrival: Plan to arrive a few minutes early to get checked in and introduced
+to the instructor before class begins.
+
+After the trial: The instructor will walk through membership options, program
+fit, and pricing in person based on the student's goals and the best program
+for them.
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+Class schedules are managed through the live booking system. Specific class
+times and available trial slots are shown once contact information is
+collected and the booking tool pulls the current calendar.
+
+Adult BJJ and Adult Muay Thai run multiple sessions per week. Youth classes
+are scheduled across weekday sessions appropriate for school-age children.
+The exact available times are pulled live from the booking calendar at the
+time of booking — not from a fixed published weekly grid.
+
+================================================================================
+MEMBERSHIP & PRICING
+================================================================================
+
+Membership pricing varies based on several factors including the number of
+sessions per week, the program, and each student's specific goals.
+Instructors discuss all pricing options and membership plans during or right
+after the free trial class. They assess what program works best and provide
+accurate pricing for each student's situation. The trial class is completely
+free with no commitment required.
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: What programs does Hamptons Jiu-Jitsu offer?
+A: Hamptons Jiu-Jitsu offers Adult Brazilian Jiu-Jitsu (Gi and No-Gi,
+Fundamentals through Advanced), Adult Muay Thai, Youth Jiu-Jitsu for kids
+ages 4-7 and 8-12, Private Lessons, TRX fitness classes, and additional
+disciplines including Judo, Wrestling, and MMA.
+
+Q: Do you offer classes for complete beginners?
+A: Yes. The Adult BJJ Fundamentals program is specifically designed for
+beginners with no prior experience. The Muay Thai program is also welcoming
+to newcomers. The best starting point for any new student is the free trial
+class.
+
+Q: What is the youth program age range?
+A: Youth programs serve kids ages 4 through 12. The younger group is ages
+4-7 and the older group is ages 8-12.
+
+Q: Do you offer Gi and No-Gi Jiu-Jitsu?
+A: Yes. HJJ offers both Gi and No-Gi Brazilian Jiu-Jitsu in the adult
+program, from Fundamentals to advanced levels.
+
+Q: Do you offer private lessons?
+A: Yes. Private one-on-one training is available at both the Southampton and
+Westhampton Beach locations. Private lessons are not available for online
+booking — attend a free trial class and speak with the instructor about
+scheduling private sessions.
+
+Q: What is TRX?
+A: Hamptons Powered by TRX is a functional fitness program offered at HJJ
+using suspension training straps that engage multiple muscle groups
+simultaneously. It is led by certified instructors and designed to complement
+martial arts training. TRX is not currently available for online booking —
+contact the gym at (631) 900-2780 for availability.
+
+Q: Do you offer Judo, Wrestling, or MMA?
+A: Yes. HJJ offers Judo, Wrestling, and MMA in addition to its primary BJJ
+and Muay Thai programs. These classes are not currently available as separate
+online bookings. Attending the free trial is the best way to explore the full
+range of disciplines and speak with the instructor about options.
+
+Q: How much do classes cost?
+A: Membership pricing varies based on program, frequency, and training goals.
+The instructor covers all pricing options during or right after the free trial
+class. The trial class itself is completely free with no commitment.
+
+Q: Where are you located?
+A: Hamptons Jiu-Jitsu has two locations: the Southampton Headquarters at
+395 County Road 39A, Southampton, NY 11968 (inside Southampton Gym), and
+the Westhampton Beach location at 68 Old Riverhead Rd, Westhampton Beach,
+NY 11978.
+
+Q: How do I get in touch?
+A: Call (631) 900-2780 or email greg@hamptonsJiu-Jitsu.com.
+
+Q: Is the trial class actually free?
+A: Yes. The trial class is completely free with no commitment required.
+
+Q: When are classes scheduled?
+A: Class times are managed through the live booking system. Available trial
+slots are shown once contact information is collected and the booking tool
+pulls the current calendar.
+
+Q: Will martial arts make my child aggressive?
+A: No. The youth programs at HJJ emphasize control, respect, and
+responsibility. Kids learn confidence, focus, and discipline — and they
+learn when and how to apply their skills appropriately.
+
+Q: Who are the instructors?
+A: Hamptons Jiu-Jitsu was founded by Greg Melita, who has over 20 years of
+BJJ and combat sports experience. The coaching team includes Black Belts and
+coaches from multiple lineages and competitive backgrounds, including James
+Lispesa, Randy Nieves, Josiah Tyte, Richard Byrne, Dan Curro, and Howard
+Greenberg.
+
+Q: Why does HJJ have coaches from multiple lineages?
+A: HJJ was intentionally built around the idea that students should not be
+locked into a single style or team approach. Having coaches from different
+lineages gives students exposure to a broader range of techniques and
+teaching methods than most single-affiliation academies offer.
+
+Q: Is there a youth scholarship program?
+A: Yes. Through Hamptons Youth Camps, HJJ supports scholarships for local
+kids in the area, connecting them with professional recreational programs
+including martial arts and more.

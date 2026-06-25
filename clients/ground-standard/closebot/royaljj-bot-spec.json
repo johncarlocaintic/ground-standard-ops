@@ -1,0 +1,120 @@
+{
+  "gym": {
+    "name": "Royal Jiu-Jitsu Academy Queens",
+    "slug": "royaljj",
+    "website": "https://royaljiujitsuqueens.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Royal Jiu-Jitsu Academy Queens, a Brazilian Jiu-Jitsu academy in Queens, NY. Your goal is to book new leads into a free trial class — Adult Fundamentals BJJ for ages 18+ or Kids BJJ for ages 5-13. The academy is single-discipline BJJ. Never state pricing.",
+    "businessInformation": "The company name is Royal Jiu-Jitsu Academy Queens.",
+    "rules": [
+      "Never state pricing or quote a dollar figure. Redirect pricing pressure to the trial or to a team follow-up.",
+      "Only book the two active calendars: Adult Fundamentals BJJ (18+) and Kids BJJ (5-13).",
+      "Adult Advanced BJJ and Adult All Levels BJJ are not currently available for new-student trial booking — do not offer them.",
+      "Under-5: no calendar. Team follow-up only, no booking.",
+      "Ages 14-17: no calendar. Team follow-up only, no booking.",
+      "If a lead is under 18 and self-booking, do not attempt booking. Capture parent/guardian contact and route to team follow-up."
+    ]
+  },
+  "ghl": {
+    "locationId": "73OIwejXGNK43fe5yojU",
+    "sourceId": "src_R9BDT0U16EJ6LA29"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "I2E4k2r3XIpKtbFWbqEW",
+        "program": "bjj-fundamentals",
+        "ageMin": 18,
+        "default": true,
+        "durationMinutes": 60
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_5_13",
+        "calendarName": "Kids BJJ",
+        "calendarId": "I8Adff7GjXy2fI7WHc3a",
+        "program": "bjj",
+        "ageMin": 5,
+        "ageMax": 13,
+        "durationMinutes": 60
+      }
+    ],
+    "teen": []
+  },
+  "nonBookablePrograms": [
+    {
+      "name": "Adult Advanced BJJ",
+      "handling": "acknowledge as a members-only or advanced-track program not available for new-student trial booking; route to Adult Fundamentals BJJ"
+    },
+    {
+      "name": "Adult All Levels BJJ",
+      "handling": "not currently offered for new-student trial booking; route to Adult Fundamentals BJJ"
+    },
+    {
+      "name": "Kids 6-9 BJJ (historical age band)",
+      "handling": "calendar inactive; all kids 5-13 book into Kids BJJ"
+    },
+    {
+      "name": "Kids 10-14 BJJ (historical age band)",
+      "handling": "calendar inactive; kids 5-13 book into Kids BJJ; ages 14+ have no calendar"
+    }
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "requiresDisciplineSwitch": false,
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 13, no teen calendar at 14-17. Capture parent contact + team follow-up, no booking.",
+      "band": "14-17"
+    },
+    "under5Gate": {
+      "required": true,
+      "reason": "No calendar under age 5. Team follow-up only.",
+      "band": "under-5"
+    },
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 1,
+    "ageRouting": {
+      "under_5": "no calendar — capture parent contact, tag concierge - failed booking, team follow-up, no booking",
+      "5_13": "Kids BJJ",
+      "14_17": "no calendar — capture parent contact, tag minor - needs guardian, team follow-up, no booking",
+      "18_plus": "Adult Fundamentals BJJ"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "kbFile": "clients/ground-standard/closebot/royaljj-kb-v1.0.0.txt",
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_4N8WBIF210AU944O",
+      "botName": "Royal Jiu-Jitsu Academy Queens - Launch v1.0 [initial Agent Node build] (2026-05-21)",
+      "version": "v1.0",
+      "architecture": "agent-node (scaffold-and-fill from Scottsdale-derived canonical template). Single discipline (BJJ). 1 adult cal (Adult Fundamentals BJJ 18+) + 1 kids cal (Kids BJJ 5-13). No-cal gates: under-5, 14-17. Adult-path minor gate. Multi-enrollee support. Explicit calendar names in n30_book to avoid sandbox cross-contamination.",
+      "verdict": "QA-PASSED 2026-05-21 — 10/10 personas PASS (2 cross-examined false-positives) + 3/3 non-det. qaReport: clients/ground-standard/closebot/royaljj-qa-summary-v1.md. Parked sandbox, NOT on prod."
+    }
+  ]
+}

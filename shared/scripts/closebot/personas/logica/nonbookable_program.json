@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_nonbookable_program",
+  "opening_message": "can I book the Open Mat session?",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1991-06-17) who asks specifically to book Open Mat (and mentions All Levels). These are not online trial bookings - new students start with a free Foundations trial. Push once: 'so I cant just book open mat?'. You expect the bot to acknowledge Open Mat / All Levels exist but say new students start with a free Foundations trial and it must NOT invent a calendar for them. If offered the free Foundations trial you may accept it. When the bot acknowledges and closes (or books the Foundations trial), reply with [END]."
+}

@@ -1,0 +1,153 @@
+{
+  "bot": "championmartialarts",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Adult Brazilian Jiu-Jitsu, Adult Judo, Adult Karate, Adult Strength and Conditioning, Youth Jiu-Jitsu, Youth Judo. Also flag source-bleed program names from other gyms (e.g. Adult Striking, Kids 3-6 BJJ, 10th Planet, no-gi)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you are all set', 'you are booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_07",
+      "category": "must_not_do",
+      "description": "No BJJ booking for under-12",
+      "level": "blocker",
+      "look_for": "bot attempts to book Jiu-Jitsu for a child under age 12. BJJ minimum is 12 — under-12 must be redirected to Judo (ages 5+), not booked into any BJJ calendar."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "mnd_09",
+      "category": "must_not_do",
+      "description": "No Karate booking for under-14",
+      "level": "blocker",
+      "look_for": "bot attempts to book Karate for a child under age 14. Karate trials are not available under 14 — must redirect to Judo (ages 5+) for those cases."
+    },
+    {
+      "id": "mnd_10",
+      "category": "must_not_do",
+      "description": "No Conditioning booking for under-14",
+      "level": "blocker",
+      "look_for": "bot attempts to book Conditioning for a child under age 14. Conditioning is not available under 14 — must redirect to an age-eligible program."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details. If persona opening message already states who it is for, mark n/a."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Asks which program before booking",
+      "level": "blocker",
+      "look_for": "bot confirms whether the lead wants Judo, Jiu-Jitsu, Karate, or Conditioning before routing to a booking calendar. Must not assume program without confirmation."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_04",
+      "category": "must_do",
+      "description": "Routes adult BJJ (14+) to Adult Brazilian Jiu-Jitsu calendar",
+      "level": "blocker",
+      "look_for": "an adult or youth 14+ selecting Jiu-Jitsu must be booked into the 'Adult Brazilian Jiu-Jitsu' calendar, not any other."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Routes youth BJJ (age 12-13) to Youth Jiu-Jitsu calendar",
+      "level": "blocker",
+      "look_for": "a child aged 12 or 13 selecting Jiu-Jitsu must be booked into the 'Youth Jiu-Jitsu' calendar, not the adult one."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Routes youth Judo (age 5-13) to Youth Judo calendar",
+      "level": "blocker",
+      "look_for": "a child aged 5-13 selecting Judo must be booked into the 'Youth Judo' calendar."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Redirects BJJ under-12 to Judo",
+      "level": "standard",
+      "look_for": "when a child under 12 wants BJJ, bot must clearly state BJJ requires age 12+ and offer Judo (ages 5+) as an alternative. Must not book them into any program without offering the redirect."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "ec_01",
+      "category": "edge_case",
+      "description": "BJJ Open Mat (Saturday) acknowledged but not booked",
+      "level": "standard",
+      "look_for": "when lead asks about the Saturday BJJ Open Mat or Technique Review, bot must acknowledge it exists but state it isn't available for online booking, then redirect to a free trial instead."
+    },
+    {
+      "id": "ec_02",
+      "category": "edge_case",
+      "description": "Boxing coming soon — acknowledged, not booked",
+      "level": "standard",
+      "look_for": "when lead asks about Boxing, bot must acknowledge the program is coming soon but not yet available, then redirect to a current trial (Judo, Jiu-Jitsu, Karate, or Conditioning)."
+    },
+    {
+      "id": "ec_03",
+      "category": "edge_case",
+      "description": "Kickboxing/Muay Thai coming soon — acknowledged, not booked",
+      "level": "standard",
+      "look_for": "same as ec_02 but for Kickboxing or Muay Thai."
+    },
+    {
+      "id": "ec_04",
+      "category": "edge_case",
+      "description": "MMA coming soon — acknowledged, not booked",
+      "level": "standard",
+      "look_for": "same as ec_02 but for MMA."
+    }
+  ]
+}

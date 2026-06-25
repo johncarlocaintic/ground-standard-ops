@@ -1,0 +1,90 @@
+{
+  "bot": "soma",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program/class exists that is NOT one of: SOMA MVMT Introduction Class (the only bookable), or one of the regular non-bookable programs: Adult Small Group Fitness (Functional Strength Interval Training), Steel Mace Flow, Mindfulness/Meditation, Guided Breathwork. Also flag any source-bleed program names from other gyms (BJJ, MMA, kickboxing, etc.)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the book_appointment tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. SOMA is adult-only — when asked about kids/teens/youth programs, the bot must give a firm 'we don't have those programs' answer rather than hedging."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'is this for yourself, or are you signing up someone else?' before collecting names, DOBs, or other personal details. Acceptable for SOMA since the studio is adult-only — the question gates parent-for-child cases."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Age-band routing correct (18+ → Intro Class, under-18 → team referral, no booking)",
+      "level": "blocker",
+      "look_for": "Adult leads (18+) get routed to the SOMA MVMT Introduction Class booking. Under-18 leads (kids, teens) are NOT booked into the Introduction Class; the bot must explicitly state SOMA doesn't have kids/teen programs and route to a team follow-up without booking."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected, no figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Under-18 self-booking gated, not booked",
+      "level": "blocker",
+      "look_for": "if lead is under 18 and self-booking, bot must NOT attempt to book. Must capture parent or guardian contact info and close with team-will-follow-up framing. Apply 'minor - needs guardian' or 'concierge - failed booking' tag."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Parent-for-child case (adult-only studio): no booking, team referral",
+      "level": "blocker",
+      "look_for": "if a parent tries to sign up their child (any age under 18), the bot must NOT book the child into the Introduction Class. Bot must explicitly say SOMA MVMT is an adult-only studio and route to a team follow-up. Capture parent contact info but do not book."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Non-bookable program redirect (Steel Mace Flow, Mindfulness, Breathwork, Functional Strength)",
+      "level": "standard",
+      "look_for": "if a lead asks to book a specific regular class like Steel Mace Flow or Mindfulness, the bot must acknowledge the class exists but explain that all new members start with the SOMA MVMT Introduction Class as the entry point. Do NOT offer to book those programs directly."
+    }
+  ]
+}

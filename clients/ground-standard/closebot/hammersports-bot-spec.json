@@ -1,0 +1,138 @@
+{
+  "gym": {
+    "name": "Hammer Sports & Performance",
+    "website": "https://www.hammertrained.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Hammer Sports & Performance, a martial arts and athletic training gym in Hazlet, NJ offering Brazilian Jiu-Jitsu (Gi and No-Gi), Muay Thai/Kickboxing, Wrestling, and Kettlebell conditioning for kids, teens, and adults. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the gym.",
+    "businessInformation": "The company name is Hammer Sports & Performance.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial",
+      "Free trial class for new students",
+      "Never identify as AI",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/teen guardian path, never self-book a minor.",
+      "Adults (18+) train in one of five disciplines: Adult Brazilian Jiu-Jitsu (Gi), Adult No-Gi Brazilian Jiu-Jitsu, Adult Muay Thai (Kickboxing), Adult Wrestling, or Kettle Bell Workout (conditioning). Ask which discipline the adult wants. Default to Adult Brazilian Jiu-Jitsu only if they have no preference. Do not proactively push one discipline.",
+      "Kids ages 5-12 book the Youth Martial Arts (Little Hammer) trial. Teens ages 13-17 book the Teen Martial Arts trial. Both are minors and need a parent or guardian.",
+      "Under age 5 - youngest program is Youth Martial Arts (ages 5-12); do not book, refer to the gym directly at (732) 795-5626.",
+      "MMA, Personal Training, private sessions, and Open Mat have no online trial booking. If asked, say they are not booked online and the coach will go over options at the free trial - no coach-redirect node, no substitute calendar.",
+      "Muay Thai is listed under Kickboxing on the gym's own scheduling platform; in our system it books as Adult Muay Thai (Kickboxing)."
+    ]
+  },
+  "ghl": {
+    "locationId": "IB5NHYNn4F4ANpNt5NvX",
+    "sourceId": "src_OKNBAOGCND99B5EM"
+  },
+  "calendars": {
+    "adult": [
+      { "label": "adult_bjj_gi", "calendarName": "Adult Brazilian Jiu-Jitsu", "calendarId": "LVXGgBrnpysMvL5SeXO4", "program": "bjj-gi", "ageMin": 18, "default": true },
+      { "label": "adult_nogi", "calendarName": "Adult No-Gi Brazilian Jiu-Jitsu", "calendarId": "7lDnZI0guVOkAPRC4WOg", "program": "bjj-nogi", "ageMin": 18, "onlyOnExplicitRequest": true },
+      { "label": "adult_muay_thai", "calendarName": "Adult Muay Thai (Kickboxing)", "calendarId": "GguRLKLUnTL4vwKOI3vi", "program": "muay-thai", "ageMin": 18, "onlyOnExplicitRequest": true },
+      { "label": "adult_wrestling", "calendarName": "Adult Wrestling", "calendarId": "HPHCI7asG4MIs1gHKtp4", "program": "wrestling", "ageMin": 18, "onlyOnExplicitRequest": true },
+      { "label": "adult_kettlebell", "calendarName": "Kettle Bell Workout", "calendarId": "fliTy42M3zCzQVPv3RWO", "program": "conditioning", "ageMin": 18, "onlyOnExplicitRequest": true }
+    ],
+    "kids": [
+      { "label": "youth_martial_arts", "calendarName": "Youth Martial Arts", "calendarId": "42uFk8DjUKX49nbN6egp", "program": "little-hammer", "ageMin": 5, "ageMax": 12, "templateBand": "KIDS_3_5" },
+      { "label": "teen_martial_arts", "calendarName": "Teen Martial Arts", "calendarId": "dyKieKPgrZTSlvJXckqs", "program": "teen", "ageMin": 13, "ageMax": 17, "templateBand": "KIDS_7_13" }
+    ],
+    "noCalendarAgeBands": [
+      { "band": "under-5", "status": "no calendar", "default": "youngest is Youth Martial Arts (5-12); do not book, gym contact (732) 795-5626" }
+    ],
+    "inactiveExcluded": [
+      { "calendarName": "Adult No-Gi", "calendarId": "vXplvwPxKVBLJoTrLdSj", "note": "INACTIVE in GHL - superseded by Adult No-Gi Brazilian Jiu-Jitsu; not mirrored, not booked" }
+    ],
+    "internalNotForTrial": [
+      { "calendarName": "Personal Training Consultation Call", "calendarId": "Z65Qdz3OuP7KIyBiDrbn", "note": "sales/PT consult; bot never books for a trial" },
+      { "calendarName": "Coach Josh Private Session", "calendarId": "hek6PGsySuxxtCkiK4gA", "note": "private session; internal only" },
+      { "calendarName": "Taylor Manning-Drake's Personal Calendar", "calendarId": "rW8JVwGrxnm5ovXbLRNA", "note": "staff personal calendar; internal only" }
+    ]
+  },
+  "nonBookablePrograms": [
+    "MMA (no GHL trial calendar)",
+    "Personal Training / private sessions (consult-only, internal calendars)",
+    "Open Mat (members drilling time, not a trial)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state it is not booked online and the coach will go over options at the free trial. No coach-redirect node. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 5,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": true,
+    "disciplineSwitch": {
+      "path": "adult",
+      "default": "Adult Brazilian Jiu-Jitsu",
+      "alternates": [
+        "Adult No-Gi Brazilian Jiu-Jitsu",
+        "Adult Muay Thai (Kickboxing)",
+        "Adult Wrestling",
+        "Kettle Bell Workout"
+      ],
+      "trigger": "ask the adult which discipline; route on their stated choice, default to Adult Brazilian Jiu-Jitsu only if no preference",
+      "implementation": "5-way adult-discipline AISwitch + 4 extra adult Booking nodes mirroring the Gracie FV cb_discipline_switch_inject.js pattern, generalized from 2-way to 5-way; all 5 adult Bookings wire into the same downstream confirm path; 0 orphan handles. NOTE: cb_discipline_switch_inject.js currently hardcodes a 2-branch BJJ-vs-Kickboxing switch - must be generalized to N disciplines before build."
+    },
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Teens 13-17 book Teen Martial Arts WITH a guardian; kids 5-12 book Youth Martial Arts WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        { "path": "adult", "after": "adult_dob", "catches": "DOB under 18 on the adult path (self-booking minor)", "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking" },
+        { "path": "youth", "after": "kid_dob", "catches": "DOB under 5 on the youth path (below youngest program)", "action": "tag minor - needs guardian, Statement (under 5 not bookable online, gym (732) 795-5626), EOC - no booking" }
+      ]
+    },
+    "ageRouting": {
+      "under-5": "no calendar - no booking, refer to gym (732) 795-5626",
+      "5-12": "Youth Martial Arts (Little Hammer) - guardian required",
+      "13-17": "Teen Martial Arts - guardian required",
+      "18+": "adult discipline AISwitch (BJJ Gi default / No-Gi / Muay Thai / Wrestling / Kettlebell)"
+    }
+  },
+  "scenarios": [
+    { "title": "Sign Up", "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant", "threshold": 7, "priority": 50 }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": "file_2WNTLIZS3TRK33BF",
+    "localFile": "clients/ground-standard/closebot/hammersports-kb-v1.0.0.txt",
+    "indexed": true,
+    "verification": "No Glenn draft. Legacy KB v1.1.0 (client PDF, library file_FJSCWM869KY77CNV) used as starting material, verified vs live website + live GHL calendars 2026-05-18. Phone (732) 795-5626 + email hammernation135@gmail.com live-site confirmed (legacy FLAG 5 closed). Free trial confirmed by live site (legacy FLAG 4 closed). Appendix A (internal pricing/flags) excluded. Stale 3/2026 launch-date qualifiers removed. Verification doc: clients/ground-standard/closebot/hammersports-kb-verification-2026-05-18.md",
+    "knownGaps": [
+      "Kids/teen age bands from legacy KB (Youth 5-12, Teen 13-17); live site did not specify - confirm with Bobby.",
+      "Kettle Bell Workout treated as a bookable adult conditioning trial because it has an active GHL calendar - confirm intended as a trial vs members-only.",
+      "MMA has no dedicated GHL calendar - non-bookable online, KB acknowledges it exists, no flow path.",
+      "Under-5 has no calendar - no online booking, gym (732) 795-5626."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) confirm Youth Martial Arts age band 5-12; (b) confirm Teen Martial Arts age band 13-17; (c) confirm Kettle Bell Workout is a bookable trial discipline; (d) confirm under-5 handled as no-online-booking + gym referral; (e) confirm MMA / Personal Training / private sessions are not online-bookable trials; (f) Adult No-Gi (plain) calendar is INACTIVE and excluded"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_AFKR1QYFJ3VKYF3W",
+      "botName": "Hammer Sports & Performance - Launch v2.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill from canonical template). 5 adult disciplines (BJJ Gi default + No-Gi + Muay Thai + Wrestling + Kettlebell). 2 kids cals (Youth 5-12 + Teen 13-17 MA). Under-5 no-cal gate. Adult-path minor gate. Multi-enrollee support. Explicit calendar IDs in n30_book.",
+      "verdict": "QA-PENDING — published, NOT sandbox-attached (queued behind Royal JJ + All In + GracieFV)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_W19E72R6C8R6P8G5",
+      "botName": "Hammer Sports & Performance - Launch v1.0 [initial build, 5-way discipline switch] (2026-05-18)",
+      "version": "v1.0",
+      "architecture": "canon classic (Vacaville 195-node template) + 5-way adult-discipline AISwitch (cb_discipline_switch_inject.js generalized to N-way, spec-driven) + scope-guard Booking Description suffix + age-range normalization (substitute v3). No youth 14-17 no-cal gate (Hammer has a dedicated Teen Martial Arts calendar).",
+      "verdict": "QA-PASSED — parked sandbox, NOT on prod",
+      "qaReport": "clients/ground-standard/closebot/hammersports-qa-summary-v1.md",
+      "supersedes": "bot_V3KWGHDTV32QMNKP [DEMO] Hammer Sports & Performance Membership Qualification (kept on prod until Bobby's soft-launch go)"
+    }
+  ]
+}

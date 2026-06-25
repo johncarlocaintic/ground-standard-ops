@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_teen_wrestling",
+  "opening_message": "my 14 year old son is interested in wrestling",
+  "brief": "You are a parent, {{firstName}} {{lastName}} (your own DOB: 1981-09-03). Your son Ethan is interested in wrestling (DOB: 2011-01-20, age 14). When the bot asks which discipline for your child, confirm 'wrestling'. Give your parent info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1981-09-03. Give child info when asked: name Ethan, DOB 2011-01-20. Expect the bot to route to Youth 7-17 Wrestling. A guardian must accompany the child — acknowledge this. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

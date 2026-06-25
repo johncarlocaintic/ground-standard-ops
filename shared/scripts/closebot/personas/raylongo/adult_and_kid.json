@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_adult_and_kid",
+  "opening_message": "I want to train and also get my kid into class",
+  "brief": "You are {{firstName}} {{lastName}}, a 36-year-old adult (DOB: 1989-02-17) enrolling BOTH yourself (open to any discipline / beginner) and your daughter Lily, age 9 (DOB: 2016-03-21). When asked who it is for, say both you and your 9 year old daughter. Give: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1989-02-17. Child: Lily, DOB 2016-03-21. Expect yourself booked into the default Mixed Martial Arts intro and Lily into Youth 7-12 Martial Arts. Accept the first slots. When both bookings are confirmed, reply with [END]."
+}

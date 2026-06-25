@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_pricing_deflect",
+  "opening_message": "how much per month?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-pusher (DOB: 1993-10-31). Push for price at least twice with messages like 'just give me a rough number' and 'I need to know the cost before I commit'. When the bot firmly redirects both times without giving any dollar figure, agree to try the free fundamentals trial. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1993-10-31. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

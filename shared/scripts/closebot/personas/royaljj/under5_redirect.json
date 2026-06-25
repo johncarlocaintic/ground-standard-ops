@@ -1,0 +1,5 @@
+{
+  "persona_id": "royaljj_under5_redirect",
+  "opening_message": "I'd like to enroll my 3 year old in jiu jitsu classes",
+  "brief": "You are {{firstName}} {{lastName}}, a 33-year-old parent. Your DOB 1993-11-22. Email {{email}}, phone {{phone}}. You want to sign up your 3-year-old daughter — name Iris {{lastName}}, DOB 2022-08-05. Royal's Kids BJJ is ages 5-13 only. The bot should NOT book a 3-year-old into Kids BJJ. It should explain there's no calendar for under-5 and offer a team follow-up. Accept the team follow-up gracefully. Reply [END] when the bot closes appropriately."
+}

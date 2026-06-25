@@ -1,0 +1,148 @@
+{
+  "gym": {
+    "name": "Signature of Jiu-Jitsu",
+    "website": "https://www.sofjj.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Signature of Jiu-Jitsu, a Brazilian Jiu-Jitsu academy in Belmont, CA offering Gi and No-Gi BJJ for adults and children. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Signature of Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "First class is free for new students, no commitment",
+      "Never identify as AI",
+      "Single adult discipline (Adult Fundamentals BJJ) - no discipline confirmation step needed; new students start with the beginner/fundamentals trial",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian - route to the youth/guardian path, never self-book a minor.",
+      "Kids ages 5-7 book Kids 5-7 BJJ. Ages 8-10 book Kids 8-10 BJJ. Ages 11-14 book Kids 11-14 BJJ. All are minors and need a parent or guardian.",
+      "Ages 15-17 have no online class (kids end at 14, adults are 18+) - capture guardian, do not book, tell them the team will follow up.",
+      "Under age 5 - youngest program is Kids 5-7 BJJ; do not book, refer to the academy at 650-398-7837.",
+      "Private lessons, Women's BJJ class, No-Gi Intermediate/Advanced, and Sparring are not booked online as a trial - acknowledge they exist, do not book them; the new-student trial is the Adult Fundamentals BJJ class."
+    ]
+  },
+  "ghl": {
+    "locationId": "UOoHf3aLtbRc8fc68KiS",
+    "sourceId": "src_HHSREAS1NVHJMDSR",
+    "pit": "pit-d3ab70ad-ba7b-4e0a-b7af-d1db50ba15b0"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_fundamentals_bjj",
+        "calendarName": "Adult Fundamentals BJJ",
+        "calendarId": "dvEQWeLqOk0DnIYZ6VD6",
+        "program": "bjj-fundamentals",
+        "ageMin": 18,
+        "default": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_5_7",
+        "calendarName": "Kids 5-7 BJJ",
+        "calendarId": "p8shns2lFfc1Dxzv1jfx",
+        "ageMin": 5,
+        "ageMax": 7
+      },
+      {
+        "label": "kids_8_10",
+        "calendarName": "Kids 8-10 BJJ",
+        "calendarId": "Iuv6iiN568vKWQ0lWmlI",
+        "ageMin": 8,
+        "ageMax": 10
+      },
+      {
+        "label": "kids_11_14",
+        "calendarName": "Kids 11-14 BJJ",
+        "calendarId": "FwPYPuwmeTEPnW86Gpa6",
+        "ageMin": 11,
+        "ageMax": 14
+      }
+    ],
+    "internalNotForTrial": []
+  },
+  "nonBookablePrograms": [
+    "Private Lessons (not booked online as a trial)",
+    "Women's BJJ Class (no separate trial calendar - Fridays only)",
+    "No-Gi Intermediate/Advanced (not a beginner trial)",
+    "Sparring Intermediate/Advanced (not for new students)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free beginner/fundamentals trial and those classes are not booked online as a trial. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 3,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult. Kids 5-14 book WITH a guardian; a minor self-booking with no guardian is gated.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB 15-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Kids cap at 14 (Kids 11-14 BJJ), adults 18+, no calendar for 15-17. cb_youth_nocal_gate_inject.js inserts a DOB-age 15-17 gate before the kids-age AISwitch -> no-booking team-follow-up Statement -> EOC.",
+      "band": "15-17"
+    },
+    "ageRouting": {
+      "under-5": "no calendar - no booking, refer to academy 650-398-7837",
+      "5-7": "Kids 5-7 BJJ - guardian required",
+      "8-10": "Kids 8-10 BJJ - guardian required",
+      "11-14": "Kids 11-14 BJJ - guardian required",
+      "15-17": "no calendar - minor, guardian capture, team follow-up, no booking (youth no-cal gate)",
+      "18+": "Adult Fundamentals BJJ (single discipline)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/signature-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.1.2 verified vs live GHL 2026-05-20. Phone discrepancy: KB/GHL agree on 650-398-7837; live site shows 650-663-3004 - flagged for Bobby. Kids age bands 5-7/8-10/11-14 confirmed vs GHL calendars. Doc: clients/ground-standard/closebot/signature-kb-verification-2026-05-20.md",
+    "knownGaps": [
+      "Phone discrepancy: KB/GHL = 650-398-7837, live site = 650-663-3004 - confirm booking line with Bobby.",
+      "15-17 has no trial calendar - youth no-cal gate, team follow-up.",
+      "Women's BJJ / No-Gi classes have no trial calendar - treated non-bookable, confirm with Bobby."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm Adult Fundamentals BJJ is the beginner trial calendar; (b) confirm Kids 5-7 / 8-10 / 11-14 bands; (c) confirm 15-17 handled as minor/team-follow-up; (d) confirm under-5 phone referral; confirm which phone is booking line (KB/GHL=650-398-7837, site=650-663-3004); (e) Women's BJJ / No-Gi excluded as non-trial"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_QDSOGLYJA9B4HIO0",
+      "botName": "Signature of Jiu-Jitsu - Launch v1.0 [initial Agent Node build] (2026-05-20)",
+      "version": "v1.0",
+      "verdict": "QA-PASSED 2026-05-20 — 10/10 PASS + non-det 3/3 PASS. 0 real blockers. 5 false negatives (sandbox calendar contamination + KB contamination + eval misclassification — all cross-examined). adult_only GHL-confirmed. Gates: 15-17 no-cal + minor self-book + under-5 redirect PASS. See signature-qa-summary-v1.md. Parked sandbox, NOT on prod."
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+================================================================================
+BODEGA JIU-JITSU — CLOSEBOT KNOWLEDGE BASE
+================================================================================
+Version: 1.0.0
+Date: 2026-05-17
+Status: CLEANED + WEBSITE/GHL-VERIFIED — ready for /closebot-plan
+Type: Context & Facts Only — No Behavioral Instructions
+Primary Sources: ClickUp (2026-05-13); bodegajiujitsu.com (2026-05-13);
+GHL calendars (live, 2026-05-17)
+Verification: Website + GHL-calendar verified 2026-05-17. Free trial confirmed
+on site ("FREE TRIAL CLASS"). Adult schedule text unconfirmed in sources but
+booking is GHL-calendar driven so not bot-blocking. No-Gi only academy.
+Purpose: CloseBot AI Chatbot — Lead Qualification & Free Trial Class Booking
+
+================================================================================
+SECTION 1 — BUSINESS INFORMATION
+================================================================================
+
+Full Business Name: Bodega Jiu-Jitsu
+Industry: Brazilian Jiu-Jitsu / Martial Arts
+Location: Maplewood, NJ
+Founded: Late 2022
+
+Description: Bodega Jiu-Jitsu is a No-Gi only Brazilian Jiu-Jitsu academy in
+Maplewood, New Jersey, founded in late 2022 by lifelong martial artists Kyvann
+Gonzalez and Chas Makk. The academy offers cutting-edge instruction tailored to
+every level — from seasoned competitors to first-time students. All classes are
+100% live training, beginner-friendly, and scaled to suit newcomers.
+
+Programs Offered:
+- Adult Grappling (No-Gi Brazilian Jiu-Jitsu)
+- Kids Grappling (Youth Jiu-Jitsu)
+
+Style: No-Gi only. The academy does not offer Gi classes.
+
+================================================================================
+SECTION 2 — CONTACT AND LOCATION
+================================================================================
+
+Address: 6 W Parker Ave, Maplewood, NJ 07040
+Phone: 908-201-3863
+Email: Bodega.martialarts@gmail.com
+Website: bodegajiujitsu.com
+
+Please do not show up unannounced. Arrive 10-15 minutes before the start of
+class.
+
+================================================================================
+SECTION 3 — FOUNDERS
+================================================================================
+
+Founders: Kyvann Gonzalez and Chas Makk — lifelong martial artists and training
+partners who shared a vision to open a unique training academy.
+
+================================================================================
+SECTION 4 — CLASS SCHEDULE
+================================================================================
+
+--- KIDS GRAPPLING ---
+Monday + Wednesday   6:00 PM – 6:45 PM   Kids Grappling
+Saturday             9:00 AM             Kids Grappling (younger group)
+Saturday             10:00 AM            Kids Grappling (older group)
+
+Kids age range: ages 6 to 14. Age placement is confirmed at enrollment.
+
+--- ADULT GRAPPLING ---
+Adult No-Gi Brazilian Jiu-Jitsu classes run on weekday evenings and Sunday
+late morning. Exact class times are confirmed when scheduling a trial.
+
+--- GENERAL ---
+No Sunday kids classes. Full schedule at bodegajiujitsu.com/schedule.
+
+================================================================================
+SECTION 5 — PROGRAM DESCRIPTIONS
+================================================================================
+
+ADULT GRAPPLING (NO-GI BJJ)
+No-Gi Brazilian Jiu-Jitsu for adults. Classes are 100% live training — techniques
+are applied in live, adaptive settings from the first week. No prior experience
+required. Beginner-friendly and scaled to suit newcomers alongside experienced
+students.
+
+KIDS GRAPPLING (YOUTH JIU-JITSU)
+No-Gi Brazilian Jiu-Jitsu for children. Classes are structured, safe, and
+age-grouped. Available Monday, Wednesday, and Saturday. Age range 6 to 14.
+
+================================================================================
+SECTION 6 — NEW STUDENT / FIRST CLASS INFORMATION
+================================================================================
+
+All classes are beginner-friendly and scaled to suit newcomers. No prior martial
+arts experience is required.
+
+First-time students should:
+- Wear shorts and a black tee shirt
+- Bring their own water
+- Arrive 10-15 minutes early
+
+There are no separate intro or beginner-only classes. New students join regular
+classes and training is adapted to their level. A free trial class is available
+with no commitment required.
+
+================================================================================
+SECTION 7 — PRICING
+================================================================================
+
+Membership pricing is not published. Pricing varies based on training goals and
+the number of classes per week. Membership options and pricing are discussed by
+instructors with new students based on what program is the right fit. A free
+first class is available with no commitment required.
+
+================================================================================
+SECTION 8 — FAQs
+================================================================================
+
+Q: What is Bodega Jiu-Jitsu?
+A: A No-Gi only Brazilian Jiu-Jitsu academy in Maplewood, NJ, founded in late
+2022 by Kyvann Gonzalez and Chas Makk. It offers adult and youth grappling
+programs for all experience levels.
+
+Q: Where is Bodega Jiu-Jitsu located?
+A: 6 W Parker Ave, Maplewood, NJ 07040.
+
+Q: What programs does Bodega Jiu-Jitsu offer?
+A: Adult Grappling (No-Gi BJJ) and Kids Grappling (Youth Jiu-Jitsu).
+
+Q: Does Bodega offer Gi classes?
+A: No. Bodega Jiu-Jitsu is a No-Gi only academy.
+
+Q: Do I need experience to start?
+A: No. All classes are 100% live training and beginner-friendly. No prior
+martial arts experience is required.
+
+Q: What should I wear to my first class?
+A: Shorts and a black tee shirt. Bring your own water and arrive 10-15 minutes
+early.
+
+Q: Are there classes for kids?
+A: Yes. Kids Grappling runs Monday and Wednesday evenings and Saturday mornings.
+The age range is 6 to 14; age placement is confirmed at enrollment.
+
+Q: Who founded Bodega Jiu-Jitsu?
+A: Kyvann Gonzalez and Chas Makk, lifelong martial artists and training
+partners.
+
+Q: What is the phone number?
+A: 908-201-3863.
+
+Q: What is the email address?
+A: Bodega.martialarts@gmail.com.
+
+================================================================================
+END OF KNOWLEDGE BASE
+================================================================================

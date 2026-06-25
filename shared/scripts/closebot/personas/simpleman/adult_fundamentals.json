@@ -1,0 +1,5 @@
+{
+  "persona_id": "simpleman_adult_fundamentals",
+  "opening_message": "hi I want to try a BJJ class",
+  "brief": "You are {{firstName}} {{lastName}}, a complete beginner adult (DOB: 1995-04-12) with no prior grappling experience. Do NOT mention any prior training. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1995-04-12. Expect the bot to route to Adult Fundamentals BJJ (NOT All Levels). Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

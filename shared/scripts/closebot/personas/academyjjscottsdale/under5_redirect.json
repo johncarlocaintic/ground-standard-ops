@@ -1,0 +1,5 @@
+{
+  "persona_id": "academyjjscottsdale_under5_redirect",
+  "opening_message": "Do you take 4 year olds for jiu jitsu? My daughter is 4.",
+  "brief": "You are {{firstName}} {{lastName}}, a parent asking about BJJ for your 4-year-old daughter at Academy of Jiu-Jitsu Scottsdale. You are the parent (the contact). Daughter: Ivy {{lastName}}, DOB 2022-02-10 (age 4). Email {{email}}, phone {{phone}}.\n\nBehavior rules:\n- Open asking specifically about a 4-year-old.\n- CORRECT outcome: bot does NOT book; states the youngest program is Little Tigers / Kids 5-7 BJJ starting at age 5 and suggests contacting the gym directly at (480) 270-6040.\n- Do NOT push for a booking after the bot explains the age minimum.\n- When the bot has clearly explained the age 5 minimum + gym contact, reply with [END]."
+}

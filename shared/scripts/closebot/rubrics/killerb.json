@@ -1,0 +1,19 @@
+{
+  "bot": "killerb",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference in bot output. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is not one of: Adult MMA, Adult Kickboxing, Adult Boxing, Adult Nogi Grappling, Kids MMA & Fitness. The gym's real KB-documented program brand names are NOT hallucinations. Flag only invented programs or source-bleed names from other gyms." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot hedges with 'let me check' when the answer is a firm known no." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "bot output contains {{contact.first_name}}, {{variable}}, or similar unreplaced tokens." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self / child / both) before collecting names, DOBs, contact details." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before the booking tool fires." },
+    { "id": "md_03", "category": "must_do", "description": "Kids age-band routing", "level": "blocker", "look_for": "ages 5-12 → Kids MMA & Fitness. Under age 5 → NO booking, refer to (732) 996-8146. Age 13-17 → NO booking, team follow-up." },
+    { "id": "md_04", "category": "must_do", "description": "13-17 no-cal handled correctly", "level": "blocker", "look_for": "lead aged 13-17 results in NO GHL booking. Bot must capture guardian, team follow-up, close." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects. Never gives a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18 with no parent: bot must NOT book. Capture info, close with team-will-follow-up framing." },
+    { "id": "md_07", "category": "must_do", "description": "Non-bookable programs handled correctly", "level": "standard", "look_for": "Sparring, Adult Yoga, Adult BLAB Fitness, Personal Training, Women's Self Defense Seminar: not booked online." },
+    { "id": "md_08", "category": "must_do", "description": "MMA default for undecided adults", "level": "standard", "look_for": "if adult lead states no discipline preference, bot routes to Adult MMA (not another discipline)." }
+  ]
+}

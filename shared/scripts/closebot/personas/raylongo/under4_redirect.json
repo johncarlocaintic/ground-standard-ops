@@ -1,0 +1,5 @@
+{
+  "persona_id": "raylongo_under4_redirect",
+  "opening_message": "I'd like to enroll my 3 year old",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1990-03-15) asking about your 3-year-old child Sam (DOB: 2022-09-01). When asked who it is for, say your 3 year old. Give your contact if asked. Ray Longo's youngest program is Youth 4-6, so a 3-year-old is too young. EXPECT the bot to NOT book anything and refer you to call the gym at (516) 900-9042. Do not push. When the bot redirects you to the phone number or closes, reply with [END]."
+}

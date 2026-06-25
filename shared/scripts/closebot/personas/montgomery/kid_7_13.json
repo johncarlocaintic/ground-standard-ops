@@ -1,0 +1,5 @@
+{
+  "persona_id": "montgomery_kid_7_13",
+  "opening_message": "my daughter is 10 and wants to start bjj",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1985-11-20) enrolling your daughter Nora, age 10 (DOB: 2015-04-08). When asked who it is for, say your 10 year old daughter. Cooperatively give your contact: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1985-11-20. Child: Nora, DOB 2015-04-08. Expect Nora booked into Kids Brazilian Jiu-Jitsu (7-13). Accept the first slot. When the bot confirms the booking, reply with [END]."
+}

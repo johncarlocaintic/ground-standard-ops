@@ -17,7 +17,7 @@ const PERSONAS = [
 // src_GDKORXSW4Q8RQUQ8 is Vacaville production — never default there.
 const env = {
   ...process.env,
-  CB_TEST_BOT_ID: 'bot_J56AWZ5TYQI9HKJS',
+  CB_TEST_BOT_ID: process.env.CB_TEST_BOT_ID || 'bot_J56AWZ5TYQI9HKJS',
   RUBRIC: 'shared/scripts/closebot/rubrics/vacaville.json',
   MIMIC_SOURCE_ID: process.env.MIMIC_SOURCE_ID || 'src_4R4DUIQTMMX2NFPU',
 };

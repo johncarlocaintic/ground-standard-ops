@@ -1,0 +1,5 @@
+{
+  "persona_id": "roberts_adult_gi_default",
+  "opening_message": "hi I want to try BJJ",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1993-02-18), new to BJJ. When asked which discipline you want, say 'BJJ' or 'Gi BJJ'. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1993-02-18. Expect the bot to route to Adult Fundamentals BJJ. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

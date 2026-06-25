@@ -20,5 +20,5 @@ Only the most recent iteration should have the source attached, a non-LEGACY nam
 - Every deploy script for a new bot iteration must include all three archival steps before attaching the new bot.
 - Use a `PRIOR_BOT` constant in each deploy script.
 - The new bot's source attachment uses the same trigger tag as the previous one — never invent a new test tag.
-- Applies to ALL CloseBot iterations across all clients (Vacaville, PropertyBots, etc.).
+- Applies to ALL GS CloseBot iterations across the gym portfolio (Vacaville and the rest).
 - Exception: in-place updates via `PUT /bot/{id}` with `importKdl` (same bot ID) — no archival needed since it's the same bot.

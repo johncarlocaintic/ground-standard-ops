@@ -1,0 +1,167 @@
+{
+  "gym": {
+    "name": "Bodega Jiu-Jitsu",
+    "website": "https://bodegajiujitsu.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Bodega Jiu-Jitsu. We are a No-Gi only Brazilian Jiu-Jitsu academy in Maplewood, NJ offering grappling for kids and adults. Your goal is to help leads schedule a free trial class so they can experience the gym firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system — you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Bodega Jiu-Jitsu.",
+    "rules": [
+      "Never mention pricing",
+      "Free trial for first class only",
+      "Never identify as AI",
+      "Single discipline (No-Gi Brazilian Jiu-Jitsu) — no discipline confirmation step needed. The academy is No-Gi only and offers no Gi classes; if asked about Gi, state plainly it is a No-Gi only academy.",
+      "Age is determined strictly from the lead's date of birth. Anyone under 18 is a minor and must have a parent or guardian — route to the youth/guardian path, never self-book a minor.",
+      "Only offer the free trial in a bookable program: Adult No-Gi Brazilian Jiu-Jitsu, Kids 6-14 BJJ. Do not proactively bring up any other program. If a lead asks to book anything else, tell them that is not available to book online — do not offer a coach-redirect and do not route into another calendar.",
+      "Age 15-17 has no dedicated calendar (kids calendar caps at 14, adults are 18+) — treat as a minor with no bookable class: capture guardian, do not book, tell them the team will follow up.",
+      "Under age 6 — youngest program is Kids 6-14 BJJ; do not book, suggest contacting the gym directly at 908-201-3863."
+    ]
+  },
+  "ghl": {
+    "locationId": "0svdYcor6p7eXPqx7hVA",
+    "sourceId": "src_GYUQQATOAUB6UFM3"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_nogi",
+        "calendarName": "Adult No-Gi Brazilian Jiu-Jitsu",
+        "calendarId": "wIgLDLmgL5lPY0pqIgTM",
+        "program": "bjj",
+        "ageMin": 18
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_6_14_bjj",
+        "calendarName": "Kids 6-14 BJJ",
+        "calendarId": "eQkMthNv6VgQ7W56E3VL",
+        "program": "bjj",
+        "ageMin": 6,
+        "ageMax": 14
+      }
+    ],
+    "noCalendarAgeBands": [
+      {
+        "band": "15-17",
+        "status": "no calendar",
+        "default": "treat as minor, capture guardian, do not book, team follows up"
+      },
+      {
+        "band": "under-6",
+        "status": "no calendar",
+        "default": "youngest is Kids 6-14; suggest gym contact 908-201-3863"
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Kids 9-12 BJJ",
+        "calendarId": "H6mtYnRcrDaQrPEOCrwL",
+        "note": "active but a narrower 2nd time-slot overlapping Kids 6-14; bot never books this — all kids go to the superset Kids 6-14 BJJ"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Gi Jiu-Jitsu (academy is No-Gi only — does not exist; state plainly if asked)",
+    "Adult Gi BJJ / Adult All Levels BJJ / Adult Striking (inactive GHL calendars)",
+    "Kids 7-12 No-Gi (inactive GHL calendar)",
+    "Kids 9-12 BJJ (active but internal 2nd time-slot — not used for bot trial booking)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked to book one, state it is not available to book online (for Gi: state the academy is No-Gi only). No coach-redirect. No substitute-calendar routing. All kids route to Kids 6-14 BJJ.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 1,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, parent/guardian required. 18+ = adult.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB shows under 18 on the adult path (self-booking minor)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC — no self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB shows 15-17 on the youth path (no calendar for this band)",
+          "action": "tag minor - needs guardian, Statement (team will follow up), EOC — no booking"
+        }
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "fileId": null,
+    "localFile": "clients/ground-standard/closebot/bodegajj-kb-v1.0.0.txt",
+    "indexed": false,
+    "verification": "Website + GHL-calendar verified 2026-05-17. Free trial confirmed on site. Overlapping kids calendars resolved via GHL descriptions: route all kids to superset Kids 6-14 BJJ.",
+    "knownGaps": [
+      "Adult class days/times not in any text source; booking is GHL-calendar driven so not bot-blocking. Confirm for KB completeness.",
+      "Phone/email website-sourced (ClickUp had neither) — confirm correct new-lead contact details.",
+      "Two active overlapping kids calendars (Kids 6-14, Kids 9-12). Bot uses only Kids 6-14 BJJ (superset). Confirm Kids 9-12 is correctly treated as internal/non-trial.",
+      "Adult GHL calendar states ages 14+, but GS universal rule treats under-18 as minor needing guardian. Adult path = 18+; 15-17 = minor no-calendar (team follows up). Confirm gym is OK with this vs accepting 14-17 into adult with guardian."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby at post-QA checkpoint, non-blocking): (a) confirm Kids 9-12 BJJ should NOT be a bot trial calendar (bot uses Kids 6-14 only) (b) confirm 15-17 handled as minor/team-follow-up vs booked into adult with guardian (c) confirm phone 908-201-3863 / email are the lead-contact details"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_RBL7PP9J68OLDHHA",
+      "botName": "Bodega Jiu-Jitsu - Launch v3.0 [Agent Node rebuild] (2026-05-21)",
+      "version": "v3.0",
+      "architecture": "agent-node (scaffold-and-fill from Scottsdale-derived canonical template). Single discipline (No-Gi BJJ only). 1 adult cal (Adult No-Gi BJJ, 18+) + 1 kids cal (Kids 6-14 BJJ). Youth no-cal gates: under-6 + 15-17. Adult-path minor gate. Multi-enrollee support. Explicit calendar names in n30_book to avoid sandbox cross-contamination.",
+      "verdict": "QA-PASSED 2026-05-21 — 11/11 personas PASS + 3/3 non-det. qaReport: clients/ground-standard/closebot/bodegajj-qa-summary-v3.md. Parked sandbox, NOT on prod."
+    },
+    {
+      "date": "2026-05-17",
+      "botId": "bot_LEGACY1_v10",
+      "botName": "[LEGACY-BROKEN] Bodega Jiu-Jitsu v1.0 (lean Agent-Node, kid_young dead-end + multi-enrollee no-book)",
+      "version": "v1.0",
+      "architecture": "lean Agent-Node (off-canon)",
+      "verdict": "BROKEN — superseded by v2.x canon rebuild"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_ENNVPB9HV6R8TOPN",
+      "botName": "[LEGACY] Bodega Jiu-Jitsu - Launch v2.1 [canon classic, kids-band CaseName retitle]",
+      "version": "v2.1",
+      "architecture": "canon classic (Vacaville 195-node template, kids-band CaseName retitle)",
+      "verdict": "BLOCKED — multi-enrollee parent mis-routed to kids calendar (root cause: Booking node AI greedy; no scope guard)"
+    },
+    {
+      "date": "2026-05-18",
+      "botId": "bot_SZI6TVDFECKDHFMS",
+      "botName": "Bodega Jiu-Jitsu - Launch v2.2 [scope guard fix, multi-enrollee] (2026-05-18)",
+      "version": "v2.2",
+      "architecture": "canon classic + scope-guard Description suffix + age-range normalization (substitute script v3)",
+      "verdict": "QA-PASSED — parked sandbox, NOT on prod",
+      "qaReport": "clients/ground-standard/closebot/bodegajj-qa-summary-v2.md",
+      "supersedes": "bot_ENNVPB9HV6R8TOPN [LEGACY] v2.1"
+    }
+  ]
+}

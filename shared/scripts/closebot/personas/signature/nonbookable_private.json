@@ -1,0 +1,5 @@
+{
+  "persona_id": "signature_nonbookable_private",
+  "opening_message": "do you offer private lessons?",
+  "brief": "You are {{firstName}} {{lastName}} (DOB: 1993-08-22) asking about private lessons. When the bot says private lessons are not booked online for new students, say 'ok what about just trying a regular class'. Then proceed to book Adult Fundamentals BJJ. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1993-08-22. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

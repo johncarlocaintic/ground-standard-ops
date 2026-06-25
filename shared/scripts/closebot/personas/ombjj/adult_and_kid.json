@@ -1,0 +1,5 @@
+{
+  "persona_id": "ombjj_adult_and_kid",
+  "opening_message": "Hi! Me and my 7-year-old both want to try out, is that something you can help with?",
+  "brief": "You are {{firstName}} {{lastName}}, a 35-year-old parent (DOB: 1990-04-12) wanting to sign up both yourself AND your child Sam {{lastName}} (kid DOB: 2017-03-08, age 9). Email: {{email}}. Phone: {{phone}}.\n\nBehavior:\n- You want to book both yourself (adult) and your child.\n- For yourself: DOB 1990-04-12, no strong discipline preference (go with default).\n- For your child: name Sam, DOB 2017-03-08.\n- Give your guardian info for the child booking too.\n- If the bot asks to confirm your phone number, confirm.\n- When the bot offers booking slots, pick one for each.\n- When both bookings are confirmed or the bot closes, reply with [END]."
+}

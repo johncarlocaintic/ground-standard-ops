@@ -1,0 +1,5 @@
+{
+  "persona_id": "logica_adult_only",
+  "opening_message": "Hi, I want to try a no-gi jiu-jitsu class",
+  "brief": "You are {{firstName}} {{lastName}}, a 29-year-old adult (DOB: 1996-05-10), brand new to jiu-jitsu, booking a free trial for yourself. Logica is no-gi BJJ only so do not expect a discipline question. Give info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1996-05-10. Accept the first slot offered. Expect a Foundations trial. When the bot confirms the booking, reply with [END]."
+}

@@ -1,0 +1,5 @@
+{
+  "persona_id": "championmartialarts_karate_under14_redirect",
+  "opening_message": "Hi, looking to get my 11-year-old into Karate. Do you have a kids Karate class?",
+  "brief": "You are {{firstName}} {{lastName}}, a 36-year-old parent trying to sign your 11-year-old daughter up for Karate. Your own DOB: 1990-05-25. Email: {{email}}. Phone: {{phone}}. Your daughter's name is Aisha. Her DOB: 2015-03-12 (age 11).\n\nYou specifically want Karate for Aisha. If the bot tells you Karate trials aren't available for under-14 and offers an alternative, you ask what the alternative is. If Judo is offered, you are open to trying it. Accept the redirect and cooperate with the booking. Once the bot confirms a booking with a date and time, reply with [END].\n\nIf the bot tries to book Aisha into Karate without mentioning the age restriction, do not correct it — let it proceed and reply with [END] when confirmed."
+}

@@ -1,0 +1,19 @@
+{
+  "bot": "logica",
+  "client": "ground-standard",
+  "checkpoints": [
+    { "id": "mnd_01", "category": "must_not_do", "description": "No price stated", "level": "blocker", "look_for": "any dollar amount, percentage, or fee reference. Even 'around $X' counts." },
+    { "id": "mnd_02", "category": "must_not_do", "description": "No hallucinated programs", "level": "blocker", "look_for": "bot claims a BOOKABLE program that is not Adult Foundations BJJ or Youth Jiu-Jitsu (8-13). Logica's real KB program names are NOT hallucinations: Foundations, All Levels, Takedowns, Open Mat, Youth/Kids program, no-gi, Constraints-Led Approach/CLA. Flag only invented programs or source-bleed names from other gyms." },
+    { "id": "mnd_05", "category": "must_not_do", "description": "No false closure", "level": "blocker", "look_for": "bot says 'you're all set' / 'you're booked' WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success." },
+    { "id": "mnd_06", "category": "must_not_do", "description": "No hedge on known negations", "level": "standard", "look_for": "bot hedges ('let me check', 'I don't currently have') where it should give a firm known answer (no-gi only, 14-17 no online class, under-8 not bookable, single discipline)." },
+    { "id": "mnd_08", "category": "must_not_do", "description": "No unreplaced merge tokens", "level": "blocker", "look_for": "unreplaced tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}." },
+    { "id": "md_01", "category": "must_do", "description": "Asks who the class is for before personal info", "level": "standard", "look_for": "bot asks who it is for (self / child / both) before collecting names, DOBs, contact details." },
+    { "id": "md_02", "category": "must_do", "description": "Collects DOB before booking", "level": "standard", "look_for": "bot asks date of birth (not just age) for each enrollee before booking." },
+    { "id": "md_03", "category": "must_do", "description": "Kids age-band routing", "level": "blocker", "look_for": "ages 8-13 -> Youth Jiu-Jitsu (8-13). Under age 8 -> NO booking, refer to academy (423) 565-4549. Judge on the GHL calendar booked, not chat phrasing." },
+    { "id": "md_04", "category": "must_do", "description": "14-17 no-cal handled as referral, no booking", "level": "blocker", "look_for": "lead aged 14-17 results in NO GHL booking. Bot captures guardian, says team will follow up, closes. Kids cap at 13, adults 18+, no teen calendar." },
+    { "id": "md_05", "category": "must_do", "description": "Pricing pressure redirected, no figure", "level": "blocker", "look_for": "if lead pushes pricing 2+ times, bot firmly redirects to the free trial / staff. Never a number." },
+    { "id": "md_06", "category": "must_do", "description": "Unaccompanied minor handled as referral, not booking", "level": "blocker", "look_for": "lead under 18 with no parent/guardian: bot must NOT book. Capture name + DOB + parent contact, close with team-follow-up." },
+    { "id": "md_07", "category": "must_do", "description": "Non-bookable acknowledged, not booked", "level": "standard", "look_for": "All Levels, Takedowns, Open Mat, Free Consultation, Grand Re-Opening: bot acknowledges but does NOT book them or invent a calendar; new students start with a free Foundations trial." },
+    { "id": "md_08", "category": "must_do", "description": "Single discipline - no discipline question", "level": "standard", "look_for": "bot does NOT ask which discipline/style (Logica is no-gi BJJ only). Proceeds to the Foundations trial without a discipline branch." }
+  ]
+}

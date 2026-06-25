@@ -1,0 +1,146 @@
+{
+  "bot": "10p-miami",
+  "client": "ground-standard",
+  "checkpoints": [
+    {
+      "id": "mnd_01",
+      "category": "must_not_do",
+      "description": "No price stated",
+      "level": "blocker",
+      "look_for": "any dollar amount, percentage, or fee reference in bot output. Even framing like 'around $X' or 'about half the price' counts."
+    },
+    {
+      "id": "mnd_02",
+      "category": "must_not_do",
+      "description": "No hallucinated programs",
+      "level": "blocker",
+      "look_for": "bot claims a program exists that is NOT one of: Adult Fundamentals BJJ, Adult Striking, Kids 3-6 BJJ, Kids 7-13 BJJ, Kids Striking. Also flag any source-bleed program names from other gyms (e.g. Muay Thai, Gi BJJ, Vacaville programs, Grit programs)."
+    },
+    {
+      "id": "mnd_05",
+      "category": "must_not_do",
+      "description": "No false closure",
+      "level": "blocker",
+      "look_for": "bot says 'you're all set', 'you're booked', or similar confirmation WITHOUT the booking tool returning success first. Confirmation must be gated on actual booking success."
+    },
+    {
+      "id": "mnd_06",
+      "category": "must_not_do",
+      "description": "No hedge language on known negations",
+      "level": "standard",
+      "look_for": "bot says 'I don't currently have', 'let me check', 'I'll look that up' on questions where it should give a firm known answer. Hedging when the answer is a known no is a UX failure."
+    },
+    {
+      "id": "mnd_08",
+      "category": "must_not_do",
+      "description": "No unreplaced merge tokens",
+      "level": "blocker",
+      "look_for": "bot output contains unreplaced merge tokens like {{contact.first_name}}, {{variable}}, {{nodes.X.result}}."
+    },
+    {
+      "id": "md_01",
+      "category": "must_do",
+      "description": "Asks who the class is for before collecting personal info",
+      "level": "standard",
+      "look_for": "bot asks something like 'who is this for — you, a child, or both?' before collecting names, DOBs, or other personal details."
+    },
+    {
+      "id": "md_02",
+      "category": "must_do",
+      "description": "Collects DOB for all enrollees before booking",
+      "level": "standard",
+      "look_for": "bot asks for date of birth (not just age) before calling the booking tool. Verbal age alone is not sufficient."
+    },
+    {
+      "id": "md_03",
+      "category": "must_do",
+      "description": "Discipline confirmed before booking — Jiu-Jitsu or Striking",
+      "level": "blocker",
+      "look_for": "bot asks whether the lead wants Jiu-Jitsu or Striking before routing to any booking calendar. Booking must not proceed without an explicit discipline confirmation."
+    },
+    {
+      "id": "md_05",
+      "category": "must_do",
+      "description": "Pricing pressure redirected without giving a figure",
+      "level": "blocker",
+      "look_for": "if lead pushes for pricing 2+ times, bot firmly redirects to in-person or team follow-up. Does not eventually cave and give a number."
+    },
+    {
+      "id": "md_06",
+      "category": "must_do",
+      "description": "Unaccompanied minor handled as referral, not booking",
+      "level": "blocker",
+      "look_for": "if lead is under 18 with no parent involved, bot must NOT attempt booking. Must capture kid name + DOB + parent contact info, then close with team-will-follow-up framing."
+    },
+    {
+      "id": "md_07",
+      "category": "must_do",
+      "description": "Adult BJJ routes to Adult Fundamentals BJJ calendar",
+      "level": "blocker",
+      "look_for": "adult lead interested in Jiu-Jitsu is booked into the 'Adult Fundamentals BJJ' calendar. Booking to any other calendar for an adult JJ lead is a routing failure."
+    },
+    {
+      "id": "md_08",
+      "category": "must_do",
+      "description": "Adult Striking routes to Adult Striking calendar",
+      "level": "blocker",
+      "look_for": "adult lead interested in Striking is booked into the 'Adult Striking' calendar. Booking to any other calendar for an adult Striking lead is a routing failure."
+    },
+    {
+      "id": "md_09",
+      "category": "must_do",
+      "description": "Kids 3-6 JJ routes to Kids 3-6 BJJ calendar",
+      "level": "blocker",
+      "look_for": "child aged 3-6 interested in Jiu-Jitsu is booked into 'Kids 3-6 BJJ'. Booking to Kids 7-13 BJJ or any other calendar for this age group is a routing failure."
+    },
+    {
+      "id": "md_10",
+      "category": "must_do",
+      "description": "Kids 7-13 JJ routes to Kids 7-13 BJJ calendar",
+      "level": "blocker",
+      "look_for": "child aged 7-13 interested in Jiu-Jitsu is booked into 'Kids 7-13 BJJ'. Booking to Kids 3-6 BJJ or adult calendar for this age group is a routing failure."
+    },
+    {
+      "id": "md_11",
+      "category": "must_do",
+      "description": "Kids 7-13 Striking routes to Kids Striking calendar",
+      "level": "blocker",
+      "look_for": "child aged 7-13 interested in Striking is booked into 'Kids Striking'. Booking to any adult or JJ calendar for this age group is a routing failure."
+    },
+    {
+      "id": "md_12",
+      "category": "must_do",
+      "description": "Kids age 3-6 + Striking redirected to Kids JJ",
+      "level": "standard",
+      "look_for": "if a child aged 3-6 wants Striking, bot must NOT book them into any calendar. Must inform that Striking starts at age 7 and offer Kids Jiu-Jitsu as the available alternative."
+    },
+    {
+      "id": "ec_01",
+      "category": "edge_case",
+      "description": "Open Mat acknowledged as non-bookable, redirected to trial",
+      "level": "standard",
+      "look_for": "if lead asks about Open Mat (Sunday session), bot acknowledges it exists but states it is not available for online booking, then redirects to the free trial flow."
+    },
+    {
+      "id": "ec_02",
+      "category": "edge_case",
+      "description": "MMA Class acknowledged as non-bookable, redirected to trial",
+      "level": "standard",
+      "look_for": "if lead asks about the MMA Class (Saturday), bot acknowledges it exists but states it is not available for online booking, then redirects to the free trial flow."
+    },
+    {
+      "id": "ec_03",
+      "category": "edge_case",
+      "description": "Pro Training acknowledged as invite-only, redirected",
+      "level": "standard",
+      "look_for": "if lead asks about Pro Training, bot acknowledges it is invite-only and not bookable online, then redirects to the free trial flow."
+    },
+    {
+      "id": "ec_04",
+      "category": "edge_case",
+      "description": "Adults Advanced / Competition Class redirected to Fundamentals trial",
+      "level": "standard",
+      "look_for": "if lead asks about Adults Advanced or Competition Class, bot explains that new students start with a free trial in the Fundamentals class and can discuss moving up with the coach after coming in."
+    }
+  ]
+}

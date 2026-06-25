@@ -1,0 +1,452 @@
+================================================================================
+RAY LONGO'S MMA - KNOWLEDGE BASE
+================================================================================
+
+
+Version: 1.2.2
+Date: March 27, 2026
+Type: Context & Facts Only (No Behavioral Instructions)
+Platform: CloseBot (SMS/Chat)
+Purpose: Support bot in answering FAQs and booking intro classes
+
+
+================================================================================
+CHANGELOG
+================================================================================
+
+
+v1.2.2 - March 27, 2026
+  - Updated Business Information: Phone and Email now confirmed
+  - Phone: (516) 900-9042
+  - Email: lawmmastaff@gmail.com
+  - Website updated to full URL: https://www.longosmma.com/
+  - Appendix Item 1 fully resolved (all contact details now confirmed)
+
+
+v1.2.1 - March 24, 2026
+  - Updated Website field: longosmma.com (previously flagged as missing)
+  - Added STAFF & COACHES section: Coach Ray, Coach Steve, Coach Edwin, Coach Sully
+  - Appendix Item 1 partially resolved (website confirmed; phone and email still pending)
+  - Appendix Item 6 resolved (coaches now provided)
+
+
+v1.2.0 - March 18, 2026
+  - Updated canonical pricing redirect language across all pricing touchpoints
+    to match client-specified verbatim response
+  - Affected sections: Membership Information (pricing paragraph), FAQ: cost,
+    FAQ: contracts/commitment, FAQ: discounts
+  - No factual content changed from v1.1.0
+
+
+v1.1.0 - March 18, 2026
+  - Applied standardized pricing redirect language across all pricing touchpoints
+  - Expanded membership FAQ with pricing deferral framing
+  - Added friction-handling context to pricing and commitment FAQs
+  - No factual content changed from v1.0.0
+
+
+v1.0.0 - March 18, 2026
+  - Initial build from client PDF source
+  - Raw factual extraction; pricing redirect logic not yet applied
+  - See Appendix for flagged inconsistencies
+
+
+================================================================================
+BUSINESS INFORMATION
+================================================================================
+
+
+Business Name: Ray Longo's MMA
+Industry: Martial Arts Training
+Address: 1 Commercial Ave, Garden City, New York, 11530
+Phone: (516) 900-9042
+Email: lawmmastaff@gmail.com
+Website: https://www.longosmma.com/
+
+
+Description:
+Ray Longo's MMA is a martial arts training gym located in Garden City, New York.
+Programs include MMA, Kickboxing, Brazilian Jiu-Jitsu (Gi and No-Gi), Boxing,
+and a dedicated Youth MMA program. The gym serves students of all levels, from
+beginners attending intro classes to experienced members in advanced sessions.
+
+
+================================================================================
+CLASS SCHEDULE
+================================================================================
+
+
+NOTE FOR BOT: Classes marked [MEMBERS ONLY] are restricted to existing members
+and brand-new members. These classes are not available for prospect/intro booking.
+Classes with no restriction marker are open to new students.
+
+
+--- MONDAY ---
+4:30 PM – 5:15 PM   Youth MMA
+6:00 PM             MMA [MEMBERS ONLY]
+7:00 PM             Kickboxing [MEMBERS ONLY]
+8:00 PM             Gi Jiu-Jitsu
+
+
+--- TUESDAY ---
+12:00 PM            Kickboxing
+6:00 PM             No-Gi Jiu-Jitsu
+7:00 PM             Introductory Boxing
+
+
+--- WEDNESDAY ---
+7:00 AM             No-Gi Jiu-Jitsu
+4:30 PM – 5:15 PM   Youth MMA
+6:00 PM             MMA [MEMBERS ONLY]
+7:00 PM             Kickboxing Drills
+8:00 PM             No-Gi Jiu-Jitsu
+
+
+--- THURSDAY ---
+12:00 PM            Kickboxing
+6:00 PM             No-Gi BJJ
+7:00 PM             Sparring [MEMBERS ONLY]
+
+
+--- FRIDAY ---
+7:00 AM             No-Gi Jiu-Jitsu
+4:30 PM – 5:15 PM   Youth MMA
+6:00 PM             Boxing
+
+
+--- SUNDAY ---
+10:00 AM            Jiu-Jitsu
+
+
+--- SATURDAY ---
+[Not listed in source — see Appendix Item 2]
+
+
+MEMBERS ONLY POLICY:
+To ensure safety and quality of training for members, non-members and brand-new
+members are not permitted to attend Members Only classes. These classes are
+available exclusively to established members of the gym.
+
+
+================================================================================
+INTRO CLASS INFORMATION
+================================================================================
+
+
+Ray Longo's MMA offers an intro class for new and prospective students.
+The intro class is the starting point for anyone looking to join the gym.
+
+
+CLASSES OPEN FOR INTRO BOOKING (non-Members Only sessions):
+- Monday: Youth MMA (4:30 PM), Gi Jiu-Jitsu (8:00 PM)
+- Tuesday: Kickboxing (12:00 PM), No-Gi Jiu-Jitsu (6:00 PM), Introductory Boxing (7:00 PM)
+- Wednesday: No-Gi Jiu-Jitsu (7:00 AM), Youth MMA (4:30 PM), Kickboxing Drills (7:00 PM), No-Gi Jiu-Jitsu (8:00 PM)
+- Thursday: Kickboxing (12:00 PM), No-Gi BJJ (6:00 PM)
+- Friday: No-Gi Jiu-Jitsu (7:00 AM), Youth MMA (4:30 PM), Boxing (6:00 PM)
+- Sunday: Jiu-Jitsu (10:00 AM)
+
+
+================================================================================
+PROGRAMS OFFERED
+================================================================================
+
+
+MMA (Mixed Martial Arts):
+Full mixed martial arts training. Advanced sessions are Members Only.
+
+
+KICKBOXING:
+Kickboxing classes offered at various times throughout the week. Open sessions
+available to new students.
+
+
+KICKBOXING DRILLS:
+Technique-focused drills session, open to new students.
+
+
+INTRODUCTORY BOXING:
+Entry-level boxing class designed for newer students. Open to non-members.
+
+
+BOXING:
+Boxing training session. Open to non-members.
+
+
+BRAZILIAN JIU-JITSU — GI (Gi Jiu-Jitsu):
+Traditional BJJ training with the Gi. Open to new students.
+
+
+BRAZILIAN JIU-JITSU — NO-GI (No-Gi Jiu-Jitsu / No-Gi BJJ):
+BJJ training without the Gi. Multiple sessions weekly, open to new students.
+
+
+SPARRING:
+Advanced sparring session. Members Only.
+
+
+YOUTH MMA:
+Martial arts training for younger students. Offered Monday, Wednesday, and
+Friday at 4:30 PM – 5:15 PM. Open enrollment.
+
+
+================================================================================
+STAFF & COACHES
+================================================================================
+
+
+Ray Longo's MMA coaching staff includes the following instructors:
+
+
+Coach Ray
+Coach Steve
+Coach Edwin
+Coach Sully
+
+
+================================================================================
+MEMBERSHIP INFORMATION
+================================================================================
+
+
+Membership at Ray Longo's MMA provides access to all scheduled classes,
+including Members Only sessions. New contacts start with an intro class before
+transitioning to a membership.
+
+
+Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+
+Q: How do I get started at Ray Longo's MMA?
+A: The first step is booking an intro class. Intro classes are available across
+most of the weekly schedule at no cost and with no commitment required. After
+attending, staff and instructors will walk through membership options that fit
+your goals.
+
+
+Q: What classes can I attend as a new student?
+A: New students can attend any class not marked as Members Only. These include
+Kickboxing, No-Gi Jiu-Jitsu, Gi Jiu-Jitsu, Introductory Boxing, Boxing,
+Kickboxing Drills, Youth MMA, and Sunday Jiu-Jitsu.
+
+
+Q: What are the Members Only classes?
+A: The Members Only classes are: Monday 6 PM MMA, Monday 7 PM Kickboxing,
+Wednesday 6 PM MMA, and Thursday 7 PM Sparring. These are available exclusively
+to established members and are not open for intro or new-student attendance.
+
+
+Q: Do you have a class for beginners?
+A: Yes. Tuesday at 7 PM features an Introductory Boxing class designed
+specifically for newer students. Most open sessions across the week also
+welcome beginners.
+
+
+Q: Do you have classes for kids or youth?
+A: Yes. Youth MMA is offered on Monday, Wednesday, and Friday from
+4:30 PM to 5:15 PM.
+
+
+Q: Where is Ray Longo's MMA located?
+A: The gym is located at 1 Commercial Ave, Garden City, New York, 11530.
+
+
+Q: What days and times are classes available?
+A: Classes run Monday through Friday, with additional sessions on Sunday.
+The full schedule covers mornings, afternoons, and evenings depending on the day.
+See the schedule section above for the complete breakdown.
+
+
+Q: What is the difference between Gi and No-Gi Jiu-Jitsu?
+A: Gi Jiu-Jitsu is practiced wearing a traditional uniform called a Gi.
+No-Gi Jiu-Jitsu is practiced in athletic clothing without the Gi. Both
+styles are offered at Ray Longo's MMA.
+
+
+Q: Is there a Saturday class?
+A: Saturday classes are not listed in the current schedule.
+[See Appendix Item 2 — Saturday hours not confirmed in source PDF]
+
+
+Q: What does membership cost?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+
+Q: Is there a long-term contract or commitment required?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+
+Q: Do you offer any discounts?
+A: Membership pricing varies based on several factors like the number of classes
+per week you'd want to attend and your specific training goals. Instructors will
+discuss all the pricing options and membership plans with you during or right
+after your free trial class. They'll be able to assess what program works best
+for you and provide accurate pricing for your situation. The trial class is
+completely free with no commitment required.
+
+
+Q: What is the cancellation and rescheduling policy?
+A: Cancellation and rescheduling details are reviewed with staff at the time of
+enrollment. [See Appendix Item 3 — policy not confirmed in source PDF]
+
+
+Q: How do I know which program is right for me?
+A: Instructors assess each student's goals and training background during
+or after the intro class and recommend the program that best fits.
+
+
+Q: What if I am not sure which class to try first?
+A: The Tuesday 7 PM Introductory Boxing class is a natural starting point for
+brand-new students. Kickboxing and No-Gi Jiu-Jitsu sessions are also open to
+new students throughout the week. The instructors can help identify the best
+option based on individual interests during the intro class.
+
+
+================================================================================
+LOCATION
+================================================================================
+
+
+Address: 1 Commercial Ave, Garden City, New York, 11530
+
+
+================================================================================
+
+
+================================================================================
+APPENDIX — INCONSISTENCIES & DATA GAPS
+================================================================================
+
+
+** THIS SECTION IS FOR INTERNAL REVIEW ONLY **
+** DO NOT LOAD THIS SECTION INTO CLOSEBOT **
+
+
+The following items were identified during source review. Each requires
+client clarification or internal resolution before v1.1.0 delivery.
+
+
+---
+
+
+ITEM 1 — Missing Contact Details (FULLY RESOLVED)
+Source: Ray Longo's MMA PDF
+Issue: No phone number, email address, or website URL was listed in the
+source PDF.
+Resolution status:
+  - Website: RESOLVED — https://www.longosmma.com/ (confirmed v1.2.1, updated v1.2.2)
+  - Phone: RESOLVED — (516) 900-9042 (provided by client, v1.2.2)
+  - Email: RESOLVED — lawmmastaff@gmail.com (provided by client, v1.2.2)
+
+
+---
+
+
+ITEM 2 — Saturday Schedule Not Confirmed
+Source: Ray Longo's MMA PDF
+Issue: The schedule in the PDF covers Monday through Friday and Sunday.
+Saturday is not listed at all — it is unclear whether no classes are held
+on Saturday or whether Saturday hours were simply omitted from the PDF.
+Resolution needed: Confirm whether Saturday has any classes. If yes,
+provide the Saturday schedule for inclusion.
+
+
+---
+
+
+ITEM 3 — No Cancellation or Rescheduling Policy Stated
+Source: Ray Longo's MMA PDF
+Issue: The voicemail script references rescheduling missed classes, but no
+formal cancellation or rescheduling policy (notice required, fees, etc.) is
+documented anywhere in the source PDF.
+Resolution needed: Client to provide cancellation and rescheduling policy
+for inclusion in the bot-facing FAQ section.
+
+
+---
+
+
+ITEM 4 — Class Naming Discrepancy (Public vs. Internal Labels)
+Source: Ray Longo's MMA PDF, Page 2
+Issue: Two classes carry internal notes indicating they are publicly listed
+as "MMA" for booking purposes, but are actually different class types:
+  - Tuesday 7 PM: Actual class = "Introductory Boxing" / Public label = "MMA"
+  - Friday 6 PM: Actual class = "Boxing" / Public label = "MMA"
+This KB uses the actual class names (Introductory Boxing, Boxing) for accuracy.
+Resolution needed: Confirm whether the bot should refer to these classes by
+their actual names or by their public-facing "MMA" label. If leads are booking
+via a public schedule that shows "MMA," the mismatch may cause confusion.
+
+
+---
+
+
+ITEM 5 — Membership Structure Not Detailed
+Source: Ray Longo's MMA PDF
+Issue: The PDF does not specify membership tiers, contract length, payment
+frequency, cancellation terms, or any pricing-adjacent structure. The only
+membership reference is through the "Members Only" class designations.
+Resolution needed: Client to provide membership structure details so the
+bot can give prospects an accurate picture of what membership entails,
+without revealing specific pricing (which is deferred to instructor consultation).
+
+
+---
+
+
+ITEM 6 — Staff/Coaches (RESOLVED)
+Source: Ray Longo's MMA PDF
+Issue: The voicemail script referenced a staff member named "Phil" but no
+formal staff roster was included in the source PDF.
+Resolution: Coaches provided by client in v1.2.1 — Coach Ray, Coach Steve,
+Coach Edwin, Coach Sully. "Phil" reference from voicemail script not
+confirmed as current staff; excluded from KB pending clarification.
+
+
+---
+
+
+ITEM 7 — Members Only Scope Ambiguity
+Source: Ray Longo's MMA PDF, Page 2
+Issue: The PDF states: "we do not allow any non-members or brand-new members
+to attend these classes" — but "these classes" is not explicitly enumerated
+in that sentence. The referenced classes were inferred to be the four
+sessions marked "Members Only" earlier in the schedule.
+Resolution needed: Confirm the list of Members Only classes is complete and
+accurately identified (Monday 6 PM MMA, Monday 7 PM Kickboxing, Wednesday
+6 PM MMA, Thursday 7 PM Sparring).
+
+
+---
+
+
+** END OF APPENDIX **
+
+
+================================================================================
+Version 1.2.2 | March 27, 2026
+Knowledge Base Type: Pure Context & Facts — No Behavioral Instructions
+Source: Ray Longo's MMA PDF (client-supplied)
+Canonical pricing redirect language applied in v1.2.0
+Website and coaches updated in v1.2.1
+Phone, email, and full website URL confirmed in v1.2.2
+================================================================================

@@ -23,6 +23,7 @@ import { fileURLToPath } from 'url';
 import { runTester } from './tester.js';
 import { runQa, loadRubric } from './qa_agent.js';
 import { runVerifier, computeAgeAnnotations } from './verifier.js';
+import { runJudge, extractClosebotData, resolveCustomFieldNames, resolveAppointmentCalendars, extractFingerprint } from './judge_agent.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = path.resolve(__dirname, '../../../../');
@@ -176,8 +177,13 @@ function writeReportMd(filePath, score, meta, extras = {}) {
 // controlled experiment: src_GDKORXSW4Q8RQUQ8 mimic creates real Vacaville
 // production appointments. The intended sandbox source is src_4R4DUIQTMMX2NFPU
 // (GS Ads), which writes to Bobby's GS Ads GHL — safe for evals.
+//
+// To register a new client's production source as protected, add its source ID
+// to EXTRA_PROD_MIMIC_SOURCES in the sweep env (comma-separated):
+//   EXTRA_PROD_MIMIC_SOURCES=src_ABC123,src_DEF456
 const PROD_MIMIC_SOURCES = new Set([
   'src_GDKORXSW4Q8RQUQ8', // Vacaville Grappling Academy production
+  ...(process.env.EXTRA_PROD_MIMIC_SOURCES || '').split(',').map(s => s.trim()).filter(Boolean),
 ]);
 const SANDBOX_MIMIC_DEFAULT = 'src_4R4DUIQTMMX2NFPU'; // GS Ads sandbox
 
@@ -282,9 +288,13 @@ async function main() {
     ghlToken = process.env.GHL_VACAVILLE_API_TOKEN;
     ghlLocationId = process.env.GHL_VACAVILLE_LOCATION_ID;
   } else {
-    // Unknown mimic — fall back to GS Ads since that's the safe sandbox default.
-    ghlToken = process.env.GHL_GS_API_TOKEN;
-    ghlLocationId = process.env.GHL_GS_LOCATION_ID;
+    // Unknown mimic source — do NOT fall back to GS Ads creds; that would read
+    // from the wrong GHL account. Require explicit GHL_VERIFY_TOKEN + GHL_VERIFY_LOCATION_ID.
+    // New client sweeps: set those two vars in the sweep env or chain the client .env.
+    ghlToken = null;
+    ghlLocationId = null;
+    log(`WARN: MIMIC_SOURCE_ID=${mimicId} is not a known sandbox or production source.`);
+    log(`  Verifier disabled. Set GHL_VERIFY_TOKEN + GHL_VERIFY_LOCATION_ID to enable it.`);
   }
   let verified = null;
   let ghlFacts = null;
@@ -322,6 +332,66 @@ async function main() {
     }
   }
   log('');
+
+  // Step 4b: Judge agent v2 — full LLM cross-reference of CloseBot side + GHL side
+  if (ghlToken && ghlLocationId) {
+    log('--- Step 4b: Judge agent v2 (cross-reference CloseBot + GHL) ---');
+    try {
+      // Build the unique test key
+      const testKey = {
+        run_id: runId,
+        email_fingerprint: extractFingerprint(identity.email),
+        lead_id: meta.lead_id || '(unknown)', // pulled from tester transcript metadata if available
+        test_identity_summary: `${identity.fullName} | ${identity.email} | ${identity.phone}`,
+      };
+
+      // Build CloseBot side from events.json + transcript
+      const closebotData = extractClosebotData(events, transcript, testKey.lead_id);
+
+      // Build GHL side: pull full contact detail + resolve custom field names + resolve calendar names
+      let ghlData = { contact: null, custom_fields_named: [], appointments: [], attempted_lookup: { email: identity.email } };
+      if (ghlFacts?.found && ghlFacts.contact_id) {
+        const r = await fetch(`https://services.leadconnectorhq.com/contacts/${ghlFacts.contact_id}`, {
+          headers: { 'Authorization': `Bearer ${ghlToken}`, 'Version': '2021-07-28', 'Accept': 'application/json' },
+        });
+        if (r.ok) {
+          const j = await r.json();
+          const contact = j.contact || j;
+          ghlData.contact = {
+            id: contact.id,
+            firstName: contact.firstName,
+            lastName: contact.lastName,
+            email: contact.email,
+            phone: contact.phone,
+            dateOfBirth: contact.dateOfBirth,
+            tags: contact.tags || [],
+            dateAdded: contact.dateAdded,
+            dateUpdated: contact.dateUpdated,
+          };
+          ghlData.custom_fields_named = await resolveCustomFieldNames(contact.customFields || [], ghlToken, ghlLocationId);
+          ghlData.appointments = await resolveAppointmentCalendars(ghlFacts.appointments || [], ghlToken, ghlLocationId);
+        }
+      }
+
+      const judgeResult = await runJudge({
+        test_key: testKey,
+        closebot: closebotData,
+        ghl: ghlData,
+        persona,
+        rubric,
+      });
+      log(`Judge verdict: ${judgeResult.assessment.verdict} (severity=${judgeResult.assessment.severity || 'n/a'})`);
+      log(`Judge summary: ${judgeResult.assessment.summary}`);
+      log(`Judge production_safe: ${judgeResult.assessment.production_safety?.safe_for_real_customers}`);
+      log(`Test key used: fingerprint=${testKey.email_fingerprint}, lead_id=${testKey.lead_id}, ghl_contact_id=${ghlData.contact?.id || '(not found)'}`);
+      const judgePath = path.join(runDir, 'judge_assessment.json');
+      fs.writeFileSync(judgePath, JSON.stringify(judgeResult.assessment, null, 2));
+      log(`wrote ${judgePath} (prompt=${judgeResult.prompt_chars} chars)`);
+    } catch (err) {
+      log(`Judge FAILED (non-fatal): ${err.message}\n${err.stack}`);
+    }
+    log('');
+  }
 
   log('--- Step 5: Write report.md ---');
   const reportPath = path.join(runDir, 'report.md');

@@ -1,0 +1,5 @@
+{
+  "persona_id": "hammersports_nonbookable_mma",
+  "opening_message": "I want to book an MMA class trial",
+  "brief": "You are {{firstName}} {{lastName}}, an adult (DOB: 1993-03-03) who specifically asks to book an MMA trial. MMA has no online trial booking at this gym. Push once more: 'so I can't try MMA at all?'. You expect the bot to acknowledge MMA exists but say it's not booked online and to suggest the free trial / coach instead - it should NOT invent an MMA calendar or book you into one. If the bot offers a different bookable discipline trial (e.g. BJJ) you may decline and ask it just to note your interest. When the bot acknowledges and closes, reply with [END]."
+}

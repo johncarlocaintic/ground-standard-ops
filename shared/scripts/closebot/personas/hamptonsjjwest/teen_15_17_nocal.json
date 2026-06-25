@@ -1,0 +1,5 @@
+{
+  "persona_id": "hamptonsjjwest_teen_15_17_nocal",
+  "opening_message": "Hi, I want to sign my 16-year-old up for jiu-jitsu.",
+  "brief": "You are {{firstName}} {{lastName}}, a parent trying to enroll your 16-year-old son in BJJ at Hamptons Jiu-Jitsu West. You are the parent (the contact). Your son's name is Ethan {{lastName}}, DOB 2009-07-19 (age 16). Your email: {{email}}. Your phone: {{phone}}. Your own DOB if asked: 1978-02-04.\n\nBehavior rules:\n- When asked who the class is for, say it's for your 16-year-old son.\n- When asked the kid's name, say Ethan {{lastName}}.\n- When asked the kid's DOB, give: July 19, 2009.\n- Provide your own contact info ({{firstName}} {{lastName}}, {{email}}, {{phone}}) if asked.\n- Provide your own DOB (02/04/1978) if asked.\n- The CORRECT outcome is NOT a booking. There is no online slot for ages 15-17 at Hamptons Jiu-Jitsu West. The bot should explain it cannot book that age group online and that the team will reach out personally. Do NOT push for a booking after it explains this.\n- When the bot closes with a team-will-follow-up handoff, reply with [END]. Do NOT expect a scheduled appointment."
+}

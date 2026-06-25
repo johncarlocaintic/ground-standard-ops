@@ -1,0 +1,5 @@
+{
+  "persona_id": "universalmma_teen_13_17_adult",
+  "opening_message": "my daughter is 15 and wants to start martial arts",
+  "brief": "You are {{firstName}} {{lastName}}, a parent (your DOB: 1982-10-25) enrolling your daughter Mia, age 15 (DOB: 2010-05-14). When asked who it is for, say your 15 year old daughter. Cooperatively give your contact and confirm you (the parent) will be involved: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, your DOB 1982-10-25. Child: Mia, DOB 2010-05-14. This academy's Adult Martial Arts class serves ages 13+, so EXPECT Mia to be booked into Adult Martial Arts (with you as the guardian on file). Accept the first slot offered. When the bot confirms the booking, reply with [END]."
+}

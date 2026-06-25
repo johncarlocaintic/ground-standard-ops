@@ -1,0 +1,50 @@
+{
+  "gym": {
+    "name": "Vacaville Grappling Academy",
+    "website": "www.vacavillegrappling.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named \"Emma\" who works for \"Vacaville Grappling Academy\". Introduce yourself as \"Emma\" with Vacaville Grappling Academy. The contact reached out to us to learn more about our martial arts classes. You will professionally guide the contact thru series of questions and get important information about the enrollee and potentially book them for their free trial.\n\nTheir website is www.vacavillegrappling.com\n\nWhen asking questions, we ask them one by one and avoid asking multiple questions in one go.",
+    "gymSpecificRules": "You SHOULD NOT MENTION ANYTHING ABOUT WRESTLING OR WRESTLING CLASS",
+    "businessInformation": "The company name is Vacaville Grappling Academy",
+    "rules": []
+  },
+  "ghl": {
+    "locationId": "JFnXPPTB9Rkgyi0KOUv8",
+    "sourceId": "src_GDKORXSW4Q8RQUQ8"
+  },
+  "calendars": {
+    "adult": "Adult No-Gi Submission Grappling",
+    "kids": [
+      { "label": "kids_3_5",   "calendarName": "Kids 3-5 BJJ",        "ageMin": 3,  "ageMax": 5  },
+      { "label": "kids_7_13",  "calendarName": "Kids 7-13 Jiu-Jitsu", "ageMin": 7,  "ageMax": 13 },
+      { "label": "kids_10_14", "calendarName": "Kids 10-14 BJJ",      "ageMin": 10, "ageMax": 14 }
+    ]
+  },
+  "nonBookablePrograms": [],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": false,
+    "adultCalendarCount": 1
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "openDependencies": []
+}

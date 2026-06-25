@@ -1,0 +1,160 @@
+{
+  "gym": {
+    "name": "Universal Mixed Martial Arts",
+    "website": "https://www.universalmixedmartialarts.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for Universal Mixed Martial Arts, a martial arts academy in South Richmond Hill, NY offering martial arts for children and adults. Your goal is to help leads schedule a free trial class so they can experience the academy firsthand. Write like a teammate at the front desk: direct, no hype, one question at a time. Never mention pricing. Never confirm a booking unless the booking tool returned SUCCESS this turn. NEVER identify yourself as an AI, bot, or automated system - you are Emma, a front desk employee at the academy.",
+    "businessInformation": "The company name is Universal Mixed Martial Arts.",
+    "rules": [
+      "Never mention pricing - redirect to the free trial class",
+      "Free trial class for new students, no commitment",
+      "Never identify as AI",
+      "Single martial arts curriculum (no separate disciplines to choose) - no discipline confirmation step needed",
+      "Age is determined strictly from date of birth. Anyone under 18 is a minor and must have a parent or guardian involved.",
+      "Children ages 4-12 book Children's Martial Arts (guardian required). Ages 13-17 book Adult Martial Arts but a parent or guardian must be involved and is captured (the academy's adult class serves ages 13+).",
+      "Under age 4 - youngest program is Children's Martial Arts (ages 4+); do not book, refer to the academy at (718) 659-1700.",
+      "Health & Fitness, Weapons Class, Sparring Class, and the Afterschool/Summer programs are not booked online as a trial - acknowledge they exist, do not book them; the new-student trial is the martial arts class."
+    ]
+  },
+  "ghl": {
+    "locationId": "MkbS4Ud2oAGBtbpVkzyi",
+    "sourceId": "src_4C7CIFW27LLW2TCH",
+    "pit": "pit-a46fac8e-856a-4d4b-ad3f-8afdd25b5ab9"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "adult_martial_arts",
+        "calendarName": "Adult Martial Arts",
+        "calendarId": "zBdJGEC5m2PdxXOP1gmO",
+        "program": "martial-arts",
+        "ageMin": 13,
+        "default": true
+      }
+    ],
+    "kids": [
+      {
+        "label": "kids_4_12",
+        "calendarName": "Kids Martial Arts",
+        "calendarId": "ZfTveExmW5cGwD1a1cAQ",
+        "ageMin": 4,
+        "ageMax": 12
+      },
+      {
+        "label": "teen_13_17_adult_cal",
+        "calendarName": "Adult Martial Arts",
+        "calendarId": "zBdJGEC5m2PdxXOP1gmO",
+        "ageMin": 13,
+        "ageMax": 17,
+        "note": "13-17 books the Adult Martial Arts calendar via the youth path (guardian captured); academy adult class serves 13+"
+      }
+    ],
+    "internalNotForTrial": [
+      {
+        "calendarName": "Copy of Kids Martial Arts",
+        "calendarId": "hBvksfuabXdPkY8Uu7Gm",
+        "note": "inactive round_robin - not bookable"
+      },
+      {
+        "calendarName": "Kids 10-14 BJJ",
+        "calendarId": "wZ4WqfUfcIU18JMBAl6D",
+        "note": "inactive round_robin - not bookable"
+      }
+    ]
+  },
+  "nonBookablePrograms": [
+    "Health & Fitness (adults-only fitness class, no trial calendar)",
+    "Weapons Class (combined kids+adults, no trial calendar)",
+    "Sparring Class (combined kids+adults, no trial calendar)",
+    "Afterschool Program (separate enrollment, not a trial)",
+    "Martial Arts Summer Program (separate enrollment, not a trial)"
+  ],
+  "nonBookableHandling": "DO NOT proactively mention. If asked, state new students start with a free martial arts trial class and the other programs are handled in person, not booked online. No coach-redirect. No substitute-calendar routing.",
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": true,
+    "hasMultiEnrollee": true,
+    "hasMinorGate": true,
+    "adultCalendarCount": 1,
+    "kidsCalendarCount": 2,
+    "requiresDisciplineSwitch": false,
+    "minorGate": {
+      "basis": "date of birth (computed age)",
+      "rule": "Under 18 = minor, guardian required. 4-12 books Kids Martial Arts with guardian. 13-17 books Adult Martial Arts via the youth path with guardian captured (academy adult class serves 13+). 18+ self-books Adult Martial Arts. A 13-17 self-booking via the adult path with no guardian is gated to team follow-up.",
+      "comparators": [
+        {
+          "path": "adult",
+          "after": "adult_dob",
+          "catches": "DOB under 18 on the adult path (self-booking minor, no guardian)",
+          "action": "tag minor - needs guardian, route to guardian capture, Statement (team will reach out), EOC - no unsupervised self-booking"
+        },
+        {
+          "path": "youth",
+          "after": "kid_dob",
+          "catches": "DOB under 4 on the youth path (below youngest program)",
+          "action": "tag minor - needs guardian, Statement (team will follow up, academy phone (718) 659-1700), EOC - no booking"
+        }
+      ]
+    },
+    "youthNoCalGate": {
+      "required": false,
+      "reason": "No no-calendar age gap: Kids Martial Arts covers 4-12, Adult Martial Arts (13+) covers 13-17 via youth path. Only under-4 has no calendar (handled by under-4 referral, not a no-cal teen gate)."
+    },
+    "ageRouting": {
+      "under-4": "no calendar - no booking, refer to academy (718) 659-1700",
+      "4-12": "Kids Martial Arts - guardian required",
+      "13-17": "Adult Martial Arts via youth path - guardian captured, minor-needs-guardian tag",
+      "18+": "Adult Martial Arts (self-book)"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "youth": "youth",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kb": {
+    "ready": true,
+    "localFile": "clients/ground-standard/closebot/universalmma-kb-v1.0.0.txt",
+    "verification": "Legacy KB v1.1.2 (self-flagged missing phone/email/website) - recovered via WebSearch + live site, NOT fabricated. Verified vs site universalmixedmartialarts.com + live GHL 2026-05-19. Doc: clients/ground-standard/closebot/universalmma-kb-verification-2026-05-19.md",
+    "knownGaps": [
+      "Kids age 4-12 from legacy KB; site does not state - confirm with Bobby.",
+      "Two phone numbers (718-659-1700 / 929-600-6119) - confirm booking line.",
+      "13-17 books Adult class per academy 13+ policy - confirm with Bobby."
+    ]
+  },
+  "openDependencies": [],
+  "postQaCheckpointFlags": [
+    "GYM VERIFICATION (relay to Bobby, non-blocking): (a) confirm Kids Martial Arts = ages 4-12; (b) confirm Adult Martial Arts serves 13+ and 13-17 should book it with guardian; (c) confirm under-4 phone referral (718) 659-1700; (d) confirm which phone is the booking line; (e) Health&Fitness/Weapons/Sparring/Afterschool/Summer excluded as non-trial"
+  ],
+  "deployHistory": [
+    {
+      "date": "2026-05-20",
+      "botId": "bot_4EH6K792OEHGCAIB",
+      "botName": "Universal Mixed Martial Arts - Launch v2.0 [Agent Node rebuild] (2026-05-20)",
+      "version": "v2.0",
+      "architecture": "agent-node (scaffold-and-fill). Single curriculum. 2 calendars (Kids MA 4-12, Adult MA 13+). 13-17 books Adult MA via youth path with guardian. Under-4 deflect. No youth no-cal gate needed.",
+      "verdict": "QA-PASSED 2026-05-20 — see universalmma-qa-summary-v2.md",
+      "qaDate": "2026-05-20"
+    },
+    {
+      "date": "2026-05-19",
+      "botId": "bot_CX2MDPYQ558PP1DY",
+      "botName": "Universal Mixed Martial Arts - Launch v1.0 [initial build, 13-17 books adult cal w/ guardian] (2026-05-19)",
+      "version": "v1.0",
+      "architecture": "canon classic (merge-safe phone Prompt) + single martial-arts discipline (no discipline switch) + NO youth no-cal gate (13-17 routes to Adult Martial Arts via youth path per sub-18-adult-band rule) + scope-guard + substitute v3. Kids slot0=Kids Martial Arts(4-12), slot1=Adult Martial Arts(13-17). Global Emma persona. Sandbox-attached src_4R4DUIQTMMX2NFPU only; DEMO bot_UXK2C02TYVFFEGVP untouched on prod src_4C7CIFW27LLW2TCH.",
+      "verdict": "QA-NOT-PASSED — classic architecture, superseded by v2.0 Agent Node rebuild"
+    }
+  ]
+}

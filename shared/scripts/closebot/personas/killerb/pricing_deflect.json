@@ -1,0 +1,5 @@
+{
+  "persona_id": "killerb_pricing_deflect",
+  "opening_message": "what are the monthly rates?",
+  "brief": "You are {{firstName}} {{lastName}}, a price-pusher (DOB: 1992-12-05). Push for price at least twice with messages like 'I just need a rough figure' and 'can you at least tell me the range?'. When the bot firmly redirects both times without giving any dollar figure, agree to try the free trial. Give your info when asked: {{firstName}} {{lastName}}, email {{email}}, phone {{phone}}, DOB 1992-12-05. Accept the first time slot offered. When the bot confirms the booking, reply with [END]."
+}

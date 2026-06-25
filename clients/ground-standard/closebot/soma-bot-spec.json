@@ -1,0 +1,100 @@
+{
+  "gym": {
+    "name": "SOMA MVMT",
+    "slug": "soma",
+    "website": "https://somamvmt.com",
+    "personaName": "Emma",
+    "conversationReason": "You are part of the front desk team named Emma who works for SOMA MVMT, a small-group adult fitness studio in Maplewood, NJ. Your goal is to book new leads into a free SOMA MVMT Introduction Class (60 minutes) — the standard first session for any new member. SOMA is an adult studio with no youth or kids programs. Never state pricing. Never offer to book any class other than the Introduction Class.",
+    "businessInformation": "The company name is SOMA MVMT.",
+    "rules": [
+      "Never state pricing or quote a dollar figure. Redirect pricing pressure to the trial or to a team follow-up.",
+      "Only book the SOMA MVMT Introduction Class — it is the entry point for every new member regardless of which regular program they're ultimately interested in.",
+      "Studio is adult-only — no kids, teen, or youth calendar exists.",
+      "If a lead is under 18, do NOT attempt a booking. Capture parent/guardian info and let the team follow up directly."
+    ]
+  },
+  "ghl": {
+    "locationId": "dIyjbKFHzS4MRBKtd7oQ",
+    "sourceId": "src_R05QT50QS4PTYDBG"
+  },
+  "calendars": {
+    "adult": [
+      {
+        "label": "soma_intro",
+        "calendarName": "SOMA MVMT Introduction Class",
+        "calendarId": "RxiVRNWlCHsaC3rEVCmi",
+        "program": "intro",
+        "ageMin": 18,
+        "default": true,
+        "durationMinutes": 60
+      }
+    ],
+    "kids": [],
+    "teen": []
+  },
+  "nonBookablePrograms": [
+    {
+      "name": "Adult Small Group Fitness (Functional Strength Interval Training)",
+      "handling": "acknowledge exists, route the lead to book the SOMA MVMT Introduction Class as the entry point"
+    },
+    {
+      "name": "Steel Mace Flow",
+      "handling": "acknowledge exists, route the lead to book the SOMA MVMT Introduction Class as the entry point"
+    },
+    {
+      "name": "Mindfulness and Meditation",
+      "handling": "acknowledge exists, route the lead to book the SOMA MVMT Introduction Class as the entry point"
+    },
+    {
+      "name": "Guided Breathwork",
+      "handling": "acknowledge exists, route the lead to book the SOMA MVMT Introduction Class as the entry point"
+    }
+  ],
+  "flow": {
+    "hasAdultPath": true,
+    "hasYouthPath": false,
+    "hasMultiEnrollee": false,
+    "hasMinorGate": true,
+    "requiresDisciplineSwitch": false,
+    "youthNoCalGate": {
+      "required": true,
+      "reason": "Studio is adult-only; under-18 leads must not be booked. Capture parent contact + tag for team follow-up.",
+      "band": "under-18"
+    },
+    "adultCalendarCount": 1,
+    "ageRouting": {
+      "under_18": "no calendar — capture parent contact, tag minor - needs guardian, team follow-up referral, no booking",
+      "18_plus": "SOMA MVMT Introduction Class"
+    }
+  },
+  "scenarios": [
+    {
+      "title": "Sign Up",
+      "description": "Contact shows interest in signing up and is giving information like date of birth or name of applicant",
+      "threshold": 7,
+      "priority": 50
+    }
+  ],
+  "tags": {
+    "interested": "interested",
+    "actionOptIn": "action opt-in",
+    "adult": "adult",
+    "booked": "booked",
+    "failedBooking": "concierge - failed booking",
+    "minorNeedsGuardian": "minor - needs guardian"
+  },
+  "kbReady": true,
+  "kbFile": "clients/ground-standard/closebot/soma-kb-v1.0.0.txt",
+  "openDependencies": [],
+  "deployHistory": [
+    {
+      "date": "2026-05-21",
+      "botId": "bot_U2JSE7DXEXL7ME50",
+      "botName": "SOMA MVMT - Launch v1.0 [initial Agent Node build] (2026-05-21)",
+      "version": "v1.0",
+      "architecture": "agent-node (scaffold-and-fill). Adult-only studio, single bookable calendar (SOMA MVMT Introduction Class). No youth path, no multi-enrollee, no discipline switch. Under-18 leads route to no-cal team referral with parent contact capture + minor-needs-guardian tag.",
+      "verdict": "QA-PASSED 2026-05-21 — 12/12 PASS + 3/3 non-det PASS. 9 GHL appts confirmed on SOMA MVMT Introduction Class. Adult-only routing, under-18 gating, parent-for-child no-book, non-bookable redirects (Steel Mace, Mindfulness), pricing deflect, hostile de-escalation all working. See soma-qa-summary-v1.md.",
+      "qaDate": "2026-05-21"
+    }
+  ]
+}
