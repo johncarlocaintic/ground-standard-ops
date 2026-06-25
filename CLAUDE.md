@@ -138,6 +138,7 @@ curl -s -H "Authorization: Bearer $(jq -r .accessToken ~/.claude/.credentials.js
 | Retell AI | Voice agents | Full REST API + TypeScript/Python SDKs |
 | N8N | Workflow automation | Cloud instance (URL in client .env if applicable) |
 | Sympana Connector | GHL ↔ Retell bridge | GHL marketplace app |
+| Fathom | Meeting/call transcript pulls | REST API `https://api.fathom.ai/external/v1`. Script: `shared/scripts/fathom/pull_transcripts.js` → writes to `shared/transcripts/fathom/`. |
 
 ---
 
@@ -162,8 +163,10 @@ Full operational context: `clients/ground-standard/context.md`. Read this first 
 ├── clients/
 │   └── ground-standard/              ← GSA — Bobby's accounts, gym portfolio, KBs, exports, reports
 ├── shared/
-│   ├── scripts/{closebot,ghl,n8n,retell,diagnostics,playwright,google,hooks,maintenance}/
-│   ├── logs/                         ← generated log files (gitignored)
+│   ├── scripts/{closebot,ghl,n8n,retell,fathom,diagnostics,playwright,google,hooks}/  ← Node ESM (closebot ≈ 200 scripts)
+│   │   └── maintenance/              ← Python (.py) + PowerShell (.ps1) utilities — NOT Node
+│   ├── logs/                         ← generated log files (gitignored; also shared/scripts/logs/)
+│   ├── transcripts/fathom/           ← Fathom transcript pulls
 │   └── ...
 ├── references/                       ← CloseBot canon, stack reference, walkthroughs
 ├── bootstrap/                        ← One-time setup: seed memory + setup.sh
@@ -196,8 +199,8 @@ node --env-file=.env shared/scripts/n8n/test_create_workflow.js
 
 ## SCRIPT CONVENTIONS
 
-All scripts follow these patterns:
-- **ES modules** (`import`/`export`) — no CommonJS `require()`
+All **Node** scripts under `shared/scripts/` follow these patterns (the Python/PowerShell utilities in `shared/scripts/maintenance/` do not):
+- **ES modules** (`import`/`export`). The ESM scope comes from `shared/scripts/package.json` (`{"type":"module"}`) — NOT the root `package.json`, which is `"type":"commonjs"`. So every `.js` under `shared/scripts/` is ESM regardless of the root. CommonJS helpers must use the `.cjs` extension (only `shared/scripts/build_bobby_doc.cjs` today).
 - **`getEnv(key)`** helper — exits with a clear error if a required env var is missing
 - **`log(message)`** helper — writes timestamped output to both console and `shared/logs/{platform}_test.log`
 - **`fetch()`** native — no axios or node-fetch dependency
@@ -315,7 +318,7 @@ Skills live in `.claude/skills/` and are invoked as slash commands.
 | `sympana-connector` | GHL ↔ Retell/Vapi bridge via Sympana Connector |
 | `ai-knowledge-base-creator` | Build + validate client knowledge bases (80-question intake) |
 
-Plus general-purpose skills: n8n-*, doc formats (docx, pdf, pptx, xlsx), skill-creator, transcript-analyzer, eod-report, mcp-builder.
+Plus general-purpose skills: n8n-* (7: code-javascript, code-python, expression-syntax, mcp-tools-expert, node-configuration, validation-expert, workflow-patterns), doc formats (docx, pdf, pptx, xlsx, doc-writer), skill-creator, transcript-analyzer, eod-report, mcp-builder, meta-ads-analyzer, setup-cowork.
 
 ---
 
@@ -328,5 +331,6 @@ Plus general-purpose skills: n8n-*, doc formats (docx, pdf, pptx, xlsx), skill-c
 - `references/closebot_docs_reference.md` — CloseBot Tier 3: vendor canon synthesis
 - `references/closebot_agent_node.md` — Agent Node deep reference
 - `references/closebot_walkthrough_bryce.md` — annotated Agent Node example
+- `references/gsa_bot_build_playbook.md` — GS-specific bot build playbook (read before any bot build)
 - `references/stack_api_reference.md` — stack API reference
 - `references/kb_validator_rules.md` — KB validation rules
