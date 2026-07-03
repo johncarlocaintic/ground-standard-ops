@@ -1,71 +1,61 @@
 ---
 name: eod-report
-description: "This skill should be used when the user asks to write an EOD, end-of-day report, daily update, or daily wrap-up. Generates a Slack-ready EOD update in the AI Agency Institute house format based on what the user accomplished that day."
+description: "This skill should be used when the user asks to write an EOD, end-of-day report, daily update, daily wrap-up, or to log/submit hours. Generates a clean, client-ready EOD in the client's established format, computes the correct date itself (never asks), and logs it to the client's eod-reports/ folder plus time-log.md for payroll."
 category: documentation
-tags: "[eod, reporting, slack, daily-update, ai-agency-institute]"
+tags: "[eod, reporting, daily-update, payroll, time-log]"
 ---
 
 # EOD Report Generator
 
 ## Purpose
 
-Generate a Slack-ready End-of-Day (EOD) update in the AI Agency Institute house format. Bulleted list (each line prefixed with `•`) of what happened today — no headers, no platform tags, no padding.
+Write a clean, client-ready End-of-Day report, log it to the client's `eod-reports/` folder, and update that client's `time-log.md` for payroll. The report is the billable paper trail, so dates and hours must be right.
 
-## When to Use This Skill
+## CRITICAL — date convention (this is the #1 source of past mistakes)
 
-Trigger when the user says:
-- "EOD report"
-- "Write my EOD"
-- "Daily update"
-- "Log out report"
-- "EOD wrap-up"
+**EOD/report dates use the client's US time zone, computed from PH time. Default is US Eastern = PH minus 12 hours. Compute it yourself. NEVER ask the user "what day is it."** You are in PH working a US client's hours; payroll is on the US calendar, and a PH-dated log runs a day ahead and breaks payroll. Confirm the client's actual zone before the first EOD (for Ground Standard, confirm with JC).
 
-## Information to Collect
+Steps to get the date + day number right, every time:
+1. Get current PH time (`date` in the shell), subtract 12 hours (or the client's real offset) → that's the report date.
+2. Find the last `day-NN_YYYY-MM-DD.md` in the client's `eod-reports/` folder. The new entry is **day-(NN+1)**.
+3. The new date must be the **next workday in sequence** after the last entry (consecutive Mon-Fri unless a weekend was actually worked). If the computed date skips or collides with the last entry, the older entries are probably misdated; fix the sequence so it's consecutive, don't invent a gap or a Saturday.
+4. Only involve the user on dates if there's a genuine conflict with something already submitted to payroll (a date already filed). Otherwise compute silently.
+5. Sanity check: never log a weekend that wasn't worked; never reuse a date already used by a prior entry.
 
-Before generating, gather:
-1. **Today's date** (ISO format, `YYYY-MM-DD`)
-2. **What happened today** — completed work, fires fought, fixes shipped, blockers hit, current state of live systems
+## When to use
 
-If the user gives a bullet-point dump, extract and structure it — don't ask for more than what's needed.
+User says: "EOD", "write my EOD", "daily update", "log out report", "log/submit my hours", "daily wrap-up", "end of day".
 
-## Output Format
+## Steps
 
-Match this format exactly (Slack message — header line, blank line, then bullet lines prefixed with `•`):
+1. **Compute date + day number** per the CRITICAL section above.
+2. **Gather the day's work** from the conversation + what the user adds. If they give a bullet dump, structure it. Don't interrogate. Pull in anything they say was on the day's agenda even if it spanned outside this chat.
+3. **Write the EOD** in the client's established format (default below).
+4. **Save** to `clients/{client}/eod-reports/day-NN_YYYY-MM-DD.md`.
+5. **Update** `clients/{client}/time-log.md`: add the row (Day, Date, Hours, link, running cumulative) and bump the balance.
+6. **Show the report text** in chat so the user can copy/submit it.
 
-```
-EOD — YYYY-MM-DD
+## Default format
 
-• [One-line bullet — what happened, what was fixed, what's the state]
-• [One-line bullet]
-• [One-line bullet]
-...
-```
-
-Reference example:
+Plain bullets, no markdown headers, warm but factual. This is the proven format:
 
 ```
-EOD — 2026-05-07
+**End of Day Report — Month DD, YYYY**
 
-• Vacaville bot down all day — CloseBot backend exception on every API-imported Agent Node bot
-• Tried 3 rebuild paths, all failed; UI-copied bots work, API-imported don't
-• Caught + fixed an emergency: a bot got pushed to Vacaville prod source without tag filters, detached immediately
-• Patched tag logic: `booked`, `alert`, `aggressive`, `underage` (replacing old verbose tag names)
-• Added Bobby's new tag flow: `action opt-in` + `adult`/`youth` after data capture
-• Updated source filter to exclude `alert` and `aggressive` (don't re-engage escalated leads)
-• Sent multiple support tickets with full audit evidence; CloseBot pushed a partial fix (no more crash, but `@@[Update Contact]` still doesn't write to GHL)
-• LIVE: `bot_GBIF5HQVM8FPQ0XJ` with full tag logic; STANDBY: `bot_ZXYBAYGE06NC6DDW`
-• Blocked on CloseBot's next fix before full end-to-end validation
+- [accomplishment, concrete: what + why it matters]
+- [accomplishment]
+- [accomplishment]
+- Next: [what's lined up for the next session]
+
+**Hours logged today:** 8
+
+I'll be logging out now.
 ```
 
-## Style Rules
+Lead with the most concrete/infrastructural work (accounts set up, systems wired), then the in-progress work. One "Next:" line. Match the sign-off to whoever the client reports to.
 
-- **Header:** `EOD — YYYY-MM-DD`. Em dash, ISO date. Nothing else on this line.
-- **Every line is a bullet** — prefix each line with `•`. One line per event/fix/state.
-- **One thought per line.** If two facts are linked (e.g., problem + outcome), join with `;` or em dash. Otherwise split.
-- **Inline code formatting** for: tag names, bot IDs, source IDs, field names, function references, error strings. Use single backticks.
-- **Tone:** factual, technical, no padding. Not "excited to share", not "looking forward to". Just what happened.
-- **Numbers matter** when relevant — node counts, attempt counts, ticket counts.
-- **Live state at the end** — if there are running systems with IDs (LIVE/STANDBY/DEPLOYED), name them on a dedicated line.
-- **Blocker on the last line** if blocked. One line, what you're waiting on.
-- **No "Remaining:" / "In Progress:" / "Completed:" labels.** State no longer split by status — it's chronological / topical, with the live-state and blocker lines anchoring the end.
-- **No platform tags in parentheses after items.** The platform is implicit from the content.
+## Persona + voice (hard rules)
+
+- **Front as JC** for Ground Standard (and every NewWine client). Never name yourself or any teammate in a client-facing EOD. All work is presented as JC's.
+- **Voice:** plain human prose, no AI tells. No em dashes, no "excited to share", no "looking forward to", no rule-of-three padding. Get straight to the work. Match the existing EODs already in that client's folder.
+- **Numbers help** where natural (counts, budgets), but don't force them.
