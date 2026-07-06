@@ -1,0 +1,471 @@
+[
+  {
+    "slug": "10p-orlando",
+    "school": "10th Planet Orlando Jiu Jitsu",
+    "parent": "Tester Vermilion",
+    "kid": "null (28)",
+    "leadId": "lead_test_VAH8HK9H7VOLZ8CB",
+    "booked": "Free Trial - Tester Vermilion @ Monday 2026-07-06 06:45 PM",
+    "bookedCal": "LHn0KaaWxEdSmTerzHLN",
+    "calName": "Adult Fundamentals BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "Zvnm7dHpOQ7zpc61oLwl",
+      "appt": "Free Trial - Tester Vermilion | 2026-07-06 18:45:00 | confirmed | cal:LHn0KaaWxEdSmTerzHLN",
+      "youthBday": "2026-11-05",
+      "note": null,
+      "calName": "Adult Fundamentals BJJ"
+    }
+  },
+  {
+    "slug": "cobrinhasw",
+    "school": "Cobrinha Southwest",
+    "parent": "Tester Cobble",
+    "kid": "Ana (5)",
+    "leadId": "lead_test_ZTRS4JEF8UIM9UB6",
+    "booked": "Ana - Free Trial Class @ Tuesday 2026-07-14 04:00 PM",
+    "bookedCal": "PlY5tkoEGYpdsBFshaOB",
+    "calName": "Kids 3-6 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "SYwtkICCslDD4TYvP9KR",
+      "appt": "Ana - Free Trial Class | 2026-07-14 16:00:00 | confirmed | cal:PlY5tkoEGYpdsBFshaOB",
+      "youthBday": "2021-02-11",
+      "note": "Child Name: Ana | Child Birthday: February 11, 2021",
+      "calName": "Kids 3-6 BJJ"
+    }
+  },
+  {
+    "slug": "granite-bay-jiu-jitsu",
+    "school": "Granite Bay Jiu-Jitsu",
+    "parent": "Tester Larkspur",
+    "kid": "Ben (7)",
+    "leadId": "lead_test_K0O6OAQ8MKE8ZH8R",
+    "booked": "Ben Larkspur - Free Trial @ Wednesday 2026-07-08 05:00 PM",
+    "bookedCal": "bGAmFzsVi4ourqDmFHjP",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "aVKRPcxDGeKEXfy5eDO9",
+      "appt": null,
+      "youthBday": "2019-03-09",
+      "note": "Child Name: Ben Larkspur | Child Birthday: March 9, 2019"
+    }
+  },
+  {
+    "slug": "hamptonsjjwest",
+    "school": "Hamptons Jiu-Jitsu West",
+    "parent": "Tester Meadow",
+    "kid": "Cora (5)",
+    "leadId": "lead_test_L3ZJYQKXOTHCFNJL",
+    "booked": "Cora Meadow - Free Trial Class @ Wednesday 2026-07-08 04:45 PM",
+    "bookedCal": "X3y6elRvXkJYyxDfHDsp",
+    "calName": "Kids 4-7 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "3yW8WwEQrTqjYrYcc4LP",
+      "appt": "Cora Meadow - Free Trial Class | 2026-07-08 16:45:00 | confirmed | cal:X3y6elRvXkJYyxDfHDsp",
+      "youthBday": "2021-04-02",
+      "note": "Child Name: Cora Meadow | Child Birthday: April 2, 2021",
+      "calName": "Kids 4-7 BJJ"
+    }
+  },
+  {
+    "slug": "infinitybjj",
+    "school": "Infinity BJJ",
+    "parent": "Tester Fjord",
+    "kid": "Dean (8)",
+    "leadId": "lead_test_0U0LEZ1PLVWVME3B",
+    "booked": null,
+    "bookedCal": null,
+    "calName": null,
+    "verdict": "NO-BOOKING",
+    "notes": [],
+    "ghl": {
+      "contact": "NOT FOUND",
+      "appt": null,
+      "youthBday": null,
+      "note": null
+    }
+  },
+  {
+    "slug": "jean-jacques-machado-fresno-jiu-jitsu",
+    "school": "Jean Jacques Machado Fresno Jiu-Jitsu",
+    "parent": "Tester Saffron",
+    "kid": "Elle (6)",
+    "leadId": "lead_test_KEQMP6LP2MAJWAAW",
+    "booked": "Elle Saffron - Free Trial Class @ Thursday 2026-07-09 04:30 PM",
+    "bookedCal": "62MhfHHEC7wBjnm7GWOI",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "NKhtGxe4bT6i0EmxDBVh",
+      "appt": "Elle Saffron - Free Trial Class | 2026-07-09 16:30:00 | confirmed | cal:62MhfHHEC7wBjnm7GWOI",
+      "youthBday": "2020-06-21",
+      "note": "Child Name: Elle Saffron | Child Birthday: June 21, 2020",
+      "calName": "Kids 4-8 BJJ"
+    }
+  },
+  {
+    "slug": "jitzlab-martial-arts",
+    "school": "JitzLab Martial Arts",
+    "parent": "Tester Timber",
+    "kid": "Gus (9)",
+    "leadId": "lead_test_FQHAQXISTRMUOB6Y",
+    "booked": "Augustus Timber - Free Trial Class @ Monday 2026-07-06 05:30 PM",
+    "bookedCal": "ob2un3GZZ1BquJkBlk2s",
+    "calName": "Youth Jiu-Jitsu (8-12)",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "zeZ1yowk2Yq1zWadN2Kf",
+      "appt": "Augustus Timber - Free Trial Class | 2026-07-06 17:30:00 | confirmed | cal:ob2un3GZZ1BquJkBlk2s",
+      "youthBday": "2017-01-25",
+      "note": "Child Name: Augustus Timber | Child Birthday: January 25, 2017",
+      "calName": "Youth Jiu-Jitsu (8-12)"
+    }
+  },
+  {
+    "slug": "jiu-jitsu-hub",
+    "school": "Jiu Jitsu Hub",
+    "parent": "Tester Anchor",
+    "kid": "Hana (5)",
+    "leadId": "lead_test_UDGK24SIGKULVGD0",
+    "booked": "Hana Anchor - Free Trial Class @ Wednesday 2026-07-15 04:45 PM",
+    "bookedCal": "GZ0vD1Qpj8APFYzuVnKc",
+    "calName": "Kids 4-6 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "1Q6Dnww8bwTrcIefdTCd",
+      "appt": "Hana Anchor - Free Trial Class | 2026-07-15 16:45:00 | confirmed | cal:GZ0vD1Qpj8APFYzuVnKc",
+      "youthBday": "2021-02-28",
+      "note": "Child Name: Hana Anchor | Child Birthday: February 28, 2021",
+      "calName": "Kids 4-6 BJJ"
+    }
+  },
+  {
+    "slug": "lucky-cat-grappling-co",
+    "school": "Lucky Cat Grappling Co.",
+    "parent": "Tester Beacon",
+    "kid": "Ian (8)",
+    "leadId": "lead_test_3DNUWICTOXPVPHF6",
+    "booked": "Ian Beacon - Free Trial Class @ Wednesday 2026-07-08 05:30 PM",
+    "bookedCal": "eIWF26tAooKPyM8eYd2f",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "93F9VH3pGn8lCddhQXts",
+      "appt": "Ian Beacon - Free Trial Class | 2026-07-08 17:30:00 | confirmed | cal:eIWF26tAooKPyM8eYd2f",
+      "youthBday": "2018-03-30",
+      "note": "Child Name: Ian Beacon | Child Birthday: March 30, 2018",
+      "calName": "Kids 6-13 BJJ"
+    }
+  },
+  {
+    "slug": "mythicma",
+    "school": "Mythic Martial Arts",
+    "parent": "Tester Clover",
+    "kid": "null (26)",
+    "leadId": "lead_test_JTDHNEFC8P55NZHQ",
+    "booked": "Free Trial - Tester Clover @ Monday 2026-07-13 05:30 PM",
+    "bookedCal": "q12SczP72D0pvMF2QpnN",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "V0BaQTyyZoqQ2mwt0ien",
+      "appt": "Free Trial - Tester Clover | 2026-07-13 17:30:00 | confirmed | cal:q12SczP72D0pvMF2QpnN",
+      "youthBday": "2026-11-05",
+      "note": null,
+      "calName": "Adult Foundations Jiu-Jitsu"
+    }
+  },
+  {
+    "slug": "ombjj",
+    "school": "OM Brazilian Jiu Jitsu",
+    "parent": "Tester Garnet",
+    "kid": "Jai (12)",
+    "leadId": "lead_test_KHL4D9WL3HSJ50D2",
+    "booked": "Jai Garnet - Free Trial Class @ Thursday 2026-07-09 05:15 PM",
+    "bookedCal": "r1MuiRLtvD8PIUJTHgwK",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "kbfKBA7GjZLClfRfTdKt",
+      "appt": "Jai Garnet - Free Trial Class | 2026-07-09 17:15:00 | confirmed | cal:r1MuiRLtvD8PIUJTHgwK",
+      "youthBday": "2014-05-05",
+      "note": "Child Name: Jai Garnet | Child Birthday: May 5, 2014",
+      "calName": "Teens 10-15 BJJ"
+    }
+  },
+  {
+    "slug": "paragonsimivalley",
+    "school": "Paragon Simi Valley",
+    "parent": "Tester Heron",
+    "kid": "Kai (8)",
+    "leadId": "lead_test_94E767N0WZ39NLXA",
+    "booked": "Kai Heron - Kids Jiu-Jitsu Trial @ Wednesday 2026-07-08 05:00 PM",
+    "bookedCal": "AFoWlffSZq18isEuVqwO",
+    "calName": "UNKNOWN-ID",
+    "verdict": "BOOKED-UNKNOWN-CAL",
+    "notes": [],
+    "ghl": {
+      "contact": null,
+      "appt": null,
+      "youthBday": null,
+      "note": null
+    }
+  },
+  {
+    "slug": "rangebjjnyc",
+    "school": "Range Brazilian Jiu-Jitsu NYC",
+    "parent": "Tester Ivory",
+    "kid": "Lia (6)",
+    "leadId": "lead_test_TZANH7TGJ23MGIZS",
+    "booked": "Lia Ivory - Free Trial Class @ Wednesday 2026-07-08 04:00 PM",
+    "bookedCal": "1zJwobkf3UV9KHGP6CI2",
+    "calName": "Kids 5-8 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "DM1mgNBtSzwbOqpQMa4D",
+      "appt": "Lia Ivory - Free Trial Class | 2026-07-08 16:00:00 | confirmed | cal:1zJwobkf3UV9KHGP6CI2",
+      "youthBday": "2020-01-18",
+      "note": "Child Name: Lia Ivory | Child Birthday: January 18, 2020",
+      "calName": "Kids 5-8 BJJ"
+    }
+  },
+  {
+    "slug": "rip-tide-brazilian-jiu-jitsu",
+    "school": "Rip Tide Brazilian Jiu Jitsu",
+    "parent": "Tester Jasper",
+    "kid": "Mo (7)",
+    "leadId": "lead_test_SJ9TMQVHZ55YJ1KD",
+    "booked": "Mo Jasper - Kids BJJ Trial @ Tuesday 2026-07-07 05:00 PM",
+    "bookedCal": "NoylWhxjiZQLJ6nhBXWy",
+    "calName": "Kids 4-12 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "Yf1h0qETNx01vmH53ZoO",
+      "appt": "Mo Jasper - Kids BJJ Trial | 2026-07-07 17:00:00 | confirmed | cal:NoylWhxjiZQLJ6nhBXWy",
+      "youthBday": "2026-11-05",
+      "note": "Child Name: Mo Jasper | Child Birthday: February 22, 2019",
+      "calName": "Kids 4-12 BJJ"
+    }
+  },
+  {
+    "slug": "royaljjqueens",
+    "school": "Royal Jiu Jitsu Academy Queens",
+    "parent": "Tester Kestrel",
+    "kid": "Nia (8)",
+    "leadId": "lead_test_MI3U1V7YORNKE9GX",
+    "booked": "Nia Kestrel - Kids BJJ Trial @ Saturday 2026-07-11 10:00 AM",
+    "bookedCal": "I8Adff7GjXy2fI7WHc3a",
+    "calName": "UNKNOWN-ID",
+    "verdict": "BOOKED-UNKNOWN-CAL",
+    "notes": [],
+    "ghl": {
+      "contact": null,
+      "appt": null,
+      "youthBday": null,
+      "note": null
+    }
+  },
+  {
+    "slug": "signaturejj",
+    "school": "Signature of Jiu Jitsu",
+    "parent": "Tester Lagoon",
+    "kid": "Oli (9)",
+    "leadId": "lead_test_N7170XMYP12GW4OZ",
+    "booked": "Oliver Lagoon - Free Trial @ Monday 2026-07-13 03:30 PM",
+    "bookedCal": "Iuv6iiN568vKWQ0lWmlI",
+    "calName": "Kids 8-10 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "IAcoEQxo2fLWVwuFYHEQ",
+      "appt": "Oliver Lagoon - Free Trial | 2026-07-13 15:30:00 | confirmed | cal:Iuv6iiN568vKWQ0lWmlI",
+      "youthBday": "2017-04-26",
+      "note": "Child Name: Oliver Lagoon | Child Birthday: April 26, 2017",
+      "calName": "Kids 8-10 BJJ"
+    }
+  },
+  {
+    "slug": "simplemanma",
+    "school": "Simple Man Martial Arts",
+    "parent": "Tester Nimbus",
+    "kid": "Pia (10)",
+    "leadId": "lead_test_VNYZ3WGZY7TW0O6S",
+    "booked": null,
+    "bookedCal": null,
+    "calName": null,
+    "verdict": "NO-BOOKING",
+    "notes": [],
+    "ghl": {
+      "contact": "Fm9cZeSzzFofoIgx0k4y",
+      "appt": null,
+      "youthBday": "2016-05-12",
+      "note": null
+    }
+  },
+  {
+    "slug": "somamvmt",
+    "school": "SOMA MVMT",
+    "parent": "Tester Opal",
+    "kid": "null (30)",
+    "leadId": "lead_test_BPSUZQKFKIEXY38F",
+    "booked": "SOMA MVMT Introduction Class @ Wednesday 2026-07-08 06:00 AM",
+    "bookedCal": "RxiVRNWlCHsaC3rEVCmi",
+    "calName": "UNKNOWN-ID",
+    "verdict": "BOOKED-UNKNOWN-CAL",
+    "notes": [],
+    "ghl": {
+      "contact": null,
+      "appt": null,
+      "youthBday": null,
+      "note": null
+    }
+  },
+  {
+    "slug": "soulcraftma",
+    "school": "Soulcraft Martial Arts",
+    "parent": "Tester Pebble",
+    "kid": "Quinn (6)",
+    "leadId": "lead_test_7OQ78FTZDCD6WQNI",
+    "booked": "Quinn Pebble - Kids BJJ Trial @ Sunday 2026-07-12 10:00 AM",
+    "bookedCal": "YEdRp0kPtX2sOsniDeCt",
+    "calName": "Kids 4-7 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "jgiqTUSMC6vRMuN2feDU",
+      "appt": "Quinn Pebble - Kids BJJ Trial | 2026-07-12 10:00:00 | confirmed | cal:YEdRp0kPtX2sOsniDeCt",
+      "youthBday": "2020-01-30",
+      "note": "Child Name: Quinn Pebble | Child Birthday: January 30, 2020",
+      "calName": "Kids 4-7 BJJ"
+    }
+  },
+  {
+    "slug": "speak-easy-jiu-jitsu-wrestling",
+    "school": "Speak Easy Jiu-Jitsu & Wrestling",
+    "parent": "Tester Raven",
+    "kid": "Rio (5)",
+    "leadId": "lead_test_UXO2AR6HLRJIRVNX",
+    "booked": "Rio Raven - Kids Jiu-Jitsu Trial @ Wednesday 2026-07-08 03:45 PM",
+    "bookedCal": "YiWA27v7Uelx64OHUw7n",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "ohYi2HwWuqmjyzA5fBCW",
+      "appt": "Rio Raven - Kids Jiu-Jitsu Trial | 2026-07-08 15:45:00 | confirmed | cal:YiWA27v7Uelx64OHUw7n",
+      "youthBday": "2021-02-14",
+      "note": "Child Name: Rio Raven | Child Birthday: February 14, 2021",
+      "calName": "Kids Jiu-Jitsu (4-6)"
+    }
+  },
+  {
+    "slug": "sugoisubmissions",
+    "school": "Sugoi Submissions",
+    "parent": "Tester Sequoia",
+    "kid": "Sia (6)",
+    "leadId": "lead_test_KXM5PSW7IWX8WZMN",
+    "booked": "Sia Sequoia - Free Trial Class @ Saturday 2026-07-11 09:00 AM",
+    "bookedCal": "9txY0SGOngIPvHeqgfEv",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "Btap5XfhsYi9OcPl71ff",
+      "appt": "Sia Sequoia - Free Trial Class | 2026-07-11 09:00:00 | confirmed | cal:9txY0SGOngIPvHeqgfEv",
+      "youthBday": "2020-03-25",
+      "note": "Child Name: Sia Sequoia | Child Birthday: March 25, 2020",
+      "calName": "Kids 4-8 Fundamentals Jiu-Jitsu"
+    }
+  },
+  {
+    "slug": "tetris-jiu-jitsu",
+    "school": "Tetris Jiu-Jitsu",
+    "parent": "Tester Tundra",
+    "kid": "Tao (4)",
+    "leadId": "lead_test_DETCLNVG17ANBH71",
+    "booked": "Tao Tundra - Free Trial Class @ Wednesday 2026-07-08 05:35 PM",
+    "bookedCal": "toWvotrh9lGOnnnV8EgG",
+    "calName": "Kids 3-5 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "z1C0Axp7E1oY8UUaZp5V",
+      "appt": "Tao Tundra - Free Trial Class | 2026-07-08 17:35:00 | confirmed | cal:toWvotrh9lGOnnnV8EgG",
+      "youthBday": "2022-04-20",
+      "note": null,
+      "calName": "Kids 3-5 BJJ"
+    }
+  },
+  {
+    "slug": "universalmma",
+    "school": "Universal Mixed Martial Arts",
+    "parent": "Tester Wren",
+    "kid": "Uma (8)",
+    "leadId": "lead_test_GMEL0YLOZYUNF91Z",
+    "booked": "Uma Wren - Free Trial Class @ Saturday 2026-07-11 11:00 AM",
+    "bookedCal": "ZfTveExmW5cGwD1a1cAQ",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "APvblfKpEoYbyvnagI9N",
+      "appt": "Uma Wren - Free Trial Class | 2026-07-11 11:00:00 | confirmed | cal:ZfTveExmW5cGwD1a1cAQ",
+      "youthBday": "2018-05-27",
+      "note": "Child Name: Uma Wren | Child Birthday: May 27, 2018",
+      "calName": "Kids Martial Arts"
+    }
+  },
+  {
+    "slug": "verde-valley-brazilian-jiu-jitsu",
+    "school": "Verde Valley Brazilian Jiu Jitsu",
+    "parent": "Tester Zephyr",
+    "kid": "Vic (6)",
+    "leadId": "lead_test_J1QSJ4JLYU3ZZ5ZG",
+    "booked": "Victor Zephyr - Kids BJJ Trial @ Tuesday 2026-07-07 04:30 PM",
+    "bookedCal": "3VJURtbAc0td3yR4GXz3",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "nxYVY6ZSVVYe8KwZZE7N",
+      "appt": "Victor Zephyr - Kids BJJ Trial | 2026-07-07 16:30:00 | confirmed | cal:3VJURtbAc0td3yR4GXz3",
+      "youthBday": "2020-06-03",
+      "note": "Child Name: Victor Zephyr | Child Birthday: June 3, 2020",
+      "calName": "Kids 5-7 BJJ"
+    }
+  },
+  {
+    "slug": "wisconsin-national-karate",
+    "school": "Wisconsin National Karate",
+    "parent": "Tester Basalt",
+    "kid": "Wil (6)",
+    "leadId": "lead_test_UCJRV4KM83SR2QK2",
+    "booked": "Wil - Free Trial Class @ Tuesday 2026-07-07 04:45 PM",
+    "bookedCal": "PqgnnV3ysRQWe3VjtfiF",
+    "calName": "Kids Beginner Karate 4-7",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "811IBvEq2XQddypHE3xI",
+      "appt": "Wil - Free Trial Class | 2026-07-07 16:45:00 | confirmed | cal:PqgnnV3ysRQWe3VjtfiF",
+      "youthBday": "2020-01-08",
+      "note": "Child Name: Wil | Child Birthday: January 8, 2020",
+      "calName": "Kids Beginner Karate 4-7"
+    }
+  }
+]

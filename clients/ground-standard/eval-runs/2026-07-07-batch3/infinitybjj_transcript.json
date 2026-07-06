@@ -1,0 +1,114 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Dean is 8 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have Kids Brazilian Jiu-Jitsu classes for Dean's age group.\nThey're structured and age-appropriate, and it's a great environment for kids to learn. Is Dean interested in trying a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, he would love to try a free trial class! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Fjord."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.fjord@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And is this number I can reach you at if needed?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, you can reach me at 860-555-0605."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, got it! And what's Dsan's full name?\n*Dean's"
+  },
+  {
+    "sender": "lead",
+    "message": "Dean Fjord."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's Dean's date of birth? This helps us make sure he's in the right age group."
+  },
+  {
+    "sender": "lead",
+    "message": "Dean's birthday is May 16, 2018."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Dean is 8, so he'll be in our kids program. Let me check what times we have available for his free trial and I'll get right back to you!"
+  },
+  {
+    "sender": "lead",
+    "message": "Sounds good! Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "You're welcome! I'm checking on available times now and will have some options for you shortly."
+  },
+  {
+    "sender": "lead",
+    "message": "Thanks! I appreciate it."
+  },
+  {
+    "sender": "bot",
+    "message": "Of course! I'm working on it now. Should have some trial class times for Dean in just a moment."
+  },
+  {
+    "sender": "lead",
+    "message": "Great, I'll be here!"
+  },
+  {
+    "sender": "bot",
+    "message": "I'm so sorry for the delay! It looks like our online booking system isn't loading right now. Let me have one of our instructors reach out to you directly at 860-555-0605 to get Dean scheduled for his free trial. They'll be in touch soon!"
+  },
+  {
+    "sender": "lead",
+    "message": "No problem at all! Thank you for your help. I'll keep an eye out for their call."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! They'll be reaching out soon. Dean is going to love it here. Talk soon!"
+  },
+  {
+    "sender": "lead",
+    "message": "Looking forward to it! Talk soon!"
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks Tester! Have a great night!"
+  },
+  {
+    "sender": "lead",
+    "message": "You too! Have a great night!"
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! 😊"
+  },
+  {
+    "sender": "lead",
+    "message": "You're welcome! 😊"
+  },
+  {
+    "sender": "bot",
+    "message": "Take care!"
+  }
+]

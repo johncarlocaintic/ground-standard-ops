@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Nia is 8 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have Kids Brazilian Jiu-Jitsu classes for 8-year-olds. It's a great program with age-appropriate instruction in a really safe and welcoming environment. Is Nia interested in trying a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! When can she try the free trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm Tester Kestrel."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.kestrel@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0615."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Nia's full name for the trial class."
+  },
+  {
+    "sender": "lead",
+    "message": "Her full name is Nia Kestrel."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's Nia's date of birth? This helps us make sure she's in the right age group."
+  },
+  {
+    "sender": "lead",
+    "message": "Nia's birthday is March 17, 2018."
+  },
+  {
+    "sender": "bot",
+    "message": "Great! Nia is 8 so she's perfect for our Kids BJJ program. Here are some available times for her free trial:\n\nWednesday 7/8 at 4:30 PM\nFriday 7/10 at 4:30 PM\nSaturday 7/11 at 10:00 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Saturday 7/11 at 10:00 AM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Nia is all set for Saturday 7/11 at 10:00 AM. You'll get a confirmation email at tester.kestrel@gmail.com with all the details. Just have her wear comfortable workout clothes. See you both then!"
+  }
+]

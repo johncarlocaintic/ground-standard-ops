@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Quinn is 6 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey there! Yes, we do! We have Brazilian Jiu-Jitsu classes for kids ages 4-7, so Quinn would be a perfect fit. It's a great program for that age group. Are you interested in booking a free trial class to see how Quinn likes it?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class! What time slots do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm Tester Pebble."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! Can I grab your email address? That way I can send you the confirmation and class details."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.pebble@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0619."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Quinn's full name and date of birth to get the trial booked. What's Quinn's full name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Quinn's full name is Quinn Pebble, and their birthday is January 30, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I have a couple of spots available for Quinn's trial class. I have Sunday July 12th at 10:00 AM or Monday July 13th at 5:15 PM. Which works better for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Sunday, July 12th at 10:00 AM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Quinn is all set for Sunday, July 12th at 10:00 AM for the free trial class. You'll get a confirmation email at tester.pebble@gmail.com with all the details. Just come in comfortable clothes and we'll take care of the rest. See you then!"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! I want to try fitness classes for myself. How do I start?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome. I'm Emma from the studio. We'd love to have you try a class! Your first one is totally free, no commitment. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Hi Emma! I'm Tester Opal. I'm excited to try a class!"
+  },
+  {
+    "sender": "bot",
+    "message": "Nice to meet you, Tester! So this is just for you, right? One adult trying out a class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that's correct! Just me trying out a class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a couple quick details to get you set up. What's the best email for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "My best email is tester.opal@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's your phone number? Just so we can reach you if anything comes up with your class."
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0618."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Last thing - what's your date of birth? Helps us keep our records straight."
+  },
+  {
+    "sender": "lead",
+    "message": "My birthday is June 8, 1996."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! All set. Let me show you some times for your free trial class. How about one of these:\n\nTuesday 7/8 at 6:00 AM\nWednesday 7/9 at 8:30 AM\nWednesday 7/9 at 5:30 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'll take the Tuesday 7/8 at 6:00 AM. Thanks!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! You're all booked for Wednesday 7/8 at 6:00 AM. We're at 6 W Parker Ave, Maplewood. Just wear comfortable workout clothes and bring water. See you then!"
+  }
+]

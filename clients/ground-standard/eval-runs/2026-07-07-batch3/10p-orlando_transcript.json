@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! I want to try jiu jitsu for myself. How do I start?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome you want to try Jiu-Jitsu! I'm Emma from the front desk. We make it super easy to get started with a free trial class, no experience needed. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Hi Emma! I'm Tester Vermilion. I'd love to sign up for that free trial class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect, Tester! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I already shared my name—it's Tester Vermilion. What else do you need?"
+  },
+  {
+    "sender": "bot",
+    "message": "You're right, sorry about that! I've got Tester Vermilion. Can I grab your email address?"
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.vermilion@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0601."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Last thing - what's your date of birth? This just helps us keep everything organized."
+  },
+  {
+    "sender": "lead",
+    "message": "My birthday is March 4, 1998."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I've got you all set up. Let me show you some open times for your free trial class. Here are a few options:\n\n- Tonight Monday 7/6 at 6:45 PM\n- Tuesday 7/7 at 6:45 PM\n- Wednesday 7/8 at 6:45 PM\n- Friday 7/10 at 6:00 PM\n\nWhich one works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'll take the class tonight, Monday 7/6 at 6:45 PM. Looking forward to it!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! You're all booked for tonight at 6:45 PM. We're at 195 S Westmonte Dr #1108 in Altamonte Springs. Just wear comfortable workout clothes and come ready to have fun. See you soon!"
+  }
+]

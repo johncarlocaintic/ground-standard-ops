@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Gus is 9 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have Kids Brazilian Jiu-Jitsu classes for Gus's age group. They're taught in a safe, fun environment with age-appropriate instruction. No experience needed. Would you like to book a free trial class for him?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Gus! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Timber."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's your email address? I'll use it to send you the trial class confirmation."
+  },
+  {
+    "sender": "lead",
+    "message": "My email is tester.timber@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And is the phone number you're texting from the best one to reach you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, the best number to reach me is 860-555-0607."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Last thing - what's Gus's full name and date of birth?"
+  },
+  {
+    "sender": "lead",
+    "message": "Gus's full name is Augustus Timber, and his date of birth is January 25, 2017."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have availability for Gus's free trial class this week:\n\n- Today, Monday 7/6 at 5:30 PM\n- Wednesday 7/8 at 5:30 PM\n- Thursday 7/9 at 5:30 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with today, Monday 7/6 at 5:30 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Gus is all set for his free trial class today at 5:30 PM. You should receive a conformation email at tester.timber@gmail.com. Just have him wear comfortable clothes he can move in. See you soon!\n*confirmation"
+  }
+]

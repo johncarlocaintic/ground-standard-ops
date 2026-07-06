@@ -1,0 +1,114 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Pia is 10 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do have a Kids Brazilian Jiu-Jitsu program for that age group.\nPia would be a great fit! Have you thought about booking a free trial class to see if she likes it?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, a trial class sounds great! What time slots do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Nimbus."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! Can I grab your email address? That way I can send you the confirmation and any class details."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.nimbus@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's your phone number? Just in case we need to reach you about the class."
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0617."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Now I just need Pia's full name and date of birth to get her trial class scheduled."
+  },
+  {
+    "sender": "lead",
+    "message": "Pia's full name is Pia Nimbus, and her birthday is May 12, 2016."
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! Let me check our Youth 9-12 BJJ schedule for available trial slots. It looks like we don't have any openings showing in our online calendar right now. Let me have one of our team members reach out to you directly to find a time that works. Sound good?"
+  },
+  {
+    "sender": "lead",
+    "message": "That sounds great! Thank you for helping us get this set up."
+  },
+  {
+    "sender": "bot",
+    "message": "You're so welcome! We're excited to have Pia try out a class. Someone from the team will be in touch soon to get her scheduled. Talk to you skon!\n*soon"
+  },
+  {
+    "sender": "lead",
+    "message": "Thanks! We're looking forward to it. Talk to you soon!"
+  },
+  {
+    "sender": "bot",
+    "message": "Can't wait for Pia to get started! Have a great day!"
+  },
+  {
+    "sender": "lead",
+    "message": "You too! Have a great day!"
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! See you soon!"
+  },
+  {
+    "sender": "lead",
+    "message": "See you soon!"
+  },
+  {
+    "sender": "bot",
+    "message": "Take care!"
+  },
+  {
+    "sender": "lead",
+    "message": "You too! Take care!"
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks again!"
+  },
+  {
+    "sender": "lead",
+    "message": "You're welcome!"
+  },
+  {
+    "sender": "bot",
+    "message": "😊"
+  },
+  {
+    "sender": "lead",
+    "message": "😊"
+  },
+  {
+    "sender": "bot",
+    "message": "Talk soon!"
+  },
+  {
+    "sender": "lead",
+    "message": "Talk soon!"
+  },
+  {
+    "sender": "bot",
+    "message": "Bye!"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Sia is 6 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have Kids Jiu-Jitsu for ages 4-12, so Sia would be a great fit. It's a really supportive environment where kids build confidence, discipline, and learn grappling skills. Would you like to book a free trial class for her?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Sia! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Sequoia."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! Can I get your email address? That way I can send you the class confirmation."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.sequoia@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0621."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Sia's full name and date of birth to get her set up for the trial."
+  },
+  {
+    "sender": "lead",
+    "message": "Sia's full name is Sia Sequoia, and her birthday is March 25, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Sia is all set. Here are some available times for her free trial class:\n\n- Saturday, July 11 at 9:00 AM\n- Monday, July 13 at 5:30 PM\n- Wednesday, July 15 at 5:30 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let’s go with Saturday, July 11 at 9:00 AM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Sia is booked for Saturday, July 11 at 9:00 AM. You'll get a confirmation email at tester.sequoia@gmail.com. Just bring Sia in comfortable workout clothes. We're at 3403 S Padre Island Dr 204. See you then!"
+  }
+]

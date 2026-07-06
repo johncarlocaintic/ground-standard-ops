@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Hana is 5 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! Our Little Warriors program is perfect for 5-year-olds.\nIt's no-gi jiu jitsu for ages 4-6, and classes are Wednesday and Thursday from 4:45-5:30 pm. Would Hana like to try a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, she'd love to try a free trial class! Let's go with the first available time. What do I need to do next?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Anchor."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the trial details to tester.anchor@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0608."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Hana's full name and date of birth to get her trial booked."
+  },
+  {
+    "sender": "lead",
+    "message": "Hana's full name is Hana Anchor, and her birthday is February 28, 2021."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have Hana all set. The earliest available times are:\n\nWednesday, July 15 at 4:45 pm\nThursday, July 16 at 4:45 pm\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, July 15 at 4:45 pm. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "All set! Hana is booked for her free trial on Wednesday, July 15 at 4:45 pm. We'll send the details to tester.anchor@gmail.com. Just bring Hana in comfortable clothes and we'll take care of the rest. See you both soon!"
+  }
+]

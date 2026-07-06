@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Tao is 4 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do have Kids Brazilian Jiu-Jitsu classes for 4-year-olds. It's a great age to start!\nThe kids program is structured and age-appropriate, so Tao would be with other kids around the same age. Would you like to book a free trial class to see if it's a good fit?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Tao! What time slots do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Tundra."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial class details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.tundra@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And can I get your phone number? Just so we can reach you if anything comes up with the class."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure, my phone number is 860-555-0622."
+  },
+  {
+    "sender": "bot",
+    "message": "Great! And just to confirm, what's Tao's full name and date of birth?"
+  },
+  {
+    "sender": "lead",
+    "message": "Tao’s full name is Tao Tundra, and he was born on April 20, 2022."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have some spots available for Tao this week. Here are a few options:\n\nTuesday 7/8 at 5:35 PM\nWednesday 7/9 at 5:35 PM\nThursday 7/10 at 5:35 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday 7/8 at 5:35 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Tao is all set for his free trial class on Wednesday 7/8 at 5:35 PM. We'll send the details to tester.tundra@gmail.com. See you both then!"
+  }
+]

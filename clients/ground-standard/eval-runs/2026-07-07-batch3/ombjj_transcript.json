@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Jai is 12 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have a Teens and Preteens program for ages 10-15 that combines Brazilian Jiu-Jitsu and Judo. Perfect for Jai. The first class is always free, no commitment. Would you like to get him signed up for a trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to sign Jai up for a trial class! When is the next available time?"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Garnet."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! Can I grab your email address? That way I can send you the confirmation and class detwils.\n*details"
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.garnet@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0611."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And just to confirm, what's Jai's full name and date of birth? That helps us get him in the right class group."
+  },
+  {
+    "sender": "lead",
+    "message": "Jai's full name is Jai Garnet, and his birthday is May 5, 2014."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Jai is all set for the Teens program. Here are the next available times for his free trial class:\n\nTuesday 7/8 at 5:15 PM\nThursday 7/9 at 5:15 PM\nSaturday 7/11 at 9:00 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday, July 8 at 5:15 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "I'm sorry, that slot just filled up! The nearest available times are:\n\nTuesday 7/7 at 5:15 PM (tomorrow)\nThursday 7/9 at 5:15 PM\nSaturday 7/11 at 9:00 AM\n\nWhich of these works for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let’s go with Thursday, July 9 at 5:15 PM. Thanks for the update!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Jai is all booked for Thursday, July 9 at 5:15 PM for his free trial class. We're at 220 Church St in Northport. Just come in comfortable workout clothes. Looking forward to seeing you both!"
+  }
+]

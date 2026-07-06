@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Vic is 6 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do have Kids Brazilian Jiu-Jitsu classes for 6 year olds. It's a great age to start! The kids program is structured and age-appropriate, and it's a really welcoming environment. Is Vic interested in trying a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, he would love to try a free trial class! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Zephyr."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.zephyr@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0624."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's Vic's full name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Vic's full name is Victor Zephyr."
+  },
+  {
+    "sender": "bot",
+    "message": "Great! And what's Victor's date of birth?"
+  },
+  {
+    "sender": "lead",
+    "message": "Victor's birthday is June 3, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Victor is all set for the Kids 5-7 class. I have a few times available this week:\n\nTuesday 7/7 at 4:30 PM\nWednesday 7/8 at 4:30 PM\nSaturday 7/11 at 9:00 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday 7/7 at 4:30 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Victor is all booked for Tuesday 7/7 at 4:30 PM. Ill send the details to tester.zephyr@gmail.com. Just have him wear comfortable clothes he can move in. See you both then!"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Ian is 8 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have Kids Brazilian Jiu-Jitsu for ages 6-13, so Ian would be a great fit. It's a fun, safe environment and no experience needed. Would you like to get him signed up for a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! What time is the free trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Great! Let me have the team reach out with the exact schedule for the kids class. I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Beacon."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.beacon@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0609."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Last thing - can I get Ian's full name and date of birth? This helps us get him set up in the system."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! His full name is Ian Beacon, and he was born on March 30, 2018."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Ian is all set. I have some open spots for his free trial class.\nHow about one of these times:\n\n- Wednesday, July 8 at 5:30 PM\n- Thursday, July 9 at 5:30 PM\n- Monday, July 13 at 5:00 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, July 8 at 5:30 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Ian is booked for Wednesday, July 8 at 5:30 PM. We'll send a confirmation to tester.beacon@gmail.com with all the details. Just have him wear comfortable clothes he can move in. See you both then!"
+  }
+]

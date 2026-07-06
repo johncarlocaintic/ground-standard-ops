@@ -1,6 +1,6 @@
 # GS Universal Bot — Launch Status (for Mark)
 
-**Updated 2026-07-07 (batch 2 verified).** Live test results per school. Bot-side AND GHL-verified. Test method: one real kid-booking conversation per school through the template bot (mimicking that school's source), then the appointment, Youth Birthday field, and contact note verified in that school's GHL via API.
+**Updated 2026-07-07 (all 3 batches complete — 45 schools tested).** Live test results per school. Bot-side AND GHL-verified. Test method: one real kid-booking conversation per school through the template bot (mimicking that school's source), then the appointment, Youth Birthday field, and contact note verified in that school's GHL via API.
 
 ## TEMPLATE: converted + proven
 The master template (`Martial Arts Studio - Template `) now reads all four custom values (`academy_info`, `academy_info_calendar_adult`, `_youth`, `_multiple`) with **zero hardcoded calendar IDs**. Verified live: values resolve per source, the LLM tolerates loose formatting, **only the calendar IDs must be exact**. One cosmetic leftover: old Gracie business text still sits in the business-info section under the academy_info tag; delete on next template touch.
@@ -45,6 +45,22 @@ All 10: appointment + Youth Birthday field + child-name note verified in GHL (Ra
 ** Ray Longo: booking + calendar correct, but the DOB was saved as the raw phrase "September 2, 2020" and got parsed to 2020-02-20 in the field (the note has the correct date). TEMPLATE TWEAK RECOMMENDED: the child-info section should say "convert date of birth to MM/DD/YYYY before saving" like the adult path does. One edit fixes all schools; fix the one field manually.
 
 ## BATCH 2 STATUS: complete
+
+
+## READY TO LAUNCH — batch 3, tested (19 GHL-verified + 3 pending UI check; launch list now 40+)
+GHL-verified on the correct calendar, child DOB + note confirmed (kid tests):
+10th Planet Orlando (Tester Vermilion, adult) · Cobrinha SW (Cobble/Ana 5 → Kids 3-6) · Hamptons West (Meadow/Cora 5 → Kids 4-7) · JJ Machado Fresno (Saffron/Elle 6 → Kids 4-8) · JitzLab (Timber/Gus 9 → Youth 8-12) · Jiu Jitsu Hub (Anchor/Hana 5 → Kids 4-6) · Lucky Cat (Beacon/Ian 8 → Kids 6-13) · Mythic (Clover, adult → Adult Foundations) · OM BJJ (Garnet/Jai 12 → Teens 10-15) · Range BJJ NYC (Ivory/Lia 6 → Kids 5-8) · Rip Tide (Jasper/Mo 7 → Kids 4-12) · Signature (Lagoon/Oli 9 → Kids 8-10) · Soulcraft (Pebble/Quinn 6 → Kids 4-7) · Speak Easy (Raven/Rio 5 → Kids 4-6) · Sugoi (Sequoia/Sia 6 → Kids 4-8) · Tetris (Tundra/Tao 4 → Kids 3-5, no note workflow on this sub-account — check) · Universal MMA (Wren/Uma 8 → Kids Martial Arts) · Verde Valley (Zephyr/Vic 6 → Kids 5-7) · Wisconsin Karate (Basalt/Wil 6 → Kids Beginner Karate 4-7)
+
+**Booked but NOT GHL-verifiable (no working token) — eyeball in the UI via ads@ground before launching:**
+Paragon Simi Valley (Heron/Kai 8, cal AFoWlffSZq18isEuVqwO, Wed 7/8 5 PM) · Royal JJ Queens (Kestrel/Nia 8) · SOMA MVMT (Opal, adult). Their custom values clearly hold REAL calendar IDs now (bookings ran against live calendars).
+
+## HOLD — additions from batch 3
+- **Granite Bay Jiu-Jitsu**: SECOND reproduction of the Killer B defect — book_appointment "Success" but the appointment persisted on NO calendar (Ben Larkspur, Kids 6-8, Wed 7/8 5 PM). Do not launch until re-test passes; added to the CloseBot support ticket.
+- **Infinity BJJ**: CloseBot↔GHL connection broken (custom values unresolved, "no calendars for this source", token dead since ~Jul 5). Bobby must reconnect the sub-account in CloseBot, re-add the 4 custom values, and re-issue access. Then full re-test.
+- **Simple Man Martial Arts**: bot + values fine, but the youth calendar has ZERO availability for 3+ weeks (checked 3 ranges). Open that calendar's availability in GHL, then re-test.
+
+## NOT TESTED (3)
+Vacaville (already live on its own v4.6 bot — migrate last) · Logica (no CloseBot source) · Connecticut Submission (dropped by Bobby).
 
 ## FLEET-WIDE, PENDING BOBBY
 - **Youth Name field shows literal "Update"** on every tested school. A GHL workflow archives child name+bday to contact NOTES then stomps the field. Names are NOT lost (notes carry them). Bobby to confirm intentional vs the one workflow action to fix.
