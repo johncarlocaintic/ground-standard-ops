@@ -1,0 +1,50 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my son is 7 and wants to try jiu jitsu. What classes do you have for his age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome that your son wants to try Brazilian Jiu-Jitsu! We have a Kids Brazilian Jiu-Jitsu program that's perfect for 7-year-olds. Classes are grouped by age with instruction designed just for kids in a safe, fun environment. We also offer a free trial class so he can check it out with no commitment. Would you like to get him signed up for a trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! I'd love to sign Max up for a trial class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Vomer."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! So just to confirm, Max is 7 and you'll be booking for him, right?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that's correct! Max is 7 and I'm booking for him."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! What's Max's date of birth? I need that to get him in the right class group."
+  },
+  {
+    "sender": "lead",
+    "message": "Max's date of birth is February 10, 2019."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it, thanks! I just need your email and phone number to finish booking Max's trial class."
+  },
+  {
+    "sender": "lead",
+    "message": "My email is tester.b.0jlt7@gmail.com and my phone number is 860-555-0177."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have Max all set up for the Kids 6-7 Brazilian Jiu-Jitsu class.\nHere are the available trial times:\n\nWednesday, July 8 at 5:00 PM\nMonday, July 13 at 5:00 PM\n\nWhich works better for you?"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Jude is 9 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do have Brazilian Jiu-Jitsu classes for kids. Jude is the perfect age to start. We offer a free trial class so he can see if he likes it. Would you like to get him signed up for that?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I'd love to sign him up for the free trial class! What times do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm Tester Marina."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "It's tester.marina@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0507."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Now I just need Jude's full name and date of birth to get him set up for the trial."
+  },
+  {
+    "sender": "lead",
+    "message": "His full name is Jude Marina, and he was born on July 30, 2016."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Jude is all set. I have a couple times available this week for his free trial:\n\nTuesday, July 7th at 5:30 PM\nThursday, July 9th at 5:30 PM\n\nWhich works better for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday, July 7th at 5:30 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Jude is booked for Tuesday, July 7th at 5:30 PM. We'll have a loaner uniform ready for him, so no need to bring anything. Just come ready to have fun! See you then!"
+  }
+]

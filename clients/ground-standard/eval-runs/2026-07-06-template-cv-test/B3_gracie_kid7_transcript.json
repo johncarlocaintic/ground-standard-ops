@@ -1,0 +1,42 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my son is 7 and wants to try jiu jitsu. What classes do you have for his age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome your son wants to try Brazilian Jiu-Jitsu! We have a Kids Brazilian Jiu-Jitsu program that's perfect for 7-year-olds. The classes are grouped by age with instruction designed just for kids in a safe, fun environment. Would you like to book a free trial class for him?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Max! What’s the next available slot?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Vomer-ia40f."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's Max's date of birth? This helps us make sure he's in the right age group."
+  },
+  {
+    "sender": "lead",
+    "message": "Max's date of birth is February 10, 2019."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Max is 7, so he'll be in our Kids 6-7 Brazilian Jiu-Jitsu class. Here are the next available times for his free trial:\n\nMonday 7/6 at 5:00 PM (today)\nWednesday 7/8 at 5:00 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with today, Monday 7/6 at 5:00 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Max is all set for his free trial today, Monday 7/6 at 5:00 PM. Just need your email and phone number to complete the booking. What's the best email to send the details to?"
+  }
+]

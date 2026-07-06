@@ -1,0 +1,50 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! What programs do you guys offer and where exactly are you located?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! We're located at 11914 Elm Lane, Suite 160, Charlotte, NC 28277.\n\nWe offer Brazilian Jiu-Jitsu and Kickboxing for both adults and kids. For adults, we have BJJ and Kickboxing that blends with Aikido. Kids programs start at age 4 with Kickboxing, and we have age-specific classes for both BJJ and Kickboxing.\n\nAre you looking for yourself or for a child?"
+  },
+  {
+    "sender": "lead",
+    "message": "That's interesting! Do you offer kickboxing classes for adults?"
+  },
+  {
+    "sender": "bot",
+    "message": "Yes we do! Our adult Kickboxing program is a blend of Kickboxing and Aikido, so you get well-rounded self-defense training. It's open to all levels, even if you've never done martial arts before.\n\nWould you be interested in trying a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Thanks for the info! How often do you have classes for adult kickboxing?"
+  },
+  {
+    "sender": "bot",
+    "message": "We have classes Monday and Wednesday at 6:00 PM, Tuesday and Thursday at 5:30 PM, and Saturday at 9:30 AM. Once you're a member, you can attend as many classes as you'd like!"
+  },
+  {
+    "sender": "lead",
+    "message": "That sounds great! Do you have any special events or competitions for the kickboxing program?"
+  },
+  {
+    "sender": "bot",
+    "message": "That's a great question! I don't have specific details on competitions or special events for the Kickboxing program right now. The team can fill you in on that when you come in. We do offer Women's Self Defense seminars regularly too.\n\nWould you like to book a free trial class to check it out?"
+  },
+  {
+    "sender": "lead",
+    "message": "I appreciate the info! How long are the kickboxing classes usually?"
+  },
+  {
+    "sender": "bot",
+    "message": "I don't have the exact class length on hand, but the team can let you know when you come in for your trial. Most martial arts classes run around 45-60 minutes, but I'd rather not guess. Want to get your free trial scheduled?"
+  },
+  {
+    "sender": "lead",
+    "message": "That makes sense! Do you provide any gear or equipment for the kickboxing classes, or do I need to bring my own?"
+  },
+  {
+    "sender": "bot",
+    "message": "You don't need to bring anything for your trial class! Just wear athletic clothing like shorts and a t-shirt. Once you join, your uniform (shorts and jersey for adult Kickboxing) is included with your down payment. Sparring gear comes later as you advance.\n\nReady to book your free trial?"
+  }
+]

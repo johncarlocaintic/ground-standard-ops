@@ -1,0 +1,50 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! What programs do you guys offer and where exactly are you located?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! We're Ballantyne Martial Arts, located at 11914 Elm Lane in Charlotte, NC.\n\nWe offer Brazilian Jiu-Jitsu and Kickboxing for both adults and kids starting at age 4.\nFor adults, we have BJJ and Kickboxing classes. For kids, we have age-specific programs in both styles.\n\nAre you looking for yourself or for a child?"
+  },
+  {
+    "sender": "lead",
+    "message": "Thanks for the info! Do you offer kickboxing classes for adults?"
+  },
+  {
+    "sender": "bot",
+    "message": "Yes we do! Our adult Kickboxing program is a blend of Kickboxing and Aikido, designed for well-rounded self-defense. It's open to all levels, so no experience needed.\n\nWould you like to try a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "That sounds interesting! How often do you have kickboxing classes?"
+  },
+  {
+    "sender": "bot",
+    "message": "Adult Kickboxing runs Tuesday and Thursday at 5:30 PM, plus Saturday at 9:30 AM. All classes are beginner-friendly, so you can jump in anytime.\n\nWant to book a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "I appreciate it! Just curious, how many students typically attend a class?"
+  },
+  {
+    "sender": "bot",
+    "message": "We typically have about 1 instructor per 7 students, and we have multiple instructors and black belts on the mat during all classes. So you'll get plenty of attention and support while training with a good group!"
+  },
+  {
+    "sender": "lead",
+    "message": "That sounds great! Do you have any special events or competitions for kickboxing?"
+  },
+  {
+    "sender": "bot",
+    "message": "I don't have specific info on kickboxing events or competitions right now. That's a great question though! The team can fill you in on any upcoming events when you come in for a trial class, or I can have someone reach out with details if you'd like."
+  },
+  {
+    "sender": "lead",
+    "message": "Thanks! I’ll just keep looking for info for now. Do you have a specific age limit for the kids' kickboxing classes?"
+  },
+  {
+    "sender": "bot",
+    "message": "Kids Kickboxing starts at age 4 and goes up to age 15. We have age-specific classes: 4-5, 6-11, and 12-15. Each group is tailored to their age and skill level.\n\nAre you asking for a child or just curious about the programs?"
+  }
+]

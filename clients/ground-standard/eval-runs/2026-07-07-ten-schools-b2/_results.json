@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "academyedenprairie",
+    "school": "Academy Eden Prairie",
+    "parent": "Tester Slate",
+    "kid": "Owen (6)",
+    "leadId": "lead_test_10GP1BPRKHSKTRJ6",
+    "booked": "Owen Slate - Free Trial Class @ Monday 2026-07-06 05:00 PM",
+    "bookedCal": "bwhgiSxA4yYBcDNWA5me",
+    "calName": "Kids 4-7 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "1kxiXIKBPwjnttOWsFGC",
+      "appt": "Owen Slate - Free Trial Class | 2026-07-06 17:00:00 | confirmed | cal:bwhgiSxA4yYBcDNWA5me",
+      "youthBday": "2026-11-05",
+      "note": "Child Name: Owen Slate | Child Birthday: January 20, 2020",
+      "calName": "Kids 4-7 BJJ"
+    }
+  },
+  {
+    "slug": "allinjujitsu",
+    "school": "All in Jiu-Jitsu",
+    "parent": "Tester Birch",
+    "kid": "Ruby (8)",
+    "leadId": "lead_test_TEJ16JUGBB16MPQV",
+    "booked": "Ruby Birch - Free Trial Class @ Monday 2026-07-06 05:30 PM",
+    "bookedCal": "deuaXkSEzYGTm5zbRp1c",
+    "calName": "Kids 5-12 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "FeXoHgWEdp30zLISwDMK",
+      "appt": "Ruby Birch - Free Trial Class | 2026-07-06 17:30:00 | confirmed | cal:deuaXkSEzYGTm5zbRp1c",
+      "youthBday": "2018-02-14",
+      "note": "Child Name: Ruby Birch | Child Birthday: February 14, 2018",
+      "calName": "Kids 5-12 BJJ"
+    }
+  },
+  {
+    "slug": "artistrybjj",
+    "school": "Artistry BJJ",
+    "parent": "Tester Quartz",
+    "kid": "Theo (9)",
+    "leadId": "lead_test_HJC6RLLCYJCLZ4T5",
+    "booked": "Theo Quartz - Free Trial @ Wednesday 2026-07-08 05:30 PM",
+    "bookedCal": "iUxOoSFF7RF8uP9VpN9b",
+    "calName": "Kids 5-13 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "vyQsWbOvjx19iWktuInP",
+      "appt": "Theo Quartz - Free Trial | 2026-07-08 17:30:00 | confirmed | cal:iUxOoSFF7RF8uP9VpN9b",
+      "youthBday": "2017-03-03",
+      "note": "Child Name: Theo Quartz | Child Birthday: March 3, 2017",
+      "calName": "Kids 5-13 BJJ"
+    }
+  },
+  {
+    "slug": "bodegajj",
+    "school": "Bodega Jiu Jitsu",
+    "parent": "Tester Ember",
+    "kid": "Nora (10)",
+    "leadId": "lead_test_IYOCSVS259UNAE90",
+    "booked": "Nora Ember - Youth Trial Class @ Wednesday 2026-07-08 06:00 PM",
+    "bookedCal": "H6mtYnRcrDaQrPEOCrwL",
+    "calName": "Kids 9-12 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "MqMbNhimsTaWjb4Me49w",
+      "appt": "Nora Ember - Youth Trial Class | 2026-07-08 18:00:00 | confirmed | cal:H6mtYnRcrDaQrPEOCrwL",
+      "youthBday": "2026-07-06",
+      "note": "Child Name: Nora Ember | Child Birthday: April 18, 2016",
+      "calName": "Kids 9-12 BJJ"
+    }
+  },
+  {
+    "slug": "centerlinejiujitsu",
+    "school": "Centerline Jiu-Jitsu Chandler",
+    "parent": "Tester Willow",
+    "kid": "Finn (6)",
+    "leadId": "lead_test_Z27PMM5GJA9FYB0Y",
+    "booked": "Finn Willow - Free Trial @ Tuesday 2026-07-07 05:15 PM",
+    "bookedCal": "HukJUft8a0vg85EOyZeI",
+    "calName": "Kids 5-7 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "ioxpVENTCMz8Gvc2kk9y",
+      "appt": "Finn Willow - Free Trial | 2026-07-07 17:15:00 | confirmed | cal:HukJUft8a0vg85EOyZeI",
+      "youthBday": "2026-11-05",
+      "note": "Child Name: Finn Willow | Child Birthday: May 25, 2020",
+      "calName": "Kids 5-7 BJJ"
+    }
+  },
+  {
+    "slug": "championmartialarts",
+    "school": "Champion Martial Arts",
+    "parent": "Tester Flint",
+    "kid": "Iris (9)",
+    "leadId": "lead_test_FX3RULK8MPRVO2XD",
+    "booked": "Iris - Free Trial Class @ Wednesday 2026-07-08 06:30 PM",
+    "bookedCal": "HbwXZCkFyizUYjKr5lqx",
+    "calName": "Youth Jiu-Jitsu",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "e5VwVm3cs345vC2pmZyn",
+      "appt": "Iris - Free Trial Class | 2026-07-08 18:30:00 | confirmed | cal:HbwXZCkFyizUYjKr5lqx",
+      "youthBday": "2017-06-07",
+      "note": "Child Name: Iris | Child Birthday: June 7, 2017",
+      "calName": "Youth Jiu-Jitsu"
+    }
+  },
+  {
+    "slug": "graciejj-sanjose",
+    "school": "Gracie Jiu Jitsu East San Jose",
+    "parent": "Tester Marina",
+    "kid": "Jude (9)",
+    "leadId": "lead_test_01RXBSYY7PCB0VH2",
+    "booked": "Jude Marina - Free Trial Class @ Tuesday 2026-07-07 05:30 PM",
+    "bookedCal": "XfVsX7id0etaN8pOhDnf",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "Ira9vVbQhFWRbW8cAPSW",
+      "appt": "Jude Marina - Free Trial Class | 2026-07-07 17:30:00 | confirmed | cal:XfVsX7id0etaN8pOhDnf",
+      "youthBday": "2016-07-30",
+      "note": "Child Name: Jude Marina | Child Birthday: July 30, 2016",
+      "calName": "Kids 7-13 BJJ"
+    }
+  },
+  {
+    "slug": "hamptonsjj",
+    "school": "Hamptons Jiu-Jitsu South",
+    "parent": "Tester Cedar",
+    "kid": "Lena (5)",
+    "leadId": "lead_test_ZJ5ZB202CXEWBXIB",
+    "booked": "Lena Cedar - Free Trial Class @ Tuesday 2026-07-07 04:45 PM",
+    "bookedCal": "S5dIqvZ3DsqwUKOnRXw6",
+    "calName": "Kids 4-7 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "QpiMKUqFdPvI8Vyi1AQA",
+      "appt": "Lena Cedar - Free Trial Class | 2026-07-07 16:45:00 | confirmed | cal:S5dIqvZ3DsqwUKOnRXw6",
+      "youthBday": "2026-11-05",
+      "note": "Child Name: Lena Cedar | Child Birthday: August 12, 2020",
+      "calName": "Kids 4-7 BJJ"
+    }
+  },
+  {
+    "slug": "raylongomma",
+    "school": "Ray Longo's Mixed Martial Arts",
+    "parent": "Tester Indigo",
+    "kid": "Rex (5)",
+    "leadId": "lead_test_IG4A0WQUPPDDAYYF",
+    "booked": "Rex Indigo - Free Trial Class @ Wednesday 2026-07-08 04:30 PM",
+    "bookedCal": "0v5kYtLcKVIAWdkczBG3",
+    "calName": "Youth 4-6 Martial Arts",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "5XlAcrQZsQMszc3pflE6",
+      "appt": "Rex Indigo - Free Trial Class | 2026-07-08 16:30:00 | confirmed | cal:0v5kYtLcKVIAWdkczBG3",
+      "youthBday": "2020-02-20",
+      "note": "Child Name: Rex Indigo | Child Birthday: February 20, 2020",
+      "calName": "Youth 4-6 Martial Arts"
+    }
+  },
+  {
+    "slug": "robertsfamilymma",
+    "school": "Roberts Family MMA",
+    "parent": "Tester Juniper",
+    "kid": "Skye (7)",
+    "leadId": "lead_test_08S8X44KM4EGWVRE",
+    "booked": "Skye Juniper - Free Trial @ Wednesday 2026-07-08 05:15 PM",
+    "bookedCal": "UMhkQHI9icuipqq9ivS2",
+    "calName": "Kids 5-10 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "wVdHlTGX7cu4ATx2yViz",
+      "appt": "Skye Juniper - Free Trial | 2026-07-08 17:15:00 | confirmed | cal:UMhkQHI9icuipqq9ivS2",
+      "youthBday": "2018-10-22",
+      "note": "Child Name: Skye Juniper | Child Birthday: October 22, 2018",
+      "calName": "Kids 5-10 BJJ"
+    }
+  }
+]

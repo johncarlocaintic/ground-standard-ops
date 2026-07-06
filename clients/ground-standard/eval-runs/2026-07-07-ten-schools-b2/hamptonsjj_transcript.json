@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Lena is 5 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have a Youth GI class for kids ages 4-7 that would be perfect for Lena. It's a great way for her to get started with Brazilian Jiu-Jitsu in a fun, age-appropriate setting. Would you like to book a free trial class for her?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Lena! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Cedar."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! Can I get your email address? I'll use it to send you the trial confirmation."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.cedar@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "The best phone number to reach me is 860-555-0508."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Lena's full name and date of birth to get her trial booked. What's her full name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Her full name is Lena Cedar, and she was born on August 12, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome!\nI have a few times available for Lena's trial class this week:\n\nTuesday 7/7 at 4:45 PM\nThursday 7/9 at 4:45 PM\nSaturday 7/11 at 10:00 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday 7/7 at 4:45 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Lena is all set for Tuesday 7/7 at 4:45 PM. You'll get a confirmation email shortly.\nJust bring her in comfortable clothes she can move in. We're at 395 County Road 39A. See you then!"
+  }
+]

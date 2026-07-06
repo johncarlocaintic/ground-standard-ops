@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Sam is 10 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have Kids BJJ classes that run Monday through Thursday for ages 4-13. Sam would be a great fit. Is this something you'd like to get him started with a free trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I'd love to get him started with a free trial! What time do the classes run?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! For new students, Kids BJJ runs Monday through Thursday from 5:00pm to 5:30pm. Sam can start with any of those days. Would you like to get him booked for a trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, let's book him for a trial class on Monday at 5:00pm."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Prairie."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial confirmation to?"
+  },
+  {
+    "sender": "lead",
+    "message": "My email is tester.prairie@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And is this the best number to reach you at if we need to?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, my phone number is 860-555-0408."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Last thing I need is Sam's full name and date of birth to get him registered for the trial."
+  },
+  {
+    "sender": "lead",
+    "message": "Sam Prairie, born September 5, 2016."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Sam is all set for his free trial class today, Monday at 5:00pm. We're located at 4808 E Sprague Ave suite 205. Just have him wear comfortable athletic clothes. See you soon!"
+  }
+]

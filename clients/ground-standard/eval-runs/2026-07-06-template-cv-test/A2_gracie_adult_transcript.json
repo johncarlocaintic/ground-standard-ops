@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! I want to try a jiu jitsu class for myself. How do I start?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome. I'm Emma from Gracie Farmington Valley. We'd love to have you try a class! We offer a free trial for new students, no commitment required. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Hi Emma! I'm Tester Quilo-0jlt7. I'm excited to give it a try!"
+  },
+  {
+    "sender": "bot",
+    "message": "Nice to meet you, Tester! So just to confirm, this is for you, right? You'll be the one taking the class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that's right! I'll be the one taking the class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Can I grab your email address? It'll help us send you the class details and confirmation."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.a.0jlt7@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0143."
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! Last thing - what's your date of birth? Just helps us keep our records straight."
+  },
+  {
+    "sender": "lead",
+    "message": "My birthday is March 15, 1997."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Let's get you scheduled for your free trial. I have a few times available this week for Adult Fundamentals Brazilian Jiu-Jitsu. How about Tuesday 7/7 at 7:30 PM, Wednesday 7/8 at 6:30 PM, or Thursday 7/9 at 7:30 PM?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let’s go with Tuesday 7/7 at 7:30 PM! I'm really looking forward to it!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! You're all set for Tuesday, July 7th at 7:30 PM for your free trial class. We'll send a confirmation to your email. Just wear comfortable workout clothes and we'll take care of the rest. See you then!"
+  }
+]

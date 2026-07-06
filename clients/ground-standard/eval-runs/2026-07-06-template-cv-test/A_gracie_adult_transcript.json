@@ -1,0 +1,74 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! I want to try a jiu jitsu class for myself. How do I start?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! That's awesome. We'd love to have you try a class. I'm Emma from the front desk. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Hi Emma! I'm Tester Quila-vu66e. Excited to get started with BJJ!"
+  },
+  {
+    "sender": "bot",
+    "message": "Great to meet you, Tester! We offer a free trial class for new students, no experience needed. You'd start with our Fundamentals program. Want to get that scheduled?"
+  },
+  {
+    "sender": "lead",
+    "message": "Absolutely! That sounds perfect. When can I schedule my trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a couple quick details to get you booked. What's your email address?"
+  },
+  {
+    "sender": "lead",
+    "message": "My email is tester.vu66e@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0165."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Last thing - what's your date of birth? This just helps us keep accurate records."
+  },
+  {
+    "sender": "lead",
+    "message": "My date of birth is March 15, 1997."
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! I have your info. Let me check our schedule and I'll get back to you with some available times for your trial class. Should just be a moment!"
+  },
+  {
+    "sender": "lead",
+    "message": "Sounds great! I'll be here."
+  },
+  {
+    "sender": "bot",
+    "message": "Actually, I'm having a little trouble pulling up the schedule right now. Let me have one of the team members reach out to you directly at 860-555-0165 to get you scheduled. They'll be in touch soon to set up your trial class!"
+  },
+  {
+    "sender": "lead",
+    "message": "That works for me! I look forward to hearing from them. Thanks for your help!"
+  },
+  {
+    "sender": "bot",
+    "message": "You're welcome! We're excited to have you try out Brazilian Jiu-Jitsu with us. Talk soon!"
+  },
+  {
+    "sender": "lead",
+    "message": "Thank you! I'm excited too. Talk soon!"
+  },
+  {
+    "sender": "bot",
+    "message": "See you soon!"
+  }
+]

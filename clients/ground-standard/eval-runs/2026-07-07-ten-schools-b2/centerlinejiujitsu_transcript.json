@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Finn is 6 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have Kids Brazilian Jiu-Jitsu classes that are perfect for 6-year-olds. They're grouped by age with instruction designed just for them. Would you like to book a free trial class for Finn?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, please! What time slots do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Great! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm Tester Willow."
+  },
+  {
+    "sender": "bot",
+    "message": "Nice to meet you, Tester! Can I grab your email address? It helps us send you the trial details and class info."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! It's tester.willow@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0505."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Finn's full name and date of birth to get him set up for the trial."
+  },
+  {
+    "sender": "lead",
+    "message": "Finn Willow, and his birthday is May 25, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Here are some available times for Finn's free trial:\n\nTuesday 7/7 at 5:15 PM\nWednesday 7/8 at 4:30 PM\nThursday 7/9 at 5:15 PM\nSaturday 7/11 at 9:15 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday 7/7 at 5:15 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Finn is all set for his free trial on Tuesday, July 7th at 5:15 PM. We'll send you a confirmation email with all the details. Just bring Finn in comfortable clothes and we'll take care of the rest. See you then!"
+  }
+]

@@ -1,0 +1,191 @@
+[
+  {
+    "slug": "ballantynemartialarts",
+    "school": "Ballantyne Martial Arts",
+    "parent": "Tester Cypress",
+    "kid": "Ellie (6)",
+    "leadId": "lead_test_ALNM377UVD6FQGI2",
+    "booked": "Ellie Cypress - Kids BJJ Trial @ Tuesday 2026-07-07 05:30 PM",
+    "bookedCal": "m0HIutky2Bq4F78Ts7S5",
+    "calName": "Kids 6-8 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "FMjCkrkLI2AjSLPbKBU9",
+      "appt": "Ellie Cypress - Kids BJJ Trial | 2026-07-07 17:30:00 | confirmed | cal:m0HIutky2Bq4F78Ts7S5",
+      "youthBday": "2020-01-15",
+      "note": "Child Name: Ellie Cypress | Child Birthday: January 15, 2020",
+      "calName": "Kids 6-8 BJJ"
+    }
+  },
+  {
+    "slug": "masondixon",
+    "school": "Mason Dixon Jiu-Jitsu",
+    "parent": "Tester Granite",
+    "kid": "Noah (9)",
+    "leadId": "lead_test_DSFV0OVMGR3J7LBS",
+    "booked": "Noah Granite - Free Trial Class @ Tuesday 2026-07-07 06:00 PM",
+    "bookedCal": "Jjf0FN9wdLDYPD6uaG9v",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "f7NNYyBVKGbEpDEA1w5E",
+      "appt": "Noah Granite - Free Trial Class | 2026-07-07 18:00:00 | confirmed | cal:Jjf0FN9wdLDYPD6uaG9v",
+      "youthBday": "2017-02-20",
+      "note": "Child Name: Noah Granite | Child Birthday: February 20, 2017",
+      "calName": "Kids 8-13 Martial Arts"
+    }
+  },
+  {
+    "slug": "10p-miami",
+    "school": "10th Planet Miami",
+    "parent": "Tester Harbor",
+    "kid": "Mia (10)",
+    "leadId": "lead_test_KH1NEUWL3RG1W9AO",
+    "booked": "Mia Harbor - Free Trial Class @ Monday 2026-07-06 06:00 PM",
+    "bookedCal": "7l3EvYO9s9f4LtebWksV",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "WmFHYFrpSfknmZwpkdx2",
+      "appt": "Mia Harbor - Free Trial Class | 2026-07-06 18:00:00 | confirmed | cal:7l3EvYO9s9f4LtebWksV",
+      "youthBday": "2016-03-11",
+      "note": "Child Name: Mia Harbor | Child Birthday: March 11, 2016",
+      "calName": "Kids 7-13 BJJ"
+    }
+  },
+  {
+    "slug": "academyjjscottsdale",
+    "school": "Academy of Jiu-Jitsu Scottsdale",
+    "parent": "Tester Sierra",
+    "kid": "Leo (6)",
+    "leadId": "lead_test_BS5LTJLXDK1R385G",
+    "booked": "Leo Sierra - Little Tigers BJJ Free Trial @ Monday 2026-07-13 04:00 PM",
+    "bookedCal": "XkcxzmFl0EGXb3nKLKjN",
+    "calName": null,
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "aELI5gWmmVY8YubrCvov",
+      "appt": "Leo Sierra - Little Tigers BJJ Free Trial | 2026-07-13 16:00:00 | confirmed | cal:XkcxzmFl0EGXb3nKLKjN",
+      "youthBday": "2026-11-05",
+      "note": "Child Name: Leo Sierra | Child Birthday: May 9, 2020",
+      "calName": "Kids 5-7 BJJ"
+    }
+  },
+  {
+    "slug": "killerb",
+    "school": "Killer B Combat Sports Academy",
+    "parent": "Tester Cobalt",
+    "kid": "Ava (8)",
+    "leadId": "lead_test_U3FVCNE3AHUUV8I3",
+    "booked": "Ava Cobalt - Free Trial Class @ Tuesday 2026-07-07 05:00 PM",
+    "bookedCal": "p3Kq0qmqfAjIIYkxRYqm",
+    "calName": "Kids MMA & Fitness",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "5actJ8YucamdwSnuJZ60",
+      "appt": null,
+      "youthBday": "2018-06-14",
+      "note": "Child Name: Ava Cobalt | Child Birthday: June 14, 2018"
+    }
+  },
+  {
+    "slug": "montgomerybjj",
+    "school": "Montgomery Brazilian Jiu-Jitsu",
+    "parent": "Tester Aspen",
+    "kid": "Eli (5)",
+    "leadId": "lead_test_EUA4HXONQHL7S0UA",
+    "booked": "Eli Aspen - Free Trial Class @ Thursday 2026-07-09 05:00 PM",
+    "bookedCal": "5A25XDYECvtokbzfeaMT",
+    "calName": "Kids Brazilian Jiu-Jitsu (3-6)",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "LlAEbXBQ2SpcuZ6iyYm1",
+      "appt": "Eli Aspen - Free Trial Class | 2026-07-09 17:00:00 | confirmed | cal:5A25XDYECvtokbzfeaMT",
+      "youthBday": "2021-04-22",
+      "note": "Child Name: Eli Aspen | Child Birthday: April 22, 2021",
+      "calName": "Kids Brazilian Jiu-Jitsu (3-6)"
+    }
+  },
+  {
+    "slug": "invertedgear",
+    "school": "Inverted Gear Academy",
+    "parent": "Tester Onyx",
+    "kid": "Zoe (9)",
+    "leadId": "lead_test_WO9CA8IUX0XA0WOT",
+    "booked": "Zoe Onyx - Free Trial @ Wednesday 2026-07-08 05:00 PM",
+    "bookedCal": "B3K3EDv4UGNVuN30kHLD",
+    "calName": "Juniors 7-12 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "Rfh6sGAGSP1OAhpwsa3Z",
+      "appt": "Zoe Onyx - Free Trial | 2026-07-08 17:00:00 | confirmed | cal:B3K3EDv4UGNVuN30kHLD",
+      "youthBday": "2017-08-30",
+      "note": "Child Name: Zoe Onyx | Child Birthday: August 30, 2017",
+      "calName": "Juniors 7-12 BJJ"
+    }
+  },
+  {
+    "slug": "gritjiujitsu",
+    "school": "Grit Jiu-Jitsu",
+    "parent": "Tester Prairie",
+    "kid": "Sam (10)",
+    "leadId": "lead_test_34T3URIS25XYTJQ5",
+    "booked": "Sam Prairie - Kids BJJ Trial @ Monday 2026-07-06 05:00 PM",
+    "bookedCal": "D5HRfFd5QtI3G2D7Ug4S",
+    "calName": "Kids 4-13 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "bqmTVJ617tpz8sEpJhSg",
+      "appt": "Sam Prairie - Kids BJJ Trial | 2026-07-06 17:00:00 | confirmed | cal:D5HRfFd5QtI3G2D7Ug4S",
+      "youthBday": "2016-09-05",
+      "note": "Child Name: Sam Prairie | Child Birthday: September 5, 2016",
+      "calName": "Kids 4-13 BJJ"
+    }
+  },
+  {
+    "slug": "hammersp",
+    "school": "Hammer Sports & Performance",
+    "parent": "Tester Falcon",
+    "kid": "Ivy (9)",
+    "leadId": "lead_test_LA3OL140MWZPRFJP",
+    "booked": "Ivy Falcon - Free Trial Class @ Tuesday 2026-07-07 05:15 PM",
+    "bookedCal": "42uFk8DjUKX49nbN6egp",
+    "calName": "Youth Martial Arts",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "rdvf9TgQqFG2aD1RoreY",
+      "appt": "Ivy Falcon - Free Trial Class | 2026-07-07 17:15:00 | confirmed | cal:42uFk8DjUKX49nbN6egp",
+      "youthBday": "2017-10-12",
+      "note": "Child Name: Ivy Falcon | Child Birthday: October 12, 2017",
+      "calName": "Youth Martial Arts"
+    }
+  },
+  {
+    "slug": "breathejiujitsu",
+    "school": "Breathe Jiu Jitsu",
+    "parent": "Tester Coral",
+    "kid": "Nina (5)",
+    "leadId": "lead_test_RAR3EBPGVBXC4HQQ",
+    "booked": "Nina Coral - Free Trial Class @ Monday 2026-07-06 04:15 PM",
+    "bookedCal": "aOOG8H6Zdnfks33KzKbY",
+    "calName": "Kids 4-6 BJJ",
+    "verdict": "BOOKED-OK",
+    "notes": [],
+    "ghl": {
+      "contact": "VFdPWZeoHhqX0ogpBKmq",
+      "appt": "Nina Coral - Free Trial Class | 2026-07-06 16:15:00 | confirmed | cal:aOOG8H6Zdnfks33KzKbY",
+      "youthBday": "2021-06-18",
+      "note": "Child Name: Nina Coral | Child Birthday: June 18, 2021",
+      "calName": "Kids 4-6 BJJ"
+    }
+  }
+]

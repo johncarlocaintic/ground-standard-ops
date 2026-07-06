@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Theo is 9 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have Kids Gi Brazilian Jiu-Jitsu for ages 5-13, so Theo would be a perfect fit. It's a great program for building confidence and discipline. Is he interested in trying a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, a free trial class sounds great! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Quartz."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's your email address?"
+  },
+  {
+    "sender": "lead",
+    "message": "My email is tester.quartz@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0503."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Now I just need Theo's full name and date of birth to get him registered for the trial."
+  },
+  {
+    "sender": "lead",
+    "message": "Theo's full name is Theo Quartz, and his birthday is March 3, 2017."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I have a few times available this week for Theo's free trial:\n\nWednesday 7/8 at 5:30 PM\nThursday 7/9 at 5:30 PM\nFriday 7/10 at 5:30 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday 7/8 at 5:30 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Theo is all set for Wednesday, July 8th at 5:30 PM. We're at 10203 Market St Unit E. Just come ready to train and have fun! See you then!"
+  }
+]

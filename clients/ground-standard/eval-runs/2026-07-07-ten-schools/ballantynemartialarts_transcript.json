@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Ellie is 6 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do! We have a Kids 6-8 Brazilian Jiu-Jitsu program that would be perfect for Ellie. She can try it out with a free trial class, no commitment required. Would you like to get her signed up for a trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to sign her up for a trial class! What time do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Great! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Cypress."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect, thanks Tester! And what's the best email to send the trial class details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "It's tester.cypress@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And can I grab your phone number? Just so we can reach you if anything comes up with the class."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My phone number is 860-555-0401."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Last thing - can I get Ellie's full name and date of birth? That helps us get her set up in the system."
+  },
+  {
+    "sender": "lead",
+    "message": "Of course! Her name is Ellie Cypress, and her birthday is January 15, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! I have Ellie all set. Here are some available times for her Kids Brazilian Jiu-Jitsu trial class:\n\nTuesday 7/7 at 5:30 PM\nThursday 7/9 at 5:30 PM\nSaturday 7/11 at 11:00 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday, July 7 at 5:30 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Ellie is all booked for Tuesday, July 7 at 5:30 PM for her free trial class. We'll send a confirmation to tester.cypress@gmail.com. Just have her wear comfortable clothes she can move in. See you then!"
+  }
+]

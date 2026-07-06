@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my little one Rex is 5 and wants to try martial arts. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do have kids programs. We offer Youth MMA and Kids Brazilian Jiu-Jitsu depending on which location you're interested in.\nIs Rex looking to try a specific style, or are you open to seeing what's the best fit for him?"
+  },
+  {
+    "sender": "lead",
+    "message": "We're open to seeing what's the best fit for him! What class times do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Great! For a 5-year-old, Youth MMA would be perfect. It's offered Monday, Wednesday, and Friday from 4:30 PM to 5:15 PM.\nThe best way to start is with a free trial class so Rex can try it out and see if he loves it. Would one of those days work for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Monday at 4:30 PM works for us! How do we sign up for the free trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Indigo."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial class details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.indigo@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0509."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Rex's full name and date of birth to complete the booking."
+  },
+  {
+    "sender": "lead",
+    "message": "Rex's full name is Rex Indigo, and he was born on September 2, 2020."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have a few options for Rex's free trial class. The next Monday available would be July 14th at 4:30 PM, or I can get you in sooner on Wednesday July 8th or Friday July 10th at 4:30 PM. Which works best?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, July 8th at 4:30 PM!"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Rex is all set for his free trial class on Wednesday, July 8th at 4:30 PM. We'll send a confirmation to tester.indigo@gmail.com. Just bring Rex in comfortable clothes and we'll take care of the rest. See you both then!"
+  }
+]

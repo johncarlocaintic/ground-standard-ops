@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Ruby is 8 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, we do have Kids Brazilian Jiu-Jitsu for 8-year-olds. Ruby would be a great fit! We offer a free trial class so she can come check it out with no commitment. Would you like to get that scheduled?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! What time do you have available for the trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Birch."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial class details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.birch@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0502."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! And what's Ruby's full name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Ruby's full name is Ruby Birch."
+  },
+  {
+    "sender": "bot",
+    "message": "Thanks! And what's Ruby's date of birth?"
+  },
+  {
+    "sender": "lead",
+    "message": "Ruby's date of birth is February 14, 2018."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Ruby is 8, so she's all set for our Kids Brazilian Jiu-Jitsu program. Here are some times available for her free trial class:\n\n- Today Monday 7/6 at 5:30 PM\n- Wednesday 7/8 at 5:30 PM\n- Friday 7/10 at 5:30 PM\n- Saturday 7/11 at 9:30 AM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with today, Monday 7/6 at 5:30 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Ruby is all booked for today, Monday 7/6 at 5:30 PM. You'll get a confirmation email at tester.birch@gmail.com with all the details.\nJust have Ruby wear comfortable clothes she can move in. See you soon!"
+  }
+]

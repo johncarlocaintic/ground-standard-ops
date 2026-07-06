@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Mia is 10 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have a Kids Jiu-Jitsu class for ages 7-13 that would be perfect for Mia. It's no-gi Brazilian Jiu-Jitsu and great for kids her age. Would you like to book a free trial class for her?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, I’d love to book a free trial class for Mia! What time slots do you have available?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Harbor."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.harbor@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "The best phone number is 860-555-0403."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Mia's full name and date of birth to get her trial class set up."
+  },
+  {
+    "sender": "lead",
+    "message": "Mia Harbor, and her birthday is March 11, 2016."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Mia is all set for the Kids 7-13 class.\nHere are some available times for her free trial:\n\n- Today Monday 7/6 at 6:00 PM\n- Tuesday 7/7 at 6:00 PM\n- Wednesday 7/8 at 6:00 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with today, Monday 7/6 at 6:00 PM. Thanks!"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Mia is booked for her free trial today, Monday 7/6 at 6:00 PM. We'll send the details to tester.harbor@gmail.com. Just bring comfortable workout clothes and water. See you soon!"
+  }
+]

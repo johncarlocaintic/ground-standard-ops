@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Noah is 9 and wants to try martial arts. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! Noah would be a great fit for our Kids Martial Arts program for ages 8-13. It's a fun mix of Jiu-Jitsu and striking, and the sessions are 1 hour. We'd love to have him try a free trial class to see if he likes it. Would you like to get that set up?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! When can we schedule the free trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm Tester Granite."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial class details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.granite@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0402."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Noah's full name and date of birth to get him rrgistered for the trial.\n*registered"
+  },
+  {
+    "sender": "lead",
+    "message": "Noah Granite, and his birthday is February 20, 2017."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Noah is all set for the Kids 8-13 program. I have a couple of spots available this week for his free trial:\n\nTuesday 7/7 at 6:00 PM\nThursday 7/9 at 5:30 PM\n\nWhich works better for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Tuesday, July 7 at 6:00 PM. Thank you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Awesome! Noah is all booked for Tuesday, July 7 at 6:00 PM. We'li send the details to tester.granite@gmail.com. Just have him wear comfortable clothes he can move in. See you both then!\n*We'll"
+  }
+]

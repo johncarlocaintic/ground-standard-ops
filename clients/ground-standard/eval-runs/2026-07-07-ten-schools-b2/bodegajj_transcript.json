@@ -1,0 +1,66 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Nora is 10 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! We have Youth No-Gi Brazilian Jiu-Jitsu for kids ages 7–13, so Nora would be a great fit. It's structured just for her age group in a really supportive environment. Would you like to get her signed up for a free trial class?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! When is the next available trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! For Nora's age group (9–12), classes are Monday and Wednesday from 6:00–6:45 PM, plus Saturday at 10:00 AM. Which day works best for her first trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Monday at 6:00 PM for her first trial class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Ember."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's the best email to send the trial confirmation to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the confirmation to tester.ember@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And is this the best number to reach you at if we need to?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, you can reach me at 860-555-0504."
+  },
+  {
+    "sender": "bot",
+    "message": "Great! Now I just need Nora's full name and date of birth to complete the booking."
+  },
+  {
+    "sender": "lead",
+    "message": "Nora's full name is Nora Ember, and her birthday is April 18, 2016."
+  },
+  {
+    "sender": "bot",
+    "message": "I see the next Monday class at 6:00 PM is actually today, July 6th, or we have Wednesday, July 8th at 6:00 PM available. Which would work better for Nora's trial?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, July 8th at 6:00 PM for Nora's trial class."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Nora is all set for Wednesday, July 8th at 6:00 PM. You'll get a confirmation email at tester.ember@gmail.com. Just have her wear comfortable athletic clothes. No experience or equipment needed. See you both then!"
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi! I want to try a jiu jitsu class for myself. Can I book a trial?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Absolutely, we'd love to have you try a class. I'm Emma from Gracie Farmington Valley. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "Hi Emma! I'm Tester Redwood. Nice to meet you!"
+  },
+  {
+    "sender": "bot",
+    "message": "Nice to meet you too, Tester! To get you set up for a free trial, can I grab your email?"
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.redwood@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can reach me at 860-555-0301."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Last thing - what's your date of birth? This helps us match you with the right class."
+  },
+  {
+    "sender": "lead",
+    "message": "My birthday is June 2, 1995."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! You'll be joining our Adult Fundamentals Brazilian Jiu-Jitsu class.\nLet me check some available times for your free trial. What days work best for you this week?"
+  },
+  {
+    "sender": "lead",
+    "message": "I'm flexible! I can do any day this week."
+  },
+  {
+    "sender": "bot",
+    "message": "Great! Here are some open slots this week:\n\nTuesday 7/7 at 7:30 PM\nWednesday 7/8 at 6:30 PM\nThursday 7/9 at 7:30 PM\nSaturday 7/11 at 10:30 AM\n\nWhich time works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let’s go with Tuesday 7/7 at 7:30 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! You're all set for Tuesday, July 7th at 7:30 PM for your free Adult Fundamentals Brazilian Jiu-Jitsu trial class. We're located at 15 Cheryl Dr d in Canton. Just wear comfortable workout clothes and come ready to have fun! See you then!"
+  }
+]

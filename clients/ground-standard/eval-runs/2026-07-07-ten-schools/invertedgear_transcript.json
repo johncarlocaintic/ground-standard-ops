@@ -1,0 +1,58 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my kid Zoe is 9 and wants to try jiu jitsu. Do you have classes for that age?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hey! Yes, we do! Zoe would be a great fit for our Juniors Brazilian Jiu-Jitsu class, which is for kids ages 7-12. We'd love to have her try a free trial class to see how she likes it. Would you like to get that set up?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, that sounds great! When's the next available trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Onyx."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! What's the best email to send the trial details to?"
+  },
+  {
+    "sender": "lead",
+    "message": "You can send the details to tester.onyx@gmail.com."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! And what's the best phone number to reach you at?"
+  },
+  {
+    "sender": "lead",
+    "message": "My phone number is 860-555-0407."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it! Now I just need Zoe's full name and date of birth to get her trial booked."
+  },
+  {
+    "sender": "lead",
+    "message": "Zoe's full name is Zoe Onyx, and her birthday is August 30, 2017."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I have some great options for Zoe's trial class this week:\n\nWednesday 7/8 at 5:00 PM\nThursday 7/9 at 5:00 PM\nFriday 7/10 at 5:00 PM\n\nWhich works best for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, 7/8 at 5:00 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Zoe is all set for her free trial class on Wednesday, July 8th at 5:00 PM. We'll send the detaild to tester.onyx@gmail.com. Just have her wear comfortable athletic clothes. See you then!\n*details"
+  }
+]
