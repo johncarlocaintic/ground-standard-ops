@@ -1,6 +1,6 @@
 # GS Universal Bot — Launch Status (for Mark)
 
-**Updated 2026-07-07.** Live test results per school. Bot-side AND GHL-verified. Test method: one real kid-booking conversation per school through the template bot (mimicking that school's source), then the appointment, Youth Birthday field, and contact note verified in that school's GHL via API.
+**Updated 2026-07-07 (batch 2 verified).** Live test results per school. Bot-side AND GHL-verified. Test method: one real kid-booking conversation per school through the template bot (mimicking that school's source), then the appointment, Youth Birthday field, and contact note verified in that school's GHL via API.
 
 ## TEMPLATE: converted + proven
 The master template (`Martial Arts Studio - Template `) now reads all four custom values (`academy_info`, `academy_info_calendar_adult`, `_youth`, `_multiple`) with **zero hardcoded calendar IDs**. Verified live: values resolve per source, the LLM tolerates loose formatting, **only the calendar IDs must be exact**. One cosmetic leftover: old Gracie business text still sits in the business-info section under the academy_info tag; delete on next template touch.
@@ -25,8 +25,26 @@ All 10 above + Gracie: child DOB saved on the Youth Birthday field, child name+D
 - **Killer B Combat Sports Academy**: ROOT CAUSE FOUND (2026-07-07). CloseBot offered slots Jul 6-10 5 PM, but GHL's real free-slots start Jul 13 — the "Kids MMA & Fitness" round-robin calendar has ONE assigned member whose availability blocks week 1, GHL honors it, CloseBot's check_availability does not, and book_appointment returned "Success" on a write GHL never persisted. Fix either side: (a) in Killer B's GHL, fix the assigned member's availability on that calendar (or add members) so offered slots are real, then RE-TEST and confirm the appointment lands; or (b) CloseBot support fix (ticket being prepared). Until a re-test passes with a GHL-confirmed appointment, do not launch this school.
 - **Fleet lesson:** this failure only appears where a staff member's availability diverges from the calendar's open hours. The per-school kid-booking test catches it — never skip the GHL-side appointment check when testing a school.
 
-## IN TEST NOW (batch 2, results follow)
-Academy Eden Prairie (Tester Slate), All In JJ (Birch), Artistry BJJ (Quartz), Bodega JJ (Ember), Centerline (Willow), Champion MA (Flint), Gracie JJ San Jose (Marina), Hamptons South (Cedar), Ray Longo (Indigo), Roberts Family MMA (Juniper).
+
+## READY TO LAUNCH — batch 2, tested + GHL-verified (10 more; launch list now 21)
+| School | Test contact (find in GHL) | Booked onto |
+|---|---|---|
+| Academy Eden Prairie | Tester Slate (Owen 6) | Kids 4-7 BJJ |
+| All In Jiu-Jitsu | Tester Birch (Ruby 8) | Kids 5-12 BJJ |
+| Artistry BJJ | Tester Quartz (Theo 9) | Kids 5-13 BJJ |
+| Bodega Jiu-Jitsu | Tester Ember (Nora 10) | Kids 9-12 BJJ * |
+| Centerline Jiu-Jitsu | Tester Willow (Finn 6) | Kids 5-7 BJJ |
+| Champion Martial Arts | Tester Flint (Iris 9) | Youth Jiu-Jitsu |
+| Gracie JJ East San Jose | Tester Marina (Jude 9) | Kids 7-13 BJJ |
+| Hamptons JJ South | Tester Cedar (Lena 5) | Kids 4-7 BJJ |
+| Ray Longo's MMA | Tester Indigo (Rex 5) | Youth 4-6 Martial Arts ** |
+| Roberts Family MMA | Tester Juniper (Skye 7) | Kids 5-10 BJJ |
+
+All 10: appointment + Youth Birthday field + child-name note verified in GHL (Ray Longo DOB exception below).
+* Bodega: booked the 9-12 band calendar; the old KB note said Kids 6-14 is the sole trial calendar (superset rule). Age-appropriate either way; confirm intent with Bobby.
+** Ray Longo: booking + calendar correct, but the DOB was saved as the raw phrase "September 2, 2020" and got parsed to 2020-02-20 in the field (the note has the correct date). TEMPLATE TWEAK RECOMMENDED: the child-info section should say "convert date of birth to MM/DD/YYYY before saving" like the adult path does. One edit fixes all schools; fix the one field manually.
+
+## BATCH 2 STATUS: complete
 
 ## FLEET-WIDE, PENDING BOBBY
 - **Youth Name field shows literal "Update"** on every tested school. A GHL workflow archives child name+bday to contact NOTES then stomps the field. Names are NOT lost (notes carry them). Bobby to confirm intentional vs the one workflow action to fix.
