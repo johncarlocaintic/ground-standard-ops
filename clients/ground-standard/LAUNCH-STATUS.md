@@ -22,7 +22,8 @@ The master template (`Martial Arts Studio - Template `) now reads all four custo
 All 10 above + Gracie: child DOB saved on the Youth Birthday field, child name+DOB archived in contact notes. Conversation logs are linkable as `app.closebot.com/conversations?leadId=<id>` (test chats never show in the Conversations list). Lead IDs are in `eval-runs/2026-07-07-ten-schools/_results.json`.
 
 ## HOLD — do not launch yet (1)
-- **Killer B Combat Sports Academy**: booking tool reported success but the appointment persisted on NO calendar (checked all 13). Contact/fields/note landed fine. Same silent-failure family as the May phone-field bug. Under investigation; re-test must pass before launch.
+- **Killer B Combat Sports Academy**: ROOT CAUSE FOUND (2026-07-07). CloseBot offered slots Jul 6-10 5 PM, but GHL's real free-slots start Jul 13 — the "Kids MMA & Fitness" round-robin calendar has ONE assigned member whose availability blocks week 1, GHL honors it, CloseBot's check_availability does not, and book_appointment returned "Success" on a write GHL never persisted. Fix either side: (a) in Killer B's GHL, fix the assigned member's availability on that calendar (or add members) so offered slots are real, then RE-TEST and confirm the appointment lands; or (b) CloseBot support fix (ticket being prepared). Until a re-test passes with a GHL-confirmed appointment, do not launch this school.
+- **Fleet lesson:** this failure only appears where a staff member's availability diverges from the calendar's open hours. The per-school kid-booking test catches it — never skip the GHL-side appointment check when testing a school.
 
 ## IN TEST NOW (batch 2, results follow)
 Academy Eden Prairie (Tester Slate), All In JJ (Birch), Artistry BJJ (Quartz), Bodega JJ (Ember), Centerline (Willow), Champion MA (Flint), Gracie JJ San Jose (Marina), Hamptons South (Cedar), Ray Longo (Indigo), Roberts Family MMA (Juniper).
