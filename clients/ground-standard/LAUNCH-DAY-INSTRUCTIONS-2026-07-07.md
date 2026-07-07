@@ -82,6 +82,10 @@ Also note: **Simple Man is already live** (attached earlier today) but its youth
 1. Search "**Tester**" in the school's GHL contacts. Cancel/delete their trial appointments (dated Jul 6-13) and delete the test contacts. Gracie also has "jc test" (Jul 9, x2) and older Quilo/Vomer bookings, plus today's regression pair: **Tester Sorrel** with appointment "Milo - Kids 6-7 BJJ Trial" on Jul 8 5 PM. Kill those too.
 2. **One manual field fix at Ray Longo's**: contact **tester indigo**, custom field **Youth Birthday**, change `2020-02-20` to `2020-09-02`. My token there cannot write contact fields, so this has to be done in the UI. (Then delete the contact with the rest of the testers; the fix only matters if Bobby wants the contact kept as a reference.)
 
+## Conversation audit (between batches)
+
+Eleven live conversations are flagged for manual review today, including two at Killer B that could be a real customer hitting the silent-booking defect. Full list with per-conversation context, the checking method, and the logging protocol (findings file + screenshots via Claude Code) is in **[CONVERSATION-AUDIT-2026-07-07.md](CONVERSATION-AUDIT-2026-07-07.md)**. Items 1-3 there outrank everything except the Batch C eyeball.
+
 ## What to report back (end of your run)
 
 Send JC one message with:
@@ -89,6 +93,7 @@ Send JC one message with:
 2. Royal Queens + SOMA eyeball result (appointment found yes/no, screenshot if no).
 3. Any school where the CloseBot UI errored or the source was missing from the picker.
 4. Which schools you finished Tester cleanup on.
+5. Conversation audit tally: N reviewed, X clean, Y issues, Z for Bobby (findings file + screenshots pushed).
 
 JC's side is monitoring all schools continuously (bookings + live conversations, 10-minute cycle) and will spot-test a few swapped schools tonight. You do not need to run booking tests.
 
