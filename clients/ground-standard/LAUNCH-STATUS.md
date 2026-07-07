@@ -1,9 +1,20 @@
 # GS Universal Bot — Launch Status (for Mark)
 
-**Updated 2026-07-07 (all 3 batches complete — 45 schools tested).** Live test results per school. Bot-side AND GHL-verified. Test method: one real kid-booking conversation per school through the template bot (mimicking that school's source), then the appointment, Youth Birthday field, and contact note verified in that school's GHL via API.
+**Updated 2026-07-07 afternoon: LAUNCH DAY.** Bobby's word this morning: keep launching, all schools up today, report anything that breaks right away.
 
-## TEMPLATE: converted + proven
-The master template (`Martial Arts Studio - Template `) now reads all four custom values (`academy_info`, `academy_info_calendar_adult`, `_youth`, `_multiple`) with **zero hardcoded calendar IDs**. Verified live: values resolve per source, the LLM tolerates loose formatting, **only the calendar IDs must be exact**. One cosmetic leftover: old Gracie business text still sits in the business-info section under the academy_info tag; delete on next template touch.
+## LAUNCH DAY STATE (as of this update)
+**On the universal template now (12):** Gracie Farmington Valley, Montgomery BJJ, All In Jiu-Jitsu, Bodega, OM BJJ, Paragon Simi Valley, Ray Longo's MMA, Roberts Family MMA, Signature, Simple Man, Sugoi, Universal MMA. Every one verified server-side: template enabled, `concierge` trigger, full exclude set (booked/member/alumni/spam/staff/service/showed/alert/aggressive/`ai off`), old bot detached. No school has two bots enabled.
+
+**Still on their OLD per-gym bot (18):** Ballantyne, Mason Dixon, 10th Planet Miami, Scottsdale, Inverted Gear, Grit, Hammer, Breathe, Killer B (hold), Eden Prairie, Artistry, Centerline, Champion, Gracie East San Jose, Hamptons South, Hamptons West, Royal Queens, SOMA, plus Vacaville (migrates last). These need the template attached today.
+
+**Your part per school: just attach the template to the source and enable it.** I sweep behind you every few minutes and normalize the filter (trigger + excludes) and detach the old bot automatically, same as the 12 above. You do NOT need to build the tag filter by hand or detach anything.
+
+**Holds (do NOT attach):** Killer B, Granite Bay, Infinity BJJ. Simple Man got attached anyway; leaving it, adult bookings work, but its youth calendar still has zero availability so youth leads will stall until the gym opens slots.
+
+One more manual fix while you're in Ray Longo's GHL: contact **tester indigo**, field Youth Birthday, change 2020-02-20 to **2020-09-02** (my API token there can't write contacts).
+
+## TEMPLATE: converted + proven (now v0.0.21)
+The master template (`Martial Arts Studio - Template `) reads all four custom values (`academy_info`, `academy_info_calendar_adult`, `_youth`, `_multiple`) with **zero hardcoded calendar IDs**. Verified live: values resolve per source, the LLM tolerates loose formatting, **only the calendar IDs must be exact**. Published v0.0.21 today: the leftover Gracie business text is deleted, and both child paths (Child Only + Multiple) now convert the child's date of birth to YYYY-MM-DD before saving (the Ray Longo DOB fix, fleet-wide). No action needed from you; every attached school picks this up automatically.
 
 ## READY TO LAUNCH — tested + GHL-verified (11)
 | School | Test contact (find in GHL) | Booked onto |
@@ -42,7 +53,7 @@ All 10 above + Gracie: child DOB saved on the Youth Birthday field, child name+D
 
 All 10: appointment + Youth Birthday field + child-name note verified in GHL (Ray Longo DOB exception below).
 * Bodega: booked the 9-12 band calendar; the old KB note said Kids 6-14 is the sole trial calendar (superset rule). Age-appropriate either way; confirm intent with Bobby.
-** Ray Longo: booking + calendar correct, but the DOB was saved as the raw phrase "September 2, 2020" and got parsed to 2020-02-20 in the field (the note has the correct date). TEMPLATE TWEAK RECOMMENDED: the child-info section should say "convert date of birth to MM/DD/YYYY before saving" like the adult path does. One edit fixes all schools; fix the one field manually.
+** Ray Longo: booking + calendar correct, but the DOB was saved as the raw phrase "September 2, 2020" and got parsed to 2020-02-20 in the field (the note has the correct date). FIXED in template v0.0.21 (2026-07-07): both child paths now convert DOB to YYYY-MM-DD before saving. The one wrong field still needs the manual fix noted at the top.
 
 ## BATCH 2 STATUS: complete
 
@@ -70,6 +81,6 @@ Search "**Tester**" in each tested school's GHL and cancel/delete the trial appo
 
 ## PER-SCHOOL LAUNCH CHECKLIST (repeat for every remaining school)
 1. Custom values pasted from the packs doc (`GS-Custom-Values-Packs.docx` / `custom-values/<gym>.md`), calendar IDs exact.
-2. One kid-booking test (age inside a real band) → confirm appointment lands on the right calendar in GHL.
-3. Attach template to the source with the trigger tag + `ai off` exclude; detach any old bot.
-4. Log the school + test contact name in the tracker; cancel the test appointment.
+2. One kid-booking test (age inside a real band) → confirm appointment lands on the right calendar in GHL. (Already done for all 45 tested schools; skip unless the values changed.)
+3. Attach the template to the source and enable it. That's it: the sweep on my side adds the trigger + exclude filter and detaches the old bot within minutes. If you want to double-check, the filter should end up as require `concierge` plus 10 excludes.
+4. Log the school in the tracker; cancel any leftover Tester appointment.
