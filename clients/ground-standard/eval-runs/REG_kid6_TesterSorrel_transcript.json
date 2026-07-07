@@ -1,0 +1,50 @@
+[
+  {
+    "sender": "lead",
+    "message": "Hi, my son Milo is 6. Can he try a jiu jitsu class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Hi! Yes, absolutely! We have a Kids Brazilian Jiu-Jitsu program that's perfect for 6-year-olds. Milo can come try a free trial class with no commitment. Would you like to get that set up?"
+  },
+  {
+    "sender": "lead",
+    "message": "Yes, please! That sounds great. When can we schedule the trial class?"
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! I just need a few quick details to get your trial set up. What's your name?"
+  },
+  {
+    "sender": "lead",
+    "message": "My name is Tester Sorrel."
+  },
+  {
+    "sender": "bot",
+    "message": "Great, thanks Tester! And what's Milo's date of birth? That helps me find the right class times for his age group."
+  },
+  {
+    "sender": "lead",
+    "message": "Milo's birthday is October 3, 2019."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Milo is 6, so he'll be in our Kids 6-7 Brazilian Jiu-Jitsu class.\nLet me grab your email and phone number real quick, then I'll show you some available times."
+  },
+  {
+    "sender": "lead",
+    "message": "Sure! My email is tester.sorrel@gmail.com and my phone number is 860-555-0399."
+  },
+  {
+    "sender": "bot",
+    "message": "Got it, thanks! Here are some open times for Milo's trial class:\n\nWednesday, July 8 at 5:00 PM\nMonday, July 13 at 5:00 PM\n\nWhich works better for you?"
+  },
+  {
+    "sender": "lead",
+    "message": "Let's go with Wednesday, July 8 at 5:00 PM."
+  },
+  {
+    "sender": "bot",
+    "message": "Perfect! Milo is all set for Wednesday, July 8 at 5:00 PM for his free trial class. We're located at 15 Cheryl Dr d in Canton. Just have him wear comfortable clothes he can move in. See you then!"
+  }
+]

@@ -2,6 +2,8 @@
 
 **Updated 2026-07-07 afternoon: LAUNCH DAY.** Bobby's word this morning: keep launching, all schools up today, report anything that breaks right away.
 
+**>>> Your full work order for today is in [LAUNCH-DAY-INSTRUCTIONS-2026-07-07.md](LAUNCH-DAY-INSTRUCTIONS-2026-07-07.md). Read that first; this file is the reference behind it. <<<**
+
 ## LAUNCH DAY STATE (as of this update)
 **On the universal template now (12):** Gracie Farmington Valley, Montgomery BJJ, All In Jiu-Jitsu, Bodega, OM BJJ, Paragon Simi Valley, Ray Longo's MMA, Roberts Family MMA, Signature, Simple Man, Sugoi, Universal MMA. Every one verified server-side: template enabled, `concierge` trigger, full exclude set (booked/member/alumni/spam/staff/service/showed/alert/aggressive/`ai off`), old bot detached. No school has two bots enabled.
 
